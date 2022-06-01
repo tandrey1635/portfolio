@@ -342,6 +342,14 @@ button {
   fill: #8400ff;
 }
 
+.technology .javascript {
+  fill: yellow;
+}
+
+.technology .jquery {
+  fill: deepskyblue;
+}
+
 .technology__text {
   font-size: 2.6rem;
   font-weight: 900;
