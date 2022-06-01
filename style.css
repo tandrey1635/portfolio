@@ -321,7 +321,20 @@ button {
   }
 }
 
-.technology__header, .technology__text {
+.technology__svg {
+  width: 80px;
+  height: 80px;
+}
+
+.technology .html {
+  fill: orangered;
+}
+
+.technology .css3 {
+  fill: dodgerblue;
+}
+
+.technology__text {
   font-size: 2.6rem;
   font-weight: 900;
   font-style: italic;
@@ -329,7 +342,7 @@ button {
 }
 
 @media (max-width: 576px) {
-  .technology__header, .technology__text {
+  .technology__text {
     font-size: 1.6rem;
   }
 }
