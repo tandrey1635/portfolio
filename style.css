@@ -50,7 +50,8 @@ html {
 }
 
 body {
-  background: url("img/promo-bg.gif") repeat-y center/100%;
+  /* background: url(img/header.gif) */
+  background: url(img/26.webp) no-repeat center/cover;
   background-attachment: fixed;
 }
 
@@ -79,6 +80,7 @@ button {
 .header {
   min-height: 80px;
   padding: 45px 0;
+  background: url(img/header.gif) center;
 }
 
 @media (max-width: 991.98px) {
@@ -266,62 +268,9 @@ button {
 }
 
 .promo {
-  min-height: 500px;
   padding: 50px 0 0;
-}
-
-@media (max-width: 991.98px) {
-  .promo {
-    padding: 30px 0;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .promo {
-    min-height: 400px;
-  }
-}
-
-.promo__wrapper {
-  margin: 30px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: url("img/hacker.png") no-repeat center/cover;
-  height: 600px;
-}
-
-@media (max-width: 767.98px) {
-  .promo__wrapper {
-    height: 470px;
-  }
-}
-
-@media (max-width: 480px) {
-  .promo__wrapper {
-    height: 400px;
-  }
-}
-
-@media (max-width: 400px) {
-  .promo__wrapper {
-    height: 360px;
-  }
-}
-
-@media (max-width: 360px) {
-  .promo__wrapper {
-    height: 300px;
-  }
-}
-
-@media (max-width: 320px) {
-  .promo__wrapper {
-    height: 265px;
-  }
+  background: url("img/promo-bg.jpg") no-repeat center/cover;
+  height: 100vh;
 }
 
 .promo__title {
@@ -350,7 +299,8 @@ button {
 
 .technology {
   padding: 50px 0;
-  min-height: 500px;
+  min-height: 100vh;
+  background: url(img/technology-bg.gif) no-repeat center/cover;
 }
 
 @media (max-width: 991.98px) {
