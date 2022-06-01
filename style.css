@@ -334,6 +334,14 @@ button {
   fill: dodgerblue;
 }
 
+.technology .sass {
+  fill: #ff5bdb;
+}
+
+.technology .bootstrap4 {
+  fill: #8400ff;
+}
+
 .technology__text {
   font-size: 2.6rem;
   font-weight: 900;
