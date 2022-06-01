@@ -1,0 +1,75 @@
+.header
+    min-height: 80px
+    padding: 45px 0
+    @media (max-width: 991.98px)
+        padding: 30px 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 767.98px)
+            flex-direction: column
+    &__logo
+        display: flex
+        align-items: center
+        color: $textColor
+        .logo
+            display: flex
+            width: 80px
+            height: 80px
+            fill: $secondColor
+    &__nav
+        flex-basis: 30% 
+        @media (max-width: 991.98px)  
+            display: none        
+    &__menu
+        display: flex
+        justify-content: space-between        
+    &__link
+        display: flex
+        align-items: center
+        color: $textColor    
+        font-size: 2.2rem
+        font-weight: 500
+        @media (max-width: 1050px)
+            font-size: 2rem
+        &:hover
+            color: $secondColor  
+        .github, .tel, .hh, .email
+            width: 30px
+            height: 30px
+            fill: $secondColor      
+        &_mr, .tel, .email
+            margin-right: 10px
+    &__text
+        font-size: 3.6rem
+        @media (max-width: 576px) 
+            font-size: 2.2rem  
+    &__info
+        display: flex
+        align-items: center  
+        flex-basis: 20%
+        flex-wrap: wrap
+        justify-content: flex-end
+        .header__link
+            @media (max-width: 320px)
+                margin-top: 20px  
+        @media (max-width: 767.98px)
+            display: none 
+        .header__link:not(:last-child)
+            margin-right: 20px
+            @media (max-width: 576px)  
+                margin-right: 10px !important 
+    .header__link_tel
+        margin-right: 0 !important 
+        @media (max-width: 767.98px)
+            margin-right: 20px !important 
+        @media (max-width: 576px)  
+            margin-right: 0 !important   
+    .header__info-mobile
+        @media (max-width: 991.98px)
+            display: none
+        @media (max-width: 767.98px)
+            display: flex
+        @media (max-width: 576px)  
+            justify-content: center    

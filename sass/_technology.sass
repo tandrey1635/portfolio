@@ -1,0 +1,70 @@
+.technology
+    padding: 50px 0
+    min-height: 500px
+    @media (max-width: 991.98px)
+        padding: 30px 0
+    &__title
+        font-size: 3.6rem
+        text-align: center
+        color: $textColor
+        @media (max-width: 576px)
+            font-size: 2.2rem
+    &__header, &__text
+        font-size: 2.6rem
+        font-weight: 900
+        font-style: italic
+        color: $technologyList
+        @media (max-width: 576px)
+            font-size: 1.6rem    
+    &__items
+        margin-top: 50px  
+        @media (max-width: 576px) 
+            margin-top: 30px  
+    &__descriptions
+        display: flex
+        justify-content: space-between    
+    &__progressbar-wrapper
+        position: relative
+        height: 30px  
+        border-radius: 80px    
+    &__progressbar-item
+        margin-top: 20px
+        height: inherit
+        background: $progressBar
+        border-radius: inherit
+    &__progressbar-current
+        position: absolute
+        top: 0
+        width: 75%
+        height: inherit 
+        border-radius: inherit
+        background: $progressBarCurrent
+        &_html, &_css
+            width: 95%
+        &_js, &_figma
+            width: 20%        
+    &__additional-skills
+        margin-top: 50px  
+        @media (max-width: 576px)  
+            margin-top: 30px
+    &__menu
+        min-height: 200px
+        display: flex
+        margin-top: 50px
+        justify-content: space-around
+        flex-wrap: wrap
+        align-content: space-between
+        @media (max-width: 576px)
+            margin-top: 20px
+    &__list
+        text-align: center
+        margin-top: 10px
+        width: 350px
+        font-size: 2.6rem
+        font-style: italic
+        font-weight: 900
+        color: $technologyList  
+        @media (max-width: 991.98px)
+            margin-top: 20px
+        @media (max-width: 576px)
+            font-size: 1.6rem      

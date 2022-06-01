@@ -1,0 +1,39 @@
+.promo
+    min-height: 500px
+    padding: 50px 0 0
+    @media (max-width: 991.98px)
+        padding: 30px 0
+    @media (max-width: 767.98px)
+            min-height: 400px 
+    &__wrapper
+        margin: 30px 0
+        display: flex
+        justify-content: space-between
+        background: url('img/hacker.png') no-repeat center/ cover
+        height: 600px
+        @media (max-width: 767.98px)
+            height: 470px   
+        @media (max-width: 480px)    
+            height: 400px 
+        @media (max-width: 400px)
+            height: 360px
+        @media (max-width: 360px)  
+            height: 300px 
+        @media (max-width: 320px) 
+            height: 265px          
+    &__title  
+        text-align: center
+        font-size: 3.6rem  
+        color: $textColor  
+    &__sub-title, &__text 
+        margin-top: 20px
+        text-align: center
+        font-size: 2.6rem 
+        font-style: italic
+        font-weight: 600
+        color: $textColor    
+    &__span
+        color: $secondColor
+        text-transform: uppercase
+        &_name
+            text-transform: capitalize

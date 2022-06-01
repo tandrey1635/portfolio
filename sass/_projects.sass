@@ -1,0 +1,66 @@
+.projects
+    padding: 50px 0
+    @media (max-width: 991.98px)
+        padding: 30px 0
+    &__title
+        font-size: 3.6rem
+        text-align: center
+        color: $textColor
+        @media (max-width: 576px) 
+            font-size: 2.2rem
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 50px
+        margin-top: 50px
+    &__items
+        padding: 10px
+        width: 320px 
+        min-height: 400px
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: $cardItems
+        border: 5px solid $textColor
+        border-radius: 0 30px 0 30px
+        @media (max-width: 576px) 
+            width: 300px
+    &__img
+        padding: 10px
+        width: inherit
+        min-height: 300px
+        [data-fancybox]
+            height: 300px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: top 
+        .autopart, .sport-bettings,.personal-account, .artificiail-intelligence
+            object-fit: fill      
+    &__header, &__text, &__link
+        margin-top: 20px
+        font-size: 2.2rem 
+        font-weight: 700 
+        color: $textColorLight2
+        text-align: center  
+    .block__link
+        display: flex
+        justify-content: center 
+    &__text  
+        font-size: 1.8rem
+    &__link
+        width: 150px
+        font-weight: 900
+        font-size: 1.8rem
+        padding: 5px 40px
+        background: $btnColor
+        color: $textColorLight
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 80px 
+        &:hover
+            background: $btnHover 
+            color: $textColorLightHover     
+    &__descriptions
+        flex-grow: 1         

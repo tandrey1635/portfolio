@@ -1,0 +1,67 @@
+@import 'sass/variables'   
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: $mainFont
+
+
+.container
+    max-width: 1140px
+    padding: 0 15px
+    margin: 0 auto 
+    @media (max-width: 1050px)
+        max-width: 960px
+    @media (max-width: 991.98px)
+        max-width: 720px 
+    @media (max-width: 767.98px)   
+        max-width: 540px    
+    @media (max-width: 576px)   
+        max-width: 100%
+
+
+a
+    display: inline-block
+    text-decoration: none
+
+
+ul
+   list-style: none     
+
+html
+    font-size: 10px
+
+
+body
+    background: url('img/promo-bg.gif')repeat-y center/ 100%
+    background-attachment: fixed
+
+button
+    border: none
+    outline: none
+    cursor: pointer
+
+
+[data-fancybox]
+    display: flex
+    height: 220px
+    cursor: pointer
+// Выключение слайдера картинок в превью    
+.d-none
+    display: none
+// Выключить кнопку слайдшоу
+.fancybox__button--slideshow
+    display: none
+
+
+
+  
+@import 'sass/header'   
+@import 'sass/promo'
+@import 'sass/technology' 
+@import 'sass/projects'
+@import 'sass/about'   
+@import 'sass/btn'  
+@import 'sass/burger-menu' 
