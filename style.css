@@ -350,6 +350,14 @@ button {
   fill: deepskyblue;
 }
 
+.technology .ui-ux {
+  fill: #ff5f24;
+}
+
+.technology .photoshop {
+  fill: #08ffff;
+}
+
 .technology__text {
   font-size: 2.6rem;
   font-weight: 900;
