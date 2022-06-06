@@ -16,8 +16,11 @@ menu.addEventListener('click', function(){
 
 const header = document.querySelector('.header')
 
-window.addEventListener('sroll', ()=>{
+window.addEventListener('scroll', ()=>{
     if (window.pageYOffset >=200) {
-        header.style.cssText = 'position: fixed; top: 0;'
+        header.classList.add('scroll__header')
+    }
+    else{
+        header.classList.remove('scroll__header')
     }
 })
