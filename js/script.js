@@ -12,3 +12,18 @@ menu.addEventListener('click', function(){
 
 
 
+//липкий хедер
+
+const header = document.querySelector('.header')
+
+window.addEventListener('scroll', ()=>{
+    if (window.pageYOffset >=350) {
+        header.classList.add('scroll__header')
+    }
+    else{
+        header.classList.remove('scroll__header')
+    }
+})
+
+
+
