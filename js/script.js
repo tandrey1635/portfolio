@@ -12,3 +12,12 @@ menu.addEventListener('click', function(){
 
 
 
+//липкий хедер
+
+const header = document.querySelector('.header')
+
+window.addEventListener('sroll', ()=>{
+    if (window.pageYOffset >=200) {
+        header.style.cssText = 'position: fixed; top: 0;'
+    }
+})
