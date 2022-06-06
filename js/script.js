@@ -17,7 +17,7 @@ menu.addEventListener('click', function(){
 const header = document.querySelector('.header')
 
 window.addEventListener('scroll', ()=>{
-    if (window.pageYOffset >=200) {
+    if (window.pageYOffset >=300) {
         header.classList.add('scroll__header')
     }
     else{
