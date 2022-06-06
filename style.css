@@ -50,10 +50,7 @@ html {
 }
 
 body {
-  /* background: url(img/header.gif) */
-  background: url(img/26.webp) no-repeat center/cover;
   background: url("img/promo-bg.jpg") no-repeat center/cover;
-  height: 100vh;
   background-attachment: fixed;
 }
 
@@ -82,7 +79,6 @@ button {
 .header {
   min-height: 80px;
   padding: 45px 0;
-  background: url(img/header.gif) center;
 }
 
 @media (max-width: 991.98px) {
@@ -271,7 +267,6 @@ button {
 
 .promo {
   padding: 50px 0 0;
-  background: url("img/promo-bg.jpg") no-repeat center/cover;
   height: 100vh;
 }
 
