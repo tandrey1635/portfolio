@@ -17,7 +17,7 @@ const PortfolioItems = (props) => {
                 <p className="portfolio__text">{props.text}</p>
             </div>
             <div className="portfolio__block__link">
-                <a href="myprojects/html-css/landing-page/index.html" className="portfolio__link" target="_blank">Ссылка</a>
+                <a href={props.url} className="portfolio__link" target="_blank">Ссылка</a>
                 {props.project && <a href={props.github} className="portfolio__link" target="_blank">GitHub</a> }
             </div>
         </article>
