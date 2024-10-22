@@ -1,6 +1,4 @@
-
 //телефон в шапке 
-
 const headerImg = document.querySelector('.header__info')
 const headerImgMobile = document.querySelector('.header__info-mobile')
 const close = document.querySelector('.header__close')
@@ -20,9 +18,6 @@ close.addEventListener('click', ()=>{
 
 
 // аккордеон
-
-const img = document.querySelectorAll('.knowledge__photo')
-
 const knowledgeBlock = document.querySelectorAll('.knowledge__level')
 
 
@@ -34,20 +29,7 @@ knowledgeBlock.forEach(accordeonBtn=>{
 })
 
 
-/* knowledgeBlock[0].addEventListener('click',()=>{
-    knowledgeMenu[0].classList.toggle('active')
-    if (knowledgeMenu[0].classList.contains('active')) {
-        img[0].style.cssText = 'transform: rotate(0deg)'
-    }
-    else{
-        img[0].style.cssText = 'transform: rotate(180deg)'
-    }    
-})
-*/ 
-
-
 //стрелка вверх
-
 const arrowTop = document.querySelector('.arrow__text')
 const arrowUp = document.querySelector('.arrow__up')
 
@@ -64,7 +46,6 @@ window.addEventListener('scroll', ()=>{
 
 
 // плавная прокрутка стрелки вверх
-
 arrowUp.addEventListener('click', () => window.scrollTo({
     top: 0,
     behavior: 'smooth',
@@ -72,7 +53,6 @@ arrowUp.addEventListener('click', () => window.scrollTo({
 
 
 // модалка
-
 const modal = document.querySelector('.modal__dialog')
 const smallModal = document.querySelector('.small__modal__dialog')
 

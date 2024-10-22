@@ -42,8 +42,9 @@ import PersonalAccountPreview from '../img/devices-img/personal-account/preview.
 import PersonalAccountCrmPreview from '../img/devices-img/personal-account-crm/preview.webp'
 /* import SpecializedMachineryPreview from '../img/devices-img/specialized-machinery/preview.webp' */
 import GrindingPreview from '../img/devices-img/grinding/preview.webp'
+import DataUniversePreview from '../img/devices-img/datauniverse/preview.webp'
 /* import Avexima from '../img/devices-img/avexima/preview.webp' */
-/* import ArtificiailIntelligencePreview from '../img/devices-img/artificiail-intelligence/preview.webp' */
+import ArtificiailIntelligencePreview from '../img/devices-img/artificiail-intelligence/preview.webp'
 import MedicalHospitalPreview from '../img/devices-img/medical-hospital(Grid)/preview.webp'
 /* import WowPreview from '../img/devices-img/wow/preview.webp' */
 /* import SpaceProjectPreview from '../img/devices-img/space-project/preview.mp4' */
@@ -345,9 +346,9 @@ const Main = () =>  {
                             <PortfolioItems project subheader={'Личный кабинет'} text={'Личный кабинет CRM система'} alt={'Личный кабинет'} preview={PersonalAccountCrmPreview} url={PersonalAccountCrmUrl} github={PersonalAccountCrmGitHub}/>
                             <PortfolioItems project subheader={'Аренда спецтехники'} text={'Сайт аренды спецтехники нативный js'} alt={'Аренда спецтехники'}/>
                             <PortfolioItems project subheader={'Заточка инструментов'} text={'Коммерческий проект на фрилансе'} alt={'Заточка инструментов'} preview={GrindingPreview} url={GrindingUrl} github={GrindingGitHub}/>
-                            <PortfolioItems project subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} url={DataUniverseUrl} github={DataUniverseGitHub}/>
+                            <PortfolioItems project subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
                             <PortfolioItems project subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
-                            <PortfolioItems project subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
+                            <PortfolioItems project subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
                             <PortfolioItems project subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
                             <PortfolioItems project subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>  
                             <PortfolioItems project subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
@@ -364,9 +365,9 @@ const Main = () =>  {
                             <PortfolioItems project subheader={'Личный кабинет'} text={'Личный кабинет CRM система'} alt={'Личный кабинет'} preview={PersonalAccountCrmPreview} url={PersonalAccountCrmUrl} github={PersonalAccountCrmGitHub}/>
                             <PortfolioItems project subheader={'Аренда спецтехники'} text={'Сайт аренды спецтехники нативный js'} alt={'Аренда спецтехники'}/>
                             <PortfolioItems project subheader={'Заточка инструментов'} text={'Коммерческий проект на фрилансе'} alt={'Заточка инструментов'} preview={GrindingPreview} url={GrindingUrl} github={GrindingGitHub}/>
-                            <PortfolioItems project subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} url={DataUniverseUrl} github={DataUniverseGitHub}/>
+                            <PortfolioItems project subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
                             <PortfolioItems project subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
-                            <PortfolioItems project subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
+                            <PortfolioItems project subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
                             <PortfolioItems project subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
                         </>
                     : null}    
