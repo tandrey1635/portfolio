@@ -1,0 +1,142 @@
+.modal__block__medics
+    position: fixed
+    z-index: 100
+    top: 0
+    width: 100%
+    height: 100vh
+    background: $modalBlockBg
+    transition: 2s 
+.modal__medics
+    position: absolute
+    top: 100px
+    left: 50%
+    transform: translateX(-50%)
+    margin: 0 auto
+    padding: 56px
+    width: 696px
+    height: 696px
+    background: $defaultBg
+    @media(max-width: 700px)
+        padding: 56px 25px
+        width: 95%
+        height: 650px
+    @media(max-width: 576px) 
+        top: 212px
+        padding: 32px
+        height: auto  
+    @media(max-width: 450px)    
+        padding: 32px 16px 
+    @media(max-width: 375px)  
+        width: 375px
+        height: 352px  
+    &__close
+        position: absolute
+        width: 48px
+        height: 48px
+        top: 32px
+        right: 32px
+        border: 1px solid $secondBorder
+        border-radius: 50%
+        cursor: pointer
+        background: url('icons/close.svg')
+        @include background
+        background-size: 60%
+        @media(max-width: 600px)  
+            width: 40px
+            height: 40px
+        @media(max-width: 576px) 
+            top: 24px
+            right: 24px 
+        @media(max-width: 525px)   
+            width: 32px
+            height: 32px  
+        @media(max-width: 400px)  
+            width: 28px
+            height: 28px
+            right: 8px   
+        @media(max-width: 375px)
+            width: 24px
+            height: 24px
+            right: 10px       
+    &__header
+        font-size: 3.2rem
+        font-weight: 500
+        line-height: 40px
+        text-transform: uppercase
+        color: $thirdText
+        @media(max-width: 700px)
+            font-size: 3rem
+        @media(max-width: 576px)   
+            font-size: 2.6rem 
+        @media(max-width: 525px) 
+            font-size: 2.4rem 
+        @media(max-width: 495px)  
+            font-size: 2rem   
+        @media(max-width: 375px)
+            font-size: 1.6rem
+            line-height: 20px           
+    &__text
+        margin-top: 72px
+        font-size: 2.4rem
+        font-weight: 500    
+        line-height: 36px
+        color: $mainText   
+        @media(max-width: 700px)
+            font-size: 2.2rem
+            margin-top: 60px
+        @media(max-width: 576px) 
+            font-size: 2rem 
+            margin-top: 32px  
+            line-height: 30px 
+        @media(max-width: 550px)    
+            font-size: 1.8rem
+            line-height: 28px
+        @media(max-width: 495px)  
+            font-size: 1.6rem  
+            line-height: 24px 
+        @media(max-width: 450px)
+            font-size: 1.4rem
+            line-height: 22px
+            margin-top: 26px  
+        @media(max-width: 375px)
+            margin-top: 24px
+            line-height: 20px      
+    &__question
+        margin-top: 80px
+        font-weight: 500   
+        line-height: 36px
+        font-size: 2.4rem
+        color: $forthText
+        @media(max-width: 700px)
+            font-size: 2.2rem
+            margin-top: 32px 
+        @media(max-width: 576px) 
+            font-size: 2rem 
+            margin-top: 32px  
+            line-height: 30px
+        @media(max-width: 550px)    
+            font-size: 1.8rem
+            line-height: 28px 
+        @media(max-width: 495px)  
+            font-size: 1.6rem  
+            line-height: 24px  
+        @media(max-width: 450px)
+            font-size: 1.4rem
+            line-height: 22px
+            margin-top: 26px   
+        @media(max-width: 375px)
+            margin-top: 24px
+            line-height: 20px                  
+    &__block__btns
+        margin-top: 40px
+        display: flex
+        justify-content: center 
+        gap: 24px
+        @media(max-width: 700px) 
+            margin-top: 80px 
+        @media(max-width: 576px) 
+            margin-top: 32px
+
+.hide-modal
+    top: -9999px
+    transition: 2s     

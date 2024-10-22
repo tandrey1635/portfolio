@@ -1,0 +1,991 @@
+.btn
+    position: relative
+    width: 196px
+    height: 56px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    padding: 12px 24px 12px 12px
+    background: $btnMainBg
+    border-radius: 65px
+    font-family: $mainFont
+    font-size: 1.6rem
+    text-transform: uppercase
+    line-height: 24px
+    color: $secondText
+    cursor: pointer 
+    &:hover
+        background: $btnHover
+    &:active
+        background: $btnActive 
+    &:active:before
+        background: url('icons/mainpage/arrow-dark-blue.svg'), $btnSecondBg
+        @include background
+        @include mainBtnBefore
+        @media(max-width: 480px)
+            width: 28px  
+            height: 28px
+            top: 10px
+        @media(max-width: 375px)
+            top: 6px  
+            left: 6px 
+    @media(max-width: 480px)
+        width: 175px
+        height: 48px 
+        font-size: 1.4rem
+    @media(max-width: 375px)
+        width: 145px
+        height: 40px
+        font-size: 1.2rem
+        line-height: 20px  
+        padding: 6px
+        padding-right: 16px 
+    &:before
+        background: url('icons/mainpage/arrow.svg'), $btnSecondBg
+        @include background
+        @include mainBtnBefore
+        @media(max-width: 480px)
+            top: 10px
+            width: 28px
+            height: 28px
+        @media(max-width: 375px)
+            width: 28px
+            height: 28px
+            left: 6px
+            top: 6px    
+
+.btn__small
+    padding: 16px
+    width: 106px
+    height: 40px
+    font-size: 1.2rem
+    font-weight: 500
+    line-height: 20px
+    // кнопка чтобы не ломалось левое меню нужна для корректных отступов через флексы  
+    &-hidden
+        visibility: hidden
+        // скрыть на главной стр
+        &-index-page
+            display: none
+    &:before, &:active:before
+        width: 28px
+        height: 28px
+        top: 6px
+        left: 6px
+        width: 28px
+        height: 28px
+        top: 6px
+        left: 6px
+        transform: rotate(-180deg)
+
+
+.production__btn
+    width: 257px
+    height: 80px
+    padding: 28px 32px
+    justify-content: flex-start
+    font-size: 2rem
+    @media(max-width: 1360px)
+        width: 200px
+        height: 50px
+        font-size: 1.6rem
+        padding: 16px
+    @media(max-width: 676px) 
+        font-size: 1.4rem    
+        width: 160px
+    @media(max-width: 375px) 
+        margin-top: 48px  
+        width: 188px
+        line-height: 24px
+        font-size: 1.6rem  
+        height: 56px
+    &:before
+        background: none
+    &:after
+        @include mainBtnAfter
+        background: url('icons/mainpage/production-arrow.svg')
+        @include background  
+        @media(max-width: 1360px)
+            top: 8px
+            right: 20px
+        @media(max-width: 676px)
+            top: 13px
+            right: 15px   
+            width: 24px
+            height: 24px 
+        @media(max-width: 375px) 
+            top: 15px   
+    &:active:before  
+        background: none            
+
+.preparations__btn
+    background: $btnSecondBg  
+    color: $thirdText
+    &:hover
+        background: $btnSecondBg  
+    @media(max-width: 480px) 
+        background: transparent
+        font-weight: 500
+    &:before  
+        background: url('icons/mainpage/arrow-white.svg'), $btnMainBg
+        @include background
+        @include mainBtnBefore
+        @media(max-width: 480px)
+            top: 8px 
+        @media(max-width: 375px)   
+           width: 28px
+           height: 28px
+           top: 5px
+           left: 8px 
+    &:active::before    
+        background: url('icons/mainpage/arrow-white.svg'), $btnMainBg 
+        @include background  
+        background-size: 70%
+
+.factory__btn
+    position: absolute
+    bottom: 56px         
+
+.scientific__btn
+    position: relative
+    z-index: 10
+       
+.left-menu__btn
+    padding: 10px 16px
+    width: 235px
+    height: 40px
+    justify-content: center
+    font-size: 1.2rem
+    font-weight: 500
+    line-height: 20px
+    color: $mainText
+    background: transparent
+    border: 1px solid $btnBorderThird
+    // кнопка нежелательные реакции
+    &__career, &-about__company, &-manufacture, &-license, &-irbitskiy, &-avexima-sibir, &-immafarma, &-esipovo, &-career__page, &-contacts__page, &-sciencific__page, &-preparation__page, &-preparat__page, &-mediacenter__page
+        &-white
+            color: $secondText
+            border-color: $btnBorder
+    @media(max-width: 1400px) 
+        width: 200px
+        font-size: 1rem
+    &:hover
+        background: transparent    
+    &:before
+        @include mainBtnBefore
+        width: 0
+        height: 0
+        background: none
+    &:active:before 
+        background: none 
+        
+.manufacture__project-btn
+    position: relative
+    margin-top: 32px
+    color: $mainText
+    background: transparent
+    border: 1px solid $btnBorderSecond 
+    @media(max-width: 991px) 
+        display: none    
+    &::before, &:active::before
+        @include before
+        width: 32px
+        height: 32px
+        top: 10px
+        background: url('icons/mainpage/arrow-white.svg'),$btnFourthBg
+        @include background
+        border-radius: 50%
+        background-size: 70%
+        @media(max-width: 480px) 
+            top: 6px
+        @media(max-width: 450px)  
+            width: 28px
+            height: 28px  
+            left: 6px  
+    &:hover, &:active   
+        background: none
+    &-mobile
+        display: none  
+        @media(max-width: 991px) 
+            display: flex 
+        @media(max-width: 450px)  
+            width: 145px 
+            align-self: flex-start  
+            font-size: 1.2rem
+            line-height: 20px
+            height: 40px
+            padding: 6px 16px
+
+.cooperation__btn
+    margin-top: 20px
+    @media(max-width: 380px)
+        margin-top: 24px
+    @media(max-width: 375px)
+        width: 140px
+.power__btn
+    margin-top: 40px
+    width: 162px
+    height: 56px
+    background: $aboutPowerBgBtn
+    color: $mainText
+    @media (max-width: 991px)
+        display: none
+    @media (max-width: 480px) 
+        width: 150px  
+        height: 45px 
+    @media (max-width: 375px)  
+        margin-top: 24px
+        width: 119px
+        height: 40px
+        font-weight: 500  
+    &::before, &:active::before
+        background: url('icons/mainpage/arrow-dark-blue.svg'), $btnSecondBg
+        @include background
+        background-size: 70%
+    &:hover, &:active
+        background: $aboutPowerBgBtn
+    &-esipovo
+        display: flex
+        padding: 12px 24px 12px 12px
+        width: 196px
+        height: 56px  
+        background:  $btnSecondBg
+        @include background
+        @media (max-width: 1850px)
+            margin-top: 20px  
+        @media (max-width: 1100px)   
+            padding: 12px
+            width: 175px
+            height: 40px 
+        @media (max-width: 991px)  
+            margin-top: 48px 
+        @media (max-width: 480px) 
+            width: 156px      
+        @media (max-width: 420px) 
+            margin-top: 16px 
+        @media (max-width: 375px)
+            width: 123px
+            height: 32px
+            background: transparent    
+            color: $secondText
+            padding: 2px     
+        &::before, &:active::before
+            background: url('icons/mainpage/arrow-dark-blue.svg'), $btnSecondBg 
+            @include background 
+            border: 1px solid $btnBorderSecond
+            border-radius: 50px
+            background-size: 70% 
+            @media (max-width: 1100px) 
+                width: 28px
+                height: 28px
+                top: 5px
+                left: 10px 
+            @media (max-width: 375px)
+                left: 0
+                top: 0        
+        &:hover, &:active  
+            background: $btnSecondBg 
+    &-mobile  
+        display: none
+        @media (max-width: 991px)
+            display: flex 
+        &-last
+            @media (max-width: 375px)   
+                margin-top: 0          
+
+.power__potencial__btn
+    margin-top: 184px
+    @media (max-width: 1750px)
+        margin-top: 212px
+
+.power__factory__btn
+    position: absolute
+    bottom: 32px
+    padding: 4px
+    width: 160px
+    height: 32px  
+    background: transparent 
+    @media (max-width: 375px)
+        width: 123px
+        bottom: 24px
+        font-weight: 500
+    &::before, &:active::before
+        top: 0
+        left: 0
+        @media (max-width: 480px) 
+            top: 3px
+    &::before, &:active::before
+        background: url('icons/mainpage/arrow-dark-blue.svg'), $btnSecondBg
+        @include background 
+        background-size: 70%
+    &:hover, &:active
+        background: transparent   
+
+
+.footer__feedback__btn
+    width: 223px
+    position: relative
+    @include flexCenter
+    background: transparent  
+    color: $forthText
+    padding-left: 48px
+    @media(max-width: 375px) 
+        font-size: 1.6rem
+        line-height: 24px
+    &:hover
+        text-decoration: underline
+        background: transparent    
+    &:before
+        background: url('icons/mainpage/mail.svg'), $btnThirdBg
+        @include background
+        @include mainBtnBefore
+        background-size: 60% 
+        left: -5px
+        top: 10px
+        width: 40px
+        height: 40px
+        @media(max-width: 480px) 
+            top: 5px
+        @media(max-width: 375px) 
+            left: -12px
+            width: 32px
+            height: 32px
+    &:active
+        background: transparent 
+    &:active::before
+        background: url('icons/mainpage/mail.svg'), $btnThirdBg
+        @include background
+        @include mainBtnBefore
+        background-size: 60% 
+        left: -5px
+        top: 10px
+        width: 40px
+        height: 40px 
+        @media(max-width: 480px) 
+            top: 5px
+        @media(max-width: 375px) 
+            top: 5px  
+            width: 32px
+            height: 32px  
+            left: -12px 
+
+.footer__btn
+    width: 477px
+    border: 1px solid $btnBorderSecond  
+    background: transparent   
+    color: $mainText
+    @media(max-width: 676px) 
+        padding: 6px 12px  
+        width: 375px
+        font-size: 1.2rem
+    @media(max-width: 400px)  
+        width: 355px
+        padding: 6px 
+    @media(max-width: 375px)  
+        width: 351px  
+        padding: 6px 12px 
+        font-size: 1.2rem
+        line-height: 20px
+    &:hover, &:active
+        background: transparent    
+    &:before, &:active::before
+        @include mainBtnBefore
+        background: url('icons/mainpage/mail-request.svg')
+        @include background
+        @media(max-width: 480px) 
+            top: 7px
+        @media(max-width: 375px) 
+            top: 6px
+            left: 5px
+            width: 28px
+            height: 28px
+    
+.license__link
+    position: relative
+    font-size: 1.2rem
+    text-transform: uppercase
+    line-height: 26px
+    color: $mainText
+    &::before
+        @include before
+        display: block
+        left: -56px
+        top: -25%
+        background: url('icons/license/download.svg'), $btnMainBg
+        @include background
+        background-size: 50%
+        border-radius: 50%
+        width: 40px
+        height: 40px
+        @media (max-width: 400px)
+            width: 32px
+            height: 32px
+            left: -40px
+            top: -18%
+            background-size: 60%
+            padding: 1px
+.preparat__link
+    margin-top: 48px
+    padding-left: 56px
+    display: flex
+    justify-content: center
+    font-size: 2rem
+    font-weight: 500
+    line-height: 26px
+    width: 346px
+    height: 40px
+    @media(max-width: 450px)
+        font-size: 1.6rem
+        padding-left: 32px
+        width: 300px 
+    @media(max-width: 375px)   
+        margin-top: 24px
+        font-size: 1.2rem
+        line-height: 20px
+        width: 214px 
+    &::before
+        left: 0
+        top: -6px
+        @media(max-width: 375px)
+            width: 28px
+            height: 28px
+
+
+.vacancy__btn
+    color: $mainText
+    font-weight: 500
+    @media(max-width: 500px) 
+        font-size: 1.4rem
+        width: 150px
+    @media(max-width: 375px)
+        font-size: 1.6rem    
+        width: 160px
+    &::before, &:active::before 
+        background: url('icons/mainpage/arrow-white.svg'), $btnFourthBg
+        @include background
+        background-size: 70%
+        @media(max-width: 375px)
+            width: 32px
+            height: 32px
+            top: 0
+            background-size: 60%
+
+
+.pagination__btn
+    width: 211px
+    height: 44px
+    justify-content: flex-start
+    padding: 8px 12px 8px 16px
+    position: static
+    border: 1px solid $defaultBorder 
+    @media(max-width: 375px) 
+        font-size: 1.2rem
+        line-height: 20px
+        width: 160px        
+    &::before, &:active::before
+       display: none 
+    &::after  
+       @include after  
+       width: 28px
+       height: 28px
+       right: 12px
+       top: 7px
+       background: url('icons/mainpage/arrow-dark-blue.svg'), $btnSecondBg
+       @include background
+       background-size: 70%
+       border-radius: 50%
+       @media(max-width: 375px) 
+           right: 6px
+
+
+.career__page__btn
+    margin-top: 64px
+    width: 401px
+    border-color: $defaultBorder
+    color: $secondText  
+    @media(max-width: 676px) 
+        width: 310px
+    @media(max-width: 375px)
+        margin-top: 24px
+        width: 295px      
+    &::before, &:active::before 
+        background: url('icons/career/mail.svg'), $btnSecondBg
+        top: 12px
+        @include background
+        background-size: 70%
+        @media(max-width: 480px)
+            width: 28px
+            height: 28px
+            top: 10px
+        @media(max-width: 375px)
+            top: 6px
+            left: 3px 
+            background-size: 60%
+    
+.internship__btn
+    margin-top: 0
+    width: 400px
+    @media(max-width: 676px)
+        width: 310px
+    @media(max-width: 576px)
+        margin-top: 50px  
+    @media(max-width: 375px) 
+        margin-top: 24px
+        width: 294px       
+.internship__btn-hh
+    width: 208px
+    border: 1px solid $hhBtnBorder
+    color: $hhText
+    background: transparent
+    @media(max-width: 676px) 
+        font-size: 1.2rem
+        width: 180px
+    @media(max-width: 576px)
+        margin-top: 50px  
+    @media(max-width: 375px)
+        margin-top: 24px  
+        line-height: 20px
+        width: 160px    
+        display: none  
+    &:hover, &:active
+        background: transparent
+    &::before, &:active::before 
+        background: url('icons/career/hh.svg')
+        @include background
+        width: 40px
+        height: 40px
+        top: 8px
+        left: 8px
+        @media(max-width: 676px) 
+            background-size: 80%
+        @media(max-width: 480px)   
+            top: 3px  
+        @media(max-width: 375px)
+            left: 3px
+            top: 6px  
+            width: 28px
+            height: 28px 
+    &-mobile
+        display: none  
+        @media(max-width: 375px)
+            display: flex      
+                 
+
+
+.contacts__page__btn
+    margin-top: 48px
+    width: 223px
+    background: $btnFourthBg
+    @media(max-width: 676px)
+        width: 220px 
+    @media(max-width: 375px)
+        margin-top: 32px
+        width: 160px    
+        font-weight: 500
+        padding-right: 12px
+    &:hover, &:active
+        background: $btnFourthBg
+    &::before, &:active::before
+        background: url('icons/contacts/mail-dark-blue.svg'), $btnSecondBg
+        @include background
+        background-size: 70%
+        @media(max-width: 375px)
+            background-size: 60% 
+    &-reaction
+        @media(max-width: 1550px)
+            width: 100%   
+            padding: 12px 20px
+            font-size: 1.4rem
+        @media(max-width: 1515px) 
+            padding: 12px 
+        @media(max-width: 1400px)  
+            width: 477px
+            padding: 12px 24px 12px 12px
+            font-size: 1.6rem      
+        @media(max-width: 676px)  
+            padding: 6px 12px
+            width: 375px
+            font-size: 1.2rem
+        @media (max-width: 400px)
+            width: 355px
+            padding: 6px 
+        @media(max-width: 375px)
+            margin-top: 32px 
+            font-weight: 500     
+            width: 350px 
+
+
+
+.modal__reaction__btn
+    width: 115px
+    height: 40px
+    font-size: 1.2rem
+    line-height: 20px
+    font-weight: 500    
+    color: $mainText
+    background: transparent    
+    border: 1px solid $btnBorderSecond   
+    &-left
+        &::before, &:active::before
+            top: 5px
+            left: 6px
+            width: 28px
+            height: 28px
+            background: url('icons/mainpage/arrow-white.svg'), $btnFourthBg
+            @include background   
+            background-size: 70% 
+            transform: rotate(-180deg) 
+            @media(max-width: 425px)
+                background-size: 50%   
+    &-right
+        justify-content: flex-start
+        &::after
+            @include after
+            top: 5px
+            right: 6px
+            width: 28px
+            height: 28px
+            border-radius: 50%
+            background: url('icons/mainpage/arrow-white.svg'), $btnFourthBg
+            @include background   
+            background-size: 70%  
+            @media(max-width: 425px) 
+                background-size: 50%       
+    &:hover, &:active
+        background: transparent
+    &::before
+        top: 5px
+        left: 6px
+        width: 28px
+        height: 28px
+        background: url('icons/mainpage/arrow-white.svg'), $btnFourthBg
+        @include background   
+        background-size: 70% 
+    &-right::before, &-right:active::before 
+        display: none
+    &-submit
+        padding: 8px 12px 8px 24px
+        margin-top: 32px
+        width: 183px
+        height: 48px
+        justify-content: flex-start
+        @media(max-width: 375px)
+            margin-top: 24px
+            width: 143px
+            height: 40px
+        &:hover
+            background: $btnMainBg
+        &::before
+            display: none
+        &::after 
+            width: 24px
+            height: 24px
+            @include after
+            background: url('icons/mainpage/mail.svg')
+            @include background
+            top: 12px
+            right: 12px
+            @media(max-width: 375px)
+                top: 10px    
+                width: 20px
+                height: 20px
+
+.disabled
+    border: 1px solid $disableBtnBorder
+    color: $disableText
+    &::before, &::after, &:active::before, &:active::after
+        border: 1px solid $disableBtnBorder
+        color: $disableText
+        background: url('icons/mainpage/arrow-white.svg'), $disableBtnBg
+        @include background   
+        background-size: 70% 
+        @media(max-width: 425px) 
+            background-size: 50%      
+        
+            
+.notfound__page__main-btn
+    padding: 28px 32px
+    margin: 32px auto 0
+    width: 427px
+    height: 80px
+    font-size: 2rem
+    text-transform: uppercase
+    letter-spacing: 1.4px
+    font-weight: 500
+    justify-content: flex-start
+    @media(max-width: 576px)
+        width: 380px
+        height: 56px
+        padding: 12px 12px 12px 24px
+        font-size: 1.8rem
+    @media(max-width: 425px)  
+        font-size: 1.6rem
+        width: 350px    
+    @media(max-width: 375px) 
+        width: 312px    
+        font-size: 1.6rem
+        line-height: 24px
+        font-weight: 400
+        margin: 24px auto 0
+        letter-spacing: normal
+    &::before, &:active::before
+       display: none
+    &::after   
+        @include after
+        width: 24px
+        height: 24px
+        top: 28px
+        right: 32px
+        background: url('icons/mainpage/production-arrow.svg') 
+        @include background
+        @media(max-width: 576px)
+            top: 15px
+        @media(max-width: 375px)
+            width: 16px
+            height: 16px 
+            top: 20px
+            right: 24px  
+
+.pagination__btn  
+    &::after
+        background: url('icons/career/arrow-down.svg'), $btnSecondBg 
+        @include background
+        background-size: 70%
+        border-radius: 50%
+        @media(max-width: 375px)   
+            width: 12px
+            height: 12px
+            top: 15px
+            right: 12px
+            background-size: cover
+            
+
+
+.modal__medics__btn
+    width: 280px
+    height: 80px
+    border-radius: 80px
+    display: flex
+    justify-content: center
+    font-size: 2rem
+    letter-spacing: 1.4px
+    padding: 28px 32px
+    @media(max-width: 700px)
+        height: 64px
+    @media(max-width: 576px) 
+        font-size: 1.8rem
+        width: 250px    
+        height: 56px
+    @media(max-width: 525px) 
+        width: 200px
+        height: 48px     
+    @media(max-width: 495px) 
+        font-size: 1.6rem
+        width: 150px
+        height: 40px 
+    @media(max-width: 450px)
+        font-size: 1.4rem  
+        padding: 12px 24px   
+    @media(max-width: 375px)
+        width: 156px
+        height: 48px
+        font-size: 1.6rem
+        line-height: 24px         
+    &::before
+        display: none
+    &:hover, &:active
+        background: $btnMainBg       
+    &-no       
+        background: transparent
+        border: 1px solid $btnBorderSecond
+        color: $mainText
+        &:hover, &:active
+            background: transparent
+
+        
+.preparat__btn
+    padding: 8px 0 8px 52px
+    margin-top: 48px
+    width: 255px
+    height: 40px
+    color: $mainText
+    justify-content: flex-end
+    font-weight: 500
+    background: transparent
+    @media(max-width: 480px)
+        width: 230px
+    @media(max-width: 375px)
+        margin-top: 32px
+        padding: 6px 0 6px 32px
+        justify-content: center
+        width: 200px
+        font-size: 1.2rem
+        font-weight: 500    
+    &::before, &:active::before  
+        width: 40px
+        height: 40px
+        top: 0     
+        left: 0
+        background: url('icons/preparat/arrow-right-top.svg'), $btnFourthBg
+        @include background
+        background-size: 70%
+        border-radius: 50%
+        @media(max-width: 375px)
+            width: 28px
+            height: 28px
+            top: 6px
+    &:hover, &:active
+        background: transparent  
+
+          
+.preparat-adverse__reaction-btn
+    margin-top: 24px 
+    @media(max-width: 375px)
+        margin-top: 8px
+
+.where__buy-btn
+    padding: 16px 32px
+    width: 244px
+    height: 72px 
+    font-size: 2rem
+    background: $btnFourthBg
+    @media(max-width: 576px)
+        width: 220px 
+        height: 56px
+        font-size: 1.6rem
+    @media(max-width: 375px)   
+        width: 350px
+        height: 40px
+        font-size: 1.2rem
+        line-height: 20px
+        font-weight: 500
+        justify-content: center 
+    &:hover, &:active
+        background: $btnFourthBg 
+    &::before, &:active::before
+        top: 16px
+        left: 16px
+        width: 40px
+        height: 40px
+        background: url('icons/preparat/geolocation.svg')    
+        @include background   
+        background-size: 70% 
+        border: 1px solid $btnBorder
+        @media(max-width: 576px) 
+            top: 12px
+            width: 28px
+            height: 28px
+        @media(max-width: 375px)  
+            top: 4px  
+            left: 6px
+
+
+.cookies-btn
+    margin-top: 16px
+    padding: 10px 16px
+    width: 363px
+    height: 40px
+    background: $btnSecondBg
+    font-size: 1.2rem
+    font-weight: 500
+    text-transform: uppercase
+    line-height: 20
+    color: $mainText 
+    justify-content: center 
+    @media(max-width: 480px) 
+        width: 100%  
+    @media(max-width: 375px)     
+        width: 275px
+    &::before, &:active::before
+        background: none
+    &:hover    
+        background: $btnSecondBg
+
+
+
+.mediacenter__page__pagination__btn
+    &::after 
+        @include after
+        top: 6px
+        background: url('icons/mainpage/arrow-dark-blue.svg'), $btnSecondBg
+        @include background
+        border-radius: 50%
+        background-size: 70%
+        @media(max-width: 375px) 
+           width: 20px
+           height: 20px
+           top: 12px
+           right: 6px
+
+
+.news__btn, .events__btn
+    position: absolute
+    top: 124px
+    left: 20px
+    font-size: 1.6rem
+    font-weight: 500
+    line-height: 24px
+    text-transform: uppercase
+    color: $mainText  
+    @media(max-width: 1400px)
+        top: 220px
+        left: 70px 
+    @media(max-width: 480px)
+        left: 40px   
+    @media(max-width: 375px) 
+        top: 106px     
+        font-size: 1.2rem
+        line-height: 20px
+        display: none
+    &-mobile
+        display: none
+        @media(max-width: 375px) 
+            display: block    
+    &::before
+        @include before
+        background: url('icons/preparat/arrow-back.svg')
+        @include background
+        width: 14px
+        height: 14px
+        top: 4px
+        left: -20px
+        @media(max-width: 375px)
+            top: 3px 
+
+.news__pagination__btn, .events__pagination__btn
+    width: 288px
+    height: 44px 
+    @media(max-width: 375px)
+        width: 224px
+    &::after
+        @media(max-width: 375px)
+            width: 20px
+            height: 20px
+            top: 12px
+.events__pagination__btn
+    width: 337px
+
+
+.modal__filter__mobile__btn
+    &-accept
+        width: 343px
+        height: 48px
+        justify-content: center
+        font-size: 1.6rem
+        line-height: 24px
+        font-weight: 400
+        &::before
+            display: none 
+    &-remove
+        font-size: 1.2rem
+        line-height: 20px
+        color: $thirdText
+        font-weight: 500 
+
+.undesirable__reactions__btn
+    &-left__menu
+        margin-top: 200px
+    &-no-menu
+        margin-top: 500px    
+    &-no-menu-mainscreen
+        margin-top: 400px        

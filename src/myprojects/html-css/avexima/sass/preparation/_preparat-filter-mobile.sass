@@ -1,0 +1,86 @@
+.modal__filter__mobile
+    width: 100%
+    position: absolute
+    top: -9999px
+    transition: 1.5s all
+    padding: 30px 16px 36px 16px
+    min-height: 2000px
+    background: $sectionGradientBg
+    z-index: 100
+    &__wrapper
+        margin-top: 46px
+        width: 344px
+        border-radius: 16px 
+        min-height: 220px 
+        background: $defaultBg
+    &__item
+        position: relative
+        width: 344px
+        height: 68px
+        background: $defaultBorder
+        padding: 24px  
+        border-radius: 16px 
+        &::before 
+            @include before
+            width: 24px
+            height: 24px
+            top: 24px
+            right: 16px
+            background: url("icons/career/arrow-down.svg"), $defaultBg
+            @include background
+            transform: rotate(-90deg)
+            cursor: pointer
+        &::after
+            @include after   
+            width: 311px
+            top: 80px
+            z-index: 10
+        &:not(:last-child)::after  
+            border-bottom: 1px solid $filterPreparationMobileBorder
+    &__block__header
+        display: flex
+        align-items: center
+    &__btn-back   
+        position: relative
+        width: 24px
+        height: 24px
+        &::before 
+            @include before
+            width: 24px
+            height: 24px
+            left: 0
+            background: url("icons/career/arrow-down.svg"), $defaultBg
+            @include background
+            transform: rotate(90deg)
+            cursor: pointer     
+    &__header
+        text-align: center  
+        font-size: 2rem
+        font-weight: 700
+        line-height: 28px
+        text-transform: uppercase
+        color: $mainText   
+        margin-left: 84px
+    &__subheader
+        font-size: 1.2rem
+        font-weight: 500
+        text-transform: uppercase
+        line-height: 20px
+        color: $mainText 
+    &__text
+        margin-top: 2px
+        font-family: $textFont
+        font-size: 1rem
+        line-height: 12px
+        color: $mainText 
+    &__bottom
+        margin-top: 364px
+        @include flexCenter  
+        flex-direction: column
+        gap: 20px    
+
+
+.modal-filter-mobile-active   
+    top: 0
+    transition: 1.5s
+    

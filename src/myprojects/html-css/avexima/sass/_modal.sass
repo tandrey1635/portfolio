@@ -1,0 +1,213 @@
+.modal
+    top: -9999px
+    transition: 1.5s position
+    max-width: 100%
+    min-height: auto
+    width: 100%
+    position: fixed
+    z-index: 100
+    padding: 32px 64px 204px 64px
+    min-height: 1080px
+    background: $mainBg
+    display: grid
+    grid-template: 1fr/ 336px 624px 624px 336px
+    @media(max-width: 1600px) 
+        display: flex
+        justify-content: space-evenly
+    @media(max-width: 1200px) 
+        justify-content: space-between   
+    @media(max-width: 595px)      
+        flex-direction: column
+    @media(max-width: 500px)
+        justify-content: flex-start    
+    @media(max-width: 400px)  
+        padding: 116px 16px 52px 16px
+    @media(max-width: 375px)
+        justify-content: flex-start     
+    &__right__center
+        display: flex
+        flex-direction: column
+        justify-content: space-between 
+        @media(max-width: 1650px)    
+            justify-content: space-around
+        @media(max-width: 800px)  
+            justify-content: space-evenly    
+        @media(max-width: 768px)
+            width: 50% 
+        @media(max-width: 595px)  
+            position: absolute   
+            top: 30px
+            left: 50%
+            width: 100% 
+        @media(max-width: 500px) 
+            position: static               
+    &__block__menu, &__block__right
+        margin-top: 204px
+        @media(max-width: 1750px)
+            margin-top: 150px
+        @media(max-width: 1400px)   
+            margin-top: 100px 
+        @media(max-width: 1350px)
+            margin-top: 150px   
+        @media(max-width: 800px)  
+            margin-top: 200px 
+        @media(max-width: 500px)   
+            margin-top: 100px  
+        @media(max-width: 400px)  
+            margin-top: 28px                
+    &__block__right
+        display: flex
+        flex-direction: column  
+        @media(max-width: 500px) 
+            margin-top: 0px 
+        @media(max-width: 375px)
+            margin-top: 92px    
+    &__left, &__right  
+        @media(max-width: 1600px) 
+            display: none     
+    &__menu
+        display: flex
+        gap: 56px
+        flex-direction: column
+        @media(max-width: 1600px) 
+            gap: 40px
+        @media(max-width: 1200px) 
+            gap: 24px  
+        @media(max-width: 800px) 
+            gap: 16px 
+        @media(max-width: 400px) 
+            gap: 32px    
+        &__about
+            flex-direction: column
+            gap: 40px
+            display: none
+            position: absolute
+            top: 215px
+            left: 638px
+            @media(max-width: 1600px)
+                top: 0
+            @media(max-width: 1400px)    
+                left: 120% 
+            @media(max-width: 1200px) 
+                gap: 24px  
+            @media(max-width: 800px) 
+                gap: 16px    
+            @media(max-width: 768px)  
+                left: 145%     
+            @media(max-width: 595px)   
+                left: 50%  
+            @media(max-width: 500px)  
+                position: static 
+            @media(max-width: 400px) 
+                margin-top: 24px
+                gap: 24px             
+    &__list
+        position: relative
+    &__link
+        color: $secondText
+        font-size: 4rem
+        line-height: 48px
+        font-weight: 700
+        @media(max-width: 1200px) 
+            font-size: 3rem
+        @media(max-width: 800px)  
+            font-size: 2.6rem   
+        @media(max-width: 730px)   
+            font-size: 2.2rem 
+        @media(max-width: 650px)   
+            font-size: 2rem  
+        @media(max-width: 400px) 
+            font-size: 2rem
+            line-height: 28px
+        &__info     
+            @media(max-width: 375px) 
+                font-size: 1.4rem
+                line-height: 20px
+                font-weight: 500            
+    &__copyright
+        margin-top: 564px
+        font-family: $textFont
+        color: $secondText  
+        line-height: 24px
+        font-size: 1.6rem
+        @media(max-width: 1750px) 
+            margin-top: 0
+        @media(max-width: 595px) 
+            margin-top: 40px 
+            width: 45% 
+        @media(max-width: 500px)
+            width: 237px    
+        @media(max-width: 375px)
+            margin-top: 92px
+            width: 145px
+            font-size: 1rem
+            line-height: 14px    
+    &__menu__about 
+        .modal__link
+            @media(max-width: 375px) 
+                font-size: 1.6rem
+                line-height: 20px            
+        
+.modal__active
+    top: 0
+    z-index: 100
+    transition: 1.5s
+
+.modal__menu__about-active
+    display: flex
+.modal__link__about-noactive
+    visibility: hidden
+    pointer-events: none  
+
+.opacity
+    color: $modalMenuNoactive
+
+.minus
+    &::after
+        background: none
+        @media(max-width: 550px) 
+            width: 24px
+            height: 24px
+            background: url(icons/about/minus.svg)  
+            @include background      
+            @include after    
+            top: 12px 
+            right: 60% 
+            @media(max-width: 550px) 
+                right: 45%
+            @media(max-width: 470px) 
+                right: 42%   
+            @media(max-width: 450px) 
+                right: 38% 
+            @media(max-width: 430px) 
+                right: 36%  
+            @media(max-width: 415px) 
+                right: 32%   
+            @media(max-width: 400px)  
+                top: 2px             
+.plus
+    &::after
+        background: none
+        @media(max-width: 550px) 
+            width: 24px
+            height: 24px
+            background: url(icons/about/plus.svg)  
+            @include background       
+            @include after   
+            top: 12px 
+            right: 55% 
+            @media(max-width: 550px) 
+                right: 50%
+            @media(max-width: 500px) 
+                right: 45%   
+            @media(max-width: 470px) 
+                right: 42% 
+            @media(max-width: 450px) 
+                right: 38%   
+            @media(max-width: 430px) 
+                right: 36% 
+            @media(max-width: 415px) 
+                right: 32%  
+            @media(max-width: 400px)  
+                top: 2px                      
+             

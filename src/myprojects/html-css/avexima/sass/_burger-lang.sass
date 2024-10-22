@@ -1,0 +1,89 @@
+//  Смена языков и бургер
+.block-lang
+    position: absolute
+    top: 32px
+    right: 64px
+    display: flex
+    justify-content: flex-end
+    gap: 40px
+    height: 60px
+    align-items: center
+    z-index: 50
+    @media(max-width: 991px)
+        justify-content: space-between
+        width: 50% 
+    @media(max-width: 850px)    
+        right: 25px
+    @media(max-width: 576px) 
+        top: 16px
+        right: 16px 
+    @media(max-width: 375px)      
+        width: 57%     
+.section__lang
+    display: flex
+    @include flexCenter
+    width: 48px
+    height: 48px
+    font-size: 1.6rem
+    text-transform: uppercase
+    font-weight: 700
+    line-height: 20px
+    color: $mainText
+    border-radius: 50%  
+    background: $langBg 
+    cursor: pointer
+    font-weight: 700
+    @media(max-width: 480px)  
+        width: 32px
+        height: 32px   
+        font-size: 1.2rem
+        line-height: 16px 
+    &-border
+        width: 114px
+        height: 60px 
+        padding: 6px
+        display: flex
+        gap: 6px 
+        border: 1px solid $langMainBorder
+        border-radius: 80px
+        @media(max-width: 480px)
+            width: 78px
+            height: 40px
+            gap: 4px
+            padding: 3.4px              
+.section__burger  
+    width: 60px
+    height: 60px
+    @include flexCenter
+    flex-direction: column
+    gap: 6px  
+    cursor: pointer 
+    @media(max-width: 480px)  
+        width: 56px
+        height: 56px  
+    &__line
+        width: 60px
+        height: 2px
+        border-radius: 8px
+        background: $defaultBg
+        @media(max-width: 480px)  
+            width: 43px 
+        &-pc    
+            @media(max-width: 375px) 
+                display: none       
+        &-mobile  
+            display: none
+            @media(max-width: 375px) 
+                display: flex 
+
+
+// Стр сколково          
+.divisions-top-lang
+    &-pc
+        display: flex
+        @media(max-width: 991px)
+            display: none
+    &-mobile
+        display: none
+        @media(max-width: 991px)
+            display: flex

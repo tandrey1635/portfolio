@@ -1,0 +1,105 @@
+.drop-down
+    &__filters__menu 
+        display: none
+        position: absolute
+        z-index: 10
+        top: 56px
+        padding: 16px
+        width: 250px
+        background: $defaultBg
+        border: 1px solid $mainBorder
+        border-radius: 12px 
+        &-preparation
+            left: 700px
+            @media(max-width: 1600px)   
+                top: 130px 
+                left: 53%
+            @media(max-width: 1525px)    
+                left: 50% 
+            @media(max-width: 1440px)  
+                left: 46%    
+            @media(max-width: 1400px)  
+                left: 59% 
+            @media(max-width: 1300px)  
+                left: 56%   
+            @media(max-width: 1200px)  
+                left: 52%   
+            @media(max-width: 1024px)  
+                left: 43%   
+            @media(max-width: 991px)
+                top: 200px  
+                left: 23%  
+            @media(max-width: 768px) 
+                left: 14%       
+            @media(max-width: 676px) 
+                left: 9%  
+            @media(max-width: 576px) 
+                left: 1% 
+            @media(max-width: 480px) 
+                top: 170px  
+            @media(max-width: 425px)
+                top: 230px  
+                left: 20% 
+            @media(max-width: 400px)   
+                left: 19%
+            @media(max-width: 385px)   
+                left: 18%    
+            @media(max-width: 375px) 
+                width: 343px 
+        &-mediacenter__page__news
+            right: -15px
+            top: 65px   
+            @media(max-width: 375px) 
+                top: 45px
+                right: -65px  
+        &-mediacenter__page__gallery     
+            font-weight: 500   
+            @media(max-width: 550px)
+                top: 130px 
+                width: 100%
+    &__filters__block__menu
+        display: flex
+        flex-direction: column 
+        gap: 16px
+        height: 198px
+        overflow-y: scroll    
+    &__filters__list
+        position: relative
+        display: flex
+        align-items: center
+        font-size: 1.4rem    
+        line-height: 20px
+        text-transform: uppercase
+        color: $mainText     
+        &::after    
+            @include after
+            width: 200px
+            height: 1px
+            top: 28px
+            left: 0
+            background: $hrBg
+            @media(max-width: 375px) 
+                width: 95%
+        &-gallery
+            &::after 
+                @media(max-width: 550px) 
+                    width: 98%         
+    &__filters__item-remove
+        width: 250px
+        background: transparent
+        color: $thirdText
+        text-transform: uppercase
+        @media(max-width: 676px)
+            display: none
+        &::after
+            background: none          
+                
+.active-drop-menu
+    display: block                 
+
+
+.filter-active
+    border: 1px solid $mainBorder 
+    &::after
+        top: 8px
+        transform: rotate(180deg)      

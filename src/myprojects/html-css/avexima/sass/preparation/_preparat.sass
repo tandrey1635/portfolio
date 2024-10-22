@@ -1,0 +1,308 @@
+.preparat__page
+    padding: 124px 64px 96px 0
+    min-height: 2343px
+    background: $sectionGradientBg
+    @media(max-width: 1440px) 
+        padding: 124px 25px 96px 0 
+    @media(max-width: 1400px) 
+        padding: 225px 25px 96px 152px   
+    @media(max-width: 1220px)
+        padding: 225px 25px 96px 132px  
+    @media(max-width: 1200px)
+        padding: 225px 56px 96px 56px     
+    @media(max-width: 991px)
+        padding: 225px 25px 96px 25px    
+        min-height: auto 
+    @media(max-width: 480px)
+        padding: 225px 16px 96px 16px 
+    @media(max-width: 375px)
+        padding: 106px 16px 40px 16px             
+    &__container
+        max-width: 1485px
+    &__wrapper
+        display: flex 
+        @media(max-width: 991px)
+            flex-direction: column-reverse
+    &__left
+        width: 768px
+        @media(max-width: 1200px)
+            width: 50%
+        @media(max-width: 991px)    
+            width: 100%    
+    &__right
+        width: 645px 
+        @media(max-width: 1200px)
+            width: 50%
+        @media(max-width: 991px)    
+            width: 100%
+    &__img
+        position: relative
+        z-index: 3
+        width: 768px
+        height: 570px 
+        @media(max-width: 1900px) 
+            width: 100%
+        @media(max-width: 991px)   
+            height: 400px  
+            margin-top: 100px 
+        @media(max-width: 480px)    
+            margin-top: 30px
+        @media(max-width: 400px)   
+            height: 350px    
+        @media(max-width: 375px)    
+            margin-top: 32px
+            height: 225px
+        &::before
+            width: 576px
+            height: 576px
+            border-radius: 50%
+            @include before
+            left: 100px
+            z-index: -1
+            background: $defaultBg
+            @media(max-width: 1900px) 
+                top: 32px
+                width: 480px
+                height: 480px
+            @media(max-width: 1800px)  
+                left: 85px   
+            @media(max-width: 1750px) 
+                left: 75px 
+            @media(max-width: 1700px)  
+                width: 400px
+                height: 400px 
+                top: 75px  
+            @media(max-width: 1500px) 
+                left: 50px      
+            @media(max-width: 1440px)   
+                width: 350px
+                height: 350px
+                top: 100px  
+            @media(max-width: 1400px) 
+                left: 80px  
+            @media(max-width: 991px)
+                width: 500px
+                height: 500px
+                top: -70px
+                left: 250px   
+            @media(max-width: 950px)     
+                left: 200px 
+            @media(max-width: 850px) 
+                left: 180px   
+            @media(max-width: 800px) 
+                left: 150px    
+            @media(max-width: 768px)    
+                left: 130px 
+            @media(max-width: 720px)  
+                width: 450px
+                height: 450px
+                top: -50px    
+            @media(max-width: 676px)     
+                width: 400px
+                height: 400px  
+                top: -25px  
+            @media(max-width: 600px)   
+                width: 350px
+                height: 350px
+                left: 100px
+                top: 10px
+            @media(max-width: 525px)     
+                left: 80px
+            @media(max-width: 500px)   
+                left: 60px  
+            @media(max-width: 480px)    
+                width: 300px
+                height: 300px
+                top: 30px
+                left: 70px
+            @media(max-width: 425px)  
+                left: 50px  
+            @media(max-width: 400px)   
+                width: 250px
+                height: 250px  
+                top: 40px
+                left: 70px 
+            @media(max-width: 375px)   
+                width: 224px
+                height: 224px
+                top: -10px 
+        img
+            object-fit: contain
+    &__btns 
+        margin-top: 124px     
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        @media(max-width: 991px)
+            margin-top: 50px  
+        @media(max-width: 576px)  
+            align-items: center 
+        @media(max-width: 480px) 
+            margin-top: 16px  
+        @media(max-width: 375px)       
+            margin-top: 32px  
+    &__link
+        display: flex
+        padding-left: 28px 
+        position: relative
+        font-size: 1.6rem
+        line-height: 24px
+        font-weight: 500
+        color: $mainText   
+        text-transform: uppercase  
+        @media(max-width: 480px) 
+            font-size: 1.4rem
+        @media(max-width: 375px)
+            font-size: 1.2rem   
+            line-height: 20px
+        &::before
+            @include before
+            width: 28px
+            height: 28px
+            top: -2px
+            left: -8px
+            background: url('icons/preparat/arrow-back.svg')  
+            @include background
+            background-size: 70%           
+    &__header
+        margin-top: 80px
+        width: 576px
+        font-size: 4rem   
+        line-height: 48px
+        text-transform: uppercase
+        color: $mainText 
+        @media(max-width: 991px)
+            display: none
+        &-mobile
+            display: none
+            @media(max-width: 991px) 
+                display: block
+            @media(max-width: 600px)     
+                width: 100% 
+            @media(max-width: 480px) 
+                font-size: 3.2rem   
+                margin-top: 30px
+            @media(max-width: 375px)
+               margin-top: 18px
+               font-size: 2.4rem
+               line-height: 32px   
+    &__block__info
+        margin-top: 48px 
+        @media(max-width: 375px)
+            margin-top: 24px
+    &__info
+        margin-top: 24px
+        width: 576px
+        display: flex 
+        @media(max-width: 768px) 
+            width: 100%  
+        @media(max-width: 375px)
+            margin-top: 16px    
+    &__heading, &__text
+        font-family: $textFont
+        font-size: 2rem
+        line-height: 32px
+        font-weight: 700
+        color: $mainText 
+        @media(max-width: 1140px)
+            font-size: 1.6rem 
+        @media(max-width: 375px)
+            font-size: 1.2rem
+            line-height: 18px       
+    &__text
+        margin-left: 8px
+        font-weight: 400 
+        &_fs16
+            font-size: 1.6rem
+            line-height: 24px
+            margin-top: 36px
+            margin-left: 0
+            @media(max-width: 375px)
+                font-size: 1.2rem
+                line-height: 18px
+                margin-top: 8px
+    &__description
+        width: 710px
+        margin-top: 96px
+        @media(max-width: 991px)
+            margin-top: 56px
+        @media(max-width: 768px)  
+            width: 100% 
+        @media(max-width: 375px)
+            margin-top: 24px
+            font-size: 1.6rem
+            line-height: 20px     
+    &__subheader
+        font-size: 2.4rem   
+        font-weight: 700  
+        line-height: 32px
+        text-transform: uppercase 
+        color: $mainText  
+    &__accordeon__block
+        width: 710px
+        margin-top: 48px  
+        @media(max-width: 768px)  
+            width: 100%
+        @media(max-width: 375px)   
+            margin-top: 24px   
+    &__accordeon__item
+        cursor: pointer
+        &:nth-child(n+2)
+           margin-top: 36px    
+           @media(max-width: 375px)  
+            margin-top: 16px      
+    &__accordeon__header
+        position: relative
+        font-size: 2rem
+        line-height: 26px
+        text-transform: uppercase
+        font-weight: 500  
+        color: $mainText 
+        @media(max-width: 580px) 
+            font-size: 1.8rem
+        @media(max-width: 520px) 
+            font-size: 1.6rem 
+        @media(max-width: 480px) 
+            font-size: 1.4rem       
+        @media(max-width: 425px)  
+            font-size: 1.2rem
+            line-height: 20px
+            font-weight: 700       
+        &::after
+            width: 40px
+            height: 40px
+            @include after
+            top: -6px
+            background: url('icons/career/arrow-down.svg'), $defaultBg
+            @include background
+            background-size: 70%
+            border-radius: 50%
+            margin-left: 16px 
+            @media(max-width: 768px) 
+                width: 32px
+                height: 32px
+    &__accordeon__description
+        visibility: hidden
+        height: 0 
+        transition: .5s
+        overflow-y: hidden
+    &__accordeon__text
+        margin-top: 16px
+        font-family: $textFont
+        font-size: 1.6rem
+        line-height: 24px   
+        color: $mainText   
+        @media(max-width: 375px)  
+            margin-top: 14px
+            font-size: 1.2rem
+            line-height: 18px  
+    .accordeon-active 
+        visibility: visible
+        height: 100px
+        transition: .5s
+        @media(max-width: 425px) 
+            height: 150px
+    .accordeon-active-after
+        &::after
+            transform: rotate(-180deg)       
+    

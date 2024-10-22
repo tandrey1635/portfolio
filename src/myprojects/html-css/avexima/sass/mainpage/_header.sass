@@ -1,0 +1,114 @@
+.header
+    position: relative
+    padding: 32px 62px 96px 62px
+    min-height: 100vh
+    background: url('img/mainpage/header-bg.jpg') no-repeat center/cover
+    @media(max-width: 1850px)
+        max-width: 100%
+        padding: 32px 35px 96px 35px
+    @media(max-width: 390px)    
+        padding: 32px 25px 96px 25px 
+    @media(max-width: 480px) 
+        min-height: 80vh             
+    @media(max-width: 375px)    
+        padding: 16px   
+        min-height: 812px
+    &__logo__scroll-resizer
+        width: 1796px  
+        transition: 2s all  
+    &__logo__scroll-resizer-active
+        width: 156px
+        height: 112px
+        position: fixed
+        top: 48px
+        left: 60px
+        transition: 2s all
+        z-index: 9999
+    &__logo
+        display: grid
+        margin-top: 60px 
+        @media(max-width: 1850px)  
+            flex-direction: column
+            display: flex
+            align-items: flex-end  
+        @media(max-width: 991px)   
+            margin-top: 180px  
+        @media(max-width: 768px)
+            margin-top: 135px 
+        @media(max-width: 500px)  
+            margin-top: 212px  
+        @media(max-width: 480px)  
+            margin-top: 180px 
+    &__logo-active
+        margin-top: 0  
+    &__logo-img
+        transition: 2s all                      
+    &__logo-img-top
+        justify-self: flex-end
+        animation: header__line__animation ease-in-out 1.5s
+        @media(max-width: 1850px)  
+            width: 60%
+            height: 80%  
+        @media(max-width: 375px) 
+            margin-top: 275px
+            width: 204px
+            height: 68px   
+        @keyframes header__line__animation
+            0% 
+                clip-path: circle(0% at 100% 100%)
+                filter: blur(10px)
+                opacity: 0
+            100% 
+                clip-path: circle(200% at 100% 100%)
+                opacity: 1
+                filter: blur(0px)     
+    &__logo-img-bottom
+        animation: header__bottom__animation ease-in-out 1.5s
+        @media(max-width: 375px) 
+            margin-top: 2px 
+            width: 335px
+            height: 71px  
+        @keyframes header__bottom__animation
+            0% 
+                clip-path: circle(0% at 0% 0%)
+                opacity: 0
+                filter: blur(10px)
+            100% 
+                clip-path: circle(200% at 0% 0%)
+                opacity: 1
+                filter: blur(0px)      
+    &__photo
+        object-fit: fill                                   
+    &__info
+        display: grid
+        animation: header__bottom__animation ease-in-out 1.5s
+    &__text 
+        margin-top: 32px
+        justify-self: flex-end
+        font-size: 3.2rem 
+        line-height: 40px 
+        color: $secondText
+        @media(max-width: 915px) 
+            font-size: 3rem
+        @media(max-width: 870px) 
+            font-size: 2.6rem   
+        @media(max-width: 768px) 
+            font-size: 2.2rem   
+        @media(max-width: 676px)   
+            font-size: 1.8rem  
+        @media(max-width: 576px)   
+            font-size: 1.6rem  
+        @media(max-width: 495px)   
+            font-size: 1.4rem  
+        @media(max-width: 440px)              
+            font-size: 1.2rem 
+        @media(max-width: 375px) 
+            margin-top: 12px 
+            font-size: 1.2rem
+            line-height: 20px  
+    &__text-active 
+        width: 156px
+        margin-top: 8px
+        font-size: 1.1rem
+        line-height: 16px
+        color: $secondText           

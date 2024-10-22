@@ -1,0 +1,69 @@
+.left__menu-wrapper
+    position: relative
+    z-index: 10
+    display: flex
+    @media(max-width: 1400px) 
+        display: none
+.left__menu
+    padding: 48px 69px 122px 64px
+    width: 100%
+    position: sticky
+    top: 0
+    align-self: flex-start
+    height: 1080px
+    display: flex
+    flex-direction: column
+    gap: 72px
+    &-mainscreen
+        margin-top: 232px
+    .active
+        font-weight: 500
+        color: $mainText   
+
+
+
+
+.factory
+    &__logo__text
+        color: $mainText
+    &__menu
+        display: grid
+        gap: 24px   
+    &__list, &__link
+        font-size: 2rem    
+        line-height: 32px
+        text-transform: uppercase  
+        color: $textNoactiveLink
+    .active
+        color: $mainText 
+    &__list &__link:hover
+        color: $mainText  
+// первый экран белый цвет меню                  
+.about__company, .manufacture, .irbitskiy, .avexima-sibir, .immafarma, .esipovo, .career__page, .sciencific__page, .mediacenter__page
+    &-active-color  
+        font-weight: 500
+        color: $secondText
+    &__list &__link:hover
+        color: $secondText
+
+// меню главный экран
+.about__company__project, .manufacture__project, .license, .irbitskiy__project, .avexima-sibir__project, .immafarma__project, .esipovo__project, .career__page__project, .sciencific__page__project, .contacts__page__project, .preparation__page__project, .mediacenter__page__project
+    &__menu
+        width: 214px  
+
+.manufacture__project
+    &__menu
+        width: 100%   
+
+
+
+// Левое меню стр о компании без этого ездеет   
+.mainscreen__project__aside, .esipovo__project__aside, .career__page__project__aside, .sciencific__page__project__aside, .mediacenter__page__project__aside
+    position: static
+            
+.our__values__project__aside         
+    position: relative
+    z-index: 3   
+
+        
+                

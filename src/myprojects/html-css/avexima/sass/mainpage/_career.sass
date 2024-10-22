@@ -1,0 +1,180 @@
+.career
+    display: flex
+    min-height: 1080px
+    @media(max-width: 991px)
+       min-height: 700px 
+    @media(max-width: 375px) 
+        min-height: auto  
+    &__wrapper
+        width: 100%
+        display: flex
+        @media(max-width: 991px)
+            flex-direction: column
+    &__item
+        display: flex
+        flex-direction: column
+        padding: 320px 45px 320px 66px
+        width: 33.33%
+        @media(max-width: 1235px)
+            padding: 320px 30px
+        @media(max-width: 1050px)   
+            padding: 320px 20px
+        @media(max-width: 991px)
+            padding: 100px 45px
+            width: 100%  
+            align-items: center 
+            height: 250px
+        @media(max-width: 676px)  
+            padding: 150px 45px 
+        @media(max-width: 576px)  
+            padding: 100px 45px 
+        @media(max-width: 480px) 
+            padding: 150px 35px  
+        @media(max-width: 450px) 
+            padding: 150px 15px  
+        @media(max-width: 375px) 
+            padding: 85px 16px
+            height: 210px              
+        &-one
+            background: url('img/mainpage/career-bg-1.jpg')
+            @include background
+        &-two
+            background: url('img/mainpage/career-bg-2.jpg')
+            @include background  
+        &-three
+            background: url('img/mainpage/career-bg-3.jpg')
+            @include background
+            @media(max-width: 991px) 
+                background-position-y: -400px
+            @media(max-width: 768px) 
+                background-position-y: -300px  
+            @media(max-width: 676px) 
+                background-position-y: -250px 
+            @media(max-width: 576px) 
+                background-position-y: -220px  
+            @media(max-width: 480px) 
+                background-position-y: -180px  
+            @media(max-width: 400px) 
+                background-position-y: -150px 
+            @media(max-width: 375px) 
+                background-position-y: -110px                
+    &__header
+        min-height: 96px
+        font-size: 3.9rem
+        line-height: 48px
+        font-weight: 700
+        color: $mainText 
+        text-transform: uppercase
+        @media(max-width: 1900px)
+            font-size: 3.8rem
+        @media(max-width: 1860px) 
+            font-size: 3.7rem
+        @media(max-width: 1830px) 
+            font-size: 3.6rem    
+        @media(max-width: 1800px)
+            font-size: 3.5rem  
+        @media(max-width: 1750px)
+            font-size: 3.4rem      
+        @media(max-width: 1715px)
+            font-size: 3.3rem 
+        @media(max-width: 1680px)
+            font-size: 3.2rem  
+        @media(max-width: 1640px)
+            font-size: 3.1rem  
+        @media(max-width: 1600px)
+            font-size: 3rem 
+        @media(max-width: 1560px)
+            font-size: 2.9rem    
+        @media(max-width: 1530px)
+            font-size: 2.8rem  
+        @media(max-width: 1490px)
+            font-size: 2.75rem
+        @media(max-width: 1470px)
+            font-size: 2.65rem  
+        @media(max-width: 1445px)
+            font-size: 2.6rem  
+        @media(max-width: 1430px)
+            font-size: 2.55rem
+        @media(max-width: 1420px)
+            font-size: 2.5rem      
+        @media(max-width: 1310px)
+            line-height: 32px
+        @media(max-width: 1290px)
+            font-size: 2.4rem 
+        @media(max-width: 1250px)
+            font-size: 2.3rem          
+        @media(max-width: 991px) 
+            min-height: auto
+        @media(max-width: 450px) 
+            font-size: 2.4rem    
+        @media(max-width: 400px) 
+            font-size: 2.2rem  
+        @media(max-width: 375px) 
+            text-align: center
+            width: 300px
+            font-size: 2rem
+            line-height: 28px  
+    &__block__description
+        @media(max-width: 991px) 
+            display: flex
+            flex-direction: column
+            visibility: hidden
+            text-align: center
+            width: 60%
+            align-items: center
+        @media(max-width: 400px)  
+            width: 80% 
+        @media(max-width: 375px)  
+            width: 318px                                                                
+    &__description  
+        margin-top: 24px 
+        min-height: 400px
+        @media(max-width: 1400px)
+            min-height: 300px
+        @media(max-width: 991px) 
+            min-height: auto   
+    &__text
+        font-family: $textFont
+        font-size: 2rem
+        line-height: 32px   
+        color: $mainText 
+        @media(max-width: 1750px) 
+            font-size: 1.8rem
+        @media(max-width: 1650px)
+            font-size: 1.79rem
+        @media(max-width: 1610px)
+            font-size: 1.75rem  
+        @media(max-width: 1580px)
+            font-size: 1.7rem  
+        @media(max-width: 1545px)
+            font-size: 1.6rem           
+        @media(max-width: 1515px)
+            line-height: 28px 
+        @media(max-width: 1460px)
+            line-height: 20px  
+        @media(max-width: 375px)    
+            margin-top: 12px
+            font-size: 1.4rem
+            line-height: 20px      
+    &__btn       
+        margin-top: 40px 
+        @media(max-width: 1200px)   
+            margin-top: 24px
+    &__item:hover 
+        @media(max-width: 991px)  
+            padding: 55px 16px   
+            height: 500px
+            transition: .5s 
+        @media(max-width: 991px)  
+            height: 350px   
+        @media(max-width: 480px)    
+            height: 400px  
+        @media(max-width: 375px)     
+            height: 350px 
+    &__item:hover &__block__description
+        @media(max-width: 991px)  
+            visibility: visible
+            transition: .5s
+              
+
+                 

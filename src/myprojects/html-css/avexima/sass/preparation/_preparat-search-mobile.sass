@@ -1,0 +1,63 @@
+.modal__search__mobile
+    width: 100%
+    position: absolute
+    top: -9999px
+    transition: 1.5s all
+    padding: 22px 24px 36px 16px
+    min-height: 2000px
+    background: $sectionGradientBg
+    z-index: 100
+    &__block__search
+        position: relative
+        @include flexCenter
+        justify-content: space-between
+        &::after
+            @include after
+            width: 32px
+            height: 32px
+            background: url('icons/preparation/search.svg'), $defaultBg
+            @include background
+            background-size: 50%
+            top: 8px
+            right: 100px
+            border-radius: 50%
+    &__input__search
+        padding: 10px
+        width: 261px  
+        height: 48px    
+        border: 1px solid $mainBorder
+        border-radius: 65px
+        color: $mainText
+        font-size: 1.2rem
+        text-transform: uppercase
+        font-weight: 500
+        line-height: 20px
+        background: transparent
+    &__text 
+        font-family: $textFont
+        font-size: 1.2rem
+        line-height: 16px 
+        color: $thirdText
+    &__wrapper
+        display: flex
+        flex-direction: column
+        margin-top: 38px
+        gap: 32px
+    &__item
+        display: flex
+        align-items: center
+        gap: 20px    
+    &__img
+        width: 100px
+        height: 50px
+    &__header
+        width: 162px
+        font-size: 1.4rem
+        line-height: 20px
+        font-weight: 500 
+        color: $mainText           
+
+.modal-search-mobile-active   
+    top: 0
+    transition: 1.5s
+    

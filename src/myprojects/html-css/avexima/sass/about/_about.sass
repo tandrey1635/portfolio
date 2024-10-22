@@ -1,0 +1,58 @@
+.about
+    &__container
+        max-width: 1336px
+        @media(max-width: 1400px) 
+            max-width: 100%   
+    &__header
+        position: relative
+        font-size: 8rem
+        font-weight: 500
+        line-height: 96px
+        text-transform: uppercase
+        color: $mainText
+        @media(max-width: 1600px) 
+            font-size: 7rem
+        @media(max-width: 1024px)
+            font-size: 6rem 
+        @media(max-width: 676px)    
+            font-size: 5rem 
+        @media(max-width: 576px)  
+            font-size: 4.6rem 
+        @media(max-width: 480px)  
+            font-size: 4.4rem    
+        @media(max-width: 450px)  
+            font-size: 4rem   
+        @media(max-width: 375px) 
+            font-size: 2.4rem
+            font-weight: 700    
+            line-height: 32px       
+        &::before
+            @include before
+            top: -60px
+            font-size: 3.2rem
+            font-weight: 500
+            text-transform: uppercase
+            color: $mainText
+            width: 55px
+            height: 40px 
+            @media(max-width: 400px) 
+                font-size: 2.8rem 
+                top: -40px 
+            @media(max-width: 375px)
+                top: -15px
+                width: 28px
+                height: 20px      
+                font-size: 1.6rem
+                line-height: 20px
+
+
+
+@import '_mainscreen' 
+@import '_power-mainscreen'     
+@import '_power'     
+@import '_about-company' 
+@import '_our-values' 
+@import '_history' 
+@import '_management' 
+@import '_cooperation' 
+@import '_roll-menu'         

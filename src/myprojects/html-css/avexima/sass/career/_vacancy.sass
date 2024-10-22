@@ -1,0 +1,63 @@
+.vacancy
+    min-height: 1310px
+    padding: 0 74px 120px 152px
+    background: $sectionGradientBgThird
+    @media(max-width: 1700px) 
+        padding: 0 74px 120px 100px
+    @media(max-width: 1400px) 
+        padding: 0 50px 120px 50px
+    @media(max-width: 768px) 
+        min-height: auto  
+        padding: 0 25px 120px 25px  
+    @media(max-width: 375px)  
+        padding: 0 16px 80px 16px
+    &__container
+        max-width: 1336px
+    &__top
+        display: flex
+        gap: 198px 
+        @media(max-width: 991px) 
+            flex-direction: column
+            gap: 50px
+        @media(max-width: 576px) 
+            gap: 30px  
+        @media(max-width: 375px) 
+            gap: 16px  
+    &__wrapper   
+        margin-top: 32px 
+        display: grid
+        grid-template: repeat(2, 380px) / repeat(2, 650px)
+        gap: 32px
+        @media(max-width: 1900px)  
+            grid-template: repeat(2, 380px) / repeat(2, 1fr)
+        @media(max-width: 991px) 
+            display: flex
+            flex-direction: column
+            align-items: center  
+    &__pagination   
+        margin-top: 32px
+        @include flexCenter   
+        gap: 32px  
+        @media(max-width: 991px) 
+            justify-content: space-between
+        @media(max-width: 768px) 
+            justify-content: space-around  
+        @media(max-width: 676px) 
+            justify-content: space-between
+        @media(max-width: 576px)   
+            gap: 0 
+        @media(max-width: 460px) 
+            flex-direction: column
+            gap: 20px   
+        @media(max-width: 375px)     
+            flex-direction: row          
+        &__text
+            font-family: $textFont
+            font-size: 1.6rem
+            line-height: 24px
+            color: $paginationText
+            @media(max-width: 375px) 
+                font-size: 1.2rem
+                line-height: 16px
+    &__pagination__btn              
+        position: relative

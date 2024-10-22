@@ -1,0 +1,714 @@
+.manufacture
+    height: 1080px
+    background: $sectionLinearGradientOpacity07, url('img/manufacture/manufacture-bg.jpg')
+    @include background()
+    display: flex
+    @media(max-width: 1200px)
+        height: 900px
+    @media(max-width: 676px) 
+        height: 800px   
+    @media(max-width: 405px) 
+        height: 700px   
+    @media(max-width: 375px) 
+        height: 560px     
+    &__left
+        @media(max-width: 1400px) 
+            display: none
+    &__center
+        padding: 548px 422px 480px 152px
+        @media(max-width: 1200px)   
+            padding: 398px 50px
+        @media(max-width: 850px)  
+            padding: 398px 25px  
+        @media(max-width: 440px) 
+            padding: 398px 16px
+        @media(max-width: 405px) 
+            padding: 350px 16px 
+        @media(max-width: 400px) 
+            padding: 262px 16px  
+            width: 100%                            
+    &__header
+        font-size: 6.4rem
+        color: $secondText
+        font-weight: 700
+        line-height: 72px
+        text-transform: uppercase
+        @media(max-width: 1765px)   
+            font-size: 6rem
+        @media(max-width: 1650px)   
+            font-size: 5.2rem 
+        @media(max-width: 1500px)   
+            font-size: 4.6rem 
+            line-height: 52px
+        @media(max-width: 991px)  
+            font-size: 4.4rem 
+        @media(max-width: 920px)   
+            font-size: 4rem   
+        @media(max-width: 800px)  
+            font-size: 3.8rem   
+        @media(max-width: 768px)  
+            font-size: 3.6rem  
+            line-height: 48px  
+        @media(max-width: 720px) 
+            font-size: 3.2rem  
+        @media(max-width: 650px)  
+            font-size: 3rem 
+        @media(max-width: 610px)  
+            font-size: 2.8rem 
+        @media(max-width: 565px)  
+            font-size: 2.6rem   
+        @media(max-width: 530px)  
+            font-size: 2.4rem     
+        @media(max-width: 490px)  
+            font-size: 2.2rem  
+        @media(max-width: 460px) 
+            font-size: 2rem    
+        @media(max-width: 405px)  
+            font-size: 1.8rem 
+            line-height: 32px  
+        @media(max-width: 400px) 
+            font-size: 2.8rem
+            line-height: 32px 
+            font-weight: 700 
+            text-align: center
+
+
+.manufacture__project
+    position: relative
+    height: 1080px
+    padding: 100px 110px 136px 0
+    background: $sectionGradientBg
+    @media(max-width: 1620px)
+        padding: 100px 50px
+        height: 900px
+    @media(max-width: 1400px)  
+        padding: 50px 
+        height: 800px
+    @media(max-width: 991px)  
+        padding: 200px 50px 50px 50px
+        height: 900px
+    @media(max-width: 920px)   
+        height: 950px    
+    @media(max-width: 750px) 
+        padding: 200px 25px 50px 25px   
+    @media(max-width: 650px) 
+        height: 980px  
+    @media(max-width: 450px) 
+        height: 850px  
+        padding: 128px 16px
+    @media(max-width: 375px) 
+        padding: 96px 16px
+        height: 800px    
+    // 2 экран    
+    &__general    
+        min-height: 1910px
+        padding: 236px 123px 96px 152px
+        background: $sectionGradientBg
+        @media(max-width: 1800px)
+            min-height: 2300px
+        @media(max-width: 1670px)
+            padding: 236px 50px 96px 152px 
+        @media(max-width: 1500px)
+            min-height: 2100px     
+        @media(max-width: 1200px) 
+            padding: 236px 50px 
+        @media(max-width: 850px) 
+            padding: 200px 25px 
+        @media(max-width: 650px)
+            min-height: 2300px 
+        @media(max-width: 530px)    
+            min-height: 2800px     
+        @media(max-width: 410px)  
+            padding: 200px 16px 
+        @media(max-width: 375px)    
+            padding: 148px 16px 56px 16px  
+            min-height: 1432px      
+    &__container
+       max-width: 1336px  
+    &__header
+        position: relative
+        font-size: 4rem
+        line-height: 48px  
+        font-weight: 700
+        color: $mainText
+        text-transform: uppercase 
+        @media(max-width: 720px)  
+            font-size: 3.2rem
+        @media (max-width: 610px)
+            font-size: 2.8rem   
+        @media(max-width: 565px)   
+            font-size: 2.6rem  
+        @media(max-width: 530px)   
+            font-size: 2.4rem  
+        @media(max-width: 490px)   
+            font-size: 2.2rem 
+        @media(max-width: 460px) 
+            font-size: 2rem  
+        @media(max-width: 375px) 
+            font-size: 2.4rem
+            line-height: 32px                 
+    &__text
+        margin-top: 64px
+        font-size: 2.8rem
+        line-height: 38px
+        color: $mainText
+        @media(max-width: 1700px)
+            font-size: 3.2rem
+            line-height: 32px
+        @media(max-width: 1500px)  
+            font-size: 2.6rem
+            line-height: 28px
+        @media(max-width: 1440px)  
+            font-size: 2.4rem 
+        @media(max-width: 850px)  
+            font-size: 2rem   
+        @media(max-width: 510px)    
+            font-size: 1.8rem    
+            margin-top: 30px
+        @media(max-width: 460px)  
+            font-size: 1.6rem 
+        @media(max-width: 375px) 
+            font-size: 1.2rem   
+            line-height: 20px
+            margin-top: 40px
+    &__subheader
+        margin-top: 56px
+        font-size: 28px
+        font-weight: 700
+        line-height: 38px     
+        color: $mainText
+        @media(max-width: 565px) 
+            font-size: 2.2rem
+            line-height: 26px
+        @media(max-width: 425px) 
+            font-size: 2rem
+            line-height: 24px  
+        @media(max-width: 375px) 
+            margin-top: 24px
+            font-size: 1.2rem   
+            line-height: 20px      
+    &__tabs
+        margin-top: 40px
+        display: flex
+        flex-wrap: wrap 
+        gap: 24px
+    &__tabs__items
+        padding: 12px 28px
+        background: $defaultBg
+        font-size: 2.4rem
+        font-weight: 500
+        line-height: 32px  
+        text-transform: uppercase
+        color: $mainText  
+        border-radius: 34px
+        @media(max-width: 800px) 
+            font-size: 2rem
+        @media(max-width: 660px)  
+            font-size: 1.8rem 
+        @media(max-width: 450px) 
+            font-size: 1.6rem 
+            padding: 12px 
+        @media(max-width: 375px) 
+            font-size: 1.2rem
+            line-height: 20px 
+            padding: 6px 20px                    
+    &__block__info
+        display: flex
+        align-items: center
+        gap: 24px
+        margin-top: 56px 
+        @media(max-width: 375px) 
+            margin-top: 32px
+            gap: 16px
+    &__company__info
+        font-size: 8rem
+        font-weight: 700
+        line-height: 96px
+        text-transform: uppercase
+        color: $mainText  
+        @media(max-width: 565px) 
+            font-size: 6rem
+        @media(max-width: 425px) 
+            font-size: 4rem   
+        @media(max-width: 375px) 
+            line-height: 32px      
+        &-right-text
+            width: 180px
+            font-size: 2.4rem
+            font-weight: 500
+            line-height: 28px  
+            @media(max-width: 565px) 
+                width: 40%
+                font-size: 2rem 
+            @media(max-width: 425px) 
+                font-size: 1.6rem   
+            @media(max-width: 375px) 
+                width: 88px
+                font-size: 1rem
+                line-height: 14px          
+    &__wrapper
+        margin-top: 80px
+        position: relative
+        display: flex
+        justify-content: space-between
+        @media(max-width: 530px)   
+            flex-direction: column
+            align-items: center   
+            gap: 50px      
+        @media(max-width: 375px) 
+            margin-top: 40px  
+            display: grid
+            grid-template: 156px/ repeat(3, 156px)
+            place-content: flex-start
+            overflow-x: hidden
+            gap: 16px
+        &::before  
+            width: 770.14px
+            height: 475.85px
+            @include before 
+            top: -120px
+            left: 237px
+            background: url('icons/manufacture/manufacture-general-line.svg')
+            @include background  
+            transform: rotate(155deg)
+            z-index: 1  
+            @media(max-width: 1700px)
+                width: 750px  
+            @media(max-width: 1600px)
+                width: 550px  
+            @media(max-width: 1400px)
+                width: 750px  
+            @media(max-width: 1250px)
+                width: 600px    
+            @media(max-width: 1200px)
+                width: 650px  
+            @media(max-width: 1050px)
+                width: 550px 
+            @media(max-width: 991px)  
+                display: none                           
+    &__block
+        position: relative
+        padding: 80px 45px
+        @include flexCenter
+        flex-direction: column
+        text-align: center
+        width: 272px
+        height: 272px
+        background: $defaultBg
+        @include background
+        border-radius: 50%
+        z-index: 5
+        @media(max-width: 1790px)
+            width: 255px
+            height: 255px
+        @media(max-width: 1500px)    
+            width: 200px
+            height: 200px  
+        @media(max-width: 676px) 
+            width: 180px
+            height: 180px   
+        @media(max-width: 600px)  
+            width: 150px
+            height: 150px 
+        @media(max-width: 580px)  
+            padding: 65px 45px    
+        @media(max-width: 530px)   
+            width: 200px
+            height: 200px   
+        @media(max-width: 450px)      
+            width: 180px
+            height: 180px
+        @media(max-width: 375px) 
+            width: 156px
+            height: 156px
+            padding: 40px 0     
+    &__heading
+        font-size: 4.8rem
+        font-weight: 700    
+        line-height: 56px
+        text-transform: uppercase
+        color: $mainText
+        @media(max-width: 1500px)  
+            font-size: 3.6rem
+            line-height: 40px
+        @media(max-width: 600px)
+            font-size: 2.6rem   
+            line-height: 30px 
+        @media(max-width: 375px) 
+            font-size: 2.8rem   
+            line-height: 32px 
+    &__info
+        font-size: 1.6rem
+        line-height: 20px  
+        color: $mainText 
+        @media(max-width: 1500px) 
+            font-size: 1.4rem
+        @media(max-width: 600px)
+            font-size: 1.2rem  
+        @media(max-width: 375px) 
+            font-size: 1rem
+            font-weight: 500   
+            line-height: 14px   
+    // 3 экран       
+    &-blue-bg-container
+        max-width: 1510px
+        @media(max-width: 1620px)
+            max-width: 100% 
+    &-red-bg-container
+        max-width: 1365px
+        @media(max-width: 1620px)
+            max-width: 100%                
+    &-blue-bg-wrapper, &-red-bg-wrapper
+        display: flex
+        align-items: center
+        gap: 50px
+        @media(max-width: 1900px) 
+            gap: 20px    
+        @media(max-width: 991px) 
+            flex-direction: column-reverse  
+    &-blue-bg-left
+        width: 765px
+        height: 765px
+        @media(max-width: 1900px) 
+            width: 50% 
+        @media(max-width: 991px) 
+            width: 100%  
+        @media(max-width: 450px)
+            width: 350px
+            height: 350px         
+        &-avexima-sibir
+            position: relative
+            width: 740px
+            height: 680px
+            background: url('img/manufacture/avexima-sibir-bg.svg') 
+            @include background
+            @media(max-width: 1860px) 
+                background-size: 80% 
+            @media(max-width: 991px) 
+                height: 400px 
+                background-size: 60%  
+            @media(max-width: 750px)
+                width: 100%
+            @media(max-width: 480px)  
+                background-size: 80%
+            @media(max-width: 450px) 
+                background-size: 100%           
+            &::before
+                @include before 
+                content: 'Кемеровская обл., г. Анжеро-Судженск' 
+                left: 10%
+                top: 20%
+                @include flexCenter
+                width: 366px
+                height: 44px
+                @include manufactureBeforeBtn  
+                @media(max-width: 1860px)
+                    top: 30%
+                    left: 15% 
+                @media(max-width: 1670px) 
+                    left: 12%   
+                @media(max-width: 1140px) 
+                    left: 10%   
+                @media(max-width: 991px) 
+                    top: 15%    
+                    left: 15%
+                @media(max-width: 676px)  
+                    top: 17%  
+                @media(max-width: 576px) 
+                    top: 20%    
+                @media(max-width: 480px) 
+                    left: 5%   
+                @media(max-width: 450px) 
+                    font-size: 1rem
+                    width: 265px
+                    height: 14px
+                    padding: 5px 16px 
+                    top: 25%      
+        &-immafarma
+            position: relative
+            background: url('img/manufacture/immafarma-bg.svg')
+            @include background
+            @media(max-width: 1860px) 
+                background-size: 80% 
+            @media(max-width: 991px) 
+                height: 400px 
+                background-size: 45%  
+            @media(max-width: 480px)  
+                background-size: 80%  
+            @media(max-width: 450px) 
+                background-size: cover           
+            &::before
+                @include before 
+                content: 'г. Москва' 
+                left: 26%
+                top: 26%
+                @include flexCenter
+                width: 124px
+                height: 44px
+                @include manufactureBeforeBtn 
+                @media(max-width: 1860px)
+                    top: 31% 
+                    left: 30%    
+                @media(max-width: 1765px)  
+                    top: 32%   
+                    left: 29%  
+                @media(max-width: 1670px)  
+                    top: 34% 
+                    left: 25% 
+                @media(max-width: 1400px) 
+                    top: 32%
+                    left: 28%
+                @media(max-width: 1250px)   
+                    top: 33% 
+                @media(max-width: 1140px)   
+                    top: 34% 
+                    left: 25%   
+                @media(max-width: 1070px)   
+                    top: 35%  
+                    left: 23% 
+                @media(max-width: 991px)    
+                    top: 20%
+                    left: 35%    
+                @media(max-width: 850px)  
+                    top: 22%   
+                @media(max-width: 676px) 
+                    top: 24%   
+                @media(max-width: 576px)  
+                    top: 27%   
+                @media(max-width: 480px)  
+                    top: 22%
+                    left: 22%
+                @media(max-width: 450px) 
+                    font-size: 1rem
+                    width: 95px
+                    height: 14px
+                    padding: 5px 16px 
+                    top: 24%   
+                    left: 18%                               
+    &-blue-bg-right 
+        width: 745px
+        @media(max-width: 1900px) 
+            width: 50%  
+        @media(max-width: 991px) 
+            width: 100%    
+    &-blue-bg-header, &-red-bg-header
+        position: relative
+        font-size: 4rem
+        font-weight: 700
+        line-height: 48px
+        text-transform: uppercase
+        color: $mainText
+        @media(max-width: 1860px) 
+            font-size: 3rem
+        @media(max-width: 1565px)    
+            font-size: 2.6rem
+        @media(max-width: 1525px)    
+            font-size: 2.4rem  
+        @media(max-width: 1465px) 
+            font-size: 2.2rem     
+        @media(max-width: 1415px) 
+            font-size: 2rem      
+        @media(max-width: 991px) 
+            font-size: 3rem  
+            text-align: center  
+        @media(max-width: 768px) 
+            font-size: 2.4rem 
+        @media(max-width: 750px) 
+            font-size: 2.2rem 
+        @media(max-width: 650px) 
+            font-size: 2rem
+            line-height: 28px
+        @media(max-width: 480px) 
+            text-align: left  
+        @media(max-width: 450px) 
+            font-size: 2rem
+            font-weight: 700 
+            line-height: 28px                       
+        &-two, &-four
+            &::before
+                @include before   
+                top: -32px
+                font-size: 3.2rem
+                font-weight: 500
+                line-height: 40px
+                text-transform: uppercase
+                color: $fifthText 
+                @media(max-width: 768px)  
+                    font-size: 2rem                   
+    &-red-bg-left   
+        width: 765px
+        height: 765px
+        @include flexCenter
+        align-items: flex-start
+        flex-direction: column
+        @media(max-width: 991px) 
+            order: 1 
+            justify-content: center
+            height: 100%
+        @media(max-width: 768px) 
+            width: 85%  
+        @media(max-width: 450px) 
+            width: 100%        
+    &-red-bg-right
+        width: 730px
+        height: 672px 
+        @media(max-width: 991px)
+            width: 100% 
+            order: 0
+            height: 400px
+        @media(max-width: 450px)
+            width: 350px
+            height: 350px    
+        &-irbitskiy
+            position: relative
+            background: url('img/manufacture/irbitskiy-bg.svg')  
+            @include background
+            @media(max-width: 1860px) 
+                background-size: 80%
+            @media(max-width: 991px) 
+                background-size: 50% 
+            @media(max-width: 480px)  
+                background-size: 80%   
+            @media(max-width: 450px) 
+                background-size: cover            
+            &::before
+                @include before 
+                content: 'Свердловская область, г. ирбит' 
+                left: 48%
+                top: 34%
+                @include flexCenter
+                width: 305px
+                height: 44px
+                @include manufactureBeforeBtn 
+                @media(max-width: 1860px) 
+                    top: 36%
+                    left: 30%
+                @media(max-width: 1765px)
+                    top: 38%  
+                @media(max-width: 991px)  
+                    top: 30%  
+                    left: 35%  
+                @media(max-width: 676px) 
+                    top: 31%   
+                    left: 30%
+                @media(max-width: 576px)  
+                    top: 32% 
+                @media(max-width: 480px) 
+                    left: 25%   
+                @media(max-width: 450px) 
+                    font-size: 1rem
+                    width: 264px
+                    height: 14px
+                    padding: 5px 16px 
+                    top: 32%   
+                    left: 14%         
+        &-esipovo
+            position: relative
+            background: url('img/manufacture/esipovo-bg.svg') 
+            @include background
+            @media(max-width: 1860px) 
+                background-size: 80%
+            @media(max-width: 991px) 
+                background-size: 50%  
+            @media(max-width: 480px)  
+                background-size: 80%  
+            @media(max-width: 450px) 
+                background-size: cover              
+            &::before
+                @include before
+                content: 'Московская область, д. есипово' 
+                left: 16%
+                top: 14%
+                @include flexCenter
+                width: 318px
+                height: 44px
+                @include manufactureBeforeBtn
+                @media(max-width: 1860px) 
+                    top: 22%
+                @media(max-width: 1765px)
+                    top: 24%   
+                @media(max-width: 1670px) 
+                    top: 25%   
+                @media(max-width: 1550px) 
+                    top: 26% 
+                @media(max-width: 1450px) 
+                    top: 27%       
+                @media(max-width: 1400px)   
+                    top: 23%    
+                @media(max-width: 1280px)  
+                    top: 25% 
+                @media(max-width: 1140px)  
+                    top: 28%  
+                @media(max-width: 991px)   
+                    top: 8% 
+                    left: 25%       
+                @media(max-width: 930px)    
+                    top: 10% 
+                @media(max-width: 850px)    
+                    top: 12%
+                @media(max-width: 800px)    
+                    top: 15% 
+                @media(max-width: 676px) 
+                    top: 17%  
+                @media(max-width: 576px)  
+                    top: 20%      
+                @media(max-width: 480px)    
+                    top: 15%
+                    left: 10%   
+                @media(max-width: 450px) 
+                    font-size: 1rem
+                    width: 257px
+                    height: 14px
+                    padding: 5px 16px 
+                    top: 13%   
+                    left: 7%                   
+    &-red-bg-subheader
+        font-family: $textFont
+        font-size: 1.6rem
+        line-height: 24px
+        text-transform: uppercase
+        font-weight: 700   
+        color: $thirdText
+        @media(max-width: 991px)    
+            margin: 0 auto  
+        @media(max-width: 480px) 
+            margin: 0  
+        @media(max-width: 450px) 
+            font-size: 1rem       
+            line-height: 12px     
+    &-red-bg-header
+        width: 700px
+        @media(max-width: 1860px) 
+            width: 100%
+        @media(max-width: 1400px) 
+            width: 85%   
+        @media(max-width: 1340px) 
+            width: 80%  
+        @media(max-width: 1260px)  
+            width: 85% 
+        @media(max-width: 1200px)  
+            width: 100%     
+        @media(max-width: 1024px)  
+            width: 110%  
+        @media(max-width: 920px)   
+            width: 100%              
+        &-two, &-four
+            &::before
+                @include before   
+                top: -32px
+                font-size: 3.2rem
+                font-weight: 500
+                line-height: 40px
+                font-weight: 500
+                text-transform: uppercase
+                color: $thirdText
+                @media(max-width: 768px)  
+                    font-size: 2rem  
+                @media(max-width: 450px)
+                    font-size: 1.6rem
+                    line-height: 16px        
+
+
+
+
+                 

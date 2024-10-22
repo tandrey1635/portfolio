@@ -1,0 +1,352 @@
+.preparation__page
+    padding: 184px 64px 64px 152px
+    min-height: 1196px
+    background: $sectionGradientBg
+    @media(max-width: 1700px) 
+        padding: 184px 64px 64px 64px
+    @media(max-width: 1400px)  
+        padding: 250px 64px 64px 64px  
+    @media(max-width: 1200px)  
+        padding: 250px 56px 64px 56px
+    @media(max-width: 991px) 
+        padding: 250px 25px 64px 25px 
+    @media(max-width: 480px)  
+        padding: 250px 16px 64px 16px
+    @media(max-width: 375px)  
+        padding: 128px 16px 42px 16px             
+    &__container
+        max-width: 1336px
+    &__block__header 
+        position: relative
+        display: flex   
+        justify-content: space-between
+        @media(max-width: 375px) 
+            display: none
+        &-mobile 
+            display: none 
+            @media(max-width: 375px) 
+                display: flex
+        &-filter, &-search  
+            position: relative  
+            width: 24px
+            height: 24px
+        &-filter      
+            margin-left: 80px
+            &::before  
+                width: 24px
+                height: 24px
+                @include before
+                background: url('icons/preparation/filter.svg')
+                @include background
+                top: 4px
+                left: 0px
+        &-search        
+            &::after 
+                width: 24px
+                height: 24px
+                @include after 
+                background: url('icons/preparation/search.svg')
+                @include background 
+                top: 3px
+                right: 0 
+    &__header
+        font-weight: 700  
+        font-size: 4rem 
+        line-height: 48px
+        text-transform: uppercase
+        color: $mainText
+        @media(max-width: 425px)
+            font-size: 3.2rem
+        @media(max-width: 375px) 
+            font-size: 2.4rem
+            line-height: 32px   
+    &__block__filters
+        position: relative
+        display: flex
+        align-items: center
+        gap: 24px
+        margin-top: 40px
+        @media(max-width: 1600px) 
+            justify-content: space-between
+        @media(max-width: 991px)  
+            flex-direction: column  
+        @media(max-width: 375px)
+            display: none      
+    &__block__search 
+        width: 190px
+        position: relative
+        @media(max-width: 1600px)
+            width: 350px
+        &::after
+            @include after
+            width: 16px
+            height: 16px
+            top: 16px
+            right: 12px
+            background: url(icons/preparation/search.svg) 
+            @include background        
+    &__search
+        font-family: $mainFont   
+        padding: 8px 24px
+        width: 190px
+        height: 48px
+        border-radius: 65px
+        border: 1px solid $preparationSearchBorder
+        text-transform: uppercase
+        font-weight: 500
+        line-height: 24px
+        font-size: 1.6rem
+        color: $mainText 
+        @media(max-width: 1600px)
+            width: 350px
+        &::placeholder
+            font-family: $mainFont
+            text-transform: uppercase
+            font-weight: 500
+            line-height: 24px
+            font-size: 1.6rem
+            color: $mainText
+            @media(max-width: 480px) 
+                font-size: 1.4rem
+            @media(max-width: 450px) 
+                font-size: 1.2rem    
+    &__filter__menu   
+        display: flex  
+        gap: 24px
+        @media(max-width: 1600px) 
+            display: grid
+            grid-template: repeat(2, 48px)/ repeat(2, 250px)
+        @media(max-width: 550px)
+            grid-template: repeat(2, 48px)/ repeat(2, 200px)   
+        @media(max-width: 480px)
+            grid-template: repeat(2, 32px)/ repeat(2, 200px) 
+        @media(max-width: 425px)
+            grid-template: repeat(4, 32px)/ 350px            
+    &__filter__list
+        padding: 12px 24px
+        position: relative
+        display: flex
+        align-items: center
+        text-align: center
+        width: 198px    
+        height: 48px
+        font-size: 1.6rem
+        line-height: 24px
+        text-transform: uppercase
+        font-weight: 500   
+        color: $mainText
+        border-radius: 65px
+        background: $defaultBg
+        cursor: pointer
+        @media(max-width: 1600px) 
+            width: auto
+        @media(max-width: 550px)    
+            font-size: 1.2rem
+        @media(max-width: 480px)
+            height: 32px 
+        &::after   
+            @include after
+            width: 24px
+            height: 24px
+            background: url('icons/career/arrow-down.svg'), $defaultBg 
+            @include background
+            top: 12px
+            right: 12px
+            @media(max-width: 480px)
+                top: 3px
+                background-size: 70% 
+        &:first-child
+            width: 248px  
+            @media(max-width: 1600px) 
+                width: auto
+        &:nth-child(3)
+            width: 230px 
+            @media(max-width: 1600px) 
+                width: auto 
+        &-sort
+            color: $thirdText
+            margin-left: 8px 
+        &-remove
+            padding: 0 
+            margin-left: 155px
+            width: 188px
+            color: $thirdText
+            background: transparent  
+            @media(max-width: 1830px) 
+                margin-left: 100px
+            @media(max-width: 1780px)
+                margin-left: 0 
+            @media(max-width: 1600px) 
+                width: auto  
+                justify-content: center      
+            &::after   
+                display: none     
+    &__menu
+        margin-top: 40px
+        display: grid
+        grid-template: 32px / 58px 147px 208px 144px 147px 135px 157px 113px 99px
+        gap: 16px   
+        @media(max-width: 1850px) 
+            grid-template: repeat(2, 32px) / repeat(3, 210px)
+            justify-content: space-around
+        @media(max-width: 676px)     
+           grid-template: repeat(2, 32px) / repeat(3, 1fr) 
+        @media(max-width: 550px) 
+            grid-template: repeat(3, 32px) / repeat(2, 180px)  
+        @media(max-width: 425px)
+            grid-template: repeat(3, 32px) / repeat(2, 1fr)  
+        @media(max-width: 375px)
+            display: none
+        &-mobile 
+            display: none  
+            @media(max-width: 375px)
+                display: grid
+                grid-template: 32px / repeat(9, 1fr)   
+                justify-content: space-between 
+                margin-top: 30px    
+    &__list
+        padding: 6px 12px
+        font-size: 1.4rem
+        text-transform: uppercase
+        line-height: 20px
+        font-weight: 500    
+        color: $mainText
+        background: $preparationTabsBg
+        backdrop-filter: blur(10px)
+        border-radius: 30px
+        cursor: pointer
+        @media(max-width: 1850px) 
+            text-align: center
+        @media(max-width: 550px) 
+            font-size: 1.2rem   
+        @media(max-width: 375px)
+            line-height: 20px 
+        &-mobile
+            min-width: 170px        
+    .active
+        background: $mainBg
+        color: $secondText
+    &__wrapper
+        margin-top: 66px
+        display: grid
+        grid-template: repeat(2, minmax(276px, auto)) / repeat(4, 272px)
+        gap: 15px
+        @media(max-width: 1600px)
+            grid-template: repeat(3, minmax(276px, auto)) / repeat(2, 272px)  
+            place-content: center
+            margin-top: 100px
+            gap: 32px
+        @media(max-width: 1400px)   
+            justify-content: space-evenly
+        @media(max-width: 991px)   
+            grid-template: repeat(4, minmax(276px, auto)) / repeat(2, 272px) 
+        @media(max-width: 630px)  
+            grid-template: repeat(4, minmax(276px, auto)) / repeat(2, 1fr)
+        @media(max-width: 550px)
+            gap: 24px    
+        @media(max-width: 425px)  
+            grid-template: repeat(4, minmax(250px, auto)) / repeat(2, 1fr)
+        @media(max-width: 375px)   
+            margin-top: 40px  
+            grid-template: repeat(4, minmax(172px, auto)) / repeat(2, 1fr)                
+    &__img
+        position: relative
+        width: 240px
+        height: 165px  
+        z-index: 5
+        @media(max-width: 550px)
+            width: auto
+        @media(max-width: 450px) 
+            height: 150px   
+        @media(max-width: 375px)    
+            height: 96px  
+        &-low-wide
+            display: flex
+            justify-content: center
+        &::before
+            @include before
+            width: 196px
+            height: 196px
+            top: -20px
+            border-radius: 50%
+            background: $preparationItemBeforeBg
+            z-index: -1 
+            @media(max-width: 450px) 
+                width: 150px
+                height: 150px
+                top: 0
+            @media(max-width: 375px)
+                width: 116px
+                height: 116px   
+                top: -10px 
+        &-color  
+            &::before
+                background: $preparationItemBeforeBgSecond 
+        img
+            object-fit: contain
+    &__item__link     
+        display: flex   
+    &__item__header
+        width: 222px
+        margin-top: 24px
+        font-size: 2.4rem
+        line-height: 28px
+        font-weight: 500   
+        color: $mainText
+        @media(max-width: 630px)  
+            font-size: 2.2rem
+        @media(max-width: 576px)  
+            font-size: 2rem   
+            width: 80% 
+        @media(max-width: 550px)
+            font-size: 1.8rem 
+        @media(max-width: 450px)   
+            font-size: 1.6rem   
+            margin-top: 16px
+            line-height: 24px 
+        @media(max-width: 375px)    
+            font-size: 1.4rem
+            line-height: 20px
+        &-color
+            color: $forthText
+    &__pagination
+        display: flex
+        align-items: center
+        grid-column: 2/4
+        gap: 32px
+        margin-top: 32px
+        justify-content: center 
+        @media(max-width: 460px)   
+            flex-direction: column 
+        @media(max-width: 375px) 
+            margin-top: 40px
+            flex-direction: row
+            justify-content: space-between 
+            gap: 20px   
+    &__block__pagination     
+        width: 211px
+        position: relative    
+        @media(max-width: 375px) 
+            width: 167px          
+    &__info
+        font-family: $textFont
+        font-size: 1.6rem
+        line-height: 24px
+        color: $paginationText 
+        @media(max-width: 500px) 
+            font-size: 1.4rem
+        @media(max-width: 375px)    
+            font-size: 1.2rem
+            line-height: 16px 
+    .hide-tab
+        display: none
+
+      
+
+@import '_preparat'  
+@import '_modal-medics'      
+@import '_preparat-search-mobile'   
+@import '_preparat-filter-mobile'  
+@import '_preparat-no-division-mobile' 
+@import '_preparat-appointment-mobile' 
+@import '_preparat-name-mobile' 

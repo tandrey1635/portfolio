@@ -1,0 +1,54 @@
+// Маленький логотип авексимы в левом углу
+.logo
+    &__link
+        position: absolute
+        top: 48px
+        left: 64px
+        z-index: 5
+        display: block
+        width: 156px
+        height: 112px
+        @media(max-width: 850px)
+            left: 25px
+        @media(max-width: 576px)
+            width: 100px
+            height: 45px 
+            top: 16px
+            left: 16px   
+        @media(max-width: 375px)
+            width: 72px
+            height: 30px 
+        &-mobile   
+            display: none  
+            @media(max-width: 1400px)
+                display: flex   
+    &__img
+        width: 150px
+        height: 72px
+        @media(max-width: 576px)
+            width: 100px
+            height: 45px    
+        @media(max-width: 375px)
+            width: 72px
+            height: 30px 
+    &__text  
+        width: 156px
+        margin-top: 8px
+        font-size: 1.1rem
+        line-height: 16px
+        // Плывут буквы при 500 жирности шрифта
+        // font-weight: 500
+        color: $secondText 
+        @media(max-width: 576px)
+            font-size: .8rem
+            width: 110px
+            line-height: 12px
+        @media(max-width: 375px)
+            width: 72px
+            font-size: 0.5rem  
+            line-height: 6px
+            margin-top: 4px
+
+// Главный логотип левого меню нужен для корректных отступов через флексы     
+.left__menu-logo
+    position: static            

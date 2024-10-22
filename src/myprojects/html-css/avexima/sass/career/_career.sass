@@ -1,0 +1,270 @@
+.career__page
+    display: flex
+    height: 1080px
+    background: $sectionLinearGradientOpacity03, url('img/career/career-bg.jpg')
+    @include background
+    @media(max-width: 1200px)
+        height: 900px
+    @media(max-width: 676px) 
+        height: 800px   
+    @media(max-width: 405px) 
+        height: 700px   
+    @media(max-width: 375px) 
+        height: 556px  
+        background-position: -400px
+    &__left
+        @media(max-width: 1400px) 
+            display: none     
+    &__center
+        padding: 298px 339px 298px 152px
+        @media(max-width: 1900px)
+            padding: 298px 85px 298px 152px
+        @media(max-width: 1830px)
+            padding: 298px 0 298px 152px 
+        @media(max-width: 1200px)   
+            padding: 298px 50px
+        @media(max-width: 991px) 
+            padding: 250px 25px  
+        @media(max-width: 565px) 
+            padding: 200px 25px 
+        @media(max-width: 440px) 
+            padding: 200px 16px
+        @media(max-width: 405px) 
+            padding: 150px 16px 
+        @media(max-width: 375px)   
+            padding: 176px 16px  
+    &__right
+        @media(max-width: 1570px) 
+            display: none 
+    &__main-header
+        width: 1061px
+        margin-top: 64px
+        font-weight: 700
+        line-height: 112px
+        font-size: 10rem
+        color: $secondText
+        text-transform: uppercase
+        @media(max-width: 1765px)   
+            font-size: 6rem
+            line-height: 72px
+        @media(max-width: 1650px)   
+            font-size: 5.2rem 
+            width: 100%
+        @media(max-width: 1600px) 
+            width: 80%     
+        @media(max-width: 1500px)   
+            font-size: 4.6rem 
+            line-height: 52px 
+        @media(max-width: 991px)  
+            font-size: 4rem  
+        @media(max-width: 800px)  
+            font-size: 3.8rem   
+        @media(max-width: 768px)  
+            font-size: 3.6rem  
+            line-height: 48px  
+        @media(max-width: 720px) 
+            font-size: 3.2rem  
+        @media(max-width: 650px)  
+            font-size: 3rem 
+        @media(max-width: 610px)  
+            font-size: 2.8rem 
+        @media(max-width: 565px)  
+            font-size: 2.6rem   
+        @media(max-width: 530px)  
+            font-size: 2.4rem     
+        @media(max-width: 490px)  
+            font-size: 2.2rem  
+        @media(max-width: 460px) 
+            font-size: 2rem    
+        @media(max-width: 405px)  
+            font-size: 1.8rem 
+            line-height: 32px  
+        @media(max-width: 375px) 
+            width: 348px
+            font-size: 2.8rem
+            line-height: 32px  
+            font-weight: 700  
+            margin-top: 16px
+    &__text
+        width: 920px
+        font-size: 2.8rem
+        line-height: 38px
+        color: $secondText
+        @media(max-width: 1600px) 
+            width: 80%
+        @media(max-width: 800px)  
+            font-size: 2rem  
+        @media(max-width: 676px)  
+            font-size: 1.8rem  
+        @media(max-width: 480px)   
+            width: 100%   
+        @media(max-width: 405px) 
+            font-size: 1.6rem
+            line-height: 32px     
+        @media(max-width: 375px) 
+            width: 312px
+            line-height: 14px
+            font-size: 1.2rem                               
+    &__header   
+        font-size: 4rem
+        font-weight: 700  
+        line-height: 48px
+        text-transform: uppercase
+        color: $mainText  
+        @media(max-width: 576px) 
+            font-size: 3rem
+        @media(max-width: 375px)     
+            font-size: 2rem
+            line-height: 28px
+    &__toptext    
+        width: 696px
+        font-family: $textFont 
+        font-size: 2.4rem
+        line-height: 36px
+        color: $mainText  
+        @media(max-width: 1550px)
+            font-size: 2rem   
+            width: 100% 
+        @media(max-width: 1400px)   
+            width: 50%  
+        @media(max-width: 991px) 
+            width: 100%    
+        @media(max-width: 500px) 
+            font-size: 1.6rem  
+            line-height: 28px  
+        @media(max-width: 375px) 
+            font-size: 1.4rem
+            line-height: 20px    
+    &__filters
+        position: relative
+        display: flex
+        gap: 32px  
+        margin-top: 78px
+        @media(max-width: 576px) 
+            margin-top: 50px
+        @media(max-width: 375px) 
+            margin-top: 32px    
+    &__filters__item
+        position: relative
+        display: flex
+        align-items: center
+        width: 183px
+        height: 48px
+        padding: 8px 12px 8px 24px
+        border-radius: 65px
+        background: $defaultBg
+        line-height: 24px
+        font-weight: 500   
+        font-size: 1.6rem
+        color: $mainText 
+        cursor: pointer 
+        @media(max-width: 450px)
+            font-size: 1.4rem
+        @media(max-width: 410px)    
+            font-size: 1.2rem
+        @media(max-width: 375px) 
+            line-height: 20px
+            width: 170px
+            height: 40px
+            padding: 10px 16px
+        &::after
+            @include after
+            width: 24px
+            height: 24px
+            top: 12px 
+            right: 8px
+            background: url('icons/career/arrow-down.svg')
+            @include background
+            @media(max-width: 375px)
+                top: 10px 
+                width: 20px
+                height: 20px
+          
+    
+    &__filters__label
+        display: flex
+        justify-content: space-between
+        cursor: pointer
+    &__filters__input
+        width: 20px
+        height: 20px
+        margin-left: 0px     
+    &__item
+        padding: 40px 40px 32px 40px
+        position: relative
+        background: $defaultBg
+        box-shadow: 0 0 1px $defaultShadow
+        @media(max-width: 1605px) 
+            padding: 32px
+        @media(max-width: 1580px) 
+            padding: 25px 
+        @media(max-width: 991px) 
+            height: 380px    
+        @media(max-width: 768px) 
+            width: 80%     
+            padding: 40px  
+        @media(max-width: 676px) 
+            width: 100%   
+        @media(max-width: 480px) 
+            padding: 25px   
+            height: 350px 
+        @media(max-width: 375px)
+            width: 343px
+            height: 306px
+            padding: 24px 16px 26px 16px    
+    &__item__subtext    
+        font-size: 1.4rem
+        line-height: 20px
+        text-transform: uppercase
+        color: $mainText 
+        @media(max-width: 500px) 
+            font-size: 1.2rem
+        @media(max-width: 375px)   
+            line-height: 20px 
+    &__item__header
+        min-height: 64px
+        margin-top: 20px
+        font-size: 2.4rem
+        line-height: 32px
+        font-weight: 700 
+        color: $mainText 
+        @media(max-width: 1550px) 
+            font-size: 2.2rem
+        @media(max-width: 1470px)   
+            font-size: 2rem 
+        @media(max-width: 576px) 
+            min-height: auto 
+        @media(max-width: 500px) 
+            font-size: 1.8rem 
+            margin-top: 10px  
+        @media(max-width: 425px)
+            line-height: 24px   
+        @media(max-width: 375px)
+            margin-top: 20px
+            font-size: 1.6rem
+            line-height: 20px        
+    &__item__text
+        margin-top: 30px
+        font-family: $textFont    
+        font-size: 2rem 
+        line-height: 32px  
+        color: $paginationText
+        @media(max-width: 1550px) 
+            font-size: 1.8rem
+            margin-top: 15px
+        @media(max-width: 500px) 
+            font-size: 1.6rem 
+        @media(max-width: 425px)  
+            line-height: 26px     
+        @media(max-width: 375px)
+            font-size: 1.2rem
+            line-height: 18px
+            margin-top: 16px 
+
+         
+       
+
+
+@import '_info'    
+@import '_vacancy'
+@import '_internship'

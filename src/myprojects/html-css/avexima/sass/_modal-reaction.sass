@@ -1,0 +1,416 @@
+.modal__block__reaction
+    position: fixed
+    position: absolute
+    z-index: 100
+    top: -9999px
+  
+    width: 100%
+    height: 200vh
+    background: $modalBlockBg
+    transition: 2s 
+.modal__reaction
+    position: absolute
+    top: 30px
+    transition: 1.5s
+    left: 50%
+    z-index: 50
+    transform: translate(-50%)
+    padding: 64px
+    width: 720px
+    min-height: 878px
+    background: $defaultBg
+    @media(max-width: 740px)
+        width: 95%
+        padding: 64px 50px
+    @media(max-width: 676px)   
+        padding: 48px 32px 
+    @media(max-width: 576px)     
+        padding: 48px 25px
+        min-height: 800px
+    @media(max-width: 490px)   
+        padding: 32px 16px 
+    @media(max-width: 425px) 
+        width: 100%
+        min-height: 620px   
+    &-page-two   
+        min-height: 990px
+        @media(max-width: 650px)
+            min-height: 1350px
+        @media(max-width: 490px)   
+            min-height: 1300px 
+        @media(max-width: 450px)
+            min-height: 1000px       
+    &-page-three
+        min-height: 1340px  
+        @media(max-width: 650px)  
+            min-height: 1450px
+        @media(max-width: 570px) 
+            min-height: 1600px  
+        @media(max-width: 560px) 
+            min-height: 1800px 
+        @media(max-width: 490px)      
+            min-height: 1700px  
+        @media(max-width: 480px)  
+            min-height: 1850px  
+        @media(max-width: 425px)  
+            min-height: 950px  
+        @media(max-width: 375px)     
+            min-height: 1000px         
+    &-page-four
+        min-height: 762px   
+        @media(max-width: 600px) 
+            min-height: 800px
+        @media(max-width: 425px) 
+            min-height: 700px
+        @media(max-width: 375px)   
+            min-height: 545px 
+    &__close
+        position: absolute
+        width: 48px
+        height: 48px
+        top: 32px
+        right: 32px
+        border: 1px solid $secondBorder
+        border-radius: 50%
+        cursor: pointer
+        background: url('icons/close.svg')
+        @include background
+        background-size: 60% 
+        @media(max-width: 600px) 
+            width: 40px
+            height: 40px
+            right: 20px
+        @media(max-width: 510px)  
+            top: 30px  
+            right: 12px
+            width: 28px
+            height: 28px 
+        @media(max-width: 490px)
+            top: 16px   
+        @media(max-width: 425px) 
+            width: 24px
+            height: 24px
+            top: 12px
+            right: 12px     
+    &__header
+        font-size: 1.8rem
+        line-height: 24px
+        text-transform: uppercase
+        font-weight: 700
+        color: $thirdText
+        @media(max-width: 576px) 
+            font-size: 1.6rem  
+        @media(max-width: 490px)
+            font-size: 1.4rem   
+        @media(max-width: 425px)    
+            font-size: 1.2rem
+            line-height: 20px  
+    &__main__header  
+        margin-top: 40px
+        font-size: 2.8rem
+        line-height: 38px
+        font-weight: 500
+        color: $mainText 
+        @media(max-width: 576px) 
+            font-size: 2.6rem
+            margin-top: 24px
+        @media(max-width: 490px)
+            font-size: 2.4rem  
+        @media(max-width: 425px)    
+            font-size: 1.6rem
+            line-height: 20px  
+    &__form   
+        margin-top: 40px 
+        @media(max-width: 576px) 
+            margin-top: 24px
+    &__block__input
+        &-flex
+            display: flex
+            gap: 32px
+            @media(max-width: 650px) 
+                flex-direction: column        
+        &:not(:first-child)
+            margin-top: 32px
+            @media(max-width: 576px) 
+                margin-top: 24px
+        &-additional-info 
+            display: flex
+            align-items: center
+            gap: 125px
+            margin-top: 24px!important
+            @media(max-width: 550px) 
+                gap: 50px 
+            &-left
+                width: 260px
+                @media(max-width: 550px)  
+                    width: 100%
+                @media(max-width: 375px)     
+                    width: 157px
+        &-custom-checkbox
+            margin-top: 24px!important 
+            @media(max-width: 375px)
+                margin-top: 16px!important   
+    &__additional__text   
+        font-family: $textFont 
+        font-size: 1.2rem
+        line-height: 16px
+        color: $mainText 
+        @media(max-width: 375px)     
+            font-size: 1rem     
+            line-height: 12px           
+    &__outer__block
+        margin-top: 12px
+        display: flex
+        align-items: center 
+        gap: 12px
+        &-flex
+            width: 256px  
+            @media(max-width: 650px) 
+                width: 100%
+            &-left
+                width: 178px 
+                @media(max-width: 650px) 
+                    width: 50%
+            &-right
+                position: relative
+                width: 70px
+                @media(max-width: 650px) 
+                    width: 50%
+                &::after
+                    @include after
+                    width: 20px
+                    height: 20px
+                    top: 50px
+                    right: 0
+                    background: url('icons/contacts/arrow.svg') 
+                    @include background 
+                    @media(max-width: 425px)   
+                        top: 30px    
+        &-flex-two
+            display: flex 
+        &-checkbox
+            display: flex                
+    &__input
+        margin-top: 12px
+        display: block
+        border: none 
+        border-bottom: 1px solid $modalReactionInputBorder
+        padding: 12px 0
+        width: 544px
+        color: $mainText
+        font-size: 2rem
+        font-family: $textFont
+        @media(max-width: 700px)
+            width: 100%
+        @media(max-width: 450px)   
+            font-size: 1.6rem 
+        @media(max-width: 425px) 
+            margin-top: 8px
+            font-size: 1.2rem
+            line-height: 20px
+            padding: 8px 0      
+        &::placeholder
+            color: $modalReactionPlaceholderText
+            font-size: 2rem
+            line-height: 32px 
+            @media(max-width: 576px) 
+                font-size: 1.6rem
+        &-flex
+            width: 256px 
+            font-size: 2rem
+            @media(max-width: 700px)
+                width: 100%     
+            &::placeholder
+                color: $mainText
+                @media(max-width: 425px)
+                    font-size: 1.4rem
+                    line-height: 20px
+            &-page-two   
+                &::placeholder
+                    color: $modalReactionPlaceholderText
+        &-flex_w178   
+            width: 170px
+            @media(max-width: 650px) 
+                width: 95%
+        &-size
+            margin-top: 36px
+            position: relative
+            width: 70px
+            @media(max-width: 650px) 
+                width: 100%
+            @media(max-width: 425px)  
+                margin-top: 24px  
+            &::placeholder
+                position: absolute
+                bottom: 10px
+                color: $mainText 
+                padding: 0
+    &__label
+        font-family: $textFont
+        font-size: 1.6rem
+        line-height: 24px
+        color: $mainText 
+        @media(max-width: 425px) 
+            font-size: 1.2rem
+            line-height: 16px
+        &-require-color
+            color: $thirdText 
+        &-radio
+            font-size: 2rem
+            line-height: 32px
+            @media(max-width: 576px) 
+                font-size: 1.6rem
+            @media(max-width: 425px)  
+                font-size: 1.4rem
+                line-height: 20px 
+        &-color
+            color: $fifthText
+    &__block__tabs
+        margin-top: 32px
+        display: flex
+        gap: 16px
+        flex-wrap: wrap
+        @media(max-width: 570px)  
+            justify-content: space-between
+        @media(max-width: 425px)  
+            margin-top: 24px   
+        @media(max-width: 425px)  
+            justify-content: flex-start
+            gap: 8px
+        &-bottom
+            margin-top: 40px
+            @media(max-width: 425px)  
+                margin-top: 24px   
+    &__block__tabs__item
+        padding: 7px 16px
+        font-family: $textFont
+        font-size: 1.6rem
+        line-height: 24px
+        color: $mainText 
+        border-radius: 100px
+        border: 1px solid $secondBorder
+        cursor: pointer 
+        @media(max-width: 480px)  
+            font-size: 1.3rem
+            padding: 8px
+            width: 100%!important
+        @media(max-width: 425px)  
+            font-size: 1rem
+            line-height: 12px
+            padding: 7px 12px 
+            height: 26px   
+        &:first-child
+            width: 232px
+            @media(max-width: 425px)  
+                width: 150px!important
+        &:nth-child(2)
+            width: 240px
+            @media(max-width: 425px)  
+                width: 160px!important
+        &:nth-child(3)    
+            width: 290px
+            @media(max-width: 425px)  
+                width: 185px!important
+        &:nth-child(4)    
+            width: 200px  
+            @media(max-width: 425px)  
+                width: 130px!important
+        &:nth-child(5)    
+            width: 265px    
+            @media(max-width: 425px)  
+                width: 170px!important  
+        &:nth-child(6)    
+            width: 120px
+            @media(max-width: 425px)  
+                width: 80px!important
+        &:nth-child(7)    
+            width: 85px 
+            @media(max-width: 425px)  
+                width: 55px!important 
+        &-bottom
+            &:first-child
+                width: 490px
+                @media(max-width: 425px)  
+                    width: 315px!important
+            &:nth-child(2)
+                width: 275px
+                @media(max-width: 425px)  
+                    width: 180px!important
+            &:nth-child(3)    
+                width: 200px
+                @media(max-width: 425px)  
+                    width: 130px!important
+            &:nth-child(4)    
+                width: 285px  
+                @media(max-width: 425px)  
+                    width: 185px!important
+            &:nth-child(5)    
+                width: 130px 
+                @media(max-width: 425px)  
+                    width: 85px!important     
+            &:nth-child(6)    
+                width: 85px
+                @media(max-width: 425px)  
+                    width: 56px!important
+            &:nth-child(7)    
+                width: 190px  
+                @media(max-width: 425px)  
+                    width: 130px!important                              
+    &__bottom     
+        position: absolute
+        bottom: 64px
+        left: 50%
+        transform: translateX(-50%)
+        @media(max-width: 425px)
+            bottom: 32px    
+    &__block__bottom  
+        width: 592px  
+        @include flexCenter
+        justify-content: space-between
+        @media(max-width: 650px)
+            width: 550px
+        @media(max-width: 600px)  
+            width: 520px  
+        @media(max-width: 576px) 
+            width: 500px  
+        @media(max-width: 560px)  
+            width: 480px  
+        @media(max-width: 525px)  
+            width: 450px  
+        @media(max-width: 500px) 
+            width: 400px  
+        @media(max-width: 400px)  
+            width: 350px                 
+    &__info
+        font-size: 2rem
+        line-height: 24px
+        color: $mainText  
+        @media(max-width: 425px) 
+            font-size: 1.4rem
+            line-height: 20px
+        &-noactive 
+            color: $fifthText
+    &__text, &__link   
+        font-family: $textFont
+        font-size: 1.6rem
+        line-height: 24px
+        color: $mainText
+        @media(max-width: 375px)
+            font-size: 1.2rem
+            line-height: 16px
+    &__text
+        width: 80%   
+    &__link   
+        color: $forthText      
+    input[type=date]
+        color: $modalReactionInputDateText
+        @media(max-width: 425px) 
+            font-size: 1.4rem
+
+.modal__reaction-active
+    top: 0
+    transition: 1.5s   
+
+
+.hide-form
+    display: none

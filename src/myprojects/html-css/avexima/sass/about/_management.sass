@@ -1,0 +1,198 @@
+.management
+    position: relative
+    min-height: 2786px
+    padding: 212px 50px 88px 152px
+    @media(max-width: 1200px)
+        padding: 212px 50px 88px 50px
+    @media(max-width: 576px)  
+        padding: 150px 25px   
+    @media(max-width: 400px) 
+        padding: 120px 16px
+    @media(max-width: 375px)
+        padding: 150px 16px 45px 16px  
+        min-height: auto     
+    &::before
+        @include before()
+        width: 80%
+        height: 2000px
+        left: 152px
+        filter: blur(120px)
+        z-index: -1
+        background: $sectionGradientBgSecond
+        @media(max-width: 800px)  
+            width: 100%
+            left: 0
+    &__wrapper
+        display: flex 
+        justify-content: space-between 
+        gap: 12px  
+        @media(max-width: 1400px)   
+            gap: 150px 
+        @media(max-width: 1055px)  
+            gap: 50px  
+        @media(max-width: 991px)
+            flex-direction: column
+            align-items: center
+        @media(max-width: 375px)
+            gap: 24px 
+    &__block-lang   
+        display: none  
+        @media(max-width: 1400px)  
+            display: flex        
+    &__left
+        width: 885px 
+        @media(max-width: 1800px)
+            width: 65% 
+        @media(max-width: 991px)
+            width: 100%     
+    &__right
+        width: 455px 
+        display: flex
+        justify-content: center
+        @media(max-width: 1800px)
+            width: 40%
+        @media(max-width: 991px)
+            width: 365px  
+            display: block
+        @media(max-width: 375px)  
+            width: 350px
+            height: 430px    
+    &__subinfo  
+        @media(max-width: 991px)
+            display: none   
+        &-mobile  
+            display: none
+            @media(max-width: 991px)
+                display: block
+            @media(max-width: 375px)
+                margin-top: 24px    
+    &__img
+        width: 300px
+        height: 350px 
+        @media(max-width: 991px)
+            width: 350px 
+            height: 430px          
+    &__header
+        &::before
+            content: '04'        
+    &__subheader
+        margin-top: 56px 
+        font-size: 4rem    
+        font-weight: 700
+        line-height: 48px
+        text-transform: uppercase
+        color: $mainText
+        @media(max-width: 1600px) 
+            font-size: 3.6rem
+        @media(max-width: 1520px)
+            font-size: 3.2rem  
+        @media(max-width: 1440px)  
+            font-size: 3rem    
+        @media(max-width: 1024px)    
+            font-size: 2.6rem
+        @media(max-width: 676px)   
+            margin-top: 32px  
+            line-height: 32px 
+        @media(max-width: 480px)    
+            font-size: 2.4rem 
+        @media(max-width: 450px)  
+            font-size: 2rem   
+        @media(max-width: 375px)
+            margin-top: 35px
+            font-size: 1.6rem
+            line-height: 20px         
+    &__text    
+        margin-top: 56px 
+        font-family: $textFont
+        font-size: 2.4rem
+        line-height: 36px
+        font-style: italic
+        color: $mainText
+        @media(max-width: 1800px)
+            margin-top: 30px
+        @media(max-width: 1600px)   
+            font-size: 2.2rem 
+            margin-top: 20px
+        @media(max-width: 1500px)
+            font-size: 2rem 
+        @media(max-width: 450px)  
+            font-size: 1.6rem 
+            line-height: 30px  
+        @media(max-width: 375px)
+            font-size: 1.2rem
+            line-height: 18px
+            margin-top: 20px           
+    &__heading  
+        margin-top: 56px
+        font-family: $textFont 
+        font-weight: 700 
+        line-height: 38px
+        font-size: 2.8rem
+        color: $mainText  
+        @media(max-width: 375px)
+            font-size: 1.4rem
+            line-height: 18px   
+    &__subtext    
+        margin-top: 8px
+        font-family: $textFont 
+        font-size: 2rem
+        line-height: 32px
+        color: $mainText
+        @media(max-width: 375px)
+            font-size: 1.2rem
+            line-height: 16px
+    &__item
+        width: 425px
+        height: 520px        
+    &__bottom
+        margin-top: 78px
+        display: flex
+        justify-content: space-between
+        @media(max-width: 1800px) 
+            display: grid
+            grid-template: repeat(2, 1fr) / repeat(2, 304px)
+            place-content: center
+            gap: 150px
+        @media(max-width: 860px)    
+            gap: 80px
+        @media(max-width: 800px)    
+            gap: 50px  
+            grid-template: repeat(2, 1fr) / repeat(2, 1fr) 
+        @media(max-width: 676px)    
+            grid-template: repeat(4, 1fr) /  1fr  
+        @media(max-width: 375px)
+            margin-top: 25px
+            height: 350px
+            grid-template: 200px /  repeat(4, 150px)
+            gap: 16px 
+            overflow-x: hidden    
+        &__description
+            margin-top: 17px
+        &__header
+            font-size: 1.8rem
+            font-weight: 700
+            line-height: 24px
+            color: $mainText
+            @media(max-width: 375px)
+                margin-top: 10px
+                font-size: 1.4rem
+                line-height: 18px
+                text-align: center
+        &__text
+            margin-top: 4px  
+            font-family: $textFont 
+            font-size: 1.6rem
+            line-height: 24px  
+            color: $mainText
+            @media(max-width: 375px)
+                font-size: 1.2rem
+                line-height: 16px
+                text-align: center
+        &__img
+            width: 304px
+            height: 384px 
+            background: lightgray 50% 
+            @media(max-width: 800px)  
+                width: 100%  
+            @media(max-width: 375px)
+                height: 100%    

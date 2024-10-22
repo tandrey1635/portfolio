@@ -1,0 +1,73 @@
+@mixin flexCenter
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin background
+    background-repeat:  no-repeat 
+    background-position: center 
+    background-size: cover
+
+
+@mixin poductionItemsHoverTransition  
+    min-width: 66%
+    transition: .5s
+    @media(max-width: 1730px)
+        min-width: 70%  
+
+@mixin mainBtnBefore
+    width: 32px
+    height: 32px
+    position: absolute
+    top: 12px
+    left: 12px
+    content: ''
+    background-size: 70%
+    border-radius: 50%
+
+@mixin mainBtnAfter
+    width: 32px
+    height: 32px
+    position: absolute
+    top: 24px
+    right: 32px
+    content: ''
+    background-size: 70%
+    border-radius: 50%
+
+
+@mixin before
+    position: absolute
+    top: 0
+    content: ''
+
+@mixin after
+    position: absolute
+    top: 0
+    content: ''
+
+
+@mixin manufactureBeforeBtn  
+        border: 1px solid $thirdBorder
+        border-radius: 65px
+        font-size: 1.2rem
+        // Сливается текст
+        // font-weight: 500
+        line-height: 20px
+        text-transform: uppercase
+        color: $thirdText
+        background: $defaultBg 
+
+@mixin careerItemMedia991px 
+    padding-top: 0
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    min-height: 250px 
+
+@mixin aboutFactoryBeforeAfter    
+    width: 2px
+    top: 225px
+    left: -41px
+    display: block        

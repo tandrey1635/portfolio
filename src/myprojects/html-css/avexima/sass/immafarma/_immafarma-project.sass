@@ -1,0 +1,100 @@
+.immafarma
+    position: relative
+    height: 1080px
+    background: $sectionLinearGradientOpacity06, url('img/immafarma/immafarma-bg.jpg')
+    @include background
+    display: flex
+    @media(max-width: 1200px)
+        height: 900px
+    @media(max-width: 676px) 
+        height: 800px   
+    @media(max-width: 405px) 
+        height: 700px   
+    @media(max-width: 375px) 
+        height: 560px 
+    &__left
+        @media(max-width: 1400px) 
+            display: none    
+    &__center
+        padding: 470px 173px 470px 152px
+        @media(max-width: 1900px)
+            padding: 398px 85px 466px 152px
+        @media(max-width: 1830px)
+            padding: 398px 0 466px 152px 
+        @media(max-width: 1200px)   
+            padding: 398px 50px
+        @media(max-width: 991px) 
+            padding: 350px 50px 
+        @media(max-width: 850px)  
+            padding: 350px 25px  
+        @media(max-width: 565px) 
+            padding: 300px 25px 
+        @media(max-width: 440px) 
+            padding: 300px 16px
+        @media(max-width: 405px) 
+            padding: 250px 16px 
+        @media(max-width: 375px) 
+            padding: 200px 16px 
+    &__header
+        font-size: 6.4rem
+        color: $secondText
+        width: 1227px
+        font-weight: 700
+        line-height: 72px
+        text-transform: uppercase
+        @media(max-width: 1775px)
+            width: 100%
+        @media(max-width: 1765px)   
+            font-size: 6rem
+        @media(max-width: 1650px)   
+            font-size: 5.2rem 
+        @media(max-width: 1500px)   
+            font-size: 4.6rem 
+            line-height: 52px       
+        @media(max-width: 991px)  
+            font-size: 4.4rem 
+        @media(max-width: 920px)   
+            font-size: 4rem   
+        @media(max-width: 800px)  
+            font-size: 3.8rem   
+        @media(max-width: 768px)  
+            font-size: 3.6rem  
+            line-height: 48px  
+        @media(max-width: 720px) 
+            font-size: 3.2rem  
+        @media(max-width: 650px)  
+            font-size: 3rem 
+        @media(max-width: 610px)  
+            font-size: 2.8rem 
+        @media(max-width: 565px)  
+            font-size: 2.6rem   
+        @media(max-width: 530px)  
+            font-size: 2.4rem     
+        @media(max-width: 490px)  
+            font-size: 2.2rem  
+        @media(max-width: 460px) 
+            font-size: 2rem    
+        @media(max-width: 405px)  
+            font-size: 1.8rem 
+            line-height: 32px  
+        @media(max-width: 375px) 
+            font-size: 2.4rem
+            line-height: 32px 
+    &__text
+        margin-top: 32px
+        font-size: 2.4rem
+        font-weight: 500
+        line-height: 36px
+        color: $secondText   
+        @media(max-width: 800px)  
+            font-size: 2rem  
+        @media(max-width: 676px)  
+            font-size: 1.8rem 
+        @media(max-width: 405px) 
+            font-size: 1.6rem
+            width: 85%   
+            line-height: 32px  
+        @media(max-width: 375px) 
+            margin-top: 8px
+            line-height: 14px
+            font-size: 1.2rem          

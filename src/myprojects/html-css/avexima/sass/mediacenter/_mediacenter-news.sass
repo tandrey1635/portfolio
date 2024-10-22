@@ -1,0 +1,161 @@
+.mediacenter__page__news
+    min-height: 860px
+    padding: 191px 64px 124px 152px
+    background: $sectionGradientBgThird
+    @media(max-width: 1650px)
+        padding: 191px 64px 124px 100px
+    @media(max-width: 1500px) 
+        padding: 191px 64px 124px 80px  
+    @media(max-width: 1400px)   
+        padding: 250px 64px 124px 80px   
+    @media(max-width: 1200px)   
+        padding: 250px 50px 100px 50px 
+    @media(max-width: 991px) 
+        padding: 250px 25px 100px 25px   
+        min-height: auto      
+    @media(max-width: 480px)   
+        padding: 250px 16px 100px 16px   
+    @media(max-width: 375px)    
+        padding: 104px 16px 48px 16px   
+    &__container
+        max-width: 1336px
+    &__filter
+        padding: 12px 48px 12px 24px
+        position: relative
+        @include flexCenter
+        width: 236px
+        height: 48px
+        background: $defaultBg 
+        font-size: 1.6rem
+        font-weight: 500
+        line-height: 24px
+        text-transform: uppercase
+        color: $mainText 
+        border-radius: 65px
+        cursor: pointer
+        @media(max-width: 768px)  
+            margin-top: 32px
+        @media(max-width: 375px)  
+            width: 182px
+            height: 40px 
+            padding: 10px 44px 10px 10px
+            font-size: 1.2rem
+            line-height: 20px  
+            margin-top: 24px
+        &::after
+            width: 24px
+            height: 24px
+            @include after 
+            top: 12px
+            right: 12px
+            background: url('icons/career/arrow-down.svg')
+            @include background 
+            @media(max-width: 375px) 
+                width: 20px
+                height: 20px
+                top: 10px   
+    &__wrapper
+        margin-top: 56px
+        display: grid
+        grid-template: repeat(2, 1fr)  / 576px 725px
+        column-gap: 34px 
+        row-gap: 30px
+        @media(max-width: 1860px)
+            grid-template: repeat(2, 1fr)  / 576px 1fr
+        @media(max-width: 1650px)    
+            grid-template: repeat(2, 1fr)  / 0.8fr 1fr
+        @media(max-width: 991px)  
+            grid-template: repeat(2, 1fr)  / 1fr    
+        @media(max-width: 375px)  
+            margin-top: 32px
+            gap: 24px    
+            grid-template: 1fr / 343px    
+    &__item
+        position: relative
+        column-gap: 67px
+        display: flex 
+        @media(max-width: 1860px)  
+            column-gap: 30px 
+        @media(max-width: 1800px)   
+            column-gap: 15px 
+        @media(max-width: 991px) 
+            display: block    
+        &:not(:last-child)::after
+            @include after
+            @include background
+            top: 210px
+            width: 100%
+            height: 2px
+            background: $mediacenterNewsDividerBg
+            @media(max-width: 991px) 
+                display: none
+        &-main
+            display: grid
+            gap: 0
+            grid-row: 1/4
+            @media(max-width: 375px) 
+                grid-row: 1
+            &::after
+                display: none
+    &__img
+        width: 270px
+        height: 196px 
+        order: 1
+        @media(max-width: 1860px)  
+            width: 100%
+        @media(max-width: 991px) 
+            height: 460px 
+        @media(max-width: 425px)   
+            height: 300px 
+        @media(max-width: 375px)   
+            height: 200px            
+        &-main 
+            width: auto
+            height: 460px
+            order: 0  
+            @media(max-width: 425px)   
+                height: 300px 
+            @media(max-width: 375px)   
+                height: 200px     
+    &__description
+        width: 388px 
+        @media(max-width: 1860px)  
+            width: 100%
+        @media(max-width: 1800px) 
+            width: 80%    
+        @media(max-width: 991px)   
+            width: 100%  
+        &-main    
+            width: auto           
+    &__date
+        margin-top: 32px
+        font-size: 1.6rem
+        line-height: 20px
+        color: $mainText
+        @media(max-width: 375px) 
+            font-size: 1.2rem
+            line-height: 14px
+            margin-top: 14px
+    &__text
+        margin-top: 12px
+        font-family: $textFont
+        font-size: 2.4rem
+        font-weight: 700
+        line-height: 32px
+        color: $mainText
+        @media(max-width: 1800px)
+            font-size: 2.2rem
+            line-height: 30px
+        @media(max-width: 1750px) 
+            font-size: 2rem  
+        @media(max-width: 1700px)    
+            font-size: 1.8rem
+            line-height: 26px 
+        @media(max-width: 375px) 
+            margin-top: 8px
+            font-size: 1.4rem
+            line-height: 20px      
+
+                
+
+@import '_news'                  

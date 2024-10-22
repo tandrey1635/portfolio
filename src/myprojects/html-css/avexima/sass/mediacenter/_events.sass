@@ -1,0 +1,284 @@
+.events__page
+    position: relative
+    padding: 210px 0px 56px 152px
+    min-height: 2000px
+    background: $sectionGradientBg
+    @media(max-width: 1600px)
+        padding: 210px 0px 56px 100px
+    @media(max-width: 1550px)
+        padding: 210px 0px 56px 50px  
+    @media(max-width: 1400px)
+        padding: 300px 0px 56px 50px 
+    @media(max-width: 768px)     
+        padding: 300px 0px 56px 25px 
+    @media(max-width: 480px)  
+        padding: 300px 0px 56px 16px  
+    @media(max-width: 375px)   
+        padding: 160px 0 64px 16px                  
+    &__top
+        padding: 84px 87px 79px 140px
+        margin-right: 64px
+        background: $mediacenterLinerGradientEventsBg
+        @include background
+        height: 306px
+        @media(max-width: 1670px) 
+            height: 350px
+        @media(max-width: 1600px)  
+            padding: 86px 
+        @media(max-width: 1500px)   
+            padding: 50px   
+            height: 306px
+        @media(max-width: 1440px)   
+            margin-right: 50px
+        @media(max-width: 1400px)
+            padding: 85px    
+        @media(max-width: 850px)   
+            padding: 56px  
+        @media(max-width: 768px)  
+            margin-right: 25px
+            height: 250px
+        @media(max-width: 676px)   
+            padding: 32px   
+        @media(max-width: 480px)  
+            padding: 25px
+            margin-right: 16px
+            height: 200px   
+        @media(max-width: 375px)
+            height: 250px    
+            padding: 65px 16px 80px 16px    
+    &__announsment
+        font-size: 1.8rem
+        font-weight: 700
+        line-height: 24px
+        text-transform: uppercase
+        color: $thirdText
+        @media(max-width: 480px) 
+            font-size: 1.4rem
+        @media(max-width: 375px)
+            font-size: 1.2rem
+            line-height: 20px
+            font-weight: 500    
+    &__header
+        margin-top: 12px
+        font-size: 3.2rem   
+        line-height: 40px
+        font-weight: 700
+        text-transform: uppercase 
+        color: $mainText
+        @media(max-width: 1750px) 
+            font-size: 3rem
+        @media(max-width: 1420px)    
+            font-size: 2.6rem 
+        @media(max-width: 1400px)
+            font-size: 3.2rem   
+        @media(max-width: 1200px)   
+            font-size: 2.8rem
+        @media(max-width: 1080px)   
+            font-size: 2.6rem  
+        @media(max-width: 1024px)   
+            font-size: 2.4rem 
+        @media(max-width: 955px)    
+            font-size: 2rem   
+        @media(max-width: 700px)  
+            line-height: 32px 
+            font-size: 1.8rem  
+        @media(max-width: 576px) 
+            font-size: 1.6rem  
+            line-height: 30px  
+        @media(max-width: 480px)   
+            font-size: 1.4rem
+        @media(max-width: 420px) 
+            line-height: 26px    
+        @media(max-width: 375px)
+            margin-top: 6px
+            line-height: 1.6rem
+            line-height: 20px        
+    &__center    
+        padding-right: 64px
+        display: flex
+        gap: 32px
+        margin-top: 56px
+        @media(max-width: 1440px) 
+            padding-right: 50px
+        @media(max-width: 991px)   
+            flex-direction: column  
+        @media(max-width: 768px) 
+            padding-right: 25px 
+        @media(max-width: 480px) 
+            padding-right: 16px  
+        @media(max-width: 375px) 
+            margin-top: 32px  
+            gap: 16px   
+        &__left 
+            display: flex
+            justify-content: flex-end
+            width: 435px
+            @media(max-width: 1850px)
+                width: 50%
+            @media(max-width: 1800px) 
+                width: 20% 
+            @media(max-width: 991px)   
+                justify-content: flex-start
+                width: 100%     
+        &__right
+            width: 880px  
+            @media(max-width: 1850px)
+                width: 70% 
+            @media(max-width: 1800px)
+                width: 80%  
+            @media(max-width: 991px)   
+                width: 100%      
+    &__date
+        font-size: 1.8rem
+        line-height: 24px
+        text-transform: uppercase
+        color: $mainText  
+        @media(max-width: 1500px)   
+            font-size: 1.6rem 
+        @media(max-width: 480px) 
+            font-size: 1.4rem  
+        @media(max-width: 375px)     
+            font-size: 1.2rem
+            font-weight: 500       
+            line-height: 20px
+    &__description
+        margin-top: 24px
+        @media(max-width: 375px)
+            margin-top: 16px
+    &__info
+        width: 807px
+        font-family: $textFont
+        font-size: 2rem
+        line-height: 32px
+        color: $mainText  
+        @media(max-width: 1500px) 
+            width: 95%
+        @media(max-width: 676px)   
+            font-size: 1.8rem 
+        @media(max-width: 425px)
+            line-height: 28px
+            font-size: 1.6rem   
+        @media(max-width: 375px) 
+            font-size: 1.4rem
+            line-height: 20px       
+    &__text
+        margin-top: 32px
+        font-family: $textFont
+        font-size:  1.6rem 
+        line-height: 24px 
+        color: $mainText 
+        @media(max-width: 425px)
+            font-size: 1.4rem
+        @media(max-width: 375px)
+            margin-top: 24px
+            font-size: 1.2rem
+            line-height: 18px    
+    &__bottom    
+        display: flex 
+        @media(max-width: 991px)   
+            flex-direction: column
+        &__left    
+            position: relative
+            width: 50% 
+            @media(max-width: 1800px)
+                width: 20%
+        &__right
+            width: 100% 
+            overflow-x: hidden
+            @media(max-width: 1800px)
+                width: 80%
+            @media(max-width: 991px)   
+                width: 100%    
+    &__wrapper
+        display: flex
+        gap: 32px   
+        margin-top: 56px 
+        @media(max-width: 375px)
+            margin-top: 40px 
+            gap: 16px
+    &__slide
+        width: 576px!important
+        height: 304px 
+        @media(max-width: 676px) 
+            width: 450px!important
+        @media(max-width: 480px) 
+           width: 320px!important   
+           height: 250px  
+        @media(max-width: 375px)
+            width: 285px!important  
+            height: 195px  
+            margin-right: 16px!important   
+    &__swiper__navigation 
+        display: flex
+        gap: 16px
+        top: 55px
+        right: 33px
+        position: absolute
+        @media(max-width: 991px)   
+            top: 400px
+            right: -180%
+        @media(max-width: 480px)
+            top: 350px
+            right: -220%   
+        @media(max-width: 375px)
+            top: 250px     
+        &-left, &-right
+            position: relative
+            border: 1px solid $mainBorder
+            border-radius: 50%
+            width: 48px
+            height: 48px   
+            cursor: pointer
+            &::before
+                width: 24px
+                height: 24px
+                @include before
+                top: 12px
+                left: 12px
+                background: url('icons/mainpage/arrow-dark-blue.svg') 
+                @include background       
+        &-left
+            &::before      
+                transform: rotate(180deg)     
+    &__pagination      
+        margin-top: 56px
+        width: 880px
+        min-height: 156px
+        @include flexCenter
+        justify-content: space-around
+        background: $mediacenterLinerGradientNextNews 
+        @media(max-width: 1440px) 
+            width: 95%
+        @media(max-width: 991px)   
+            margin-top: 150px 
+        @media(max-width: 676px) 
+            flex-direction: column-reverse
+            min-height: 180px 
+        @media(max-width: 480px)
+            min-height: 200px 
+        @media(max-width: 375px)
+            margin-top: 100px   
+            width: 343px      
+            min-height: 164px   
+            padding: 32px 28px 36px 60px      
+    &__pagination__block__btn
+        position: relative  
+    &__pagination__right
+        @media(max-width: 1440px) 
+            width: 50%
+        @media(max-width: 480px)
+            width: 300px 
+        @media(max-width: 375px)
+            width: 225px       
+    &__pagination__text
+        width: 304px
+        font-family: $textFont
+        font-size: 1.6rem
+        line-height: 24px
+        color: $mainText 
+        @media(max-width: 1440px) 
+            width: 100%
+        @media(max-width: 375px)
+            font-size: 1.2rem
+            line-height: 18px
+            width: 255px

@@ -1,0 +1,103 @@
+.modal__appointment__mobile
+    width: 100%
+    position: absolute
+    top: -9999px
+    transition: 1.5s all
+    padding: 30px 16px 36px 16px
+    min-height: 2000px
+    background: $sectionGradientBg
+    z-index: 100
+    &__block__search
+        margin-top: 32px
+        position: relative
+        @include flexCenter
+        justify-content: space-between
+        &::after
+            @include after
+            width: 32px
+            height: 32px
+            background: url('icons/preparation/search.svg'), $defaultBg
+            @include background
+            background-size: 50%
+            top: 8px
+            right: 35px
+            border-radius: 50%
+    &__input__search 
+        font-family: $mainFont
+        padding: 14px 16px
+        width: 344px
+        height: 48px 
+        color: $mainText
+        border: 1px solid $filterAppointmentMobileBorder
+        border-radius: 65px
+        font-size: 1.2rem
+        line-height: 20px
+        font-weight: 500
+        background: transparent
+        &::placeholder
+            font-size: 1.2rem
+            line-height: 20px
+            font-weight: 500
+            color: $mainText
+            text-transform: uppercase
+    &__block__header
+        display: flex
+        align-items: center
+    &__btn-back   
+        position: relative
+        width: 24px
+        height: 24px
+        &::before 
+            @include before
+            width: 24px
+            height: 24px
+            left: 0
+            background: url("icons/career/arrow-down.svg"), $defaultBg
+            @include background
+            transform: rotate(90deg)
+            cursor: pointer  
+    &__header
+        margin-left: 80px
+        text-align: center
+        font-size: 1.6rem
+        font-weight: 700
+        line-height: 20px
+        text-transform: uppercase
+        color: $mainText
+    &__subheader
+        font-size: 1.2rem
+        font-weight: 500
+        line-height: 20px
+        text-transform: uppercase
+        color: $mainText   
+    &__wrapper
+        margin-top: 24px
+        width: 344px
+        min-height: 464px
+        border-radius: 16px 
+        background: $defaultBg
+    &__item
+        display: flex
+        align-items: center
+        position: relative
+        width: 344px
+        height: 56px
+        background: $defaultBorder
+        padding: 24px  
+        border-radius: 16px 
+        &::after
+            @include after   
+            width: 311px
+            top: 62px
+            z-index: 10
+        &:not(:last-child)::after  
+            border-bottom: 1px solid $filterPreparationMobileBorder        
+    &__bottom
+        margin-top: 64px    
+        
+
+    
+
+.modal-appointment-mobile-active   
+    top: 0
+    transition: 1.5s

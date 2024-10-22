@@ -1,0 +1,95 @@
+.license
+    min-height: 780px
+    padding: 180px 217px 188px 152px
+    background: $sectionGradientBg
+    @media (max-width: 1500px)
+        padding: 180px 55px 180px 152px
+    @media (max-width: 1200px)
+        padding: 100px 55px
+    @media (max-width: 991px)   
+        padding: 50px 
+    @media (max-width: 480px) 
+        padding: 50px 25px  
+    @media (max-width: 375px)  
+        padding: 56px 16px  
+        min-height: 624px
+    &__container 
+        max-width: 1220px 
+        @media(max-width: 1200px)
+            max-width: 100%         
+    &__header
+        font-size: 4rem
+        font-weight: 700
+        line-height: 48px
+        text-transform: uppercase
+        color: $mainText
+        @media (max-width: 1450px)
+            font-size: 3.6rem
+        @media (max-width: 1350px)
+            font-size: 3.4rem 
+        @media (max-width: 1260px)
+            font-size: 3.2rem   
+        @media (max-width: 1215px)
+            font-size: 3rem  
+        @media (max-width: 620px)  
+            font-size: 2.4rem   
+        @media (max-width: 520px) 
+            font-size: 2.2rem 
+            line-height: 32px
+        @media (max-width: 480px) 
+            font-size: 2rem  
+        @media (max-width: 400px) 
+            font-size: 1.8rem   
+        @media (max-width: 375px)      
+            font-size: 2rem
+            line-height: 28px            
+    &__wrapper
+        margin-top: 56px
+        display: flex
+        gap: 32px
+        @media (max-width: 991px)  
+            flex-direction: column
+        @media (max-width: 576px)      
+            margin-top: 32px
+    &__left, &__right
+        width: 576px
+        @media (max-width: 991px) 
+            width: 100%
+    &__block
+        @include flexCenter
+        width: 100%
+        height: 132px
+        padding: 46px 74px
+        background: $defaultBg
+        filter: drop-shadow(0 0 0.5px $defaultShadow)
+        @media (max-width: 1515px) 
+            padding: 46px     
+        @media (max-width: 1440px) 
+            padding: 35px  
+        @media (max-width: 1400px)  
+            justify-content: center         
+        @media (max-width: 480px)
+            padding: 25px
+        @media (max-width: 375px)   
+            height: 72px
+            padding: 16px 32px   
+    &__text
+        min-height: 100px  
+        @media (max-width: 1720px)  
+            min-height: 200px 
+        @media (max-width: 576px)      
+            min-height: 100px       
+    &__text, &__info
+        margin-top: 32px
+        line-height: 24px
+        font-family: $textFont    
+        font-size: 1.6rem
+        color: $mainText  
+        @media (max-width: 375px)
+            margin-top: 16px
+            font-size: 1.2rem
+            line-height: 18px
+    &__info
+        margin-top: 26px
+        @media (max-width: 375px)
+            margin-top: 22px

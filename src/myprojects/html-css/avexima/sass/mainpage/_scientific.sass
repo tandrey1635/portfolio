@@ -1,0 +1,211 @@
+.scientific
+    display: flex
+    min-height: 1080px
+    @media (max-width: 991px)
+        min-height: 1200px
+    @media (max-width: 576px)  
+        min-height: 1400px 
+    @media (max-width: 480px)  
+        min-height: 1000px   
+    @media (max-width: 425px)    
+        min-height: 880px  
+    @media (max-width: 375px)    
+        min-height: 950px      
+    &__wrapper
+        padding: 84px 0
+        position: relative
+        width: 100%
+        height: inherit 
+        background: $sectionGradientBg 
+        @media (max-width: 1400px)
+            padding: 200px 0
+        @media (max-width: 991px)  
+            padding: 200px 50px 
+            display: flex
+            flex-direction: column
+        @media (max-width: 676px) 
+            padding: 100px 30px
+        @media (max-width: 375px) 
+            padding: 72px 16px               
+        &::after
+            display: flex
+            position: absolute
+            top: 400px
+            right: 20px
+            width: 844px
+            height: 672px
+            content: ''
+            background: url('icons/mainpage/scientific-bg.svg')
+            @include background
+            @media (max-width: 1810px)
+                background-size: 70% 
+                background-position-x: right
+            @media (max-width: 1600px)   
+                background-size: 60%  
+            @media (max-width: 1024px)      
+                background-size: 70%
+            @media (max-width: 991px)
+                top: 800px   
+            @media (max-width: 768px)     
+                background-size: 60%  
+                background-position-x: 80%
+            @media (max-width: 676px)     
+                background-size: 50% 
+                background-position: right 10% 
+            @media (max-width: 576px)   
+                background-position-y: 15%   
+            @media (max-width: 480px) 
+                background-size: 40%   
+                background-position-y: 50%  
+            @media (max-width: 430px) 
+                background-size: 35%   
+            @media (max-width: 375px) 
+                background-size: 40% 
+                top: 500px 
+                right: 30px  
+    &__container  
+        padding: 0 86px 0 234px   
+        @media (max-width: 1200px)   
+            padding: 0 86px    
+        @media (max-width: 991px)  
+            display: flex
+            flex-direction: column-reverse  
+            gap: 80px
+            padding: 0
+            order: 0 
+        @media (max-width: 576px)
+            margin-top: 80px     
+        @media (max-width: 375px)
+            gap: 28px 
+    &__swiper
+        position: relative 
+        display: flex 
+        width: 85vw
+        height: 524px
+        @media (max-width: 1850px) 
+            width: 80vw
+        @media (max-width: 1800px) 
+            width: 75vw   
+        @media (max-width: 1500px)
+            width: 60vw  
+        @media (max-width: 1400px) 
+            width: 90vw      
+        @media (max-width: 991px) 
+            height: 800px
+            order: 1  
+            margin-top: 32px  
+        @media (max-width: 375px) 
+            height: 400px   
+    &__slide
+        height: 524px 
+        transform: scale(0.8)!important 
+        transform-origin: bottom 
+        @media (max-width: 576px)  
+            height: 300px    
+        @media (max-width: 991px) 
+            transform: scale(1)!important 
+        @media (max-width: 375px) 
+            height: 190px             
+    .swiper-slide-active
+        transform: scale(1)!important                    
+    &__navigation 
+        display: flex
+        gap: 16px
+        position: absolute
+        top: 0   
+        right: 85px
+        z-index: 10 
+        @media (max-width: 1870px)  
+            right: 100px
+        @media (max-width: 1800px)
+            right: 90px    
+        @media (max-width: 1700px)
+            right: 80px  
+        @media (max-width: 1600px)
+            right: 70px  
+        @media (max-width: 1500px)
+            right: 20px          
+        @media (max-width: 991px)   
+            left: 40%
+            top: 320px 
+        @media (max-width: 375px)  
+            top: 220px         
+    &__navigation__left, &__navigation__right
+        position: relative
+        border: 1px solid $mainBorder
+        border-radius: 50%
+        width: 48px
+        height: 48px   
+        cursor: pointer
+        @media (max-width: 375px) 
+            width: 36px
+            height: 36px
+        &::before
+            width: 24px
+            height: 24px
+            @include before
+            top: 12px
+            left: 12px
+            background: url('icons/mainpage/arrow-dark-blue.svg') 
+            @include background 
+            @media (max-width: 375px) 
+                top: 6px
+                left: 6px
+                width: 20px
+                height: 20px
+    &__navigation__left
+        &::before      
+            transform: rotate(180deg)           
+    &__description
+        margin-top: 44px  
+        @media (max-width: 991px)  
+            margin-top: 0
+            order: 1
+    &__header 
+        width: 730px 
+        font-size: 4rem
+        font-weight: 700  
+        line-height: 48px
+        text-transform: uppercase  
+        color: $mainText
+        @media (max-width: 991px)
+            width: 100%
+        @media (max-width: 991px)  
+            font-size: 3.4rem 
+        @media (max-width: 676px)
+            font-size: 2.8rem   
+            line-height: 32px  
+        @media (max-width: 576px)  
+            font-size: 2.2rem   
+        @media (max-width: 450px)   
+            font-size: 2rem
+        @media (max-width: 410px)   
+            font-size: 1.8rem 
+        @media (max-width: 375px) 
+            font-size: 2rem
+            line-height: 28px
+            width: 351px       
+    &__text
+        width: 742px
+        margin-top: 24px
+        font-family: $textFont
+        font-size: 2rem    
+        line-height: 32px
+        color: $mainText
+        @media (max-width: 991px)
+            width: 100%
+        @media (max-width: 676px)
+            font-size: 1.8rem
+            line-height: 32px
+        @media (max-width: 576px)  
+            font-size: 1.6rem  
+            line-height: 28px 
+        @media (max-width: 375px)
+            margin-top: 12px
+            font-size: 1.4rem
+            line-height: 20px      
+    &__btn  
+        margin-top: 40px   
+        @media (max-width: 991px)
+            margin-top: 0    
+ 

@@ -1,0 +1,186 @@
+.mediacenter__page
+    position: relative
+    display: flex
+    height: 1080px
+    background: $sectionLinearGradientOpacity03, url('img/mediacenter/mediacenter-bg.jpg')
+    @include background 
+    @media(max-width: 1200px)
+        height: 900px
+    @media(max-width: 676px) 
+        height: 800px   
+    @media(max-width: 405px) 
+        height: 700px   
+    @media(max-width: 375px) 
+        height: 560px   
+    &__left
+        @media(max-width: 1400px) 
+            display: none   
+    &__center
+        padding: 438px 524px 438px 0px
+        @media(max-width: 1900px)
+            padding: 438px 85px 438px 0px
+        @media(max-width: 1830px)
+            padding: 438px 0
+        @media(max-width: 1400px)  
+            padding: 438px 300px
+            width: 100%
+        @media(max-width: 1200px)   
+            padding: 398px 250px
+        @media(max-width: 991px) 
+            padding: 350px 50px  
+        @media(max-width: 565px) 
+            padding: 300px 25px
+        @media(max-width: 425px) 
+            padding: 250px 16px   
+        @media(max-width: 375px)     
+            padding: 242px 16px
+    &__right
+        @media(max-width: 1570px) 
+            display: none
+    &__header
+        font-size: 10rem
+        font-weight: 700
+        line-height: 112px
+        text-transform: uppercase
+        color: $secondText
+        @media(max-width: 1775px)
+            width: 100%
+        @media(max-width: 1765px)   
+            font-size: 6rem
+        @media(max-width: 1650px)   
+            font-size: 5.2rem 
+        @media(max-width: 1500px)   
+            font-size: 4.6rem 
+            line-height: 52px
+        @media(max-width: 1270px) 
+            width: 95%     
+        @media(max-width: 1200px) 
+            width: 100%   
+        @media(max-width: 991px)  
+            font-size: 4rem  
+        @media(max-width: 800px)  
+            font-size: 3.8rem   
+        @media(max-width: 768px)  
+            font-size: 3.6rem  
+            line-height: 48px  
+        @media(max-width: 720px) 
+            font-size: 3.2rem  
+        @media(max-width: 650px)  
+            font-size: 3rem 
+        @media(max-width: 610px)  
+            font-size: 2.8rem 
+        @media(max-width: 565px)  
+            font-size: 2.6rem   
+        @media(max-width: 530px)  
+            font-size: 2.4rem     
+        @media(max-width: 490px)  
+            font-size: 2.2rem  
+        @media(max-width: 460px) 
+            font-size: 2rem    
+        @media(max-width: 405px)  
+            font-size: 1.8rem 
+            line-height: 32px   
+        @media(max-width: 375px)    
+            font-size: 2.4rem
+    &__text
+        width: 690px
+        margin-top: 16px
+        font-size: 2.4rem
+        line-height: 38px
+        color: $secondText
+        @media(max-width: 800px)  
+            font-size: 2rem  
+        @media(max-width: 768px)    
+            width: 100% 
+        @media(max-width: 676px)  
+            font-size: 1.8rem 
+        @media(max-width: 480px) 
+            line-height: 36px      
+        @media(max-width: 405px) 
+            font-size: 1.6rem
+            line-height: 32px
+        @media(max-width: 375px)        
+            margin-top: 6px
+            font-size: 1.2rem
+            line-height: 20px   
+    &__block__header
+        display: flex
+        justify-content: space-between  
+        @media(max-width: 768px)  
+            flex-direction: column   
+        &-events   
+            @media(max-width: 1600px) 
+                flex-direction: column 
+        &-gallery   
+            @media(max-width: 1600px) 
+                flex-direction: column             
+    &__subheader   
+        font-size: 4rem
+        font-weight: 700
+        line-height: 48px
+        text-transform: uppercase
+        color: $mainText
+        @media(max-width: 480px) 
+            font-size: 3.6rem
+        @media(max-width: 375px)    
+            font-size: 2rem
+            line-height: 28px    
+    &__tabs    
+        display: flex
+        justify-content: space-between  
+        gap: 5px 
+        @media(max-width: 1600px)
+            margin-top: 32px
+            justify-content: flex-start 
+        @media(max-width: 676px) 
+            text-align: center
+        @media(max-width: 375px)     
+            margin-top: 24px      
+    &__item
+        @include flexCenter
+        padding: 12px 22px
+        width: 338px
+        height: 48px
+        background: $defaultBg
+        border-radius: 65px 
+        font-size: 1.6rem
+        text-transform: uppercase
+        font-weight: 500  
+        color: $mainText 
+        cursor: pointer
+        @media(max-width: 768px) 
+            width: 50%  
+        @media(max-width: 750px)   
+            padding: 12px
+            font-size: 1.4rem  
+        @media(max-width: 375px)  
+            font-size: 1.2rem
+            line-height: 14px
+            padding: 8px 21px 
+    &__pagination
+        margin-top: 56px
+        @include flexCenter
+        gap: 32px
+        @media(max-width: 1750px)
+            margin-top: 80px
+        @media(max-width: 500px) 
+            flex-direction: column  
+        @media(max-width: 375px) 
+            margin-top: 24px      
+    &__pagination__block__btn    
+        position: relative
+    &__pagination__text
+        font-family: $textFont
+        font-size: 1.6rem
+        line-height: 24px
+        color: $paginationText   
+        @media(max-width: 375px) 
+            display: none
+
+
+.tab-active
+    border: 1px solid $mainBorder 
+
+@import '_mediacenter-news'   
+@import '_mediacenter-events' 
+@import '_mediacenter-gallery'                                                               

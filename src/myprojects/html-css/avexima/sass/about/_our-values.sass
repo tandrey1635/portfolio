@@ -1,0 +1,184 @@
+.our__values
+    position: relative
+    display: flex
+    min-height: 2160px
+    background: $ourValuesBg 
+    @media(max-width: 991px) 
+        min-height: 1980px 
+    @media(max-width: 375px) 
+        min-height: 876px    
+    &::before
+        @include before
+        width: 1216px
+        height: 680px
+        top: 404px
+        left: 96px
+        background: $sectionLinearGradientOpacity07, url(img/about/our-values-1-bg.jpg)
+        @include background
+        @media(max-width: 1650px) 
+            width: 70%   
+        @media(max-width: 1440px) 
+            left: 125px   
+        @media(max-width: 1400px)   
+            left: 0 
+        @media(max-width: 991px) 
+            height: 450px  
+        @media(max-width: 850px)    
+            height: 400px 
+        @media(max-width: 676px)  
+            height: 350px  
+        @media(max-width: 625px) 
+            width: 80%  
+            height: 450px  
+        @media(max-width: 375px) 
+            width: 300px
+            height: 335px 
+            top: 210px              
+    &::after
+        @include before
+        width: 1216px
+        height: 680px
+        top: 1332px
+        right: 64px
+        background: $sectionLinearGradientOpacity07, url(img/about/our-values-2-bg.jpg) 
+        @include background 
+        @media(max-width: 1770px) 
+            right: 120px 
+        @media(max-width: 1650px) 
+            width: 70%    
+            right: 64px
+        @media(max-width: 1400px)   
+            right: 0   
+        @media(max-width: 991px) 
+            height: 450px   
+        @media(max-width: 850px)    
+            height: 400px   
+        @media(max-width: 676px)  
+            height: 350px  
+        @media(max-width: 625px) 
+            width: 80%  
+            height: 450px   
+        @media(max-width: 375px) 
+            width: 300px
+            height: 230px 
+            top: 644px             
+    &__center
+        padding: 212px 60px 136px 152px
+        @media(max-width: 1820px)
+            padding: 212px 0 136px 152px
+        @media(max-width: 1400px)    
+            padding: 300px 0 136px 152px 
+        @media(max-width: 1200px)   
+            padding: 300px 50px
+        @media(max-width: 991px) 
+            padding: 300px 25px
+        @media(max-width: 676px)    
+            max-width: 100% 
+        @media(max-width: 375px)  
+            padding: 145px 16px    
+    &__header
+        color: $secondText
+        @media(max-width: 530px) 
+            font-size: 4rem
+        @media(max-width: 470px)  
+            font-size: 3.6rem  
+        @media(max-width: 425px)  
+            font-size: 3.2rem  
+        @media(max-width: 385px) 
+            font-size: 3rem 
+        @media(max-width: 375px)
+            font-size: 2.4rem
+            line-height: 32px           
+        &::before
+            content: '02' 
+            color: $secondText
+    &__description
+        position: relative
+        z-index: 3
+        width: 628px
+        @media(max-width: 676px) 
+            width: 100%
+        &-one
+            margin-top: 319px
+            margin-left: 610px
+            @media(max-width: 1770px) 
+                margin-left: 40%
+                width: 55%
+            @media(max-width: 1140px) 
+                margin-left: 45% 
+            @media(max-width: 950px) 
+                margin-left: 0
+                width: 60%  
+            @media(max-width: 900px)     
+                width: 65%  
+            @media(max-width: 768px)   
+                width: 80%    
+            @media(max-width: 676px)  
+                width: 100%   
+            @media(max-width: 375px)
+                margin-top: 72px                     
+        &-two
+            margin-top: 354px  
+            @media(max-width: 991px) 
+                margin-top: 250px
+            @media(max-width: 950px) 
+                width: 60%    
+            @media(max-width: 900px)     
+                width: 65% 
+            @media(max-width: 850px) 
+                margin-top: 215px  
+            @media(max-width: 768px)   
+                width: 80%   
+                margin-top: 275px 
+            @media(max-width: 676px)    
+                width: 100%  
+            @media(max-width: 375px)
+                margin-top: 72px        
+    &__subheader    
+        font-size: 3.2rem
+        font-weight: 700 
+        text-transform: uppercase
+        color: $secondText
+        @media(max-width: 950px)
+            font-size: 3rem
+        @media(max-width: 625px) 
+            font-size: 2.6rem
+        @media(max-width: 515px) 
+            font-size: 2.4rem 
+        @media(max-width: 480px) 
+            font-size: 2.2rem  
+        @media(max-width: 445px)   
+            font-size: 2rem 
+        @media(max-width: 405px)   
+            font-size: 1.8rem 
+        @media(max-width: 375px)
+            font-size: 1.8rem
+            line-height: 24px               
+        &-first
+            margin-top: 229px
+            @media(max-width: 991px) 
+                margin-top: 150px
+            @media(max-width: 375px)
+                margin-top: 72px    
+        &_w450
+            width: 442px   
+            @media(max-width: 480px) 
+                width: 100%      
+    &__text
+        font-family: $textFont
+        font-size: 2.4rem
+        line-height: 36px
+        margin-top: 24px
+        color: $secondText
+        @media(max-width: 850px) 
+            font-size: 2.2rem
+        @media(max-width: 625px) 
+            font-size: 2rem   
+        @media(max-width: 470px)  
+            font-size: 1.8rem 
+        @media(max-width: 425px) 
+            font-size: 1.6rem  
+        @media(max-width: 375px) 
+            margin-top: 8px
+            font-size: 1.4rem
+            line-height: 20px         

@@ -1,0 +1,248 @@
+.option 
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+    user-select: none
+
+.option .default-checkbox 
+    display: none
+
+
+/* Стили для поля кастомного чекбокса */
+.option .custom-checkbox 
+    display: block
+    width: 24px
+    height: 24px
+    border: 1px solid $checkboxSecondBorder
+    border-radius: 6px
+    background: $checkboxSecondBg
+    margin-right: 10px
+    cursor: pointer
+    position: relative
+    @media(max-width: 380px)
+        width: 20px
+        height: 20px
+
+
+/* Стили для синего квадрата внутри чекбокса */
+.option .custom-checkbox::before 
+    display: none
+    position: absolute
+    @include before
+    width: 14px
+    height: 14px
+    top: 50%
+    left: 50%
+    border-radius: 3px
+    transform: translate(-50%, -50%)
+    background: $checkboxThirdBg
+    @media(max-width: 380px)
+        width: 10px
+        height: 10px
+
+
+/* При состоянии checked - показываем синий квадрат */
+.option .default-checkbox:checked + .custom-checkbox::before 
+    display: block
+
+
+
+
+// chekbox стр карьера
+.container-checkbox
+    display: block
+    position: absolute
+    cursor: pointer
+    user-select: none
+    right: 16px
+    width: 100%
+    height: 20px
+.container-checkbox input 
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    height: 0
+    width: 0
+.checkmark 
+    position: absolute
+    top: 0
+    right: 0
+    height: 20px
+    width: 20px
+    background: $checkboxSecondBg
+.container-checkbox input ~ .checkmark 
+    background: $checkboxSecondBg
+    border: 1px solid $checkboxMainBorder
+    border-radius: 3px
+.container-checkbox input:checked ~ .checkmark 
+    background: $checkboxMainBorder
+.checkmark:after 
+    content: ""
+    position: absolute
+    display: none
+.container-checkbox input:checked ~ .checkmark:after 
+    display: block
+
+.container-checkbox .checkmark:after
+    left: 5px
+    top: 1px
+    width: 5px
+    height: 10px
+    border: solid white
+    border-width: 0 3px 3px 0
+    transform: rotate(45deg)
+
+
+
+// Полоса прокрутки дроп меню
+.drop-down__filters__block__menu::-webkit-scrollbar
+    width: 2px
+    
+.drop-down__filters__block__menu::-webkit-scrollbar-track 
+    background: $dropMenuScrollbarBg
+    position: absolute
+    
+.drop-down__filters__block__menu::-webkit-scrollbar-thumb 
+    background: $mainBg
+    border-radius: 20px
+ 
+
+
+
+// Радио кнопки модальное окно стр контакты
+.modal__reaction__option
+    display: flex
+    flex-direction: column
+
+
+.modal__reaction__option .default-radio 
+    display: none
+
+/* Стили для поля кастомного радио */
+.modal__reaction__option .custom-radio 
+    margin-top: 0
+    display: block
+    width: 24px
+    height: 24px
+    border: 1px solid $checkboxSecondBorder
+    border-radius: 50%
+    background: $checkboxSecondBg
+    cursor: pointer
+    position: relative
+        
+/* Стили для синего круга внутри радио */
+.modal__reaction__option .custom-radio::before 
+    display: none
+    position: absolute
+    @include before
+    width: 14px
+    height: 14px
+    top: 50%
+    left: 50%
+    border-radius: 50%
+    transform: translate(-50%, -50%)
+    background: $checkboxThirdBg
+
+
+/* При состоянии checked - показываем синий круг */
+.modal__reaction__option .default-radio:checked + .custom-radio::before 
+    display: block
+
+
+
+    
+// Чекбокс 4 модального окна стр контакты
+.modal__reaction__option
+    display: flex
+    flex-direction: column
+
+
+.modal__reaction__option .default-checkbox
+    display: none
+
+/* Стили для поля кастомного радио */
+.modal__reaction__option .custom-checkbox 
+    margin-top: 0
+    display: block
+    width: 24px
+    height: 24px
+    border: 1px solid $checkboxSecondBorder
+    border-radius: 6px
+    background: $checkboxSecondBg
+    cursor: pointer
+    position: relative
+    @media(max-width: 375px)
+        width: 20px
+        height: 20px
+        
+/* Стили для синего круга внутри радио */
+.modal__reaction__option .custom-checkbox::before 
+    display: none
+    position: absolute
+    @include before
+    width: 14px
+    height: 14px
+    top: 50%
+    left: 50%
+    border-radius: 3px
+    transform: translate(-50%, -50%)
+    background: $checkboxThirdBg
+    @media(max-width: 375px)
+        width: 12px
+        height: 12px
+
+
+/* При состоянии checked - показываем синий круг */
+.modal__reaction__option .default-checkbox:checked + .custom-checkbox::before 
+    display: block    
+
+
+
+
+// Добавить файл стилизация input type file
+.input__wrapper 
+    width: 100%
+    position: relative
+    text-align: center
+// Стандартный инпут
+.input__file 
+    display: none
+// Синий круг    
+.input__file-icon-wrapper 
+    height: 28px
+    width: 28px
+    border-radius: 50% 
+    background: $checkboxMainBg
+    display: flex
+    align-items: center
+    justify-content: center
+    &::before
+        @include before
+        background: url(icons/contacts/upload.svg)
+        @include background
+        width: 14px
+        height: 14px
+        top: 13px
+        left: 8px
+// текст кнопки
+.input__file-button-text 
+    text-transform: uppercase
+    font-weight: 500
+    font-size: 1.2rem
+    line-height: 20px
+    color: $mainText
+    margin-left: 8px
+    @media(max-width: 375px) 
+        font-size: 1rem
+        line-height: 16px
+// вся длина кнопки
+.input__file-button 
+    width: 180px
+    height: 40px
+    display: flex
+    align-items: center
+    background: $btnSecondBg
+    cursor: pointer
+    @media(max-width: 375px)
+        width: 137px
+

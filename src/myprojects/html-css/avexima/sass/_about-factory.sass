@@ -1,0 +1,474 @@
+.about__factory
+    min-height: 1080px
+    padding: 78px 52px 64px 154px
+    background: $sectionGradientBg
+    @media(max-width: 1890px)
+        padding: 78px 50px 64px 100px
+    @media(max-width: 1830px)
+        padding: 78px 40px 64px 100px  
+    @media(max-width: 1830px)
+        padding: 78px 40px 64px 100px  
+    @media(max-width: 1820px)
+        padding: 78px 30px 64px 100px  
+    @media(max-width: 1810px)
+        padding: 78px 30px 64px 90px   
+    @media(max-width: 1805px)
+        padding: 78px 30px 64px 50px   
+    @media(max-width: 1485px)
+        padding: 78px 25px 64px 25px  
+    @media(max-width: 1435px)
+        padding: 78px 0 64px 25px                            
+    @media(max-width: 850px)
+        height: auto  
+        min-height: 700px
+    @media(max-width: 700px)
+        padding: 78px 50px 64px 50px
+    @media(max-width: 576px)  
+        padding: 78px 25px 64px 25px 
+    @media(max-width: 480px)  
+        padding: 78px 16px 64px 16px            
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        @media(max-width: 375px) 
+            overflow-x: hidden
+    &__slide__wrapper
+        width: 100%
+        display: flex
+        flex-direction: column
+        gap: 80px   
+    .swiper
+        width: 100%   
+    .swiper-slide
+        justify-content: flex-end  
+        @media(max-width: 1220px)    
+            gap: 50px   
+    &__container
+        max-width: 1324px
+        @media(max-width: 1700px)
+            max-width: 100%    
+    &__img
+        width: 670px
+        height: 924px
+        @media(max-width: 1600px)
+            width: 100%
+        @media(max-width: 1400px)
+            height: 700px 
+        @media(max-width: 850px) 
+            height: 500px  
+        @media(max-width: 375px)   
+            width: 344px
+            height: 422px      
+    &__slide
+        display: flex
+        gap: 180px
+        height: 924px
+        @media(max-width: 1780px) 
+            gap: 100px
+        @media(max-width: 1705px)  
+            gap: 50px   
+        @media(max-width: 1400px)
+            gap: 200px  
+            height: 700px
+        @media(max-width: 1200px) 
+            gap: 100px 
+        @media(max-width: 991px) 
+            gap: 50px    
+        @media(max-width: 850px) 
+            height: 500px 
+        @media(max-width: 700px)   
+            flex-direction: column 
+            height: auto   
+            gap: 0px            
+    &__block__left
+        position: relative
+        @media(max-width: 1600px)
+            width: 50%
+        @media(max-width: 700px)    
+            width: 100%
+        &::before 
+            @include before 
+            @include aboutFactoryBeforeAfter 
+            height: 472px   
+            background: $sliderBeforeLineBg 
+            @media(max-width: 1400px)  
+                top: 120px
+                height: 400px
+            @media(max-width: 850px) 
+                height: 300px  
+                top: 80px  
+            @media(max-width: 700px) 
+                top: 90% 
+                left: 50%
+                height: 100%
+                transform: rotate(90deg) 
+            @media(max-width: 676px)   
+                top: 95% 
+                height: 88% 
+            @media(max-width: 600px) 
+                top: 99.5%
+                height: 80% 
+            @media(max-width: 520px)  
+                height: 70%
+                top: 104.5%   
+            @media(max-width: 480px)
+                height: 60%    
+                top: 109.5%  
+            @media(max-width: 375px) 
+                height: 50%  
+                top: 115% 
+                left: 50%   
+        &::after
+            @include after 
+            @include aboutFactoryBeforeAfter    
+            background: $mainBg
+            @media(max-width: 1400px)  
+                top: 120px
+            @media(max-width: 850px) 
+                height: 300px  
+                top: 80px          
+        &-one::after 
+            height: 118px 
+            @media(max-width: 1400px)
+                height: 100px 
+            @media(max-width: 850px)
+                height: 75px 
+            @media(max-width: 700px) 
+                top: 127.4%
+                left: 18%
+                height: 25%
+                transform: rotate(90deg)  
+            @media(max-width: 676px)  
+                left: 22%   
+                top: 126.5%
+            @media(max-width: 645px)
+                left: 21%  
+            @media(max-width: 630px)  
+                left: 20%  
+            @media(max-width: 610px)  
+                left: 19%
+            @media(max-width: 600px) 
+                left: 21% 
+                top: 127%
+            @media(max-width: 520px)
+                left: 26%  
+            @media(max-width: 375px)  
+                left: 35% 
+                top: 127.5%                      
+        &-two::after 
+            height: 236px  
+            @media(max-width: 1400px)
+                height: 200px   
+            @media(max-width: 850px)
+                height: 150px  
+            @media(max-width: 700px) 
+                top: 115%
+                left: 29%
+                height: 50%
+                transform: rotate(90deg) 
+            @media(max-width: 676px)  
+                left: 33%  
+                top: 114%
+            @media(max-width: 645px)
+                left: 32% 
+            @media(max-width: 610px)  
+                left: 31%   
+            @media(max-width: 600px) 
+                left: 33%
+                top: 114.5% 
+            @media(max-width: 520px)
+                left: 38%   
+            @media(max-width: 480px)
+                left: 40%   
+            @media(max-width: 420px) 
+                left: 42% 
+            @media(max-width: 375px)  
+                left: 34%  
+                height: 30%  
+                top: 125%                                
+        &-three::after 
+            height: 354px  
+            @media(max-width: 1400px)
+                height: 300px 
+            @media(max-width: 850px)
+                height: 225px 
+            @media(max-width: 700px) 
+                top: 102.4%
+                left: 39%
+                height: 75%
+                transform: rotate(90deg)   
+            @media(max-width: 676px) 
+                left: 44% 
+                top: 101.4%  
+            @media(max-width: 600px) 
+                left: 46%  
+                top: 102%
+            @media(max-width: 520px) 
+                left: 47% 
+                height: 65%
+                top: 107%
+            @media(max-width: 480px)
+                height: 50%    
+                left: 44%  
+                top: 114.5%  
+            @media(max-width: 375px)  
+                left: 40%  
+                height: 40%  
+                top: 120%               
+        &-four::after 
+            height: 472px 
+            @media(max-width: 1400px)
+                height: 400px  
+            @media(max-width: 850px)
+                height: 300px 
+            @media(max-width: 700px) 
+                top: 90%
+                left: 50%
+                height: 100%
+                transform: rotate(90deg) 
+            @media(max-width: 676px) 
+                top: 95%
+                left: 50%  
+                height: 88%  
+            @media(max-width: 600px)  
+                height: 80% 
+                top: 99.5%
+            @media(max-width: 520px) 
+                top: 104.5%
+                height: 70% 
+                left: 50%   
+            @media(max-width: 480px)
+                height: 60%    
+                left: 50%  
+                top: 109.5%  
+            @media(max-width: 375px)  
+                left: 50%  
+                height: 50%  
+                top: 115%  
+    &__left
+        position: relative
+        font-size: 2rem
+        font-weight: 700
+        color: $mainText
+        text-transform: uppercase
+        @media(max-width: 1600px)
+            width: 100%
+        &::before
+            @include before
+            left: -55px
+            top: 20%
+            @media(max-width: 1400px) 
+                top: 10%
+            @media(max-width: 700px) 
+                top: 137.5%   
+                left: 0
+            @media(max-width: 676px)  
+                top: 137%   
+            @media(max-width: 400px)
+                top: 137.5%  
+                font-size: 1.6rem 
+            @media(max-width: 375px) 
+                font-size: 1.6rem
+                line-height: 20px   
+                left: 0         
+        &::after
+            @include after
+            content: '04' 
+            left: -55px
+            top: 80%
+            @media(max-width: 1400px) 
+                top: 80%
+            @media(max-width: 700px) 
+                top: 137.5%  
+                left: 94% 
+            @media(max-width: 676px)  
+                top: 136.5%  
+            @media(max-width: 600px) 
+                left: 92% 
+                top: 137%   
+            @media(max-width: 400px)  
+                font-size: 1.6rem 
+                top: 137.5%
+            @media(max-width: 375px) 
+                font-size: 1.6rem
+                line-height: 20px 
+                left: 92%         
+        &-one::before 
+            content: '01'   
+        &-two::before 
+            content: '02'       
+        &-three::before 
+            content: '03'    
+        &-four::before 
+            content: '04'
+        &-immafarma-one::after
+           content: '02'     
+        &-immafarma-two::before
+           content: '02'        
+        &-immafarma-two::after
+           content: '02'                                              
+    &__block__right
+        display: flex
+        justify-content: center
+        flex-direction: column
+        gap: 80px   
+        @media(max-width: 1600px)
+            width: 40%  
+        @media(max-width: 1400px)
+            justify-content: flex-start
+            width: 30%
+        @media(max-width: 1250px)    
+            width: 29%
+        @media(max-width: 1220px)  
+            width: 40%  
+        @media(max-width: 1040px)  
+            width: 38%   
+        @media(max-width: 865px)  
+            width: 36%      
+        @media(max-width: 850px)
+            gap: 20px 
+        @media(max-width: 768px)  
+            gap: 15px  
+        @media(max-width: 730px)  
+            width: 34%      
+        @media(max-width: 700px)    
+            width: 100%  
+            flex-direction: row  
+            gap: 5px 
+            height: 200px
+        @media(max-width: 480px) 
+            justify-content: space-evenly 
+        @media(max-width: 375px) 
+            justify-content: space-between   
+            gap: 25px    
+        &-one .about__factory__right
+            &:nth-child(3), &:nth-child(4)
+                @media(max-width: 480px)  
+                    display: none                
+        &-two .about__factory__right
+            &:nth-child(1), &:nth-child(4)
+                @media(max-width: 480px)  
+                    display: none 
+        &-three .about__factory__right
+            &:nth-child(1), &:nth-child(2)
+                @media(max-width: 480px)  
+                    display: none   
+        &-four .about__factory__right
+            &:nth-child(1), &:nth-child(2)
+                @media(max-width: 480px)  
+                    display: none 
+        // Скрыть текст на 375 пх подпись к слайдам
+        &-one .about__factory__right
+            &:nth-child(2), &:nth-child(3), &:nth-child(4)
+                @media(max-width: 375px)  
+                    display: none                    
+        &-two .about__factory__right              
+            &:nth-child(1), &:nth-child(3), &:nth-child(4)
+                @media(max-width: 375px)  
+                    display: none    
+        &-three .about__factory__right              
+            &:nth-child(1), &:nth-child(2), &:nth-child(4)
+                @media(max-width: 375px)  
+                    display: none                               
+        &-four .about__factory__right              
+            &:nth-child(1), &:nth-child(2), &:nth-child(3)
+                @media(max-width: 375px)  
+                    display: none  
+        &-four .about__factory__right-immafarma
+            &:nth-child(2)
+                @media(max-width: 480px)  
+                    display: block        
+
+    &__right 
+        width: 412px
+        @media(max-width: 1600px)
+            width: 100%  
+        @media(max-width: 590px)    
+            width: 25% 
+        @media(max-width: 375px)  
+            width: auto  
+    &__description
+        @media(max-width: 375px) 
+            width: 210px          
+    &__header
+        display: flex
+        font-size: 7.6rem
+        font-weight: 700   
+        line-height: 96px
+        text-transform: uppercase  
+        color: $disableText
+        @media(max-width: 1600px)
+            font-size: 6rem
+        @media(max-width: 975px)  
+            font-size: 5rem 
+            align-items: center  
+        @media(max-width: 870px)  
+            font-size: 4rem 
+        @media(max-width: 768px) 
+            font-size: 3rem   
+        @media(max-width: 700px) 
+            font-size: 2rem 
+        @media(max-width: 676px)  
+            font-size: 1.8rem      
+        @media(max-width: 480px)   
+            font-size: 1.8rem 
+        @media(max-width: 375px)
+            font-size: 4.8rem
+            line-height: 56px             
+    .slide-header-active, .slide-text-active
+        color: $mainText  
+        display: block
+    .slide-text-active
+        @media(max-width: 1250px)
+            font-size: 2rem
+        @media(max-width: 850px)
+            font-size: 1.8rem   
+        @media(max-width: 700px)   
+            margin-top: -35px
+            font-size: 1.6rem
+            line-height: 18px
+            width: 105% 
+        @media(max-width: 530px) 
+            width: 100%
+            font-size: 1.4rem 
+        @media(max-width: 375px) 
+            margin-top: 0  
+            width: 210px   
+            font-size: 1.6rem
+            line-height: 24px                 
+    &__span
+        margin-left: 16px
+        margin-right: 16px
+        margin-top: 37px
+        font-size: 4rem
+        font-weight: 700
+        line-height: 48px
+        @media(max-width: 1600px)
+            margin-top: 16px
+        @media(max-width: 975px)  
+            margin-top: 0   
+        @media(max-width: 768px)  
+            font-size: 2.6rem 
+        @media(max-width: 700px) 
+            font-size: 2rem 
+            margin-left: 6px  
+        @media(max-width: 676px)  
+            font-size: 1.8rem   
+        @media(max-width: 375px) 
+            font-size: 2.8rem
+            line-height: 38px        
+    &__text
+        margin-top: 12px
+        display: none
+        font-family: $textFont
+        font-size: 2.4rem
+        line-height: 32px
+        @media(max-width: 1600px)
+            width: 80%
+        @media(max-width: 991px) 
+            width: 100% 
+        @media(max-width: 768px)     
+            line-height: 24px        
+                 
+
+

@@ -1,0 +1,29 @@
+.modal__cookies
+    position: absolute
+    right: 0
+    bottom: 0
+    padding: 24px 32px
+    width: 427px
+    height: 176px
+    background: $mainBg
+    @media(max-width: 480px) 
+        width: 100%
+    @media(max-width: 375px)   
+        height: 162px
+        padding: 16px 24px 
+        @include flexCenter
+        flex-direction: column   
+    &__text
+        font-family: $textFont
+        font-size: 1.6rem
+        line-height: 24px
+        color: $secondText
+        @media(max-width: 480px) 
+            width: 100%
+        @media(max-width: 375px) 
+            font-size: 1.2rem
+            line-height: 18px
+            width: 278px    
+            text-align: center
+.cookies-hide
+    display: none    

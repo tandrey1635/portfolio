@@ -1,0 +1,105 @@
+.fancybox
+    &__backdrop
+        background: $sectionGradientBg
+    &__content
+        height: 680px
+        margin-top: 70px 
+    &__caption   
+        font-family: $textFont
+        font-size: 2.4rem
+        line-height: 36px 
+        color: $mainText
+        @media(max-width: 480px)
+            font-size: 2rem
+            line-height: 28px
+            margin-top: -150px!important
+        @media(max-width: 375px)   
+            margin-top: -200px!important 
+            font-size: 1.8rem
+    &__infobar 
+        font-family: $textFont
+        color: $mainText       
+    &__slide
+        padding: 130px 16px
+        flex-direction: column-reverse
+    &__footer  
+        @media(max-width: 578px)  
+            background: $sectionGradientBg!important
+// стрелка вправо        
+.is-prev, .is-next  
+    position: relative
+    top: 60%!important
+    border: 1px solid $mainBorder
+    @media(max-width: 615px)
+        width: 40px
+        height: 40px
+        background: $sectionGradientBg!important
+    @media(max-width: 480px)
+        top: 55%!important
+    &::before
+        @include before
+        background: url('icons/mainpage/arrow-dark-blue.svg')
+        @include background
+        width: 32px
+        height: 32px
+        top: 8px!important
+        left: 8px!important
+        @media(max-width: 615px)
+            width: 24px
+            height: 24px
+    &:hover
+       background: $sectionGradientBg!important 
+
+.is-prev
+    left: 300px!important
+    @media(max-width: 1200px)
+        left: 200px!important
+    @media(max-width: 991px)
+        left: 100px!important   
+    @media(max-width: 768px)
+        left: 30px!important      
+    &::before
+        transform: rotate(180deg)
+.is-next
+    right: 300px!important
+    @media(max-width: 1200px)
+        right: 200px!important
+    @media(max-width: 991px)
+        right: 100px!important 
+    @media(max-width: 768px)
+        right: 30px!important       
+
+.is-prev svg, .is-next svg
+    display: none  
+
+[data-fancybox-toggle-slideshow], [data-fancybox-toggle-fullscreen], [data-panzoom-action]
+    display: none  
+[data-fancybox-close]
+    background: transparent
+    &:hover
+        background: transparent!important   
+[data-fancybox-close] svg
+    display: none  
+[data-fancybox-close]
+    position: relative
+    width: 48px
+    height: 48px
+    top: 33px
+    right: 66px
+    @media(max-width: 615px)
+        width: 40px
+        height: 40px
+        right: 32px!important  
+    &::before          
+        @include before 
+        background: url('icons/close.svg') 
+        @include background 
+        background-size: 70% 
+        width: 48px
+        height: 48px 
+        border: 1px solid $mainBorder
+        border-radius: 50% 
+        @media(max-width: 615px)
+            width: 40px
+            height: 40px  
+                 

@@ -1,0 +1,149 @@
+.analitics
+    padding: 113px 429px 164px 153px
+    min-height: 1080px
+    background: $sectionGradientBg
+    @media(max-width: 1800px)
+        padding: 114px 200px 164px 152px
+    @media(max-width: 1200px)  
+        padding: 50px 50px 100px 120px
+        min-height: auto     
+    @media(max-width: 991px)     
+        padding: 50px 50px 100px 50px 
+    @media(max-width: 768px) 
+        padding: 50px 25px 100px 25px 
+    @media(max-width: 480px)   
+        padding: 50px 16px 100px 16px
+    @media(max-width: 375px)   
+        padding: 56px 16px 58px 16px     
+    &__container
+        max-width: 1110px
+    &__header
+        width: 805px
+        font-size: 4rem
+        line-height: 48px
+        text-transform: uppercase
+        color: $mainText 
+        @media(max-width: 991px) 
+            width: 100%
+        @media(max-width: 830px)    
+            font-size: 3.6rem 
+        @media(max-width: 720px) 
+            font-size: 3.2rem
+        @media(max-width: 676px)
+            font-size: 3rem  
+        @media(max-width: 600px)   
+            font-size: 2.8rem   
+        @media(max-width: 576px)   
+            font-size: 2.6rem   
+        @media(max-width: 525px)   
+            font-size: 2.4rem  
+        @media(max-width: 490px)   
+            font-size: 2rem 
+            line-height: 32px
+        @media(max-width: 400px) 
+            font-size: 1.8rem       
+        @media(max-width: 375px)    
+            line-height: 24px            
+    &__wrapper
+        margin-top: 89px  
+        @media(max-width: 676px)    
+            margin-top: 56px
+        @media(max-width: 375px) 
+            margin-top: 24px  
+            overflow-x: hidden  
+    &__description
+        width: 971px
+        position: relative
+        display: flex
+        flex-direction: column
+        gap: 80px 
+        @media(max-width: 1500px)
+            width: 100%  
+        @media(max-width: 830px) 
+            gap: 32px    
+        @media(max-width: 375px)
+            display: grid
+            grid-template: 1fr / repeat(3, 1fr)
+            min-height: 220px
+    &__text
+        position: relative
+        font-family: $textFont  
+        font-size: 2.4rem
+        line-height: 36px   
+        color: $mainText 
+        @media(max-width: 1650px)
+            font-size: 2rem
+        @media(max-width: 768px)   
+            font-size: 1.8rem
+            line-height: 32px 
+        @media(max-width: 425px)  
+            font-size: 1.6rem  
+            line-height: 28px  
+        @media(max-width: 375px) 
+            font-size: 1.2rem
+            line-height: 18px   
+            width: 238px 
+        &::before
+            font-family: $mainFont
+            text-transform: uppercase
+            font-weight: 700
+            @include before
+            left: -81px
+            font-size: 2rem
+            @media(max-width: 991px) 
+                display: none
+            @media(max-width: 375px) 
+                display: block  
+                top: 180px
+                left: 0
+                font-size: 1.6rem
+                line-height: 20px
+                padding: 2px 8px
+        &:first-child::before
+            content: '01'
+            @media(max-width: 375px) 
+                color: $secondText 
+                background: $mainBg 
+                border-radius: 34px
+        &:nth-child(2)::before
+            content: '02' 
+            @media(max-width: 375px) 
+                left: -120px    
+        &:last-child::before
+            content: '03' 
+            @media(max-width: 375px) 
+                left: -230px
+        &:first-child::after
+            width: 2px
+            height: 177px 
+            @include after
+            top: 35px
+            left: -67px
+            background: $scolcovoBgLine  
+            @media(max-width: 1200px) 
+                height: 160px
+            @media(max-width: 991px) 
+                display: none  
+            @media(max-width: 375px) 
+                display: block
+                top: 148px    
+                left: 85px
+                height: 86px
+                transform: rotate(90deg) 
+        &:last-child::after
+            width: 2px
+            height: 141px 
+            @include after
+            top: -150px
+            left: -67px
+            background: $scolcovoBgLine
+            @media(max-width: 991px) 
+                display: none  
+            @media(max-width: 375px) 
+                display: block  
+                top: 148px    
+                left: -290px
+                height: 86px
+                transform: rotate(90deg)   
+            
+             

@@ -1,0 +1,147 @@
+.factory
+    display: flex
+    min-height: 1080px
+    @media (max-width: 1200px) 
+        min-height: 800px
+    &__block-lang
+        &-pc
+            @media (max-width: 1200px)
+                display: none   
+    &__lang-border  
+        border: 1px solid $langSecondBorder                                
+    .active-color
+        background: $langBgSecond
+        color: $secondText
+    &__burger__line
+        background: $mainBorder    
+    &__wrapper
+        position: relative
+        display: grid
+        width: 100%
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr)
+        @media (max-width: 1200px)
+            display: flex
+            flex-direction: column
+    &__item
+        position: relative
+        display: flex
+        flex-direction: column
+        padding: 64px 56px 56px 64px
+        height: 540px
+        @media (max-width: 1850px)
+            padding: 64px 44px 56px 35px
+        @media (max-width: 1805px)
+            padding: 64px 35px 56px 35px
+        @media (max-width: 1735px)
+            padding: 80px 44px 56px 35px 
+            height: 565px   
+        @media (max-width: 1705px)
+            padding: 80px 15px 
+            height: 590px
+        @media (max-width: 1200px)
+            width: 100% 
+            height: 400px
+        @media (max-width: 375px)  
+            height: 220px    
+        &-mobile
+            display: none 
+            @media (max-width: 1200px)
+                display: block  
+                padding: 16px
+                height: 180px  
+            @media (max-width: 375px)   
+                padding: 16px
+                display: grid
+                grid-template: 1fr / repeat(3, 1fr)  
+                gap: 68.5px 
+                height: 88px       
+        &-one
+            background: url('img/mainpage/factory-bg-1.jpg'), lightgray 50% 
+            @include background
+        &-two
+            background: url('img/mainpage/factory-bg-2.jpg'), lightgray 50%   
+            @include background        
+        &-three
+            background: url('img/mainpage/factory-bg-3.jpg'), lightgray 50% 
+            @include background
+        &-four
+            padding-top: 32px
+            background: url('img/mainpage/factory-bg-4.jpg'), lightgray 50%  
+            @include background 
+    &__new
+        display: flex
+        margin-bottom: 8px
+        font-family: $textFont
+        font-size: 1.6rem
+        line-height: 24px
+        color: $thirdText
+        font-weight: 700
+        text-transform: uppercase                  
+    &__header
+        width: 575px
+        text-transform: uppercase
+        font-size: 4rem
+        font-weight: 700
+        line-height: 48px
+        color: $mainText  
+        @media (max-width: 1805px)
+            width: 100%  
+        @media (max-width: 1580px)  
+            font-size: 3.6rem 
+        @media (max-width: 1515px)  
+            font-size: 3rem   
+            line-height: 32px
+        @media (max-width: 1200px)
+            width: 575px    
+        @media (max-width: 600px)    
+            width: 100%   
+        @media (max-width: 450px)  
+            font-size: 2.4rem 
+        @media (max-width: 375px)    
+            font-size: 2.2rem     
+    &__text   
+        font-family: $textFont
+        line-height: 32px
+        font-size: 2rem
+        font-style: normal
+        color: $mainText 
+        @media (max-width: 1620px)  
+            font-size: 1.8rem
+        @media (max-width: 1515px)  
+            font-size: 1.6rem 
+        @media (max-width: 375px) 
+            font-size: 1.4rem
+            line-height: 20px        
+    &__description
+        flex-grow: 1
+        &-mt85
+            margin-top: 85px
+            @media (max-width: 1515px)
+                margin-top: 120px
+            @media (max-width: 375px) 
+                margin-top: 16px    
+        &-mt180
+            margin-top: 184px
+            @media (max-width: 375px) 
+                margin-top: 16px
+        &-mt36
+            margin-top: 48px 
+            @media (max-width: 1515px) 
+                margin-top: 96px 
+            @media (max-width: 375px) 
+                margin-top: 16px    
+    &__btn
+        margin-top: 32px   
+    &__block__slide
+        @media (max-width: 1200px)
+            visibility: hidden  
+    &__item:hover
+        @media (max-width: 1200px)
+            height: 600px   
+            transition: .5s 
+        @media (max-width: 375px)   
+            height: 400px          
+    &__item:hover &__block__slide
+        @media (max-width: 1200px)
+            visibility: visible
+            transition: .5s     

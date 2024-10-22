@@ -1,0 +1,218 @@
+.footer
+    min-height: 440px
+    display: flex
+    &__wrapper
+        padding: 56px 65px 0px 152px
+        width: 100%
+        @media(max-width: 1500px)
+            padding: 56px 65px 0px 80px
+        @media(max-width: 1200px)
+            padding: 56px
+        @media(max-width: 991px)
+            padding: 25px  
+        @media(max-width: 480px)  
+            padding: 15px 
+        @media(max-width: 375px)
+            min-height: 700px
+            padding: 40px 16px  
+            padding-bottom: 0     
+    &__top
+        display: flex
+        justify-content: space-between
+        @media(max-width: 991px)
+            flex-direction: column
+            align-items: center
+            gap: 30px
+            @media(max-width: 375px)
+                gap: 40px
+    &__img
+        width: 354px
+        height: 152px 
+        @media(max-width: 1600px)
+            width: 100%
+            height: 40%    
+        @media(max-width: 676px)  
+            width: 300px
+            height: 150px
+        @media(max-width: 576px)
+            width: 200px    
+            height: 120px 
+        @media(max-width: 480px) 
+            width: 180px    
+            height: 100px 
+        @media(max-width: 400px) 
+            width: 150px    
+            height: 85px 
+        @media(max-width: 375px) 
+            width: 223px
+            height: 92px
+    &__photo
+        object-fit: fill 
+        @media(max-width: 1150px)
+            object-fit: cover         
+    &__feedback
+        display: block
+        @media(max-width: 991px) 
+            display: none    
+        &-mobile
+            display: none
+            @media(max-width: 991px) 
+                display: block                  
+    &__block__feedback
+        margin-top: 32px   
+        display: flex
+        align-items: center
+        column-gap: 32px
+        @media(max-width: 1150px)
+            flex-direction: column
+            gap: 32px
+    &__left
+        width: 818px  
+        @media(max-width: 1600px)
+            width: 80%
+        @media(max-width: 1150px)  
+            width: 55%   
+        @media(max-width: 991px)
+            display: flex
+            flex-direction: column
+            width: 100% 
+    &__right
+        width: 364px  
+        @media(max-width: 1600px)
+            width: 20%
+        @media(max-width: 1150px)
+            width: 45%    
+        @media(max-width: 991px)
+            width: 80% 
+            display: flex
+            flex-direction: column
+            align-items: center            
+    &__text
+        font-family: $textFont
+        font-size: 2rem
+        line-height: 36px  
+        color: $mainText 
+        @media(max-width: 991px) 
+            width: 100%
+        @media(max-width: 576px) 
+            font-size: 2rem
+        @media(max-width: 480px) 
+            font-size: 1.6rem  
+        @media(max-width: 375px)
+            font-size: 1.4rem
+            line-height: 20px   
+            margin-top: 16px  
+            width: 329px 
+    &__block__link
+        display: flex
+        margin-top: 24px  
+        column-gap: 24px 
+        @media(max-width: 1150px)
+            flex-direction: column
+            gap: 24px   
+        @media(max-width: 375px)
+            margin-top: 16px
+            gap: 16px      
+    &__link  
+        display: block
+        font-size: 2.4rem
+        line-height: 36px
+        font-weight: 500 
+        color: $mainText 
+        @media(max-width: 576px) 
+            font-size: 2rem  
+        @media(max-width: 480px) 
+            font-size: 1.6rem 
+        @media(max-width: 375px) 
+            font-size: 1.4rem
+            line-height: 20px
+    &__address   
+        margin-top: 24px 
+        font-weight: 500
+        font-size: 2.4rem
+        line-height: 36px
+        font-style: normal
+        color: $mainText 
+        @media(max-width: 768px)   
+            margin-top: 20px
+        @media(max-width: 576px) 
+            font-size: 2rem  
+        @media(max-width: 480px) 
+            width: auto
+            font-size: 1.6rem 
+        @media(max-width: 375px) 
+            font-size: 1.4rem
+            line-height: 20px
+            margin-top: 16px         
+    &__bottom
+        padding-bottom: 56px
+        margin-top: 32px
+        @include flexCenter
+        justify-content: space-between
+        @media(max-width: 991px) 
+            flex-direction: column
+        @media(max-width: 768px)   
+            margin-top: 56px
+        @media(max-width: 676px)   
+            flex-direction: column
+            gap: 20px 
+        @media(max-width: 480px)     
+            padding-bottom: 60px  
+        @media(max-width: 375px) 
+            padding-bottom: 40px  
+            margin-top: 40px 
+            gap: 8px   
+        &__left
+            display: flex
+            gap: 32px 
+            @media(max-width: 1440px)  
+                gap: 16px 
+            @media(max-width: 991px) 
+                flex-direction: column-reverse
+                align-items: center
+                gap: 8px     
+    &__copiryght  
+        font-family: $textFont
+        font-size: 1.6rem
+        line-height: 24px
+        color: $mainText 
+        @media(max-width: 450px) 
+            font-size: 1.4rem  
+        @media(max-width: 400px) 
+            font-size: 1.2rem          
+    &__design
+        font-family: $textFont
+        line-height: 32px
+        font-weight: 700
+        font-size: 2rem
+        color: $mainText 
+        @media(max-width: 375px)    
+            line-height: 20px
+            font-size: 1.2rem
+    &__privat-policy
+        font-family: $textFont
+        font-size: 1.6rem
+        font-weight: 700
+        line-height: 24px
+        text-decoration: underline
+        color: $mainText
+        @media(max-width: 375px) 
+            font-size: 1.2rem
+            line-height: 20px
+
+
+    // //Смена темы на мобилке стр производства из дизайна убрали
+    // &-mobile
+    //     background: $mainBg
+    //     .footer__text, .footer__link, .footer__address, .footer__copiryght, .footer__design, .footer__btn
+    //         color: $secondText    
+    //     .footer__btn
+    //         border: 1px solid $defaultBorder  
+    //     .footer__btn::before
+    //         background: url('icons/manufacture/footer-btn-icon.svg')  
+    //         @include background         
+    //     .footer__feedback__btn::before
+    //         border: 1px solid $footerMobileBorder  
+    //         background: url('icons/manufacture/footer-feedback-icon.svg'), $footerMobileBg
+    //         @include background 
+    //         background-size: 70% 

@@ -76,7 +76,7 @@ const DataUniverseUrl = '/portfolio/myprojects/html-css/datauniverse/index.html'
 const AveximaUrl = '/portfolio/myprojects/html-css/avexima/index.html'
 const ArtificiailIntelligenceUrl = '/portfolio/myprojects/html-css/artificiail-intelligence/index.html'
 const MedicalHospitalUrl = '/portfolio/myprojects/html-css/medical-hospital(Grid)/index.html'
-const WowUrl = '../myprojects/bootstrap/wow/index.html'
+const WowUrl = '/portfolio/myprojects/bootstrap/wow/index.html'
 
 
 /* Проекты ссылки на GitHub */
