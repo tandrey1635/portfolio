@@ -1,0 +1,337 @@
+@media (max-width: 1400px)
+    .center
+        padding-left: calc(50% - 585px)
+        padding-right: calc(50% - 585px)
+    .header
+        &__menu__list:not(:last-child)
+            margin-right: 30px
+    .promo
+        .promo__edit
+            .promo__info 
+                display: block
+        .right
+            margin-left: 30px   
+            .block__games
+                margin-left: 20px
+                .bottom__games
+                    margin-left: 0 
+            .promo__info
+                display: none
+                margin-left: 20px            
+            .promo__table
+                width: 845px
+            .block__achievements
+                .bottom__achievements
+                    width: 250px       
+    .footer__top__right
+         .right__menu__block
+            margin-right: 80px
+    
+@media (max-width: 1170px)
+    .center
+        padding-left: calc(50% - 496px)
+        padding-right: calc(50% - 496px)
+    .promo
+        .card__descr
+            .card__heading
+                font-size: 25px
+            .card__text
+                font-size: 18px    
+        .right
+            width: 680px
+            margin-left: 20px
+            .promo__table
+                    width: 650px
+            .block__games
+                .top__games
+                    width: 350px
+                    .top__btn
+                        width: 165px 
+                .bottom__games__items  
+                    width: 80px    
+                    .games__items__heading
+                        font-size: 13px
+                    .games__items__text
+                        margin-top: 10px
+                        font-size: 25px   
+                .bottom__games__items:not(:last-child) 
+                    margin-right: 10px 
+                                 
+            .block__achievements 
+                margin-right: 0       
+    .footer__top__right
+         .right__menu__block
+            margin-right: 40px
+
+@media (max-width: 992px)
+    .center
+        padding-left: calc(50% - 368px)
+        padding-right: calc(50% - 368px)
+    .header
+        flex-direction: column
+        justify-content: space-around
+        padding: 10px
+        min-height: 180px
+        &__right__menu
+            margin-right: 30px
+        &__menu__link   
+            font-size: 16px    
+        &__right__link:not(:last-child)
+            margin-right: 30px 
+    .promo
+        &__left-menu
+           width: 250px
+        &__card
+            width: 250px
+            .card__descr  
+                width: 140px     
+        .right
+            width: 465px 
+            .top__right
+                flex-direction: column-reverse
+                align-items: center
+                min-height: 280px  
+            .promo__table
+                width: 465px  
+                .table__header
+                    padding-left: 5px 
+                td
+                    padding-left: 5px
+                    padding-right: 5px
+    .footer
+        &__top
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__left
+              margin-bottom: 50px
+        &__block__link
+            display: flex
+        .right__menu__block
+            margin-right: 20px    
+
+@media (max-width: 767px)
+    .center
+        padding-left: calc(50% - 272px)
+        padding-right: calc(50% - 272px)
+    .promo
+        flex-direction: column
+        align-items: center
+        &__menu
+            width: auto
+            margin-left: 0
+        &__left-menu
+            width: 550px
+        &__card
+            width: 550px 
+            .card
+                justify-content: space-evenly 
+            .card__descr
+                width: 220px   
+                .card__text
+                    font-size: 22px            
+            .promo__edit
+                justify-content: space-around
+                &__text  
+                    margin-left: 0 
+                .promo__info  
+                    margin-top: 25px 
+        .left__menu
+            display: grid
+            grid-template: 1fr/ 220px 200px
+            justify-content: space-evenly 
+            .left__menu__list   
+                display: block                        
+        .right
+            width: 550px
+            margin-top: 30px
+            margin-left: 0
+            .block__achievements 
+                padding-bottom: 8px  
+            .promo__block-table
+                margin-bottom: 30px
+            .promo__table
+                width: 550px
+    .footer
+        .right__menu
+            margin-right: 0
+        .right__menu:not(:last-child) 
+            margin-right: 20px  
+        &__bottom__social-icons
+            .social__icons__links  
+                width: 30px
+                height: 30px
+                img
+                    width: 30px        
+                                  
+@media (max-width: 575px)
+    .center
+        padding-left: calc(50% - 225px)
+        padding-right: calc(50% - 225px)
+    .promo
+        &__left-menu
+            width: 450px
+        .left__menu
+            grid-template: 1fr/repeat(2, 200px)  
+        .left__menu__img
+            margin-left: 60px            
+        &__card
+            width: 450px
+        .right
+            width: 450px    
+            .promo__table
+                width: 450px
+                .table__header
+                    font-size: 11px
+                   
+    .footer
+        .right__menu__block
+            display: none
+        &__top
+           min-height: 240px
+           padding-top: 30px
+           &__left
+               margin-bottom: 0             
+        &__bottom
+           min-height: 240px
+           flex-direction: column-reverse
+           justify-content: space-evenly
+        .social__icons__links
+            width: 40px
+            height: 40px
+            img
+                width: 40px
+
+@media (max-width: 480px)
+    .center
+        padding-left: calc(50% - 145px)
+        padding-right: calc(50% - 145px)
+    .header
+        padding-top: 0
+        padding-bottom: 0
+        min-height: 60px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        position: relative
+        &__logo
+            img
+                width: 120px  
+        .bag-mobile
+            position: absolute
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 10px
+            background: #86E3CE 
+            width: 22px
+            height: 22px
+            left: 38%
+            right: 10%
+            top: 38%
+            bottom: 10%  
+        .header__right__img-bag  
+            width: 25px                  
+        .burger
+            z-index: 10
+            top: 22px
+            right: 10px
+            position: absolute
+            width: 30px
+            height: 30px
+            display: block
+            &-line
+                margin: 5px 0
+                display: block
+                width: 30px
+                height: 3px
+                background: #000
+        .header__menu__list:not(:last-child)
+            margin-right: 0px
+        .header__right__link:not(:last-child)
+            margin-right: 59px     
+        .header__block
+            display: block   
+        &__nav
+            display: none
+        &__nav-mobile
+            width: 100%
+            height: 350px
+            background: #fff
+            position: absolute
+            top: 60px
+            left: -100%
+            display: block
+            transition: 1s
+            .header__menu-mobile
+                display: flex
+                align-items: center
+                flex-direction: column 
+                height: 300px
+                justify-content: space-evenly  
+            .header__menu__list-mobile
+                padding: 10px 0 
+            .header__menu__link-mobile   
+                font-size: 18px 
+        .nav-mobile-active
+            left: 0px
+            transition: 1s
+            list-style: none
+       
+        &__right
+            display: none 
+        .header__right__link-mobile
+            margin-right: 59px 
+            width: 30px 
+            .header__right__img-mobile 
+                width: 30px    
+    .promo
+        &__left-menu
+            width: 300px 
+        &__card
+            width: 300px
+            .card__descr
+                width: 165px
+        .left__menu
+            grid-template: 1fr / 200px 
+        .right
+            width: 300px
+            .block__games
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-left: 0  
+                width: 300px
+                .top__games
+                    width: 280px
+                    .top__btn
+                        width: 130px 
+                .bottom__games  
+                    width: 300px
+                    justify-content: space-around     
+                    .bottom__games__items
+                        width: 67px 
+                        .games__items__heading
+                            font-size: 12px    
+                            margin-left: 0
+                            text-align: center                   
+                    .bottom__games__items:not(:last-child) 
+                        margin-right: 0 
+            .promo__table
+                text-align: center
+                width: 300px
+                .table__header
+                    padding-left: 2px
+                    padding-right: 2px
+                    text-align: center  
+                td
+                    padding-left: 2px
+                    padding-right: 2px
+                    font-size: 11px
+    .footer
+        .social__icons__links
+            width: 40px
+            height: 40px
+            img
+                width: 40px

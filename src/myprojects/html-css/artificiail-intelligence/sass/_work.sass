@@ -1,0 +1,63 @@
+.work
+    padding: 50px 0 72px 0
+    @media (min-width: 1199px)
+        padding: 50px 0 166px 0  
+    &__wrapper  
+        margin-top: 36px
+        display: flex
+        flex-direction: column
+        gap: 8px
+        @media (min-width: 767px)
+            flex-direction: row
+            flex-wrap: wrap
+            align-items: center
+        @media (min-width: 1441px)
+            width: 112%      
+    &__left
+        @media (min-width: 576px)
+            width: 75%
+            margin: 0 auto
+        @media (min-width: 767px)
+            width: 48%  
+        @media (min-width: 991px)
+            width: 39%          
+    &__right
+        @media (min-width: 767px)
+            width: 48%
+        @media (min-width: 991px)
+            width: 60%    
+    &__items
+        padding: 20px 35px 12px 76px
+        background: $backgroundItemsThird
+        &:not(:first-child)  
+            margin-top: 8px
+    &__descriptions
+        position: relative
+        min-height: 100px
+        font-weight: 450
+        font-size: 14px
+        line-height: 17px
+        color: $mainTextColor 
+        @media (min-width: 576px)
+            font-size: 16px
+        @media (min-width: 767px)
+            font-size: 18px    
+        &::before
+            content: ''
+            position: absolute
+            left: -50px
+            top: 0
+            background: url('img/icons/list-item-work.png') no-repeat center/cover
+            width: 30px
+            height: 20px
+    &__bg
+        background: url('img/work-bg.png') no-repeat center/cover        
+        min-height: 260px
+        mix-blend-mode: lighten
+        @media (min-width: 767px)
+            min-height: 500px
+        @media (min-width: 991px)
+            min-height: 700px 
+        @media (min-width: 1199px)
+            min-height: 900px       
+        

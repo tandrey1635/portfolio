@@ -1,0 +1,36 @@
+.about
+    padding: 55px 0 72px 0
+    &__items
+        min-height: 142px
+        padding: 15px 24px 20px 16px
+        background: $backgroundItems
+        border-radius: 20px
+        @media (min-width: 576px)
+            width: 75%
+            margin: 0 auto
+        @media (min-width: 767px)  
+            width: 48%  
+        @media (min-width: 1199px) 
+            padding: 16px 16px 20px
+    &__img
+        width: 42px
+        height: 42px  
+    &__wrapper
+        display: flex
+        flex-direction: column
+        gap: 18px
+        margin-top: 36px 
+        @media (min-width: 767px) 
+            flex-direction: row
+            flex-wrap: wrap
+    &__text
+        margin-top: 8px
+        font-weight: 450
+        font-size: 14px
+        line-height: 17px
+        color: $mainTextColor  
+        @media (min-width: 576px)  
+            font-size: 16px
+        @media (min-width: 767px)  
+            font-size: 18px          
+            margin-top: 16px  

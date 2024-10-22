@@ -1,0 +1,91 @@
+.promo
+    padding-bottom: 72px
+    @media (min-width: 1920px) 
+        padding: 0 0 285px 0
+    &__subtitle
+        text-align: center
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        color: $fourthTextColor
+        @media (min-width: 991px) 
+            font-size: 18px
+    &__wrapper
+        @media (min-width: 767px)  
+            display: flex
+            justify-content: space-between
+    &__top
+        @media (min-width: 767px)
+            width: 48%   
+        @media (min-width: 1920px) 
+            width: 650px     
+    &__bottom
+        min-height: 284px
+        background: url('img/promo-bg.png') no-repeat center/cover
+        mix-blend-mode: lighten
+        @media (min-width: 576px)  
+            margin-top: 16px
+        @media (min-width: 767px)
+            width: 48%  
+        @media (min-width: 991px)   
+            min-height: 400px
+        @media (min-width: 1920px)    
+            width: 758px  
+            min-height: 550px 
+    &__text
+        width: 300px
+        margin: 0 auto
+        text-align: center
+        font-weight: 450
+        font-size: 16px
+        line-height: 20px
+        color: $mainTextColor
+        @media (min-width: 420px)
+            width: 80%
+        @media (min-width: 767px) 
+            width: 100%
+        @media (min-width: 991px)  
+            margin-top: 32px 
+            font-size: 18px 
+        &_color
+            width: 236px 
+            font-weight: 450
+            text-align: left
+            color: $secondTextColor
+            @media (min-width: 420px)
+                width: 100%
+                margin-top: 16px
+    &__descriptions
+        margin-top: 16px
+        display: flex
+        @media (min-width: 420px)
+            width: 100%
+            justify-content: center
+        @media (min-width: 576px)   
+            justify-content: center 
+        @media (min-width: 1199px)  
+            margin-top: 42px    
+        &-img 
+            display: flex
+            padding: 13px 10px 9px 11px
+            width: 50px
+            height: 50px
+            background: $backgroundItems
+            border-radius: 8px  
+            @media (min-width: 1199px)  
+                width: 65px
+                height: 65px  
+        &-text
+            margin-left: 16px 
+            @media (min-width: 420px)  
+                width: 238px
+            @media (min-width: 576px) 
+                width: 75%
+    &__header
+        font-weight: 750
+        font-size: 16px
+        line-height: 21px
+        color: $mainTextColor 
+        @media (min-width: 991px)  
+            font-size: 18px    
+       

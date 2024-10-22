@@ -1,0 +1,178 @@
+$fontFamily: Lato;
+$fontWeight: normal;
+$fontStyle: normal;
+$colorSelect: #F16D7F;
+$colorBackground :#222222;
+$colorText:#222222;
+
+
+
+
+
+.info{
+   display: flex;
+
+   &__left{
+    margin-right: 128px;
+    }
+
+    &__text{
+    padding-bottom: 20px;
+    font-family: $fontFamily;
+    font-style: $fontStyle;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorBackground;
+    }
+
+    &__field{
+    width: 300px;
+    height: 45px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    font-family: $fontFamily;
+    font-style: $fontStyle;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    }
+  
+    &__field::placeholder{
+    font-style: $fontStyle;
+    color: #B1B1B1;
+    }
+
+    .gender{
+    padding-top: 31px;
+    margin-bottom: 33px;
+    display: flex;
+    
+        &__info__male{
+          margin-right: 20px;
+          }
+
+        &__info{
+        
+          font-family: $fontFamily;
+          font-weight: 300;
+          font-size: 11px;
+          line-height: 13px;
+          color: $colorText;
+       }
+
+
+
+      }
+
+    [type="radio"]{
+
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+        
+    }
+      
+    &__password{
+
+    width: 359px;
+    font-family: $fontFamily;
+    font-style: $fontStyle;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding-bottom: 39px;
+
+    }
+      
+    .join__now{
+  
+    height: 50px;
+    width: 167px;
+    background-color: $colorSelect;
+    font-family: $fontFamily;
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 96px;
+    
+    }
+
+    .join__now:hover{
+      background: #E05C6E;
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+
+
+    &__right__heading, &__right__text{
+    font-family: $fontFamily;
+    font-style: $fontStyle;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 21px;
+    }
+      
+      
+      
+      
+      
+    &__right__list{
+    font-family: $fontFamily;
+    font-style: $fontStyle;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    
+    }
+      
+      
+    .special__conditions{
+    padding-bottom: 16px;
+    list-style: none;
+    display: flex;
+      }
+
+
+
+    .special__conditions::before{
+    content: url('img/registration/ok.svg');
+    padding-right: 22px;
+    }
+
+      
+   
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

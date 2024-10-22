@@ -1,0 +1,70 @@
+.header
+    position: relative
+    padding: 24px 0 60px 0
+    @media (min-width: 1199px)
+        padding: 30px 0 78px 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
+        width: 196px
+        height: 58px    
+    &__img
+        display: flex
+        align-items: center
+        svg
+            width: 32px
+            height: 32px
+            fill: $secondTextColor                 
+    &__info
+        @media (min-width: 767px)
+            display: flex  
+            align-items: center
+        &-mobile 
+            display: flex
+            align-items: center
+            justify-content: space-evenly
+            position: absolute
+            transition: 0.5s
+            z-index: 10
+            top: 0 
+            left: -100%
+            width: 100%
+            height: 85px 
+            background: $headerMobileBg
+            box-shadow: 0px 4px 34px $headerMobileShadow
+            border-radius: 0px 0px 0px 22px 
+            @media (min-width: 767px)
+                display: none
+    .active  
+        left: 0% 
+        transition: 0.5s    
+    &__svg-mobile 
+        margin-right: 15px       
+    &__link:hover
+        .header__text__link
+            color: $hoverBtnColor
+        svg
+            fill: $hoverBtnColor  
+    &__close
+        width: 22px
+        height: 22px        
+    &__text__link
+        display: none
+        font-weight: 450
+        font-size: 18px
+        line-height: 22px
+        color: $mainTextColor
+        @media (min-width: 767px)
+            display: flex
+            align-items: center
+            margin-left: 27px
+        &-mobile
+            display: flex  
+            justify-content: center
+            align-items: center  
+   
+           
+    
+        

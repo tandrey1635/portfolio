@@ -1,0 +1,165 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+
+body
+    background: url(../../../../img/main-bg.png)
+    background-size: 100%    
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.header
+    &__logo
+        display: flex
+        justify-content: center
+    .logo  
+        width: 800px
+        fill: #6A5ACD
+    &__menu
+        height: 200px
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        list-style: none
+        .menu__list
+            color: aqua 
+            list-style: none 
+            margin-top: 10px      
+        .menu__link
+            text-decoration: none 
+            font-size: 20px 
+            color: aqua 
+        .details__menu
+            position: absolute
+            z-index: 5
+            left: 20% 
+            top: 45%
+        details
+            width: 220px 
+            outline: 0
+            outline-offset: 0
+        details:active, :hover, :focus
+            outline: 0
+            outline-offset: 0
+        summary
+           font-size: 20px  
+           color: aqua
+        .summary-solar-systems
+            padding-top: 10px   
+        .summary-star
+            font-size: 20px  
+            color: aqua
+            padding-top: 10px
+            text-align: center     
+        .details-solar-systems
+            padding-left: 20px  
+        .menu__solar-systems
+            padding-left: 15px
+
+
+.solar__system
+    min-height: 600px
+    &-text
+        text-align: center
+        font-size: 25px
+        font-weight: 900
+        color: #DA70D6
+        margin-bottom: 30px
+    &-nav 
+        font-weight: 700
+        color: white 
+        font-size: 20px 
+        margin-bottom: 30px 
+    &-link   
+        color: #6A5ACD
+        text-decoration: none 
+    .content
+        position: relative
+        .solar__system-photo  
+            width: 100%
+        &__planet
+            width: 80px
+            height: 80px
+            border: 5px solid #006fdd
+            border-radius: 100%
+        .star-sun
+            position: absolute
+            left: 100px
+            top: 30px
+            color: #00ff96
+            font-size: 50px
+            border: none
+            font-weight: 900
+        .planet-sun
+            position: absolute
+            left: 523px
+            width: 50px
+            height: 50px
+            top: 287px
+            transform: rotate3d(18, 1, 0, 50deg)
+        .planet__text-underline-sun  
+            height: 37px   
+            border-radius: 100% 
+        .planet-link-sun
+            display: flex
+            align-items: center
+            height: 37px  
+        .planet-text-sun
+            width: 40px
+            margin-left: 25px 
+            margin-top: 18px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-sun-text  
+            width: 100px
+            text-align: center 
+            color: orange
+            font-weight: 900
+            font-size: 25px
+            border-bottom: 3px solid orange 
+            margin-left: 57px
+            margin-top: -18px 
+            transform: rotate(-2deg)
+        .planet-text-sun, .planet-sun-text
+            display: non
+        .planet__text-underline-sun:hover .planet-text-sun, .planet__text-underline-sun:hover .planet-sun-text
+            display: block
+
+
+
+details[open]
+    -webkit-animation: scale-up-ver-top 0.55s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+    animation: scale-up-ver-top 0.55s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+    @-webkit-keyframes scale-up-ver-top
+        0% 
+            -webkit-transform: scaleY(0.4)
+            transform: scaleY(0.4)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+        100% 
+            -webkit-transform: scaleY(1)
+            transform: scaleY(1)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+
+    @keyframes scale-up-ver-top 
+        0% 
+            -webkit-transform: scaleY(0.4)
+            transform: scaleY(0.4)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+        100% 
+            -webkit-transform: scaleY(1)
+            transform: scaleY(1)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+

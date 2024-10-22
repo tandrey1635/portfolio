@@ -1,0 +1,65 @@
+.left
+    padding: 0 10px 0 10px
+    width: 241px
+    background: #1F2339 
+    @media (max-width: 1200px)
+        width: 200px
+    @media (max-width: 1023px)
+        display: none        
+.top__menu, .bottom__menu
+    display: flex
+    flex-direction: column
+    gap: 26px
+.top__menu  
+    margin-top: 64px                    
+.bottom__menu
+    margin-top: 85px       
+.top__link, .bottom__link
+    font-size: 14px
+    line-height: 19px
+    color: #FFFFFF
+.main-active
+    color: #43E8FF 
+    fill:  #43E8FF 
+
+.top__list, .bottom__list, .top__link, .bottom__link
+    display: flex 
+    align-items: center
+.top__list:before, .bottom__list:before  
+    margin-right: 10px 
+
+.bottom__link
+    display: inline-flex
+    width: 241px
+    min-height: 45px
+
+.svg
+    margin: 0 10px 
+    fill: #fff
+    border-radius: 0!important
+
+.svg-main
+    fill:  #43E8FF
+    margin-right: 10px
+  
+.top__link:hover 
+    color:  #43E8FF
+.top__link:hover .svg-accounts
+    fill:  #43E8FF 
+
+.top__link:hover .svg__main
+    fill:  #43E8FF 
+
+.bottom__list:hover .bottom__link:hover
+    background: radial-gradient(133.33% 2508.35% at -4.59% -10%, #32E6FF 0%, rgba(0, 255, 209, 0.81) 100%), #43E8FF
+    border-radius: 10px
+    color: #23273A 
+      
+.bottom__list:hover .svg    
+    fill:  #23273A 
+
+.active
+    background: radial-gradient(133.33% 2508.35% at -4.59% -10%, #32E6FF 0%, rgba(0, 255, 209, 0.81) 100%), #43E8FF
+    border-radius: 10px
+    color: #23273A 
+    fill:  #23273A

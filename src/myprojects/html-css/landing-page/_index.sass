@@ -1,0 +1,217 @@
+@media (max-width: 1140px)
+    .center
+        padding-left: calc(50% - 500px)    
+        padding-right: calc(50% - 500px) 
+    .header
+        &__bg
+            background-size: 450px 450px
+            display: flex
+            width: 450px
+            height: 450px  
+    .what-we-do
+        &__content
+            flex-wrap: wrap
+            justify-content: space-evenly
+        &__items:not(:last-child)
+            margin-bottom: 64px    
+    .project
+        &__bottom
+            flex-direction: column
+            gap: 20px
+            align-items: center
+        &__items
+            width: 950px
+            margin: 0 auto         
+    .footer
+        &__top
+            justify-content: space-around   
+
+@media (max-width: 991px)
+    .center
+        padding-left: calc(50% - 370px)    
+        padding-right: calc(50% - 370px)  
+    .header 
+        &__content
+            position: relative
+        &__bg
+            background-size: 336px 292px
+            display: flex
+            align-self: flex-end
+            position: absolute
+            right: 0
+            top: 185px
+            width: 336px
+            height: 292px
+            z-index: -1
+    .what-we-do
+        &__content
+            flex-direction: column 
+            align-items: center      
+        &__items:not(:last-child)
+            margin-bottom: 32px
+    .project
+        padding-top: 95px
+        padding-bottom: 109px
+        &__items
+            width: 100%
+            margin: 0 auto   
+        &__info
+            top: 19px
+            left: 19px
+            font-size: 26px
+    .footer
+        &__top
+            justify-content: space-around
+        &__text
+            width: 336px        
+        &__btn
+            padding: 3px 30px
+        &__bottom
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__menu
+            justify-content: center   
+        &__list
+            margin-bottom: 24px
+            width: 515px
+        .list__one::before, .list__two::before, .list__three::before
+            margin-right: 36px 
+        &__copyright
+            padding-top: 54px
+            padding-bottom: 64px
+           
+@media (max-width: 767px)
+    .center
+        padding-left: calc(50% - 340px)
+        padding-right: calc(50% - 340px)
+    .header
+        padding-top: 16px
+        padding-bottom: 41px 
+        &__top
+            display: flex
+            align-items: flex-end
+        &__info
+            padding-top: 28px
+            padding-bottom: 0
+            display: flex
+            flex-direction: column
+            align-items: center 
+            margin: 0 auto 
+        &__bg
+            display: none
+        &__heading
+            font-weight: 300
+            font-size: 32px
+            line-height: 37px
+            text-align: center 
+        &__text
+            padding-top: 12px
+            width: 70%
+            text-align: center
+        &__link
+            margin: 32px auto 0
+            font-size: 12px
+            line-height: 26px  
+            display: flex
+            justify-content: center 
+            padding: 0 10px
+    .what-we-do
+        &__header
+            font-weight: 300
+            font-size: 24px
+            line-height: 28px 
+            letter-spacing: 0
+        &__content
+            margin-top: 32px
+        &__items
+            width: 334px
+    .project
+        padding-top: 32px 
+        padding-bottom: 48px
+        &__header
+            font-weight: 300
+            font-size: 24px
+            line-height: 28px
+            letter-spacing: 0 
+        &__top
+            padding-top: 82px
+        &__items
+            width: 90%
+            height: 300px
+        .info__top
+            font-size: 16px
+            line-height: 19px
+            text-align: right  
+            top: 16px
+            right: 16px
+        &__info
+            font-size: 16px
+            line-height: 19px
+            top: 16px
+            left: 16px   
+        &__bottom
+            flex-direction: column
+            padding-top: 16px
+        &__items-small:not(:last-child)
+            padding-bottom: 16px  
+    .footer
+        &__top
+            flex-direction: column
+        &__left
+            padding: 18px 0 40px      
+        &__heading
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+        &__text
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+        hr
+            margin-top: 20px  
+        &__menu
+            margin-left: 0
+            align-items: center
+            flex-wrap: nowrap
+            flex-direction: column
+        &__list
+            width: 304px
+        &__copyright
+            margin: 0 auto
+        .list__one::before, .footer .list__two::before, .footer .list__three::before 
+            margin-right: 23px            
+
+@media (max-width: 375px)
+    .center
+        padding-left: calc( 50% - 150px)
+        padding-right: calc( 50% - 150px)
+    .header
+        &__text
+            width: 300px
+    .what-we-do
+        &__header
+            font-size: 22px
+        &__items
+            width: 300px 
+            padding: 42px 15px 22px
+        &__info
+            width: 276px    
+    .project
+        &__top
+            padding-top: 32px
+        &__text
+            width: 300px
+        &__items
+            height: 200px
+    .footer
+        &__text
+            width: 300px
+        &__btn
+            padding: 3px 18px
+       
+
+
+
+
+

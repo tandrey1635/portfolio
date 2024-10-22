@@ -1,0 +1,115 @@
+.info
+    &__table
+        margin: 0 auto
+        @media (max-width: 700px)
+            margin-bottom: 50px
+    .table
+        padding: 17px 10px
+        width: 1080px
+        min-height: 789px
+        background: #383E57
+        box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15)
+        border-radius: 18px
+        border-collapse: collapse
+        @media (max-width: 1350px)
+            width: 900px
+        @media (max-width: 1200px)
+            width: 760px  
+        @media (max-width: 1023px) 
+            width: 700px 
+        @media (max-width: 700px)
+            width: 95%
+            display: flex
+            flex-direction: column   
+            margin: 0 auto
+        thead
+            font-size: 14px
+            line-height: 19px
+            color: #FFFFFF
+            @media (max-width: 700px)
+                font-size: 12px
+        td
+            height: 50px
+            @media (max-width: 700px)
+                padding: 5px
+            @media (max-width: 435px) 
+                padding: 2px    
+        .organisation__block-text
+            display: flex
+            align-items: center
+            @media (max-width: 480px)
+                display: block
+        .organisation__name, .organisation__thead, .organisation__inn, .organisation__director, .organisation__adress, .organisation__edit
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.5)
+            height: 50px 
+        .organisation__name, .organisation__inn, .organisation__director, .organisation__adress
+            border-right: 0.5px solid rgba(0, 0, 0, 0.5)
+        .organisation__thead, .organisation__tfoot
+            color: #fff
+            @media (max-width: 700px)
+                width: 120px 
+            @media (max-width: 650px)
+                width: 110px 
+            @media (max-width: 576px)    
+                width: 100px  
+            @media (max-width: 550px)     
+                font-size: 10px  
+            @media (max-width: 500px)  
+                width: 95px   
+            @media (max-width: 480px)   
+                width: 80px  
+            @media (max-width: 435px) 
+                width: 65px
+            @media (max-width: 385px)
+                width: 40px         
+        .organisation__thead-name
+            padding-left: 10px
+            @media (max-width: 415px)   
+                padding-left: 0
+        .organisation__thead-adress, .organisation__tfoot-adress 
+            @media (max-width: 700px)
+                width: 256px  
+        .organisation__thead-director, .organisation__thead-adress, .organisation__director, .organisation__adress 
+            padding-left: 30px
+            @media (max-width: 700px)
+                padding-left: 10px
+            @media (max-width: 500px) 
+                padding-left: 5px    
+        .organisation
+            font-size: 12px
+            line-height: 16px
+            color: #A1A6BE
+            @media (max-width: 700px)
+                width: 128px
+                font-size: 10px
+            @media (max-width: 415px)   
+                font-size: 9px   
+            @media (max-width: 385px)
+                font-size: 8px          
+        .organisation__adress
+            width: 256px             
+        .organisation__edit
+            width: 52px
+            padding-left: 10px
+            cursor: pointer 
+            img
+                width: 15px
+                height: 14px
+        .organisation__thead-inn, .organisation__inn
+            text-align: center    
+        .organisation__low__raitings:before, .organisation__middle__raitings:before, .organisation__hight__raitings:before   
+            margin-left: 10px
+            margin-right: 9px 
+            @media (max-width: 500px) 
+                margin-left: 0
+                margin-right: 10px  
+        .organisation__low__raitings:before
+            content: url(img/icons/low__raitings.svg)
+        .organisation__middle__raitings:before
+            content: url(img/icons/middle__raitings.svg)
+        .organisation__hight__raitings:before
+            content: url(img/icons/hight__raitings.svg)
+        .organisation__low__raitings:before, .organisation__middle__raitings:before,.organisation__hight__raitings:before
+            @media (max-width: 1350px)  
+                display: flex
+                flex-direction: column 

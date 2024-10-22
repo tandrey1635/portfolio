@@ -1,0 +1,127 @@
+.header
+    min-height: 32px
+    padding: 55px 0 45px 0 
+    .container
+        display: flex
+        justify-content: space-between 
+        align-items: center 
+        @media (max-width: 1350px)
+            justify-content: space-around
+        @media (max-width: 700px) 
+            display: flex
+            flex-direction: column   
+            align-items: center  
+    .container_space-between  
+        @media (max-width: 1350px)
+            justify-content: space-between 
+    &__icons
+        width: 28px
+        height: 28px    
+    &__left  
+        display: flex
+        align-items: center 
+        @media (max-width: 1023px) 
+            flex-direction: column    
+    &__right
+        display: flex
+        align-items: center 
+    .menu
+        color: #fff    
+        font-size: 30px
+        display: none
+        @media (max-width: 1023px) 
+            display: flex
+            position: absolute
+            top: 10px
+            right: 10px         
+    &__left-info
+        font-weight: bold
+        font-size: 20px
+        line-height: 27px
+        color: #FFFFFF
+    &__text    
+        padding-top: 4px
+        margin-left: 17px
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: #43E8FF
+    &__icons
+        cursor: pointer  
+        @media (max-width: 700px)
+            display: none  
+    &__icons:not(:last-child)
+        margin-right: 23px 
+        @media (max-width: 1350px)
+            margin-right: 10px       
+    &__input
+       margin-left: 227px
+       display: flex
+       position: relative
+       width: 465px 
+       @media (max-width: 1350px)
+           margin-left: 100px
+       @media (max-width: 1200px) 
+           margin-left: 30px 
+       @media (max-width: 700px) 
+           width: 330px
+           margin-left: -5px             
+    .input
+        width: 465px
+        height: 36px
+        background: #3E4459
+        border-radius: 5px
+        padding: 8px 173px 8px 8px
+        color: #C4C4C4
+        @media (max-width: 1200px)
+            width: 365px
+        @media (max-width: 1023px) 
+            width: 300px
+            padding: 8px 50px 8px 8px
+        @media (max-width: 700px)
+            width: 330px        
+    .btn
+        padding: 7px 30px
+        background: #FFFFFF
+        border-radius: 6px   
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: #23273A 
+        margin-right: 26px
+        margin-left: 24px
+        @media (max-width: 1350px)
+            margin-left: 20px
+            margin-right: 20px
+        @media (max-width: 1023px) 
+            margin-right: 15px    
+    .btn__events
+        margin-right: 26px
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: #23273A
+        padding: 7px 30px
+        background: #FFFFFF
+        border-radius: 6px 
+        @media (max-width: 700px) 
+            margin-right: 0
+            margin-top: 20px
+               
+    .search__img 
+        position: absolute 
+        left: 440px
+        top: 10px
+        @media (max-width: 1200px)
+            left: 340px
+        @media (max-width: 1023px)
+            left: 275px  
+        @media (max-width: 700px)  
+            left: 300px 
+            top: 30px   
+    .search__field
+        @media (max-width: 700px)
+            margin: 20px auto   
+    .search__icon
+        width: 13px
+        height: 16px             

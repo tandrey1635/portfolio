@@ -1,0 +1,162 @@
+.block__btn
+    margin: 0 auto
+    width: 300px
+    @media (min-width: 576px)  
+        width: 440px
+.modal__block__btn 
+    display: flex
+    justify-content: center
+    width: 300px   
+.btn
+    margin-top: 5px
+    padding: 14px
+    background: $btnBg
+    box-shadow: 0px 7px 20px -7px $btnShadow
+    border-radius: 9px
+    font-weight: 750
+    font-size: 12px
+    line-height: 15px
+    text-align: center
+    letter-spacing: 0.25em
+    text-transform: uppercase
+    color: $mainTextColor
+    @media (min-width: 576px)  
+        margin-top: 48px    
+        padding: 35px 14px
+    &:hover
+        background: $hoverBtnColor   
+
+.knowledge__btn
+    margin-top: 44px
+
+.big__block__btn
+    display: none
+    @media (min-width: 1920px)
+        margin: 0 1% 0 15%
+        display: block
+    &_margin
+        margin: 0 2% 0 25%   
+.big__btn
+    width: 210px
+    min-height: 60px
+    border: 1px solid $btnBorder
+    box-shadow: 0px 7px 20px -7px $btnShadow
+    border-radius: 9px
+    background: transparent
+    font-weight: 750
+    font-size: 12px
+    line-height: 15px
+    text-align: center
+    letter-spacing: 0.25em
+    text-transform: uppercase
+    color: $secondTextColor
+    &:hover
+        border: 1px solid $hoverBtnColor
+        color: $hoverBtnColor
+.small__block__btn  
+    margin: 24px auto 0
+    display: flex
+    justify-content: center
+    @media (min-width: 1920px)
+        display: none  
+.small__btn
+    padding: 7px 16px
+    font-weight: 750
+    font-size: 12px
+    line-height: 15px
+    text-align: center
+    letter-spacing: 0.25em
+    text-transform: uppercase
+    color: $secondTextColor  
+    background: transparent
+    border: 1px solid $btnBorder
+    box-shadow: 0px 7px 20px -7px $btnShadow
+    border-radius: 9px    
+    &:hover
+        border: 1px solid $hoverBtnColor
+        color: $hoverBtnColor
+    
+
+.slider__arrows, .slider__arrows2
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 35%
+    width: 42px
+    height: 42px
+    background: $btnBg
+    opacity: 0.7
+    border-radius: 50%
+    z-index: 10
+    @media (min-width: 393px)
+        top: 30%
+    @media (min-width: 420px)    
+        top: 35%
+    @media (min-width: 576px) 
+        top: 30%   
+    @media (min-width: 991px) 
+        top: 195px
+    @media (min-width: 1199px) 
+        width: 62px
+        height: 62px  
+        top: 205px  
+    img
+        width: 14px
+        height: 12px
+        box-shadow: 0px 7px 20px -7px $btnShadow
+        @media (min-width: 1199px) 
+            width: 25px
+            height: 18px 
+    &:hover
+        background: $hoverBtnColor
+    &-left
+        left: 0px
+        @media (min-width: 1920px) 
+            left: -80px
+        img
+            transform: rotate(180deg)     
+    &-right
+        right: 0px  
+        @media (min-width: 1920px) 
+            right: -80px 
+
+.slider__link
+    margin-top: 8px
+    font-weight: 450
+    font-size: 12px
+    line-height: 21px
+    text-decoration: underline
+    color: $secondTextColor 
+    &:hover
+        color: $hoverBtnColor  
+    @media (min-width: 576px) 
+        font-size: 16px
+    @media (min-width: 991px) 
+        font-size: 18px  
+
+
+.arrow__up
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    background: $arrowUpBg
+    cursor: pointer
+    .block__arrow-up
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 50px
+        height: 50px
+        background: $btnBg
+        box-shadow: 0px 7px 20px -7px $btnShadow
+        border-radius: 50%
+        &:hover
+            background: $hoverBtnColor
+        img
+            width: 40%
+            height: 30%
+            transform: rotate(-90deg)

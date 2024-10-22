@@ -1,0 +1,534 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+canvas
+    outline: none
+    border-radius: 50%
+      
+body
+    background: url(../../../img/main-bg.png)
+    background-size: 100%  
+    
+input, textarea, button
+    border: none
+    outline: none
+
+button
+    cursor: pointer
+
+.audio
+    position: fixed
+    left: 0
+    bottom: 10px  
+    
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.header
+    &__logo
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__logo-text 
+        font-size: 50px
+        font-weight: 900
+        font-style: italic
+        color: #6A5ACD
+        animation: tracking-in-expand-fwd 3.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both, flicker-4 2s linear both infinite
+        @keyframes tracking-in-expand-fwd 
+            0% 
+                letter-spacing: -0.5em
+                transform: translateZ(-700px)
+                text-shadow: 0 0 lime, 0 0 #6A5ACD, 0 0 #6A5ACD, 0 0 #6A5ACD, 0 0 #6A5ACD, 0 0 #6A5ACD, 0 0 #6A5ACD, 0 0 #6A5ACD
+                transform: translateY(0)
+                opacity: 0
+            40%
+                opacity: 0.6
+            100% 
+                text-shadow: 0 -1px lime, 0 -2px lime, 0 -3px lime, 0 -4px lime, 0 -5px lime, 0 -6px lime, 0 -7px lime, 0 -8px lime
+                transform: translateY(8px)
+                transform: translateZ(0)
+                opacity: 1
+        @keyframes flicker-4
+            0%,100% 
+                opacity: 1
+            31.98% 
+                opacity: 1
+            32% 
+                opacity: 0
+            32.8% 
+                opacity: 0
+            32.82% 
+                opacity: 1
+            34.98% 
+                opacity: 1
+            35% 
+                opacity: 0    
+            35.7% 
+                opacity: 0   
+            35.72%
+                opacity: 1   
+            36.98% 
+                opacity: 1  
+            37% 
+                opacity: 0
+            37.6% 
+                opacity: 0
+            37.62% 
+                opacity: 1
+            67.98% 
+                opacity: 1
+            68% 
+                opacity: 0
+            68.4%
+                opacity: 0
+            68.42% 
+                opacity: 1
+            95.98% 
+                opacity: 1
+            96%
+                opacity: 0
+            96.7% 
+                opacity: 0
+            96.72% 
+                opacity: 1
+            98.98% 
+                opacity: 1
+            99% 
+                opacity: 0
+            99.6% 
+                opacity: 0
+            99.62% 
+                opacity: 1
+    
+    .logo  
+        width: 800px
+        margin: 0 auto
+        fill: #6A5ACD
+        filter: drop-shadow(10px 10px 10px lime)
+        animation: pulsate-fwd 2s ease-in-out infinite both
+        @keyframes pulsate-fwd 
+            0% 
+                transform: scale(1)
+            
+            50% 
+                transform: scale(1.1)
+            
+            100% 
+                transform: scale(1)
+        
+    &__menu
+        height: 200px
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        list-style: none
+        .menu__list
+            color: aqua 
+            list-style: none 
+            margin-top: 10px      
+        .menu__link
+            text-decoration: none 
+            font-size: 20px 
+            color: aqua 
+        .details__menu
+            position: absolute
+            z-index: 5
+            left: 20% 
+            top: 45%
+        details
+            width: 220px 
+            outline: 0
+            outline-offset: 0
+        details:active, :hover, :focus
+            outline: 0
+            outline-offset: 0
+        summary
+           font-size: 20px  
+           color: aqua
+        .summary-solar-systems
+            padding-top: 10px   
+        .summary-star
+            font-size: 20px  
+            color: aqua
+            padding-top: 10px
+            text-align: center     
+        .details-solar-systems
+            padding-left: 20px  
+        .menu__solar-systems
+            padding-left: 15px
+
+.solar__system
+    padding-top: 100px
+    padding-bottom: 100px
+    min-height: 600px
+    &-text
+        font-size: 25px
+        font-weight: 900
+        color: #DA70D6
+        margin-bottom: 30px
+    &-nav 
+        font-weight: 700
+        color: white 
+        font-size: 20px  
+        margin-bottom: 30px
+    .content__planet-img
+        position: relative
+    &__system-photo  
+        width: 100%
+        height: 800px
+        border-radius: 40%
+        
+    &-title
+        color: #00ff96
+        font-size: 50px
+        border: none
+        font-weight: 900
+
+    .content__nebula
+        display: flex
+        transform: rotate3d(18, 1, 0, 50deg)
+        position: absolute
+   
+    &__block
+        display: flex
+        width: 50px
+        height: 50px
+        border: 5px solid #006fdd
+        border-radius: 100%
+    &__link
+        width: inherit
+        cursor: pointer   
+    &__descriptions
+        display: flex
+        /* width: 150px */
+        width: 200px
+        margin: 10px 0
+        &::before
+            content: ''
+            height: 55%
+            margin: 30px 0
+            border-left: 3px solid orange 
+            transform: rotate(320deg)
+    &__text
+        color: orange
+        text-align: center
+        font-weight: 900
+        font-size: 25px
+        margin-left: 8px
+        border-bottom: 3px solid orange
+        
+    // список звездных скоплений   
+    .galactic-core
+        left: 50%
+        top: 410px   
+    .local-cluster    
+        left: 49%
+        top: 710px
+    .exodus-cluster
+        left: 59%
+        top: 670px
+    .sea-of-shadows
+        left: 72%
+        top: 430px
+    .brown-sea   
+        left: 70%
+        top: 485px 
+    .basin-annos
+        left: 45%
+        top: 550px    
+    .apiyskiy-crest
+        left: 15%
+        top: 750px
+    .beta-attica    
+        left: 90%
+        top: 450px
+    .abyss-of-the-shrike
+        left: 25%
+        top: 120px
+    .threshold-valhalla
+        left: 35%
+        top: 70px
+    .eta-hawking
+        left: 38%
+        top: 355px 
+    .gamma-aida
+        left: 95%
+        top: 510px 
+    .center-aida
+        left: 65%
+        top: 220px 
+    .far-rim
+        left: 58%
+        top: 115px 
+    .omega-watch
+        left: 85%
+        top: 350px 
+    .tau-artemis
+        left: 96%
+        top: 620px 
+    .rosette-nebula 
+        left: 56%
+        top: 70px    
+    .omega-nebula
+        left: 35%
+        top: 250px   
+    .horsehead-nebula
+        left: 67%
+        top: 580px 
+    .vultures-nest
+        left: 90%
+        top: 750px     
+    .serpent-nebula    
+        left: 30%
+        top: 420px 
+    .krogan-dmz
+        left: 28%
+        top: 480px   
+    .wastelands-minos   
+        left: 12%
+        top: 300px 
+    .athens-nebula
+        left: 18%
+        top: 360px         
+    .nimbus
+        left: 7%
+        top: 350px 
+    .sigurd-cradle
+        left: 48%
+        top: 155px 
+    .arcturus-flow
+        left: 49%
+        top: 610px
+    .ismar-limit
+        left: 12%
+        top: 220px    
+    .pangaea-space
+        left: 70%
+        top: 320px  
+    .silean-nebula
+        left: 10%
+        top: 420px  
+    .voyager-cluster
+        left: 98%
+        top: 410px 
+    .eagle-nebula
+        left: 32%
+        top: 300px                     
+    .phoenix-cluster
+        left: 70%
+        top: 170px
+    .eton-cluster
+        left: 25%
+        top: 700px 
+    .kepler-limit
+        left: 55%
+        top: 255px 
+    .rho-argus
+        left: 70%
+        top: 535px
+    .caleston-fault
+        left: 57%
+        top: 370px 
+    .sigma-geminy
+        left: 88%
+        top: 550px    
+    .ninma-cluster        
+        left: 55%
+        top: 310px 
+    .theta-styx   
+        left: 80%
+        top: 390px  
+    .armstrong-nebula
+        left: 77%   
+        top: 290px  
+    .viper-nebula 
+        left: 70%
+        top: 800px 
+    .hourglass-nebula
+        left: 42%
+        top: 200px 
+    .crescent-nebula
+       left: 20%
+       top: 180px      
+    .nubiysky-scope
+        left: 20%
+        top: 600px
+    .titan-nebula
+       left: 8%
+       top: 520px  
+    .veil-perseus
+        left: 80%
+        top: 670px  
+    .pylos-nebula
+        left: 50%
+        top: 810px   
+    .peters-nebula  
+        left: 30%
+        top: 850px              
+
+.about
+    padding-top: 20px
+    padding-bottom: 20px
+    &__header
+        text-align: center
+        font-size: 50px
+        font-weight: 900
+        font-style: italic
+        color: gold
+        text-shadow: 0 -1px gold, 0 -2px gold, 0 -3px gold, 0 -4px gold, 0 -5px gold, 0 -6px gold, 0 -7px gold, 0 -8px gold
+    &__text
+        margin-top: 20px
+        text-align: center
+        font-size: 40px
+        font-weight: 900
+        font-style: italic
+        color: #6A5ACD 
+        text-shadow: 0 -1px lime, 0 -2px lime, 0 -3px lime, 0 -4px lime, 0 -5px lime, 0 -6px lime, 0 -7px lime, 0 -8px lime
+        &-shadow
+            text-shadow: 0 -1px blue, 0 -2px blue, 0 -3px blue, 0 -4px blue, 0 -5px blue, 0 -6px blue, 0 -7px blue, 0 -8px blue
+    &__starships
+        display: flex
+        justify-content: space-between
+
+.registration
+    padding-top: 50px
+    padding-bottom: 50px
+    background: url(../../../img/hiperspace-bg.gif) no-repeat center/cover
+    min-height: 500px
+    .container
+        display: flex
+        justify-content: space-between        
+    &__left, &__right
+        width: 48% 
+    &__header, &__text
+        font-size: 50px
+        font-weight: 900
+        font-style: italic
+        color: #6A5ACD 
+        text-align: center 
+        color:  crimson
+    &__img
+        margin-top: 20px    
+    &__photo
+        width: 100%
+        height: 100%    
+    &__text
+        margin-top: 20px
+        font-size: 40px  
+        color: lime    
+    &__form
+        width: 100%  
+        display: flex
+        flex-direction: column
+        justify-content: center 
+        align-items: center       
+    &__label
+        width: 80%
+        display: block
+        font-size: 30px
+        font-weight: 900
+        font-style: italic
+        color: lime
+    &__input, &__textarea
+        display: block 
+        padding: 0 10px
+        width: 100%
+        height: 35px 
+        margin: 20px 0
+        border-radius: 10px 
+        color: lime 
+        caret-color: lime
+        background: #6A5ACD 
+        font-size: 16px 
+        font-style: italic
+        font-weight: 700
+        &::placeholder
+           color: lime  
+    &__textarea
+        padding-top: 10px
+        color: lime 
+        caret-color: lime
+        background: #6A5ACD 
+        resize: vertical
+        height: 100px
+    &__btn
+        background: #6A5ACD
+        color: lime
+        padding: 20px 50px
+        font-weight: 700
+        font-style: italic
+        font-size: 20px
+        border-radius: 20px
+
+.footer
+    padding-top: 20px
+    padding-bottom: 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .logo
+        width: 400px
+        fill: #6A5ACD
+        filter: drop-shadow(5px 5px 5px lime)
+        animation: pulsate-fwd 2s ease-in-out infinite both
+        @keyframes pulsate-fwd 
+            0% 
+                transform: scale(1)
+            
+            50% 
+                transform: scale(1.1)
+            
+            100% 
+                transform: scale(1)
+    &__copyright
+        color: #6A5ACD
+        font-size: 18px
+        font-style: italic
+        font-weight: 900
+        text-align: center
+        margin: auto
+    &__right
+        width: 400px
+    &__photo
+        display: block
+        margin: 0 auto
+        width: 80%
+        height: 100%    
+
+
+details[open]
+    -webkit-animation: scale-up-ver-top 0.55s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+    animation: scale-up-ver-top 0.55s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+    @-webkit-keyframes scale-up-ver-top
+        0% 
+            -webkit-transform: scaleY(0.4)
+            transform: scaleY(0.4)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+        100% 
+            -webkit-transform: scaleY(1)
+            transform: scaleY(1)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+
+    @keyframes scale-up-ver-top 
+        0% 
+            -webkit-transform: scaleY(0.4)
+            transform: scaleY(0.4)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+        100% 
+            -webkit-transform: scaleY(1)
+            transform: scaleY(1)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+

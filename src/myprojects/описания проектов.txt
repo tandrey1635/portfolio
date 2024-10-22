@@ -1,0 +1,30 @@
+
+
+
+spaceproject - только пк версия three.js
+
+
+professional-shop - 2 проект CSS по максимуму js нет - доработать 
+specialized-machinery - аренда  техники - натив js всего по максимуму - доработать
+professional-shop  
+
+
+// не готово полностью но для портфолио сойдет
+
+wow - bootstrap4 - проверить все кроме валидации
+avexima - Новый дизайн сайта https://avexima.ru/ - сделать как на new-dev.avexima.ru
+
+
+готово не трогать залить на гит хаб вместе с описанием
+
+
+landing-page - Простой проект без анимаций наведений js и прочего самый первый проект 
+taxi - psd макет, бургер на details, js нет, простой проект без анимаций и наведений  
+autopart - psd макет js бургер через font awesome и звездный рейтинг на js
+personal-account - Личный кабинет сотрудника
+personal-account-crm - Личный кабинет сотрудника crm система
+sport-bettings - Личный кабинет ставки на спорт
+grinding - Коммерческий проект на фрилансе календарь на js бургер меню цена на услуги липкий хедер плавная прокрутка
+artificiail-intelligence - js модалки, swiper slider, mobile first 
+medical-hospital(Grid) - js бургер, анимация бургера(смена на крестик), имитация нажатия кнопок - весь сайт полностью на grid-layout 
+datauniverse - Коммерческий проект сайт Data Universe

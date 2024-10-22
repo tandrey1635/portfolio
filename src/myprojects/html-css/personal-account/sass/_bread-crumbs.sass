@@ -1,0 +1,49 @@
+.bread-crumbs
+    .burger
+        position: absolute
+        z-index: 100
+        top: 50%
+        transform: translateY(-50%) 
+        right: 10px
+        width: 30px
+        height: 30px
+        cursor: pointer
+        display: none
+        @media (max-width: 950px) 
+            display: flex
+            gap: 3px
+            align-items: center
+            justify-content: center
+            flex-direction: column  
+        &-span
+            display: block
+            width: 30px
+            height: 3px
+            font-size: 16px
+            font-weight: 900
+            background: $burger
+    &__wrapper
+        position: relative
+        background: $breadCrumbsBg
+        min-height: 56px
+        padding: 17px 0 17px 27px
+        display: flex
+        @media (max-width: 520px) 
+            font-size: 12px
+    &__photo
+        width: 6px
+        height: 22px
+        margin: 0 5px  
+        @media (max-width: 520px) 
+            height: 17px
+        @media (max-width: 399px) 
+            height: 14px   
+    &__text
+        align-items: center
+        color: $breadCrumbsText
+        @media (max-width: 399px) 
+            font-size: 10px
+        @media (max-width: 360px) 
+            font-size: 8px   
+        &-active
+            color: $breadCrumbsTextActive

@@ -1,0 +1,431 @@
+@media (max-width: 727px){
+
+
+
+.center{
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
+   
+    }
+
+
+
+.header{
+
+    .main__menu__icon__close {
+        transform: translate(75px, -7px);
+    }
+    
+    
+    .top__right__link, .top__right__link_account{
+        display: none;
+    }
+
+    .top__right__menu_mod{
+        display: block;
+        padding-left: 10px;
+    }
+    
+    .label__menu{
+        margin-right: 0px;
+      }
+    
+    .mm{
+        min-width: 100vw;
+        min-height: 100vh;
+        right: 0;
+        padding-left: calc(15% + 20%);
+    }
+
+}    
+
+
+
+
+.bottom{
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 24px;
+
+    &_mod{
+        flex-direction: column;
+        justify-content: center;
+        }
+    &__left{
+        margin-bottom: 32px;
+        }
+    &__cart{
+        margin-bottom: 39px;
+    }
+    &__registration{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+
+.shoping__cart{
+    
+    flex-direction: column;
+
+    &__left{
+        width: 360px;
+        
+    }
+
+    &__right{
+        width: 360px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+    
+    .cart{
+        width: 360px;
+        height: 188px;
+        margin-bottom: 32px;
+    }
+
+    .cart__img{
+        width: 144px;
+    }
+
+    .cart__info{
+        width: 217px;
+    }
+
+    .cart__photo{
+        width: 144px;
+    }
+    .cart__heading ,.cart__heading__bottom {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .cart__heading{
+        margin-top: 13px;
+        width: 143px;
+    }
+
+    .cart__heading__bottom{
+        margin-bottom: 25px;
+    }
+
+    .cart__close{
+        top: 17px;
+    }
+    .cart__svg{
+        width: 8px;
+        height: 11px;
+    }
+
+    .cart__text{
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 4px;
+    }
+
+    .cart__shop{
+        font-size: 10px;
+        line-height: 12px;
+        margin-left: 15px;
+        height: 15px;
+        width: 24px;
+    }
+
+    .cart__button{
+        margin-top: 30px;
+        justify-content: space-between;
+        margin-bottom: 48px;
+    }
+    .cart__button__left{
+        width: 175px;
+        height: 33px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .cart__button__left:hover , .cart__button__right:hover{
+        transform: scale(1.05);
+    }
+
+
+    &__right__form{
+        margin-bottom: 48px;
+    }
+    .cart__buy{
+        margin-bottom: 96px;
+        margin-left: 0px;
+        
+    }
+}
+
+
+
+
+.info{
+    flex-direction: column;
+    .join__now{
+        margin-bottom: 40px;
+    }
+    &__right__heading{
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 32px;
+    }
+    &__right__text{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .special__conditions{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__left{
+        width: 360px;
+      
+    }
+    &__right{
+        margin-bottom: 79px;
+    }
+}
+
+
+
+.slide{
+    .prev{
+        transform: translateX(60px);
+        z-index: 1;
+    }   
+    .next{
+        transform: translateX(-60px);
+        z-index: 1;
+    }
+    
+    .carousel_wrap{
+        width: 375px;
+    }
+
+ 
+    
+    .carousel__photo{
+        display: block;
+        height: 454px;
+       
+        
+    }
+}
+
+
+
+.merchendise{
+
+    &__box__top{
+        width: 375px;
+        margin-bottom: 64px;
+        transform: translateY(0px);
+        transform: translateX(-8px);
+    }
+
+    &__box__bottom{
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+    &__heading_mod{
+        padding-bottom: 32px;
+    }
+
+    &__text__text{
+        font-size: 14px;
+        line-height: 143.1%;
+        width: 326px;
+    }
+
+
+    .hr{
+        margin-bottom: 48px;
+        width: 175px;
+    }
+
+
+    &__text_mod{
+        padding-bottom: 32px;
+    }
+
+    &__link__sort{
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 64px;
+    }
+
+    .items_mod{
+        display: none;
+    }
+
+    .items_tablet{
+        display: block;
+    }
+    
+}
+
+
+
+
+.promo{
+    min-height: 363px;
+    
+
+    &__content{
+        min-width: 263px;
+        min-height: 70px;
+        margin-left: 30%;
+        margin-top: 35%;
+     
+    }
+    
+    &__img{
+        display: none;
+    
+    }
+    
+    &__descriptions{
+        width: 100%;
+      
+    }
+    
+    &__heading{
+        font-size: 38px;
+        line-height: 46px;
+    }
+    
+    &__text{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+
+
+.sales{
+
+
+    &__top{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 32px;
+    }
+    
+    &__bottom{
+        padding-bottom: 32px;
+    }
+    
+    &__item{
+        padding-bottom: 32px;
+    }
+    
+    
+    &__item__img__big{
+        width: 343px;
+        height: 111px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    &__item__img{
+        width: 343px;
+    }
+    
+    
+    
+    &__description_big{
+        top: -15px;
+    }
+}
+
+
+.product{
+
+    .menu__product{
+        margin-bottom: 41px;
+       
+    }
+    
+    
+    
+    .menu__list::after{
+        margin-right: 24px;
+    }
+    
+    .menu__product .menu__list{
+        font-size: 12px;
+        line-height: 14px;
+        
+    }
+    
+    
+    
+    .zzz{
+        padding: 8px;
+    }
+    
+    
+    .filter__img{
+        width: 38px;
+        height: 25px;
+    }
+    
+    .menu__product .filter{
+       
+        font-size: 0;
+    }
+    
+    
+    .menu__product .dropdown__menu{
+        left: 200px;
+    }
+    
+    .menu__product .details__filter {
+        position: absolute;
+        z-index: 1;
+        padding: 13px 16px 16px;
+        top: -10px;
+        left: -15px;
+    }
+    
+    
+    
+
+
+    
+        
+   
+    
+
+
+}
+
+
+
+.subscribe{
+   
+    min-height: 550px;
+}
+
+
+
+.footer{
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 143px;
+    
+
+    .social__icon{
+        padding-top: 42px;
+        }
+}
+
+}

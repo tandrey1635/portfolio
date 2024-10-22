@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Шахматы</h1>
+    <div class="btn__wrapper">
+        <button class="create__cheass">Создать шахматную доску</button>
+        <button class="delete__cheass">Удалить шахматную доску</button>
+    </div>
+    
+    <div class="chess">
+        <div class="chess__wrapper"></div>
+    </div>
+    
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        ul{
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+            padding: 20px 50px;
+            list-style: none;
+        }
+        h1{
+            text-align: center;
+            margin: 30px 0;
+        }
+        .btn__wrapper{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        button{
+            cursor: pointer;
+        }
+    </style>
+
+
+
+
+    <script>
+
+        const chess = document.querySelector('.chess')
+        const chessWrapper = document.querySelector('.chess__wrapper')
+        const createCheassBtn = document.querySelector('.create__cheass').addEventListener('click', createCheass, {once: true})
+        const deleteChessBtn = document.querySelector('.delete__cheass').addEventListener('click', removeCheass )
+        
+        
+    function createCheass(){
+        chess.style.cssText = 'border: 1px solid; width: 1300px; margin: 30px auto; background: #703f2e; position: relative;'
+        chessWrapper.style.cssText = 'width: 1200px; height: 1200px; border: 1px solid; display: grid; grid-template: repeat(8, 1fr)/repeat(8, 1fr); justify-content: center; margin: 0 auto;'
+        for (let i = 1; i < 72; i++){
+           
+            const div = document.createElement('div')
+
+            // добавляем класс для черных пешек
+            if (i == 10 || i == 11 || i == 12 || i == 13 || i == 14 || i == 15 || i == 16 || i == 17) {
+                div.classList = 'black__pawn'
+            }
+            // добавляем класс для белых пешек
+            if (i == 55 || i == 56 || i == 57 || i == 58 || i == 59 || i == 60 || i == 61 || i == 62) {
+                div.classList = 'white__pawn'
+            }
+
+            // добавляем класс для черных ладьей
+            if (i == 1 || i == 8) {
+                div.classList = 'black__rook'
+            }
+
+            // добавляем класс для белых ладьей
+            if (i == 64 || i == 71) {
+                div.classList = 'white__rook'
+            }
+
+            // добавляем класс для черных коней
+            if (i == 2 || i == 7) {
+                div.classList = 'black__horse'
+            }
+
+            // добавляем класс для белых коней
+            if (i == 65 || i == 70) {
+                div.classList = 'white__horse'
+            }
+            
+            // добавляем класс для черных слонов
+            if (i == 3 || i == 6) {
+                div.classList = 'black__elefant'
+            }
+
+            // добавляем класс для белых слонов
+            if (i == 66 || i == 69) {
+                div.classList = 'white__elefant'
+            }
+
+            // добавляем класс для черного ферзя
+            if (i == 4) {
+                div.classList = 'black__queen'
+            }
+
+            // добавляем класс для белого ферзя
+            if (i == 67) {
+                div.classList = 'white__queen'
+            }
+
+            // добавляем класс для черного короля
+            if (i == 5) {
+                div.classList = 'black__king'
+            }
+
+            // добавляем класс для белого короля
+            if (i == 68) {
+                div.classList = 'white__king'
+            }
+
+            // добавляем клетки для шахмат
+            if (i % 2 !== 0) {
+                div.style.cssText = 'background: white; width: 150px; height: 150px; border: 1px solid; display: grid; place-items: center;'
+                
+            // пропускаем лишние блоки для чередования цвета как на шахматной доске
+                if (i == 9)  {
+                    continue 
+                }  
+
+                else if (i == 27)  {
+                    continue 
+                } 
+                else if (i == 36)  {
+                    continue 
+                } 
+                else if (i == 45)  {
+                    continue 
+                } 
+                else if (i == 54)  {
+                    continue 
+                } 
+                else if (i == 63)  {
+                    continue 
+                }
+    
+            } 
+
+            // пропускаем лишние блоки для чередования цвета как на шахматной доске
+            else if (i == 18)  {
+                continue 
+            } 
+
+            else if (i == 36)  {
+                continue 
+            }
+
+            else if (i == 54)  {
+                continue 
+            }
+            else if (i == 63)  {
+                continue 
+            }
+
+
+            else{
+                div.style.cssText = 'background: black; width: 150px; height: 150px; border: 1px solid; display: grid; place-items: center;'
+            }
+
+           
+            chessWrapper.append(div) 
+        }   
+
+
+        // меню с буквами сверху
+        let topMenu = `<ul style="display: grid; grid-template-columns: repeat(8, 1fr); text-align: center; transform: rotate(180deg);"> <li>h</li> <li>g</li> <li>f</li> <li>e</li> <li>d</li> <li>c</li> <li>b</li> <li>a</li> </ul>`
+        chess.insertAdjacentHTML('afterbegin', topMenu) 
+  
+        // меню с буквами снизу
+        let bottomMenu = `<ul style="display: grid; grid-template-columns: repeat(8, 1fr); text-align: center;"> <li>a</li> <li>b</li> <li>c</li> <li>d</li> <li>e</li> <li>f</li> <li>g</li> <li>h</li> </ul>`
+        chess.insertAdjacentHTML('beforeend', bottomMenu)
+
+        // меню с цифрами слева
+        let leftMenu = `<ul style="display: grid; grid-template-rows: repeat(8, 1fr); text-align: center; position: absolute; top: 100px; left: -30px; row-gap: 120px;"> <li>8</li> <li>7</li> <li>6</li> <li>5</li> <li>4</li> <li>3</li> <li>2</li> <li>1</li> </ul>`
+        chess.insertAdjacentHTML('afterbegin', leftMenu) 
+
+        // меню с цифрами справа
+        let rightMenu = `<ul style="display: grid; grid-template-rows: repeat(8, 1fr); text-align: center; position: absolute; top: 100px; right: -30px; row-gap: 120px;     transform: scale(-1, -1);"> <li>1</li> <li>2</li> <li>3</li> <li>4</li> <li>5</li> <li>6</li> <li>7</li> <li>8</li> </ul>`
+        chess.insertAdjacentHTML('afterbegin', rightMenu) 
+
+
+
+        // добавляем черные пешки
+        const blackPawns = document.querySelectorAll('.black__pawn')
+        blackPawns.forEach(blackPawn =>{
+            blackPawn.insertAdjacentHTML('afterbegin', `<img src="pawn-black.png">`)
+        })
+
+        // добавляем белые пешки
+        const whitePawns = document.querySelectorAll('.white__pawn')
+        whitePawns.forEach(whitePawn =>{
+            whitePawn.insertAdjacentHTML('afterbegin', `<img src="pawn-white.png">`)
+        })
+
+
+        // добавляем черные ладьи
+        const blackRooks = document.querySelectorAll('.black__rook')
+        blackRooks.forEach(blackRook =>{
+            blackRook.insertAdjacentHTML('afterbegin', `<img src="rook-black.png">`)
+        })
+
+        // добавляем белые ладьи
+        const whiteRooks = document.querySelectorAll('.white__rook')
+        whiteRooks.forEach(whiteRook =>{
+            whiteRook.insertAdjacentHTML('afterbegin', `<img src="rook-white.png">`)
+        })
+       
+        // добавляем черных коней
+        const blackHorses = document.querySelectorAll('.black__horse')
+        blackHorses.forEach(blackHorse =>{
+            blackHorse.insertAdjacentHTML('afterbegin', `<img src="horse-black.png">`)
+        })
+
+        // добавляем белых коней
+        const whiteHorses = document.querySelectorAll('.white__horse')
+        whiteHorses.forEach(whiteHorse =>{
+            whiteHorse.insertAdjacentHTML('afterbegin', `<img src="horse-white.png">`)
+        })
+
+        // добавляем черных слонов
+        const blackElefants = document.querySelectorAll('.black__elefant')
+        blackElefants.forEach(blackElefant =>{
+            blackElefant.insertAdjacentHTML('afterbegin', `<img src="elefant-black.png">`)
+        })
+
+        // добавляем белых слонов
+        const whiteElefants = document.querySelectorAll('.white__elefant')
+        whiteElefants.forEach(whiteElefant =>{
+            whiteElefant.insertAdjacentHTML('afterbegin', `<img src="elefant-white.png">`)
+        })
+        
+        // добавляем черного ферзя
+        const blackQueen = document.querySelector('.black__queen')
+            blackQueen.insertAdjacentHTML('afterbegin', `<img src="queen-black.png">`)
+    
+        // добавляем белого ферзя
+        const whiteQueen = document.querySelector('.white__queen')
+            whiteQueen.insertAdjacentHTML('afterbegin', `<img src="queen-white.png">`)    
+
+
+        // добавляем черного короля
+        const blackKing = document.querySelector('.black__king')
+            blackKing.insertAdjacentHTML('afterbegin', `<img src="king-black.png">`)  
+            
+        // добавляем белого короля
+        const whiteKing = document.querySelector('.white__king')
+            whiteKing.insertAdjacentHTML('afterbegin', `<img src="king-white.png">`)      
+    }    
+    
+        
+            
+
+    function removeCheass() {
+        chess.remove()
+    }
+
+   
+    
+
+
+
+    
+
+    </script>
+</body>
+</html>

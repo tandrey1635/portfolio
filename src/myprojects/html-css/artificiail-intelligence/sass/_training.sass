@@ -1,0 +1,66 @@
+.training
+    padding: 50px 0
+    @media (min-width: 1199px) 
+        padding: 50px 0 180px 0 
+    &__wrapper
+        margin-top: 20px
+        display: flex
+        flex-wrap: wrap
+        gap: 22px
+        justify-content: center
+        @media (min-width: 1199px) 
+            margin-top: 80px
+            gap: 122px
+    &__top, &__bottom
+        display: flex
+        gap: 22px
+        justify-content: center 
+        @media (min-width: 1920px)  
+            gap: 180px      
+    &__items
+        width: 138px 
+        margin-top: 8px
+        @media (min-width: 576px)
+            width: 40%
+        @media (min-width: 767px) 
+            display: flex
+            width: 48% 
+            min-height: 120px
+            align-items: center
+            justify-content: center
+    &__img
+        height: 98px 
+        @media (min-width: 576px) 
+            height: 150px
+        @media (min-width: 767px) 
+            width: 100% 
+            height: 98px 
+            margin: 0 22px 0 0
+        @media (min-width: 991px)    
+            height: 120px  
+        @media (min-width: 1199px)  
+            width: 300px  
+            height: 200px
+        &_order
+            @media (min-width: 991px)   
+                order: 1    
+                margin: 0 0 0 22px            
+    img
+        border-radius: 16px   
+        min-height: inherit  
+    &__descriptions
+        margin-top: 16px
+        font-weight: 450
+        font-size: 14px
+        line-height: 17px
+        color: $mainTextColor
+        @media (min-width: 576px) 
+            font-size: 16px
+        @media (min-width: 767px) 
+            width: 150% 
+        @media (min-width: 991px)  
+            font-size: 18px       
+        @media (min-width: 1199px)  
+            width: 250px  
+
+       

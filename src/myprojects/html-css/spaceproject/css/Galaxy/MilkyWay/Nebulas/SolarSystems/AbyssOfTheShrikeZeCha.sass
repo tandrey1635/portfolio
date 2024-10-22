@@ -1,0 +1,320 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+
+body
+    background: url(../../../../../img/main-bg.png)
+    background-size: 100%    
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.header
+   
+    &__logo
+        display: flex
+        justify-content: center
+    .logo  
+        width: 800px
+        fill: #6A5ACD
+    &__menu
+        height: 200px
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        list-style: none
+        .menu__list
+            color: aqua 
+            list-style: none 
+            margin-top: 10px      
+        .menu__link
+            text-decoration: none 
+            font-size: 20px 
+            color: aqua 
+        .details__menu
+            position: absolute
+            z-index: 5
+            left: 20% 
+            top: 45%
+        details
+            width: 220px 
+            outline: 0
+            outline-offset: 0
+        details:active, :hover, :focus
+            outline: 0
+            outline-offset: 0
+        summary
+           font-size: 20px  
+           color: aqua
+        .summary-solar-systems
+            padding-top: 10px   
+        .summary-star
+            font-size: 20px  
+            color: aqua
+            padding-top: 10px
+            text-align: center     
+        .details-solar-systems
+            padding-left: 20px  
+        .menu__solar-systems
+            padding-left: 15px
+
+
+
+
+.solar__system
+    min-height: 600px
+    &-text
+        text-align: center
+        font-size: 25px
+        font-weight: 900
+        color: #DA70D6
+        margin-bottom: 30px
+    &-nav 
+        font-weight: 700
+        color: white 
+        font-size: 20px 
+        margin-bottom: 30px 
+    &-link   
+        color: #6A5ACD
+        text-decoration: none   
+    .content
+        position: relative
+        .solar__system-photo  
+            width: 100%
+        &__planet
+            width: 80px
+            height: 80px
+            border: 2px solid red
+        
+
+
+        .star-ze-cha
+            position: absolute
+            left: 50px
+            top: 30px
+            color: #00ff96
+            font-size: 50px
+            border: none
+            font-weight: 900
+
+        .planet-ze-cha
+            position: absolute
+            left: 542px
+            width: 45px
+            height: 45px
+            top: 140px
+        .planet__text-underline-ze-cha 
+            height: 40px    
+        .planet-link-ze-cha
+            display: flex
+            align-items: center
+            height: 40px    
+        .planet-text-ze-cha
+            width: 25px
+            margin-left: 16px 
+            margin-top: 12px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-ze-cha-text  
+            width: 95px
+            text-align: center 
+            color: #FF2400
+            font-weight: 900
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 36px
+            margin-top: -17px 
+
+
+
+        .planet-text-ze-cha, .planet-ze-cha-text
+            display: none
+
+        .content__planet:hover .planet-text-ze-cha, .content__planet:hover .planet-ze-cha-text
+            display: block
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .planet-afras
+            position: absolute
+            left: 396px
+            width: 20px
+            height: 20px
+            top: 190px
+        .planet__text-underline-afras  
+            height: 17px    
+        .planet-link-afras
+            display: flex
+            align-items: center
+            height: 17px    
+        .planet-text-afras
+            width: 20px
+            margin-left: 7px 
+            margin-top: 8px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-afras-text  
+            width: 95px
+            text-align: center 
+            color: #FF2400
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 23px
+            margin-top: -19px 
+
+
+
+        .planet-text-afras, .planet-afras-text
+            display: none
+
+        .content__planet:hover .planet-text-afras, .content__planet:hover .planet-afras-text
+            display: block 
+
+
+
+
+        .planet-tosal-nim
+            position: absolute
+            left: 656px
+            width: 20px
+            height: 20px
+            top: 83px
+        .planet__text-underline-tosal-nim  
+            height: 17px    
+        .planet-link-tosal-nim
+            display: flex
+            align-items: center
+            height: 17px    
+        .planet-text-tosal-nim
+            width: 20px
+            margin-left: 5px 
+            margin-top: 8px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-tosal-nim-text  
+            width: 95px
+            text-align: center 
+            color: #FF2400
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 21px
+            margin-top: -19px 
+
+
+
+        .planet-text-tosal-nim, .planet-tosal-nim-text
+            display: none
+
+        .content__planet:hover .planet-text-tosal-nim, .content__planet:hover .planet-tosal-nim-text
+            display: block 
+
+
+
+
+
+
+        .planet-vem-osca
+            position: absolute
+            left: 700px
+            width: 65px
+            height: 65px
+            top: 390px
+        .planet__text-underline-vem-osca  
+            height: 62px    
+        .planet-link-vem-osca
+            display: flex
+            align-items: center
+            height: 62px    
+        .planet-text-vem-osca
+            width: 30px
+            margin-left: 29px 
+            margin-top: 13px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-vem-osca-text  
+            width: 95px
+            text-align: center 
+            color: #FF2400
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 53px
+            margin-top: -15px 
+
+
+
+        .planet-text-vem-osca, .planet-vem-osca-text
+            display: none
+
+        .content__planet:hover .planet-text-vem-osca, .content__planet:hover .planet-vem-osca-text
+            display: block 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+details[open]
+    -webkit-animation: scale-up-ver-top 0.55s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+    animation: scale-up-ver-top 0.55s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+    @-webkit-keyframes scale-up-ver-top
+        0% 
+            -webkit-transform: scaleY(0.4)
+            transform: scaleY(0.4)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+        100% 
+            -webkit-transform: scaleY(1)
+            transform: scaleY(1)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+
+    @keyframes scale-up-ver-top 
+        0% 
+            -webkit-transform: scaleY(0.4)
+            transform: scaleY(0.4)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+        100% 
+            -webkit-transform: scaleY(1)
+            transform: scaleY(1)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+

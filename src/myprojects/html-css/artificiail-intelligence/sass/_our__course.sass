@@ -1,0 +1,57 @@
+.our__course
+    padding: 60px 0 75px 0
+    @media (min-width: 1199px) 
+        padding: 60px 0 122px 0
+    &__wrapper
+        margin-top: 36px 
+        @media (min-width: 767px) 
+            display: flex
+            align-items: center
+            justify-content: space-between
+    &__left
+        @media (min-width: 767px) 
+            width: 48% 
+    &__right
+        margin-top: 8px 
+        @media (min-width: 576px)
+            width: 75%
+            margin: 0 auto 
+        @media (min-width: 767px) 
+            width: 48%               
+    &__bg
+        min-height: 260px
+        background: url('img/our-course-bg.png') no-repeat center/cover
+        mix-blend-mode: lighten  
+        @media (min-width: 767px) 
+            min-height: 500px  
+        @media (min-width: 991px)   
+            min-height: 650px           
+    &__menu
+        margin-top: 16px
+        display: flex
+        flex-direction: column
+        gap: 16px    
+        align-items: center 
+        @media (min-width: 1199px) 
+            gap: 30px
+    &__list
+        width: 264px
+        position: relative
+        font-weight: 450
+        font-size: 14px
+        line-height: 20px
+        color: $mainTextColor
+        margin-left: 19px
+        @media (min-width: 576px) 
+            width: 75%   
+            font-size: 16px 
+        @media (min-width: 767px) 
+            font-size: 18px    
+        &::before
+            content: ''
+            background: url('img/icons/our-course-list-item.png')
+            width: 24px
+            height: 24px
+            position: absolute
+            top: 0
+            left: -36px

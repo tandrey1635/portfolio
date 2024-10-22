@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence</title>
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#" class="header__logo">
+                        <img src="img/icons/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header__info">
+                    <div class="header__img">
+                        <a href="tel:+821075269192" class="header__link header__tel">
+                            <svg width="38" height="35" viewBox="0 0 38 35" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.11923 2.0918C8.54742 2.04805 7.91175 2.20391 7.32543 2.5922C6.80877 2.93126 5.69418 3.76524 4.65215 4.7086C4.13259 5.17891 3.63625 5.66837 3.2531 6.14962C2.86706 6.63087 2.53036 7.0711 2.55068 7.71095C2.571 8.28516 2.63195 9.98321 3.92941 12.5863C5.22686 15.1867 7.7434 18.7551 12.6517 23.3816C17.5628 28.0082 21.3507 30.3789 24.1111 31.6012C26.8714 32.8234 28.6768 32.8809 29.2864 32.9C29.9627 32.9191 30.43 32.602 30.9408 32.2383C31.4517 31.8746 31.9713 31.4098 32.4705 30.9203C33.469 29.9387 34.3543 28.8887 34.7142 28.402C35.5356 27.3 35.3992 25.9984 34.4849 25.3941C33.9102 25.0141 28.6246 21.7 27.8293 21.2406C27.0224 20.7758 26.0935 20.9863 25.2634 21.3992C24.6103 21.7246 22.8426 22.6789 22.3376 22.9524C21.9574 22.7254 20.5148 21.8203 17.4119 18.8973C14.3061 15.9742 13.3483 14.6152 13.1074 14.257C13.3976 13.7813 14.4077 12.1242 14.756 11.4981C15.1914 10.7188 15.4352 9.83555 14.9157 9.06993C14.698 8.74454 13.7082 7.3254 12.7097 5.90079C11.7083 4.47618 10.7592 3.1254 10.5125 2.80274V2.80001C10.1903 2.38165 9.68813 2.13555 9.11923 2.0918ZM8.9828 3.52188C9.18599 3.54649 9.30789 3.62305 9.30789 3.62305C9.4269 3.77891 10.4689 5.25001 11.4674 6.67188C12.4659 8.09649 13.4847 9.55665 13.6618 9.82188C13.6908 9.8629 13.7314 10.3277 13.4412 10.8445V10.8473C13.1132 11.4352 11.5835 13.9535 11.5835 13.9535L11.3716 14.3063L11.5893 14.6563C11.5893 14.6563 12.73 16.4691 16.3583 19.8871C19.9894 23.3051 21.9138 24.3824 21.9138 24.3824L22.2853 24.5875L22.6598 24.3879C22.6598 24.3879 25.3273 22.9496 25.9571 22.6379C26.5057 22.3672 26.9991 22.4027 27.0572 22.4356C27.5709 22.7336 33.2803 26.3074 33.6315 26.5399C33.6432 26.5481 33.9537 26.991 33.5009 27.5981H33.498C33.2252 27.9672 32.3312 29.0363 31.3995 29.9496C30.9321 30.4063 30.4532 30.8328 30.0469 31.1199C29.6405 31.407 29.2777 31.4973 29.3357 31.5C28.703 31.4809 27.3068 31.4672 24.7438 30.3324C22.1809 29.2004 18.5236 26.9336 13.7024 22.3891C8.88412 17.85 6.47787 14.4047 5.2733 11.9875C4.07163 9.57305 4.05712 8.25782 4.0368 7.66446C4.0397 7.71915 4.13549 7.37462 4.44026 6.99181C4.74503 6.60899 5.19493 6.15509 5.67966 5.71485C6.65203 4.83712 7.78404 3.99493 8.17589 3.7379V3.74063C8.49807 3.52735 8.77962 3.50001 8.9828 3.52188Z"/>
+                            </svg>
+                           <p class="header__text__link"> + 82 (10) 7526-9192</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__info header__info-mobile">
+                    <div class="header__img">
+                        <a href="tel:+821075269192" class="header__link header__tel">
+                            <svg class="header__svg-mobile" width="38" height="35" viewBox="0 0 38 35" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.11923 2.0918C8.54742 2.04805 7.91175 2.20391 7.32543 2.5922C6.80877 2.93126 5.69418 3.76524 4.65215 4.7086C4.13259 5.17891 3.63625 5.66837 3.2531 6.14962C2.86706 6.63087 2.53036 7.0711 2.55068 7.71095C2.571 8.28516 2.63195 9.98321 3.92941 12.5863C5.22686 15.1867 7.7434 18.7551 12.6517 23.3816C17.5628 28.0082 21.3507 30.3789 24.1111 31.6012C26.8714 32.8234 28.6768 32.8809 29.2864 32.9C29.9627 32.9191 30.43 32.602 30.9408 32.2383C31.4517 31.8746 31.9713 31.4098 32.4705 30.9203C33.469 29.9387 34.3543 28.8887 34.7142 28.402C35.5356 27.3 35.3992 25.9984 34.4849 25.3941C33.9102 25.0141 28.6246 21.7 27.8293 21.2406C27.0224 20.7758 26.0935 20.9863 25.2634 21.3992C24.6103 21.7246 22.8426 22.6789 22.3376 22.9524C21.9574 22.7254 20.5148 21.8203 17.4119 18.8973C14.3061 15.9742 13.3483 14.6152 13.1074 14.257C13.3976 13.7813 14.4077 12.1242 14.756 11.4981C15.1914 10.7188 15.4352 9.83555 14.9157 9.06993C14.698 8.74454 13.7082 7.3254 12.7097 5.90079C11.7083 4.47618 10.7592 3.1254 10.5125 2.80274V2.80001C10.1903 2.38165 9.68813 2.13555 9.11923 2.0918ZM8.9828 3.52188C9.18599 3.54649 9.30789 3.62305 9.30789 3.62305C9.4269 3.77891 10.4689 5.25001 11.4674 6.67188C12.4659 8.09649 13.4847 9.55665 13.6618 9.82188C13.6908 9.8629 13.7314 10.3277 13.4412 10.8445V10.8473C13.1132 11.4352 11.5835 13.9535 11.5835 13.9535L11.3716 14.3063L11.5893 14.6563C11.5893 14.6563 12.73 16.4691 16.3583 19.8871C19.9894 23.3051 21.9138 24.3824 21.9138 24.3824L22.2853 24.5875L22.6598 24.3879C22.6598 24.3879 25.3273 22.9496 25.9571 22.6379C26.5057 22.3672 26.9991 22.4027 27.0572 22.4356C27.5709 22.7336 33.2803 26.3074 33.6315 26.5399C33.6432 26.5481 33.9537 26.991 33.5009 27.5981H33.498C33.2252 27.9672 32.3312 29.0363 31.3995 29.9496C30.9321 30.4063 30.4532 30.8328 30.0469 31.1199C29.6405 31.407 29.2777 31.4973 29.3357 31.5C28.703 31.4809 27.3068 31.4672 24.7438 30.3324C22.1809 29.2004 18.5236 26.9336 13.7024 22.3891C8.88412 17.85 6.47787 14.4047 5.2733 11.9875C4.07163 9.57305 4.05712 8.25782 4.0368 7.66446C4.0397 7.71915 4.13549 7.37462 4.44026 6.99181C4.74503 6.60899 5.19493 6.15509 5.67966 5.71485C6.65203 4.83712 7.78404 3.99493 8.17589 3.7379V3.74063C8.49807 3.52735 8.77962 3.50001 8.9828 3.52188Z"/>
+                            </svg>
+                           <p class="header__text__link header__text__link-mobile"> + 82 (10) 7526-9192</p>
+                        </a>
+                    </div>
+                    <div class="header__img">
+                        <img class="header__close" src="img/icons/close.svg" alt="close">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main"> 
+        <section class="promo">
+            <div class="container">
+                <div class="promo__wrapper">
+                    <div class="promo__top">
+                        <h2 class="promo__subtitle">Добро пожаловать в онлайн школу</h2>
+                        <h1 class="section__title main__title">VeraVla edu!</h1>
+                        <p class="promo__text">Переквалифицируйся в разработчика искусственного интеллекта и получи высокооплачиваемую работу</p>
+                        <div class="promo__descriptions">
+                            <div class="promo__descriptions-img">
+                                <img src="img/icons/diplom.svg" alt="диплом icon">
+                            </div>
+                            <div class="promo__descriptions-text">
+                                <h2 class="promo__header">Мы обучаем с гарантией!</h2>
+                                <p class="promo__text promo__text_color">Первый месяц действует гарантия 100% возврата денег, если тебя не устроят наши курсы</p>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="promo__bottom"></div>
+                </div>
+                <div class="block__btn">
+                    <button class="btn">Записаться на ознакомительный вебинар</button>
+                </div>
+            </div>
+        </section>
+    
+        <div class="divider"></div>
+    
+        <section class="about">
+            <div class="container">
+                <h2 class="section__title">
+                <span class="about-span span_text-color">7 причин почему</span> именно мы?
+                </h2>
+                <div class="about__wrapper">
+                    <div class="about__items">
+                        <div class="about__img">
+                            <img src="img/icons/about-icon-one.svg" alt="about-icon">
+                        </div>
+                        <div class="about__descriptions">
+                            <p class="about__text">Ты станешь востребованным специалистом в области искусственн-ого интеллекта</p>
+                        </div>
+                    </div>
+                    <div class="about__items">
+                        <div class="about__img">
+                            <img src="img/icons/about-icon-two.svg" alt="about-icon">
+                        </div>
+                        <div class="about__descriptions">
+                            <p class="about__text">Будешь создавать свои модели искусственного интеллекта на языке программирования Python</p>
+                        </div>
+                    </div>
+                    <div class="about__items">
+                        <div class="about__img">
+                            <img src="img/icons/about-icon-three.svg" alt="about-icon">
+                        </div>
+                        <div class="about__descriptions">
+                            <p class="about__text">Сумеешь создавать программы, связанные с компьютерным зрением и нейронными сетями</p>
+                        </div>
+                    </div>
+                    <div class="about__items">
+                        <div class="about__img">
+                            <img src="img/icons/about-icon-four.svg" alt="about-icon">
+                        </div>
+                        <div class="about__descriptions">
+                            <p class="about__text">Мы обучаем только тому, что тебе ригодится во время работы!</p>
+                        </div>
+                    </div>
+                    <div class="about__items">
+                        <div class="about__img">
+                            <img src="img/icons/about-icon-five.svg" alt="about">
+                        </div>
+                        <div class="about__descriptions">
+                            <p class="about__text">Ты найдешь единомышлен-ников, с которыми сможешь создавать свои проекты</p>
+                        </div>
+                    </div>
+                    <div class="about__items">
+                        <div class="about__img">
+                            <img src="img/icons/about-icon-six.svg" alt="about-icon">
+                        </div>
+                        <div class="about__descriptions">
+                            <p class="about__text"> Мы создаём сообщество профессионалов, таких же как и мы, жаждущих развивать и изменять этот мир к лучшему с помощью IT технологий</p>
+                        </div>
+                    </div>
+                    <div class="about__items">
+                        <div class="about__img">
+                            <img src="img/icons/about-icon-seven.svg" alt="about-icon">
+                        </div>
+                        <div class="about__descriptions">
+                            <p class="about__text">После успешного завершения курса, мы поможем тебе трудоустроиться в Южнокорейские IT компании!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="divider"></div>
+    
+        <section class="work">
+            <div class="container">
+                <h2 class="section__title"> 
+                    <span class="about-span span_text-color">Искусственный интеллект</span> - это круто?
+                </h2>
+                <div class="work__wrapper">
+                    <div class="work__left">
+                        <div class="work__items">
+                            <div class="work__descriptions">
+                                На данный момент только в Южной Корее ищут 10,000 специалистов в области AI!
+                            </div>
+                        </div>
+                        <div class="work__items">
+                            <div class="work__descriptions">
+                                Младшие разработчики искусственного интеллекта без опыта работы могут получать в Южной Корее 60,000,000 вон (51,000$) в год. Специалист со средним стажем работы может получать уже около 100,000,000 вон (85,000$) в год.
+                            </div>
+                        </div>
+                        <div class="work__items">
+                            <div class="work__descriptions">
+                                В США уровень зарплат ещё выше! Младший специалист без опыта работы получает в среднем 93,000$ в год. А инженер со средним стажем работы получает уже больше 140,000$ в год!
+                            </div>
+                        </div>
+                        <div class="work__items">
+                            <div class="work__descriptions">
+                                А самое вкусное то, что твоя зарплата будет расти вместе с твоими навыками. Стаж не так важен.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__right">
+                        <div class="work__bg"></div>
+                    </div>
+                </div>
+                <div class="block__btn block__btn_ml">
+                    <button class="btn">Записаться на ознакомительный вебинар</button>
+                </div>
+            </div>
+        </section>
+    
+        <div class="divider"></div>
+    
+        <section class="training">
+            <div class="container">
+                <h2 class="section__title">
+                    <span class="about-span span_text-color">Важно</span> понимать что
+                </h2>
+                <div class="training__wrapper">
+                    <div class="training__top">
+                        <div class="training__items">
+                            <div class="training__img">
+                                <img src="img/training-photo-one.png" alt="training-photo">
+                            </div>
+                            <div class="training__descriptions">
+                                Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность различных между собой направлений.
+                            </div>
+                        </div>
+                        <div class="training__items">
+                            <div class="training__img">
+                                <img src="img/training-photo-two.png" alt="training-photo">
+                            </div>
+                            <div class="training__descriptions">
+                                Подготовка реально хороших специалистов требует времени, краткосрочные курсы эффекта не дают.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="training__bottom">
+                        <div class="training__items">
+                            <div class="training__img training__img_order">
+                                <img src="img/training-photo-three.png" alt="training-photo">
+                            </div>
+                            <div class="training__descriptions">
+                                Большинство менторов никогда не работали над реальными проектами. Они изучали все по видеоурокам и книжкам, и преподают без практики, что очень печально.
+                            </div>
+                        </div>
+                        <div class="training__items">
+                            <div class="training__img training__img_order">
+                                <img src="img/training-photo-four.png" alt="training-photo">
+                            </div>
+                            <div class="training__descriptions">
+                                На многих курсах преподают готовые/идеальные кейсы без всяких сложностей, поэтому студенты после таких курсов не могут решать реальные задачи на работе.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="divider"></div>
+    
+        <section class="our__course">
+            <div class="container">
+                <h2 class="section__title">
+                    Почему именно наш курс? <span class="about-span span_text-color">Все просто!</span>
+                </h2>
+                <div class="our__course__wrapper">
+                    <div class="our__course__left">
+                        <ul class="our__course__menu">
+                            <li class="our__course__list">Объясняем сложные вещи простым и доходчивым языком.</li>
+                            <li class="our__course__list">Обучаем не просто языку программирования, или одной какой-то дисциплине, мы обучаем полностью всей специальности.</li>
+                            <li class="our__course__list">Ознакомляем с содержанием урока только в режиме реального времени. Ты сможешь сразу задать вопрос и тут же получить ответы. Мы всегда будем рядом. </li>
+                            <li class="our__course__list">Обучение ведет ведущий и действующий специалист в области искусственного интеллекта в Южной Корее.</li>
+                            <li class="our__course__list">Обучение проходит в группе по 15 человек, которая внутри делится на 3 команды, и каждая команда выполняет собственный проект. Таким образом, студенты смогут прочувствовать тонкости командной разработки, и уже на этапе обучения окунуться в рабочую атмосферу AI специалиста.</li>
+                        </ul>
+                    </div>
+                    <div class="our__course__right">
+                        <div class="our__course__bg"></div>
+                    </div>  
+                </div>
+                <div class="block__btn">
+                    <button class="btn">Записаться на ознакомительный вебинар</button>
+                </div>
+            </div>
+        </section>
+    
+        <div class="divider"></div>
+    
+        <section class="knowledge">
+            <div class="container">
+                <div class="knowledge__wrapper">
+                    <h2 class="section__title">
+                        <span class="about-span span_text-color">Что я узнаю</span> из этих курсов? 
+                    </h2>
+                    <p class="knowledge__subtitle">Полностью весь курс состоит из 3 частей</p>
+                    <div class="knowledge__level knowledge__level-junior">
+                        <div class="knowledge__block__lvl knowledge__block__lvl-junior">
+                            <h2 class="knowledge__header">AI - Junior Level.</h2>
+                            <p class="knowledge__text">Продолжительность 1 год</p>
+                            <div class="knowledge__img knowledge__img-junior">
+                                <img class="knowledge__photo knowledge__photo-junior" src="img/icons/arrow-up.svg" alt="arrow">
+                            </div>    
+                        </div>  
+                    </div>
+                    <div class="knowledge__block__menu active">
+                        <ol class="knowledge__menu knowledge__menu-junior">
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Введение.</h2>
+                                    <p class="knowledge__list-text">В этой секции, мы познакомимся с историей человека, который переквалифицировался в специалиста по искусственному интеллекту и отвечаем на вопрос: "Стоит ли это того, чтобы потратить 2 года на изучение искусственного интеллекта?" Также, мы разберём уроки, усвоенные специалистами, прошедших путь от младших до главных специалистов.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Введение в программирование.</h2>
+                                    <p class="knowledge__list-text">Эта секция начинается с объяснения понятий проблемы, сути и целей искусственного интеллекта. Ты узнаешь в чем разница между данными и информацией. А также что такое качество информации. Мы разберём, что такое алгоритмы, компьютерные программы и язык программирования Python, и начнём работать в интегрированной среде разработки для языка Python. Далее мы поймем суть переменных их свойства и типы. Именно с этой секции ты начнёшь писать свои первые программные коды на языке программирования Python. Мы изучим все аспекты этого удивительного языка.  Далее мы разберём такие библиотеки как Numpy, Pandas и Matplotlib. В этой секции ты познакомишься со средой разработки Jupyter Notebook.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Введение в искусственный интеллект.</h2>
+                                    <p class="knowledge__list-text">Эта секция начинается с объяснения понятий проблемы, сути и целей искусственного интеллекта. Ты узнаешь в чем разница между данными и информацией. А также что такое качество информации. Мы разберём, что такое алгоритмы, компьютерные программы и язык программирования Python, и начнём работать в интегрированной среде разработки для языка Python. Далее мы поймем суть переменных их свойства и типы. Именно с этой секции ты начнёшь писать свои первые программные коды на языке программирования Python. Мы изучим все аспекты этого удивительного языка.  Далее мы разберём такие библиотеки как Numpy, Pandas и Matplotlib. В этой секции ты познакомишься со средой разработки Jupyter Notebook.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Алгоритм machine learning.</h2>
+                                    <p class="knowledge__list-text">В этих секциях, мы подробно разберём работу алгоритмов machine learning. И ты создашь очень простую, но уже свою модель искусственного интеллекта. Также ты научишься оценивать точность моделей. В этой секции мы подробно начнём разбирать одну из библиотек искусственного интеллекта scikit learn. Здесь же мы разберём другую среду разработки, которая называется spyder.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Процесс разработки модели искусственного интеллекта и инженерия данных.</h2>
+                                    <p class="knowledge__list-text">Здесь мы подробно обсудим весь процесс разработки модели искусственного интеллекта. Также мы начнём изучение анализа данных и их обработки для обучения искусственного интеллекта. В этой секции я научу тебя практическим примерам анализа и обработки данных от А до Я.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Отбор фичей.</h2>
+                                    <p class="knowledge__list-text">В этой секции из всех данных, что у нас есть, мы научимся отбирать только те, что нам нужны для обучения искусственного интеллекта.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Чек лист почти для всех проектов искусственного интеллекта.</h2>
+                                    <p class="knowledge__list-text">В этой секции я дам чек лист действий для построения end-to-end проектов искусственного интеллекта.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Практические занятия.</h2>
+                                    <p class="knowledge__list-text">На практических занятиях мы научим наши модели искусственного интеллекта следующим вещам: предсказывать нажатие на рекламу пользователем в фейсбуке; определять рак груди; предсказывать ухода в отставку клиентов банка; определять наличие кифоза у детей; определять положительные и отрицательные отзывы yelp; определять положительные и отрицательные отзывы на амазоне; определять спам письма; предсказывать наличие болезней сердца у пациентов; определять износ деталей на токарном станке.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Deep learning: искусственные нейронные сети.</h2>
+                                    <p class="knowledge__list-text">В этой секции ты узнаешь, что такое deep learning и как это работает, также ты поймешь, что такое нейроны и как нейроные сети обучаются. Мы детально разберём все процессы, связанные с нейронными сетями. Ты также познакомишься с библиотекой keras, фреймворком tensorflow и средой разработки google colab.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Deep learning: конволюционные нейронные сети.</h2>
+                                    <p class="knowledge__list-text">Эта секция посвящена конволюционным нейронным сетям, которые применяются в компьютерном зрении. Мы детально разберём как искусственный интеллект распознает те или иные вещи, например, машины или яблоки.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Практические занятия.</h2>
+                                    <p class="knowledge__list-text">На этих занятиях ты разработаешь свои нейронные сети, которые смогут: предсказывать цены автомобилей; предсказывать выходную мощность электростанций (кейс виртуальных сенсоров); предсказывать поломки насоса на основе данных из сенсоров насоса; распознавать рукописные цифры, распознавать элементы одежды, распознавать различные объекты; распознавать повреждённые автомобили; распознавать уличные дорожные знаки для беспилотных автомобилей.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="knowledge__level knowledge__level-middle">
+                        <div class="knowledge__block__lvl knowledge__block__lvl-middle">
+                            <h2 class="knowledge__header">AI - Middle Level.</h2>
+                            <p class="knowledge__text">Продолжительность 1.5 года</p>
+                            <div class="knowledge__img knowledge__img-middle">
+                                <img class="knowledge__photo knowledge__photo-middle" src="img/icons/arrow-down.svg" alt="arrow">
+                            </div>    
+                        </div>  
+                    </div>
+                    <div class="knowledge__block__menu">
+                        <ol class="knowledge__menu knowledge__menu-middle">
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Введение.</h2>
+                                    <p class="knowledge__list-text">В этой секции, мы познакомимся с историей человека, который переквалифицировался в специалиста по искусственному интеллекту и отвечаем на вопрос: "Стоит ли это того, чтобы потратить 2 года на изучение искусственного интеллекта?" Также, мы разберём уроки, усвоенные специалистами, прошедших путь от младших до главных специалистов.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Введение в программирование.</h2>
+                                    <p class="knowledge__list-text">Эта секция начинается с объяснения понятий проблемы, сути и целей искусственного интеллекта. Ты узнаешь в чем разница между данными и информацией. А также что такое качество информации. Мы разберём, что такое алгоритмы, компьютерные программы и язык программирования Python, и начнём работать в интегрированной среде разработки для языка Python. Далее мы поймем суть переменных их свойства и типы. Именно с этой секции ты начнёшь писать свои первые программные коды на языке программирования Python. Мы изучим все аспекты этого удивительного языка.  Далее мы разберём такие библиотеки как Numpy, Pandas и Matplotlib. В этой секции ты познакомишься со средой разработки Jupyter Notebook.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Введение в искусственный интеллект.</h2>
+                                    <p class="knowledge__list-text">Эта секция начинается с объяснения понятий проблемы, сути и целей искусственного интеллекта. Ты узнаешь в чем разница между данными и информацией. А также что такое качество информации. Мы разберём, что такое алгоритмы, компьютерные программы и язык программирования Python, и начнём работать в интегрированной среде разработки для языка Python. Далее мы поймем суть переменных их свойства и типы. Именно с этой секции ты начнёшь писать свои первые программные коды на языке программирования Python. Мы изучим все аспекты этого удивительного языка.  Далее мы разберём такие библиотеки как Numpy, Pandas и Matplotlib. В этой секции ты познакомишься со средой разработки Jupyter Notebook.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Алгоритм machine learning.</h2>
+                                    <p class="knowledge__list-text">В этих секциях, мы подробно разберём работу алгоритмов machine learning. И ты создашь очень простую, но уже свою модель искусственного интеллекта. Также ты научишься оценивать точность моделей. В этой секции мы подробно начнём разбирать одну из библиотек искусственного интеллекта scikit learn. Здесь же мы разберём другую среду разработки, которая называется spyder.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Процесс разработки модели искусственного интеллекта и инженерия данных.</h2>
+                                    <p class="knowledge__list-text">Здесь мы подробно обсудим весь процесс разработки модели искусственного интеллекта. Также мы начнём изучение анализа данных и их обработки для обучения искусственного интеллекта. В этой секции я научу тебя практическим примерам анализа и обработки данных от А до Я.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Отбор фичей.</h2>
+                                    <p class="knowledge__list-text">В этой секции из всех данных, что у нас есть, мы научимся отбирать только те, что нам нужны для обучения искусственного интеллекта.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Чек лист почти для всех проектов искусственного интеллекта.</h2>
+                                    <p class="knowledge__list-text">В этой секции я дам чек лист действий для построения end-to-end проектов искусственного интеллекта.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Практические занятия.</h2>
+                                    <p class="knowledge__list-text">На практических занятиях мы научим наши модели искусственного интеллекта следующим вещам: предсказывать нажатие на рекламу пользователем в фейсбуке; определять рак груди; предсказывать ухода в отставку клиентов банка; определять наличие кифоза у детей; определять положительные и отрицательные отзывы yelp; определять положительные и отрицательные отзывы на амазоне; определять спам письма; предсказывать наличие болезней сердца у пациентов; определять износ деталей на токарном станке.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Deep learning: искусственные нейронные сети.</h2>
+                                    <p class="knowledge__list-text">В этой секции ты узнаешь, что такое deep learning и как это работает, также ты поймешь, что такое нейроны и как нейроные сети обучаются. Мы детально разберём все процессы, связанные с нейронными сетями. Ты также познакомишься с библиотекой keras, фреймворком tensorflow и средой разработки google colab.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Deep learning: конволюционные нейронные сети.</h2>
+                                    <p class="knowledge__list-text">Эта секция посвящена конволюционным нейронным сетям, которые применяются в компьютерном зрении. Мы детально разберём как искусственный интеллект распознает те или иные вещи, например, машины или яблоки.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Практические занятия.</h2>
+                                    <p class="knowledge__list-text">На этих занятиях ты разработаешь свои нейронные сети, которые смогут: предсказывать цены автомобилей; предсказывать выходную мощность электростанций (кейс виртуальных сенсоров); предсказывать поломки насоса на основе данных из сенсоров насоса; распознавать рукописные цифры, распознавать элементы одежды, распознавать различные объекты; распознавать повреждённые автомобили; распознавать уличные дорожные знаки для беспилотных автомобилей.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>    
+                    <div class="knowledge__level knowledge__level-senior">
+                        <div class="knowledge__block__lvl knowledge__block__lvl-senior">
+                            <h2 class="knowledge__header">AI - Senior Level.</h2>
+                            <p class="knowledge__text">Продолжительность 2 года</p>
+                            <div class="knowledge__img knowledge__img-senior">
+                                <img class="knowledge__photo knowledge__photo-senior" src="img/icons/arrow-down.svg" alt="arrow">
+                            </div>    
+                        </div>  
+                    </div>
+                    <div class="knowledge__block__menu">
+                        <ol class="knowledge__menu knowledge__menu-senior">
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Введение.</h2>
+                                    <p class="knowledge__list-text">В этой секции, мы познакомимся с историей человека, который переквалифицировался в специалиста по искусственному интеллекту и отвечаем на вопрос: "Стоит ли это того, чтобы потратить 2 года на изучение искусственного интеллекта?" Также, мы разберём уроки, усвоенные специалистами, прошедших путь от младших до главных специалистов.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Введение в программирование.</h2>
+                                    <p class="knowledge__list-text">Эта секция начинается с объяснения понятий проблемы, сути и целей искусственного интеллекта. Ты узнаешь в чем разница между данными и информацией. А также что такое качество информации. Мы разберём, что такое алгоритмы, компьютерные программы и язык программирования Python, и начнём работать в интегрированной среде разработки для языка Python. Далее мы поймем суть переменных их свойства и типы. Именно с этой секции ты начнёшь писать свои первые программные коды на языке программирования Python. Мы изучим все аспекты этого удивительного языка.  Далее мы разберём такие библиотеки как Numpy, Pandas и Matplotlib. В этой секции ты познакомишься со средой разработки Jupyter Notebook.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Введение в искусственный интеллект.</h2>
+                                    <p class="knowledge__list-text">Эта секция начинается с объяснения понятий проблемы, сути и целей искусственного интеллекта. Ты узнаешь в чем разница между данными и информацией. А также что такое качество информации. Мы разберём, что такое алгоритмы, компьютерные программы и язык программирования Python, и начнём работать в интегрированной среде разработки для языка Python. Далее мы поймем суть переменных их свойства и типы. Именно с этой секции ты начнёшь писать свои первые программные коды на языке программирования Python. Мы изучим все аспекты этого удивительного языка.  Далее мы разберём такие библиотеки как Numpy, Pandas и Matplotlib. В этой секции ты познакомишься со средой разработки Jupyter Notebook.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Алгоритм machine learning.</h2>
+                                    <p class="knowledge__list-text">В этих секциях, мы подробно разберём работу алгоритмов machine learning. И ты создашь очень простую, но уже свою модель искусственного интеллекта. Также ты научишься оценивать точность моделей. В этой секции мы подробно начнём разбирать одну из библиотек искусственного интеллекта scikit learn. Здесь же мы разберём другую среду разработки, которая называется spyder.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Процесс разработки модели искусственного интеллекта и инженерия данных.</h2>
+                                    <p class="knowledge__list-text">Здесь мы подробно обсудим весь процесс разработки модели искусственного интеллекта. Также мы начнём изучение анализа данных и их обработки для обучения искусственного интеллекта. В этой секции я научу тебя практическим примерам анализа и обработки данных от А до Я.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Отбор фичей.</h2>
+                                    <p class="knowledge__list-text">В этой секции из всех данных, что у нас есть, мы научимся отбирать только те, что нам нужны для обучения искусственного интеллекта.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Чек лист почти для всех проектов искусственного интеллекта.</h2>
+                                    <p class="knowledge__list-text">В этой секции я дам чек лист действий для построения end-to-end проектов искусственного интеллекта.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Практические занятия.</h2>
+                                    <p class="knowledge__list-text">На практических занятиях мы научим наши модели искусственного интеллекта следующим вещам: предсказывать нажатие на рекламу пользователем в фейсбуке; определять рак груди; предсказывать ухода в отставку клиентов банка; определять наличие кифоза у детей; определять положительные и отрицательные отзывы yelp; определять положительные и отрицательные отзывы на амазоне; определять спам письма; предсказывать наличие болезней сердца у пациентов; определять износ деталей на токарном станке.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Deep learning: искусственные нейронные сети.</h2>
+                                    <p class="knowledge__list-text">В этой секции ты узнаешь, что такое deep learning и как это работает, также ты поймешь, что такое нейроны и как нейроные сети обучаются. Мы детально разберём все процессы, связанные с нейронными сетями. Ты также познакомишься с библиотекой keras, фреймворком tensorflow и средой разработки google colab.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Deep learning: конволюционные нейронные сети.</h2>
+                                    <p class="knowledge__list-text">Эта секция посвящена конволюционным нейронным сетям, которые применяются в компьютерном зрении. Мы детально разберём как искусственный интеллект распознает те или иные вещи, например, машины или яблоки.</p>
+                                </div>
+                            </li>
+                            <li class="knowledge__list">
+                                <div class="knowledge__block__list">
+                                    <h2 class="knowledge__list-header">Практические занятия.</h2>
+                                    <p class="knowledge__list-text">На этих занятиях ты разработаешь свои нейронные сети, которые смогут: предсказывать цены автомобилей; предсказывать выходную мощность электростанций (кейс виртуальных сенсоров); предсказывать поломки насоса на основе данных из сенсоров насоса; распознавать рукописные цифры, распознавать элементы одежды, распознавать различные объекты; распознавать повреждённые автомобили; распознавать уличные дорожные знаки для беспилотных автомобилей.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="block__btn">
+                    <button class="btn knowledge__btn">Записаться на ознакомительный вебинар</button>
+                </div>
+            </div>
+        </section>
+    
+        <div class="divider"></div>
+    
+        <section class="autor">
+            <div class="container">
+                <h2 class="section__title">Автор курса </h2>
+                <div class="autor__wrapper">
+                    <div class="autor__left">
+                        <p class="autor__text">Основателем курса является Владимир Ким, действующий и ведущий специалист в области искусственного интеллекта в Южной Корее, который разрабатывал системы искусственного интеллекта для компаний Samsung SDS, LG science park и LG digital park.</p>
+                        <p class="autor__text">На данный момент, Владимир занимается разработкой виртуальных сенсоров на основе нейронных сетей.</p>
+                        <p class="autor__text">Является одним из авторов диссертации об обработке больших данных для Южнокорейского института по развитию Интернета.</p>
+                        <p class="autor__text">Действующий член ассоциации разработчиков программного обеспечения в Южной Корее.</p>
+                        <p class="autor__text">Активно участвует в R&D проектах по внедрению искусственного интеллекта для государственных предприятий Южной Кореи.</p>
+                    </div>
+                    <div class="autor__right">
+                        <div class="autor__block__text">
+                            <p class="autor__text_position autor__text_name">Владимир Ким</p>
+                            <p class="autor__text_position autor__text_post">Ведущий специалист</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="divider"></div>
+    
+        <section class="announcement">
+            <div class="container">
+                <div class="announcement__btn-wrapper">
+                    <h2 class="section__title">Объявления школы</h2>
+                    <div class="big__block__btn">
+                        <button class="big__btn">Все объявления</button>
+                    </div> 
+                </div>
+                <div class="swiper announcement__wrapper">
+                    <div class="swiper-wrapper announcement__slider">
+                        <div class="swiper-slide announcement__slides__item">
+                            <div class="announcement__slides__img">
+                                <img src="img/announcement-photo-one.png" alt="искусственный интеллект">
+                                <p class="announcement__date">25 мая 2022 года</p>
+                            </div>
+                            <div class="announcement__descriptions">
+                                <h2 class="announcement__header">Заголовок объявления из нескольких слов</h2> 
+                                <p class="announcement__text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность различных между собой направлений.</p>
+                            </div>
+                            <div class="announcement__block__link">
+                                <a href="#" class="slider__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide announcement__slides__item">
+                            <div class="announcement__slides__img">
+                                <img src="img/announcement-photo-two.png" alt="искусственный интеллект">
+                            </div><p class="announcement__date">25 мая 2022 года</p>
+                            <div class="announcement__descriptions">
+                                <h2 class="announcement__header">Заголовок объявления из нескольких слов</h2> 
+                                <p class="announcement__text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность различных между собой направлений.</p>
+                            </div>
+                            <div class="announcement__block__link">
+                                <a href="#" class="slider__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide announcement__slides__item">
+                            <div class="announcement__slides__img">
+                                <img src="img/announcement-photo-three.png" alt="искусственный интеллект">
+                                <p class="announcement__date">25 мая 2022 года</p>
+                            </div>
+                            <div class="announcement__descriptions">
+                                <h2 class="announcement__header">Заголовок объявления из нескольких слов</h2> 
+                                <p class="announcement__text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность различных между собой направлений.</p>
+                            </div>
+                            <div class="announcement__block__link">
+                                <a href="#" class="slider__link">Подробнее</a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <button class="slider__arrows slider__arrows-left">
+                    <img src="img/icons/arrow-right.svg" alt="arrow-left">
+                </button>
+                <button class="slider__arrows slider__arrows-right">
+                    <img src="img/icons/arrow-right.svg" alt="arrow-right">
+                </button>
+                <div class="small__block__btn">
+                    <button class="small__btn">Все объявления</button>
+                </div>
+            </div>
+        </section>
+    
+        <div class="divider"></div>
+    
+        <section class="vacansion">
+            <div class="container">
+                <div class="vacansion__btn-wrapper">
+                    <h2 class="section__title">Вакансии</h2>
+                    <div class="big__block__btn big__block__btn_margin">
+                        <button class="big__btn">Все объявления</button>
+                    </div> 
+                </div>
+                <div class="swiper2 vacansion__wrapper">
+                    <div class="swiper-wrapper vacansion__slider">
+                        <div class="swiper-slide vacansion__slides__item">
+                            <div class="vacansion__slides__img">
+                                <img src="img/vacansion-photo-one.png" alt="Вакансии">
+                            </div>
+                            <div class="vacansion__descriptions">
+                            <h2 class="vacansion__header">Требуется администратор</h2> 
+                                <ul class="vacansion__menu">
+                                    <li class="vacansion__list">
+                                        <div class="vacansion__block-list">
+                                            <p class="vacansion__text">Опыт работы</p>
+                                            <p class="vacansion__text">.............................................</p>
+                                            <p class="vacansion__text">от 1 года</p>
+                                        </div>  
+                                    </li>
+                                    <li class="vacansion__list">
+                                        <div class="vacansion__block-list">
+                                            <p class="vacansion__text">Образование</p>
+                                            <p class="vacansion__text">............................................</p>
+                                            <p class="vacansion__text">Высшее</p>
+                                        </div>  
+                                    </li>
+                                    <li class="vacansion__list">
+                                        <div class="vacansion__block-list">
+                                            <p class="vacansion__text">Возраст</p>
+                                            <p class="vacansion__text">.......................................................</p>
+                                            <p class="vacansion__text">21-35лет</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacansion__block__link">
+                                <a href="#" class="slider__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide vacansion__slides__item">
+                            <div class="vacansion__slides__img">
+                                <img src="img/vacansion-photo-one.png" alt="Вакансии">
+                            </div>
+                            <div class="vacansion__descriptions">
+                            <h2 class="vacansion__header">Требуется администратор</h2> 
+                                <ul class="vacansion__menu">
+                                    <li class="vacansion__list">
+                                        <div class="vacansion__block-list">
+                                            <p class="vacansion__text">Опыт работы</p>
+                                            <p class="vacansion__text">.............................................</p>
+                                            <p class="vacansion__text">от 1 года</p>
+                                        </div>  
+                                    </li>
+                                    <li class="vacansion__list">
+                                        <div class="vacansion__block-list">
+                                            <p class="vacansion__text">Образование</p>
+                                            <p class="vacansion__text">............................................</p>
+                                            <p class="vacansion__text">Высшее</p>
+                                        </div>  
+                                    </li>
+                                    <li class="vacansion__list">
+                                        <div class="vacansion__block-list">
+                                            <p class="vacansion__text">Возраст</p>
+                                            <p class="vacansion__text">.......................................................</p>
+                                            <p class="vacansion__text">21-35лет</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacansion__block__link">
+                                <a href="#" class="slider__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide vacansion__slides__item">
+                            <div class="vacansion__slides__img">
+                                <img src="img/vacansion-photo-one.png" alt="Вакансии">
+                            </div>
+                            <div class="vacansion__descriptions">
+                            <h2 class="vacansion__header">Требуется администратор</h2> 
+                                <ul class="vacansion__menu">
+                                    <li class="vacansion__list">
+                                        <div class="vacansion__block-list">
+                                            <p class="vacansion__text">Опыт работы</p>
+                                            <p class="vacansion__text">.............................................</p>
+                                            <p class="vacansion__text">от 1 года</p>
+                                        </div>  
+                                    </li>
+                                    <li class="vacansion__list">
+                                        <div class="vacansion__block-list">
+                                            <p class="vacansion__text">Образование</p>
+                                            <p class="vacansion__text">............................................</p>
+                                            <p class="vacansion__text">Высшее</p>
+                                        </div>  
+                                    </li>
+                                    <li class="vacansion__list">
+                                        <div class="vacansion__block-list">
+                                            <p class="vacansion__text">Возраст</p>
+                                            <p class="vacansion__text">.......................................................</p>
+                                            <p class="vacansion__text">21-35лет</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacansion__block__link">
+                                <a href="#" class="slider__link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="vacansion__arrows slider__arrows slider__arrows2-left">
+                    <img src="img/icons/arrow-right.svg" alt="arrow-left">
+                </button>
+                <button class="vacansion__arrows slider__arrows slider__arrows2-right">
+                    <img src="img/icons/arrow-right.svg" alt="arrow-right">
+                </button>
+                <div class="small__block__btn">
+                    <button class="small__btn">Все объявления</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <a href="#" class="footer__logo">
+                        <img src="img/icons/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="footer__info">
+                    <a href="tel:+821075269192" class="footer__link footer__tel">
+                        <svg width="38" height="35" viewBox="0 0 38 35" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.11923 2.0918C8.54742 2.04805 7.91175 2.20391 7.32543 2.5922C6.80877 2.93126 5.69418 3.76524 4.65215 4.7086C4.13259 5.17891 3.63625 5.66837 3.2531 6.14962C2.86706 6.63087 2.53036 7.0711 2.55068 7.71095C2.571 8.28516 2.63195 9.98321 3.92941 12.5863C5.22686 15.1867 7.7434 18.7551 12.6517 23.3816C17.5628 28.0082 21.3507 30.3789 24.1111 31.6012C26.8714 32.8234 28.6768 32.8809 29.2864 32.9C29.9627 32.9191 30.43 32.602 30.9408 32.2383C31.4517 31.8746 31.9713 31.4098 32.4705 30.9203C33.469 29.9387 34.3543 28.8887 34.7142 28.402C35.5356 27.3 35.3992 25.9984 34.4849 25.3941C33.9102 25.0141 28.6246 21.7 27.8293 21.2406C27.0224 20.7758 26.0935 20.9863 25.2634 21.3992C24.6103 21.7246 22.8426 22.6789 22.3376 22.9524C21.9574 22.7254 20.5148 21.8203 17.4119 18.8973C14.3061 15.9742 13.3483 14.6152 13.1074 14.257C13.3976 13.7813 14.4077 12.1242 14.756 11.4981C15.1914 10.7188 15.4352 9.83555 14.9157 9.06993C14.698 8.74454 13.7082 7.3254 12.7097 5.90079C11.7083 4.47618 10.7592 3.1254 10.5125 2.80274V2.80001C10.1903 2.38165 9.68813 2.13555 9.11923 2.0918ZM8.9828 3.52188C9.18599 3.54649 9.30789 3.62305 9.30789 3.62305C9.4269 3.77891 10.4689 5.25001 11.4674 6.67188C12.4659 8.09649 13.4847 9.55665 13.6618 9.82188C13.6908 9.8629 13.7314 10.3277 13.4412 10.8445V10.8473C13.1132 11.4352 11.5835 13.9535 11.5835 13.9535L11.3716 14.3063L11.5893 14.6563C11.5893 14.6563 12.73 16.4691 16.3583 19.8871C19.9894 23.3051 21.9138 24.3824 21.9138 24.3824L22.2853 24.5875L22.6598 24.3879C22.6598 24.3879 25.3273 22.9496 25.9571 22.6379C26.5057 22.3672 26.9991 22.4027 27.0572 22.4356C27.5709 22.7336 33.2803 26.3074 33.6315 26.5399C33.6432 26.5481 33.9537 26.991 33.5009 27.5981H33.498C33.2252 27.9672 32.3312 29.0363 31.3995 29.9496C30.9321 30.4063 30.4532 30.8328 30.0469 31.1199C29.6405 31.407 29.2777 31.4973 29.3357 31.5C28.703 31.4809 27.3068 31.4672 24.7438 30.3324C22.1809 29.2004 18.5236 26.9336 13.7024 22.3891C8.88412 17.85 6.47787 14.4047 5.2733 11.9875C4.07163 9.57305 4.05712 8.25782 4.0368 7.66446C4.0397 7.71915 4.13549 7.37462 4.44026 6.99181C4.74503 6.60899 5.19493 6.15509 5.67966 5.71485C6.65203 4.83712 7.78404 3.99493 8.17589 3.7379V3.74063C8.49807 3.52735 8.77962 3.50001 8.9828 3.52188Z"/>
+                        </svg>
+                        <p class="footer__text__link"> + 82 (10) 7526-9192</p>
+                    </a>
+                    <a href="mailto:veravlaedu@gmail.com" class="footer__link footer__email">
+                        <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0V0.5V18H25V0H0ZM1 1H24V2.28125C23.7774 2.47479 14.9085 10.1857 14.1729 10.8232C13.5269 11.3831 12.8391 11.501 12.5 11.501C12.1609 11.501 11.4731 11.3831 10.8271 10.8232C10.6417 10.6625 9.31134 9.50583 8.34961 8.66992L8.33984 8.65723L8.33789 8.65918C5.48222 6.1771 1.1662 2.42576 1 2.28125V1ZM1 3.60254C1.87369 4.36228 4.92064 7.01119 7.54102 9.28906L1 14.457V3.60254ZM24 3.60254V14.459L17.4453 9.30078C20.0643 7.02411 23.1245 4.36386 24 3.60254ZM8.30859 9.95703C8.92647 10.4941 10.0314 11.4546 10.1729 11.5771C11.0269 12.3173 11.9391 12.499 12.5 12.499C13.0609 12.499 13.9731 12.3173 14.8271 11.5771C14.9675 11.4555 16.0663 10.4993 16.6768 9.96875L24 15.7324V17H1V15.7324L8.30859 9.95703Z" fill=""/>
+                        </svg>
+                        veravlaedu@gmail.com 
+                    </a>
+                    <div class="footer__social">
+                        <p class="footer__text footer__social__text">Мы в соц сетях</p>
+                        <a href="http://facebook.com" class="footer__link">
+                            <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.525 7.00006H7V5.00006C7 3.96806 7.084 3.31806 8.563 3.31806H10.431V0.138063C9.522 0.0440625 8.608 -0.0019375 7.693 6.25e-05C4.98 6.25e-05 3 1.65706 3 4.69906V7.00006H0V11.0001L3 10.9991V20.0001H7V10.9971L10.066 10.9961L10.525 7.00006Z" fill=""/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <svg width="35" height="37" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.4998 0.299988C8.00111 0.299988 0.299805 7.68022 0.299805 16.7833C0.299805 21.6584 2.52243 26.0244 6.03314 29.0422V36.1333L12.9647 32.6676C14.4117 33.0464 15.9274 33.2667 17.4998 33.2667C26.9985 33.2667 34.6998 25.8864 34.6998 16.7833C34.6998 7.68022 26.9985 0.299988 17.4998 0.299988ZM15.8677 12.279L20.0977 16.5146L27.6535 12.279L19.1319 21.5144L14.9999 17.0745L7.24531 21.4137L15.8677 12.279Z" fill=""/>
+                            </svg>       
+                        </a>
+                        <a href="https://www.youtube.com" class="footer__link">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.3127 0.03125L8.09395 5.875V9.6875H9.59395V5.6875L11.3127 0.03125H9.8127L8.8752 3.875H8.78145L7.8127 0.03125H6.3127ZM13.2189 2.375C12.6174 2.375 12.1369 2.54688 11.7814 2.875C11.426 3.19922 11.2502 3.63672 11.2502 4.1875V7.875C11.2502 8.48047 11.4338 8.98828 11.7814 9.34375C12.133 9.70312 12.5744 9.875 13.1564 9.875C13.758 9.875 14.2502 9.69141 14.5939 9.34375C14.9377 8.99609 15.0939 8.51562 15.0939 7.90625V4.21875C15.0939 3.67578 14.9143 3.25 14.5627 2.90625C14.215 2.55859 13.7697 2.375 13.2189 2.375ZM16.2189 2.5625V8.53125C16.2189 8.95703 16.3127 9.25781 16.4689 9.46875C16.6252 9.67969 16.8518 9.78125 17.1564 9.78125C17.4025 9.78125 17.6447 9.71094 17.9064 9.5625C18.1721 9.41016 18.4455 9.19531 18.6877 8.90625V9.6875H20.0002V2.5625H18.6877V7.96875C18.5627 8.12109 18.4299 8.24609 18.2814 8.34375C18.133 8.44531 18.0041 8.5 17.9064 8.5C17.7854 8.5 17.6799 8.48047 17.6252 8.40625C17.5666 8.33203 17.5627 8.19531 17.5627 8.03125V2.5625H16.2189ZM13.1564 3.625C13.3322 3.625 13.4885 3.65625 13.5939 3.75C13.7033 3.84766 13.7502 3.97266 13.7502 4.125V8.03125C13.7502 8.22266 13.6994 8.36328 13.5939 8.46875C13.4885 8.57812 13.3361 8.625 13.1564 8.625C12.9807 8.625 12.8439 8.57422 12.7502 8.46875C12.6525 8.36328 12.6252 8.22656 12.6252 8.03125V4.125C12.6252 3.97266 12.6799 3.84766 12.7814 3.75C12.883 3.65625 12.9963 3.625 13.1564 3.625ZM13.0002 11.1562C10.4064 11.1523 7.86348 11.1758 5.3752 11.2812C3.63691 11.2812 2.21895 12.6836 2.21895 14.4062C2.11348 15.7695 2.05879 17.1367 2.0627 18.5C2.05879 19.8633 2.11348 21.2305 2.21895 22.5938C2.21895 24.3164 3.63691 25.7188 5.3752 25.7188C7.86348 25.8203 10.4064 25.8477 13.0002 25.8438C15.5979 25.8516 18.1408 25.8203 20.6252 25.7188C22.3635 25.7188 23.7814 24.3164 23.7814 22.5938C23.8869 21.2305 23.9416 19.8633 23.9377 18.5C23.9455 17.1367 23.8869 15.7695 23.7814 14.4062C23.7814 12.6836 22.3635 11.2812 20.6252 11.2812C18.1408 11.1758 15.5979 11.1523 13.0002 11.1562ZM3.7502 13.375H8.34395C8.42598 13.375 8.5002 13.4492 8.5002 13.5312V14.9375C8.5002 15.0195 8.42598 15.0938 8.34395 15.0938H6.9377V23.1875C6.9377 23.2695 6.89473 23.3438 6.8127 23.3438H5.3127C5.23066 23.3438 5.15645 23.2695 5.15645 23.1875V15.0938H3.7502C3.66816 15.0938 3.6252 15.0195 3.6252 14.9375V13.5312C3.6252 13.4492 3.66816 13.375 3.7502 13.375ZM13.4064 13.375H14.7502C14.8322 13.375 14.9064 13.4492 14.9064 13.5312V16.25C15.0158 16.1484 15.133 16.0664 15.2502 16C15.4768 15.875 15.7072 15.8125 15.9377 15.8125C16.4064 15.8125 16.7502 16 17.0002 16.3438C17.2385 16.6758 17.3752 17.1406 17.3752 17.75V21.7188C17.3752 22.2578 17.2619 22.6758 17.0314 22.9688C16.7932 23.2734 16.4377 23.4375 16.0002 23.4375C15.7229 23.4375 15.4768 23.3633 15.2502 23.25C15.1291 23.1875 15.0158 23.1289 14.9064 23.0312V23.1875C14.9064 23.2695 14.8322 23.3438 14.7502 23.3438H13.4064C13.3244 23.3438 13.2502 23.2695 13.2502 23.1875V13.5312C13.2502 13.4492 13.3244 13.375 13.4064 13.375ZM20.2189 15.7188C20.8674 15.7188 21.3986 15.9219 21.7502 16.3125C22.1018 16.7031 22.2814 17.2578 22.2814 17.9688V19.8125C22.2814 19.8945 22.2072 19.9375 22.1252 19.9375H19.7502V21.1562C19.7502 21.5938 19.7971 21.7656 19.8439 21.8438C19.883 21.9062 19.9494 22 20.1564 22C20.3244 22 20.4416 21.9531 20.5002 21.875C20.5275 21.832 20.5939 21.6758 20.5939 21.1562V20.6562C20.5939 20.5742 20.6682 20.5 20.7502 20.5H22.1252C22.2072 20.5 22.2814 20.5742 22.2814 20.6562V21.1875C22.2814 21.957 22.0744 22.543 21.7189 22.9375C21.3635 23.3359 20.8283 23.5312 20.1252 23.5312C19.4885 23.5312 18.9924 23.332 18.6252 22.9062C18.2619 22.4883 18.0627 21.9102 18.0627 21.1875V17.9688C18.0627 17.3125 18.2541 16.793 18.6564 16.375C19.0588 15.957 19.5861 15.7188 20.2189 15.7188ZM8.34395 15.9062H9.65645C9.73848 15.9062 9.8127 15.9805 9.8127 16.0625V21.5312C9.8127 21.7109 9.82441 21.7852 9.84395 21.8125C9.85176 21.8242 9.88691 21.875 10.0002 21.875C10.0393 21.875 10.1252 21.8594 10.2814 21.75C10.4104 21.6641 10.5236 21.5586 10.6252 21.4375V16.0625C10.6252 15.9805 10.6994 15.9062 10.7814 15.9062H12.1252C12.2072 15.9062 12.2502 15.9805 12.2502 16.0625V23.1875C12.2502 23.2695 12.2072 23.3438 12.1252 23.3438H10.7814C10.6994 23.3438 10.6252 23.2695 10.6252 23.1875V22.7812C10.4494 22.9531 10.2775 23.082 10.0939 23.1875C9.80488 23.3516 9.53145 23.4375 9.2502 23.4375C8.89473 23.4375 8.62129 23.3164 8.4377 23.0625C8.26191 22.8242 8.1877 22.4844 8.1877 22.0312V16.0625C8.1877 15.9805 8.26191 15.9062 8.34395 15.9062ZM15.2502 17.25C15.1994 17.2578 15.1486 17.2852 15.0939 17.3125C15.0314 17.3438 14.9689 17.4023 14.9064 17.4688V21.7812C14.9846 21.8633 15.051 21.9336 15.1252 21.9688C15.2072 22.0078 15.2854 22.0312 15.3752 22.0312C15.5432 22.0312 15.6096 21.9609 15.6252 21.9375C15.6643 21.8867 15.6877 21.7695 15.6877 21.5312V17.8438C15.6877 17.6406 15.6682 17.4727 15.5939 17.375C15.5197 17.2773 15.4025 17.2227 15.2502 17.25ZM20.1877 17.2812C20.0275 17.2812 19.9104 17.3164 19.8439 17.4062C19.7971 17.4727 19.7502 17.6367 19.7502 17.9688V18.5312H20.5939V17.9688C20.5939 17.6406 20.551 17.4805 20.5002 17.4062C20.4377 17.3203 20.34 17.2812 20.1877 17.2812Z" fill=""/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.4998 0.299988C8.00111 0.299988 0.299805 8.00129 0.299805 17.5C0.299805 20.7267 1.20616 23.7351 2.75215 26.3155L0.453776 34.7L9.01738 32.452C11.5219 33.8759 14.4131 34.7 17.4998 34.7C26.9985 34.7 34.6998 26.9987 34.6998 17.5C34.6998 8.00129 26.9985 0.299988 17.4998 0.299988ZM11.6125 9.47668C11.892 9.47668 12.1792 9.47498 12.4272 9.48788C12.7339 9.49505 13.0677 9.51751 13.3874 10.2241C13.7672 11.0641 14.5943 13.1712 14.7003 13.3848C14.8064 13.5983 14.8816 13.8499 14.7339 14.1294C14.5935 14.4161 14.5204 14.5896 14.314 14.8433C14.1004 15.0898 13.8664 15.396 13.6729 15.5823C13.4594 15.7959 13.2388 16.0301 13.4854 16.4558C13.7319 16.8815 14.5881 18.277 15.8537 19.4036C17.4805 20.857 18.8531 21.3037 19.2803 21.5172C19.7074 21.7308 19.9548 21.6975 20.2013 21.4109C20.455 21.1314 21.2668 20.1723 21.5535 19.7452C21.833 19.318 22.1183 19.3919 22.5053 19.5324C22.898 19.6729 24.9924 20.7046 25.4195 20.9182C25.8467 21.1317 26.1267 21.2374 26.2342 21.4109C26.3445 21.59 26.3447 22.443 25.9906 23.4377C25.6366 24.431 23.8981 25.3915 23.1184 25.4589C22.3315 25.532 21.5971 25.8126 18.0037 24.3979C13.6693 22.6908 10.9358 18.2514 10.7223 17.9647C10.5087 17.6852 8.98659 15.6566 8.98659 13.5639C8.98659 11.4641 10.0875 10.4357 10.4731 10.0086C10.8658 9.58145 11.3258 9.47668 11.6125 9.47668Z" fill=""/>
+                            </svg>   
+                        </a>
+                        <a href="#" class="footer__link">
+                            <svg width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.6333 0C8.342 0 0 7.21456 0 16.1137C0 20.034 1.62285 23.6229 4.314 26.4166C4.36834 26.5548 5.74912 30.1864 1.66009 33.8898C1.58847 33.9584 1.53138 34.0412 1.49238 34.1333C1.45337 34.2253 1.43327 34.3245 1.43333 34.4248C1.43333 34.6191 1.50884 34.8054 1.64324 34.9427C1.77764 35.0801 1.95993 35.1573 2.15 35.1573C2.20178 35.1572 2.25341 35.1515 2.30397 35.1401C6.42604 34.8905 9.95229 32.7999 12.1049 31.1889C14.1394 31.8483 16.3326 32.2275 18.6333 32.2275C28.9247 32.2275 37.2667 25.0129 37.2667 16.1137C37.2667 7.21456 28.9247 0 18.6333 0Z" fill=""/>
+                                <path d="M12.3403 14.944V19H10.4363V14.944H9.04428V13.336H13.7323V14.944H12.3403ZM13.1806 19L15.4126 13.336H17.4366L19.6446 19H17.5726L17.2766 18.168H15.4766L15.1966 19H13.1806ZM16.8526 16.712L16.3966 15.312L15.9326 16.712H16.8526ZM20.0475 19V13.336H21.9675V17.368H23.8475V19H20.0475ZM27.8222 19L26.3102 16.744H26.2942V19H24.4382V13.336H26.2862V15.424H26.3022L27.8142 13.336H30.0542L27.9262 15.928L30.1582 19H27.8222Z" fill="#0B5B6D"/>
+                            </svg>     
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                Copyright &copy; 2021 VeraVla edu. All rights reserved 
+            </div>
+            <div class="footer__developer">
+                <p class="footer__text">developed by afreeca</p>
+                <img class="footer__photo" src="img/icons/afreeca-logo.png" alt="afreeca-logo">
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<div class="modal modal__communication">
+    <div class="modal__dialog">
+        <div class="container">
+            <h2 class="section__title modal__title"><span class="about-span span_text-color">Выберите</span> удобный способ связи с нами</h2>
+            <div class="modal__wrapper">
+                <div class="modal__info">
+                    <div class="modal__items">
+                        <a href="https://facebook.com" class="modal__items-wrapper">
+                            <div class="modal__img">
+                                <img src="img/icons/facebook.svg" alt="facebook">
+                            </div>
+                        </a>
+                        <a href="https://facebook.com" class="modal__text">Facebook messenger</a>
+                    </div>
+                    <div class="modal__items">
+                        <a href="#" class="modal__items-wrapper">
+                            <div class="modal__img">
+                                <img src="img/icons/whatsapp.svg" alt="whatsapp">
+                            </div>
+                        </a>
+                        <a href="#" class="modal__text">WhatsApp</a>
+                    </div>
+                    <div class="modal__items">
+                        <a href="#" class="modal__items-wrapper">
+                            <div class="modal__img">
+                                <img src="img/icons/talk.svg" alt="talk">
+                            </div>
+                        </a>
+                        <a href="#" class="modal__text">Kakao talk</a>
+                    </div>
+                    <div class="modal__items">
+                        <a href="mailto:www@mail.ru" class="modal__items-wrapper">
+                            <div class="modal__img">
+                                <img src="img/icons/email.svg" alt="email">
+                            </div>
+                        </a>
+                        <a href="mailto:www@mail.ru" class="modal__text modal__text_color">По E-mail</a>
+                    </div>
+                    <div class="modal__items">
+                        <a href="tel:+821075269192" class="modal__items-wrapper">
+                            <div class="modal__img">
+                                <img src="img/icons/modal-phone.svg" alt="phone">
+                            </div>
+                        </a>
+                        <a href="tel:+821075269192" class="modal__text">По номеру телефона</a>
+                    </div>
+                </div>
+            </div>
+            <div class="block__btn modal__block__btn">
+                <button class="small__btn modal__btn">Записатся прямо сейчас</button>
+            </div>
+        </div>
+        <div class="modal__close">
+            <img class="modal__close-photo" src="img/icons/close.svg" alt="close">
+        </div>
+    </div>   
+</div>
+
+<div class="small__modal modal__submit">
+    <div class="small__modal__dialog">
+        <div class="container">
+            <h2 class="section__title modal__title small__modal__title">Запрос успешно отправлен!</h2>
+            <div class="small__modal__wrapper">
+                <div class="small__modal__info"></div>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<div class="arrow__text">
+    <p class="arrow-text">Подняться вверх</p>
+    <div class="arrow__up">
+        <div class="block__arrow-up">
+            <img src="img/icons/arrow-right.svg" alt="arrow-up">
+        </div>
+    </div>
+</div>
+
+
+<script src="js/script.js"></script>
+<script src="swiper/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+.header__contacts
+    padding-top: 37px
+    padding-bottom: 47px
+.header__contacts-bottom
+    background: url(img/contacts/header-bg_contacts.jpg)no-repeat
+    background-size: cover
+    padding: 51px 0
+    h1
+        font-weight: 500
+        font-size: 44px
+        line-height: 74px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #FFFFFF
+    &-text
+        width: 780px
+        padding-top: 16px
+        font-size: 20px
+        line-height: 30px
+        text-align: center
+        letter-spacing: 0.04em
+        color: rgba(255, 255, 255, 0.6) 
+        margin: 0 auto   
+.content
+    display: flex
+    justify-content: space-between
+    padding-top: 17px
+    &__left
+        width: 301px
+    &__img
+        width: 300px
+        height: 185px    
+    &__info,&__email
+         padding-top: 40px  
+    &__descriptions-heading, &__info-heading, &__email-heading
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.04em
+        color: #1F3F68
+        text-transform: uppercase
+    &__info-menu,&__email-menu 
+        list-style: none  
+    &__descriptions-text, &__info-link, &__email-link
+        font-weight: 300
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: 0.04em
+        color: #1F3F68
+        opacity: 0.6
+    &__descriptions-text
+        width: 300px
+        margin-top: 24px
+    &__info-link,&__email-link
+        opacity: 1
+        text-decoration: none
+    &__descriptions
+        padding-top: 56px
+    &__right
+        width: 540px
+        &-form
+            box-sizing: border-box
+            padding: 56px
+            background: #FFFFFF
+            box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2)
+            border-radius: 10px
+        &-input
+            width: 428px
+            height: 72px
+            border: 1px solid #356EAD
+            box-sizing: border-box
+            border-radius: 10px 
+            padding-left: 42px
+            padding-right: 50px
+            outline: none
+            color: #1F3F68
+        &:placeholder
+            font-weight: 300
+            font-size: 16px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            opacity: 0.2   
+        label
+            padding-top: 48px  
+            padding-bottom: 8px 
+            display: block 
+            font-size: 16px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            opacity: 0.8   
+        .textarea
+            width: 428px
+            height: 144px
+            padding-top: 21px   
+    &__right-heading  
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.04em
+        color: #1F3F68
+        text-transform: uppercase
+    &__info-list, &__email-list
+        margin-top: 16px
+        display: flex
+    &__info-list::before
+        content: url(img/contacts/phone.svg)
+        margin-right: 16px
+        
+    &__email-list::before
+        content: url(img/contacts/web.svg) 
+        margin-right: 16px
+       
+    .email-list-email::before
+        content: url(img/contacts/email.svg) 
+        margin-right: 16px   
+    button
+        filter: drop-shadow(5px 10px 20px rgba(16, 112, 177, 0.2))
+        font-weight: 500
+        font-size: 16px
+        line-height: 26px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #FFFFFF 
+        background: #5A98D0
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+        border-radius: 10px
+        padding: 23px 0
+        width: 428px
+        box-sizing: border-box
+        outline: none
+        border: none
+        cursor: pointer
+        margin-top: 72px
+        text-transform: uppercase
+.map
+    padding-top: 96px 
+    padding-bottom: 112px  
+.map-iframe      
+    width: 100%
+    height: 720px
+
+@media (max-width: 1140px)
+    .center
+        padding-left: calc(50% - 500px)    
+        padding-right: calc(50% - 500px) 
+    .content
+        justify-content: space-around
+        &__left
+            margin: 0 auto
+
+@media (max-width: 991px) 
+    .center
+        padding-left: calc(50% - 370px)    
+        padding-right: calc(50% - 370px)        
+    .header
+        &__contacts
+            padding-top: 10px
+            padding-bottom: 41px
+        &__contacts-bottom-text
+            width: 520px
+    .content__info
+        .content
+            flex-direction: column
+            align-items: center
+            padding-top: 24px
+            &__left
+                margin: 0    
+            &__right-form
+                margin: 64px auto 0
+            &__right-heading
+                width: 178px  
+    .map-iframe      
+        height: 600px                  
+        
+
+@media (max-width:767px)  
+    .center
+        padding-left: calc( 50% - 170px)
+        padding-right: calc( 50% - 170px)
+    .header
+        &__contacts-bottom 
+            h1
+                font-size: 24px
+                line-height: 28px
+        &__contacts-bottom-text        
+            padding-top: 32px
+            font-size: 16px
+            width: 341px
+    .content__info
+        .content
+            padding-top: 46px
+            &__info
+                padding-top: 34px
+            &__right
+                width: 90%
+            &__right-form  
+                width: inherit
+                padding: 35px
+            &__right-heading
+                align-self: flex-start
+                font-size: 16px  
+            &__right-form
+                display: flex
+                align-items: center
+                flex-direction: column
+                margin-top: 32px    
+            &__right-input   
+                width: 100%
+                height: 46px
+                padding-left: 26px
+                font-size: 14px
+            .textarea  
+                height: 92px  
+            label
+                align-self: flex-start
+                font-size: 14px
+                padding-top: 20px  
+            button
+                width: 90%
+                margin-top: 46px  
+    .map
+        display: flex
+        padding-top: 64px 
+        padding-bottom: 64px  
+    .map-iframe  
+        width: 90%    
+        height: 400px  
+        margin: 0 auto
+
+    .footer
+        &__heading
+            width: 220px
+            margin: 0 auto
+            
+@media (max-width: 375px)
+    .center
+        padding-left: calc( 50% - 145px)
+        padding-right: calc( 50% - 145px)
+    .header
+        &__contacts
+            padding-bottom: 33px
+        &__contacts-bottom-text
+            width: 300px
+    .content__info        
+        .content
+            text-align: center
+            li
+                display: flex
+                justify-content: center
+            &__right
+                width: 300px
+            &__right-form
+                width: 300px
+                display: flex
+                flex-direction: column
+                align-items: center   
+    .map
+        padding-top: 32px 
+        padding-bottom: 32px 
+    .map-iframe 
+        width: 95%    
+        height: 250px         
+    .content__info
+        .content
+            button
+                padding: 10px 0

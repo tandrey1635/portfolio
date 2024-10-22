@@ -1,0 +1,182 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+
+
+
+body
+    background: url(../../../../img/main-bg.png)
+    background-size: 100%    
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.header
+   
+    &__logo
+        display: flex
+        justify-content: center
+    .logo  
+        width: 800px
+        fill: #6A5ACD
+    &__menu
+        height: 200px
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        list-style: none
+        .menu__list
+            color: aqua 
+            list-style: none 
+            margin-top: 10px      
+        .menu__link
+            text-decoration: none 
+            font-size: 20px 
+            color: aqua 
+        .details__menu
+            position: absolute
+            z-index: 5
+            left: 20% 
+            top: 45%
+        details
+            width: 220px 
+            outline: 0
+            outline-offset: 0
+        details:active, :hover, :focus
+            outline: 0
+            outline-offset: 0
+        summary
+           font-size: 20px  
+           color: aqua
+        .summary-solar-systems
+            padding-top: 10px   
+        .summary-star
+            font-size: 20px  
+            color: aqua
+            padding-top: 10px
+            text-align: center     
+        .details-solar-systems
+            padding-left: 20px  
+        .menu__solar-systems
+            padding-left: 15px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+details[open]
+    -webkit-animation: scale-up-ver-top 0.55s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+    animation: scale-up-ver-top 0.55s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+.planet__descriptions    
+    @-webkit-keyframes scale-up-ver-top
+        0% 
+            -webkit-transform: scaleY(0.4)
+            transform: scaleY(0.4)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+        100% 
+            -webkit-transform: scaleY(1)
+            transform: scaleY(1)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+
+    @keyframes scale-up-ver-top 
+        0% 
+            -webkit-transform: scaleY(0.4)
+            transform: scaleY(0.4)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+        100% 
+            -webkit-transform: scaleY(1)
+            transform: scaleY(1)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+
+
+
+            
+  
+
+
+.planet
+    height: 1080px
+    &__content
+        display: flex
+        justify-content: center
+    &__img
+        margin-right: 50px  
+    &__photo  
+      width: 800px
+      margin-top: 60px
+    .details__menu 
+        width: 550px
+        color: white 
+    &__descriptions-top   
+        width: 550px
+    &__descriptions
+        padding: 0 32px 100px
+        width: 550px
+        border: 3px solid #c18048
+        border-radius: 10px
+        background: #100a0b 
+        &-header
+            border-radius: 10px 
+            font-size: 40px
+            min-height: 50px   
+            color: #baff83
+            border: 3px solid #826950
+            text-align: center
+            
+        &-heading
+            margin-top: 15px  
+            min-height: 50px
+            font-size: 30px
+            text-align: center
+            color: #baff83
+            background: #376938 
+            border: 3px solid #669348
+            border-radius: 10px 
+        &-text  
+           padding-top: 25px 
+           color:#fab47a 
+           font-size: 25px
+    &__menu
+        padding-top: 50px 
+        font-size: 20px
+        list-style: none
+        color: #fab47a
+        font-size: 24px  
+        &-list-first 
+            padding-bottom: 15px 
+        &-list
+            padding-top: 15px       
+    &__btn
+        margin-top: 20px 
+        display: flex
+        justify-content: flex-end    
+        .btn__link
+            color: white 
+            display: inline-block
+            text-decoration: none  
+            border: 3px solid #ffe171
+            padding: 10px 50px
+            background: #69552d
+            height: 40px              
+               

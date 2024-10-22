@@ -1,0 +1,584 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: Proxima Nova
+    font-family: sans-serif
+
+html, body
+    height: 100%
+
+.wrapper
+    display: flex
+    flex-direction: column
+    min-height: 100%
+.content
+    flex: 1 0 auto
+
+.center
+    padding-left: calc(50% - 680px) 
+    padding-right: calc(50% - 680px)      
+
+
+.hidden
+    overflow: hidden
+
+
+.header
+    background: #FAF9F9
+    justify-content: space-between
+    display: flex
+    align-items: center
+    min-height: 80px
+    .burger
+        display: none
+    &__nav-mobile
+        display: none
+    &__drop-sub-menu
+        box-shadow: 0px 2px 8px #e9e9e9
+        font-size: 14px
+        display: none
+        width: 70px
+        padding: 0 10px
+        background: #fff
+        font-weight: 700
+        z-index: 10
+        position: absolute
+        left: 0
+        top: 35px
+        list-style: none 
+        &:hover
+            background: #5A60E7
+    .active
+        display: block
+        .sub-menu-list
+            margin: 10px 0
+            a
+                color: #5A60E7
+                justify-content: center
+                display: flex
+                text-decoration: none 
+    &__drop-sub-menu:hover .sub-menu-list a
+        color: #fff                         
+    &__logo-link
+        display: flex
+        img
+            width: 187px
+            height: 32px
+    .header__block
+        display: none     
+    &__menu
+        display: flex
+        list-style: none
+        &__link
+            font-size: 16px
+            color: #222222
+            text-decoration: none
+        &__list-dropdown
+            position: relative  
+        &__list-dropdown::after
+            cursor: pointer
+            margin-left: 10px
+            content: url(img/logo/arrow-down.svg)      
+        &__list:not(:last-child)
+            margin-right: 50px
+    &__right
+        display: flex
+        justify-content: space-between
+        width: 310px
+        &__block__icons
+            width: 150px
+            display: flex
+            justify-content: space-between
+        &__menu
+            position: relative
+            padding: 10px 8px
+            width: 70px
+            height: 40px
+            background: #FFFFFF
+            border-radius: 5px
+            display: flex
+            align-items: center
+            list-style: none
+        &__sub-menu
+            box-shadow: 0px 2px 8px #e9e9e9
+            font-size: 14px
+            display: none
+            width: 70px
+            padding: 0 10px
+            background: #fff
+            font-weight: 700
+            z-index: 10
+            position: absolute
+            left: 0
+            top: 50px
+            list-style: none 
+            &:hover
+                background: #5A60E7
+        .active
+            display: block
+            .sub-menu-list
+                margin: 10px 0
+                a
+                    color: #5A60E7
+                    justify-content: center
+                    display: flex
+                    text-decoration: none 
+        &__sub-menu:hover .sub-menu-list a
+            color: #fff                 
+        &__list
+            position: relative
+            display: flex  
+        &__link
+            img
+                width: 40px
+                height: 40px     
+        &__link-ball    
+            height: 24px
+            img
+                width: 24px
+                height: 24px
+        .bag
+            position: absolute
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 10px
+            background: #86E3CE 
+            width: 22px
+            height: 22px
+            left: 50%
+            right: 10%
+            top: 48%
+            bottom: 10%
+        .header__right__img-bag  
+            width: 30px
+        &__link-bag 
+            position: relative
+            display: flex
+            height: 40px
+            padding: 1px 0px 0px
+            text-decoration: none
+            color: #fff    
+        &__link:not(:last-child)
+            display: flex
+            width: 40px
+        &__img-arrow-down
+            position: absolute
+            top: 4px
+            left: 22px
+            width: 16px
+            height: 16px
+            cursor: pointer
+            margin-left: 14px       
+.promo
+    padding-top: 20px
+    padding-bottom: 250px
+    min-height: 1067px
+    background:  #E5E5E5
+    display: flex
+    &__left-menu
+        width: 295px
+        height: 800px 
+        background: #FFFFFF
+        box-shadow: 0px 2px 8px #E9E9E9
+        border-radius: 10px 
+    &__card
+        padding: 20px 0
+        width: 295px
+        min-height: 184px
+        background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C
+        border-radius: 10px 
+        img
+            width: 80px
+            height: 84px
+        .card
+            display: flex
+            justify-content: space-around
+            align-items: center 
+            &__descr
+                width: 165px
+            &__position
+                display: flex   
+            &__heading
+                font-weight: normal
+                font-size: 30px
+                color: #FFFFFF
+            &__raiting
+                padding: 1px 4px 0px 5px
+                display: flex
+                align-items: center
+                justify-content: center
+                height: 16px
+                color: #EFEFFD
+                font-size: 12px
+                background: #5A60E7
+                border-radius: 10px 
+            &__raiting::after
+                content: url(img/logo/raiting-up.svg)       
+            &__text
+                font-size: 20px
+                color: #FFFFFF
+        .promo__edit
+            padding: 0 0 0 23px
+            align-items: center
+            display: flex
+            justify-content: space-between
+            &__text
+                margin-top: 40px
+            &__link
+                font-size: 12px
+                color: #ACAFF3
+            &__link:before
+                content: url(img/logo/pencil.svg)
+                margin-right: 5px
+            .promo__info
+                display: none
+                margin-right: 10px
+                margin-top: 10px
+            img
+                width: 30px
+                height: 30px
+            .info__social-icons__link
+                display: inline-block
+                width: 30px
+                height: 30px
+            .promo__info__heading
+                color: #ACAFF3
+                font-weight: normal
+                font-size: 12px 
+    &__menu
+        margin-top: 50px
+        width: 210px
+        margin-left: 20px
+        .left__menu
+            list-style: none 
+            &__list-user
+                flex-wrap: wrap     
+            &__img
+                width: 16px
+                height: 16px
+                margin-right: 5px
+                margin-left: 75px 
+            .img-active
+                transform: rotate(180deg)
+            .left__sub__menu
+                display: none
+                width: 190px
+                margin-left: 20px   
+            .active
+                display: block 
+            &__list
+                display: flex
+                align-items: center
+                margin-top: 10px   
+                &-user:hover .left__menu__link-user
+                    border-radius: 5px  
+                    color: #5A60E7 
+                    background: #EFEFFD     
+                &-exit
+                    margin-top: 60px 
+                &-user::before
+                    display: block
+                    height: 28px
+                    
+                &-sub_menu:hover .left__menu__link-sub_menu
+                    color: #5A60E7
+                    background: #EFEFFD
+                    border-radius: 5px                 
+            &__link
+                height: 32px
+                align-items: center
+                display: flex
+                text-decoration: none
+                color: #222222
+                font-size: 16px
+                &-user::before
+                    content: url(img/logo/user.svg) 
+                &-calendar::before
+                    content: url(img/logo/calendar.svg)
+                &-report::before
+                    content: url(img/logo/report.svg)
+                &-history::before
+                    content: url(img/logo/history.svg)
+                &-exit::before
+                    content: url(img/logo/logout.svg)
+                &-user::before, &-calendar::before, &-report::before, &-history::before, &-exit::before
+                    margin-right: 5px     
+                &-sub_menu
+                    padding-left: 10px
+                    height: 32px
+                    width: 175px
+                    display: flex
+                    align-items: center
+                    margin-left: 10px      
+    .right
+        flex-direction: column
+        display: flex
+        margin-left: 50px
+        width: 1015px
+        .block__achievements
+           margin-top: 20px
+           margin-right: 55px  
+           margin-left: 20px   
+        .top__achievements
+            display: flex
+            &__left
+                margin-right: 55px
+                position: relative
+                img
+                    width: 35px
+                    height: 40px
+                .reward
+                    margin-left: -10px
+                    margin-top: -4px
+                    text-align: center
+                    z-index: 10
+                    position: absolute
+                    padding: 1px 5px 0px
+                    display: inline-block
+                    min-width: 15px
+                    min-height: 15px
+                    font-size: 14px
+                    border-radius: 10px
+                    background: #fff
+            &__right
+                img
+                    width: 35px
+                    height: 40px 
+        .bottom__achievements
+            img
+                width: 35px
+                height: 40px                               
+        .achievements-hr 
+            height: 1px
+            background: #D6D7F9  
+            margin-bottom: 15px    
+        .block__games 
+            .top__games
+                margin: 20px 0
+                width: 440px
+                height: 40px
+                border: 0.5px solid #5A60E7
+                border-radius: 5px
+                .top__btn
+                    margin: 5px 0
+                    margin-left: 5px
+                    cursor: pointer
+                    border: none
+                    outline: none
+                    width: 210px
+                    height: 30px
+                    background: #5A60E7
+                    border-radius: 3px
+                    color: #FFFFFF
+                    font-weight: 600
+                    font-size: 16px
+                .top__btn__current
+                    font-weight: normal
+                    color: #ACAFF3
+                    background: transparent   
+            .bottom__games
+                margin-left: 37px
+                display: flex 
+                &__items
+                    padding: 10px 10px 0 10px
+                    width: 95px
+                    height: 75px
+                    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C
+                    border-radius: 5px      
+                &__items:not(:last-child)
+                    margin-right: 20px
+            .games__items__heading
+                font-weight: 600
+                font-size: 16px
+                color: #FAF9F9
+                @media (max-width: 480px)
+                    letter-spacing: -1px        
+            .games__items__text
+                margin-top: 5px
+                font-size: 30px
+                text-align: right
+                color: #FF795B
+        .promo__info
+            margin-top: 10px
+            &__social-icons
+                img
+                    width: 40px
+                    height: 40px
+                .crest-top 
+                    margin-left: 25px
+            .info__social-icons__link
+                display: inline-block
+                height: 40px
+                
+            &__heading
+                color: #ACAFF3
+                font-weight: normal
+                font-size: 12px
+            .crest__block
+                
+                display: flex
+                .crest__img
+                    margin: 0 20px
+                    margin-top: 12px
+                    width: 30px
+                    height: 30px
+                    .crest
+                        width: 30px
+                        height: 30px
+                    .crest-one  
+                        display: none                
+    .top__right
+        background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C
+        border-radius: 10px   
+        min-height: 184px
+        display: flex        
+    .promo__drop
+        position: relative
+        color: #909090
+        display: flex
+        padding-left: 10px
+        align-items: center
+        background: #FFFFFF
+        border-radius: 5px
+        margin-top: 20px
+        width: 170px
+        height: 40px
+        cursor: pointer
+        &:after
+            margin-left: 69px
+            content: url(img/logo/arrow-down.svg)   
+        &-sub-menu
+            box-shadow: 0px 2px 8px #e9e9e9
+            font-size: 14px
+            display: none
+            width: 170px
+            padding: 0 10px
+            background: #fff
+            font-weight: 700
+            z-index: 10
+            position: absolute
+            left: 0
+            top: 50px
+            list-style: none
+            &:hover
+                background: #5A60E7
+            .sub-menu-list
+                margin: 10px 0
+            a 
+                color: #5A60E7
+                padding-top: 10px
+                text-decoration: none
+        .active
+            display: block
+        &-sub-menu:hover .sub-menu-list a
+            color: #fff                 
+    .promo__block-table
+        margin-top: 20px
+        filter: drop-shadow(0px 2px 8px #E9E9E9)
+        border-radius: 0px 0px 10px 10px
+        .promo__table
+            border-collapse: collapse
+            font-size: 16px
+            width: 1015px
+            min-height: 340px 
+            .table__header
+                height: 40px
+                font-size: 12px
+            .table__header:before
+                content: url(img/logo/dbl-arrow.svg)
+                margin: 0 5px
+            .raiting
+                color: #5A60E7 
+                font-weight: 600  
+            tr:nth-child(odd)
+                background: #FAF9F9
+            td
+                padding-left: 20px    
+.footer
+    flex: 0 0 auto
+    min-height: 400px
+    background: #222222
+    &__top
+        padding-top: 50px
+        justify-content: space-between
+        display: flex
+        &__logo
+            img
+                width: 187px
+                height: 32px
+        .footer__block__link
+            margin-top: 30px
+        .block__link
+            display: inline-block
+            img
+                width: 137px
+                height: 40px
+        .block__link:not(:last-child)    
+            margin-right: 10px       
+        &__contacts
+            margin-top: 50px
+        &__heading
+            color: #ACAFF3
+            font-size: 16px
+            font-weight: normal
+        &__menu
+            list-style: none 
+        &__list
+            display: flex
+            align-items: center
+            margin-top: 16px 
+        &__list-phone::before
+            margin-right: 10px
+            content: url(img/logo/phone.png) 
+        &__list-email::before  
+            margin-right: 10px
+            content: url(img/logo/email.png)        
+        &__link
+            color: #fff
+            font-size: 16px
+            text-decoration: none 
+        &__right
+            display: flex
+            .right__menu__block
+                margin-right: 110px
+            .right__menu
+                list-style: none
+                &__heading
+                   font-weight: normal
+                   font-size: 16px
+                   color: #ACAFF3
+                &__list
+                    margin-top: 10px   
+                &__link
+                    color: #fff
+                    text-decoration: none                               
+    .hr
+        margin-top: 30px
+        height: 1px
+        background: #D6D7F9
+    &__bottom
+        min-height: 71px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__copyright
+            font-size: 16px
+            color: #FFFFFF
+        &__text
+            font-size: 16px
+            color: #FFFFFF 
+        .social__icons__links
+            display: inline-block
+            width: 40px
+            height: 40px
+            img
+                width: 40px
+                height: 40px
+
+
+
+
+@import 'media'
+

@@ -1,0 +1,1306 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  min-height: 100vh;
+  flex-grow: 1;
+}
+
+body {
+  font-family: "Lato";
+}
+
+ul {
+  list-style: none;
+}
+
+.center {
+  padding-left: calc(50% - 592px);
+  padding-right: calc(50% - 592px);
+}
+
+.header__center {
+  padding-left: calc(50% - 700px);
+  padding-right: calc(50% - 700px);
+}
+
+.header {
+  min-height: 739px;
+  background-image: url("img/bg_promo.jpg");
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 37px;
+}
+.header__info {
+  padding-top: 71px;
+}
+.header__logo-link {
+  text-decoration: none;
+}
+.header__menu {
+  display: flex;
+}
+.header__link {
+  width: 150px;
+  display: inline-block;
+  padding: 10px 4px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header__link:hover {
+  background-color: #ffc61a;
+  border-radius: 20px;
+  color: #000;
+}
+.header__nav_mobile {
+  display: none;
+}
+.header__logo {
+  width: 168px;
+}
+.header .heading__logo {
+  font-size: 40.4px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: #ffffff;
+}
+.header .heading__logo_color {
+  color: #daa505;
+}
+.header .heading__text {
+  font-size: 15.1px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
+.header h1 {
+  font-family: Lato;
+  font-size: 72.3px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+.header__text {
+  padding-top: 30px;
+  font-family: YuGothic;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.72em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.promo {
+  padding-top: 151px;
+  padding-bottom: 80px;
+  min-height: 780px;
+  background-color: #ffc61a;
+}
+.promo__img {
+  width: 826px;
+  margin: -521px auto 0;
+  margin-bottom: 30px;
+}
+.promo__photo {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.promo__info {
+  display: flex;
+  justify-content: space-between;
+}
+.promo__heading {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 26px;
+}
+.promo__heading_mod {
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #101010;
+  padding-bottom: 44px;
+}
+.promo__text {
+  width: 600px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #101010;
+  padding-bottom: 60px;
+}
+.promo__btn {
+  display: inline-block;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 8px 35px;
+}
+.promo__link {
+  text-align: center;
+  text-decoration: none;
+  font-size: 29.6px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Bebas Neue", cursive;
+}
+.promo__right {
+  display: flex;
+  width: 422px;
+}
+.promo__form__heading {
+  font-size: 34.5px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #000;
+  padding: 13px 37px;
+  margin-bottom: 48px;
+}
+.promo .heading__color {
+  color: #ffc61a;
+}
+.promo__form {
+  width: 422px;
+  height: 500px;
+  background-color: #ffffff;
+}
+.promo .form__content_top {
+  padding: 0 22px 0 34px;
+  display: flex;
+  justify-content: space-between;
+}
+.promo .form__content_bottom {
+  padding: 0 22px 0 34px;
+}
+.promo .form__text {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #000000;
+}
+.promo .form__input {
+  padding: 0 10px;
+  font-size: 16px;
+  width: 171px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid gray;
+  background-color: #e4e4e4;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+  background: transparent;
+}
+.promo .form__input_mod {
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 32px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid gray;
+}
+.promo .btn__form {
+  margin-bottom: 18px;
+}
+.promo .button__form {
+  width: 376px;
+  padding: 6px;
+  background-color: #131313;
+  margin: 0 auto;
+  display: block;
+  font-size: 29.6px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 15px;
+  outline: none;
+  font-family: "Bebas Neue", cursive;
+  cursor: pointer;
+}
+
+.rent {
+  padding-top: 63px;
+  padding-bottom: 77px;
+  min-height: 742px;
+  background-color: #ffffff;
+}
+.rent__heading {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+.rent__heading_color {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffc61a;
+}
+.rent .car__box {
+  display: flex;
+  margin-top: 133px;
+}
+.rent .car__items {
+  padding: 0 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 373px;
+  min-height: 424px;
+  background-color: #f5f4f2;
+}
+.rent .items_mod {
+  background-color: #ffc61a;
+}
+.rent .car__items:not(:last-child) {
+  margin-right: 36px;
+}
+.rent .car__img {
+  width: 373px;
+  height: 188px;
+  margin-top: -84px;
+}
+.rent .photo__car {
+  width: 100%;
+  height: 100%;
+}
+.rent .car__descriptions {
+  width: 100%;
+  flex-grow: 1;
+  text-align: center;
+  margin-top: 30px;
+}
+.rent .taxi__class {
+  font-size: 30.5px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+}
+.rent .taxi__text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #101010;
+  padding-top: 32px;
+}
+.rent .car__price {
+  margin-top: 36px;
+}
+.rent .taxi__price, .rent .taxi__price_mod {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffc61a;
+}
+.rent .taxi__price_mod {
+  color: #131313;
+}
+.rent .car__btn {
+  margin: 35px 0 25px;
+}
+.rent .car__link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 29.6px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffc61a;
+  border-radius: 10px;
+  padding: 6px 32px;
+  font-family: "Bebas Neue", cursive;
+}
+.rent .link_mod {
+  background-color: #1b1b1b;
+  color: #ffffff;
+  font-family: "Bebas Neue", cursive;
+}
+
+.ride {
+  padding-top: 80px;
+  padding-bottom: 76px;
+  min-height: 776px;
+  background-image: url("img/ride_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ride__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ride__heading {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffc61a;
+  text-align: center;
+}
+.ride__heading_mod {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 104px;
+}
+.ride__info {
+  display: flex;
+}
+.ride__img {
+  width: 81px;
+  height: 81px;
+  margin-right: 36px;
+  position: relative;
+}
+.ride__img .eclipse {
+  width: 100%;
+  height: 100%;
+}
+.ride__img .ride__icon {
+  width: 28px;
+  height: 28px;
+}
+.ride__icon {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.ride__descriptions {
+  width: 350px;
+}
+.ride .descriptions__heading {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffc61a;
+  padding-bottom: 24px;
+}
+.ride .descriptions__text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  padding-bottom: 84px;
+}
+.ride .ride__btn {
+  display: flex;
+}
+.ride .ride__link {
+  padding: 8px 32px;
+  text-decoration: none;
+  font-size: 29.6px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffc61a;
+  border-radius: 10px;
+  font-family: "Bebas Neue", cursive;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mobile {
+  padding-top: 64px;
+  min-height: 665px;
+  background-color: #ffffff;
+}
+.mobile__heading {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffc61a;
+  text-align: center;
+}
+.mobile__heading_mod {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+.mobile__content {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile__info {
+  padding-bottom: 161px;
+  width: 500px;
+  margin-top: 82px;
+}
+.mobile__photo {
+  width: 210px;
+  height: 65px;
+}
+.mobile__info_right {
+  width: 45%;
+  margin-top: 41px;
+  align-self: flex-end;
+}
+.mobile .heading__download {
+  font-size: 25.5px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: #000000;
+  padding-bottom: 28px;
+}
+.mobile .text__download {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #101010;
+  padding-bottom: 64px;
+}
+.mobile__img {
+  width: 386px;
+  height: 466px;
+  display: flex;
+  text-align: center;
+  flex-direction: row-reverse;
+}
+.mobile .photo__right {
+  width: 100%;
+  height: 100%;
+}
+.mobile__link {
+  display: inline-flex;
+}
+.mobile__link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.reviews {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  min-height: 611px;
+  background-image: url("img/bg_rewiews.jpg");
+}
+.reviews__heading {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffc61a;
+  text-align: center;
+}
+.reviews__heading_mod {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+.reviews__content {
+  display: flex;
+  padding-top: 65px;
+}
+.reviews__items {
+  display: flex;
+  justify-content: center;
+  width: 580px;
+  min-height: 240px;
+  background-color: #000;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+.reviews__items:not(:last-child) {
+  margin-right: 32px;
+}
+.reviews__descriptions {
+  padding: 42px 0;
+  width: 460px;
+}
+.reviews__client {
+  display: flex;
+  align-items: center;
+}
+.reviews__block {
+  width: 74px;
+  height: 74px;
+  margin-right: 24px;
+}
+.reviews__photo {
+  width: 100%;
+  height: 100%;
+}
+.reviews__text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  padding-bottom: 24px;
+}
+.reviews .heading__descriptions {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffc61a;
+}
+.reviews .heading__descriptions_mod {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.info {
+  padding-top: 72px;
+  padding-bottom: 92px;
+  min-height: 286px;
+  background-color: #ffc61a;
+}
+.info__heading {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+.info__text {
+  font-size: 76.7px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  padding-top: 32px;
+}
+
+.about {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  min-height: 452px;
+  background-image: url("img/about_bg.jpg");
+  background-color: #0d0c0c;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.about__content {
+  display: flex;
+  justify-content: space-between;
+}
+.about__info {
+  width: 340px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+.about__info .text__info {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffc61a;
+  padding-top: 12px;
+}
+.about__top {
+  min-height: 60px;
+}
+.about__heading {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.about__border {
+  width: 100%;
+  height: 8px;
+  background-color: #ffc61a;
+}
+.about__descriptions {
+  margin-top: 18px;
+  flex-grow: 1;
+}
+.about__text {
+  width: 306px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  padding-top: 46px;
+  padding-bottom: 40px;
+}
+.about .box {
+  display: flex;
+  align-items: center;
+}
+.about .box .fab {
+  display: block;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-left: 32px;
+  padding-top: 10px;
+}
+.about__list {
+  display: flex;
+  padding-top: 24px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  padding-top: 29px;
+}
+.about__link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+.about__social__icons {
+  display: flex;
+  justify-content: space-between;
+}
+.about__social__icons .social__img {
+  color: #ffc61a;
+  font-size: 20px;
+  text-align: center;
+}
+.about .fa-mouse-pointer_link {
+  display: inline-block;
+  margin-left: 10px;
+}
+.about__icons {
+  margin-right: 26px;
+}
+
+.footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+}
+.footer .copyright {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .center, .header__center {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+  }
+  .header h1 {
+    font-size: 64px;
+  }
+  .header__link {
+    width: 120px;
+  }
+  .promo__text {
+    width: 450px;
+  }
+  .promo__heading_mod {
+    font-size: 40px;
+  }
+  .promo__info {
+    justify-content: space-around;
+  }
+  .rent .car__box {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100px;
+  }
+  .rent .car__items:not(:last-child) {
+    margin-right: 0;
+  }
+  .reviews__descriptions {
+    width: 400px;
+  }
+  .info__heading {
+    font-size: 32px;
+  }
+  .info__text {
+    font-size: 64px;
+  }
+  .about__info {
+    width: 30%;
+  }
+}
+@media (max-width: 992px) {
+  .center, .header__center {
+    padding-left: calc(50% - 380px);
+    padding-right: calc(50% - 380px);
+  }
+  .header {
+    /* убирает маркер у details */
+  }
+  .header h1 {
+    font-size: 60px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__nav_mobile {
+    display: block;
+  }
+  .header .summary:active, .header :hover, .header :focus {
+    outline: none;
+  }
+  .header details summary::marker {
+    display: none;
+    content: "";
+  }
+  .header .fa-bars {
+    color: white;
+    font-size: 50px;
+  }
+  .header .mobile__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+    right: 0px;
+    width: 100vw;
+    min-height: 650px;
+  }
+  .header__link {
+    width: 250px;
+    display: inline-block;
+    font-size: 25px;
+  }
+  .header__link:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .header .mobile__list {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .promo__img {
+    width: 100%;
+    margin: -450px auto 0;
+    margin-bottom: 30px;
+  }
+  .promo__info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .promo__left, .promo__right {
+    width: 80%;
+  }
+  .promo__left {
+    text-align: center;
+    margin: 30px 0 100px 0;
+  }
+  .promo__text {
+    width: 100%;
+  }
+  .promo__form {
+    width: 100%;
+  }
+  .promo .form__left, .promo .form__right {
+    width: 45%;
+  }
+  .promo .form__input {
+    width: 100%;
+  }
+  .rent .car__box {
+    gap: 150px;
+  }
+  .ride__heading_mod {
+    padding-bottom: 60px;
+  }
+  .ride__box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ride__box .ride__items {
+    width: 80%;
+  }
+  .ride__box .ride__img {
+    margin-right: 15px;
+  }
+  .ride__box .ride__descriptions {
+    width: 100%;
+  }
+  .mobile__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mobile__info {
+    padding-bottom: 0;
+    text-align: center;
+    margin: 50px 0;
+  }
+  .reviews__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .reviews__items {
+    margin-bottom: 50px;
+  }
+  .reviews__items:not(:last-child) {
+    margin-right: 0;
+  }
+  .info__heading {
+    font-size: 30px;
+  }
+  .about__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about__info {
+    width: 50%;
+    text-align: center;
+  }
+  .about__info:not(:first-child) {
+    margin-top: 80px;
+  }
+  .about__heading {
+    font-size: 30px;
+  }
+  .about__text {
+    width: 100%;
+    font-size: 20px;
+  }
+  .about .box {
+    justify-content: center;
+  }
+  .about__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about__list, .about__link {
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .center, .header__center {
+    padding-left: calc(50% - 280px);
+    padding-right: calc(50% - 280px);
+  }
+  .header {
+    min-height: 500px;
+  }
+  .header h1 {
+    font-size: 45px;
+  }
+  .header__text {
+    letter-spacing: 0.2em;
+  }
+  .header__link {
+    font-size: 20px;
+  }
+  .promo__img {
+    margin: -300px auto 0;
+    margin-bottom: 10px;
+  }
+  .promo__heading_mod {
+    font-size: 28px;
+  }
+  .promo__left {
+    margin: 30px 0 60px 0;
+  }
+  .promo .button__form {
+    width: 80%;
+  }
+  .rent__heading {
+    font-size: 38px;
+  }
+  .rent .car__box .car__items {
+    width: 85%;
+  }
+  .ride__heading_mod {
+    font-size: 36px;
+  }
+  .ride .descriptions__heading {
+    font-size: 20px;
+  }
+  .ride .descriptions__text {
+    font-size: 16px;
+  }
+  .ride__img {
+    margin-top: 30px;
+  }
+  .mobile__heading {
+    font-size: 32px;
+  }
+  .mobile__heading_mod {
+    font-size: 36px;
+  }
+  .mobile .heading__download {
+    font-size: 20px;
+  }
+  .mobile .text__download {
+    font-size: 18px;
+  }
+  .mobile__content {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .mobile__info_right {
+    width: 350px;
+  }
+  .mobile__img {
+    width: 100%;
+  }
+  .mobile .mobile__link:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .reviews {
+    padding-bottom: 20px;
+  }
+  .reviews__heading {
+    font-size: 32px;
+  }
+  .reviews__heading_mod {
+    font-size: 40px;
+  }
+  .reviews__content {
+    padding-top: 65px;
+  }
+  .reviews__items {
+    min-height: 200px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .reviews__descriptions {
+    width: 90%;
+  }
+  .reviews__block {
+    width: 70px;
+    height: 70px;
+  }
+  .reviews .heading__descriptions, .reviews .heading__descriptions_mod {
+    font-size: 18px;
+  }
+  .info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 200px;
+  }
+  .info__heading {
+    font-size: 20px;
+  }
+  .info__text {
+    font-size: 44px;
+  }
+  .about__info {
+    width: 70%;
+  }
+  .about__heading {
+    font-size: 24px;
+  }
+  .about__social__icons {
+    justify-content: space-around;
+  }
+  .about__list {
+    width: 75%;
+  }
+}
+@media (max-width: 525px) {
+  .promo__form__heading {
+    font-size: 29.5px;
+  }
+}
+@media (max-width: 480px) {
+  .center, .header__center {
+    padding-left: calc(50% - 200px);
+    padding-right: calc(50% - 200px);
+  }
+  .header {
+    min-height: 500px;
+  }
+  .header .heading__text {
+    font-size: 14px;
+  }
+  .header .fa-bars {
+    font-size: 40px;
+  }
+  .promo__right {
+    width: 100%;
+    min-height: auto;
+  }
+  .promo__form .promo__form__heading {
+    font-size: 26px;
+    padding: 13px 20px;
+  }
+  .reviews__content {
+    padding-top: 20px;
+  }
+  .reviews__items {
+    width: 100%;
+  }
+  .about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .about__info:not(:first-child) {
+    margin-top: 50px;
+  }
+  .about__text, .about__list, .about__link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 410px) {
+  .center, .header__center {
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
+  }
+  .header h1 {
+    font-size: 36px;
+  }
+  .header .heading__logo {
+    font-size: 36px;
+  }
+  .header .fa-bars {
+    font-size: 35px;
+  }
+  .promo__heading {
+    font-size: 32px;
+  }
+  .promo__heading_mod {
+    font-size: 22px;
+  }
+  .promo__text {
+    font-size: 16px;
+  }
+  .promo__form__heading {
+    margin-bottom: 20px;
+  }
+  .promo .promo__form {
+    height: 420px;
+  }
+  .promo .form__input {
+    margin-bottom: 15px;
+  }
+  .rent__heading {
+    font-size: 32px;
+  }
+  .rent__heading_color {
+    font-size: 34px;
+  }
+  .rent .car__box .car__items {
+    width: 95%;
+  }
+  .rent .car__box .car__img {
+    width: 360px;
+  }
+  .ride__heading {
+    font-size: 30px;
+  }
+  .ride__heading_mod {
+    font-size: 32px;
+  }
+  .ride .descriptions__heading {
+    font-size: 16px;
+  }
+  .ride .descriptions__text {
+    font-size: 14px;
+  }
+  .mobile__heading_mod {
+    font-size: 34px;
+  }
+  .mobile .heading__download {
+    font-size: 18px;
+  }
+  .reviews__heading_mod {
+    font-size: 34px;
+  }
+  .reviews__descriptions {
+    width: 280px;
+  }
+  .reviews__text {
+    font-size: 16px;
+  }
+  .reviews__img {
+    width: 60px;
+    height: 60px;
+  }
+  .reviews .heading__descriptions, .reviews .heading__descriptions_mod {
+    font-size: 16px;
+  }
+  .info__heading {
+    font-size: 20px;
+  }
+  .info__text {
+    font-size: 40px;
+  }
+  .about__heading {
+    font-size: 18px;
+  }
+  .about__text {
+    font-size: 14px;
+  }
+  .about__list {
+    font-size: 14px;
+  }
+}
+@media (max-width: 365px) {
+  .center, .header__center {
+    padding-left: calc(50% - 150px);
+    padding-right: calc(50% - 150px);
+  }
+  .header__link {
+    font-size: 18px;
+  }
+  .header .mobile__menu {
+    min-height: 590px;
+  }
+  .promo__left {
+    margin: 30px 0 50px 0;
+  }
+  .promo .promo__form {
+    height: 380px;
+  }
+  .promo__form .promo__form__heading {
+    margin-bottom: 20px;
+  }
+  .promo__form .form__input {
+    margin-bottom: 15px;
+  }
+  .promo__form .form__text {
+    font-size: 16px;
+  }
+  .promo__form .button__form {
+    font-size: 20px;
+  }
+  .rent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .rent__heading {
+    font-size: 28px;
+  }
+  .rent__heading_color {
+    font-size: 26px;
+  }
+  .rent .car__box .car__img {
+    width: 300px;
+  }
+  .rent .taxi__class {
+    font-size: 24px;
+  }
+  .rent .car__descriptions {
+    margin-top: 10px;
+  }
+  .rent .taxi__text {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  .rent .taxi__price, .rent .taxi__price_mod {
+    font-size: 30px;
+  }
+  .rent .car__link {
+    font-size: 24px;
+  }
+  .ride {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .ride__heading {
+    font-size: 28px;
+  }
+  .ride__heading_mod {
+    font-size: 26px;
+  }
+  .ride .descriptions__text {
+    padding-bottom: 30px;
+  }
+  .ride__btn {
+    margin-top: 15px;
+  }
+  .mobile {
+    padding-top: 50px;
+  }
+  .mobile__heading {
+    font-size: 28px;
+  }
+  .mobile__heading_mod {
+    font-size: 26px;
+  }
+  .mobile__content {
+    width: 100%;
+  }
+  .reviews__heading {
+    font-size: 28px;
+  }
+  .reviews__heading_mod {
+    font-size: 26px;
+  }
+  .info__text {
+    font-size: 34px;
+  }
+}/*# sourceMappingURL=style.css.map */

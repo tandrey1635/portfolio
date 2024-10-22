@@ -1,0 +1,358 @@
+@media (max-width: 1400px)
+    .center
+        padding-left: calc(50% - 482px)
+        padding-right: calc(50% - 482px)
+    .header
+        .header__logo
+            font-size: 40px
+        .header__text
+            letter-spacing: 0.2em            
+    .goods
+        &__items
+            padding-left: 40px
+            &__heading
+                font-size: 30px
+        .goods__one
+            width: 350px        
+    .featured
+        &__card__box
+            flex-wrap: wrap
+            justify-content: center
+            gap: 30px        
+        &__items:hover
+            transform: scale(1.08)    
+    .footer__info
+        .info__items
+            width: 33%
+        .info__text
+            width: 100%      
+
+@media (max-width: 1140px)
+    .center
+        padding-left: calc(50% - 400px)
+        padding-right: calc(50% - 400px) 
+    .header
+        &__bottom
+            &-info-tel
+                width: 300px
+        .header__text
+            font-size: 14px
+    .promo
+        min-height: 700px 
+    .goods
+        &__items
+            padding-left: 20px
+        .goods__items-img-mod
+            margin-right: 30px
+        .goods__one
+            height: 200px
+        .goods__one,.goods__two,.goods__four
+            width: 250px
+        &__items-position
+            right: 5px     
+        &__items-position_mod
+            right: 135px
+    .sales
+        &__heading
+            font-size: 62px
+        &__text 
+            font-size: 30px          
+    .footer__top
+        .top__heading 
+            font-size: 20px      
+
+
+@media (max-width: 1023px)     
+    .center
+        padding-left: calc(50% - 368px)
+        padding-right: calc(50% - 368px)  
+    .promo
+        min-height: 500px               
+    .goods    
+        &__container
+            flex-direction: column
+            align-items: center
+        &__items
+            width: 80%  
+            border: 2px solid 
+            margin: 20px 0
+        .goods__one,.goods__two,.goods__four
+            width: 300px    
+    .footer__top
+        .top__heading 
+            font-size: 18px     
+        .top__link
+            font-size: 12px         
+    .footer__info        
+        .info__text, .infp__link
+            font-size: 12px  
+
+
+@media (max-width: 991px)
+    .header 
+        &__bottom
+            &-info-tel
+                width: 250px
+
+@media (max-width: 850px)
+    .header 
+        &__bottom
+            &-info-tel
+                width: 200px
+            .info__link
+                font-size: 18px    
+
+@media (max-width: 767px)   
+    .center
+        padding-left: calc(50% - 260px)
+        padding-right: calc(50% - 260px) 
+    .header  
+        &__bottom
+            flex-direction: column 
+            &-logo
+                width: 170px 
+            &-left 
+                margin: 0 auto 20px 
+    .promo
+        min-height: 400px               
+    .goods
+        &__items
+            width: 85%    
+        .goods__one,.goods__two,.goods__four
+            width: 250px   
+    .featured  
+        &__items
+            width: 100% 
+    .sales
+        &__heading 
+            font-size: 42px
+        &__text
+            font-size: 22px                 
+    .footer__top
+        .top
+            padding-top: 50px
+            padding-bottom: 50px
+            flex-wrap: wrap
+        .top__items
+            margin: 0 auto
+            min-height: 300px           
+        .top__items:not(:last-child)
+            margin-bottom: 30px    
+    .footer__info
+        .info__container
+            padding-top: 50px
+            padding-bottom: 50px
+            flex-direction: column
+            align-items: center
+        .info__items
+            width: 80%  
+        .info__items:not(:last-child)
+            margin-bottom: 30px     
+    .footer__bottom
+            flex-direction: column
+            align-items: center
+    .footer__copyright    
+        margin-bottom: 20px                  
+
+@media (max-width: 575px)
+    .center
+        padding-left: calc(50% - 200px)
+        padding-right: calc(50% - 200px) 
+    .header
+        .info__link, .info__list
+            font-size: 14px 
+            align-items: center
+        .info__text__work
+            font-size: 12px   
+        &__bottom-right       
+            display: grid
+            place-items: center
+            gap: 15px
+            grid-template: repeat(2, 1fr)/ repeat(3, 1fr)
+        .info__text__work
+            margin-top: 15px 
+        &__bottom-info
+            width: auto     
+        &__bottom-info:nth-child(4)::before
+            display: none
+        &__bottom-info-tel
+            width: auto
+            grid-row: 2   
+            grid-column: 1/4
+            &::before
+                width: 100%
+                padding: 10px 0
+                border-right: none
+                border-top: 2px solid gray
+        .info__tel
+            align-items: center
+    .sub__header
+        display: none 
+    .header__mobile
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        height: 50px
+        background: #303030
+    .fa-bars__menu 
+        font-size: 40px
+        color: #fff
+    .header__mobile__nav
+        display: none
+        justify-content: center
+        height: 580px
+        opacity: 0.9
+        position: absolute
+        width: 100% 
+        background: #000
+        top: 40px
+        z-index: 10
+    .active
+        display: flex 
+    .header__mobile__menu
+        flex-direction: column  
+        .menu__mobile__list:not(:last-child)
+            margin-right: 0
+        .menu__mobile__link
+            font-weight: 700
+            text-decoration: none
+            font-size: 18px
+            color: deepskyblue
+            display: flex
+            justify-content: center
+            margin-top: 40px
+            width: 160px
+            padding: 10px 
+            text-transform: uppercase   
+        .menu__mobile__list:hover .menu__mobile__link
+            background: crimson
+            color: yellow
+            border-radius: 20px
+            width: 160px
+            padding: 10px 
+    .promo
+        min-height: 280px 
+    .goods
+        &__items
+            display: flex
+            flex-direction: column
+            &-position
+                top: 150px
+                right: 8%
+            &-position_mod 
+                position: absolute
+                top: 150px
+                right: 25%
+        .goods__one, .goods__two, .goods__four
+            width: 300px        
+        .goods__three, .goods__three-one 
+            width: 250px
+            height: 250px               
+    .featured
+        &__header    
+            font-size: 26px
+        &__items  
+            width: 85%           
+    .sales
+        &__box
+            flex-direction: column 
+            justify-content: space-evenly
+        &__block_vertical-hr  
+            transform: rotate(90deg)  
+        &__heading
+            font-size: 36px
+        &__text
+            font-size: 18px  
+        &__button       
+            font-size: 13px 
+    .footer__top
+        .top__heading    
+            font-size: 16px 
+
+@media (max-width: 390px)    
+    .center
+        padding-left: calc(50% - 170px)
+        padding-right: calc(50% - 170px)               
+    .header
+        .top__menu__list:not(:last-child) 
+            margin-right: 15px
+        .info__link, .info__list
+            font-size: 12px 
+        .info__link:before  
+            margin-right: 16px  
+    .header__mobile__nav  
+        top: 40px      
+    .promo
+        min-height: 250px
+    .goods            
+        .goods__items-img-mod
+            margin-right: 15px
+    .sales
+        min-height: 250px
+        height: 250px
+        &__box
+            justify-content: start
+        &__block
+            width: 100%
+        &__block-mobile, &__block_vertical-hr
+            display: none
+        &__heading  
+            font-size: 30px               
+        &__text
+            font-size: 14px  
+        &__button        
+            font-size: 12px
+            padding: 8px 36px 
+  
+@media (max-width: 375px) 
+    .center
+        padding-left: calc(50% - 145px)
+        padding-right: calc(50% - 145px) 
+    .header        
+        .top__menu__list:not(:last-child) 
+            margin-right: 8px
+        .top__menu__link    
+            font-size: 10px
+        .info__link, .info__list
+            font-size: 10px 
+        .info__text__work
+            font-size: 10px     
+        .info__link:before
+            margin-right: 10px  
+    .header__mobile__nav
+        height: 520px          
+    .promo
+        min-height: 200px 
+    .goods
+        &__items
+            &-position
+                top: 180px
+                right: 0%
+            &-position_mod 
+                position: absolute
+                top: 180px
+                right: 20%  
+        .goods__one, .goods__two, .goods__four   
+            width: 250px 
+        .goods__three, .goods__three-one 
+            width: 220px
+            height: 220px 
+                  
+    .featured
+        &__header        
+            font-size: 22px  
+    .sales
+        &__heading
+            font-size: 26px            
+        &__text
+           font-size: 12px 
+        &__descr      
+            font-size: 14px 
+        &__button
+            padding: 8px 25px   
+    .footer__top 
+        .top__text, .top__input
+            width: 100%  
+    .footer__payment
+        img
+            width: 100%             

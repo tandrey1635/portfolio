@@ -1,0 +1,590 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+
+
+body
+    background: url(../../../../../img/main-bg.png)
+    background-size: 100%    
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.header
+   
+    &__logo
+        display: flex
+        justify-content: center
+    .logo  
+        width: 800px
+        fill: #6A5ACD
+    &__menu
+        height: 200px
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        list-style: none
+        .menu__list
+            color: aqua 
+            list-style: none 
+            margin-top: 10px      
+        .menu__link
+            text-decoration: none 
+            font-size: 20px 
+            color: aqua 
+        .details__menu
+            position: absolute
+            z-index: 5
+            left: 20% 
+            top: 45%
+        details
+            width: 220px 
+            outline: 0
+            outline-offset: 0
+        details:active, :hover, :focus
+            outline: 0
+            outline-offset: 0
+        summary
+           font-size: 20px  
+           color: aqua
+        .summary-solar-systems
+            padding-top: 10px   
+        .summary-star
+            font-size: 20px  
+            color: aqua
+            padding-top: 10px
+            text-align: center     
+        .details-solar-systems
+            padding-left: 20px  
+        .menu__solar-systems
+            padding-left: 15px
+
+
+
+
+.solar__system
+    min-height: 600px
+    &-text
+        text-align: center
+        font-size: 25px
+        font-weight: 900
+        color: #DA70D6
+        margin-bottom: 30px
+    &-nav 
+        font-weight: 700
+        color: white 
+        font-size: 20px 
+        margin-bottom: 30px 
+    &-link   
+        color: #6A5ACD
+        text-decoration: none   
+    .content
+        position: relative
+        .solar__system-photo  
+            width: 100%
+        &__planet
+            width: 80px
+            height: 80px
+            border: 2px solid red
+        
+
+
+        .star-sun
+            position: absolute
+            left: 50px
+            top: 0
+            color: #00ff96
+            font-size: 50px
+            border: none
+            font-weight: 900
+
+        .planet-sun
+            position: absolute
+            left: 385px
+            width: 50px
+            height: 50px
+            top: 143px
+        .planet__text-underline-sun  
+            height: 47px    
+        .planet-link-sun
+            display: flex
+            align-items: center
+            height: 47px    
+        .planet-text-sun
+            width: 40px
+            margin-left: 15px 
+            margin-top: 15px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-sun-text  
+            width: 80px
+            text-align: center 
+            color: #FF2400
+            font-weight: 900
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 47px
+            margin-top: -11px 
+
+
+
+
+        .planet-mercury
+            position: absolute
+            left: 445px
+            width: 20px
+            height: 20px
+            top: 142px
+        .planet__text-underline-mercury   
+            height: 17px    
+        .planet-link-mercury 
+            display: flex
+            align-items: center
+            height: 17px    
+        .planet-text-mercury
+            width: 30px
+            margin-left: 7px 
+            margin-top: 12px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-mercury-text  
+            width: 88px
+            text-align: center 
+            color: #009bd5
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 31px
+            margin-top: -15px 
+
+
+
+        .planet-venus
+            position: absolute
+            left: 368px
+            width: 30px
+            height: 30px
+            top: 216px
+        .planet__text-underline-venus   
+            height: 27px    
+        .planet-link-venus 
+            display: flex
+            align-items: center
+            height: 27px    
+        .planet-text-venus
+            width: 30px
+            margin-left: 7px 
+            margin-top: 12px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-venus-text  
+            width: 80px
+            text-align: center 
+            color: #009bd5
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 31px
+            margin-top: -15px 
+
+
+
+        .planet-earth
+            position: absolute
+            left: 332px
+            width: 30px
+            height: 30px
+            top: 100px
+        .planet__text-underline-earth   
+            height: 27px    
+        .planet-link-earth
+            display: flex
+            align-items: center
+            height: 27px    
+        .planet-text-earth
+            width: 20px
+            margin-left: 12px 
+            margin-top: 8px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-earth-text  
+            width: 80px
+            text-align: center 
+            color: #00ff96
+            font-weight: 900
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 28px
+            margin-top: -19px 
+
+
+
+        .planet-moon
+            position: absolute
+            left: 357px
+            width: 20px
+            height: 20px
+            top: 88px
+        .planet__text-underline-moon   
+            height: 17px    
+        .planet-link-moon 
+            display: flex
+            align-items: center
+            height: 17px    
+        .planet-text-moon
+            width: 20px
+            margin-left: 7px 
+            margin-top: 8px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-moon-text  
+            width: 65px
+            text-align: center 
+            color: aqua
+            font-weight: 700
+            font-size: 20px
+            border-bottom: 3px solid orange
+            margin-left: 23px
+            margin-top: -19px 
+
+
+
+
+        .planet-mars
+            position: absolute
+            left: 259px
+            width: 30px
+            height: 30px
+            top: 98px
+        .planet__text-underline-mars   
+            height: 27px    
+        .planet-link-mars
+            display: flex
+            align-items: center
+            height: 27px    
+        .planet-text-mars
+            width: 30px
+            margin-left: 8px 
+            margin-top: 12px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-mars-text  
+            width: 80px
+            text-align: center 
+            color: #009bd5
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 32px
+            margin-top: -14px 
+
+
+     
+        .planet-jupiter
+            position: absolute
+            left: 361px
+            width: 60px
+            height: 60px
+            top: 422px
+        .planet__text-underline-jupiter   
+            height: 57px    
+        .planet-link-jupiter 
+            display: flex
+            align-items: center
+            height: 57px    
+        .planet-text-jupiter
+            width: 40px
+            margin-left: 15px 
+            margin-top: 15px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-jupiter-text  
+            width: 80px
+            text-align: center 
+            color: #009bd5
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 47px
+            margin-top: -11px 
+
+
+
+
+        .planet-saturn
+            position: absolute
+            left: 80px
+            width: 40px
+            height: 40px
+            top: 82px
+        .planet__text-underline-saturn   
+            height: 37px    
+        .planet-link-saturn 
+            display: flex
+            align-items: center
+            height: 37px    
+        .planet-text-saturn
+            width: 30px
+            margin-left: 15px 
+            margin-top: 10px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-saturn-text  
+            width: 80px
+            text-align: center 
+            color: #009bd5
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 39px
+            margin-top: -15px 
+
+
+        
+        .planet-titan
+            position: absolute
+            left: 130px
+            width: 20px
+            height: 20px
+            top: 64px
+        .planet__text-underline-titan   
+            height: 17px    
+        .planet-link-titan 
+            display: flex
+            align-items: center
+            height: 17px    
+        .planet-text-titan
+            width: 20px
+            margin-left: 7px 
+            margin-top: 8px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-titan-text  
+            width: 65px
+            text-align: center 
+            color: #009bd5
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 23px
+            margin-top: -19px 
+
+
+
+        .planet-uran
+            position: absolute
+            right: 325px
+            width: 30px
+            height: 30px
+            top: 82px
+        .planet__text-underline-uran   
+            height: 27px    
+        .planet-link-uran
+            display: flex
+            align-items: center
+            height: 27px    
+        .planet-text-uran
+            width: 20px
+            margin-left: 9px 
+            margin-top: 8px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-uran-text  
+            width: 80px
+            text-align: center 
+            color: #009bd5
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 24px
+            margin-top: -19px 
+
+
+
+        .planet-neptune
+            position: absolute
+            right: 117px
+            width: 40px
+            height: 40px
+            top: 192px
+        .planet__text-underline-neptune   
+            height: 37px    
+        .planet-link-neptune
+            display: flex
+            align-items: center
+            height: 37px    
+        .planet-text-neptune
+            width: 40px
+            margin-left: 15px 
+            margin-top: 15px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-neptune-text  
+            width: 80px
+            text-align: center 
+            color: #009bd5
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 47px
+            margin-top: -11px 
+
+
+
+        .planet-pluton
+            position: absolute
+            right: 213px
+            width: 20px
+            height: 20px
+            top: 93px
+        .planet__text-underline-pluton   
+            height: 17px    
+        .planet-link-pluton
+            display: flex
+            align-items: center
+            height: 17px    
+        .planet-text-pluton
+            width: 20px
+            margin-left: 5px 
+            margin-top: 8px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-pluton-text  
+            width: 80px
+            text-align: center 
+            color: #009bd5
+            font-size: 20px
+            border-bottom: 3px solid orange 
+            margin-left: 21px
+            margin-top: -19px 
+    
+        
+        
+        .station-gagarin
+            position: absolute
+            right: 52px
+            width: 65px
+            height: 40px
+            top: 155px
+        .planet__text-underline-station-gagarin   
+            height: 37px    
+        .planet-link-station-gagarin
+            display: flex
+            align-items: center
+            height: 37px    
+        .planet-text-station-gagarin
+            width: 30px
+            margin-left: 15px 
+            margin-top: 12px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-station-gagarin-text  
+            width: 80px
+            text-align: center 
+            color: #009bd5
+            font-size: 16px
+            border-bottom: 3px solid orange 
+            margin-left: 38px
+            margin-top: -28px 
+
+
+    
+        .retranslatorHaron
+            position: absolute
+            right: 97px
+            width: 50px
+            height: 40px
+            top: 91px
+        .planet__text-underline-retranslatorHaron 
+            height: 37px    
+        .planet-link-retranslatorHaron
+            display: flex
+            align-items: center
+            height: 37px    
+        .planet-text-retranslatorHaron
+            width: 20px
+            margin-left: 27px 
+            margin-top: 8px
+            border-bottom: 3px solid orange
+            transform: rotate(50deg)
+            display: block      
+        .planet-retranslatorHaron-text  
+            width: 100px
+            text-align: center 
+            color: #009bd5
+            font-size: 16px
+            border-bottom: 3px solid orange 
+            margin-left: 43px
+            margin-top: -32px 
+
+
+
+        .content__planet:hover .planet-text-none
+            display: block 
+
+
+
+        .planet-text-none
+            display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+details[open]
+    -webkit-animation: scale-up-ver-top 0.55s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+    animation: scale-up-ver-top 0.55s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+    @-webkit-keyframes scale-up-ver-top
+        0% 
+            -webkit-transform: scaleY(0.4)
+            transform: scaleY(0.4)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+        100% 
+            -webkit-transform: scaleY(1)
+            transform: scaleY(1)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+
+    @keyframes scale-up-ver-top 
+        0% 
+            -webkit-transform: scaleY(0.4)
+            transform: scaleY(0.4)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+  
+        100% 
+            -webkit-transform: scaleY(1)
+            transform: scaleY(1)
+            -webkit-transform-origin: 100% 0%
+            transform-origin: 100% 0%
+

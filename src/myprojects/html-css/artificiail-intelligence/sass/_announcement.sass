@@ -1,0 +1,76 @@
+.announcement
+    padding: 56px 0
+    .container
+        position: relative
+    &__btn-wrapper
+        @media (min-width: 1920px)
+            display: flex
+            justify-content: flex-end
+            align-items: center   
+    &__wrapper
+        margin-top: 40px
+    &__slider   
+        @media (min-width: 1199px)
+            display: flex
+            justify-content: space-between   
+    &__slides__item
+        display: flex
+        flex-direction: column
+        width: 300px 
+        margin: 0 auto 
+        @media (min-width: 576px) 
+            width: 65%
+        @media (min-width: 1920px) 
+            width: 380px
+    &__slides__img
+        position: relative
+        height: 185px
+        @media (min-width: 991px) 
+           height: 236px
+        img
+            border-radius: 20px 
+    &__date
+        position: absolute
+        top: 14px
+        right: 22px
+        font-weight: 600
+        font-size: 10px
+        line-height: 21px
+        color: $mainTextColor
+        @media (min-width: 576px)   
+            font-size: 12px
+        @media (min-width: 991px)
+            top: 22px
+            font-size: 14px
+            line-height: 21px                   
+    &__descriptions
+        margin-top: 16px 
+        flex-grow: 1         
+    &__header
+        font-weight: 750
+        font-size: 14px
+        line-height: 21px
+        color: $mainTextColor
+        @media (min-width: 576px) 
+            font-size: 16px
+        @media (min-width: 991px) 
+            font-size: 18px    
+    &__text
+        margin-top: 16px
+        font-weight: 450
+        font-size: 14px
+        line-height: 21px
+        background: $backgroundText
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent 
+        @media (min-width: 576px) 
+            font-size: 16px
+        @media (min-width: 991px) 
+            font-size: 18px         
+   
+         
+    
+         
+           

@@ -1,0 +1,283 @@
+*
+    padding: 0
+    margin: 0
+    font-family: Roboto,sans-serif
+    font-style: normal
+    font-weight: normal
+    box-sizing: border-box
+
+html, body
+    height: 100%
+
+img
+    width: 100%
+    height: 100%
+    object-fit: cover    
+
+.wrapper
+    display: flex
+    flex-direction: column
+    height: 100%
+
+.main
+    flex: 1 0 auto
+
+.footer
+    flex: 0 0 auto
+
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px) 
+
+
+.header
+    padding-top: 34px
+    padding-bottom: 93px
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%)
+    &__content
+        display: flex
+        justify-content: space-between
+    &__bg
+        width: 555px
+        height: 480px
+        background: url(img/header-bg.png) no-repeat
+        margin-top: 100px
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__img
+        width: 46px
+        height: 46px    
+        .main__link
+            display: flex
+            height: inherit
+            width: inherit
+    &__info
+        width: 505px
+        padding-top: 107px 
+        padding-bottom: 97px     
+    &__heading
+        font-weight: 300
+        font-size: 64px
+        line-height: 74px
+        letter-spacing: 0.04em
+        color: #1F3F68
+    &__text
+        width: 425px
+        padding-top: 32px
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: 0.05em
+        color: #1F3F68
+        opacity: 0.6
+    &__link
+        background: #5A98D0
+        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+        border-radius: 10px
+        text-decoration: none
+        font-size: 16px
+        line-height: 26px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #FFFFFF
+        padding: 15px 50px
+        margin-top: 71px
+        display: inline-block
+
+
+.what-we-do
+    padding-top: 64px
+    min-height: 585px
+    &__header
+        font-weight: 300
+        font-size: 36px
+        line-height: 46px
+        text-align: center
+        letter-spacing: 0.05em
+        color: #000000
+    &__content
+        display: flex    
+        justify-content: space-between
+        margin-top: 64px
+    &__items
+        padding: 44px 32px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 359px
+        min-height: 480px
+        background: #FFFFFF
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+        border-radius: 10px
+    &__img
+        width: 100px
+        height: 100px
+    &__info
+        flex-grow: 1        
+    &__heading
+        padding-top: 51px
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.05em
+        color: #1F3F68
+        width: 283px
+    &__text
+        padding-top: 14px
+        width: 268px
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: 0.05em
+        color: #1F3F68
+        opacity: 0.6
+    &__block-link  
+        align-self: flex-start 
+        padding-top: 29px
+    &__link
+        position: relative
+        display: flex
+        font-size: 14px
+        line-height: 30px
+        letter-spacing: 0.05em
+        color: #5A98D0 
+        text-decoration: none
+        &::after
+            position: absolute
+            width: 16px
+            height: 16px
+            top: 7px
+            right: -24px
+            content: ''
+            background: url('img/what-we-do_arrow.svg') no-repeat center
+    
+
+.project
+    padding-top: 64px 
+    padding-bottom: 112px    
+    min-height: 600px      
+    &__header
+        font-weight: 300
+        font-size: 36px
+        line-height: 46px
+        text-align: center
+        letter-spacing: 0.05em
+        color: #000000
+    &__text
+        font-size: 16px
+        line-height: 26px
+        text-align: center
+        letter-spacing: 0.05em
+        color: #222222
+        margin: 0 auto
+        padding-top: 32px
+    &__top
+        padding-top: 64px 
+    &__bottom
+        display: flex
+        justify-content: space-between
+        padding-top: 32px
+    &__items
+        width: 1140px
+        height: 480px
+        position: relative
+        display: flex
+        &-small
+            width: 560px
+            height: 480px
+    .info__top
+        position: absolute
+        top: 64px
+        right: 64px
+        font-size: 32px
+        line-height: 46px
+        text-align: right
+        letter-spacing: 0.05em
+        color: #FFFFFF
+    &__info
+        position: absolute
+        top: 32px
+        left: 32px
+        font-size: 32px
+        line-height: 46px
+        text-align: right
+        letter-spacing: 0.05em
+        color: #FFFFFF  
+
+
+
+.footer
+    min-height: 657px 
+    background: #326199
+    &__top
+        display: flex
+        justify-content: space-between
+        min-height: 391px
+        align-items: center 
+    &__left
+        padding: 91px 0 96px          
+    &__heading
+        width: 340px
+        font-size: 36px
+        line-height: 46px
+        letter-spacing: 0.05em
+        color: #FFFFFF 
+    &__text
+        padding-top: 32px
+        width: 495px
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: 0.05em
+        color: #FFFFFF
+        opacity: 0.6 
+    &__btn
+        font-size: 16px
+        line-height: 26px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #FFFFFF
+        text-decoration: none
+        background: #5A98D0
+        padding: 15px 80px 
+        display: inline-block          
+    &__menu
+        margin-top: 64px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        list-style: none
+    &__list
+        display: flex
+        width: 317px
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: 0.05em
+        color: #FFFFFF
+    .list__one:before
+         content: "1."
+         margin-right: 20px
+    .list__two:before
+         content: "2."
+         margin-right: 20px
+    .list__three:before
+        content: "3." 
+        margin-right: 20px            
+    &__link
+        text-decoration: none
+        color: #FFFFFF
+    &__copyright
+        padding-top: 64px
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: 0.05em
+        color: #FFFFFF
+        opacity: 0.4   
+
+
+
+
+
+
+@import "_contacts" 
+@import "_index"            

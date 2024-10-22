@@ -1,0 +1,53 @@
+.autor
+    padding: 65px 0 0 0 
+    @media (min-width: 767px) and (max-width: 1198px)
+        padding: 65px 0
+    &__wrapper
+        margin-top: 36px
+        @media (min-width: 767px)
+            display: flex
+            justify-content: space-between
+        @media (min-width: 1199px)    
+            justify-content: flex-start
+        @media (min-width: 1441px)
+            width: 112%   
+    &__left
+        @media (min-width: 767px)
+            width: 38%   
+        @media (min-width: 1199px)    
+            width: 500px      
+    &__right
+        position: relative
+        background: url('img/autor-bg.png') no-repeat left/cover   
+        min-height: 400px
+        @media (min-width: 767px)
+            width: 58%
+        @media (min-width: 991px) 
+            min-height: 600px
+        @media (min-width: 1199px)  
+            margin-left: 93px  
+    &__block__text
+        position: absolute 
+        bottom: 47px
+        right: 41px   
+    &__text
+        font-weight: 450
+        font-size: 14px
+        line-height: 24px
+        color: $mainTextColor
+        @media (min-width: 576px)
+            font-size: 16px
+        @media (min-width: 767px)  
+            font-size: 18px  
+        &:not(:first-child)
+            margin-top: 36px
+        &_name
+            font-weight: 750
+            font-size: 18px
+            line-height: 20px
+            color: $thirdTextColor
+        &_post
+            font-weight: 450
+            font-size: 12px
+            line-height: 20px
+            color: $mainTextColor    
