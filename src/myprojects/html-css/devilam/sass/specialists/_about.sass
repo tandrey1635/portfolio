@@ -1,0 +1,338 @@
+.about
+	min-height: 1600px
+	padding: 150px 0
+	@media(max-width: $desktop)
+		min-height: auto
+	@media(max-width: $tablet)	
+		padding: 150px 0 200px 0	
+	@media(max-width: $pocketBook)	
+		padding: 50px 0 200px 0	
+	@media(max-width: $smallPocketBook)	
+		padding: 50px 0 250px 0		
+	@media(max-width: $mobile)	
+		padding: 50px 0 200px 0	
+	@media(max-width: $extraSmallMobile)
+		padding: 20px 0 180px 0			
+	&__top
+		@include flexHorisontalCenter(space-between)
+		@media(max-width: $tablet)
+			flex-direction: column
+			align-items: center
+		&__left
+			@media(max-width: $tablet)	
+				@include flexCenter
+				flex-direction: column
+		&__right
+			width: 66%
+			@media(max-width: $tablet)
+				width: 100%
+	&__bottom
+		position: relative
+		margin-top: 32px
+		@include flexCenter(space-between)
+		@media(max-width: $tablet)
+			margin-top: 56px
+			display: grid
+			grid-template: 1fr .1fr .2fr / repeat(2, 1fr)
+			place-items: center
+		@media(max-width: $mobile)	
+			margin-top: 32px
+		&__img
+			width: 450px
+			height: 480px
+			@media(max-width: $smallNotebook)	
+				width: 350px
+				height: 400px
+			@media(max-width: 1200px)
+				width: 280px
+				height: 320px	
+			@media(max-width: $tablet)
+				width: 450px
+				height: 480px	
+				transform: scale(.8)
+				opacity: .5
+				transition: .5s all	
+				top: 130px!important
+				left: 0!important
+			@media(max-width: $mediumTablet)
+				width: 400px
+				height: 430px
+				top: 95px!important
+				left: -10px!important
+			@media(max-width: $smallTablet)
+				width: 350px
+				height: 380px
+				left: 10px!important
+			@media(max-width: $pocketBook)	
+				width: 300px
+				height: 320px	
+				top: 80px!important	
+				left: -5px!important
+			@media(max-width: $smallPocketBook)	
+				width: 280px
+				height: 300px
+				top: 60px!important	
+				left: -20px!important
+			@media(max-width: $mobile)
+				width: 250px
+				height: 270px	
+				top: 50px!important	
+				left: -25px!important
+			@media(max-width: $smallMobile)	
+				width: 200px
+				height: 220px			
+			&_one
+				@include absolute(165px, 75px)
+				@media(max-width: $desktop)
+					top: 110px
+					left: -10px	
+				@media(max-width: $notebook)	
+					top: 90px	
+				@media(max-width: $smallNotebook)	
+					top: 45px
+				@media(max-width: $smallDesktop)	
+					top: 25px
+					left: 5px		
+			&_two
+				@include absolute(220px, 335px)
+				@media(max-width: $desktop)
+					top: 145px
+					left: 165px
+				@media(max-width: $smallNotebook)	
+					top: 90px
+					left: 155px	
+				@media(max-width: $smallDesktop)	
+					top: 65px
+					left: 115px		
+		.img__active
+			@media(max-width: $tablet)
+				transform: scale(1)
+				opacity: 1	
+				z-index: 5
+				transition: .5s all	
+				top: 115px!important
+				left: 200px!important
+			@media(max-width: $mediumTablet)	
+				top: 95px!important
+				left: 165px!important
+			@media(max-width: $pocketBook)	
+				top: 80px!important
+				left: 125px!important
+			@media(max-width: $smallPocketBook)	
+				top: 60px!important
+				left: 100px!important	
+			@media(max-width: $mobile)
+				left: 85px!important
+			@media(max-width: $mobile)
+				top: 45px!important	
+		&::before
+			@include before(45px, 260px)
+			width: 1175px
+			height: 560px
+			@include background('img/specialists/formula.svg')
+			@media(max-width: $desktop)
+				left: 185px
+			@media(max-width: $smallNotebook)	
+				left: 0	
+				width: 100%
+				background-size: 80%
+			@media(max-width: 1200px)
+				top: -50px	
+			@media(max-width: $tablet)
+				top: 0
+				background-size: 100%
+			@media(max-width: $pocketBook)	
+				top: -65px	
+			@media(max-width: $smallPocketBook)	
+				top: -85px		
+			@media(max-width: $mobile)	
+				top: -100px		
+			@media(max-width: $mediumMobile)	
+				top: -135px	
+		&__left, &__right
+			position: relative
+			width: 320px	
+			@media(max-width: $desktop)
+				width: 30%
+			@media(max-width: $tablet)	
+				grid-row: 2
+				width: 50%
+				text-align: center
+			@media(max-width: $mediumTablet)
+				width: 60%	
+			@media(max-width: $smallTablet)
+				width: 65%	
+			@media(max-width: $pocketBook)	
+				width: 80%	
+			@media(max-width: $smallPocketBook)		
+				width: 85%	
+			@media(max-width: $mobile)	
+				width: 90%	
+			@media(max-width: $smallMobile)	
+				width: 100%	
+		&__header
+			@media(max-width: $tablet)
+				@include absolute
+				opacity: .5
+			&_left, &_right	
+				@media(max-width: $tablet)
+					top: 36px
+					border-bottom: 2px solid $mainBorder
+				@media(max-width: $mediumTablet)
+					top: 26px
+				@media(max-width: $smallTablet)
+					top: 23px	
+				@media(max-width: $pocketBook)
+					top: 13px		
+				@media(max-width: $smallPocketBook)		
+					top: -4px	
+				@media(max-width: $mobile)
+					top: 8px
+				@media(max-width: $mediumMobile)
+					top: 10px	
+				@media(max-width: $smallMobile)
+					top: 8px	
+				@media(max-width: $extraSmallMobile)	
+					top: 7px						
+			&_left
+				left: 50px
+			&_right	
+				right: 50px	
+		.header__active
+			@media(max-width: $tablet)
+				opacity: 1			
+		&__descriptions
+			&_left, &_right
+				@media(max-width: $tablet)
+					@include absolute(100px, 0)
+					width: 300%
+					display: none
+				@media(max-width: $mediumTablet)
+					left: -35px	
+				@media(max-width: $smallTablet)
+					left: -45px	
+				@media(max-width: $pocketBook)
+					width: 250%	
+					top: 60px
+					left: -18px
+				@media(max-width: $smallPocketBook)	
+					width: 230%	
+					left: -8px
+				@media(max-width: $smallPocketBook)	
+					top: 50px	
+				@media(max-width: $mobile)
+					width: 200%	
+					left: 10px
+				@media(max-width: $mediumMobile)	
+					width: 195%
+				@media(max-width: $smallMobile)	
+					width: 185%
+			&_right
+				@media(max-width: $tablet)
+					left: -200%
+				@media(max-width: $mediumTablet)
+					left: -180%
+				@media(max-width: $pocketBook)	
+					left: -135%	
+				@media(max-width: $smallPocketBook)	
+					left: -120%
+				@media(max-width: $mobile)
+					left: -105%		
+				@media(max-width: $mediumMobile)
+					left: -100%	
+				@media(max-width: $smallMobile)
+					left: -90%		
+		.descriptions__active	
+			@media(max-width: $tablet)	
+				display: block
+		&__center
+			position: relative
+			width: 55%
+			height: 864px
+			background: $aboutBg
+			border-radius: 50%
+			@media(max-width: $desktop)
+				width: 700px
+				height: 700px
+			@media(max-width: $smallNotebook)	
+				width: 550px
+				height: 550px
+			@media(max-width: 1200px)
+				width: 480px
+				height: 480px	
+			@media(max-width: $smallDesktop)	
+				width: 450px
+				height: 420px
+			@media(max-width: $tablet)
+				width: 700px
+				height: 700px	
+				grid-column: 1/3	
+			@media(max-width: $mediumTablet)	
+				width: 600px
+				height: 600px	
+			@media(max-width: $smallTablet)
+				width: 545px
+				height: 545px	
+			@media(max-width: $pocketBook)
+				width: 450px
+				height: 450px
+			@media(max-width: $smallPocketBook)		
+				width: 395px
+				height: 395px
+			@media(max-width: $mobile)	
+				width: 345px
+				height: 345px
+			@media(max-width: $mediumMobile)	
+				width: 330px
+				height: 330px
+			@media(max-width: $smallMobile)	
+				width: 290px
+				height: 290px			
+			&::before, &::after
+				width: 480px
+				height: 450px
+				@media(max-width: $smallNotebook)	
+					width: 400px
+					height: 400px
+				@media(max-width: 1200px)
+					width: 350px
+					height: 320px	
+			&::before
+				@include before(180px, -42%)
+				@include background('img/specialists/left.svg', contain)
+				@media(max-width: $desktop)
+					top: 120px
+					left: -65%
+				@media(max-width: $notebook)	
+					top: 100px
+				@media(max-width: $smallNotebook)
+					top: 45px
+					left: -70%	
+				@media(max-width: 1200px)
+					top: 35px	
+				@media(max-width: $smallDesktop)	
+					top: 25px	
+				@media(max-width: $tablet)	
+					display: none	
+			&::after
+				@include after(220px, -42%)
+				@include background('img/specialists/right.svg', contain)
+				@media(max-width: $desktop)
+					top: 145px
+					right: -60%
+				@media(max-width: $smallNotebook)
+					top: 75px
+					right: -65%
+				@media(max-width: $smallDesktop)
+					top: 55px
+				@media(max-width: $tablet)	
+					@include background('img/specialists/general-arrow.svg', contain)
+					width: 100%
+					height: inherit
+					top: 60%
+					left: 0
+					z-index: -1
+				@media(max-width: $mediumTablet)	
+					height: inherit	
+
+				

@@ -1,0 +1,382 @@
+.news__page
+    padding: 50px 0
+    @media(max-width: $notebook) 
+        padding: 50px 0 0 0
+    @media(max-width: $mobile) 
+        padding: 32px 0 0 0    
+    @media(max-width: $extraSmallMobile) 
+        padding: 16px 0 0 0     
+    &__top
+        @include flexHorisontalCenter(space-between)
+        gap: 40px
+        @media(max-width: $desktop) 
+            gap: 30px
+        @media(max-width: $smallDesktop)   
+            flex-direction: column-reverse
+            align-items: center 
+    &__top__left
+        width: 665px
+        height: 445px
+        @media(max-width: $desktop) 
+            width: 45%
+        @media(max-width: 1200px) 
+            height: 350px
+        @media(max-width: $smallDesktop) 
+            width: 100%   
+            height: 600px 
+        @media(max-width: $tablet) 
+            height: 550px  
+        @media(max-width: $mediumTablet) 
+            height: 500px
+        @media(max-width: $smallTablet) 
+            height: 450px   
+        @media(max-width: $pocketBook)  
+            height: 400px   
+        @media(max-width: $smallPocketBook)  
+            height: 350px   
+        @media(max-width: $mobile)  
+            height: 300px  
+        @media(max-width: $mediumMobile)  
+            height: 250px   
+        @media(max-width: $extraSmallMobile)  
+            height: 200px              
+    &__top__left__img
+        height: 100%
+    &__top__right
+        width: 915px 
+        @media(max-width: $desktop) 
+            width: 60%
+        @media(max-width: $smallDesktop) 
+            width: 68%              
+        @media(max-width: $tablet)  
+            width: 80%  
+        @media(max-width: $smallTablet)  
+            width: 90%  
+        @media(max-width: $pocketBook)  
+            width: 100%                
+    &__top__right__block__info 
+        width: 650px 
+        @include flexCenter(space-between) 
+        @media(max-width: $smallNotebook)
+            width: 100%
+        @media(max-width: $pocketBook)  
+            flex-direction: column
+            align-items: flex-start
+            gap: 15px       
+    &__top__right__info    
+        position: relative
+        margin-left: 43px 
+        &::before
+            @include beforeBottom(0, -43px)
+            width: 25px
+            height: 25px
+            @include background('img/news-page/date.svg')
+            @media(max-width: $smallMobile) 
+                width: 20px
+                height: 20px
+        &__show
+            &::before
+                bottom: 5px
+                width: 30px
+                height: 20px
+                @include background('img/news-page/show.svg')
+                @media(max-width: $notebook) 
+                    bottom: 2px
+                @media(max-width: $smallMobile) 
+                    width: 25px
+                    height: 16px    
+        &__time
+            &::before
+                @include background('img/news-page/time.svg')
+    &__descriptions 
+        width: 525px 
+        margin-top: 64px 
+        @media(max-width: $desktop)  
+            width: 60% 
+        @media(max-width: 1200px)     
+            width: 75%  
+        @media(max-width: $smallDesktop)
+            width: 70% 
+        @media(max-width: $tablet)  
+            width: 60%   
+        @media(max-width: $mediumTablet) 
+            margin-top: 32px 
+        @media(max-width: $smallTablet) 
+            width: 70%  
+        @media(max-width: $extraSmallMobile)  
+            width: 80%    
+            margin-top: 16px                                       
+    &__content
+        margin-top: 32px
+        padding: 64px 110px
+        background: $newsPageContentBg
+        min-height: 540px 
+        @media(max-width: $desktop) 
+            padding: 64px    
+        @media(max-width: $smallNotebook)  
+            padding: 32px 
+        @media(max-width: $mobile)  
+            padding: 25px    
+        @media(max-width: $mediumMobile) 
+            padding: 16px 
+            min-height: auto        
+        &__wrapper
+            @include flexHorisontalCenter(space-between)
+            gap: 40px
+            @media(max-width: $desktop) 
+                gap: 15px
+            @media(max-width: 1200px)    
+                flex-direction: column
+                align-items: center
+        &__left
+            width: 355px
+            @media(max-width: $desktop) 
+                width: 30%
+            @media(max-width: $smallNotebook)    
+                width: 32% 
+            @media(max-width: 1200px) 
+                width: 100%                         
+        &__right
+            margin-top: 30px
+            @include flexReverseAxios
+            gap: 24px
+            width: 1000px 
+            @media(max-width: $desktop) 
+                width: 70%
+            @media(max-width: 1200px)   
+                width: 75%  
+            @media(max-width: $mediumTablet) 
+                width: 100%
+                margin-top: 16px    
+            @media(max-width: $mediumMobile)    
+                gap: 16px   
+                margin-top: 0 
+    &__main__news  
+        padding-top: 50px
+        @media(max-width: $pocketBook)   
+            padding-top: 32px
+        @media(max-width: $mobile)  
+            padding: 0   
+        &__wrapper
+            margin-top: 50px
+            display: flex
+            @media(max-width: 1200px) 
+                flex-direction: column
+        &__left
+            width: 40%
+            min-height: 590px  
+            @media(max-width: 1200px) 
+                width: 100%
+            @media(max-width: $smallTablet)
+                min-height: auto    
+        &__img    
+            height: 100% 
+        &__right
+            position: relative
+            @include flexReverseAxios
+            gap: 32px
+            padding: 85px 75px
+            width: 60%
+            min-height: 590px
+            background: $newsPreparatBg
+            @media(max-width: $smallNotebook)
+                padding: 50px 
+            @media(max-width: 1200px) 
+                width: 100%
+                justify-content: space-evenly
+                gap: 0
+            @media(max-width: $smallTablet) 
+                padding: 64px 32px
+                gap: 32px
+            @media(max-width: $mobile)    
+                padding: 32px
+                gap: 25px
+            @media(max-width: $mediumMobile)
+                padding: 25px
+                min-height: 550px 
+                gap: 0
+            @media(max-width: $smallMobile)  
+                gap: 16px  
+            @media(max-width: $extraSmallMobile)
+                padding: 16px    
+            &::after
+                @include after(28px, 28px)
+                width: 46px
+                height: 36px
+                @include background('img/news-page/commas.svg')
+                @media(max-width: $smallNotebook)
+                    width: 42px
+                    height: 32px
+                    top: 16px
+                @media(max-width: 1200px) 
+                    width: 46px
+                    height: 36px   
+                @media(max-width: $smallPocketBook)    
+                    width: 38px
+                    height: 28px 
+                @media(max-width: $mobile)
+                    width: 34px
+                    height: 26px  
+                @media(max-width: $mediumMobile) 
+                    width: 32px
+                    height: 24px   
+                @media(max-width: $smallMobile) 
+                    width: 28px
+                    height: 20px
+                    top: 10px
+                    right: 20px
+                @media(max-width: $extraSmallMobile)
+                    width: 24px
+                    height: 18px
+                    top: 10px
+                    right: 15px           
+        &__photo
+            margin-top: 30px  
+            height: 850px
+            @media(max-width: $desktop) 
+                height: 800px
+            @media(max-width: $smallNotebook) 
+                height: 700px   
+            @media(max-width: 1200px) 
+                height: 600px 
+            @media(max-width: $tablet)  
+                height: 550px   
+            @media(max-width: $mediumTablet) 
+                height: 500px  
+            @media(max-width: $smallTablet) 
+                height: 450px  
+            @media(max-width: $pocketBook)  
+                height: 400px 
+            @media(max-width: $smallPocketBook)  
+                height: 350px  
+            @media(max-width: $mobile)  
+                height: 300px  
+            @media(max-width: $mediumMobile)  
+                height: 250px  
+            @media(max-width: $extraSmallMobile)
+                margin-top: 16px
+                height: 200px                             
+        &__about
+            position: relative
+            margin-top: 50px
+            @media(max-width: 1200px) 
+                padding: 25px
+            @media(max-width: $pocketBook) 
+                margin-top: 32px
+            @media(max-width: $extraSmallMobile)
+                margin-top: 16px 
+            @media(max-width: $smallPocketBook) 
+                padding: 0   
+            &::after
+                @include after(20px)
+                width: 75%
+                height: 100%
+                background: $newsPageContentBg
+                z-index: -1
+                @media(max-width: 1200px) 
+                    width: 100%
+        &__bibliography   
+            margin-top: 50px    
+        &__about__right, &__bibliography__right
+            padding: 75px
+            padding-left: 100px
+            margin-left: 25% 
+            @media(max-width: 1200px) 
+                margin-left: 0
+            @media(max-width: $mediumTablet) 
+                padding: 32px
+            @media(max-width: $mediumMobile)    
+                padding: 16px 25px
+            @media(max-width: $extraSmallMobile)    
+                padding: 16px 
+        &__about__right
+            padding-bottom: 25px   
+            @media(max-width: $mediumTablet)   
+                padding-bottom: 0   
+            @media(max-width: $smallPocketBook) 
+                padding: 32px 56px 16px 56px 
+            @media(max-width: $mediumMobile) 
+                padding: 32px 
+                padding-bottom: 16px    
+        &__bibliography__accordeon
+            position: relative  
+            @include flexVerticalCenter
+            height: 134px
+            cursor: pointer
+            @media(max-width: 1200px) 
+                padding: 0 25px
+            @media(max-width: $mobile) 
+                height: 120px 
+            @media(max-width: $mediumMobile)  
+                padding: 0 16px 
+            @media(max-width: $extraSmallMobile) 
+                height: 100px            
+            &::before
+                @include after
+                background: $bibliographyBg
+                width: 75%
+                height: inherit
+                z-index: -1
+                @media(max-width: 1200px)
+                    width: 100%        
+            &::after
+                @include before(60px, 574px)
+                border: 1px solid $mainBorder
+                border-radius: 50px
+                width: 74px
+                height: 32px
+                background: url('img/news-page/arrow-down-accordeon.svg') no-repeat
+                background-position-y: 10px 
+                background-position-x: 20px 
+                @media(max-width: 1200px) 
+                    left: 585px
+                @media(max-width: $smallDesktop) 
+                    left: 535px    
+                @media(max-width: $mediumTablet) 
+                    left: 450px
+                @media(max-width: $smallTablet)
+                    left: 425px
+                @media(max-width: $pocketBook)  
+                    top: 58px
+                    left: 80%   
+                @media(max-width: $smallPocketBook)  
+                    left: 75%    
+                @media(max-width: $mobile) 
+                    top: 44px       
+                @media(max-width: $mediumMobile) 
+                    width: 50px
+                    height: 24px
+                    top: 50px
+                    background-size: 50% 
+                    background-position-y: 6px 
+                    background-position-x: 12px 
+                @media(max-width: $extraSmallMobile) 
+                    top: 40px    
+        .accordeon__rotate
+            &::after 
+                transform: rotate(180deg)  
+                background-position-x: 23px
+                background-position-y: 9px  
+                @media(max-width: $mediumMobile)  
+                    background-position-y: 5px 
+                    background-position-x: 12px            
+        &__bibliography__right
+            display: none
+            border: 3px solid $bibliographyBorder
+            border-top: 0 
+            @media(max-width: 1200px)   
+                width: 100%
+            @media(max-width: $mediumTablet)  
+                padding: 32px 56px 
+            @media(max-width: $mediumMobile) 
+                padding: 32px       
+        .accordeon__active
+            display: block
+        &__adv  
+            margin-top: 15px
+            @include flexHorisontalCenter                
+    &__menu
+        @include flexReverseAxios
+        gap: 25px    
+        @media(max-width: $extraSmallMobile)
+            gap: 16px

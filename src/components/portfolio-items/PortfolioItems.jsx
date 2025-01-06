@@ -1,8 +1,10 @@
 import './PortfolioItems.sass'
 
 const PortfolioItems = (props) => {
+
+    
     return(
-        <article className="portfolio__items">
+        <article className={props.html ? "portfolio__items portfolio__items_html" : props.bootstrap ? "portfolio__items portfolio__items_bootstrap" : "portfolio__items"}>
             <div className="portfolio__img">
                 <a href={props.preview} className="portfolio__preview__photo-link" data-fancybox="galleryLandingPage">
                     <img className="portfolio__photo" src={props.preview} alt={props.alt}/>

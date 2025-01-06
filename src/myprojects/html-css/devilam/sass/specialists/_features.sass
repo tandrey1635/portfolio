@@ -1,0 +1,130 @@
+.features
+	padding: 300px 0 272px 0
+	min-height: 1600px
+	@include background('img/specialists/features-bg.jpg')
+	@media(max-width: $notebook)
+		padding: 200px 0
+		min-height: auto
+	@media(max-width: 1200px)	
+		padding: 150px 0
+	@media(max-width: $smallPocketBook)	
+		padding: 80px 0	
+	@media(max-width: $extraSmallMobile)	
+		padding: 56px 0		
+	&__wrapper
+		margin-top: 170px
+		@include flexCenter
+		@media(max-width: 1200px)
+			margin-top: 100px
+		@media(max-width: $tablet)	
+			margin-top: 80px
+		@media(max-width: $pocketBook)	
+			margin-top: 56px	
+	&__item
+		position: relative
+		padding: 40px 36px
+		width: 475px
+		height: 520px
+		border-radius: 50px
+		z-index: 10
+		@media(max-width: $notebook)
+			height: 475px
+		@media(max-width: $smallDesktop)
+			width: 450px
+			height: 450px	
+		@media(max-width: $mediumTablet)
+			width: 400px
+			height: 400px	
+		@media(max-width: $pocketBook)	
+			padding: 25px
+			width: 350px
+			height: 350px
+		@media(max-width: $mobile)	
+			width: 300px
+			height: 300px
+		@media(max-width: $mediumMobile)	
+			width: 280px
+			height: 280px
+		@media(max-width: $smallMobile)	
+			width: 250px
+			height: 250px	
+		@media(max-width: $extraSmallMobile)
+			width: 230px
+			height: 230px		
+		&:not(:first-child)
+			margin-left: -100px	
+			@media(max-width: $smallNotebook)
+				margin-left: -150px
+			@media(max-width: 1200px)	
+				margin-left: -200px
+			@media(max-width: $smallDesktop)
+				margin-left: -250px	
+			@media(max-width: $smallPocketBook)	
+				margin-left: -150px
+			@media(max-width: $mobile)	
+				margin-left: -100px	
+		&_one
+			@include background('img/specialists/features__item-one.png')
+			@media(max-width: 1200px)
+				z-index: 10
+		&_two
+			@include background('img/specialists/features__item-two.png')	
+			@media(max-width: 1200px)
+				z-index: 5
+		&_three
+			@include background('img/specialists/features__item-three.png')	
+			@media(max-width: 1200px)
+				z-index: 3	
+		&_four
+			@include background('img/specialists/features__item-four.png')	
+			@media(max-width: 1200px)
+				z-index: 2		
+		&__description	
+			width: 325px
+			@media(max-width: $mobile)	
+				width: 250px	
+			@media(max-width: $mediumMobile)	
+				width: 220px
+			@media(max-width: $extraSmallMobile)	
+				width: 180px
+		.hide_description
+			display: none
+
+		
+.hide_zIndex
+	z-index: 1
+.show_zIndex
+	z-index: 10
+
+.one_zIndex
+	z-index: 10	
+.two_zIndex
+	z-index: 5	
+.three_zIndex
+	z-index: 3
+.four_zIndex
+	z-index: 2		
+
+
+@keyframes pulse
+	0%
+		transform: scaleX(1)
+	50%
+		transform: scale3d(1.05,1.05,1.05)
+	to
+		transform: scaleX(1)	
+
+.animate__pulse
+	animation-name: pulse
+	animation-timing-function: ease-in-out
+	animation-duration: 1s
+
+
+
+							
+	
+
+						
+	
+		
+

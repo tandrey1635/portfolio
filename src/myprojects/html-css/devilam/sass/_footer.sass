@@ -1,0 +1,90 @@
+.footer
+	min-height: 200px
+	&__wrapper
+		@include flexCenter(space-between)
+		@media(max-width: $tablet)
+			flex-direction: column
+			gap: 32px
+		@media(max-width: $smallPocketBook)
+			gap: 16px	
+		&_bottom
+			@media(max-width: $desktop)
+				flex-direction: column
+				gap: 32px
+			@media(max-width: $smallPocketBook)
+				gap: 16px	
+	&__top
+		padding: 70px 0
+		min-height: 165px
+		background: $footerTopBg
+		@media(max-width: $tablet)
+			padding: 56px 0
+		@media(max-width: $smallPocketBook)
+			padding: 25px 0	
+	&__bottom
+		padding: 15px 0
+		min-height: 46px
+		background: $footerBottomBg
+		@media(max-width: $smallPocketBook)
+			padding: 25px 0	
+	&__left
+		width: 25%
+		@media(max-width: $desktop)
+			width: auto
+	&__menu
+		width: 40%
+		@include flexVerticalCenter
+		gap: 50px
+		@media(max-width: $desktop)
+			width: auto
+		@media (max-width: $tablet)
+			flex-direction: column
+		@media(max-width: $smallTablet)	
+			gap: 32px
+		@media(max-width: $smallPocketBook)
+			text-align: center
+			gap: 16px
+		&_bottom
+			gap: 35px	
+			@media(max-width: $smallTablet)	
+				gap: 32px
+			@media(max-width: $smallPocketBook)
+				width: 80%
+				gap: 16px
+	&__right
+		width: 15%
+		@media(max-width: $desktop)
+			width: auto
+	&__link
+		font-size: 20px
+		color: $defaultColor
+		@media(max-width: $smallPocketBook)
+			font-size: 18px
+		@media(max-width: $mediumMobile)
+			font-size: 16px	
+		@media(max-width: $smallMobile)
+			font-size: 14px
+		@media(max-width: $extraSmallMobile)
+			font-size: 12px
+		&_bold
+			font-weight: 700
+		&_underline
+			padding-bottom: 5px
+			border-bottom: 1px solid $footerBorder
+	&__text
+		font-size: 16px
+		font-weight: 700
+		color: $defaultColor
+		@media(max-width: $smallPocketBook)
+			text-align: center
+		@media(max-width: $smallMobile)
+			font-size: 14px
+		@media(max-width: $extraSmallMobile)
+			font-size: 12px
+	&__list
+		font-size: 16px
+		color: $footerBottomListColor
+		@media(max-width: $smallMobile)
+			font-size: 14px
+		@media(max-width: $extraSmallMobile)
+			font-size: 12px

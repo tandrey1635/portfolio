@@ -1,0 +1,44 @@
+.uteka__map
+    @media(max-width: $tablet)
+        min-height: auto
+    &__widget
+        margin-top: 30px
+        border-top: 1px solid $utekaBorder
+    &__widget__wrapper
+        padding: 10px 0
+        @include flexCenter(space-around)
+        @media(max-width: $mediumTablet)
+            padding: 15px 0
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 15px
+    &__widget__logo, &__widget__right
+        @include flexVerticalCenter
+        width: 130px
+        height: 60px
+        @media(max-width: $mediumTablet)
+            height: 40px
+        @media(max-width: $mediumMobile)
+            height: 30px
+    &__widget__photo
+        object-fit: contain
+    &__widget__header
+        max-width: 325px
+        font-weight: 700
+        @media(max-width: $smallMobile)
+            font-size: 14px
+        @media(max-width: $extraSmallMobile)
+            font-size: 12px
+    &__widget__right
+        @media(max-width: $mediumTablet)
+            display: none
+    &__iframe
+        width: 100%
+        height: 800px
+        @media(max-width: $mediumTablet)
+            height: 600px
+        @media(max-width: $smallPocketBook)
+            height: 500px
+        @media(max-width: $extraSmallMobile)   
+            height: 400px 

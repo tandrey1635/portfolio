@@ -1,0 +1,17 @@
+<svg width="1920.000000" height="769.000000" viewBox="0 0 1920 769" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip457_1057">
+			<rect id="Vector" rx="-0.500000" width="1919.000000" height="768.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="-342.443054" y1="747.283447" x2="1703.009521" y2="737.703857" id="paint_linear_457_1058_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#F1DD9F"/>
+			<stop offset="0.989583" stop-color="#9D7439"/>
+		</linearGradient>
+	</defs>
+	<g clip-path="url(#clip457_1057)">
+		<path id="Vector" d="M1920 0L-315 769L1509.1 769L1920 769L1920 287.41L1920 0Z" fill="url(#paint_linear_457_1058_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

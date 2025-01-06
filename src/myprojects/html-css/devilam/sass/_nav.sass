@@ -1,0 +1,196 @@
+.nav
+	position: fixed
+	top: 0
+	left: 50%
+	transform: translateX(-50%)
+	width: 1600px
+	z-index: 20
+	margin: 0 auto
+	background: $navBg
+	border-radius: 0 90px 90px 90px
+	min-height: 80px
+	backdrop-filter: blur(20px)
+	@media(max-width: $desktop)
+		width: 95%
+	@media(max-width: 1200px)
+		width: 101%	
+		border-radius: 0
+		backdrop-filter: none
+		background: $defaultBg
+		box-shadow: 0 3px 3px $mainShadow
+		border-bottom: 3px solid $mainBorder
+	@media(max-width: $pocketBook)
+		min-height: 55px	
+	&__wrapper
+		padding-right: 15px
+		@include flexCenter(space-between)
+		@media(max-width: 1200px)
+			padding: 10px 20px	
+		@media(max-width: $pocketBook)	
+			padding: 10px 15px		
+	&__logo
+		width: 80px
+		min-height: 80px
+		border-radius: 0 0 40px 40px
+		border: 1px solid $defaultBorder
+		border-top: 0
+		@media(max-width: 1200px)
+			width: 75px
+			height: 75px
+			min-height: auto	
+			border: 1px solid $mainBorder
+			border-radius: 50%
+		@media(max-width: $pocketBook)	
+			width: 50px
+			height: 50px	
+		@media(max-width: $smallMobile)	
+			width: 40px
+			height: 40px	
+	&__photo
+		width: 25px
+		height: 25px
+		fill: $defaultBg
+		@media(max-width: 1200px)	
+			fill: $mainBg
+		@media(max-width: $pocketBook)	
+			width: 18px
+			height: 18px
+		@media(max-width: $smallMobile)	
+			width: 16px
+			height: 16px		
+	&__link
+		font-size: 20px
+		font-weight: 700
+		color: $defaultColor
+		@media(max-width: $smallNotebook)
+			font-size: 18px
+		@media(max-width: 1200px)	
+			color: $secondColor
+			padding-bottom: 10px
+			border-bottom: 2px solid transparent
+		@media(max-width: $smallMobile)	
+			font-size: 16px
+		&:hover
+			@media(max-width: 1200px)	
+				border-bottom: 2px solid $mainBorder
+		&_logo
+			@include flexCenter
+			min-height: inherit
+			height: inherit
+			@media(max-width: 1200px)	
+				padding: 0
+				border: 0
+			&:hover
+				@media(max-width: 1200px)	
+					padding: 0
+					border: 0
+		&_btn
+			position: relative
+			padding: 15px 46px 15px 26px
+			border: 1px solid $defaultBorder	
+			border-radius: 30px
+			@media(max-width: $smallNotebook)
+				padding: 15px 40px 15px 15px
+			@media(max-width: 1200px)	
+				border: 1px solid $mainBorder
+			@media(max-width: $pocketBook)	
+				padding: 12px 40px 12px 15px
+			@media(max-width: $smallMobile)	
+				padding: 9px 40px 9px 15px	
+			&::after
+				@include after(24px, 20px)
+				width: 12px
+				height: 12px
+				@include background('img/arrow-down-white.svg')	
+				@media(max-width: $smallNotebook)
+					width: 10px
+					height: 10px	
+				@media(max-width: 1200px)	
+					@include background('img/arrow-down-blue.svg')	
+				@media(max-width: $pocketBook)	
+					top: 20px
+				@media(max-width: $smallMobile)	
+					top: 16px
+	&__menu
+		padding: 15px 0
+		@include flexCenter
+		@media(max-width: $desktop)
+			width: 75%
+		@media(max-width: 1200px)
+			padding: 0
+			@include absolute(-9999px)
+			z-index: 20
+			transition: 1.2s top
+			flex-direction: column
+			justify-content: space-evenly
+			width: 100%
+			min-height: 600px
+			background: $defaultBg	
+	&__list
+		padding: 0 45px
+		position: relative
+		@media(max-width: $desktop)
+			padding: 0 30px
+		@media(max-width: $notebook)
+			padding: 0 25px	
+		@media(max-width: $smallNotebook)	
+			padding: 0 20px
+		&:not(:first-child)::after
+			@include before
+			width: 2px
+			height: 25px
+			background: $defaultBg	
+			@media(max-width: 1200px)
+				display: none
+	&__right
+		padding: 15px 0		
+		@media(max-width: 1200px)
+			padding: 0
+			display: flex
+			gap: 5px
+	&__burger
+		position: relative
+		display: none
+		@media(max-width: 1200px)
+			@include flexCenter
+			flex-direction: column
+			gap: 3px
+			width: 55px
+			height: 55px
+			border-radius: 50%
+			border: 1px solid $mainBorder	
+		@media(max-width: $pocketBook)
+			width: 50px
+			height: 50px
+		@media(max-width: $smallMobile)	
+			width: 40px
+			height: 40px	
+		&__line
+			width: 50%
+			height: 2px
+			background: $mainBg
+
+.active
+	transition: 1.2s top
+	@media(max-width: 1200px)
+		top: 100px
+	@media(max-width: $pocketBook)
+		top: 75px
+	@media(max-width: $smallMobile)	
+		top: 65px	
+
+.active__burger__line
+	position: absolute
+	top: 25px
+	transition: .5s all
+	opacity: 0.3
+	@media(max-width: $pocketBook)	
+		top: 23px
+	@media(max-width: $smallMobile)	
+		top: 18px	
+	&:first-child
+		transform: rotate(45deg)
+	&:nth-child(2)
+		display: none		
+	&:last-child
+		transform: rotate(-45deg)		

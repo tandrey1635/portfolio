@@ -1,0 +1,248 @@
+.promo
+	position: relative
+	padding: 30px 0 100px 0
+	height: 100vh
+	z-index: 5
+	@include background('img/promo-bg.jpg')
+	@media(max-width: 1200px)
+		margin-top: 50px
+	@media(max-width: $tablet)
+		background-position-x: 30%
+		padding: 30px 0 80px 0
+	@media(max-width: $mediumTablet)	
+		height: 768px!important
+	@media(max-width: $smallTablet)	
+		background-position-x: 25%	
+	@media(max-width: $pocketBook)
+		min-height: auto
+		height: 576px!important
+	@media(max-width: $smallPocketBook)
+		height: 480px!important
+		padding: 30px 0 56px 0
+	@media(max-width: $mobile)
+		height: 425px!important	
+	@media(max-width: $mediumMobile)		
+		height: 375px!important
+	@media(max-width: $smallMobile)		
+		height: 360px!important	
+	@media(max-width: $extraSmallMobile)		
+		height: 320px!important	
+	&::after
+		@include afterBottom
+		width: 100%
+		height: 660px
+		background: $promoBg
+		clip-path: polygon(0 100%, 100% 100%, 100% 0)
+		z-index: -1
+		@media(max-width: $smallNotebook)
+			height: 600px
+		@media(max-width: $smallDesktop)
+			height: 500px
+		@media(max-width: $tablet)
+			height: 450px
+		@media(max-width: $pocketBook)
+			height: 350px
+		@media(max-width: $smallPocketBook)
+			height: 300px
+		@media(max-width: $mobile)
+			height: 250px
+	&_specialists
+		@media(max-width: $notebook)
+			padding: 30px 0 80px 0		
+		&::after
+			height: 770px
+			background: $promoSecondBg
+			@media(max-width: $notebook)
+				height: 660px
+			@media(max-width: $smallNotebook)
+				height: 600px
+			@media(max-width: $smallDesktop)
+				height: 500px	
+			@media(max-width: $tablet)	
+				display: none
+		&_bottom
+			display: none
+			@media(max-width: $tablet)
+				display: block	
+				height: 768px!important	
+				background: none
+				margin-top: -450px
+			@media(max-width: $pocketBook)
+				height: 970px!important				
+			&::after
+				@media(max-width: $tablet)	
+					clip-path: none
+					bottom: -50px
+					height: 550px
+				@media(max-width: $mediumTablet)
+					height: 500px	
+				@media(max-width: $pocketBook)
+					bottom: 50px
+				@media(max-width: $smallPocketBook)
+					height: 550px
+					bottom: 30px
+				@media(max-width: $mobile)
+					height: 500px
+				@media(max-width: $extraSmallMobile)	
+					bottom: 50px	
+	&__container
+		height: 100%
+	&__wrapper
+		@include flexCenter(flex-end, flex-end)
+		height: inherit
+		&_specialists
+			gap: 45px
+			@media(max-width: $tablet)
+				flex-direction: column
+				gap: 10px
+	&__left
+		position: relative
+		@include flexCenter
+		width: 600px
+		height: 475px
+		@media(max-width: $smallNotebook) 	
+			height: 300px
+		@media(max-width: $tablet)
+			width: 100%		
+			height: 400px
+		@media(max-width: $pocketBook)
+			height: 500px
+		@media(max-width: $mobile)
+			height: 550px		
+		&_specialists_top
+			@media(max-width: $tablet)
+				display: none	
+	&__img
+		position: absolute
+		left: -100px
+		width: 450px
+		height: 475px
+		@media(max-width: $desktop)
+			width: 400px
+			height: 420px
+			top: 60px
+			left: -15px
+		@media(max-width: $notebook)
+			width: 380px
+			height: 400px	
+		@media(max-width: $smallNotebook)	
+			width: 330px
+			height: 350px
+			top: -65px
+			left: 65px
+		@media(max-width: 1200px)	
+			width: 300px
+			left: -30px	
+		@media(max-width: $tablet)
+			top: 0
+			left: 75px	
+		@media(max-width: $mediumTablet)
+			width: 280px
+			height: 320px	
+			top: 40px
+			left: 0
+		@media(max-width: $pocketBook)
+			top: 165px
+			width: 250px
+			height: 280px	
+		@media(max-width: $smallPocketBook)	
+			top: 200px
+			height: 265px	
+		@media(max-width: $mobile)	
+			top: 285px
+			width: 220px
+			height: 230px
+		@media(max-width: $smallMobile)	
+			top: 305px
+			width: 200px
+			height: 210px
+		&_left
+			position: absolute
+			top: 50px
+			left: 65px
+			@media(max-width: $desktop)
+				top: 100px
+				left: 150px		
+			@media(max-width: $smallNotebook)	
+				top: -20px
+				left: 250px
+			@media(max-width: 1200px)	
+				left: 140px	
+			@media(max-width: $tablet)
+				top: 50px
+				left: 250px	
+			@media(max-width: $mediumTablet)
+				top: 80px
+				left: 160px	
+			@media(max-width: $pocketBook)
+				top: 210px
+				left: 140px
+			@media(max-width: $smallPocketBook)	
+				top: 240px	
+			@media(max-width: $mobile)
+				top: 320px	
+				left: 120px
+			@media(max-width: $smallMobile)	
+				top: 335px	
+				left: 110px
+	&__bottom
+		@include flexCenter($alignItems: flex-end)
+		&_specialists
+			width: 1100px
+			@media(max-width: $desktop)
+				width: 65%
+			@media(max-width: 1200px)	
+				width: 90%	
+			@media(max-width: $tablet)	
+				width: 70%
+				margin: 0 auto
+			@media(max-width: $mediumTablet)
+				width: 100%	
+		&_specialists_top
+			@media(max-width: $tablet)
+				display: none				
+	&__description
+		width: 1100px
+		filter: drop-shadow(3px 3px 3px $mainShadow)
+		@media(max-width: $smallNotebook)
+			width: 100%	
+		@media(max-width: $mediumTablet)
+			width: 80%	
+		@media(max-width: $smallTablet)		
+			width: 90%
+		@media(max-width: $pocketBook)	
+			width: 100%
+		&_specialists_bottom	
+			@media(max-width: $pocketBook)
+				width: 90%	
+	&__text
+		width: 720px
+		@media(max-width: $smallDesktop)
+			width: 60%
+		@media(max-width: $mediumTablet)	
+			width: 100%
+		@media(max-width: $tablet)
+			width: 60%	
+		@media(max-width: $mediumTablet)
+			width: 100%		
+		@media(max-width: $pocketBook)	
+			width: 85%
+		@media(max-width: $smallPocketBook)	
+			width: 100%	
+		&_specialists
+			@media(max-width: $smallNotebook)
+				width: 90%
+			@media(max-width: $tablet)	
+				width: 600px
+			@media(max-width: $mediumTablet)	
+				width: 100%	
+	&__btns
+		@include flexCenter(flex-start)
+		gap: 10px
+		@media(max-width: $smallPocketBook)	
+			margin-top: 32px
+			flex-direction: column
+			gap: 20px
+
+
+	

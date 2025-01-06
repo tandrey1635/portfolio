@@ -1,0 +1,53 @@
+@import 'sass/_variables'
+@import 'sass/_reset'
+@import 'sass/_mixins'
+
+
+/* Прижать подвал Флекс */
+.wrapper
+    @include flexReverseAxios  
+
+html, body
+    height: 100%
+    font-family: $mainFont
+    scroll-behavior: smooth
+
+main 
+    flex: 1 0 auto  
+    min-height: 100vh
+
+section
+    min-height: 600px
+
+footer
+    flex: 0 0 auto    
+
+
+          
+.container
+    max-width: $lg
+    padding: 0 15px
+    margin: 0 auto
+
+
+@import 'sass/titles' 
+@import 'sass/nav'   
+@import 'sass/breadcrumbs'   
+@import 'sass/promo' 
+@import 'sass/news-announce' 
+@import 'sass/specialists/about' 
+@import 'sass/specialists/features' 
+@import 'sass/specialists/where-buy'  
+@import 'sass/where-buy/where-buy' 
+@import 'sass/where-buy/uteka-map'   
+@import 'sass/where-buy/buy-online'  
+@import 'sass/news/news'
+@import 'sass/news-page/news-page'
+@import 'sass/specialists/literature'   
+@import 'sass/warning'   
+@import 'sass/footer'  
+@import 'sass/specialists/modal'  
+@import 'sass/btns'  
+
+
+  

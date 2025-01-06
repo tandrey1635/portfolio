@@ -43,6 +43,7 @@ import PersonalAccountCrmPreview from '../img/devices-img/personal-account-crm/p
 /* import SpecializedMachineryPreview from '../img/devices-img/specialized-machinery/preview.webp' */
 import GrindingPreview from '../img/devices-img/grinding/preview.webp'
 import DataUniversePreview from '../img/devices-img/datauniverse/preview.webp'
+import DevilamPreview from '../img/devices-img/devilam/preview.webp'
 /* import Avexima from '../img/devices-img/avexima/preview.webp' */
 import ArtificiailIntelligencePreview from '../img/devices-img/artificiail-intelligence/preview.webp'
 import MedicalHospitalPreview from '../img/devices-img/medical-hospital(Grid)/preview.webp'
@@ -74,6 +75,7 @@ const PersonalAccountUrl = '/portfolio/myprojects/html-css/personal-account/inde
 const PersonalAccountCrmUrl = '/portfolio/myprojects/html-css/personal-account-crm/index.html'
 const GrindingUrl = '/portfolio/myprojects/html-css/grinding/index.html'
 const DataUniverseUrl = '/portfolio/myprojects/html-css/datauniverse/index.html'
+const DevilamUrl = '/portfolio/myprojects/html-css/devilam/index.html'
 const AveximaUrl = '/portfolio/myprojects/html-css/avexima/index.html'
 const ArtificiailIntelligenceUrl = '/portfolio/myprojects/html-css/artificiail-intelligence/index.html'
 const MedicalHospitalUrl = '/portfolio/myprojects/html-css/medical-hospital(Grid)/index.html'
@@ -89,6 +91,7 @@ const PersonalAccountGitHub = 'https://github.com/tandrey1635/personal-account'
 const PersonalAccountCrmGitHub = 'https://github.com/tandrey1635/personal-account-crm'
 const GrindingGitHub = 'https://github.com/tandrey1635/grinding'
 const DataUniverseGitHub = 'https://github.com/tandrey1635/datauniverse'
+const DevilamGitHub = 'https://github.com/tandrey1635/devilam'
 const AveximaGitHub = 'https://github.com/tandrey1635/avexima'
 const ArtificiailIntelligenceGitHub = 'https://github.com/tandrey1635/artificiail-intelligence'
 const MedicalHospitalGitHub = 'https://github.com/tandrey1635/medical-hospital-Grid-'
@@ -337,41 +340,43 @@ const Main = () =>  {
                     <div className="portfolio__wrapper">
                     {all ?  
                         <>
-                            <PortfolioItems project subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
-                            <PortfolioItems project subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'}/>
-                            <PortfolioItems project subheader={'Такси'} text={'Сайт такси Psd макет'} alt={'Такси'} preview={TaxiPreview} url={TaxiUrl} github={TaxiGitHub}/>
-                            <PortfolioItems project subheader={'Автозапчасти'} text={'Сайт автозапчастей Psd макет'} alt={'Автозапчасти'} preview={AutopartPreview} url={AutopartUrl} github={AutopartGitHub}/>
-                            <PortfolioItems project subheader={'Ставки на спорт'} text={'Личный кабинет ставки на спорт'} alt={'Ставки на спорт'} preview={SportBettingsPreview} url={SportBettingsUrl} github={SportBettingsGitHub}/>
-                            <PortfolioItems project subheader={'Рабочий аккаунт'} text={'Личный кабинет сотрудника'} alt={'Рабочий аккаунт'} preview={PersonalAccountPreview} url={PersonalAccountUrl} github={PersonalAccountGitHub}/>
-                            <PortfolioItems project subheader={'Личный кабинет'} text={'Личный кабинет CRM система'} alt={'Личный кабинет'} preview={PersonalAccountCrmPreview} url={PersonalAccountCrmUrl} github={PersonalAccountCrmGitHub}/>
-                            <PortfolioItems project subheader={'Аренда спецтехники'} text={'Сайт аренды спецтехники нативный js'} alt={'Аренда спецтехники'}/>
-                            <PortfolioItems project subheader={'Заточка инструментов'} text={'Коммерческий проект на фрилансе'} alt={'Заточка инструментов'} preview={GrindingPreview} url={GrindingUrl} github={GrindingGitHub}/>
-                            <PortfolioItems project subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
-                            <PortfolioItems project subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
-                            <PortfolioItems project subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
-                            <PortfolioItems project subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
-                            <PortfolioItems project subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>  
+                            <PortfolioItems project html subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
+                            <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'}/>
+                            <PortfolioItems project html subheader={'Такси'} text={'Сайт такси Psd макет'} alt={'Такси'} preview={TaxiPreview} url={TaxiUrl} github={TaxiGitHub}/>
+                            <PortfolioItems project html subheader={'Автозапчасти'} text={'Сайт автозапчастей Psd макет'} alt={'Автозапчасти'} preview={AutopartPreview} url={AutopartUrl} github={AutopartGitHub}/>
+                            <PortfolioItems project html subheader={'Ставки на спорт'} text={'Личный кабинет ставки на спорт'} alt={'Ставки на спорт'} preview={SportBettingsPreview} url={SportBettingsUrl} github={SportBettingsGitHub}/>
+                            <PortfolioItems project html subheader={'Рабочий аккаунт'} text={'Личный кабинет сотрудника'} alt={'Рабочий аккаунт'} preview={PersonalAccountPreview} url={PersonalAccountUrl} github={PersonalAccountGitHub}/>
+                            <PortfolioItems project html subheader={'Личный кабинет'} text={'Личный кабинет CRM система'} alt={'Личный кабинет'} preview={PersonalAccountCrmPreview} url={PersonalAccountCrmUrl} github={PersonalAccountCrmGitHub}/>
+                            <PortfolioItems project html subheader={'Аренда спецтехники'} text={'Сайт аренды спецтехники нативный js'} alt={'Аренда спецтехники'}/>
+                            <PortfolioItems project html subheader={'Заточка инструментов'} text={'Коммерческий проект на фрилансе'} alt={'Заточка инструментов'} preview={GrindingPreview} url={GrindingUrl} github={GrindingGitHub}/>
+                            <PortfolioItems project html subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
+                            <PortfolioItems project html subheader={'Девилам'} text={'Cайт компании https://vitaminde.ru/'} alt={'Девилам'} preview={DevilamPreview} url={DevilamUrl} github={DevilamGitHub}/>
+                            <PortfolioItems project html subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
+                            <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
+                            <PortfolioItems project html subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
+                            <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>  
                             <PortfolioItems project subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
                         </>
                     : null}    
                     {html ?  
                         <>
-                            <PortfolioItems project subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
-                            <PortfolioItems project subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'}/>
-                            <PortfolioItems project subheader={'Такси'} text={'Сайт такси Psd макет'} alt={'Такси'} preview={TaxiPreview} url={TaxiUrl} github={TaxiGitHub}/>
-                            <PortfolioItems project subheader={'Автозапчасти'} text={'Сайт автозапчастей Psd макет'} alt={'Автозапчасти'} url={AutopartUrl} preview={AutopartPreview} github={AutopartGitHub}/>
-                            <PortfolioItems project subheader={'Ставки на спорт'} text={'Личный кабинет ставки на спорт'} alt={'Ставки на спорт'} preview={SportBettingsPreview} url={SportBettingsUrl} github={SportBettingsGitHub}/>
-                            <PortfolioItems project subheader={'Рабочий аккаунт'} text={'Личный кабинет сотрудника'} alt={'Рабочий аккаунт'} preview={PersonalAccountPreview} url={PersonalAccountUrl} github={PersonalAccountGitHub}/>
-                            <PortfolioItems project subheader={'Личный кабинет'} text={'Личный кабинет CRM система'} alt={'Личный кабинет'} preview={PersonalAccountCrmPreview} url={PersonalAccountCrmUrl} github={PersonalAccountCrmGitHub}/>
-                            <PortfolioItems project subheader={'Аренда спецтехники'} text={'Сайт аренды спецтехники нативный js'} alt={'Аренда спецтехники'}/>
-                            <PortfolioItems project subheader={'Заточка инструментов'} text={'Коммерческий проект на фрилансе'} alt={'Заточка инструментов'} preview={GrindingPreview} url={GrindingUrl} github={GrindingGitHub}/>
-                            <PortfolioItems project subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
-                            <PortfolioItems project subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
-                            <PortfolioItems project subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
-                            <PortfolioItems project subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
+                            <PortfolioItems project html subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
+                            <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'}/>
+                            <PortfolioItems project html subheader={'Такси'} text={'Сайт такси Psd макет'} alt={'Такси'} preview={TaxiPreview} url={TaxiUrl} github={TaxiGitHub}/>
+                            <PortfolioItems project html subheader={'Автозапчасти'} text={'Сайт автозапчастей Psd макет'} alt={'Автозапчасти'} url={AutopartUrl} preview={AutopartPreview} github={AutopartGitHub}/>
+                            <PortfolioItems project html subheader={'Ставки на спорт'} text={'Личный кабинет ставки на спорт'} alt={'Ставки на спорт'} preview={SportBettingsPreview} url={SportBettingsUrl} github={SportBettingsGitHub}/>
+                            <PortfolioItems project html subheader={'Рабочий аккаунт'} text={'Личный кабинет сотрудника'} alt={'Рабочий аккаунт'} preview={PersonalAccountPreview} url={PersonalAccountUrl} github={PersonalAccountGitHub}/>
+                            <PortfolioItems project html subheader={'Личный кабинет'} text={'Личный кабинет CRM система'} alt={'Личный кабинет'} preview={PersonalAccountCrmPreview} url={PersonalAccountCrmUrl} github={PersonalAccountCrmGitHub}/>
+                            <PortfolioItems project html subheader={'Аренда спецтехники'} text={'Сайт аренды спецтехники нативный js'} alt={'Аренда спецтехники'}/>
+                            <PortfolioItems project html subheader={'Заточка инструментов'} text={'Коммерческий проект на фрилансе'} alt={'Заточка инструментов'} preview={GrindingPreview} url={GrindingUrl} github={GrindingGitHub}/>
+                            <PortfolioItems project html subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
+                            <PortfolioItems project html subheader={'Девилам'} text={'Cайт компании https://vitaminde.ru/'} alt={'Девилам'} preview={DevilamPreview} url={DevilamUrl} github={DevilamGitHub}/>
+                            <PortfolioItems project html subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
+                            <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
+                            <PortfolioItems project html subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
                         </>
                     : null}    
-                        {bootstrap ? <PortfolioItems project subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>: null}     
+                        {bootstrap ? <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>: null}     
                         {javascript ?  <PortfolioItems project subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>: null} 
                     </div>
                 </div>

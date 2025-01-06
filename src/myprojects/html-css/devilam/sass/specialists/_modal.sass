@@ -1,0 +1,73 @@
+.modal
+	display: none
+	width: 100%
+	height: 100vh
+	position: fixed
+	top: 0
+	left: 50%
+	z-index: 20
+	transform: translateX(-50%)
+	background: $modalBg
+	&__active
+		display: block	
+	&__dialog
+		position: fixed
+		top: 0
+		left: 50%
+		z-index: 20
+		transform: translateX(-50%)
+		@include flexVerticalCenter
+		flex-direction: column
+		padding: 50px
+		top: 35vh
+		width: 850px
+		min-height: 320px
+		height: auto
+		background: $defaultBg
+		border-radius: 15px
+		box-shadow: 0px 0px 20px $defaultShadow
+		@media(max-width: $tablet)
+			width: 85%
+		@media(max-width: $mediumTablet)
+			width: 95%
+		@media(max-width: $pocketBook)		
+			padding: 50px 32px
+			top: 30vh
+		@media(max-width: $mobile)
+			top: 25vh
+		@media(max-width: $mediumMobile)	
+			padding: 32px		
+		@media(max-width: $extraSmallMobile)	
+			padding: 25px			
+		&__active
+			top: 40px	
+	&__close
+		@include flexCenter
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		box-shadow: 0 0 10px $defaultShadow
+		background: $defaultBg
+		@include absoluteRight(20px, 20px)
+		cursor: pointer
+		&__photo
+			width: 50%
+			height: 50%
+	&__info
+		margin-top: 25px
+		display: none
+		@media(max-width: $desktop)
+			height: 300px
+			overflow-y: auto
+		@media(max-width: $pocketBook)	
+			height: 250px
+		&__active
+			display: block	
+	&__btns
+		margin-top: 25px
+		@include flexHorisontalCenter
+		gap: 10px
+
+	
+
+@import './_custom-scroll'	
