@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useReducer, useState } from 'react'
 
 import './tecnology-menu/TechnologyMenu.sass'
 import './portfolio-items/portfolio-wrapper/PortfolioWrapper.sass'
@@ -102,12 +102,6 @@ const WowGitHub = 'https://github.com/tandrey1635/wow'
 
 
 
-
-
-
-
-
-
 const Main = () =>  {
     const technology = {
         html: '95%',
@@ -117,39 +111,75 @@ const Main = () =>  {
         photoshop: '50%',
     }
 
-    const [all, setAll] = useState(true)
-    const [html, setHtml] = useState(false)
-    const [bootstrap, setBootstrap] = useState(false)
-    const [javascript, setJavascript] = useState(false)
+    
+    const ititialState ={
+        all: true,
+        html: false,
+        bootstrap: false,
+        javascript: false,
+        react: false
+    }    
 
+    const changeTabs = (state, action)=>{
+        switch(action.type){
+            case 'all': 
+                return {
+                    all: true,
+                    html: false,
+                    bootstrap: false,
+                    javascript: false,
+                    react: false
+                }
+             
+            case 'html': 
+                return {
+                    all: false,
+                    html: true,
+                    bootstrap: false,
+                    javascript: false,
+                    react: false
+                }    
 
-    const showAllTabs = () =>{
-        setAll(true)
-        setHtml(false)
-        setBootstrap(false)
-        setJavascript(false)
+            case 'bootstrap': 
+                return {
+                    all: false,
+                    html: false,
+                    bootstrap: true,
+                    javascript: false,
+                    react: false
+                }
+
+            case 'javascript': 
+                return {
+                    all: false,
+                    html: false,
+                    bootstrap: false,
+                    javascript: true,
+                    react: false
+                }
+            
+            case 'react': 
+                return {
+                    all: false,
+                    html: false,
+                    bootstrap: false,
+                    javascript: false,
+                    react: true
+                }    
+
+            default:
+                return {
+                    all: false,
+                    html: false,
+                    bootstrap: false,
+                    javascript: false,
+                    react: false
+                }    
+        }
+        
     }
-
-    const showHtmlTabs = () =>{
-        setAll(false)
-        setHtml(true)
-        setBootstrap(false)
-        setJavascript(false)
-    }
-
-    const showBootstrapTabs = () =>{
-        setAll(false)
-        setHtml(false)
-        setBootstrap(true)
-        setJavascript(false)
-    }
-
-    const showJavascriptTabs = () =>{
-        setAll(false)
-        setHtml(false)
-        setBootstrap(false)
-        setJavascript(true)
-    }
+    
+    const [tabs, dispatch] = useReducer(changeTabs, ititialState)
 
     
     return(
@@ -336,9 +366,9 @@ const Main = () =>  {
             <section id="portfolio" className="portfolio">
                 <div className="container">
                     <SectionHeader title={'Мои работы'}/>
-                    <PortfolioTabs all={showAllTabs} html={showHtmlTabs} bootstrap={showBootstrapTabs} javascript={showJavascriptTabs} />
+                    <PortfolioTabs tabAll={tabs.all} tabHtml={tabs.html} tabBootstrap={tabs.bootstrap} tabJavascript={tabs.javascript} tabReact={tabs.react} all={()=>dispatch({type: 'all'})} html={()=>dispatch({type: 'html'})} bootstrap={()=>dispatch({type: 'bootstrap'})} javascript={()=>dispatch({type: 'javascript'})} react={()=>dispatch({type: 'react'})}/>
                     <div className="portfolio__wrapper">
-                    {all ?  
+                    {tabs.all ?
                         <>
                             <PortfolioItems project html subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
                             <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'}/>
@@ -358,7 +388,7 @@ const Main = () =>  {
                             <PortfolioItems project subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
                         </>
                     : null}    
-                    {html ?  
+                    {tabs.html ?  
                         <>
                             <PortfolioItems project html subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
                             <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'}/>
@@ -376,8 +406,9 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
                         </>
                     : null}    
-                        {bootstrap ? <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>: null}     
-                        {javascript ?  <PortfolioItems project subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>: null} 
+                        {tabs.bootstrap ? <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/> : null}     
+                        {tabs.javascript ?  <PortfolioItems project subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/> : null} 
+                        {tabs.react ? <PortfolioItems project subheader={'В разработке'} text={'В разработке'} alt={'В разработке'}/> : null}
                     </div>
                 </div>
             </section>
@@ -385,7 +416,7 @@ const Main = () =>  {
                 <div className="container">
                     <SectionHeader title={'Обо мне'}/>
                     <PortfolioText text={'Меня зовут Андрей мне 33 года. Заинтересовался Frontend разработкой и начал изучать верстку в октябре 2020 года. Прошел 6 курсов верстки, 4 курса по JavaScript и один по Bootstrap 4 на различных платформах. На данный момент изучаю React, в дальнейшем планирую изучать Typescript.'}/>
-                    <PortfolioTabs all={showAllTabs} html={showHtmlTabs} bootstrap={showBootstrapTabs} javascript={showJavascriptTabs}/>
+                    <PortfolioTabs />
                     <div className="about__wrapper">
                         <PortfolioItems subheader={'Начальный курс верстки Udemy'} text={'Курс базовой верстки для новичков с нуля от Udemy'} alt={'Курс базовой верстки для новичков с нуля от Udemy'} preview={HtmlSertificates} />
                         <PortfolioItems subheader={'Интерактивный курс верстки Geekbrains'} text={'Курс базовой верстки от Geekbrains'} alt={'Курс базовой верстки от Geekbrains'} preview={HtmlSertificatesGeeckbrains} />
