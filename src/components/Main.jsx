@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 import './tecnology-menu/TechnologyMenu.sass'
 import './portfolio-items/portfolio-wrapper/PortfolioWrapper.sass'
@@ -23,6 +23,7 @@ import Bitrix from './tecnology-img/Bitrix'
 import Bitrix24 from './tecnology-img/Bitrix24'
 import Javascript from './tecnology-img/Javascript'
 import Jquery from './tecnology-img/Jquery'
+import React from './tecnology-img/React'
 import Uix from './tecnology-img/Uix'
 import Photoshop from './tecnology-img/Photoshop'
 import Figma from './tecnology-img/Figma'
@@ -153,7 +154,6 @@ const Main = () =>  {
     
     return(
         <>
-
             <section id="home" className="promo">
                 <div className="container">
                     <Promo/>
@@ -179,9 +179,9 @@ const Main = () =>  {
                     />
                     <TechnologyItems style={{'width': technology.javascript}} percent={technology.javascript} img={
                         <>
-                            <Javascript/>  
                             <Jquery/>      
-                                
+                            <Javascript/>  
+                            <React/>    
                         </>}
                     />
                     <TechnologyItems style={{'width': technology.photoshop}} percent={technology.photoshop} img={
