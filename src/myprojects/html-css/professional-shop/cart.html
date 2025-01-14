@@ -3,272 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Professional Shop</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-
+<div class="wrapper">
   
     <header class="header center">
+        <div class="header__left">
+            <a class="header__logo" href="index.html">
+                <img class="header__photo" src="img/logo.svg" alt="logo">
+            </a>
+            <a class="header__search" href="#">
+                <img class="header__photo" src="img/search.svg" alt="search">
+            </a>
+        </div>
 
-        <nav class="top__left__img">
-
-            <a class="logo__link" href="index.html"> <img class="logo" src="img/logo.svg" alt="top__logo"></a>
-            <a href="#"><img src="img/search.svg" alt="search"></a>
-
-        </nav>
-
-        
-
-
-        <nav class="top__right__img">
-
-        
-          
-               
+        <div class="header__right">
+            <div class="header__menu">
+                <img class="header__photo" src="img/menu.svg" alt="menu">    
+            </div>
+            <a class="header__account" href="registration.html">
+                <img class="header__photo" src="img/account.svg" alt="account">
+            </a>
+            <a class="header__trash" href="#">
+                <img class="header__photo" src="img/trash.svg" alt="trash">
+            </a>
+        </div>
+                
+        <div class="header__popup">
+            <div class="header__popup__close">
+                <svg class="header__popup__close__img" width="16" height="16" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z"/>
+                </svg>
+            </div>      
+            <h2 class="header__popup__header">menu</h2>
             
-           
-               
-                
-                    
-                
-                    
+            <ul class="header__popup__menu">
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="catalog.html">Catalog</a>
+                </li>  
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="registration.html">Registration</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="#">Shopping cart</a>
+                </li> 
+            </ul>                
+            <h2 class="header__popup__header header__popup__header_color">man</h2>    
 
-  <input type="checkbox" id="menu" class="main__menu">
+            <ul class="header__popup__menu">         
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">Accessories</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">Bags</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">Denim</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">T-Shirts</a>
+                </li>
+            </ul>     
 
+            <h2 class="header__popup__header header__popup__header_color">woman</h2>   
 
-   <div class="popup">
-     <label class="label__close" for="menu">
-                    
-     <svg class="close" width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
-     <path d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z"/>
-                            </svg>
-                       
-        
-                      
-        
-        
-                        </label>
-                        <h3 class="main__menu__main__header">MENU</h3>
+            <ul class="header__popup__menu">
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">Accessories</a>
+                </li>
+                <li class="main__menu__list__list">
+                    <a class="header__popup__link" href="product.html">Jackets & Coats</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">Polos</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__list" href="product.html">T-Shirts</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">Shirts</a>
+                </li>
+            </ul>    
 
+            <h2 class="header__popup__header header__popup__header_color">kids</h2>  
 
-                    <ul class="top__right__menu_mod">
-
-                   <li class="top__right__list_mod">   <a class="top__right__link_mod" href="registration.html">Account</a></li> 
-
-
-
-                <li class="top__right__list_mod"> <a class="top__right__link_mod" href="cart.html">Shopping cart</a></li> 
-
-
-                    </ul>
-                    
-
-                    <h3 class="main__menu__heading">MAN</h3>
-
-                        <ul class="main__menu__list">
-        
-                        
-                            <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">Accessories</a></li>
-                            <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">Bags</a></li>
-                            <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">Denim</a></li>
-                            <li class="main__menu__list__list"> <a class="main__menu__link__list" href="#">T-Shirts</a></li>
-                        </ul>
-
-                        <h3 class="main__menu__heading"> WOMAN</h3>
-
-                            <ul class="main__menu__list">
-                                
-        
-                                <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">Accessories</a>
-                                </li>
-                                <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">Jackets &
-                                        Coats</a></li>
-                                <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">Polos</a></li>
-                                <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">T-Shirts</a></li>
-                                <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">Shirts</a></li>
-                            </ul>
-
-                            <h3 class="main__menu__heading">KIDS</h3>
-
-                                <ul class="main__menu__list">
-        
-                                  
-                                    <li class="main__menu__list__list"><a class="main__menu__link__list"
-                                            href="#">Accessories</a></li>
-                                    <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">Jackets &
-                                            Coats</a></li>
-                                    <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">Polos</a></li>
-                                    <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">T-Shirts</a>
-                                    </li>
-                                    <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">Shirts</a>
-                                    </li>
-                                    <li class="main__menu__list__list"><a class="main__menu__link__list" href="#">Bags</a></li>
-        
-                                </ul>
-        
-                        
-        
-                    
-                    
-                 
-                </div>
-
-
-                    <label class="label__menu" for="menu">
-                <img class="menu" src="img/menu.svg" alt="menu">
-                
-            </label>
-                
-
-         
-            
-            
-                
-              
-        
-                
-                  
-            
-
-
-
-
-
-
-
-          
-        <a class="top__right__link_account" href="registration.html"><img class="account" src="img/account.svg" alt="account"></a>
-        <a class="top__right__link" href="cart.html"><img class="trash" src="img/trash.svg" alt="trash"></a>
-    </nav>
-               
-          
-
-
-
-
-
-
-
-
-
-
-
+            <ul class="header__popup__menu">                
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">Accessories</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">Jackets & Coats</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">Polos</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">T-Shirts</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">Shirts</a>
+                </li>
+                <li class="header__popup__list">
+                    <a class="header__popup__link" href="product.html">Bags</a>
+                </li>
+            </ul>           
+        </div>
     </header>
 
+    <main class="main">
 
-
-<section class="bottom  bottom__cart center">
-    <h1 class="bottom__heading">SHOPPING CART</h1>
-</section>
-
-<section class="shoping__cart center">
-    <div class="shoping__cart__left">
-        <div class="cart">
-            <div class="cart__img">
-                <img class="cart__photo" src="img/cart/cart-1.jpg" alt="cart">
+        <section class="breadcrumbs center">
+            <div class="breadcrumbs__left">
+                <h1 class="breadcrumbs__heading">shopping cart</h1>
             </div>
-            <div class="cart__info">
-                <a href="product.html" class="cart__heading">MANGO PEOPLE</a>
-                <form action="#">
-                    <button class="cart__close" type="button">
-                        <svg class="cart__svg" width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"/>
-                        </svg>
-                    </button>    
+        </section>
+
+        <section class="shopping__cart center">
+            <div class="shopping__cart__left">
+                <form action="#" class="shopping__cart__form">  
+                    <div class="shopping__cart__item">
+                        <div class="shopping__cart__img">
+                            <img class="shopping__cart__photo" src="img/cart/cart-1.jpg" alt="cart">
+                        </div>
+                        <div class="shopping__cart__info">
+                            <a href="product.html" class="shopping__cart__header">mango people</a>
+                            <div class="shopping__cart__close">
+                                <svg class="shopping__cart__svg" width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"/>
+                                </svg>
+                            </div>   
+                            <h2 class="shopping__cart__heading">T-shirt</h2>  
+                            <div class="shopping__cart__descriptions">
+                                <p class="shopping__cart__text">Price: <span class="shopping__cart__text_color">$300</span></p>
+                                <p class="shopping__cart__text">Color: Red</p>
+                                <p class="shopping__cart__text">Size: Xl</p>
+                                <p class="shopping__cart__text">Quantity:<input class="shopping__cart__quantity" type="number" min="1" max="99" value="2"></p>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="shopping__cart__item">
+                        <div class="shopping__cart__img">
+                            <img class="shopping__cart__photo" src="img/cart/cart-2.jpg" alt="cart">
+                        </div>
+                        <div class="shopping__cart__info">
+                            <a href="product.html" class="shopping__cart__header">mango people</a>
+                            <div class="shopping__cart__close">
+                                <svg class="shopping__cart__svg" width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"/>
+                                </svg>
+                            </div>
+                            <h2 class="shopping__cart__heading">T-shirt</h2>  
+                            <div class="shopping__cart__descriptions">
+                                <p class="shopping__cart__text">Price: <span class="shopping__cart__text_color">$300</span></p>
+                                <p class="shopping__cart__text">Color: Red</p>
+                                <p class="shopping__cart__text">Size: Xl</p>
+                                <p class="shopping__cart__text">Quantity:<input class="shopping__cart__quantity" type="number" min="1" max="99" value="2"></p>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="shopping__cart__block__buttons">
+                        <button type="reset" class="shopping__cart__button">clear Shopping cart</button>
+                        <button type="submit" class="shopping__cart__button">continue shopping</button>
+                    </div>   
                 </form>
-                    <h3 class="cart__heading__bottom">T-SHIRT</h3>
-                    <p class="cart__text">Price:<span class="cart__color__text">$300</span></p>
-                    <p class="cart__text">Color: Red </p>
-                    <p class="cart__text">Size: Xl</p>
-                    <p class="cart__text">Quantity:<input class="cart__shop" type="number" min="1" max="99" value="2"></p>
-            </div> 
-        </div>
-        <div class="cart">
-            <div class="cart__img">
-                <img class="cart__photo" src="img/cart/cart-2.jpg" alt="cart">
             </div>
-            <div class="cart__info">
-                <a href="product.html" class="cart__heading">MANGO PEOPLE</a>
-                <form action="#">
-                    <button class="cart__close" type="button">
-                        <svg class="cart__svg" width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"/>
-                        </svg>
-                    </button>
+
+            <div class="shopping__cart__right">
+                <div class="shopping__cart__right__top">
+                    <h2 class="shopping__cart__right__header">shipping address</h2>
+                    <form class="shopping__cart__right__form" action="#">
+                        <div class="shopping__cart__right__form__top">
+                            <input class="shopping__cart__input" placeholder="Bangladesh" type="text" required>
+                            <input class="shopping__cart__input" placeholder="State" type="text" required>
+                            <input class="shopping__cart__input" placeholder="Postcode / Zip" type="text" required>
+                            <button type="button" class="shopping__cart__button__right">get a quote</button>
+                        </div>    
+
+                        <div class="shopping__cart__right__form__bottom">
+                            <h3 class="shopping__cart__heading__buy">sub total
+                                <span class="shopping__cart__heading__buy_span">$900</span>
+                            </h3>
+                            <h3 class="shopping__cart__heading__total__buy">grand total 
+                                <span class="shopping__cart__heading__total__buy_span">$900</span>
+                            </h3>
+                            <hr class="shopping__cart__hr">  
+                            <button type="submit" class="shopping__cart__button__buy">proceeed to checkout</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature center">
+            <div class="feature__content center">
+                <div class="feature__items">
+                    <div class="feature__img">
+                        <img class="feature__icon" src="img/delivery.svg" alt="delivery">
+                    </div>
+                    <div class="feature__descriptions">
+                        <h3 class="feature__heading">Free Delivery</h3>
+                        <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models</p>
+                    </div>
+                </div>
+                <div class="feature__items">
+                    <div class="feature__img">
+                        <img class="feature__icon" src="img/discount.svg" alt="discount">
+                    </div>
+                    <div class="feature__descriptions">
+                        <h3 class="feature__heading">Sales & discounts</h3>
+                        <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models</p>
+                    </div>
+                </div>
+                <div class="feature__items">
+                    <div class="feature__img">
+                        <img class="feature__icon" src="img/quality.svg" alt="quality">
+                    </div>
+                    <div class="feature__descriptions">
+                        <h3 class="feature__heading">Quality assurance</h3>
+                        <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+                    
+        <section class="subscribe center">
+            <div class="subscribe__info">
+                <div class="subscribe__img">
+                    <img class="subscribe__photo" src="img/photo-subscribe.png" alt="photo subscribe">
+                </div>
+                <p class="subscribe__text"> <q> Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum</q></p>
+            </div>
+            <div class="subscribe__address">
+                <div class="subscribe__descriptions">
+                    <h3 class="subscribe__heading">Subscribe</h3>
+                    <p class="subscribe__text_form">for our newletter and promotion</p>
+                </div>
+                <form action="#" class="subscribe__form">
+                    <input class="subscribe__field" type="email" placeholder="Enter Your Email" required>
+                    <button class="subscribe__button" type="submit">Subscribe</button>
                 </form>
-                    <h3 class="cart__heading__bottom">T-SHIRT</h3>
-                    <p class="cart__text">Price: <span class="cart__color__text">$300</span></p>
-                    <p class="cart__text">Color: Red </p>
-                    <p class="cart__text">Size: Xl</p>
-                    <p class="cart__text">Quantity: <input class="cart__shop" type="number" min="1" max="99" value="2"></p>
             </div>
-        </div>
-        <form action="#" class="cart__button" >  
-            <button type="button" class="cart__button__left">CLEAR SHOPPING CART</button>
-            <button type="submit" class="cart__button__left">CONTINUE SHOPPING</button>
-        </form>
-    </div>
+        </section>
+        
+    </main>    
 
-    <div class="shoping__cart__right">
-        <div class="shoping__cart__right__form">
-                <h3 class="heading__card__right">SHIPPING ADRESS</h3>
-            <form class="right__form" action="#">
-                <p><input class="cart__name__country" placeholder="Bangladesh" type="text" required></p>
-                <p><input class="cart__country" placeholder="State" type="text" required></p>
-                <p><input class="cart__country" placeholder="Postcode / Zip" type="text" required></p>
-                <button type="submit" class="cart__button__right">GET A QUOTE</button>
-            </form>
+    <footer class="footer center">
+        <div class="footer__left">
+            <p class="footer__copyright">&copy; 2021 Brand All Rights Reserved.</p>
         </div>
-        <form class="cart__buy__form" action="#" >
-            <div class="cart__buy">
-                <h3 class="heading__buy">SUB TOTAL <span class="sub-total__buy">$900</span></h3>
-                <h3 class="heading__total__buy">GRAND TOTAL <span class="total__buy"> $900</span></h3>
-                    <hr class="hr__cart">  
-                <button type="submit" class="buy">PROCEED TO CHECKOUT</button>
-            </div>
-        </form>
-    </div>
-</section>
-            
-<section class="subscribe center">
-    <div class="subscribe__info">
-        <div class="comments">
-            <img class="subscribe__img__comments" src="img/Photo-subscribe.png" alt="Photo subscribe">
+        <div class="footer__right">
+            <a class="footer__link" href="https://www.facebook.com/">
+                <svg class="footer__img" width="11" height="16" viewBox="0 0 11 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.08836 8.28L9.50686 5.61602H6.89022V3.88729C6.89022 3.15847 7.25574 2.44806 8.42765 2.44806H9.61722V0.179975C9.61722 0.179975 8.53772 0 7.50561 0C5.35073 0 3.9422 1.27593 3.9422 3.5857V5.61602H1.54688V8.28H3.9422V14.72H6.89022V8.28H9.08836Z"/>
+                </svg>
+            </a>
+            <a class="footer__link" href="https://www.instagram.com/">            
+                <svg class="footer__img" width="17" height="16" viewBox="0 0 14.9082 14.8789" fill="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M7.45 3.62C5.33 3.62 3.63 5.32 3.63 7.43C3.63 9.55 5.33 11.25 7.45 11.25C9.57 11.25 11.27 9.55 11.27 7.43C11.27 5.32 9.57 3.62 7.45 3.62ZM7.45 9.91C6.08 9.91 4.97 8.8 4.97 7.43C4.97 6.07 6.08 4.95 7.45 4.95C8.82 4.95 9.93 6.07 9.93 7.43C9.93 8.8 8.82 9.91 7.45 9.91ZM12.32 3.46C12.32 3.96 11.92 4.35 11.43 4.35C10.93 4.35 10.54 3.96 10.54 3.46C10.54 2.97 10.94 2.57 11.43 2.57C11.92 2.57 12.32 2.97 12.32 3.46ZM14.85 4.37C14.79 3.17 14.52 2.12 13.65 1.25C12.77 0.38 11.72 0.11 10.52 0.05C9.29 -0.02 5.6 -0.02 4.37 0.05C3.18 0.1 2.13 0.38 1.25 1.25C0.38 2.12 0.11 3.17 0.05 4.36C-0.02 5.59 -0.02 9.27 0.05 10.5C0.1 11.69 0.38 12.75 1.25 13.62C2.13 14.49 3.18 14.76 4.37 14.82C5.6 14.89 9.29 14.89 10.52 14.82C11.72 14.77 12.77 14.49 13.65 13.62C14.52 12.75 14.79 11.69 14.85 10.5C14.92 9.27 14.92 5.59 14.85 4.37ZM13.26 11.82C13 12.47 12.5 12.97 11.84 13.24C10.86 13.62 8.53 13.53 7.45 13.53C6.37 13.53 4.03 13.62 3.06 13.24C2.41 12.98 1.9 12.48 1.64 11.82C1.25 10.84 1.34 8.52 1.34 7.43C1.34 6.35 1.25 4.02 1.64 3.05C1.9 2.4 2.4 1.9 3.06 1.63C4.04 1.25 6.37 1.33 7.45 1.33C8.53 1.33 10.87 1.25 11.84 1.63C12.5 1.89 13 2.4 13.26 3.05C13.65 4.03 13.56 6.35 13.56 7.43C13.56 8.52 13.65 10.84 13.26 11.82Z" fill="" fill-opacity="1.000000" fill-rule="nonzero"/>
+                </svg>
+            </a>
+            <a class="footer__link" href="https://www.pinterest.ru/">
+                <svg class="footer__img" width="13" height="16" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.74032 0.203125C3.55564 0.203125 0.408203 2.34063 0.408203 5.8C0.408203 8 1.63738 9.25 2.38233 9.25C2.68963 9.25 2.86655 8.3875 2.86655 8.14375C2.86655 7.85313 2.13091 7.23438 2.13091 6.025C2.13091 3.5125 4.03055 1.73125 6.4889 1.73125C8.60271 1.73125 10.1671 2.94062 10.1671 5.1625C10.1671 6.82187 9.50597 9.93437 7.36422 9.93437C6.59133 9.93437 5.93018 9.37187 5.93018 8.56563C5.93018 7.38438 6.74963 6.24062 6.74963 5.02187C6.74963 2.95312 3.835 3.32812 3.835 5.82812C3.835 6.35313 3.90018 6.93437 4.13298 7.4125C3.70463 9.26875 2.82931 12.0344 2.82931 13.9469C2.82931 14.5375 2.91311 15.1188 2.96899 15.7094C3.07452 15.8281 3.02175 15.8156 3.18316 15.7563C4.74757 13.6 4.69169 13.1781 5.3994 10.3562C5.78119 11.0875 6.76826 11.4812 7.55046 11.4812C10.8469 11.4812 12.3275 8.24688 12.3275 5.33125C12.3275 2.22813 9.66427 0.203125 6.74032 0.203125Z"/>
+                </svg>
+            </a>
+            <a class="footer__link" href="https://twitter.com/">
+                <svg class="footer__img" width="17" height="14" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.417 3.74052C14.427 3.88264 14.427 4.0248 14.427 4.16692C14.427 8.50192 11.1498 13.4969 5.15986 13.4969C3.31448 13.4969 1.60022 12.9588 0.158203 12.0248C0.420396 12.0552 0.67247 12.0654 0.944752 12.0654C2.46741 12.0654 3.8691 11.5476 4.98843 10.6644C3.5565 10.6339 2.3565 9.68977 1.94305 8.39027C2.14475 8.4207 2.34642 8.44102 2.5582 8.44102C2.85063 8.44102 3.14308 8.40039 3.41533 8.32936C1.92291 8.02477 0.803551 6.70498 0.803551 5.11108V5.07048C1.23715 5.31414 1.74139 5.46642 2.2758 5.4867C1.39849 4.89786 0.823727 3.8928 0.823727 2.75573C0.823727 2.14661 0.985041 1.58823 1.26741 1.10092C2.87077 3.09077 5.28086 4.39023 7.98334 4.53239C7.93293 4.28873 7.90266 4.03495 7.90266 3.78114C7.90266 1.97402 9.35477 0.501953 11.1598 0.501953C12.0976 0.501953 12.9446 0.897891 13.5396 1.53748C14.2757 1.39536 14.9816 1.12123 15.6068 0.745609C15.3648 1.50705 14.8505 2.14664 14.1749 2.5527C14.8304 2.48167 15.4657 2.29889 16.0505 2.04511C15.6069 2.69483 15.0522 3.27348 14.417 3.74052Z"/>
+                </svg>
+            </a>
         </div>
-            <p class="subscribe__text"> <q> Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum</q></p>
-    </div>
-    <div class="subscribe__adress">
-        <div class="subscribe__descriptions">
-            <h3 class="subscribe__heading">SUBSCRIBE</h3>
-            <p class="subscribe__text__text">FOR OUR NEWLETTER AND PROMOTION</p>
-        </div>
-        <form action="#" class="subscribe__form">
-            <input class="subscribe__field" type="email" placeholder="Enter Your Email" required>
-            <button class="subscribe__button" type="submit">Subscribe</button>
-        </form>
-    </div>
-</section>
+    </footer>
+</div>
 
-<footer class="footer center">
-    <div class="copyright">
-        <p class="text__copyright"> &copy;2021 Brand All Rights Reserved.</p>
-    </div>
-    <div class="social__icon">
-        <a class="footer__link" href="https://www.facebook.com/"><svg class="svg__img" width="11" height="16" viewBox="0 0 11 16" xmlns="http://www.w3.org/2000/svg">
-        <path d="M9.08836 8.28L9.50686 5.61602H6.89022V3.88729C6.89022 3.15847 7.25574 2.44806 8.42765 2.44806H9.61722V0.179975C9.61722 0.179975 8.53772 0 7.50561 0C5.35073 0 3.9422 1.27593 3.9422 3.5857V5.61602H1.54688V8.28H3.9422V14.72H6.89022V8.28H9.08836Z"/></svg></a>
-        <a class="footer__link" href="https://www.instagram.com/"><svg class="svg__img" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8.13897 4.68159C6.02383 4.68159 4.31774 6.38491 4.31774 8.49663C4.31774 10.6083 6.02383 12.3117 8.13897 12.3117C10.2541 12.3117 11.9602 10.6083 11.9602 8.49663C11.9602 6.38491 10.2541 4.68159 8.13897 4.68159ZM8.13897 10.9769C6.77211 10.9769 5.65467 9.8646 5.65467 8.49663C5.65467 7.12866 6.76878 6.01636 8.13897 6.01636C9.50915 6.01636 10.6233 7.12866 10.6233 8.49663C10.6233 9.8646 9.50583 10.9769 8.13897 10.9769ZM13.0078 4.52554C13.0078 5.02026 12.6087 5.41538 12.1165 5.41538C11.621 5.41538 11.2252 5.01694 11.2252 4.52554C11.2252 4.03413 11.6243 3.63569 12.1165 3.63569C12.6087 3.63569 13.0078 4.03413 13.0078 4.52554ZM15.5386 5.42866C15.4821 4.23667 15.2094 3.18081 14.3347 2.31089C13.4634 1.44097 12.4058 1.1687 11.2119 1.10894C9.9814 1.03921 6.29321 1.03921 5.0627 1.10894C3.8721 1.16538 2.81453 1.43765 1.93987 2.30757C1.06522 3.17749 0.795836 4.23335 0.735973 5.42534C0.666134 6.65386 0.666134 10.3361 0.735973 11.5646C0.79251 12.7566 1.06522 13.8124 1.93987 14.6824C2.81453 15.5523 3.86878 15.8246 5.0627 15.8843C6.29321 15.9541 9.9814 15.9541 11.2119 15.8843C12.4058 15.8279 13.4634 15.5556 14.3347 14.6824C15.2061 13.8124 15.4788 12.7566 15.5386 11.5646C15.6085 10.3361 15.6085 6.65718 15.5386 5.42866ZM13.949 12.8828C13.6895 13.5335 13.1874 14.0349 12.5322 14.2972C11.5511 14.6857 9.22314 14.596 8.13897 14.596C7.05479 14.596 4.72348 14.6824 3.74573 14.2972C3.09389 14.0382 2.59171 13.5369 2.32898 12.8828C1.93987 11.9033 2.02967 9.57905 2.02967 8.49663C2.02967 7.41421 1.9432 5.08667 2.32898 4.1105C2.58838 3.45972 3.09056 2.95835 3.74573 2.69604C4.7268 2.30757 7.05479 2.39722 8.13897 2.39722C9.22314 2.39722 11.5545 2.310 89 12.5322 2.69604C13.184 2.95503 13.6862 3.4564 13.949 4.1105C14.3381 5.08999 14.2483 7.41421 14.2483 8.49663C14.2483 9.57905 14.3381 11.9066 13.949 12.8828Z"/></svg></a>
-        <a class="footer__link" href="https://www.pinterest.ru/"><svg class="svg__img" width="13" height="16" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6.74032 0.203125C3.55564 0.203125 0.408203 2.34063 0.408203 5.8C0.408203 8 1.63738 9.25 2.38233 9.25C2.68963 9.25 2.86655 8.3875 2.86655 8.14375C2.86655 7.85313 2.13091 7.23438 2.13091 6.025C2.13091 3.5125 4.03055 1.73125 6.4889 1.73125C8.60271 1.73125 10.1671 2.94062 10.1671 5.1625C10.1671 6.82187 9.50597 9.93437 7.36422 9.93437C6.59133 9.93437 5.93018 9.37187 5.93018 8.56563C5.93018 7.38438 6.74963 6.24062 6.74963 5.02187C6.74963 2.95312 3.835 3.32812 3.835 5.82812C3.835 6.35313 3.90018 6.93437 4.13298 7.4125C3.70463 9.26875 2.82931 12.0344 2.82931 13.9469C2.82931 14.5375 2.91311 15.1188 2.96899 15.7094C3.07452 15.8281 3.02175 15.8156 3.18316 15.7563C4.74757 13.6 4.69169 13.1781 5.3994 10.3562C5.78119 11.0875 6.76826 11.4812 7.55046 11.4812C10.8469 11.4812 12.3275 8.24688 12.3275 5.33125C12.3275 2.22813 9.66427 0.203125 6.74032 0.203125Z"/></svg></a>
-        <a class="footer__link" href="https://twitter.com/"><svg class="svg__img" width="17" height="14" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14.417 3.74052C14.427 3.88264 14.427 4.0248 14.427 4.16692C14.427 8.50192 11.1498 13.4969 5.15986 13.4969C3.31448 13.4969 1.60022 12.9588 0.158203 12.0248C0.420396 12.0552 0.67247 12.0654 0.944752 12.0654C2.46741 12.0654 3.8691 11.5476 4.98843 10.6644C3.5565 10.6339 2.3565 9.68977 1.94305 8.39027C2.14475 8.4207 2.34642 8.44102 2.5582 8.44102C2.85063 8.44102 3.14308 8.40039 3.41533 8.32936C1.92291 8.02477 0.803551 6.70498 0.803551 5.11108V5.07048C1.23715 5.31414 1.74139 5.46642 2.2758 5.4867C1.39849 4.89786 0.823727 3.8928 0.823727 2.75573C0.823727 2.14661 0.985041 1.58823 1.26741 1.10092C2.87077 3.09077 5.28086 4.39023 7.98334 4.53239C7.93293 4.28873 7.90266 4.03495 7.90266 3.78114C7.90266 1.97402 9.35477 0.501953 11.1598 0.501953C12.0976 0.501953 12.9446 0.897891 13.5396 1.53748C14.2757 1.39536 14.9816 1.12123 15.6068 0.745609C15.3648 1.50705 14.8505 2.14664 14.1749 2.5527C14.8304 2.48167 15.4657 2.29889 16.0505 2.04511C15.6069 2.69483 15.0522 3.27348 14.417 3.74052Z"/></svg></a>
-    </div>
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>

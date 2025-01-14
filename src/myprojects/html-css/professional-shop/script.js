@@ -1,10 +1,13 @@
-const popup = document.querySelector('.popup')
-const promoBlock = document.querySelector('.promo')
+const btnMenu = document.querySelector('.header__menu')
+const closeBtn = document.querySelector('.header__popup__close')
+const popup = document.querySelector('.header__popup')
 
-const mainMenu = document.querySelector('.main__menu')
 
 
-if (popup.style.display == 'block') {
-    promoBlock.style.background = 'rgba(0, 0, 0, 0.5)'
-    document.body.style.overflow = 'hidden'
-}
+btnMenu.addEventListener('click', ()=>{
+	popup.classList.toggle('header__popup__active')
+})
+
+closeBtn.addEventListener('click', ()=>{
+	popup.classList.remove('header__popup__active')
+})

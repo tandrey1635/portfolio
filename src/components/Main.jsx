@@ -35,7 +35,7 @@ import Webpack from '../img/icons/webpack.png'
 
 /* Фото Проектов */
 import LandingPagePreview from '../img/devices-img/landing-page/preview.webp'
-/* import InternetShopPreview from '../img/devices-img/shop/preview.webp' */
+import ProfessionalShopPreview from '../img/devices-img/professional-shop/preview.webp'
 import TaxiPreview from '../img/devices-img/taxi/preview.webp'
 import AutopartPreview from '../img/devices-img/autopart/preview.webp'
 import SportBettingsPreview from '../img/devices-img/sport-bettings/preview.webp'
@@ -69,6 +69,7 @@ import BitrixSertificateAdmin24 from '../img/sertificates/bitrix-admin-24.jpg'
 /* Проекты ссылки на сайт */
 /* Путь к файлу проекта где  /portfolio/ - начальная папка на хостинге */
 const LandingPageUrl = '/portfolio/myprojects/html-css/landing-page/index.html'
+const ProfessionalShopUrl = '/portfolio/myprojects/html-css/professional-shop/index.html'
 const TaxiUrl = '/portfolio/myprojects/html-css/taxi/index.html'
 const AutopartUrl = '/portfolio/myprojects/html-css/autopart/index.html'
 const SportBettingsUrl = '/portfolio/myprojects/html-css/sport-bettings/index.html'
@@ -85,6 +86,7 @@ const WowUrl = '/portfolio/myprojects/bootstrap/wow/index.html'
 
 /* Проекты ссылки на GitHub */
 const LandingPageGitHub = 'https://github.com/tandrey1635/landing-page'
+const ProfessionalShopGitHub = 'https://github.com/tandrey1635/professional-shop'
 const TaxiGitHub = 'https://github.com/tandrey1635/taxi'
 const AutopartGitHub = 'https://github.com/tandrey1635/autopart'
 const SportBettingsGitHub = 'https://github.com/tandrey1635/sport-bettings'
@@ -371,7 +373,7 @@ const Main = () =>  {
                     {tabs.all ?
                         <>
                             <PortfolioItems project html subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
-                            <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'}/>
+                            <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'} preview={ProfessionalShopPreview} url={ProfessionalShopUrl} github={ProfessionalShopGitHub}/>
                             <PortfolioItems project html subheader={'Такси'} text={'Сайт такси Psd макет'} alt={'Такси'} preview={TaxiPreview} url={TaxiUrl} github={TaxiGitHub}/>
                             <PortfolioItems project html subheader={'Автозапчасти'} text={'Сайт автозапчастей Psd макет'} alt={'Автозапчасти'} preview={AutopartPreview} url={AutopartUrl} github={AutopartGitHub}/>
                             <PortfolioItems project html subheader={'Ставки на спорт'} text={'Личный кабинет ставки на спорт'} alt={'Ставки на спорт'} preview={SportBettingsPreview} url={SportBettingsUrl} github={SportBettingsGitHub}/>
@@ -391,7 +393,7 @@ const Main = () =>  {
                     {tabs.html ?  
                         <>
                             <PortfolioItems project html subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
-                            <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'}/>
+                            <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'} preview={ProfessionalShopPreview} url={ProfessionalShopUrl} github={ProfessionalShopGitHub}/>
                             <PortfolioItems project html subheader={'Такси'} text={'Сайт такси Psd макет'} alt={'Такси'} preview={TaxiPreview} url={TaxiUrl} github={TaxiGitHub}/>
                             <PortfolioItems project html subheader={'Автозапчасти'} text={'Сайт автозапчастей Psd макет'} alt={'Автозапчасти'} url={AutopartUrl} preview={AutopartPreview} github={AutopartGitHub}/>
                             <PortfolioItems project html subheader={'Ставки на спорт'} text={'Личный кабинет ставки на спорт'} alt={'Ставки на спорт'} preview={SportBettingsPreview} url={SportBettingsUrl} github={SportBettingsGitHub}/>
