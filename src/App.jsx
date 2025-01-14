@@ -1,4 +1,3 @@
-
 import Wrapper from  './components/Wrapper'
 import Aside from './components/aside/Aside'
 import Main from  './components/Main'

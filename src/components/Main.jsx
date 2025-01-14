@@ -415,10 +415,10 @@ const Main = () =>  {
                     <PortfolioText text={'Меня зовут Андрей мне 33 года. Заинтересовался Frontend разработкой и начал изучать верстку в октябре 2020 года. Прошел 6 курсов верстки, 4 курса по JavaScript и один по Bootstrap 4 на различных платформах. На данный момент изучаю React, в дальнейшем планирую изучать Typescript.'}/>
                     <PortfolioTabs />
                     <div className="about__wrapper">
-                        <PortfolioItems subheader={'Начальный курс верстки Udemy'} text={'Курс базовой верстки для новичков с нуля от Udemy'} alt={'Курс базовой верстки для новичков с нуля от Udemy'} preview={HtmlSertificates} />
-                        <PortfolioItems subheader={'Интерактивный курс верстки Geekbrains'} text={'Курс базовой верстки от Geekbrains'} alt={'Курс базовой верстки от Geekbrains'} preview={HtmlSertificatesGeeckbrains} />
-                        <PortfolioItems subheader={'Профессиональная верстка Geekbrains'} text={'Курс профессиональной верстки от Geekbrains'} alt={'Курс профессиональной верстки от Geekbrains'} preview={HtmlProfessionalSertificatesGeeckbrains}/>
-                        <PortfolioItems subheader={'Freecodecamp'} text={'Responsive Web Design'} alt={'Responsive Web Design'} preview={FreecodecampSertificates}/>
+                        <PortfolioItems html subheader={'Начальный курс верстки Udemy'} text={'Курс базовой верстки для новичков с нуля от Udemy'} alt={'Курс базовой верстки для новичков с нуля от Udemy'} preview={HtmlSertificates} />
+                        <PortfolioItems html subheader={'Интерактивный курс верстки Geekbrains'} text={'Курс базовой верстки от Geekbrains'} alt={'Курс базовой верстки от Geekbrains'} preview={HtmlSertificatesGeeckbrains} />
+                        <PortfolioItems html subheader={'Профессиональная верстка Geekbrains'} text={'Курс профессиональной верстки от Geekbrains'} alt={'Курс профессиональной верстки от Geekbrains'} preview={HtmlProfessionalSertificatesGeeckbrains}/>
+                        <PortfolioItems html subheader={'Freecodecamp'} text={'Responsive Web Design'} alt={'Responsive Web Design'} preview={FreecodecampSertificates}/>
                         <PortfolioItems subheader={'Web разработчик от Ивана Петриченко'} text={'Курс Web разработчик по верстке и немного Jquery от Ивана Петриченко'} preview={WebDeveloperSertificates}/>
                         <PortfolioItems subheader={'Bootstrap Beonmax'} text={'Курс от Beonmax по Bootstrap'} alt={'Курс от Beonmax по Bootstrap'} preview={BootstrapSertificates}/>
                         <PortfolioItems subheader={'JavaScript Geekbrains'} text={'Курс от Geekbrains по базовому JavaScript'} alt={'Курс от Geekbrains по базовому JavaScript'} preview={JavascriptBaseSertificatesGeekbrains}/>

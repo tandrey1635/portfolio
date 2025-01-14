@@ -14,13 +14,21 @@ const PortfolioItems = (props) => {
                     <img data-fancybox="galleryLandingPage" data-src="img/devices-img/landing-page/320.webp" alt={props.alt}/> */}
                 </a>
             </div>
-            <div className="portfolio__descriptions">
+            <div className={props.html ? "portfolio__descriptions portfolio__descriptions_html" : "portfolio__descriptions"}>
                 <h2 className="portfolio__subheader">{props.subheader}</h2>
                 <p className="portfolio__text">{props.text}</p>
             </div>
             <div className="portfolio__block__link">
-                <a href={props.url} className="portfolio__link" target="_blank">Ссылка</a>
-                {props.project && <a href={props.github} className="portfolio__link" target="_blank">GitHub</a> }
+                <a 
+                    href={props.url} 
+                    className={props.html ? "portfolio__link portfolio__link_html" : "portfolio__link"} target="_blank">Ссылка
+                </a>
+                {props.project && 
+                    <a 
+                        href={props.github} 
+                        className={props.html ? "portfolio__link portfolio__link_html" : "portfolio__link"} target="_blank">GitHub
+                    </a>
+                }
             </div>
         </article>
     )
