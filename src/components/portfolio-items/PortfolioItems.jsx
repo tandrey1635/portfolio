@@ -19,10 +19,12 @@ const PortfolioItems = (props) => {
                 <p className="portfolio__text">{props.text}</p>
             </div>
             <div className="portfolio__block__link">
-                <a 
-                    href={props.url} 
-                    className={props.html ? "portfolio__link portfolio__link_html" : "portfolio__link"} target="_blank">Ссылка
-                </a>
+                {props.project && 
+                    <a 
+                        href={props.url} 
+                        className={props.html ? "portfolio__link portfolio__link_html" : "portfolio__link"} target="_blank">Ссылка
+                    </a>
+                }    
                 {props.project && 
                     <a 
                         href={props.github} 
