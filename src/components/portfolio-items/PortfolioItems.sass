@@ -1,5 +1,6 @@
 .portfolio
     &__items
+        position: relative
         display: flex
         padding: 15px 10px
         width: 325px
@@ -11,13 +12,15 @@
         border-radius: 20px     
         transition: 1s     
         filter: contrast(1.2) drop-shadow(0px 5px 5px #000) 
+        background: linear-gradient(140deg, #fff, transparent 60%, #000)
         &::before
             position: absolute
             content: ''
-            width: 325px
-            height: 510px
-            border-radius: 20px  
+            width: inherit
+            min-height: inherit
+            border-radius: inherit  
             z-index: -1
+            background: linear-gradient(140deg, #fff, transparent 60%, #000)
         &_html   
             background: linear-gradient(140deg, #ff4500, transparent 60%, #1e90ff)
             &::before
@@ -43,26 +46,22 @@
         border: 5px solid #000      
     &__descriptions 
         flex-grow: 1   
+        background: linear-gradient(140deg, #fff, transparent 60%, #000)
+        -webkit-background-clip: text!important
+        -webkit-text-fill-color: transparent
+        text-shadow: 1px 1px 1px #0000008c
+        filter: brightness(1.5) drop-shadow(0 5px 5px #000)
         &_html 
             background: linear-gradient(140deg, #ff4500, #1e90ff)
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent
-            text-shadow: 1px 1px 1px #0000008c
-            filter: brightness(1.5) drop-shadow(0 5px 5px #000)
         &_bootstrap
-            background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f) 
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent
-            text-shadow: 1px 1px 1px #0000008c
-            filter: brightness(1.5) drop-shadow(0 5px 5px #000)     
+            background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f)     
     &__subheader     
         font-size: 22px
     &__subheader, &__text
         margin-top: 20px
         text-align: center 
     &__text
-        font-size: 18px
-        color: #fff    
+        font-size: 18px  
     &__block__link
         margin-top: 20px
         display: flex
@@ -77,38 +76,31 @@
         align-items: center
         width: 150px
         height: 30px
-        background: #00a3e1
-        color: #fff
         border-radius: 20px
         text-align: center
         font-size: 18px   
-        text-shadow: 0 5px 5px #000
-        filter: drop-shadow(0 5px 5px #000)
+        text-shadow: 3px 3px 3px #0000008c
+        background: linear-gradient(140deg, #fff, transparent 60%, #000)
+        -webkit-background-clip: text!important
+        -webkit-text-fill-color: transparent
+        filter: brightness(1.2) drop-shadow(0 5px 5px #000)
+        border: 1px solid rgba(255, 255, 255, 0.5)
         &:hover
             opacity: .8
         &::before
             position: absolute
             content: ''
-            width: 150px
-            height: 30px
-            border-radius: 20px
+            width: inherit
+            height: inherit
+            border-radius: inherit
+            background: linear-gradient(140deg, #fff, transparent 60%, #000)
             filter: drop-shadow(0 5px 5px #000)
         &_html
             background: linear-gradient(140deg, #ff4500,  #1e90ff) 
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent
-            text-shadow: 3px 3px 3px #0000008c
-            filter: brightness(1.2) drop-shadow(0 5px 5px #000)
-            border: 1px solid rgba(255, 255, 255, 0.5)
             &::before
                 background: linear-gradient(140deg, #ff4500, transparent 60%, #1e90ff) 
         &_bootstrap
             background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f)  
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent
-            text-shadow: 3px 3px 3px #0000008c
-            filter: brightness(1.2) drop-shadow(0 5px 5px #000)
-            border: 1px solid rgba(255, 255, 255, 0.5)
             &::before
                 background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f)  
 

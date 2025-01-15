@@ -109,7 +109,7 @@ const Main = () =>  {
         html: '95%',
         css: '95%', 
         bitrix: '50%',
-        javascript: '80%',
+        javascript: '85%',
         photoshop: '50%',
     }
 
@@ -429,7 +429,6 @@ const Main = () =>  {
                     </div>
                 </div>
             </section>
-           
         </>
     )
 }
