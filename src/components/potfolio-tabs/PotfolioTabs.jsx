@@ -5,7 +5,7 @@ const PortfolioTabs = (props) => {
 
     return(
         <ul className="portfolio__tabs">
-            <li className="portfolio__tabs__items" onClick={props.all}>
+            <li className="portfolio__tabs__items portfolio__tabs__items_all" onClick={props.all}>
                 <span className={props.tabAll ? "portfolio__tabs__items_span portfolio__tabs__items_span_all" : "portfolio__tabs__items_span"}>Все</span>
             </li>
             <li className="portfolio__tabs__items portfolio__tabs__items_html" onClick={props.html}>
@@ -15,10 +15,10 @@ const PortfolioTabs = (props) => {
                 <span className={props.tabBootstrap ? "portfolio__tabs__items_span portfolio__tabs__items_span_bootstrap" : "portfolio__tabs__items_span"}>Bootstrap</span>
             </li>
             <li className="portfolio__tabs__items portfolio__tabs__items_javascript" onClick={props.javascript}>
-                <span className={props.tabJavascript ? "portfolio__tabs__items_span portfolio__tabs__items_span_javascript" : "portfolio__tabs__items_span"}>Js</span>
+                <span className={props.tabJavascript ? "portfolio__tabs__items_span portfolio__tabs__items_span_javascript" : "portfolio__tabs__items_span"}>Js/Ts</span>
             </li>
             <li className="portfolio__tabs__items portfolio__tabs__items_react" onClick={props.react}>
-                <span className={props.tabReact ? "portfolio__tabs__items_span portfolio__tabs__items_span_react" : "portfolio__tabs__items_span"}>React</span>
+                <span className={props.tabReact ? "portfolio__tabs__items_span portfolio__tabs__items_span_react" : "portfolio__tabs__items_span"}>React/Redux</span>
             </li>
         </ul>
     )

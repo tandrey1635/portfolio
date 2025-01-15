@@ -7,6 +7,8 @@ const PortfolioItems = (props) => {
         <article 
             className={props.html ? "portfolio__items portfolio__items_html" 
             : props.bootstrap ? "portfolio__items portfolio__items_bootstrap" 
+            : props.javascript ? "portfolio__items portfolio__items_javascript"
+            : props.react ? "portfolio__items portfolio__items_react" 
             : "portfolio__items"}>
             <div className="portfolio__img">
                 <a href={props.preview} className="portfolio__preview__photo-link" data-fancybox="galleryLandingPage">
@@ -20,6 +22,8 @@ const PortfolioItems = (props) => {
             <div 
                 className={props.html ? "portfolio__descriptions portfolio__descriptions_html" 
                 : props.bootstrap ? "portfolio__descriptions portfolio__descriptions_bootstrap"
+                : props.javascript ? "portfolio__descriptions portfolio__descriptions_javascript"
+                : props.react ? "portfolio__descriptions portfolio__descriptions_react" 
                 : "portfolio__descriptions"}>
                 <h2 className="portfolio__subheader">{props.subheader}</h2>
                 <p className="portfolio__text">{props.text}</p>
@@ -30,6 +34,8 @@ const PortfolioItems = (props) => {
                         href={props.url} 
                         className={props.html ? "portfolio__link portfolio__link_html" 
                         : props.bootstrap ? "portfolio__link portfolio__link_bootstrap" 
+                        : props.javascript ? "portfolio__link portfolio__link_javascript"
+                        : props.react ? "portfolio__link portfolio__link_react" 
                         : "portfolio__link"} target="_blank">Ссылка
                     </a>
                 }    
@@ -37,7 +43,9 @@ const PortfolioItems = (props) => {
                     <a 
                         href={props.github} 
                         className={props.html ? "portfolio__link portfolio__link_html" 
-                        : props.bootstrap ? "portfolio__link portfolio__link_bootstrap" 
+                        : props.bootstrap ? "portfolio__link portfolio__link_bootstrap"
+                        : props.javascript ? "portfolio__link portfolio__link_javascript"
+                        : props.react ? "portfolio__link portfolio__link_react" 
                         : "portfolio__link"} target="_blank">GitHub
                     </a>
                 }

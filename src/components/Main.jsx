@@ -404,8 +404,8 @@ const Main = () =>  {
                         </>
                     : null}    
                         {tabs.bootstrap ? <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/> : null}     
-                        {tabs.javascript ?  <PortfolioItems project subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/> : null} 
-                        {tabs.react ? <PortfolioItems project subheader={'В разработке'} text={'В разработке'} alt={'В разработке'}/> : null}
+                        {tabs.javascript ?  <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/> : null} 
+                        {tabs.react ? <PortfolioItems project react subheader={'В разработке'} text={'В разработке'} alt={'В разработке'}/> : null}
                     </div>
                 </div>
             </section>
@@ -421,7 +421,7 @@ const Main = () =>  {
                         <PortfolioItems html subheader={'Freecodecamp'} text={'Responsive Web Design'} alt={'Responsive Web Design'} preview={FreecodecampSertificates}/>
                         <PortfolioItems subheader={'Web разработчик от Ивана Петриченко'} text={'Курс Web разработчик по верстке и немного Jquery от Ивана Петриченко'} preview={WebDeveloperSertificates}/>
                         <PortfolioItems bootstrap subheader={'Bootstrap Beonmax'} text={'Курс от Beonmax по Bootstrap'} alt={'Курс от Beonmax по Bootstrap'} preview={BootstrapSertificates}/>
-                        <PortfolioItems subheader={'JavaScript Geekbrains'} text={'Курс от Geekbrains по базовому JavaScript'} alt={'Курс от Geekbrains по базовому JavaScript'} preview={JavascriptBaseSertificatesGeekbrains}/>
+                        <PortfolioItems javascript subheader={'JavaScript Geekbrains'} text={'Курс от Geekbrains по базовому JavaScript'} alt={'Курс от Geekbrains по базовому JavaScript'} preview={JavascriptBaseSertificatesGeekbrains}/>
                         <PortfolioItems subheader={'1С-Битрикс: Управление сайтом'} text={'Контент менеджер'} alt={'1С-Битрикс: Управление сайтом - Контент менеджер'} preview={BitrixSertificateContentManager}/>
                         <PortfolioItems subheader={'1С-Битрикс: Управление сайтом'} text={'Продвижение сайта и Маркетинг'} alt={'1С-Битрикс: Управление сайтом - Продвижение сайта и Маркетинг'} preview={BitrixSertificateSeoAndMarketing}/>
                         <PortfolioItems subheader={'1С-Битрикс: Управление сайтом'} text={'Администратор. Базовый'} alt={'1С-Битрикс: Управление сайтом - Администратор. Базовый'} preview={BitrixSertificateAdmin}/>
