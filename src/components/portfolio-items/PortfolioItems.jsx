@@ -4,7 +4,10 @@ const PortfolioItems = (props) => {
 
     
     return(
-        <article className={props.html ? "portfolio__items portfolio__items_html" : props.bootstrap ? "portfolio__items portfolio__items_bootstrap" : "portfolio__items"}>
+        <article 
+            className={props.html ? "portfolio__items portfolio__items_html" 
+            : props.bootstrap ? "portfolio__items portfolio__items_bootstrap" 
+            : "portfolio__items"}>
             <div className="portfolio__img">
                 <a href={props.preview} className="portfolio__preview__photo-link" data-fancybox="galleryLandingPage">
                     <img className="portfolio__photo" src={props.preview} alt={props.alt}/>
@@ -14,7 +17,10 @@ const PortfolioItems = (props) => {
                     <img data-fancybox="galleryLandingPage" data-src="img/devices-img/landing-page/320.webp" alt={props.alt}/> */}
                 </a>
             </div>
-            <div className={props.html ? "portfolio__descriptions portfolio__descriptions_html" : "portfolio__descriptions"}>
+            <div 
+                className={props.html ? "portfolio__descriptions portfolio__descriptions_html" 
+                : props.bootstrap ? "portfolio__descriptions portfolio__descriptions_bootstrap"
+                : "portfolio__descriptions"}>
                 <h2 className="portfolio__subheader">{props.subheader}</h2>
                 <p className="portfolio__text">{props.text}</p>
             </div>
@@ -22,13 +28,17 @@ const PortfolioItems = (props) => {
                 {props.project && 
                     <a 
                         href={props.url} 
-                        className={props.html ? "portfolio__link portfolio__link_html" : "portfolio__link"} target="_blank">Ссылка
+                        className={props.html ? "portfolio__link portfolio__link_html" 
+                        : props.bootstrap ? "portfolio__link portfolio__link_bootstrap" 
+                        : "portfolio__link"} target="_blank">Ссылка
                     </a>
                 }    
                 {props.project && 
                     <a 
                         href={props.github} 
-                        className={props.html ? "portfolio__link portfolio__link_html" : "portfolio__link"} target="_blank">GitHub
+                        className={props.html ? "portfolio__link portfolio__link_html" 
+                        : props.bootstrap ? "portfolio__link portfolio__link_bootstrap" 
+                        : "portfolio__link"} target="_blank">GitHub
                     </a>
                 }
             </div>

@@ -17,12 +17,15 @@
             width: 325px
             height: 510px
             border-radius: 20px  
-            background: linear-gradient(140deg, #ff4500, transparent 60%, #1e90ff)
             z-index: -1
         &_html   
             background: linear-gradient(140deg, #ff4500, transparent 60%, #1e90ff)
+            &::before
+                background: linear-gradient(140deg, #ff4500, transparent 60%, #1e90ff)
         &_bootstrap
-            background: linear-gradient(120deg, #8400ff 50%, #2c2d2f 50%)       
+            background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f)     
+            &::before    
+                background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f)  
         &_js
             background: linear-gradient(120deg, #00bfff  50%, #2c2d2f 50%) 
             background: linear-gradient(120deg, #ff4500 50%, #ff0 50%)  
@@ -46,6 +49,12 @@
             -webkit-text-fill-color: transparent
             text-shadow: 1px 1px 1px #0000008c
             filter: brightness(1.5) drop-shadow(0 5px 5px #000)
+        &_bootstrap
+            background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f) 
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            text-shadow: 1px 1px 1px #0000008c
+            filter: brightness(1.5) drop-shadow(0 5px 5px #000)     
     &__subheader     
         font-size: 22px
     &__subheader, &__text
@@ -83,7 +92,6 @@
             width: 150px
             height: 30px
             border-radius: 20px
-            background: linear-gradient(140deg, #ff4500, transparent 60%, #1e90ff) 
             filter: drop-shadow(0 5px 5px #000)
         &_html
             background: linear-gradient(140deg, #ff4500,  #1e90ff) 
@@ -92,6 +100,18 @@
             text-shadow: 3px 3px 3px #0000008c
             filter: brightness(1.2) drop-shadow(0 5px 5px #000)
             border: 1px solid rgba(255, 255, 255, 0.5)
+            &::before
+                background: linear-gradient(140deg, #ff4500, transparent 60%, #1e90ff) 
+        &_bootstrap
+            background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f)  
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            text-shadow: 3px 3px 3px #0000008c
+            filter: brightness(1.2) drop-shadow(0 5px 5px #000)
+            border: 1px solid rgba(255, 255, 255, 0.5)
+            &::before
+                background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f)  
+
             
            
             
