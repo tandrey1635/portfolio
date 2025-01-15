@@ -382,7 +382,7 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
                             <PortfolioItems project html subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
                             <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>  
-                            <PortfolioItems project subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
+                            <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
                         </>
                     : null}    
                     {tabs.html ?  
@@ -415,17 +415,17 @@ const Main = () =>  {
                     <PortfolioText text={'Меня зовут Андрей мне 33 года. Заинтересовался Frontend разработкой и начал изучать верстку в октябре 2020 года. Прошел 6 курсов верстки, 4 курса по JavaScript и один по Bootstrap 4 на различных платформах. На данный момент изучаю React, в дальнейшем планирую изучать Typescript.'}/>
                     <PortfolioTabs />
                     <div className="about__wrapper">
-                        <PortfolioItems html subheader={'Начальный курс верстки Udemy'} text={'Курс базовой верстки для новичков с нуля от Udemy'} alt={'Курс базовой верстки для новичков с нуля от Udemy'} preview={HtmlSertificates} />
-                        <PortfolioItems html subheader={'Интерактивный курс верстки Geekbrains'} text={'Курс базовой верстки от Geekbrains'} alt={'Курс базовой верстки от Geekbrains'} preview={HtmlSertificatesGeeckbrains} />
-                        <PortfolioItems html subheader={'Профессиональная верстка Geekbrains'} text={'Курс профессиональной верстки от Geekbrains'} alt={'Курс профессиональной верстки от Geekbrains'} preview={HtmlProfessionalSertificatesGeeckbrains}/>
-                        <PortfolioItems html subheader={'Freecodecamp'} text={'Responsive Web Design'} alt={'Responsive Web Design'} preview={FreecodecampSertificates}/>
-                        <PortfolioItems subheader={'Web разработчик от Ивана Петриченко'} text={'Курс Web разработчик по верстке и немного Jquery от Ивана Петриченко'} preview={WebDeveloperSertificates}/>
-                        <PortfolioItems bootstrap subheader={'Bootstrap Beonmax'} text={'Курс от Beonmax по Bootstrap'} alt={'Курс от Beonmax по Bootstrap'} preview={BootstrapSertificates}/>
-                        <PortfolioItems javascript subheader={'JavaScript Geekbrains'} text={'Курс от Geekbrains по базовому JavaScript'} alt={'Курс от Geekbrains по базовому JavaScript'} preview={JavascriptBaseSertificatesGeekbrains}/>
-                        <PortfolioItems subheader={'1С-Битрикс: Управление сайтом'} text={'Контент менеджер'} alt={'1С-Битрикс: Управление сайтом - Контент менеджер'} preview={BitrixSertificateContentManager}/>
-                        <PortfolioItems subheader={'1С-Битрикс: Управление сайтом'} text={'Продвижение сайта и Маркетинг'} alt={'1С-Битрикс: Управление сайтом - Продвижение сайта и Маркетинг'} preview={BitrixSertificateSeoAndMarketing}/>
-                        <PortfolioItems subheader={'1С-Битрикс: Управление сайтом'} text={'Администратор. Базовый'} alt={'1С-Битрикс: Управление сайтом - Администратор. Базовый'} preview={BitrixSertificateAdmin}/>
-                        <PortfolioItems subheader={'Битрикс 24 (коробочная версия)'} text={'Администратор Битрикс 24'} alt={'Битрикс 24 (коробочная версия) - Администратор Битрикс24'} preview={BitrixSertificateAdmin24}/>
+                        <PortfolioItems sertificate_html subheader={'Начальный курс верстки Udemy'} text={'Курс базовой верстки для новичков с нуля от Udemy'} alt={'Курс базовой верстки для новичков с нуля от Udemy'} preview={HtmlSertificates} />
+                        <PortfolioItems sertificate_html subheader={'Интерактивный курс верстки Geekbrains'} text={'Курс базовой верстки от Geekbrains'} alt={'Курс базовой верстки от Geekbrains'} preview={HtmlSertificatesGeeckbrains} />
+                        <PortfolioItems sertificate_html subheader={'Профессиональная верстка Geekbrains'} text={'Курс профессиональной верстки от Geekbrains'} alt={'Курс профессиональной верстки от Geekbrains'} preview={HtmlProfessionalSertificatesGeeckbrains}/>
+                        <PortfolioItems sertificate_html subheader={'Freecodecamp'} text={'Responsive Web Design'} alt={'Responsive Web Design'} preview={FreecodecampSertificates}/>
+                        <PortfolioItems sertificate_javascript subheader={'Web разработчик от Ивана Петриченко'} text={'Курс Web разработчик по верстке и немного Jquery от Ивана Петриченко'} preview={WebDeveloperSertificates}/>
+                        <PortfolioItems sertificate_bootstrap subheader={'Bootstrap Beonmax'} text={'Курс от Beonmax по Bootstrap'} alt={'Курс от Beonmax по Bootstrap'} preview={BootstrapSertificates}/>
+                        <PortfolioItems sertificate_javascript subheader={'JavaScript Geekbrains'} text={'Курс от Geekbrains по базовому JavaScript'} alt={'Курс от Geekbrains по базовому JavaScript'} preview={JavascriptBaseSertificatesGeekbrains}/>
+                        <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Контент менеджер'} alt={'1С-Битрикс: Управление сайтом - Контент менеджер'} preview={BitrixSertificateContentManager}/>
+                        <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Продвижение сайта и Маркетинг'} alt={'1С-Битрикс: Управление сайтом - Продвижение сайта и Маркетинг'} preview={BitrixSertificateSeoAndMarketing}/>
+                        <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Администратор. Базовый'} alt={'1С-Битрикс: Управление сайтом - Администратор. Базовый'} preview={BitrixSertificateAdmin}/>
+                        <PortfolioItems sertificate subheader={'Битрикс 24 (коробочная версия)'} text={'Администратор Битрикс 24'} alt={'Битрикс 24 (коробочная версия) - Администратор Битрикс24'} preview={BitrixSertificateAdmin24}/>
                     </div>
                 </div>
             </section>

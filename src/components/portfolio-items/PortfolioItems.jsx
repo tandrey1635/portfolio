@@ -1,15 +1,20 @@
 import './PortfolioItems.sass'
 
 const PortfolioItems = (props) => {
-
     
     return(
         <article 
             className={props.html ? "portfolio__items portfolio__items_html" 
-            : props.bootstrap ? "portfolio__items portfolio__items_bootstrap" 
-            : props.javascript ? "portfolio__items portfolio__items_javascript"
-            : props.react ? "portfolio__items portfolio__items_react" 
-            : "portfolio__items"}>
+                : props.bootstrap ? "portfolio__items portfolio__items_bootstrap" 
+                : props.javascript ? "portfolio__items portfolio__items_javascript"
+                : props.react ? "portfolio__items portfolio__items_react" 
+                : props.sertificate_html ? "portfolio__items portfolio__items_sertificate portfolio__items_sertificate_html"
+                : props.sertificate_bootstrap ? "portfolio__items portfolio__items_sertificate portfolio__items_sertificate_bootstrap"
+                : props.sertificate_javascript ? "portfolio__items portfolio__items_sertificate portfolio__items_sertificate_javascript"
+                : props.sertificate_react ? "portfolio__items portfolio__items_sertificate portfolio__items_sertificate_react"
+                : props.sertificate ? "portfolio__items portfolio__items_sertificate" 
+                : "portfolio__items"
+            }>
             <div className="portfolio__img">
                 <a href={props.preview} className="portfolio__preview__photo-link" data-fancybox="galleryLandingPage">
                     <img className="portfolio__photo" src={props.preview} alt={props.alt}/>
@@ -24,6 +29,11 @@ const PortfolioItems = (props) => {
                 : props.bootstrap ? "portfolio__descriptions portfolio__descriptions_bootstrap"
                 : props.javascript ? "portfolio__descriptions portfolio__descriptions_javascript"
                 : props.react ? "portfolio__descriptions portfolio__descriptions_react" 
+                : props.sertificate_html ? "portfolio__descriptions portfolio__descriptions_sertificate_html"
+                : props.sertificate_bootstrap ? "portfolio__descriptions portfolio__descriptions_sertificate_bootstrap"
+                : props.sertificate_javascript ? "portfolio__descriptions portfolio__descriptions_sertificate_javascript"
+                : props.sertificate_react ? "portfolio__descriptions portfolio__descriptions_sertificate_react"
+                : props.sertificate ? "portfolio__descriptions portfolio__descriptions_sertificate" 
                 : "portfolio__descriptions"}>
                 <h2 className="portfolio__subheader">{props.subheader}</h2>
                 <p className="portfolio__text">{props.text}</p>

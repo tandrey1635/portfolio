@@ -21,22 +21,24 @@
             border-radius: inherit  
             z-index: -1
             background: linear-gradient(140deg, #fff, transparent 60%, #000)
-        &_html   
+        &_sertificate
+            min-height: 500px      
+        &_sertificate_html, &_html   
             background: linear-gradient(140deg, #ff4500, transparent 60%, #1e90ff)
             &::before
                 background: linear-gradient(140deg, #ff4500, transparent 60%, #1e90ff)
-        &_bootstrap
-            background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f)     
-            &::before    
-                background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f)  
-        &_javascript 
+        &_sertificate_bootstrap, &_bootstrap
+            background: linear-gradient(140deg, #8400ff, transparent 60%, #ffff00)     
+            &::before     
+                background: linear-gradient(140deg, #8400ff, transparent 60%, #ffff00) 
+        &_sertificate_javascript, &_javascript 
             background: linear-gradient(140deg, #ffff00, transparent 60%, #2d79c7)
             &::before    
                 background: linear-gradient(140deg, #ffff00, transparent 60%, #2d79c7)
-        &_react  
+        &_sertificate_react, &_react  
             background: linear-gradient(140deg, #62dafc, transparent 60%, #6e45b5)  
             &::before
-                background: linear-gradient(140deg, #62dafc, transparent 60%, #6e45b5)      
+                background: linear-gradient(140deg, #62dafc, transparent 60%, #6e45b5)       
         &:hover
             transition: 1s
             transform: scale(1.1)     
@@ -53,13 +55,13 @@
         -webkit-text-fill-color: transparent
         text-shadow: 1px 1px 1px #0000008c
         filter: brightness(1.5) drop-shadow(0 5px 5px #000)
-        &_html 
+        &_sertificate_html, &_html 
             background: linear-gradient(140deg, #ff4500, #1e90ff)
-        &_bootstrap
-            background: linear-gradient(140deg, #8400ff, #2c2d2f)   
-        &_javascript 
+        &_sertificate_bootstrap, &_bootstrap
+            background: linear-gradient(140deg, #8400ff, #ffff00) 
+        &_sertificate_javascript, &_javascript 
             background: linear-gradient(140deg, #ffff00, #2d79c7) 
-        &_react  
+        &_sertificate_react, &_react  
             background: linear-gradient(140deg, #62dafc, #6e45b5)   
     &__subheader     
         font-size: 22px
@@ -106,9 +108,9 @@
             &::before
                 background: linear-gradient(140deg, #ff4500, transparent 60%, #1e90ff) 
         &_bootstrap
-            background: linear-gradient(140deg, #8400ff, #2c2d2f)  
+            background: linear-gradient(140deg, #8400ff, #ffff00) 
             &::before
-                background: linear-gradient(140deg, #8400ff, transparent 60%, #2c2d2f)  
+                background: linear-gradient(140deg, #8400ff, transparent 60%, #ffff00)   
         &_javascript         
             background: linear-gradient(140deg, #ffff00, #2d79c7)  
             &::before      
