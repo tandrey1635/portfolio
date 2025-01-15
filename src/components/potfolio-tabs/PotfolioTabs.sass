@@ -9,34 +9,26 @@
         padding: 5px 20px
         margin: 0 20px
         font-size: 20px
-        color: #fff
         border-radius: 20px 
         text-transform: uppercase
         cursor: pointer   
         text-shadow: 0 5px 5px #000
-        filter: drop-shadow(0 5px 5px #000)
+        background: linear-gradient(140deg, #fff, transparent 60%, #000)
+        -webkit-background-clip: text!important
+        -webkit-text-fill-color: transparent
+        text-shadow: 3px 3px 3px #0000008c
+        filter: brightness(1.2) drop-shadow(0 5px 5px #000)
         &_html
             background: linear-gradient(140deg, #ff4500,  #1e90ff)
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent
-            text-shadow: 3px 3px 3px #0000008c
-            filter: brightness(1.2) drop-shadow(0 5px 5px #000)
         &_bootstrap   
             background: linear-gradient(120deg, #8400ff, transparent 60%, #2c2d2f) 
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent
-            text-shadow: 3px 3px 3px #0000008c
-            filter: brightness(1.2) drop-shadow(0 5px 5px #000) 
         &_span
             padding: 5px 20px
+            border-radius: 20px 
+            box-shadow: 0 5px 3px 3px #000
             &_html 
                 background: linear-gradient(140deg, #ff4500, transparent 60%,  #1e90ff) 
-                border-radius: 20px 
-                box-shadow: 0 5px 3px 3px #000
             &_bootstrap   
                 background: linear-gradient(120deg, #8400ff, transparent 60%, #2c2d2f)  
-                border-radius: 20px 
-                box-shadow: 0 5px 3px 3px #000 
-    .active
-        background: #00a3e1
+        
         

@@ -6,7 +6,7 @@ const PortfolioTabs = (props) => {
     return(
         <ul className="portfolio__tabs">
             <li className={props.tabAll ? "portfolio__tabs__items portfolio__tabs__items_all" : "portfolio__tabs__items"} onClick={props.all}>
-                <span className={props.tabHtml ? "portfolio__tabs__items_span portfolio__tabs__items_span_all" : "portfolio__tabs__items_span"}>Все</span>
+                <span className={props.tabHtml ? "portfolio__tabs__items_span portfolio__tabs__items_span" : "portfolio__tabs__items_span"}>Все</span>
             </li>
             <li className="portfolio__tabs__items portfolio__tabs__items_html" onClick={props.html}>
                 <span className={props.tabHtml ? "portfolio__tabs__items_span portfolio__tabs__items_span_html" : "portfolio__tabs__items_span"}>Html/Css</span>
