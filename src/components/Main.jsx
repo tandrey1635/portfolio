@@ -114,7 +114,7 @@ const Main = () =>  {
     }
 
     
-    const ititialState ={
+    const projectsItitialState ={
         all: true,
         html: false,
         bootstrap: false,
@@ -122,7 +122,7 @@ const Main = () =>  {
         react: false
     }    
 
-    const changeTabs = (state, action)=>{
+    const changeProjects = (state, action)=>{
         switch(action.type){
             case 'all': 
                 return {
@@ -181,7 +181,97 @@ const Main = () =>  {
         
     }
     
-    const [tabs, dispatch] = useReducer(changeTabs, ititialState)
+    const [projects, dispatchProjects] = useReducer(changeProjects, projectsItitialState)
+
+
+
+
+
+    const sertificatesItitialState ={
+        all: true,
+        html: false,
+        bootstrap: false,
+        javascript: false,
+        react: false,
+        bitrix: false
+    }    
+
+    const changeSertificates = (state, action)=>{
+        switch(action.type){
+            case 'all': 
+                return {
+                    all: true,
+                    html: false,
+                    bootstrap: false,
+                    javascript: false,
+                    react: false,
+                    bitrix: false
+                }
+             
+            case 'html': 
+                return {
+                    all: false,
+                    html: true,
+                    bootstrap: false,
+                    javascript: false,
+                    react: false,
+                    bitrix: false
+                }    
+
+            case 'bootstrap': 
+                return {
+                    all: false,
+                    html: false,
+                    bootstrap: true,
+                    javascript: false,
+                    react: false,
+                    bitrix: false
+                }
+
+            case 'javascript': 
+                return {
+                    all: false,
+                    html: false,
+                    bootstrap: false,
+                    javascript: true,
+                    react: false,
+                    bitrix: false
+                }
+            
+            case 'react': 
+                return {
+                    all: false,
+                    html: false,
+                    bootstrap: false,
+                    javascript: false,
+                    react: true,
+                    bitrix: false
+                }  
+
+            case 'bitrix': 
+                return {
+                    all: false,
+                    html: false,
+                    bootstrap: false,
+                    javascript: false,
+                    react: false,
+                    bitrix: true
+                }         
+
+            default:
+                return {
+                    all: false,
+                    html: false,
+                    bootstrap: false,
+                    javascript: false,
+                    react: false,
+                    bitrix: false
+                }    
+        }
+        
+    }
+    
+    const [sertificates, dispatchSertificates] = useReducer(changeSertificates, sertificatesItitialState)
 
     
     return(
@@ -363,9 +453,9 @@ const Main = () =>  {
             <section id="portfolio" className="portfolio">
                 <div className="container">
                     <SectionHeader title={'Мои работы'}/>
-                    <PortfolioTabs tabAll={tabs.all} tabHtml={tabs.html} tabBootstrap={tabs.bootstrap} tabJavascript={tabs.javascript} tabReact={tabs.react} all={()=>dispatch({type: 'all'})} html={()=>dispatch({type: 'html'})} bootstrap={()=>dispatch({type: 'bootstrap'})} javascript={()=>dispatch({type: 'javascript'})} react={()=>dispatch({type: 'react'})}/>
+                    <PortfolioTabs tabAll={projects.all} tabHtml={projects.html} tabBootstrap={projects.bootstrap} tabJavascript={projects.javascript} tabReact={projects.react} all={()=>dispatchProjects({type: 'all'})} html={()=>dispatchProjects({type: 'html'})} bootstrap={()=>dispatchProjects({type: 'bootstrap'})} javascript={()=>dispatchProjects({type: 'javascript'})} react={()=>dispatchProjects({type: 'react'})}/>
                     <div className="portfolio__wrapper">
-                    {tabs.all ?
+                    {projects.all &&
                         <>
                             <PortfolioItems project html subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
                             <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'} preview={ProfessionalShopPreview} url={ProfessionalShopUrl} github={ProfessionalShopGitHub}/>
@@ -384,8 +474,8 @@ const Main = () =>  {
                             <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>  
                             <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
                         </>
-                    : null}    
-                    {tabs.html ?  
+                    }    
+                    {projects.html && 
                         <>
                             <PortfolioItems project html subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
                             <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'} preview={ProfessionalShopPreview} url={ProfessionalShopUrl} github={ProfessionalShopGitHub}/>
@@ -402,10 +492,10 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
                             <PortfolioItems project html subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
                         </>
-                    : null}    
-                        {tabs.bootstrap ? <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/> : null}     
-                        {tabs.javascript ?  <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/> : null} 
-                        {tabs.react ? <PortfolioItems project react subheader={'В разработке'} text={'В разработке'} alt={'В разработке'}/> : null}
+                    }    
+                        {projects.bootstrap && <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>}     
+                        {projects.javascript &&  <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>} 
+                        {projects.react && <PortfolioItems project react subheader={'В разработке'} text={'В разработке'} alt={'В разработке'}/> }
                     </div>
                 </div>
             </section>
@@ -413,19 +503,50 @@ const Main = () =>  {
                 <div className="container">
                     <SectionHeader title={'Обо мне'}/>
                     <PortfolioText text={'Меня зовут Андрей мне 33 года. Заинтересовался Frontend разработкой и начал изучать верстку в октябре 2020 года. Прошел 6 курсов верстки, 4 курса по JavaScript и один по Bootstrap 4 на различных платформах. На данный момент изучаю React, в дальнейшем планирую изучать Typescript.'}/>
-                    <PortfolioTabs />
+                    <PortfolioTabs tabAll={sertificates.all} tabHtml={sertificates.html} tabBootstrap={sertificates.bootstrap} tabJavascript={sertificates.javascript} tabReact={sertificates.react} all={()=>dispatchSertificates({type: 'all'})} html={()=>dispatchSertificates({type: 'html'})} bootstrap={()=>dispatchSertificates({type: 'bootstrap'})} javascript={()=>dispatchSertificates({type: 'javascript'})} react={()=>dispatchSertificates({type: 'react'})} bitrix={()=>dispatchSertificates({type: 'bitrix'})} />
                     <div className="about__wrapper">
-                        <PortfolioItems sertificate_html subheader={'Начальный курс верстки Udemy'} text={'Курс базовой верстки для новичков с нуля от Udemy'} alt={'Курс базовой верстки для новичков с нуля от Udemy'} preview={HtmlSertificates} />
-                        <PortfolioItems sertificate_html subheader={'Интерактивный курс верстки Geekbrains'} text={'Курс базовой верстки от Geekbrains'} alt={'Курс базовой верстки от Geekbrains'} preview={HtmlSertificatesGeeckbrains} />
-                        <PortfolioItems sertificate_html subheader={'Профессиональная верстка Geekbrains'} text={'Курс профессиональной верстки от Geekbrains'} alt={'Курс профессиональной верстки от Geekbrains'} preview={HtmlProfessionalSertificatesGeeckbrains}/>
-                        <PortfolioItems sertificate_html subheader={'Freecodecamp'} text={'Responsive Web Design'} alt={'Responsive Web Design'} preview={FreecodecampSertificates}/>
-                        <PortfolioItems sertificate_javascript subheader={'Web разработчик от Ивана Петриченко'} text={'Курс Web разработчик по верстке и немного Jquery от Ивана Петриченко'} preview={WebDeveloperSertificates}/>
-                        <PortfolioItems sertificate_bootstrap subheader={'Bootstrap Beonmax'} text={'Курс от Beonmax по Bootstrap'} alt={'Курс от Beonmax по Bootstrap'} preview={BootstrapSertificates}/>
-                        <PortfolioItems sertificate_javascript subheader={'JavaScript Geekbrains'} text={'Курс от Geekbrains по базовому JavaScript'} alt={'Курс от Geekbrains по базовому JavaScript'} preview={JavascriptBaseSertificatesGeekbrains}/>
-                        <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Контент менеджер'} alt={'1С-Битрикс: Управление сайтом - Контент менеджер'} preview={BitrixSertificateContentManager}/>
-                        <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Продвижение сайта и Маркетинг'} alt={'1С-Битрикс: Управление сайтом - Продвижение сайта и Маркетинг'} preview={BitrixSertificateSeoAndMarketing}/>
-                        <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Администратор. Базовый'} alt={'1С-Битрикс: Управление сайтом - Администратор. Базовый'} preview={BitrixSertificateAdmin}/>
-                        <PortfolioItems sertificate subheader={'Битрикс 24 (коробочная версия)'} text={'Администратор Битрикс 24'} alt={'Битрикс 24 (коробочная версия) - Администратор Битрикс24'} preview={BitrixSertificateAdmin24}/>
+                        {sertificates.all && 
+                            <>
+                                <PortfolioItems sertificate_html subheader={'Начальный курс верстки Udemy'} text={'Курс базовой верстки для новичков с нуля от Udemy'} alt={'Курс базовой верстки для новичков с нуля от Udemy'} preview={HtmlSertificates} />
+                                <PortfolioItems sertificate_html subheader={'Интерактивный курс верстки Geekbrains'} text={'Курс базовой верстки от Geekbrains'} alt={'Курс базовой верстки от Geekbrains'} preview={HtmlSertificatesGeeckbrains} />
+                                <PortfolioItems sertificate_html subheader={'Профессиональная верстка Geekbrains'} text={'Курс профессиональной верстки от Geekbrains'} alt={'Курс профессиональной верстки от Geekbrains'} preview={HtmlProfessionalSertificatesGeeckbrains}/>
+                                <PortfolioItems sertificate_html subheader={'Freecodecamp'} text={'Responsive Web Design'} alt={'Responsive Web Design'} preview={FreecodecampSertificates}/>
+                                <PortfolioItems sertificate_bootstrap subheader={'Bootstrap Beonmax'} text={'Курс от Beonmax по Bootstrap'} alt={'Курс от Beonmax по Bootstrap'} preview={BootstrapSertificates}/>
+                                <PortfolioItems sertificate_javascript subheader={'JavaScript Geekbrains'} text={'Курс от Geekbrains по базовому JavaScript'} alt={'Курс от Geekbrains по базовому JavaScript'} preview={JavascriptBaseSertificatesGeekbrains}/>
+                                <PortfolioItems sertificate_javascript subheader={'Web разработчик от Ивана Петриченко'} text={'Курс Web разработчик по верстке и немного Jquery от Ивана Петриченко'} preview={WebDeveloperSertificates}/>
+                                <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Контент менеджер'} alt={'1С-Битрикс: Управление сайтом - Контент менеджер'} preview={BitrixSertificateContentManager}/>
+                                <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Продвижение сайта и Маркетинг'} alt={'1С-Битрикс: Управление сайтом - Продвижение сайта и Маркетинг'} preview={BitrixSertificateSeoAndMarketing}/>
+                                <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Администратор. Базовый'} alt={'1С-Битрикс: Управление сайтом - Администратор. Базовый'} preview={BitrixSertificateAdmin}/>
+                                <PortfolioItems sertificate subheader={'Битрикс 24 (коробочная версия)'} text={'Администратор Битрикс 24'} alt={'Битрикс 24 (коробочная версия) - Администратор Битрикс24'} preview={BitrixSertificateAdmin24}/>   
+                            </>
+                        }
+                        {sertificates.html &&  
+                            <>
+                                <PortfolioItems sertificate_html subheader={'Начальный курс верстки Udemy'} text={'Курс базовой верстки для новичков с нуля от Udemy'} alt={'Курс базовой верстки для новичков с нуля от Udemy'} preview={HtmlSertificates} />
+                                <PortfolioItems sertificate_html subheader={'Интерактивный курс верстки Geekbrains'} text={'Курс базовой верстки от Geekbrains'} alt={'Курс базовой верстки от Geekbrains'} preview={HtmlSertificatesGeeckbrains} />
+                                <PortfolioItems sertificate_html subheader={'Профессиональная верстка Geekbrains'} text={'Курс профессиональной верстки от Geekbrains'} alt={'Курс профессиональной верстки от Geekbrains'} preview={HtmlProfessionalSertificatesGeeckbrains}/>
+                                <PortfolioItems sertificate_html subheader={'Freecodecamp'} text={'Responsive Web Design'} alt={'Responsive Web Design'} preview={FreecodecampSertificates}/>
+                            </>    
+                        } 
+                        {sertificates.bootstrap &&  
+                            <PortfolioItems sertificate_bootstrap subheader={'Bootstrap Beonmax'} text={'Курс от Beonmax по Bootstrap'} alt={'Курс от Beonmax по Bootstrap'} preview={BootstrapSertificates}/>
+                        }
+                        {sertificates.javascript &&  
+                            <>
+                                <PortfolioItems sertificate_javascript subheader={'JavaScript Geekbrains'} text={'Курс от Geekbrains по базовому JavaScript'} alt={'Курс от Geekbrains по базовому JavaScript'} preview={JavascriptBaseSertificatesGeekbrains}/>
+                                <PortfolioItems sertificate_javascript subheader={'Web разработчик от Ивана Петриченко'} text={'Курс Web разработчик по верстке и немного Jquery от Ивана Петриченко'} preview={WebDeveloperSertificates}/>
+                            </>
+                        }
+                        {sertificates.react && <PortfolioItems project react subheader={'В процессе изучения'} text={'В процессе изучения'} alt={'В процессе изучения'}/>
+                        }
+                        {sertificates.bitrix && 
+                            <>
+                                <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Контент менеджер'} alt={'1С-Битрикс: Управление сайтом - Контент менеджер'} preview={BitrixSertificateContentManager}/>
+                                <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Продвижение сайта и Маркетинг'} alt={'1С-Битрикс: Управление сайтом - Продвижение сайта и Маркетинг'} preview={BitrixSertificateSeoAndMarketing}/>
+                                <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Администратор. Базовый'} alt={'1С-Битрикс: Управление сайтом - Администратор. Базовый'} preview={BitrixSertificateAdmin}/>
+                                <PortfolioItems sertificate subheader={'Битрикс 24 (коробочная версия)'} text={'Администратор Битрикс 24'} alt={'Битрикс 24 (коробочная версия) - Администратор Битрикс24'} preview={BitrixSertificateAdmin24}/>
+                            </>
+                        }
                     </div>
                 </div>
             </section>

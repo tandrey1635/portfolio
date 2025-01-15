@@ -20,6 +20,11 @@ const PortfolioTabs = (props) => {
             <li className="portfolio__tabs__items portfolio__tabs__items_react" onClick={props.react}>
                 <span className={props.tabReact ? "portfolio__tabs__items_span portfolio__tabs__items_span_react" : "portfolio__tabs__items_span"}>React/Redux</span>
             </li>
+            {props.bitrix && 
+                <li className="portfolio__tabs__items portfolio__tabs__items_bitrix" onClick={props.bitrix}>
+                <span className={props.tabBitrix ? "portfolio__tabs__items_span portfolio__tabs__items_span_bitrix" : "portfolio__tabs__items_span"}>Bitrix/Bitrix24</span>
+            </li>
+            }
         </ul>
     )
 }
