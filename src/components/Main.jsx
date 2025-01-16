@@ -465,14 +465,21 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Рабочий аккаунт'} text={'Личный кабинет сотрудника'} alt={'Рабочий аккаунт'} preview={PersonalAccountPreview} url={PersonalAccountUrl} github={PersonalAccountGitHub}/>
                             <PortfolioItems project html subheader={'Личный кабинет'} text={'Личный кабинет CRM система'} alt={'Личный кабинет'} preview={PersonalAccountCrmPreview} url={PersonalAccountCrmUrl} github={PersonalAccountCrmGitHub}/>
                             <PortfolioItems project html subheader={'Аренда спецтехники'} text={'Сайт аренды спецтехники нативный js'} alt={'Аренда спецтехники'}/>
+                            <PortfolioItems project html subheader={'Байкальский отдых'} text={'Сайт отдыха на Байкале jquery'} alt={'Байкальский отдых'}/>
                             <PortfolioItems project html subheader={'Заточка инструментов'} text={'Коммерческий проект на фрилансе'} alt={'Заточка инструментов'} preview={GrindingPreview} url={GrindingUrl} github={GrindingGitHub}/>
                             <PortfolioItems project html subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
                             <PortfolioItems project html subheader={'Девилам'} text={'Cайт компании https://vitaminde.ru/'} alt={'Девилам'} preview={DevilamPreview} url={DevilamUrl} github={DevilamGitHub}/>
+                            <PortfolioItems project html subheader={'Примафунгин'} text={'Cайт компании https://примафунгин.рф'} alt={'Примафунгин'}/>
+                            <PortfolioItems project html subheader={'Бифитта'} text={'Cайт компании https://bifitta.com/'} alt={'Бифитта'} />
                             <PortfolioItems project html subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
                             <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
                             <PortfolioItems project html subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
                             <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>  
+                            <PortfolioItems project bootstrap subheader={'Ресторан бургеров'} text={'Проект на Bootstrap 5'} alt={'Ресторан бургеров'}/>
+                            <PortfolioItems project javascript subheader={'Шахматы'} text={'Шахматная доста на js'} alt={'Шахматы'}/>
+                            <PortfolioItems project javascript subheader={'Страны'} text={'Получение данных о странах через Fetch API'} alt={'Страны'}/>
                             <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
+                            <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/> 
                         </>
                     }    
                     {projects.html && 
@@ -485,17 +492,35 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Рабочий аккаунт'} text={'Личный кабинет сотрудника'} alt={'Рабочий аккаунт'} preview={PersonalAccountPreview} url={PersonalAccountUrl} github={PersonalAccountGitHub}/>
                             <PortfolioItems project html subheader={'Личный кабинет'} text={'Личный кабинет CRM система'} alt={'Личный кабинет'} preview={PersonalAccountCrmPreview} url={PersonalAccountCrmUrl} github={PersonalAccountCrmGitHub}/>
                             <PortfolioItems project html subheader={'Аренда спецтехники'} text={'Сайт аренды спецтехники нативный js'} alt={'Аренда спецтехники'}/>
+                            <PortfolioItems project html subheader={'Байкальский отдых'} text={'Сайт отдыха на Байкале jquery'} alt={'Байкальский отдых'}/>
                             <PortfolioItems project html subheader={'Заточка инструментов'} text={'Коммерческий проект на фрилансе'} alt={'Заточка инструментов'} preview={GrindingPreview} url={GrindingUrl} github={GrindingGitHub}/>
                             <PortfolioItems project html subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
                             <PortfolioItems project html subheader={'Девилам'} text={'Cайт компании https://vitaminde.ru/'} alt={'Девилам'} preview={DevilamPreview} url={DevilamUrl} github={DevilamGitHub}/>
+                            <PortfolioItems project html subheader={'Примафунгин'} text={'Cайт компании https://примафунгин.рф'} alt={'Примафунгин'}/>
+                            <PortfolioItems project html subheader={'Бифитта'} text={'Cайт компании https://bifitta.com/'} alt={'Бифитта'} />
                             <PortfolioItems project html subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
                             <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
                             <PortfolioItems project html subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
                         </>
                     }    
-                        {projects.bootstrap && <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>}     
-                        {projects.javascript &&  <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>} 
-                        {projects.react && <PortfolioItems project react subheader={'В разработке'} text={'В разработке'} alt={'В разработке'}/> }
+                        {projects.bootstrap && 
+                            <>
+                                <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>
+                                <PortfolioItems project bootstrap subheader={'Ресторан бургеров'} text={'Проект на Bootstrap 5'} alt={'Ресторан бургеров'}/>
+                            </>
+                        }     
+                        {projects.javascript &&  
+                            <>
+                                <PortfolioItems project javascript subheader={'Шахматы'} text={'Шахматная доста на js'} alt={'Шахматы'}/>
+                                <PortfolioItems project javascript subheader={'Страны'} text={'Получение данных о странах через Fetch API'} alt={'Страны'}/>
+                                <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
+                            </>
+                        }    
+                        {projects.react && 
+                            <>
+                                <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/> 
+                            </>
+                        }
                     </div>
                 </div>
             </section>
