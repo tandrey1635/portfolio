@@ -948,12 +948,20 @@ footer {
 }
 @media (max-width: 991px) and (max-width: 991px) {
   .compound__item::before, .compound__item::after {
+<<<<<<< HEAD
     display: none !important;
+=======
+    display: none;
+>>>>>>> d1a3832306733218c5233af0c0b5f937d8194f58
   }
 }
 @media (max-width: 991px) and (max-width: 700px) {
   .compound__item::before, .compound__item::after {
+<<<<<<< HEAD
     display: flex !important;
+=======
+    display: flex;
+>>>>>>> d1a3832306733218c5233af0c0b5f937d8194f58
     width: 80px !important;
     height: 80px !important;
     top: 0 !important;
