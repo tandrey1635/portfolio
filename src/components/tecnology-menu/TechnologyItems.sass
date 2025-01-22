@@ -1,3 +1,5 @@
+@import '../../variables.sass'
+    
 .technology
     &__item 
         margin-top: 30px
@@ -23,35 +25,59 @@
             fill: #ff5bdb
         &_bootstrap
             fill: #8400ff
-        &_bitrix
-            fill: #c7042c
         &_jquery    
             fill: #00bfff   
         &_javascript
-            fill: #ff0
+            fill: #ffff00
         &_react
-            fill: #61dafb 
+            fill: #62dafc 
+        &_redux
+            fill: #6e45b5    
         &_typescript
             fill: #2d79c7       
+        &_bitrix
+            fill: #c7042c
         &_ui-ux
             fill: #ff5f24                  
     &__percent
         font-weight: 900
         font-size: 24px
-        color: #00a3e1
-        text-shadow: 0 5px 5px #000
-        filter: drop-shadow(0 5px 5px #000)
+        background: $technologyItemsDefault
+        -webkit-background-clip: text!important
+        -webkit-text-fill-color: transparent
+        text-shadow: 1px 1px 1px #0000008c
+        filter: brightness(1.5) drop-shadow(0 5px 5px #000)
+        &_html
+            background: $technologyItemsHtml 
+        &_css
+            background: $technologyItemsCss 
+        &_javascript
+            background: $technologyItemsJavascript      
+        &_bitrix
+            background: $technologyItemsBitrix
+        &_design   
+            background: $technologyItemsDesign
     &__progressbar
         position: relative
         margin-top: 15px
         height: 30px
     &__mainline
         position: absolute
-        background: #00a3e1
+        background: $technologyItemsDefault
         height: inherit
         border-radius: 20px   
         filter: drop-shadow(0 5px 5px #000)
         z-index: 10
+        &_html
+            background: $technologyItemsHtml
+        &_css
+            background: $technologyItemsCss 
+        &_javascript
+            background: $technologyItemsJavascript      
+        &_bitrix
+            background: $technologyItemsBitrix
+        &_design   
+            background: $technologyItemsDesign     
     &__sideline
         background: #646464
         height: inherit

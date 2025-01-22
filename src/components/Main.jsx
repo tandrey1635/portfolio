@@ -111,9 +111,9 @@ const Main = () =>  {
     const technology = {
         html: '95%',
         css: '95%', 
-        bitrix: '50%',
+        bitrix: '70%',
         javascript: '85%',
-        photoshop: '50%',
+        photoshop: '70%',
     }
 
     
@@ -287,8 +287,8 @@ const Main = () =>  {
             <section id="technology" className="technology">
                 <div className="container">
                     <SectionHeader title={'Технологии'}/>
-                    <TechnologyItems style={{'width': technology.html}} percent={technology.html} img={<Html/>}/>
-                    <TechnologyItems style={{'width': technology.css}} percent={technology.css} img={
+                    <TechnologyItems html style={{'width': technology.html}} percent={technology.html} img={<Html/>}/>
+                    <TechnologyItems css style={{'width': technology.css}} percent={technology.css} img={
                         <>
                             <Css/>
                             <Less/>
@@ -296,20 +296,20 @@ const Main = () =>  {
                             <Bootstrap/>
                         </>}
                     />
-                    <TechnologyItems style={{'width': technology.bitrix}} percent={technology.bitrix} img={
-                        <>
-                            <Bitrix/>
-                            <Bitrix24/>
-                        </>}
-                    />
-                    <TechnologyItems style={{'width': technology.javascript}} percent={technology.javascript} img={
+                    <TechnologyItems javascript style={{'width': technology.javascript}} percent={technology.javascript} img={
                         <>
                             <Jquery/>      
                             <Javascript/>  
                             <React/>    
                         </>}
                     />
-                    <TechnologyItems style={{'width': technology.photoshop}} percent={technology.photoshop} img={
+                    <TechnologyItems bitrix style={{'width': technology.bitrix}} percent={technology.bitrix} img={
+                        <>
+                            <Bitrix/>
+                            <Bitrix24/>
+                        </>}
+                    />
+                    <TechnologyItems design style={{'width': technology.photoshop}} percent={technology.photoshop} img={
                         <>
                             <Uix/>
                             <Photoshop/>

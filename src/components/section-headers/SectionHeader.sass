@@ -1,12 +1,16 @@
+@import '../../variables.sass'
+    
 .section__header
     font-size: 40px
     text-align: center
-    color: #00a3e1
-    border-bottom: 5px dashed #646464
+    border-bottom: 3px dashed #646464
     line-height: 1.8
-    text-shadow: 0 5px 5px #000
-    filter: drop-shadow(0 5px 5px #000)
     text-transform: uppercase
+    background: $technologyItemsDefault
+    -webkit-background-clip: text!important
+    -webkit-text-fill-color: transparent
+    text-shadow: 1px 1px 1px #0000008c
+    filter: brightness(1.5) drop-shadow(0 5px 5px #000) contrast(1.5)
     &_margin
         margin-top: 30px
     &_additional__technology
