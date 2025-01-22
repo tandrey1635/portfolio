@@ -1,0 +1,206 @@
+.compound
+    padding: 80px 0
+    @media (max-width: 991px)
+        padding: 56px 0
+    @media (max-width: 480px) 
+        padding: 32px 0 
+    &__inner__container
+        padding: 59px 95px
+        border-radius: 20px
+        box-shadow: $mainShadow
+        @media (max-width: 1440px)
+            padding: 64px
+        @media (max-width: 1200px)
+            padding: 56px  
+        @media (max-width: 768px) 
+            padding: 48px  
+        @media (max-width: 480px)   
+            padding: 32px         
+    &__wrapper
+        width: 1012px
+        margin: 0 auto 
+        margin-top: 45px 
+        padding-bottom: 16px
+        border: 2px solid $fifthBorder
+        border-radius: 10px
+        display: grid
+        grid-template: 335px 1fr / repeat(2, 1fr)
+        @media (max-width: 1200px)
+            width: 100%
+        @media (max-width: 991px)   
+            grid-template: auto / 1fr
+            padding-bottom: 0
+    &__top
+        position: relative
+        background: $thirdBg
+        grid-column: span 2   
+        &::before
+            @media (max-width: 991px)  
+                @include after(-170px, 50px)
+                @include background('icons/compound-arrow-item-left.svg')    
+                width: 168px
+                height: 246px
+                transform: rotate(250deg)
+            @media (max-width: 700px)
+                top: -410px   
+        &::after   
+            @media (max-width: 991px) 
+                width: 210px
+                height: 250px
+                @include after(275px, 50px)
+                @include background('icons/compound-arrow-item-right.svg')
+            @media (max-width: 850px)  
+                top: 265px  
+            @media (max-width: 750px)     
+                top: 255px  
+                top: 320px  
+        &::before, &::after            
+            @media (max-width: 700px)    
+                display: none                       
+    &__top__link
+        width: 625px
+        position: relative
+        @include flexCenter
+        margin: 0 auto  
+        border-radius: 10px
+        height: 335px
+        @media (max-width: 991px) 
+            width: 75%
+        @media (max-width: 700px) 
+            height: 300px  
+        @media (max-width: 576px)
+            width: 85%      
+        @media (max-width: 480px) 
+            height: 250px   
+        @media (max-width: 375px)    
+            height: 200px  
+        &::before
+            width: 80px
+            height: 80px
+            @include before
+            background: url('icons/video-arrow.svg'), $btnMainBg
+            background-repeat: no-repeat
+            background-position: 52%   
+            border-radius: 50%
+            @include absoluteCenter(136px)
+            z-index: 10
+            cursor: pointer
+            @media (max-width: 700px) 
+                top: 115px
+            @media (max-width: 480px)
+                width: 60px
+                height: 60px  
+                top: 100px
+                background-size: 35%  
+            @media (max-width: 375px)   
+                width: 50px
+                height: 50px
+                top: 80px 
+                background-size: 30%  
+    &__video
+        width: 100%
+        height: 100%        
+    &__item
+        position: relative
+        padding: 0 20px
+        margin-top: 78px
+        @media (max-width: 991px)
+            margin: 32px 0
+            &::before, &::after   
+                @media (max-width: 991px)
+                    display: none        
+                @media (max-width: 700px)
+                    display: flex
+                    width: 80px !important 
+                    height: 80px !important 
+                    top: 0 !important 
+                    right: 25px !important 
+                    border-radius: 50%
+                    border: 2px solid $secondBorder
+                    background: url('icons/star.svg') no-repeat center /80% !important 
+                @media (max-width: 576px)    
+                    width: 60px !important 
+                    height: 60px !important 
+                    right: 10px !important  
+                @media (max-width: 425px)  
+                    width: 50px !important 
+                    height: 50px !important 
+                    top: 16px !important     
+        &_first
+            @media (max-width: 991px) 
+                grid-row: 1
+            &::after
+                width: 168px
+                height: 246px
+                @include after(-170px, 50px)
+                @include background('icons/compound-arrow-item-left.svg')
+                @media (max-width: 1200px)  
+                    top: -195px
+                    right: 15px
+                    width: 190px
+                    height: 280px          
+        &_last
+            &::after
+                width: 210px
+                height: 250px
+                @include after(-175px, 50px)
+                @include background('icons/compound-arrow-item-right.svg') 
+                @media (max-width: 1200px)  
+                    width: 230px
+                    height: 275px
+                    top: -195px
+                    right: 35px                   
+    &__header
+        @include flexReverseAxios
+        font-weight: 300
+        font-size: 26px
+        line-height: 123%
+        color: $mainColor 
+        @media (max-width: 480px) 
+            font-size: 24px 
+        @media (max-width: 425px)  
+            font-size: 22px    
+        @media (max-width: 375px) 
+            font-size: 20px     
+        &_color 
+            font-weight: 700
+            color: $secondColor
+            text-transform: uppercase
+    &__subheader, &__text
+        margin-top: 36px
+        font-weight: 300
+        font-size: 21px
+        line-height: 130%
+        color: $mainColor 
+        @media (max-width: 480px) 
+            margin-top: 32px
+            font-size: 20px  
+        @media (max-width: 425px)    
+            font-size: 18px
+            margin-top: 20px
+        @media (max-width: 375px)    
+            font-size: 16px    
+    &__subheader
+        color: $secondColor 
+    &__description
+        @media (max-width: 991px)
+            width: 80%  
+        @media (max-width: 700px)    
+            width: 100%
+            pointer-events: none      
+    &__block__btns
+        padding: 0 85px
+        margin-top: 45px
+        @include flexCenter(space-between) 
+        @media (max-width: 1440px)
+            justify-content: space-around  
+        @media (max-width: 1200px)         
+            justify-content: space-between 
+        @media (max-width: 991px)
+            padding: 0    
+            justify-content: space-around 
+        @media (max-width: 768px)  
+            flex-direction: column
+            gap: 32px  
+        @media (max-width: 480px) 
+            margin-top: 32px          

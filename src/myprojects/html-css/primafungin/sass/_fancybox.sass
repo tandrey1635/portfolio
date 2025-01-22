@@ -1,0 +1,83 @@
+.fancybox
+    &__wrapper
+        margin-top: 32px
+        @include flexCenter(space-between)
+    &__item
+        width: 500px
+        height: 300px
+
+/* Стилизация модуля*/
+// Фон для слайдов изображений    
+.fancybox__slide.has-image
+    background: $thirdBg 
+// Фон для превью слайдов изображений
+/* .f-thumbs__viewport */
+    
+// Подпись под картинкой есть только при вкл дата атрибуте data-caption    
+.fancybox__caption 
+    font-size: 20px
+    font-weight: 700
+    color: $secondColor 
+// Кнопки вперед назад и панель навигации общие
+/* .f-button */
+// вперед / назад
+.f-button.is-next, .f-button.is-prev 
+    background: $thirdBg
+    &:hover
+        background: $secondBg
+        opacity: .8
+// Расположение верхней панели с кнопками зум закрыть и тд и пагинация слайдов        
+/* .fancybox__toolbar.is-absolute   */      
+// Пагинация слайдов
+.fancybox__infobar
+    font-size: 20px
+    font-weight: 700
+    color: $secondColor 
+
+
+.f-button[data-fancybox-toggle-fullscreen]
+    display: none    
+.f-button[data-panzoom-action] 
+    display: none    
+.f-button[data-fancybox-close] 
+    position: absolute
+    top: -30px !important
+    right: -20px !important
+    opacity: 1 !important
+    width: 50px
+    height: 50px
+    border-radius: 50% 
+    background: url('icons/video-close.svg'), $btnMainBg 
+    background-repeat: no-repeat
+    background-position: 50%  
+    color: $defaultColor
+    @media (max-width: 1200px)
+        right: 0
+    @media (max-width: 991px) 
+        top: -15px !important
+        right: -10px !important 
+    @media (max-width: 480px)
+        width: 36px
+        height: 36px	
+        top: -16px !important
+        right: -8px  !important 
+        background-size: 50%  
+    &:hover
+        background: url('icons/video-close.svg'), $btnMainBg 
+        background-repeat: no-repeat
+        background-position: 50% 
+        @media (max-width: 480px)
+            background-size: 50%  
+         
+/* Скрытие встроенной картинки в кнопку закрыть */
+.f-button svg
+    stroke: none
+
+.fancybox__slide  
+    background: $thirdBg  
+
+.fancybox__nav
+    display: none    
+    
+        
+

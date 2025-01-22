@@ -1,0 +1,34 @@
+.btn
+    @include flexCenter
+    position: relative
+    width: 255px
+    padding: 14px 50px 15px 70px
+    font-weight: 600
+    font-size: 26px
+    line-height: 123%
+    text-align: center
+    color: $secondColor
+    border: 2px solid $secondBorder
+    border-radius: 36px
+    @media (max-width: 480px)
+        width: 200px
+        padding: 10px 30px 10px 40px
+        font-size: 20px
+    &::before
+        width: 80px
+        height: 80px
+        @include before(-10px, -30px)
+        border-radius: 50%  
+        background: url('icons/btn-arrow.svg'), $btnMainBg
+        background-repeat: no-repeat
+        background-position: 50%
+        @media (max-width: 480px)
+            width: 60px
+            height: 60px
+            top: -8px
+    &_default
+        &::before
+            border: 2px solid $secondBorder
+            background: url('icons/btn-arrow-default.svg'), $mainBg
+            background-repeat: no-repeat
+            background-position: 50%        

@@ -1,0 +1,84 @@
+.questions
+    position: relative
+    padding: 80px 0
+    @media (max-width: 991px)
+        padding: 56px 0
+    @media (max-width: 480px) 
+        padding: 32px 0    
+    &::before
+        @include before(180px)
+        width: 100%
+        height: 1245px
+        @include background('img/questions-before.png')
+        border-radius: 400px 10% 10% 0
+        z-index: -1
+        @media (max-width: 1400px)
+           border-radius: 0 
+.accordeon
+    padding: 30px 40px    
+    width: 100%
+    min-height: 102px
+    border-radius: 20px
+    box-shadow: $mainShadow
+    background: $mainBg
+    @media (max-width: 425px) 
+        padding: 32px
+    &__wrapper
+        margin-top: 80px
+        @include flexReverseAxios
+        gap: 20px
+        @media (max-width: 991px)
+            margin-top: 56px
+        @media (max-width: 480px) 
+            margin-top: 32px    
+    &__item
+        cursor: pointer    
+    &__description
+        display: none
+        margin-top: 30px
+        @media (max-width: 425px) 
+            margin-top: 16px
+    &__header
+        position: relative
+        font-weight: 600
+        font-size: 35px
+        line-height: 91%
+        color: $mainColor
+        @media (max-width: 1200px)
+            font-size: 32px
+        @media (max-width: 576px)
+            font-size: 26px    
+        @media (max-width: 480px)
+            font-size: 22px  
+        @media (max-width: 425px) 
+            font-size: 18px      
+        &::after
+            width: 15px
+            height: 10px
+            @include after
+            @include background('icons/accordeon-arrow.svg')
+            @media (max-width: 1200px)
+                right: -20px
+    &__menu
+        display: flex
+        flex-direction: column
+        gap: 20px            
+    &__text, &__list
+        font-weight: 300
+        font-size: 21px
+        line-height: 130%
+        color: $mainColor  
+        @media (max-width: 480px)
+            font-size: 20px
+            line-height: 100% 
+        @media (max-width: 425px) 
+            font-size: 16px     
+.accordeon-active
+    display: flex
+.accordeon-active-icon
+    &::after
+        width: 15px
+        height: 10px
+        transform: rotate(-180deg)
+        
+

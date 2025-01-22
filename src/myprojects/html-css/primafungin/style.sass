@@ -1,0 +1,57 @@
+@import 'sass/_variables'
+@import 'sass/_reset'
+@import 'sass/_mixins'
+
+
+body
+    font-family: $mainFont  
+    
+html, body
+    height: 100%
+    scroll-behavior: smooth
+
+section
+    min-height: 400px
+
+.wrapper
+    @include flexReverseAxios         
+  
+main
+    flex: 1 0 auto  
+    min-height: 100vh
+
+footer
+    flex: 0 0 auto  
+
+
+.container
+    max-width: 1240px
+    padding: 0 15px
+    margin: 0 auto
+    @media (max-width: 1440px)
+        max-width: 100%
+
+.why__primafungin_container
+    max-width: 1240px   
+    @media (max-width: 1100px)
+        max-width: 100%
+
+
+    
+@import 'sass/_titles'
+@import 'sass/_header' 
+@import 'sass/_promo' 
+@import 'sass/_why__primafungin'
+@import 'sass/_compound'
+@import 'sass/_treatment__regimen'
+@import 'sass/_questions'
+@import 'sass/_reviews'
+@import 'sass/_where__buy'
+@import 'sass/_about-thrush'
+@import 'sass/_footer'    
+@import 'sass/_btns'
+@import 'sass/_arrow-up'
+
+
+/* Библиотеки */    
+@import 'sass/_fancybox'    
