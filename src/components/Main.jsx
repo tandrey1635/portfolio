@@ -531,7 +531,7 @@ const Main = () =>  {
                 <div className="container">
                     <SectionHeader title={'Обо мне'}/>
                     <PortfolioText text={'Меня зовут Андрей мне 33 года. Заинтересовался Frontend разработкой и начал изучать верстку в октябре 2020 года. Прошел 6 курсов верстки, 4 курса по JavaScript и один по Bootstrap 4 на различных платформах. На данный момент изучаю React, в дальнейшем планирую изучать Typescript.'}/>
-                    <PortfolioTabs tabAll={sertificates.all} tabHtml={sertificates.html} tabBootstrap={sertificates.bootstrap} tabJavascript={sertificates.javascript} tabReact={sertificates.react} all={()=>dispatchSertificates({type: 'all'})} html={()=>dispatchSertificates({type: 'html'})} bootstrap={()=>dispatchSertificates({type: 'bootstrap'})} javascript={()=>dispatchSertificates({type: 'javascript'})} react={()=>dispatchSertificates({type: 'react'})} bitrix={()=>dispatchSertificates({type: 'bitrix'})} />
+                    <PortfolioTabs tabAll={sertificates.all} tabHtml={sertificates.html} tabBootstrap={sertificates.bootstrap} tabJavascript={sertificates.javascript} tabReact={sertificates.react} tabBitrix={sertificates.bitrix} all={()=>dispatchSertificates({type: 'all'})} html={()=>dispatchSertificates({type: 'html'})} bootstrap={()=>dispatchSertificates({type: 'bootstrap'})} javascript={()=>dispatchSertificates({type: 'javascript'})} react={()=>dispatchSertificates({type: 'react'})} bitrix={()=>dispatchSertificates({type: 'bitrix'})} />
                     <div className="about__wrapper">
                         {sertificates.all && 
                             <>
@@ -569,10 +569,10 @@ const Main = () =>  {
                         }
                         {sertificates.bitrix && 
                             <>
-                                <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Контент менеджер'} alt={'1С-Битрикс: Управление сайтом - Контент менеджер'} preview={BitrixSertificateContentManager}/>
-                                <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Продвижение сайта и Маркетинг'} alt={'1С-Битрикс: Управление сайтом - Продвижение сайта и Маркетинг'} preview={BitrixSertificateSeoAndMarketing}/>
-                                <PortfolioItems sertificate subheader={'1С-Битрикс: Управление сайтом'} text={'Администратор. Базовый'} alt={'1С-Битрикс: Управление сайтом - Администратор. Базовый'} preview={BitrixSertificateAdmin}/>
-                                <PortfolioItems sertificate subheader={'Битрикс 24 (коробочная версия)'} text={'Администратор Битрикс 24'} alt={'Битрикс 24 (коробочная версия) - Администратор Битрикс24'} preview={BitrixSertificateAdmin24}/>
+                                <PortfolioItems sertificate_bitrix subheader={'1С-Битрикс: Управление сайтом'} text={'Контент менеджер'} alt={'1С-Битрикс: Управление сайтом - Контент менеджер'} preview={BitrixSertificateContentManager}/>
+                                <PortfolioItems sertificate_bitrix subheader={'1С-Битрикс: Управление сайтом'} text={'Продвижение сайта и Маркетинг'} alt={'1С-Битрикс: Управление сайтом - Продвижение сайта и Маркетинг'} preview={BitrixSertificateSeoAndMarketing}/>
+                                <PortfolioItems sertificate_bitrix subheader={'1С-Битрикс: Управление сайтом'} text={'Администратор. Базовый'} alt={'1С-Битрикс: Управление сайтом - Администратор. Базовый'} preview={BitrixSertificateAdmin}/>
+                                <PortfolioItems sertificate_bitrix subheader={'Битрикс 24 (коробочная версия)'} text={'Администратор Битрикс 24'} alt={'Битрикс 24 (коробочная версия) - Администратор Битрикс24'} preview={BitrixSertificateAdmin24}/>
                             </>
                         }
                     </div>

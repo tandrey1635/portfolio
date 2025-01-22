@@ -12,6 +12,7 @@ const PortfolioItems = (props) => {
                 : props.sertificate_bootstrap ? "portfolio__items portfolio__items_sertificate portfolio__items_sertificate_bootstrap"
                 : props.sertificate_javascript ? "portfolio__items portfolio__items_sertificate portfolio__items_sertificate_javascript"
                 : props.sertificate_react ? "portfolio__items portfolio__items_sertificate portfolio__items_sertificate_react"
+                : props.sertificate_bitrix ? "portfolio__items portfolio__items_sertificate portfolio__items_sertificate_bitrix"
                 : props.sertificate ? "portfolio__items portfolio__items_sertificate" 
                 : "portfolio__items"
             }>
@@ -33,6 +34,7 @@ const PortfolioItems = (props) => {
                 : props.sertificate_bootstrap ? "portfolio__descriptions portfolio__descriptions_sertificate_bootstrap"
                 : props.sertificate_javascript ? "portfolio__descriptions portfolio__descriptions_sertificate_javascript"
                 : props.sertificate_react ? "portfolio__descriptions portfolio__descriptions_sertificate_react"
+                : props.sertificate_bitrix ? "portfolio__descriptions portfolio__descriptions_sertificate_bitrix"
                 : props.sertificate ? "portfolio__descriptions portfolio__descriptions_sertificate" 
                 : "portfolio__descriptions"}>
                 <h2 className="portfolio__subheader">{props.subheader}</h2>
