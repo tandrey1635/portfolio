@@ -1,0 +1,17 @@
+.arrow__up
+	display: none
+	width: 50px
+	height: 50px
+	position: fixed
+	right: 20px
+	bottom: 20px
+	@include background('icons/arrow-up.svg', 50%)
+	transform: rotate(180deg)
+	cursor: pointer
+	z-index: 20
+	@media (max-width: 480px)
+		background-size: 40%
+	@media (max-width: 360px) 
+		background-size: 30%	
+.active__arrow__up
+	display: block
