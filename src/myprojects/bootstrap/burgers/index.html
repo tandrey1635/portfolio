@@ -1,0 +1,2821 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Сочные бургеры</title>
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="libs/fancybox/fancybox.css">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap5.min.css">
+	<link rel="stylesheet" href="fonts/font.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="main__header position-sticky top-0 z-3">
+		<div class="header bg-warning py-3">
+			<div class="container header__container">
+				<div class="header__wrapper d-flex justify-content-between">
+					<div class="header__logo">
+						<a class="header__logo__link" href="#">
+							<img class="header__photo" src="img/logo.png" alt="Логотип">
+						</a>
+					</div>
+
+					<div class="header__center align-self-center">
+						<h1 class="header__title display-3 text-center text-info text-uppercase fw-bold">Ресторан Бургер Хаус</h1>
+						<h2 class="header__subtitle w-50 mx-auto display-5 text-center text-danger fw-bold">Только самые сочные бургеры!</h2>
+					</div>
+
+					<div class="header__logo">
+						<a class="header__logo__link" href="#">
+							<img class="header__photo" src="img/logo.png" alt="Логотип">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="promo">
+			<div id="carouselPromoAutoplaying" class="carousel slide" data-bs-ride="carousel">
+				<div class="promo__slider carousel-inner">
+					<div class="promo__item carousel-item active">
+						<img src="img/chedder-king-burger-promo.jpg" class="promo__photo d-block w-100" alt="Чеддер кинг бургер">
+					</div>
+					<div class="promo__item carousel-item">
+						<img src="img/burger-promo-menu.jpg" class="promo__photo d-block w-100" alt="Бургер меню>">
+					</div>
+					<div class="promo__item carousel-item">
+						<img src="img/burger-promo.jpg" class="promo__photo d-block w-100" alt="Стейк хаус классик">
+					</div>
+					<div class="promo__item carousel-item">
+						<img src="img/burger-promo-3.jpg" class="promo__photo d-block w-100" alt="Бургеры жареные на огне">
+					</div>
+				</div>
+				<div class="promo__navigation position-absolute">
+					<button class="promo__btn promo__btn_prev carousel-control-prev" type="button" data-bs-target="#carouselPromoAutoplaying" data-bs-slide="prev">
+						<span class="promo__icon promo__icon_prev carousel-control-prev-icon"></span>
+					</button>
+	
+					<button class="promo__btn promo__btn_next carousel-control-next" type="button" data-bs-target="#carouselPromoAutoplaying" data-bs-slide="next">
+						<span class="promo__icon promo__icon_next carousel-control-next-icon"></span>
+					</button>
+				</div>
+			  </div>
+		</section>
+
+		<section class="hot__prices">
+			<div class="container-fluide">
+				<div class="section__block__header">
+					<h2 class="section__header text-center text-uppercase text-warning fw-bold fs-1">Новинки</h2>
+				</div>
+				<div class="hot__prices__wrapper">
+					<div class="hot__prices__item p-4 d-flex flex-column align-items-center justify-content-center">
+						<div class="card__header hot__prices__card__header">
+							<img class="hot__prices__photo d-block mx-auto" src="img/menu/burgers/black-burger.png" alt="Черный бургер">
+						</div>
+						<div class="hot__prices__card__body card-body text-center">
+							<h3 class="card-title text-capitalize text-danger">Черный бургер</h3>
+							<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+						</div>
+						<div class="hot__prices__card__footer px-3 d-flex justify-content-between align-items-center">
+							<p class="hot__prices__price text-danger">500 ₽</p>
+							<button class="hot__prices__btn btn btn-danger text-white">Заказать</button>
+						</div>
+					</div>
+
+					<div class="hot__prices__item p-4 d-flex flex-column align-items-center justify-content-center">
+						<div class="card__header hot__prices__card__header">
+							<img class="hot__prices__photo d-block mx-auto" src="img/menu/burgers/white-burger.png" alt="Белый бургер">
+						</div>
+						<div class="hot__prices__card__body card-body text-center">
+							<h3 class="card-title text-capitalize text-danger">Белый бургер</h3>
+							<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+						</div>
+						<div class="hot__prices__card__footer px-3 d-flex justify-content-between align-items-center">
+							<p class="hot__prices__price text-danger">500 ₽</p>
+							<button class="hot__prices__btn btn btn-danger text-white">Заказать</button>
+						</div>
+					</div>
+
+					<div class="hot__prices__item p-4 d-flex flex-column align-items-center justify-content-center">
+						<div class="card__header hot__prices__card__header">
+							<img class="hot__prices__photo d-block mx-auto" src="img/menu/burgers/red-burger-double.png" alt="Красный бургер двойной">
+						</div>
+						<div class="hot__prices__card__body card-body text-center">
+							<h3 class="card-title text-capitalize text-danger">Красный бургер двойной</h3>
+							<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+						</div>
+						<div class="hot__prices__card__footer px-3 d-flex justify-content-between align-items-center">
+							<p class="hot__prices__price text-danger">700 ₽</p>
+							<button class="hot__prices__btn btn btn-danger text-white">Заказать</button>
+						</div>
+					</div>
+
+					<div class="hot__prices__item p-4 d-flex flex-column align-items-center justify-content-center">
+						<div class="card__header hot__prices__card__header">
+							<img class="hot__prices__photo d-block mx-auto" src="img/menu/burgers/green-burger-double.png" alt="Зеленый бургер двойной">
+						</div>
+						<div class="hot__prices__card__body card-body text-center">
+							<h3 class="card-title text-capitalize text-danger">Зеленый бургер двойной</h3>
+							<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+						</div>
+						<div class="hot__prices__card__footer px-3 d-flex justify-content-between align-items-center">
+							<p class="hot__prices__price text-danger">700 ₽</p>
+							<button class="hot__prices__btn btn btn-danger text-white">Заказать</button>
+						</div>
+					</div>
+
+					<div class="hot__prices__item p-4 d-flex flex-column align-items-center justify-content-center">
+						<div class="card__header hot__prices__card__header">
+							<img class="hot__prices__photo d-block mx-auto" src="img/menu/burgers/blue-burger.png" alt="Синий бургер">
+						</div>
+						<div class="hot__prices__card__body card-body text-center">
+							<h3 class="card-title text-capitalize text-danger">Синий бургер</h3>
+							<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+						</div>
+						<div class="hot__prices__card__footer px-3 d-flex justify-content-between align-items-center">
+							<p class="hot__prices__price text-danger">500 ₽</p>
+							<button class="hot__prices__btn btn btn-danger text-white">Заказать</button>
+						</div>
+					</div>
+
+					<div class="hot__prices__item p-4 d-flex flex-column align-items-center justify-content-center">
+						<div class="card__header hot__prices__card__header">
+							<img class="hot__prices__photo d-block mx-auto" src="img/menu/burgers/cheese-burger.png" alt="Сырный бургер">
+						</div>
+						<div class="hot__prices__card__body card-body text-center">
+							<h3 class="card-title text-capitalize text-danger">Сырный бургер</h3>
+							<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+						</div>
+						<div class="hot__prices__card__footer px-3 d-flex justify-content-between align-items-center">
+							<p class="hot__prices__price text-danger">500 ₽</p>
+							<button class="hot__prices__btn btn btn-danger text-white">Заказать</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+
+		<section class="categories">
+			<div class="container">
+				<div class="section__block__header">
+					<h2 class="section__header text-center text-uppercase text-warning fw-bold fs-1">Бургер меню</h2>
+				</div>
+				<div class="categories__block__menu">
+					<ul class="nav nav-pills categories__menu gap-4 mt-5 fw-bold text-uppercase">
+						<li class="nav-item categories__tab text-center">
+							<a class="nav-link categories__link text-info rounded-5 active" id="pills-combos-tab" data-bs-toggle="pill" data-bs-target="#pills-combos">Комбо</a>
+						</li>
+						<li class="nav-item categories__tab text-center">
+							<a class="nav-link categories__link text-info rounded-5" id="pills-burgers-tab" data-bs-toggle="pill" data-bs-target="#pills-burgers">Бургеры</a>
+						</li>
+						<li class="nav-item categories__tab text-center">
+							<a class="nav-link categories__link text-info rounded-5" id="pills-chicken-tab" data-bs-toggle="pill" data-bs-target="#pills-chicken">Курица</a>
+						</li>
+						<li class="nav-item categories__tab text-center">
+						  	<a class="nav-link categories__link text-info rounded-5" id="pills-meet-tab" data-bs-toggle="pill" data-bs-target="#pills-meet">Мясо</a>
+						</li>
+						<li class="nav-item categories__tab text-center">
+							<a class="nav-link categories__link text-info rounded-5" id="pills-fish-tab" data-bs-toggle="pill" data-bs-target="#pills-fish">Рыба</a>
+					  	</li>
+						<li class="nav-item categories__tab text-center">
+							<a class="nav-link categories__link text-info rounded-5" id="pills-snacks-tab" data-bs-toggle="pill" data-bs-target="#pills-snacks">Закуски</a>
+					  	</li>
+						<li class="nav-item categories__tab text-center">
+							<a class="nav-link categories__link text-info rounded-5" id="pills-drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-drinks">Напитки</a>
+					  	</li>
+						<li class="nav-item categories__tab text-center">
+							<a class="nav-link categories__link text-info rounded-5" id="pills-alcohol-tab" data-bs-toggle="pill" data-bs-target="#pills-alcohol">Алкоголь</a>
+						</li>
+						<li class="nav-item categories__tab text-center">
+							<a class="nav-link categories__link text-info rounded-5" id="pills-dessert-tab" data-bs-toggle="pill" data-bs-target="#pills-dessert">Десерты</a>
+						</li>
+					</ul>  
+				</div>
+
+				<div class="categories__wrapper">
+					<div class="tab-content categories__product">
+						<div class="tab-pane fade show active" id="pills-combos">
+							<div class="categories__product__wrapper">
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/combo/combo-1.png" class="categories__photo card-img-top" alt="Комбо легкий перекус">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Комбо легкий перекус</h3>
+										<p class="card-text text-info">Попробуйте сразу несколько вкусов. Выбирайте различные варианты комбо, которые подойдут именно вам. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/combo/combo-2.png" class="categories__photo card-img-top" alt="Пивное комбо легкое">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пивное Комбо легкое</h3>
+										<p class="card-text text-info">Попробуйте сразу несколько вкусов. Выбирайте различные варианты комбо, которые подойдут именно вам. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/combo/combo-3.png" class="categories__photo card-img-top" alt="Комбо большое ассорти">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Комбо большое ассорти</h3>
+										<p class="card-text text-info">Попробуйте сразу несколько вкусов. Выбирайте различные варианты комбо, которые подойдут именно вам. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/combo/combo-4.png" class="categories__photo card-img-top" alt="Комбо средний перекус">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Комбо средний перекус</h3>
+										<p class="card-text text-info">Попробуйте сразу несколько вкусов. Выбирайте различные варианты комбо, которые подойдут именно вам. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/combo/combo-5.png" class="categories__photo card-img-top" alt="Пивное комбо большое">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пивное Комбо большое</h3>
+										<p class="card-text text-info">Попробуйте сразу несколько вкусов. Выбирайте различные варианты комбо, которые подойдут именно вам. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/combo/combo-6.png" class="categories__photo card-img-top" alt="Комбо большой перекус">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Комбо большой перекус</h3>
+										<p class="card-text text-info">Попробуйте сразу несколько вкусов. Выбирайте различные варианты комбо, которые подойдут именно вам. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="pills-burgers">
+							<div class="categories__product__wrapper">
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/black-burger.png" class="categories__photo card-img-top" alt="Черный бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Черный бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/black-burger-cheese.png" class="categories__photo card-img-top" alt="Черный бургер сырный">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Черный бургер сырный</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/black-burger-double.png" class="categories__photo card-img-top" alt="Черный бургер двойной">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Черный бургер двойной</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/white-burger.png" class="categories__photo card-img-top" alt="Белый бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Белый бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/white-burger-cheese.png" class="categories__photo card-img-top" alt="Белый бургер сырный">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Белый бургер сырный</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/white-burger-double.png" class="categories__photo card-img-top" alt="Белый бургер двойной">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Белый бургер двойной</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/red-burger.png" class="categories__photo card-img-top" alt="Красный бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Красный бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/red-burger-cheese.png" class="categories__photo card-img-top" alt="Красный бургер сырный">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Красный бургер сырный</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/red-burger-double.png" class="categories__photo card-img-top" alt="Красный бургер двойной">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Красный бургер двойной</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/green-burger.png" class="categories__photo card-img-top" alt="Зеленый бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Зеленый бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+								
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/green-burger-cheese.png" class="categories__photo card-img-top" alt="Зеленый бургер сырный">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Зеленый бургер сырный</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/green-burger-double.png" class="categories__photo card-img-top" alt="Зеленый бургер двойной">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Зеленый бургер двойной</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/blue-burger.png" class="categories__photo card-img-top" alt="Синий бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Синий бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+								
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/blue-burger-cheese.png" class="categories__photo card-img-top" alt="Синий бургер сырный">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Синий бургер сырный</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/blue-burger-double.png" class="categories__photo card-img-top" alt="Синий бургер двойной">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Синий бургер двойной</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/cheese-burger.png" class="categories__photo card-img-top" alt="Сырный бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Сырный бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+								
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/cheese-burger-cheese.png" class="categories__photo card-img-top" alt="Супер сырный бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Супер сырный бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/cheese-burger-double.png" class="categories__photo card-img-top" alt="Cырный бургер двойной">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Cырный бургер двойной</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/chedder-king-burger.png" class="categories__photo card-img-top" alt="Чеддер кинг бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Чеддер кинг бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+								
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/chedder-king-burger-cheese.png" class="categories__photo card-img-top" alt="Чеддер кинг бургер сырный">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Чеддер кинг бургер сырный</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/chedder-king-burger-double.png" class="categories__photo card-img-top" alt="Чеддер кинг бургер двойной">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Чеддер кинг бургер двойной</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/chiken-burger.png" class="categories__photo card-img-top" alt="Куриный бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Куриный бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/fish-burger.png" class="categories__photo card-img-top" alt="Рыбный бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Рыбный бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/meet-burger.png" class="categories__photo card-img-top" alt="Мясной бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Мясной бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+							
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/hight-burger.png" class="categories__photo card-img-top" alt="Высокий бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Высокий бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/long-burger.png" class="categories__photo card-img-top" alt="Длинный бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Длинный бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/burgers/super-big-burger.png" class="categories__photo card-img-top" alt="Огромный бургер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Огромный бургер</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наших бургеров, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="pills-chicken">
+							<div class="categories__product__wrapper">
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/chiken-wings.png" class="categories__photo card-img-top" alt="Куриные крылья">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Куриные крылья</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом куриных крыльев, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/chicken-legs.png" class="categories__photo card-img-top" alt="Куриные ножки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Куриные ножки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом куриных ножек, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+	
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/chiken.png" class="categories__photo card-img-top" alt="Жареная курица">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Жареная курица</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом жареной курицы, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/turkey-wings.png" class="categories__photo card-img-top" alt="Крылья индейки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Крылья индейки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом крыльев индейки, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/turkey-legs.png" class="categories__photo card-img-top" alt="Ножки индейки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Ножки индейки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом ножек индейки, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/turkey.png" class="categories__photo card-img-top" alt="Жареная индейка">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Жареная индейка</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом жареной индейки, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/duck-wings.png" class="categories__photo card-img-top" alt="Утиные крылья">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Утиные крылья</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом утиных крыльев, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/duck-legs.png" class="categories__photo card-img-top" alt="Утиные ножки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Утиные ножки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом утиных ножек, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/duck.png" class="categories__photo card-img-top" alt="Жареная утка">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Жареная утка</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом жареной утки, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/goose-wings.png" class="categories__photo card-img-top" alt="Гусиные крылья">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Гусиные крылья</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом гусиных крыльев, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/goose-legs.png" class="categories__photo card-img-top" alt="Гусиные ножки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Гусиные ножки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом гусиных ножек, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/chikens/goose.png" class="categories__photo card-img-top" alt="Жареный гусь">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Жареный гусь</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом жареного гуся, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="pills-meet">
+							<div class="categories__product__wrapper">
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/pork-sausages.png" class="categories__photo card-img-top" alt="Свиные сардельки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Свиные сардельки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом свиных сарделек, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/pork-kebab.png" class="categories__photo card-img-top" alt="Шашлык из свинины">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Шашлык <span class="text-lowercase">из</span> свинины</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом шашлыка из свинины, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/pork-ribs.png" class="categories__photo card-img-top" alt="Свиные ребрышки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Свиные ребрышки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом свиных ребрышек, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/boiled-pork.png" class="categories__photo card-img-top" alt="Буженина свиная">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Буженина свиная</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом свиной буженины, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/pork-steak.png" class="categories__photo card-img-top" alt="Свиной стейк">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Свиной стейк</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом свиного стейка, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">900 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/pork.png" class="categories__photo card-img-top" alt="Туша свиньи">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Туша свиньи</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом свиной туши, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/beef-sausages.png" class="categories__photo card-img-top" alt="Говяжьи сардельки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Говяжьи сардельки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом говяжьих сарделек, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/beef-kebab.png" class="categories__photo card-img-top" alt="Шашлык из говядины">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Шашлык <span class="text-lowercase">из</span> говядины</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом шашлыка из говядины, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/beef-ribs.png" class="categories__photo card-img-top" alt="Говяжьи ребрышки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Говяжьи ребрышки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом говяжьих ребрышек, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+								
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/boiled-beef.png" class="categories__photo card-img-top" alt="Ростбиф говяжий">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Ростбиф говяжий</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом говяжьего ростбифа, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/beef-steak.png" class="categories__photo card-img-top" alt="Говяжий стейк">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Говяжий стейк</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом говяжьего стейка, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">900 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/beef.png" class="categories__photo card-img-top" alt="Туша говяжья">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Туша говяжья</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом говяжьей туши, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/lamb-sausages.png" class="categories__photo card-img-top" alt="Бараньи сардельки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Бараньи сардельки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом бараньих сарделек, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/lamb-kebab.png" class="categories__photo card-img-top" alt="Шашлык из баранины">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Шашлык <span class="text-lowercase">из</span> баранины</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом шашлыка из баранины, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/lamb-ribs.png" class="categories__photo card-img-top" alt="Бараньи ребрышки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Бараньи ребрышки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом бараньих ребрышек, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+								
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/boiled-lamb.png" class="categories__photo card-img-top" alt="Буженина баранья">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Буженина баранья</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом бараньей буженины, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/lamb-steak.png" class="categories__photo card-img-top" alt="Бараний стейк">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Бараний стейк</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом бараньего стейка, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">900 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/meet/lamb.png" class="categories__photo card-img-top" alt="Туша баранья">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Туша баранья</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом бараньей туши, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="pills-fish">
+							<div class="categories__product__wrapper">
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/pangasius.png" class="categories__photo card-img-top" alt="Пангасиус">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пангасиус</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом пангасиуса, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/pike.png" class="categories__photo card-img-top" alt="Щука">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Щука</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом щуки, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/shrimp.png" class="categories__photo card-img-top" alt="Креветки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Креветки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом креветок, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/pink-salmon.png" class="categories__photo card-img-top" alt="Горбуша свежая">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Горбуша свежая</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом свежей горбуши, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/salted-pink-salmon.png" class="categories__photo card-img-top" alt="Горбуша соленая">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Горбуша соленая</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом соленой горбуши, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/grilled-pink-salmon.png" class="categories__photo card-img-top" alt="Горбуша жареная">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Горбуша жареная</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом жареной горбуши, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/cold-smoked-pink-salmon.png" class="categories__photo card-img-top" alt="Горбуша холодного копчения">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Горбуша холодного копчения</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом горбуши холодного копчения, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/hot-smoked-pink-salmon.png" class="categories__photo card-img-top" alt="Горбуша горячего копчения">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Горбуша горячего копчения</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом горбуши горячего копчения, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">900 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/stuffed-pink-salmon.png" class="categories__photo card-img-top" alt="Горбуша фаршированная">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Горбуша фаршированная</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом фаршированной горбуши, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/trout.png" class="categories__photo card-img-top" alt="Форель свежая">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Форель свежая</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом свежей форели, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/salted-trout.png" class="categories__photo card-img-top" alt="Форель соленая">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Форель соленая</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом соленой форели, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/fried-trout.png" class="categories__photo card-img-top" alt="Форель жареная">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Форель жареная</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом жареной форели, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/cold-smoked-trout.png" class="categories__photo card-img-top" alt="Форель холодного копчения">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Форель холодного копчения</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом форели холодного копчения, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/hot-smoked-trout.png" class="categories__photo card-img-top" alt="Форель горячего копчения">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Форель горячего копчения</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом форели горячего копчения, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">900 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/stuffed-trout.png" class="categories__photo card-img-top" alt="Форель фаршированная">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Форель фаршированная</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом фаршированной форели, которая тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/sturgeon.png" class="categories__photo card-img-top" alt="Осетр свежий">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Осетр свежий</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом свежего осетра, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/salted-sturgeon.png" class="categories__photo card-img-top" alt="Осетр соленый">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Осетр соленый</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом соленого осетра, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">600 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/fried-sturgeon.png" class="categories__photo card-img-top" alt="Осетр жареный">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Осетр жареный</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом жареного осетра, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/cold-smoked-sturgeon.png" class="categories__photo card-img-top" alt="Осетр холодного копчения">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Осетр холодного копчения</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом осетра холодного копчения, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">800 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/hot-smoked-sturgeon.png" class="categories__photo card-img-top" alt="Осетр горячего копчения">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Осетр горячего копчения</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом осетра горячего копчения, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">900 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/fish/stuffed-sturgeon.png" class="categories__photo card-img-top" alt="Осетр фаршированный">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Осетр фаршированный</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом фаршированного осетра, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+							</div>	
+						</div>
+
+						<div class="tab-pane fade" id="pills-snacks">
+							<div class="categories__product__wrapper">
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/potato-free.png" class="categories__photo card-img-top" alt="Картофель фри">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Картофель фри</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом картофеля фри, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/potato-free-tomato.png" class="categories__photo card-img-top" alt="Картофель фри с томатным соусом">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Картофель фри <span class="text-lowercase">с</span> томатным соусом</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом картофеля фри с томатным соусом, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/potato-free-cheese.png" class="categories__photo card-img-top" alt="Картофель фри с сырным соусом">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Картофель фри <span class="text-lowercase">с</span> сырным соусом</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом картофеля фри c сырным соусом, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+							
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/potato-free-village.png" class="categories__photo card-img-top" alt="Картофель по деревенски">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Картофель <span class="text-lowercase">по</span> деревенски</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом картофеля по деревенски, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/potato-free-village-tomato.png" class="categories__photo card-img-top" alt="Картофель по деревенски с томатным соусом">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Картофель <span class="text-lowercase">по</span> деревенски <span class="text-lowercase">с</span> томатным соусом</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом картофеля по деревенски с томатным соусом, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/potato-free-village-cheese.png" class="categories__photo card-img-top" alt="Картофель по деревенски с сырным соусом">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Картофель <span class="text-lowercase">по</span> деревенски <span class="text-lowercase">с</span> сырным соусом</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом картофеля по деревенски с сырным соусом, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/potato-royal-free.png" class="categories__photo card-img-top" alt="Роял фри">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Роял фри</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом роял фри, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/onion-rings.png" class="categories__photo card-img-top" alt="Луковые кольца">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Луковые кольца</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом луковых колец, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/nuggets.png" class="categories__photo card-img-top" alt="Наггетсы">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Наггетсы</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом наггетсов, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/cheese-medallions.png" class="categories__photo card-img-top" alt="Сырные медальоны">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Сырные медальоны</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом сырных медальонов, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/croutons.png" class="categories__photo card-img-top" alt="Гренки">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Гренки</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом гренок, которые тают во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/snacks/beer-assorted.png" class="categories__photo card-img-top" alt="Пивное ассорти">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пивное ассорти</h3>
+										<p class="card-text text-info">Насладитесь изумительным вкусом пивного ассорти, который тает во рту. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="pills-drinks">
+							<div class="categories__product__wrapper">
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/milk-cocktail.png" class="categories__photo card-img-top" alt="Молочный коктейль">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Молочный коктейль</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/chocolate-cocktail.png" class="categories__photo card-img-top" alt="Шоколадный коктейль">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Шоколадный коктейль</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/strawberry-cocktail.png" class="categories__photo card-img-top" alt="Клубничный коктейль">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Клубничный коктейль</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/coca-cola.png" class="categories__photo card-img-top" alt="Coca cola">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-uppercase text-danger">Coca cola</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/pepsi.png" class="categories__photo card-img-top" alt="Pepsi">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-uppercase text-danger">Pepsi</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/everless-cola.png" class="categories__photo card-img-top" alt="Everless cola">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-uppercase text-danger">Everless cola</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/lipton-tea-green.png" class="categories__photo card-img-top" alt="Lipton зеленый чай">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger"><span class="text-uppercase">Lipton</span> зеленый чай</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/lipton-tea-black.png" class="categories__photo card-img-top" alt="Lipton черный чай лимон">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger"><span class="text-uppercase">Lipton</span> черный чай лимон</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/lipton-tea-peach.png" class="categories__photo card-img-top" alt="Lipton черный чай персик">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger"><span class="text-uppercase">Lipton</span> черный чай персик</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/lipton-tea-raspberry.png" class="categories__photo card-img-top" alt="Lipton черный чай малина">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger"><span class="text-uppercase">Lipton</span> черный чай малина</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/mineral-water-aqua-minerale-carbonated.png" class="categories__photo card-img-top" alt="Минеральная вода Aqua Minerale газированная">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Минеральная вода <span class="text-uppercase">Aqua minerale</span> газированная</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/mineral-water-aqua-minerale-non-carbonated.png" class="categories__photo card-img-top" alt="Минеральная вода Aqua Minerale негазированная">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Минеральная вода <span class="text-uppercase">Aqua</span> minerale негазированная</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/energy-adrenalin-original.png" class="categories__photo card-img-top" alt="Энергетический напиток Adrenalin Rush">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Энергетический напиток <span class="text-uppercase">Adrenalin rush</span></h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/energy-adrenalin-orange.png" class="categories__photo card-img-top" alt="Энергетический напиток Adrenalin Rush апельсин">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Энергетический напиток <span class="text-uppercase">Adrenalin rush</span> апельсин</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/energy-adrenalin-mango.png" class="categories__photo card-img-top" alt="Энергетический напиток Adrenalin Rush манго">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Энергетический напиток <span class="text-uppercase">Adrenalin rush</span> манго</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/energy-adrenalin-strawberry.png" class="categories__photo card-img-top" alt="Энергетический напиток Adrenalin Rush ягодный микс">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Энергетический напиток <span class="text-uppercase">Adrenalin rush</span> ягодный микс</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/energy-adrenalin-extra.png" class="categories__photo card-img-top" alt="Энергетический напиток Adrenalin Rush Extra">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Энергетический напиток <span class="text-uppercase">Adrenalin rush extra</span></h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/energy-adrenalin-game-fuel.png" class="categories__photo card-img-top" alt="Энергетический напиток Adrenalin Rush Game Fuel">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Энергетический напиток <span class="text-uppercase">Adrenalin rush game fuel</span></h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/energy-adrenalin-zero.png" class="categories__photo card-img-top" alt="Энергетический напиток Adrenalin Rush Zero">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Энергетический напиток <span class="text-uppercase">Adrenalin rush zero</span></h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/energy-adrenalin-gold.png" class="categories__photo card-img-top" alt="Энергетический напиток Adrenalin Rush Gold">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Энергетический напиток <span class="text-uppercase">Adrenalin rush gold</span></h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/energy-adrenalin-lime.png" class="categories__photo card-img-top" alt="Энергетический напиток Adrenalin Rush гуанабана лайм">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Энергетический напиток <span class="text-uppercase">Adrenalin rush</span> гуанабана лайм</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/energy-red-bull.png" class="categories__photo card-img-top" alt="Энергетический напиток Red Bull">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Энергетический напиток <span class="text-uppercase">Red bull</span></h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/grape-juice.png" class="categories__photo card-img-top" alt="Сок Добрый виноград">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Сок Добрый виноград</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/drinks/multifruit-juice.png" class="categories__photo card-img-top" alt="Сок Добрый мультифрукт">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Сок Добрый мультифрукт</h3>
+										<p class="card-text text-info">Пробуйте наши напитки и насладитесь их неповторимым вкусом! Погрузитесь в мир вкусов и ароматов!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="pills-alcohol">
+							<div class="categories__product__wrapper">
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-lowenbrau-non-alcohol.png" class="categories__photo card-img-top" alt="Пиво Lowenbrau безалкогольное">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво <span class="text-uppercase">Lowenbrau</span> безалкогольное</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-lowenbrau-original.png" class="categories__photo card-img-top" alt="Пиво Lowenbrau оригинальное">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво <span class="text-uppercase">Lowenbrau</span> оригинальное</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-lowenbrau-ungefiltert.png" class="categories__photo card-img-top" alt="Пиво Lowenbrau нефильтрованное">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво <span class="text-uppercase">Lowenbrau</span> нефильтрованное</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-lowenbrau-bockbier.png" class="categories__photo card-img-top" alt="Пиво Lowenbrau крепкое">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво <span class="text-uppercase">Lowenbrau</span> крепкое</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-lowenbrau-dunkel.png" class="categories__photo card-img-top" alt="Пиво Lowenbrau темное">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво <span class="text-uppercase">Lowenbrau</span> темное</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-amserdam-navigator.png" class="categories__photo card-img-top" alt="Пиво Amsterdam Navigator">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво <span class="text-uppercase">Amsterdam navigator</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-bud-non-alcohol.png" class="categories__photo card-img-top" alt="Пиво Bud безалкогольное">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво <span class="text-uppercase">Bud</span> безалкогольное</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-bud.png" class="categories__photo card-img-top" alt="Пиво Bud светлое">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво <span class="text-uppercase">Bud</span> светлое</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-gosser.png" class="categories__photo card-img-top" alt="Пиво Gosser светлое">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво <span class="text-uppercase">Gosser</span> светлое</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-gold-barell-classic.png" class="categories__photo card-img-top" alt="Пиво Золотая бочка классическое">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво Золотая бочка классическое</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-gold-barell-light.png" class="categories__photo card-img-top" alt="Пиво Золотая бочка светлое">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво Золотая бочка светлое</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-gold-barell-hard.png" class="categories__photo card-img-top" alt="Пиво Золотая бочка крепкое">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво Золотая бочка крепкое</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-old-miller-light.png" class="categories__photo card-img-top" alt="Пиво Старый мельник светлое">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво Старый мельник светлое</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-old-miller-hard.png" class="categories__photo card-img-top" alt="Пиво Старый мельник темное бархатное">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво Старый мельник темное бархатное</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/beer/beer-trekhgornoye.png" class="categories__photo card-img-top" alt="Пиво Трехгорное">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пиво Трехгорное</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/vodka/vodka-five-lakes.png" class="categories__photo card-img-top" alt="Водка Пять озер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Водка Пять озер</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/vodka/vodka-five-lakes-silver.png" class="categories__photo card-img-top" alt="Водка Пять озер серебряная">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Водка Пять озер серебряная</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/vodka/vodka-five-lakes-premium.png" class="categories__photo card-img-top" alt="Водка Пять озер премиум">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Водка Пять озер премиум</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/absinthe/absinthe-hills.png" class="categories__photo card-img-top" alt="Абсент Hills">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Абсент <span class="text-uppercase">Hills</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/absinthe/absinthe-fruko-schulz.png" class="categories__photo card-img-top" alt="Абсент Fruko Schulz">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Абсент <span class="text-uppercase">Fruko schulz</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/liquor/liquor-jagermeister.png" class="categories__photo card-img-top" alt="Ликер Jagermeister">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Ликер <span class="text-uppercase">Jagermeister</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/brandy/brandy-darkberry.png" class="categories__photo card-img-top" alt="Бренди Dark Berry">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Бренди <span class="text-uppercase">Dark berry</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/brandy/brandy-alvisa.png" class="categories__photo card-img-top" alt="Бренди Alvisa">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Бренди <span class="text-uppercase">Alvisa</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/whiskey/whiskey-jack-daniels.png" class="categories__photo card-img-top" alt="Виски Jack Daniels">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Виски <span class="text-uppercase">Jack daniels</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/rum/rum-captain-morgan-original.png" class="categories__photo card-img-top" alt="Ром Captain Morgan оригинальный">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Ром <span class="text-uppercase">Captain morgan</span> оригинальный</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/rum/rum-captain-morgan-dark.png" class="categories__photo card-img-top" alt="Captain Morgan темный">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Ром <span class="text-uppercase">Captain morgan</span> темный</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/tequila/tequila-espolon.png" class="categories__photo card-img-top" alt="Текила Espolon">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Текила <span class="text-uppercase">Espolon</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-stareishina-12.png" class="categories__photo card-img-top" alt="Коньяк Старейшина 12 летний">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Старейшина 12 <span class="text-lowercase">летний</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-abhasia-7.png" class="categories__photo card-img-top" alt="Коньяк Абхазия 7 летний">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Абхазия 7 <span class="text-lowercase">летний</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-david-iverieli.png" class="categories__photo card-img-top" alt="Коньяк David Iverieli">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк <span class="text-uppercase">David iverieli</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-shustoff-russian.png" class="categories__photo card-img-top" alt="Коньяк Шустов Российский">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Шустов Российский</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-shustoff-armenia-3.png" class="categories__photo card-img-top" alt="Коньяк Шустов Армения 3 летний">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Шустов Армения 3 <span class="text-lowercase">летний</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-shustoff-armenia-5.png" class="categories__photo card-img-top" alt="Коньяк Шустов Армения 5 летний">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Шустов Армения 5 <span class="text-lowercase">летний</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-kinovskiy-3.png" class="categories__photo card-img-top" alt="Коньяк Киновский 3 летний">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Киновский 3 <span class="text-lowercase">летний</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-lezginka.png" class="categories__photo card-img-top" alt="Коньяк Лезгинка">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Лезгинка</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-erevanskij-dvorik-7.png" class="categories__photo card-img-top" alt="Коньяк Ереванский дворик 7 летний">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Ереванский дворик 7 <span class="text-lowercase">летний</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-noy.png" class="categories__photo card-img-top" alt="Коньяк Ной">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Ной</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-kenigsberg-7.png" class="categories__photo card-img-top" alt="Коньяк Старый Kenigsberg 7 летний">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Старый <span class="text-uppercase">Kenigsberg</span> 7 <span class="text-lowercase">летний</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-ararat.png" class="categories__photo card-img-top" alt="Коньяк Арарат">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Арарат</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-old-erevan-7.png" class="categories__photo card-img-top" alt="Коньяк Древний Эривань 7 летний">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Древний Эривань 7 <span class="text-lowercase">летний</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-mejida.png" class="categories__photo card-img-top" alt="Коньяк Medjida 15 летний">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк <span class="text-uppercase">Medjida</span> 15 <span class="text-lowercase">летний</span></h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/alcohol/cognac/cognac-gold-reserve.png" class="categories__photo card-img-top" alt="Коньяк Золотой резерв">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Коньяк Золотой резерв</h3>
+										<p class="card-text text-info">Откройте для себя мир изысканных вкусов с нашей коллекцией алкогольных напитков. Наслаждайтесь неповторимым букетом ароматов и долгим послевкусием!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">1000 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="pills-dessert">
+							<div class="categories__product__wrapper">
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/dessert/cake-eclair.png" class="categories__photo card-img-top" alt="Пироженое Эклер">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пироженое Эклер</h3>
+										<p class="card-text text-info">Наслаждайтесь каждым мгновением, проведённым за чашечкой ароматного чая или кофе в компании наших десертов. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/dessert/cake-straw.png" class="categories__photo card-img-top" alt="Пироженое Трубочка">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пироженое Трубочка</h3>
+										<p class="card-text text-info">Наслаждайтесь каждым мгновением, проведённым за чашечкой ароматного чая или кофе в компании наших десертов. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/dessert/cake-basket.png" class="categories__photo card-img-top" alt="Пироженое Корзиночка">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пироженое Корзиночка</h3>
+										<p class="card-text text-info">Наслаждайтесь каждым мгновением, проведённым за чашечкой ароматного чая или кофе в компании наших десертов. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/dessert/cake-birds-milk.png" class="categories__photo card-img-top" alt="Торт Птичье молоко">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Торт Птичье молоко</h3>
+										<p class="card-text text-info">Наслаждайтесь каждым мгновением, проведённым за чашечкой ароматного чая или кофе в компании наших десертов. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/dessert/sponge-cake.png" class="categories__photo card-img-top" alt="Пирожное бисквитное со сливочным кремом">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Пирожное бисквитное <span class="text-lowercase">со</span> сливочным кремом</h3>
+										<p class="card-text text-info">Наслаждайтесь каждым мгновением, проведённым за чашечкой ароматного чая или кофе в компании наших десертов. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/dessert/cake-ama.png" class="categories__photo card-img-top" alt="Торт Аma Сказочка">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Торт <span class="text-uppercase">Аma</span> Сказочка</h3>
+										<p class="card-text text-info">Наслаждайтесь каждым мгновением, проведённым за чашечкой ароматного чая или кофе в компании наших десертов. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">500 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/dessert/cake-napoleon.png" class="categories__photo card-img-top" alt="Торт Наполеон">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Торт Наполеон</h3>
+										<p class="card-text text-info">Наслаждайтесь каждым мгновением, проведённым за чашечкой ароматного чая или кофе в компании наших десертов. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/dessert/sponge-cake-original.png" class="categories__photo card-img-top" alt="Торт Бисквитный">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Торт Бисквитный</h3>
+										<p class="card-text text-info">Наслаждайтесь каждым мгновением, проведённым за чашечкой ароматного чая или кофе в компании наших десертов. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+
+								<div class="card rounded-5 categories__item p-3 bg-warning">
+									<div class="card__header categories__header">
+										<img src="img/menu/dessert/cake-dellisse-praga.png" class="categories__photo card-img-top" alt="Торт Dellisse Шоколадный Прага">
+									</div>
+									<div class="card-body text-center">
+										<h3 class="card-title text-capitalize text-danger">Торт <span class="text-uppercase">Dellisse</span> Шоколадный Прага</h3>
+										<p class="card-text text-info">Наслаждайтесь каждым мгновением, проведённым за чашечкой ароматного чая или кофе в компании наших десертов. Приятного аппетита!</p>
+									</div>
+									<div class="card__footer px-3 d-flex justify-content-between align-items-center">
+										<p class="categories__price text-danger">700 ₽</p>
+										<button class="categories__btn btn btn-danger text-white">Заказать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>  
+		
+		<section class="about">
+			<div class="container">
+				<div class="about__wrapper d-flex justify-content-between align-items-lg-center gap-5 flex-column flex-xxl-row">
+					<div class="about__item col-12 col-xxl-8">
+						<div class="about__img">
+							<img src="img/restourant.jpg" alt="Фото ресторана" class="about__photo">
+						</div>
+					</div>
+
+					<div class="about__item col-12 col-lg-8 col-xl-6 col-xxl-4">
+						<h2 class="about__header text-center text-uppercase text-warning fw-bold">Ресторан бургер хаус</h2>
+						<h3 class="about__heading text-center text-uppercase text-danger fw-bold">Лучшие бургеры в вашем городе</h3>
+						<div class="about__description mt-3 d-flex flex-column row-gap-2">
+							<p class="about__text text-info">Ресторан предлагает широкий выбор бургеров, приготовленных из свежих и качественных ингредиентов. В меню представлены бургеры с различными видами мяса, рыбы и эксклюзивными ингридиентами. Интерьер выполнен в стиле классического американского дайнера с элементами ретро-дизайна.</p>
+							<p class="about__text text-info">
+								В ресторане царит уютная и дружелюбная атмосфера. Стены украшены винтажными плакатами и фотографиями, а на столах стоят свечи. Гости могут расположиться за столиками или у барной стойки.
+							</p>
+							<p class="about__text text-info">
+								В меню ресторана представлены классические бургеры, а также авторские варианты с необычными соусами и начинками. Кроме того, в меню есть мясные и рыбные блюда, картофель фри, десерты, напитки и алкоголь.
+							</p>
+							<p class="about__text text-info">
+								Официанты приветливы и готовы помочь с выбором блюд и напитков. Они быстро принимают заказы и приносят еду.
+							</p>
+							<p class="about__text text-info">
+								Для детей предусмотрена игровая зона. Также в ресторане есть Wi-Fi и возможность заказать доставку еды на дом.
+							</p>
+							<p class="about__text text-info">
+								Ресторан &laquo;Бургер Хаус&raquo; — это идеальное место для любителей бургеров и вкусной еды. Здесь можно попробовать разнообразные бургеры и приятно провести время в уютной атмосфере.
+							</p>
+						</div>	
+						<div class="about__director mt-4">
+							<img class="about__director__photo" src="img/director.png" alt="Подпись генерального директора">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="video">
+			<div class="container">
+				<div class="section__block__header">
+					<h2 class="section__header text-center text-uppercase text-warning fw-bold fs-1">Как готовят наши сочные бургеры ?</h2>
+				</div>
+			</div>
+			<a class="video__restourant__link position-relative d-flex justify-content-center" href="video/promo-video.mp4" data-fancybox="video-gallery">
+				<video class="video__restourant__video col-12" src="video/promo-video.mp4" poster="video/video-poster.jpg"></video>
+				<div class="video__play__btn position-absolute"></div>
+			</a>
+		</section>
+
+		<section class="address">
+			<div class="address__container container">
+				<div class="section__block__header">
+					<h2 class="section__header text-center text-uppercase text-warning fw-bold fs-1">Наш адрес</h2>
+				</div>
+				<div class="address__wrapper d-flex justify-content-between align-items-center flex-column flex-xl-row row-gap-5 mt-5 mt-xl-0">
+					<div class="address__item col-12 col-xl-4 col-xxl-3 d-flex flex-column gap-3">
+						<h3 class="address__heading text-center text-warning fw-bold">Москва</h3>
+						<p class="address__text text-info text-center fs-5">Красная Площадь д 1</p>
+						<a href="mailto:info@burger-house.ru" class="address__link text-warning text-center justify-content-center">info@burger-house.ru</a>
+						<a href="tel:+1234567890" class="address__link text-danger text-center justify-content-center">+1234567890</a>
+					</div>
+					<div class="address__item col-12 col-xl-4 col-xxl-3 d-flex flex-column gap-3">
+						<h3 class="address__heading text-center text-warning fw-bold">Санкт-Петербург</h3>
+						<p class="address__text text-info text-center fs-5">Невский пр-т д 1</p>
+						<a href="mailto:info@burger-house.ru" class="address__link text-warning text-center justify-content-center">info@burger-house.ru</a>
+						<a href="tel:+1234567890" class="address__link text-danger justify-content-center">+1234567890</a>
+					</div>
+					<div class="address__item col-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 d-flex flex-column gap-3">
+						<h3 class="address__heading text-center text-warning fw-bold">Оставайтесь на Связи</h3>
+						<form class="address__form d-flex flex-column gap-3">
+							<div class="address__block__form position-relative">
+								<input type="email" class="address__input form-control rounded-5 py-2 text-warning fs-5" required id="addressEmail">
+								<button type="submit" class="address__btn rounded-5 btn btn-sm btn-danger position-absolute">Подписаться</button>
+							</div>	
+							<p class="address__text text-info text-center">Оставайтесь на связи с нами, чтобы получить эксклюзивное предложение!</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer bg-warning py-2">
+		<div class="container">
+			<div class="footer__wrapper d-flex justify-content-between flex-column align-items-center row-gap-3 flex-md-row">
+				<div class="footer__logo">
+					<a class="footer__logo__link" href="#">
+						<img class="footer__photo" src="img/logo.png" alt="Логотип">
+					</a>
+				</div>
+
+				<div class="footer__center d-flex justify-content-between align-items-center w-75 flex-column row-gap-3 flex-lg-row">
+					<p class="footer__text fs-5 text-info">&copy; Все права защищены</p>
+					<p class="footer__text d-flex gap-3 gap-sm-5 fs-5 text-info flex-column flex-sm-row">
+						Номер для заказа 
+						<a class="footer__link align-items-center gap-2 text-danger pb-1" href="tel:+1234567890">
+							<svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+							</svg>
+							+1234567890
+						</a> 
+					</p>
+				</div>
+
+				<div class="footer__logo">
+					<a class="footer__logo__link" href="#">
+						<img class="footer__photo" src="img/logo.png" alt="Логотип">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="block__modals">
+		<div class="modal modal__order fade" id="modalOrder">
+			<div class="modal-dialog">
+				<div class="modal-content rounded-4">
+					<div class="modal-header">
+						<h2 class="modal-title text-danger fs-2 fw-bold">Подтвердите заказ</h2>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<h2 class="modalOrder__header card-title text-center text-capitalize text-danger"></h2>
+						<img class="modalOrder__photo my-3" src="" alt="">
+						<p class="modalOrder__price categories__price text-center text-danger"></p>
+						<p class="modal-text text-center text-info fs-4 fw-bold">Вы уверены что хотите сделать заказ?</p>
+					</div>
+					<div class="modal-footer">
+						<button class="modal__btn btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalCancel">Отмена</button>
+						<button class="modal__btn btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalSuccess">Заказать</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="modal modal__success fade" id="modalSuccess">
+			<div class="modal-dialog">
+				<div class="modal-content rounded-4">
+					<div class="modal-header">
+						<h2 class="modal__title modal-title text-success fs-2 fw-bold">Заказ успешно оформлен</h2>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<p class="modal-text text-center text-info fs-4 fw-bold">Ваш заказ будет готов в течении 10 минут, спасибо за ожидание</p>
+					</div>
+					<div class="modal-footer">
+						<button class="modal__btn btn btn-info text-white" data-bs-dismiss="modal">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="modal modal__cancel fade" id="modalCancel">
+			<div class="modal-dialog">
+				<div class="modal-content rounded-4">
+					<div class="modal-header">
+						<h2 class="modal-title text-danger fs-2 fw-bold">Отмена</h2>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<p class="modal-text text-center text-info fs-4 fw-bold">Отменено покупателем</p>
+					</div>
+					<div class="modal-footer">
+						<button class="modal__btn btn btn-info text-white" data-bs-dismiss="modal">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block__arrow__up position-fixed">
+		<div class="arrow__up">
+			<img class="arrow__up__photo" src="icons/arrow-up.svg" alt="arrow-up">
+		</div>
+	</div>
+
+</div>
+
+	<script src="libs/bootstrap/popperjs.min.js"></script>
+	<script src="libs/bootstrap/bootstrap5.min.js"></script>
+	<script src="libs/fancybox/fancybox.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

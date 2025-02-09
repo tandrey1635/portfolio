@@ -1,0 +1,50 @@
+@import 'sass/_variables'
+@import 'sass/_reset'
+@import 'sass/_mixins'
+
+
+
+/* Прижать подвал Флекс */
+.wrapper
+    @include flexReverseAxios  
+
+
+html, body
+    height: 100%
+    font-family: $mainFont
+    background: $defaultBg 
+
+header, footer
+    min-height: 80px
+
+main 
+    flex: 1 0 auto  
+    min-height: 100vh
+
+section
+    min-height: 600px
+
+footer
+    flex: 0 0 auto    
+
+
+        
+.container
+    padding: 0 15px
+    margin: 0 auto
+
+   
+
+@import 'sass/_header'
+@import 'sass/_promo'
+@import 'sass/_hot-prices'
+@import 'sass/_categories'
+@import 'sass/_about'
+@import 'sass/_video'
+@import 'sass/_address'
+@import 'sass/_footer'
+@import 'sass/_section-headers'
+@import 'sass/_custom-scroll'
+@import 'sass/_custom-styles'
+@import 'sass/_modal'
+@import 'sass/_arrow-up'
