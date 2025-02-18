@@ -538,7 +538,7 @@ const Main = () =>  {
             <section id="about" className="about">
                 <div className="container">
                     <SectionHeader title={'Обо мне'}/>
-                    <PortfolioText text={'Меня зовут Андрей мне 33 года. Заинтересовался Frontend разработкой и начал изучать верстку в октябре 2020 года. Прошел 6 курсов верстки, 4 курса по JavaScript и один по Bootstrap 4 на различных платформах. На данный момент изучаю React, в дальнейшем планирую изучать Typescript.'}/>
+                    <PortfolioText text={'Меня зовут Андрей мне 33 года. Заинтересовался Frontend разработкой и начал изучать верстку в октябре 2020 года. Прошел 6 курсов верстки, 4 курса по JavaScript, два по Bootstrap 4,5 и два по React на различных платформах. На данный момент изучаю Redux, в дальнейшем планирую изучать Typescript.'}/>
                     <PortfolioTabs tabAll={sertificates.all} tabHtml={sertificates.html} tabBootstrap={sertificates.bootstrap} tabJavascript={sertificates.javascript} tabReact={sertificates.react} tabBitrix={sertificates.bitrix} all={()=>dispatchSertificates({type: 'all'})} html={()=>dispatchSertificates({type: 'html'})} bootstrap={()=>dispatchSertificates({type: 'bootstrap'})} javascript={()=>dispatchSertificates({type: 'javascript'})} react={()=>dispatchSertificates({type: 'react'})} bitrix={()=>dispatchSertificates({type: 'bitrix'})} />
                     <div className="about__wrapper">
                         {sertificates.all && 
