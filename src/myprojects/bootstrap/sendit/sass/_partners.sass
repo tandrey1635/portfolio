@@ -1,0 +1,69 @@
+.partners
+	padding: 48px 0
+	min-height: 180px
+	@media(max-width: 768px)
+		padding: 32px 0
+		min-height: 120px
+	&__container
+		position: relative
+	&__wrapper
+		display: flex !important
+		align-items: center
+		justify-content: center
+		padding: 0 64px
+		@media(max-width: 1100px)
+			padding: 0 56px
+		@media(max-width: 900px)
+			padding: 0 32px		
+	&__item
+		width: 100px
+		height: 60px
+		@media(max-width: 850px)
+			width: 80px
+		@media(max-width: 768px)
+			width: 65px	
+			height: 45px
+		@media(max-width: 767px)
+			width: auto	
+		@media(max-width: 767px)	
+			height: 60px
+		@media(max-width: 480px)	
+			height: 45px	
+	&__photo
+		object-fit: contain
+	&__navigations
+		width: 100%
+		height: 20px
+		@include flexHorisontalCenter(space-between)
+		@include absolute(20px, 0px)
+	&__btn
+		width: 20px
+		height: 20px
+		cursor: pointer
+		&-prev
+			@include absolute
+			transform: rotate(-180deg)	
+			@media(max-width: 991px)
+				left: 15px
+			@media(max-width: 768px)
+				top: -8px	
+			@media(max-width: 767px)
+				top: 0
+			@media(max-width: 480px)
+				top: -8px				
+		&-next	
+			@include absoluteRight
+			@media(max-width: 991px)
+				right: 15px
+			@media(max-width: 768px)
+				top: -8px	
+			@media(max-width: 767px)
+				top: 0	
+			@media(max-width: 480px)
+				top: -8px			
+	&__navigation__photo
+		width: inherit
+		height: inherit	
+		fill: $arrowSliderBg
+		&:hover
+			fill: $mainBg

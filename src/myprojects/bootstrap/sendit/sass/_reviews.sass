@@ -1,0 +1,124 @@
+.reviews
+	padding: 64px 0
+	min-height: 550px
+	@media(max-width: 768px)
+		padding: 32px 0
+		min-height: 400px
+	&__container
+		position: relative
+	&__wrapper
+		padding: 0 64px
+		margin: 48px auto 0
+		display: flex !important
+		justify-content: center
+		@media(max-width: 768px)
+			margin: 26px auto 0
+		@media(max-width: 525px)
+			padding: 0 56px	
+		@media(max-width: 480px)
+			padding: 0 32px	
+		@media(max-width: 425px)
+			padding: 0 20px			
+	&__item
+		margin: 0 auto		
+	&__img
+		height: 160px	
+		@media(max-width: 850px)
+			height: 150px
+		@media(max-width: 800px)
+			height: 140px	
+		@media(max-width: 768px)
+			height: 110px	
+		@media(max-width: 767px)
+			height: 160px	
+		@media(max-width: 525px)
+			height: 150px	
+		@media(max-width: 375px)
+			height: 140px
+		@media(max-width: 360px)	
+			height: 120px	
+		@media(max-width: 320px)
+			height: 110px		
+	&__photo
+		object-fit: fill		
+	&__text
+		font-size: 20px	
+		@media(max-width: 900px)
+			font-size: 18px
+		@media(max-width: 767px)	
+			font-size: 20px
+		@media(max-width: 576px)	
+			font-size: 18px
+		&_descriptions
+			font-size: 16px
+			@media(max-width: 900px)
+				font-size: 14px
+			@media(max-width: 767px)
+				font-size: 16px	
+			@media(max-width: 576px)
+				font-size: 14px	
+			@media(max-width: 360px)
+				font-size: 12px		
+	&__info
+		@include flexReverseAxios
+		justify-content: space-between	
+	&__address
+		margin-top: 5px	
+		@media(max-width: 900px)
+			font-size: 14px
+		@media(max-width: 800px)
+			letter-spacing: -.5px
+		@media(max-width: 768px)
+			font-size: 10px	
+			letter-spacing: normal
+		@media(max-width: 767px)
+			font-size: 16px	
+		@media(max-width: 576px)
+			font-size: 14px	
+		@media(max-width: 425px)
+			font-size: 12px	
+		@media(max-width: 360px)
+			font-size: 10px	
+	&__bottom
+		margin-top: 28px
+		@media(max-width: 768px)
+			margin-top: 16px
+		@media(max-width: 767px)
+			margin-top: 28px
+		@media(max-width: 480px)
+			margin-top: 16px		
+	&__navigations
+		width: 100%
+		height: 20px
+		@include flexHorisontalCenter(space-between)
+		z-index: 10
+		@include absolute(210px)
+	&__btn
+		width: 20px
+		height: 20px
+		cursor: pointer
+		&-prev
+			@include absolute($left: 10px)
+			transform: rotate(-180deg)	
+			@media(max-width: 676px)	
+				left: 20px
+		&-next	
+			@include absoluteRight($right: 10px)	
+			@media(max-width: 1199px)
+				right: 110px
+			@media(max-width: 1100px)	
+				right: 90px
+			@media(max-width: 1024px)	
+				right: 70px	
+			@media(max-width: 991px)	
+				right: 50px		
+			@media(max-width: 676px)	
+				right: 20px
+	&__navigation__photo
+		width: inherit
+		height: inherit	
+		fill: $arrowSliderBg
+		&:hover
+			fill: $mainBg
+		
+			

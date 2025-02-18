@@ -1,0 +1,52 @@
+.accordeon  
+    background: $secondBg
+    border-radius: 32px  
+    min-height: 64px
+    transition: .5s
+    @media(max-width: 768px)
+        min-height: 48px 
+    @media(max-width: 480px)   
+        min-height: 80px  
+    &:hover
+        transition: .5s
+        box-shadow: 0px 4px 20px 0px $mainShadowHover
+    &__wrapper
+        margin-top: 26px
+        @include flexCenter($alignItems: flex-start)
+        gap: 20px
+        @media(max-width: 991px)
+            flex-direction: column
+    &__item
+        @include flexVerticalCenter
+        cursor: pointer  
+        min-height: inherit
+    &__description
+        padding: 20px 25px  
+        display: none
+        background: $thirdBg
+        border-radius: 0 0 32px 32px
+    &__header
+        width: 100%
+        padding: 15px 40px 15px 30px
+        position: relative
+        color: $defaultColor
+        &::after
+            width: 16px
+            height: 16px
+            @include after(15px, 20px)
+            @include background('icons/accordeon-arrow.svg', contain)
+            @media(max-width: 375px)
+                top: 50%
+                transform: translateY(-50%)
+    &__text
+        color: $defaultColor   
+.accordeon-active
+    display: flex
+.accordeon-active-icon
+    &::after
+        @include after(15px, 20px)
+        transform: rotate(-180deg)
+        @media(max-width: 375px)
+            top: 50%
+            transform: rotate(-180deg) translateY(50%)
+

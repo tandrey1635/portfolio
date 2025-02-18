@@ -1,0 +1,40 @@
+.promo
+	padding-bottom: 165px
+	min-height: 525px
+	@media(max-width: 1199px)
+		padding-bottom: 100px
+	@include background('img/promo-bg.jpg')
+	@media(max-width: 1024px)
+		background-position-x: 60% 
+	@media(max-width: 850px)
+		background-position-x: 70% 	
+	@media(max-width: 768px)
+		min-height: 425px
+		padding-bottom: 32px
+	@media(max-width: 480px)
+		background-position-x: 75% 	
+	@media(max-width: 425px)
+		background-position-x: 80% 
+	@media(max-width: 375px)	
+		min-height: 375px	
+	@media(max-width: 360px)	
+		min-height: 360px	
+	@media(max-width: 320px)	
+		min-height: 320px					
+	&__descriptions
+		@media(max-width: 768px)
+			width: 450px
+		@media(max-width: 480px)	
+			width: 100%
+	&__header
+		margin-top: 20px
+	&__btn
+		margin-top: 36px	
+		@media(max-width: 1199px)
+			margin: 36px 0 !important
+		@media(max-width: 991px)	
+			width: 360px !important
+		@media(max-width: 768px)	
+			width: 280px !important	
+		@media(max-width: 425px)
+			margin: 36px auto 0	!important	
