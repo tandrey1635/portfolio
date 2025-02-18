@@ -34,8 +34,16 @@
         display: flex
         justify-content: center
         gap: 30px
-        flex-direction: column    
+        flex-direction: column 
+    &__list
+        width: max-content
+        border-bottom: 3px solid transparent
+        &:hover
+            border-bottom: 3px solid crimson
+        &__active    
+            border-bottom: 3px solid #00a3e1
     &__link
+        padding-bottom: 10px
         color: #fff   
         text-transform: uppercase 
         text-shadow: 0 5px 5px #000

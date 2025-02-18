@@ -3,6 +3,8 @@ import './Aside.sass'
 
 import Avatar from '../../img/photo.png'
 
+import Scrollspy from 'react-scrollspy'
+
 
 const Aside = () => {   
 
@@ -13,7 +15,7 @@ const Aside = () => {
             </div>
             <div className="aside__text">Андрей Тараканов</div>
             <nav className="aside__nav">
-                <ul className="aside__menu">
+                <Scrollspy className="aside__menu" items={['home', 'technology', 'portfolio', 'about']} currentClassName='aside__list__active'>
                     <li className="aside__list">
                         <a className="aside__link" href="#home">Главная</a>
                     </li>
@@ -26,7 +28,7 @@ const Aside = () => {
                     <li className="aside__list">
                         <a className="aside__link" href="#about">Обо мне</a>
                     </li>
-                </ul>
+                </Scrollspy>  
             </nav>
             <div className="aside__info">
                 <ul className="aside__info-menu aside__info-menu_contacts">
