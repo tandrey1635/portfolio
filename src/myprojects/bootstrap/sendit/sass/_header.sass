@@ -1,0 +1,119 @@
+.header
+	padding: 28px 0 100px 0
+	min-height: 48px
+	@media(max-width: 768px)
+		padding: 28px 0 55px 0
+	@media(max-width: 767px)
+		padding: 32px 0	48px 0
+	&__wrapper
+		justify-content: space-between
+		align-items: center
+	&__logo
+		height: 48px
+		padding: 0
+		@media(max-width: 768px)	
+			height: 30px
+		@media(max-width: 767px)	
+			width: 160px
+			height: 40px
+		@media(max-width: 480px)
+			padding-right: 0
+			width: 140px
+			height: 36px	
+		@media(max-width: 375px)
+			width: 120px
+			height: 30px		
+		&_mobile	
+			display: none
+			@media(max-width: 767px)
+				display: flex
+				@include absolute(32px, 15px)
+		&__photo
+			display: flex
+			object-fit: contain
+			@media(max-width: 767px)	
+				object-fit: fill
+	&__nav
+		position: relative
+		@media(max-width: 767px)
+			padding: 34px 15px
+			height: 80vh
+			overflow-y: scroll
+			@include absolute(-9999px)
+			background: $secondBg
+			transition: .8s all	
+			z-index: 20	
+			@include flexReverseAxios
+			align-items: center
+		&.active
+			top: 0
+			transition: .8s all		
+	&__menu
+		@media(max-width: 767px)
+			@include flexReverseAxios
+			gap: 32px	
+			margin-top: 56px
+	&__link
+		@media(max-width: 767px)
+			color: $defaultColor	
+			font-size: 18px	
+			display: block
+			text-align: center	
+	&__right
+		display: none
+		margin-top: 32px
+		@media(max-width: 767px)
+			display: block
+	&__form-header
+		font-weight: 400
+		@media(max-width: 700px)
+			font-size: 28px	
+	&__form
+		margin-top: 20px
+		@media(max-width: 767px)
+			@include flexReverseAxios
+			align-items: center	
+	&__input
+		border: 1px solid $defaultBorder !important
+		color: $defaultColor !important
+		&::placeholder
+			color: $defaultColor !important
+	&__label
+		@include flexHorisontalCenter
+		margin-top: 10px
+		font-size: 10px	
+		line-height: 12px	
+	&__btn
+		margin-top: 20px !important	
+		background: $mainBg	!important	
+		color: $secondColor	!important
+	&__social__icons
+		display: none
+		margin-top: 20px
+		@media(max-width: 767px)
+			@include flexCenter(space-between)	
+	&__social__link
+		width: 36px
+		height: 36px	
+	&__right, &__social__icons	
+		@media(max-width: 600px)	
+			width: 280px	
+	&__burger__menu, &__close
+		display: none
+		@media(max-width: 767px)
+			display: flex
+			padding: 0
+			width: 30px
+			height: 30px
+			@include absoluteRight(38px, 15px)
+		@media(max-width: 480px)	
+			width: 25px
+			height: 25px
+		@media(max-width: 375px)	
+			top: 36px	
+	&__burger__menu
+		width: 40px	
+		@media(max-width: 480px)
+			width: 35px	
+			height: 25px
+

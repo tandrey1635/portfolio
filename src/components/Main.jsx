@@ -49,6 +49,7 @@ import PrimafunginPreview from '../img/devices-img/primafungin/preview.webp'
 /* import Avexima from '../img/devices-img/avexima/preview.webp' */
 import ArtificiailIntelligencePreview from '../img/devices-img/artificiail-intelligence/preview.webp'
 import MedicalHospitalPreview from '../img/devices-img/medical-hospital(Grid)/preview.webp'
+import SendItPreview from '../img/devices-img/sendIt/preview.webp'
 /* import WowPreview from '../img/devices-img/wow/preview.webp' */
 import BurgersPreview from '../img/devices-img/burgers/preview.webp'
 /* import SpaceProjectPreview from '../img/devices-img/space-project/preview.mp4' */
@@ -84,6 +85,7 @@ const PrimafunginUrl = '/portfolio/myprojects/html-css/primafungin/index.html'
 const AveximaUrl = '/portfolio/myprojects/html-css/avexima/index.html'
 const ArtificiailIntelligenceUrl = '/portfolio/myprojects/html-css/artificiail-intelligence/index.html'
 const MedicalHospitalUrl = '/portfolio/myprojects/html-css/medical-hospital(Grid)/index.html'
+const SendItUrl =  '/portfolio/myprojects/bootstrap/sendIt/index.html'
 const WowUrl = '/portfolio/myprojects/bootstrap/wow/index.html'
 const BurgersUrl = '/portfolio/myprojects/bootstrap/burgers/index.html'
 
@@ -103,6 +105,7 @@ const PrimafunginGitHub = 'https://github.com/tandrey1635/primafungin'
 const AveximaGitHub = 'https://github.com/tandrey1635/avexima'
 const ArtificiailIntelligenceGitHub = 'https://github.com/tandrey1635/artificiail-intelligence'
 const MedicalHospitalGitHub = 'https://github.com/tandrey1635/medical-hospital-Grid-'
+const SendItGutHub =  'https://github.com/tandrey1635/sendIt'
 const WowGitHub = 'https://github.com/tandrey1635/wow'
 const BurgersGitHub = 'https://github.com/tandrey1635/burgers'
 
@@ -480,6 +483,7 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
                             <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
                             <PortfolioItems project html subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
+                            <PortfolioItems project bootstrap subheader={'SendIt'} text={'Бутстрап сетка (Bootstrap Grid)'} alt={'SendIt'} preview={SendItPreview} url={SendItUrl} github={SendItGutHub}/>  
                             <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>  
                             <PortfolioItems project bootstrap subheader={'Ресторан бургеров'} text={'Проект на Bootstrap 5'} alt={'Ресторан бургеров'} preview={BurgersPreview} url={BurgersUrl} github={BurgersGitHub}/>
                             <PortfolioItems project javascript subheader={'Шахматы'} text={'Шахматная доста на js'} alt={'Шахматы'}/>
@@ -511,6 +515,7 @@ const Main = () =>  {
                     }    
                         {projects.bootstrap && 
                             <>
+                                <PortfolioItems project bootstrap subheader={'SendIt'} text={'Бутстрап сетка (Bootstrap Grid)'} alt={'SendIt'} preview={SendItPreview} url={SendItUrl} github={SendItGutHub}/>
                                 <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>
                                 <PortfolioItems project bootstrap subheader={'Ресторан бургеров'} text={'Проект на Bootstrap 5'} alt={'Ресторан бургеров'} preview={BurgersPreview} url={BurgersUrl} github={BurgersGitHub}/>
                             </>

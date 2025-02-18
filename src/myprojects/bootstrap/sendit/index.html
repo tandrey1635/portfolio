@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css">
+	<link rel="stylesheet" href="libs/owlCarousel/owlCarousel.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="style.css">
+	<title>SendIt</title>
+</head>
+<body>
+
+<div class="wrapper">
+
+	
+	<main class="main">
+
+		<section class="promo">
+			<header class="header">
+				<div class="container">
+					<div class="row header__wrapper">
+						<div class="header__logo col-md-2">
+							<img class="header__logo__photo" src="icons/header-logo.svg" alt="SendIt">
+						</div>
+
+						<nav class="header__nav col-md-10 col-lg-9">
+							<div class="header__logo header__logo_mobile">
+								<img class="header__logo__photo" src="icons/header-logo-mobile.svg" alt="SendIt">
+							</div>
+
+							<div class="header__close">
+								<img class="header__close__photo" src="icons/close.svg" alt="close">
+							</div>
+
+							<ul class="row header__menu">
+								<li class="header__list col">
+									<a class="section__link header__link" href="#">Главная</a>
+								</li>
+
+								<li class="header__list col">
+									<a class="section__link header__link" href="#who-we">Описание</a>
+								</li>
+
+								<li class="header__list col">
+									<a class="section__link header__link" href="#advantages">Преимущества</a>
+								</li>
+
+								<li class="header__list col">
+									<a class="section__link header__link" href="#reviews">Отзывы</a>
+								</li>
+
+								<li class="header__list col">
+									<a class="section__link header__link" href="#partners">Партнёры</a>
+								</li>
+
+								<li class="header__list col">
+									<a class="section__link header__link" href="#guarantees">Гарантии</a>
+								</li>
+
+								<li class="header__list col">
+									<a class="section__link header__link" href="#faq">FAQ</a>
+								</li>
+							</ul>
+
+							<div class="header__right col-sm-6">
+								<h2 class="section__header header__form-header">Остались вопросы?</h2>
+								<form class="header__form" action="#">
+									<input class="input header__input" type="text" placeholder="Ваш телефон">
+									<button type="submit" class="btn header__btn" data-call="call" data-mobile="yes">заказать звонок</button>
+									<label class="label__checkbox header__label">
+										<input class="checkbox" type="checkbox">Я согласен на обработку персональных данных
+									</label>	
+								</form>
+							</div>
+
+							<div class="header__social__icons col-sm-6">
+								<a class="header__social__link" href="https://vk.com">
+									<img class="header__social__photo" src="icons/vk.svg" alt="vk">
+								</a>
+								<a class="header__social__link" href="https://instagram.com">
+									<img class="header__social__photo" src="icons/instagram.svg" alt="instagram">
+								</a>
+								<a class="header__social__link" href="http://facebook.com/">
+									<img class="header__social__photo" src="icons/facebook.svg" alt="facebook">
+								</a>
+							</div>
+						</nav>
+
+						<div class="header__burger__menu">
+							<img class="header__close__photo" src="icons/burger-menu.svg" alt="burger-menu">
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="container">
+				<div class="promo__descriptions">
+					<h1 class="main__header">Придумайте что отправить</h1>
+					<h2 class="section__header section__header_second-color">А посылка доедет сама</h2>
+					<a href="#" class="btn promo__btn">отправить посылку</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="who-we" class="who__we">
+			<div class="container">
+				<div class="row who__we__wrapper">
+					<div class="who__we__item col-12 col-sm-8 col-md-6">
+						<img class="who__we__photo" src="img/who-we-photo.png" alt="Служба доставки">
+					</div>
+					<div class="who__we__item col-12 col-md-5">
+						<h2 class="section__header section__header_header-md">Мы – агрегатор служб доставки</h2>
+						<p class="section__text who__we__text col-md-12">С нами удобно вам, вашим клиентам и курьерским службам. Для вас наши услуги бесплатны, так как мы получаем бонусы от служб доставок за предоставленный объем заказов, а вы получаете надежный сервис в подарок!</p>
+						<a href="#" class="btn who__we__btn">отправить посылку</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="steps">
+			<div class="container">
+				<div class="steps__wrapper">
+					<div class="row steps__top">
+						<div class="steps__item col-12 col-md-5">
+							<div class="steps__img">
+								<img class="steps__photo" src="img/steps-photo-1.jpg" alt="Шаг 1">
+							</div>
+							<div class="steps__descriptions col-sm-6 col-md-12">
+								<h2 class="section__header section__header_subheader">Шаг 1</h2>
+								<p class="section__text steps__text">Придумайте что и кому отправить</p>
+							</div>
+						</div>
+
+						<div class="steps__item col-12 col-md-5">
+							<div class="steps__img">
+								<img class="steps__photo" src="img/steps-photo-2.jpg" alt="Шаг 2">
+							</div>
+							<div class="steps__descriptions col-sm-6 col-md-12">
+								<h2 class="section__header section__header_subheader">Шаг 2</h2>
+								<p class="section__text steps__text">Создайте заявку на сайте SendIt - Ваш персональный менеджер позвонит и подтвердит запрос, уточнит все необходимые данные</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row steps__bottom">
+						<div class="steps__item col-12 col-md-5">
+							<div class="steps__img">
+								<img class="steps__photo" src="img/steps-photo-3.jpg" alt="Шаг 3">
+							</div>
+							<div class="steps__descriptions col-sm-6 col-md-12">
+								<h2 class="section__header section__header_subheader">Шаг 3</h2>
+								<p class="section__text steps__text">К Вам приезжает курьер, забирает посылку, Вы подписываете один документ</p>
+							</div>
+						</div>
+
+						<div class="steps__item col-12 col-md-5">
+							<div class="steps__img">
+								<img class="steps__photo" src="img/steps-photo-4.jpg" alt="Шаг 4">
+							</div>
+							<div class="steps__descriptions col-sm-6 col-md-12">
+								<h2 class="section__header section__header_subheader">Шаг 4</h2>
+								<p class="section__text steps__text">Вы ждёте подтверждения доставки, слова радости и благодарности от адресата :)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="send">
+			<div class="container">
+				<div class="row send__wrapper">
+					<div class="send__item col-sm-6 col-xl-8">
+						<h2 class="section__header section__header_header-md send__header">Мы берём все заботы по доставке на себя!</h2>
+					</div>
+					<div class="send__item col-sm-5 col-xl-4">
+						<a href="#" class="btn send__btn">отправить посылку</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="call">
+			<div class="container">
+				<div class="row call__wrapper">
+					<div class="call__item col-sm-6 col-xl-8">
+						<h2 class="main__header main__header_second">Хотите мы вам перезвоним?</h2>
+						<p class="main__text main__text_text-md call__text">Закажите звонок, и менеджер вам всё расскажет и объяснит</p>
+					</div>
+					<div class="call__item col-sm-5 col-xl-4">
+						<form class="call__form" action="#">
+							<input class="input" type="text" placeholder="Ваш телефон">
+							<button type="submit" class="btn btn_second-color call__btn" data-call="call" data-mobile="no">заказать звонок</button>
+							<label class="label__checkbox call__label">
+								<input class="checkbox" type="checkbox">Я согласен на обработку персональных данных
+							</label>	
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="reviews" class="reviews">
+			<div class="container reviews__container">
+				<h2 class="section__header section__header_uppercase">Отзывы</h2>
+				<div class="row reviews__wrapper owl-carousel owl-theme">
+					<div class="reviews__item col-12 col-sm-10 col-md-12">
+						<div class="row reviews__top">
+							<div class="reviews__img col-6">
+								<img src="img/reviews-photo-1.jpg" alt="Отзыв 1" class="reviews__photo">
+							</div>
+
+							<div class="reviews__info col-6">
+								<h3 class="section__header section__header_fw400">Дарья</h3>
+								<p class="section__text reviews__text">La Intuicion</p>
+								<div class="reviews__block__address">
+									<p class="section__text reviews__address">Посылка: товары</p>
+									<p class="section__text reviews__address">Откуда: Москва</p>
+									<p class="section__text reviews__address">Куда: Нижневартовск</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row reviews__bottom">
+							<p class="section__text reviews__text reviews__text_descriptions">Отличный и качественный сервис. Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены, что помимо удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности (ведение адресной базы, выбор и вызов курьера в пару кликов).</p>
+						</div>
+					</div>
+
+					<div class="reviews__item col-12 col-sm-10 col-md-12">
+						<div class="row reviews__top">
+							<div class="reviews__img col-6">
+								<img src="img/reviews-photo-2.jpg" alt="Отзыв 2" class="reviews__photo">
+							</div>
+
+							<div class="reviews__info col-6">
+								<h3 class="section__header section__header_fw400">Елена</h3>
+								<p class="section__text reviews__text">Global Logic</p>
+								<div class="reviews__block__address">
+									<p class="section__text reviews__address">Посылка: товары</p>
+									<p class="section__text reviews__address">Откуда: Москва</p>
+									<p class="section__text reviews__address">Куда: Калининград</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row reviews__bottom">
+							<p class="section__text reviews__text reviews__text_descriptions">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор – всё это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за отзывчивость.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__navigations">
+					<div class="reviews__btn reviews__btn-prev">
+						<svg class="reviews__navigation__photo reviews__navigation__photo-prev" viewBox="0 0 16.1458 30.292" fill="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<path id="Rectangle" d="M1.71 0.29L15.85 14.43Q15.92 14.5 15.97 14.59Q16.03 14.67 16.06 14.76Q16.1 14.85 16.12 14.95Q16.14 15.04 16.14 15.14Q16.14 15.24 16.12 15.34Q16.1 15.43 16.06 15.52Q16.03 15.61 15.97 15.7Q15.92 15.78 15.85 15.85L1.71 29.99L0.29 28.58L14.43 14.43L15.14 15.14L14.43 15.85L0.29 1.71L1.71 0.29ZM1.71 29.96L1.71 29.99C1.31 30.39 0.69 30.39 0.29 29.99C-0.1 29.59 -0.1 28.97 0.29 28.58L0.32 28.58L1.71 29.96ZM0.32 1.71L0.29 1.71C-0.1 1.31 -0.1 0.69 0.29 0.29C0.69 -0.1 1.31 -0.1 1.71 0.29L1.71 0.32L0.32 1.71Z" />
+						</svg>
+					</div>
+					<div class="reviews__btn reviews__btn-next">
+						<svg class="reviews__navigation__photo reviews__navigation__photo-next" viewBox="0 0 16.1458 30.292" fill="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<path id="Rectangle" d="M1.71 0.29L15.85 14.43Q15.92 14.5 15.97 14.59Q16.03 14.67 16.06 14.76Q16.1 14.85 16.12 14.95Q16.14 15.04 16.14 15.14Q16.14 15.24 16.12 15.34Q16.1 15.43 16.06 15.52Q16.03 15.61 15.97 15.7Q15.92 15.78 15.85 15.85L1.71 29.99L0.29 28.58L14.43 14.43L15.14 15.14L14.43 15.85L0.29 1.71L1.71 0.29ZM1.71 29.96L1.71 29.99C1.31 30.39 0.69 30.39 0.29 29.99C-0.1 29.59 -0.1 28.97 0.29 28.58L0.32 28.58L1.71 29.96ZM0.32 1.71L0.29 1.71C-0.1 1.31 -0.1 0.69 0.29 0.29C0.69 -0.1 1.31 -0.1 1.71 0.29L1.71 0.32L0.32 1.71Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="advantages" class="advantages">
+			<div class="container">
+				<h2 class="section__header section__header_uppercase">Наши преимущества</h2>
+				<div class="row advantages__wrapper">
+					<div class="advantages__item col-3 col-md">
+						<div class="advantages__img">
+							<img class="advantages__photo" src="icons/advantages-photo-1.svg" alt="Бесплатный сервис">
+						</div>
+						<p class="section__text advantages__text">Бесплатный сервис</p>
+					</div>
+
+					<div class="advantages__item col-3 col-md">
+						<div class="advantages__img">
+							<img class="advantages__photo" src="icons/advantages-photo-2.svg" alt="Огромный выбор вариантов доставки">
+						</div>
+						<p class="section__text advantages__text">Огромный выбор вариантов доставки</p>
+					</div>
+
+					<div class="advantages__item col-3 col-md">
+						<div class="advantages__img">
+							<img class="advantages__photo" src="icons/advantages-photo-3.svg" alt="4 параметра лучшего предложения">
+						</div>
+						<p class="section__text advantages__text">4 параметра лучшего предложения</p>
+					</div>
+
+					<div class="advantages__item col-3 col-md">
+						<div class="advantages__img">
+							<img class="advantages__photo" src="icons/advantages-photo-4.svg" alt="Удобство заказа">
+						</div>
+						<p class="section__text advantages__text">Удобство заказа</p>
+					</div>
+
+					<div class="advantages__item col-3 col-md">
+						<div class="advantages__img">
+							<img class="advantages__photo" src="icons/advantages-photo-5.svg" alt="Online-поддержка">
+						</div>
+						<p class="section__text advantages__text">Online-поддержка</p>
+					</div>
+
+					<div class="advantages__item col-3 col-md">
+						<div class="advantages__img">
+							<img class="advantages__photo" src="icons/advantages-photo-6.svg" alt="Единый номер отслеживания">
+						</div>
+						<p class="section__text advantages__text">Единый номер отслеживания</p>
+					</div>
+				</div>
+			</div>
+		</section>  
+
+		<section id="guarantees" class="guarantees">
+			<div class="container">
+				<h2 class="section__header section__header_uppercase">Наши гарантии</h2>
+				<div class="row guarantees__wrapper">
+					<div class="guarantees__item col-12 col-md-4">
+						<div class="guarantees__img">
+							<img class="guarantees__photo" src="icons/guarantees-photo-1.svg" alt="Страховка отправлений">
+						</div>
+						<div class="guarantees__descriptions col-sm-7 col-md-12">
+							<h3 class="section__header section__header_subheader guarantees__header">Страховка отправлений</h3>
+							<p class="section__text guarantees__text">Контроль работы курьеров в онлайн режиме. Страхование по запросу клиента Каждый куръер находится под пристальным вниманием менеджеров SendIt</p>
+						</div>
+						<a href="#" class="btn guarantees__btn">Подробнее</a>
+					</div>
+
+					<div class="guarantees__item col-12 col-md-4">
+						<div class="guarantees__img">
+							<img class="guarantees__photo" src="icons/guarantees-photo-2.svg" alt="Прозрачность расчетов">
+						</div>
+						<div class="guarantees__descriptions col-sm-7 col-md-12">
+							<h3 class="section__header section__header_subheader guarantees__header">Прозрачность расчетов</h3>
+							<p class="section__text guarantees__text">Чтобы узнать точную стоимость отправления вам не нужно связываться с каждой курьерской службой в отдельности и сравнивать полученные предложения, просто воспользуйтесь нашим сервисом</p>
+						</div>
+						<a href="#" class="btn guarantees__btn">Подробнее</a>
+					</div>
+
+					<div class="guarantees__item col-12 col-md-4">
+						<div class="guarantees__img">
+							<img class="guarantees__photo" src="icons/guarantees-photo-3.svg" alt="Прозрачность расчетов">
+						</div>
+						<div class="guarantees__descriptions col-sm-7 col-md-12">
+							<h3 class="section__header section__header_subheader guarantees__header">Лучшие поставщики</h3>
+							<p class="section__text guarantees__text">Мы работаем с самыми надежными и известными операторами доставки. Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг</p>
+						</div>
+						<a href="#" class="btn guarantees__btn">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="faq" class="questions">
+			<div class="container">
+				<h2 class="section__header section__header_uppercase">Остались Сомнения?</h2>
+				<div class="accordeon__wrapper">
+					<div class="questions__left col-12 col-lg-6">
+						<div class="accordeon">
+							<div class="accordeon__item">
+								<h2 class="accordeon__header section__text">На бумажную волокиту уйдёт много времени, а мне нужно доставить срочно!</h2>
+							</div>
+							<div class="accordeon__description">
+								<p class="accordeon__text section__text">Мы понимаем, как важно для вас быстро доставить посылку. Наша компания стремится максимально упростить и ускорить процесс оформления документов. Благодаря оптимизации рабочих процессов и автоматизации многих операций мы свели к минимуму бумажную волокиту. Наши специалисты помогут вам оформить все необходимые документы в кратчайшие сроки</p>
+							</div>
+						</div>
+
+						<div class="accordeon">
+							<div class="accordeon__item">
+								<h2 class="accordeon__header section__text">Мне необходимо совершить доставку по нескольким адресам, нужно много чего заполнять</h2>
+							</div>
+							<div class="accordeon__description">
+								<p class="accordeon__text section__text">Мы упростили процесс заполнения документов для доставки по нескольким адресам. Вам нужно будет заполнить всего несколько форм, и мы возьмём на себя всю остальную бумажную работу. Наши специалисты помогут вам оформить все необходимые документы быстро и без лишних сложностей</p>
+							</div>
+						</div>
+
+						<div class="accordeon">
+							<div class="accordeon__item">
+								<h2 class="accordeon__header section__text">Вы не сможете доставить посылку за границу</h2>
+							</div>
+							<div class="accordeon__description">
+								<p class="accordeon__text section__text">Мы можем доставить посылку за границу. У нас есть опыт в международных отправлениях, и мы знаем все необходимые требования и процедуры. Мы готовы взять на себя ответственность за вашу посылку и обеспечить её своевременную доставку адресату</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="questions__right col-12 col-lg-6">
+						<div class="accordeon">
+							<div class="accordeon__item">
+								<h2 class="accordeon__header section__text">Вы не занимаетесь такими простыми грузами, как мебель</h2>
+							</div>
+							<div class="accordeon__description">
+								<p class="accordeon__text section__text">Мы занимаемся доставкой различных грузов, включая мебель. Наша компания имеет большой опыт работы с такими грузами и готова предложить вам качественные услуги по их доставке</p>
+							</div>
+						</div>
+
+						<div class="accordeon">
+							<div class="accordeon__item">
+								<h2 class="accordeon__header section__text">Я отправляю вместе с коллегами, мы можем легко запутаться где чьё</h2>
+							</div>
+							<div class="accordeon__description">
+								<p class="accordeon__text section__text">Мы предлагаем услугу, которая позволит вам легко идентифицировать посылки по специальным меткам или кодам. Вы сможете быстро определить, где чья посылка, и избежать путаницы. Для каждой посылки мы создадим подробную опись с указанием отправителя и получателя. Это поможет вам и вашим коллегам легко отслеживать свои отправления и избегать путаницы. Мы можем предложить вам систему маркировки посылок, чтобы вы и ваши коллеги могли легко различать их. Например, для каждого из вас мы можем использовать разные цвета наклеек или специальные ярлыки</p>
+							</div>
+						</div>
+
+						<div class="accordeon">
+							<div class="accordeon__item">
+								<h2 class="accordeon__header section__text">Нужно заполнять кучу документов</h2>
+							</div>
+							<div class="accordeon__description">
+								<p class="accordeon__text section__text">Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы доставки, которые будут доставлять вашу посылку</p>
+							</div>
+						</div>
+					</div> 
+                </div>  
+			</div>
+		</section>
+
+		<section id="partners" class="partners">
+			<div class="container partners__container">
+				<div class="row partners__wrapper owl-carousel owl-theme">
+					<div class="partners__item">
+						<img src="icons/bringo.svg" alt="Bringo" class="partners__photo">
+					</div>
+					<div class="partners__item">
+						<img src="icons/cdek.svg" alt="Сдек" class="partners__photo">
+					</div>
+					<div class="partners__item">
+						<img src="icons/city-express.svg" alt="City express" class="partners__photo">
+					</div>
+					<div class="partners__item">
+						<img src="icons/dpd.svg" alt="Dpd" class="partners__photo">
+					</div>
+					<div class="partners__item">
+						<img src="icons/pony-express.svg" alt="Pony express" class="partners__photo">
+					</div>
+					<div class="partners__item">
+						<img src="icons/spsr.svg" alt="Spsr" class="partners__photo">
+					</div>
+					<div class="partners__item">
+						<img src="icons/tnt.svg" alt="Tnt" class="partners__photo">
+					</div>
+					<div class="partners__item">
+						<img src="icons/ups.svg" alt="Ups" class="partners__photo">
+					</div>
+				</div>
+				<div class="partners__navigations">
+					<div class="partners__btn partners__btn-prev">
+						<svg class="partners__navigation__photo partners__navigation__photo-prev" viewBox="0 0 16.1458 30.292" fill="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<path id="Rectangle" d="M1.71 0.29L15.85 14.43Q15.92 14.5 15.97 14.59Q16.03 14.67 16.06 14.76Q16.1 14.85 16.12 14.95Q16.14 15.04 16.14 15.14Q16.14 15.24 16.12 15.34Q16.1 15.43 16.06 15.52Q16.03 15.61 15.97 15.7Q15.92 15.78 15.85 15.85L1.71 29.99L0.29 28.58L14.43 14.43L15.14 15.14L14.43 15.85L0.29 1.71L1.71 0.29ZM1.71 29.96L1.71 29.99C1.31 30.39 0.69 30.39 0.29 29.99C-0.1 29.59 -0.1 28.97 0.29 28.58L0.32 28.58L1.71 29.96ZM0.32 1.71L0.29 1.71C-0.1 1.31 -0.1 0.69 0.29 0.29C0.69 -0.1 1.31 -0.1 1.71 0.29L1.71 0.32L0.32 1.71Z" />
+						</svg>
+					</div>
+					<div class="partners__btn partners__btn-next">
+						<svg class="partners__navigation__photo partners__navigation__photo-next" viewBox="0 0 16.1458 30.292" fill="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<path id="Rectangle" d="M1.71 0.29L15.85 14.43Q15.92 14.5 15.97 14.59Q16.03 14.67 16.06 14.76Q16.1 14.85 16.12 14.95Q16.14 15.04 16.14 15.14Q16.14 15.24 16.12 15.34Q16.1 15.43 16.06 15.52Q16.03 15.61 15.97 15.7Q15.92 15.78 15.85 15.85L1.71 29.99L0.29 28.58L14.43 14.43L15.14 15.14L14.43 15.85L0.29 1.71L1.71 0.29ZM1.71 29.96L1.71 29.99C1.31 30.39 0.69 30.39 0.29 29.99C-0.1 29.59 -0.1 28.97 0.29 28.58L0.32 28.58L1.71 29.96ZM0.32 1.71L0.29 1.71C-0.1 1.31 -0.1 0.69 0.29 0.29C0.69 -0.1 1.31 -0.1 1.71 0.29L1.71 0.32L0.32 1.71Z" />
+						</svg>	
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row footer__top"> 
+				<div class="footer__top__item col-6 col-md-4">
+					<h2 class="section__header footer__header">Остались Вопросы?</h2>
+				</div>
+
+				<div class="footer__top__item footer__top__item_right col-5 col-md-8">
+					<form class="footer__form" action="#">
+						<input class="input footer__input" type="text" placeholder="Ваш телефон">
+						<button type="submit" class="btn footer__btn" data-call="call" data-mobile="no">заказать звонок</button>
+						<label class="label__checkbox footer__label">
+							<input class="checkbox footer__checkbox" type="checkbox">Я согласен на обработку персональных данных
+						</label>	
+					</form>
+				</div>
+			</div>
+
+			<div class="footer__hr"></div>
+
+			<div class="row footer__middle">
+				<div class="footer__logo col-md-2">
+					<img class="footer__logo__photo" src="icons/header-logo-mobile.svg" alt="SendIt">
+				</div>
+
+				<nav class="footer__nav col-md-10 col-lg-9">
+					<ul class="row footer__menu">
+						<li class="footer__list col">
+							<a class="section__link footer__link" href="#">Главная</a>
+						</li>
+
+						<li class="footer__list col">
+							<a class="section__link footer__link" href="#who-we">Описание</a>
+						</li>
+
+						<li class="footer__list col">
+							<a class="section__link footer__link" href="#advantages">Преимущества</a>
+						</li>
+
+						<li class="footer__list col">
+							<a class="section__link footer__link" href="#reviews">Отзывы</a>
+						</li>
+
+						<li class="footer__list col">
+							<a class="section__link footer__link" href="#partners">Партнёры</a>
+						</li>
+
+						<li class="footer__list col">
+							<a class="section__link footer__link" href="#guarantees">Гарантии</a>
+						</li>
+
+						<li class="footer__list col">
+							<a class="section__link footer__link" href="#faq">FAQ</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="footer__hr"></div>
+
+			<div class="row footer__bottom">
+				<div class="footer__bottom__item col-12 col-sm-8 col-md-9 col-lg-10">
+					<p class="section__text footer__copyright">&copy; Все права защищены 2021</p>
+				</div>
+				
+				<div class="footer__social__icons col-6 col-sm-4 col-md-3 col-lg-2">
+					<a class="footer__social__link" href="https://vk.com">
+						<img class="footer__social__photo" src="icons/vk.svg" alt="vk">
+					</a>
+					<a class="footer__social__link" href="https://instagram.com">
+						<img class="footer__social__photo" src="icons/instagram.svg" alt="instagram">
+					</a>
+					<a class="footer__social__link" href="http://facebook.com/">
+						<img class="footer__social__photo" src="icons/facebook.svg" alt="facebook">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="modal">
+		<div class="modal__dialog">
+			<div class="modal__close">
+				<img class="modal__close__photo" src="icons/close-modal.svg" alt="close">
+			</div>
+			<h2 class="section__header modal__header">Оставьте заявку, и мы Вам перезвоним!</h2>
+			<form class="modal__form" action="#">
+				<input class="input modal__input" type="text" placeholder="Вашe имя" required>
+				<input class="input modal__input" type="text" placeholder="Ваш телефон" required>
+				<button type="submit" class="btn modal__btn">заказать звонок</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="script.js"></script>
+<script src="js/accordeon.js"></script>
+<script src="libs/jQuery/jQuery-v3.7.1.js"></script>
+<script src="libs/owlCarousel/owlCarousel.min.js"></script>
+<script src="js/owlCarousel.js"></script>
+</body>
+</html>
