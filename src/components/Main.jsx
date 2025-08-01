@@ -53,6 +53,8 @@ import SendItPreview from '../img/devices-img/sendIt/preview.webp'
 /* import WowPreview from '../img/devices-img/wow/preview.webp' */
 import BurgersPreview from '../img/devices-img/burgers/preview.webp'
 /* import SpaceProjectPreview from '../img/devices-img/space-project/preview.mp4' */
+import AveximaEmailsPreview from '../img/devices-img/avexima-mails/preview.webp'
+
 
 
 /* Сертификаты */
@@ -490,6 +492,7 @@ const Main = () =>  {
                             <PortfolioItems project javascript subheader={'Шахматы'} text={'Шахматная доста на js'} alt={'Шахматы'}/>
                             <PortfolioItems project javascript subheader={'Страны'} text={'Получение данных о странах через Fetch API'} alt={'Страны'}/>
                             <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
+							<PortfolioItems project react subheader={'Еmail-шаблоны'} text={'Серия медицинских email-шаблонов для фармацевтической компании Авексима на React'} alt={'Еmail-шаблоны'} preview={AveximaEmailsPreview} url={AveximaEmailsUrl} github={AveximaEmailsGitHub}/>
                             <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/>
                         </>
                     }
@@ -530,7 +533,7 @@ const Main = () =>  {
                         }
                         {projects.react &&
                             <>
-								<PortfolioItems project react subheader={'Еmail-шаблоны'} text={'Серия медицинских email-шаблонов для фармацевтической компании Авексима на React'} alt={'Еmail-шаблоны'} url={AveximaEmailsUrl} github={AveximaEmailsGitHub}/>
+								<PortfolioItems project react subheader={'Еmail-шаблоны'} text={'Серия медицинских email-шаблонов для фармацевтической компании Авексима на React'} alt={'Еmail-шаблоны'} preview={AveximaEmailsPreview} url={AveximaEmailsUrl} github={AveximaEmailsGitHub}/>
                                 <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/>
                             </>
                         }
