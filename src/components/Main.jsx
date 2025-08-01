@@ -88,6 +88,7 @@ const MedicalHospitalUrl = '/portfolio/myprojects/html-css/medical-hospital(Grid
 const SendItUrl =  '/portfolio/myprojects/bootstrap/sendIt/index.html'
 const WowUrl = '/portfolio/myprojects/bootstrap/wow/index.html'
 const BurgersUrl = '/portfolio/myprojects/bootstrap/burgers/index.html'
+const AveximaEmailsUrl = '/portfolio/myprojects/react/avexima-mails/index.html'
 
 
 /* Проекты ссылки на GitHub */
@@ -108,7 +109,7 @@ const MedicalHospitalGitHub = 'https://github.com/tandrey1635/medical-hospital-G
 const SendItGutHub =  'https://github.com/tandrey1635/sendIt'
 const WowGitHub = 'https://github.com/tandrey1635/wow'
 const BurgersGitHub = 'https://github.com/tandrey1635/burgers'
-
+const AveximaEmailsGitHub = 'https://github.com/tandrey1635/avexima-mails'
 
 
 
@@ -116,24 +117,24 @@ const BurgersGitHub = 'https://github.com/tandrey1635/burgers'
 const Main = () =>  {
     const technology = {
         html: '95%',
-        css: '95%', 
+        css: '95%',
         bitrix: '70%',
         javascript: '85%',
         photoshop: '70%',
     }
 
-    
+
     const projectsItitialState ={
         all: true,
         html: false,
         bootstrap: false,
         javascript: false,
         react: false
-    }    
+    }
 
     const changeProjects = (state, action)=>{
         switch(action.type){
-            case 'all': 
+            case 'all':
                 return {
                     all: true,
                     html: false,
@@ -141,17 +142,17 @@ const Main = () =>  {
                     javascript: false,
                     react: false
                 }
-             
-            case 'html': 
+
+            case 'html':
                 return {
                     all: false,
                     html: true,
                     bootstrap: false,
                     javascript: false,
                     react: false
-                }    
+                }
 
-            case 'bootstrap': 
+            case 'bootstrap':
                 return {
                     all: false,
                     html: false,
@@ -160,7 +161,7 @@ const Main = () =>  {
                     react: false
                 }
 
-            case 'javascript': 
+            case 'javascript':
                 return {
                     all: false,
                     html: false,
@@ -168,15 +169,15 @@ const Main = () =>  {
                     javascript: true,
                     react: false
                 }
-            
-            case 'react': 
+
+            case 'react':
                 return {
                     all: false,
                     html: false,
                     bootstrap: false,
                     javascript: false,
                     react: true
-                }    
+                }
 
             default:
                 return {
@@ -185,11 +186,11 @@ const Main = () =>  {
                     bootstrap: false,
                     javascript: false,
                     react: false
-                }    
+                }
         }
-        
+
     }
-    
+
     const [projects, dispatchProjects] = useReducer(changeProjects, projectsItitialState)
 
 
@@ -203,11 +204,11 @@ const Main = () =>  {
         javascript: false,
         react: false,
         bitrix: false
-    }    
+    }
 
     const changeSertificates = (state, action)=>{
         switch(action.type){
-            case 'all': 
+            case 'all':
                 return {
                     all: true,
                     html: false,
@@ -216,8 +217,8 @@ const Main = () =>  {
                     react: false,
                     bitrix: false
                 }
-             
-            case 'html': 
+
+            case 'html':
                 return {
                     all: false,
                     html: true,
@@ -225,9 +226,9 @@ const Main = () =>  {
                     javascript: false,
                     react: false,
                     bitrix: false
-                }    
+                }
 
-            case 'bootstrap': 
+            case 'bootstrap':
                 return {
                     all: false,
                     html: false,
@@ -237,7 +238,7 @@ const Main = () =>  {
                     bitrix: false
                 }
 
-            case 'javascript': 
+            case 'javascript':
                 return {
                     all: false,
                     html: false,
@@ -246,8 +247,8 @@ const Main = () =>  {
                     react: false,
                     bitrix: false
                 }
-            
-            case 'react': 
+
+            case 'react':
                 return {
                     all: false,
                     html: false,
@@ -255,9 +256,9 @@ const Main = () =>  {
                     javascript: false,
                     react: true,
                     bitrix: false
-                }  
+                }
 
-            case 'bitrix': 
+            case 'bitrix':
                 return {
                     all: false,
                     html: false,
@@ -265,7 +266,7 @@ const Main = () =>  {
                     javascript: false,
                     react: false,
                     bitrix: true
-                }         
+                }
 
             default:
                 return {
@@ -275,14 +276,14 @@ const Main = () =>  {
                     javascript: false,
                     react: false,
                     bitrix: false
-                }    
+                }
         }
-        
+
     }
-    
+
     const [sertificates, dispatchSertificates] = useReducer(changeSertificates, sertificatesItitialState)
 
-    
+
     return(
         <>
             <section id="home" className="promo">
@@ -304,9 +305,9 @@ const Main = () =>  {
                     />
                     <TechnologyItems javascript style={{'width': technology.javascript}} percent={technology.javascript} img={
                         <>
-                            <Jquery/>      
-                            <Javascript/>  
-                            <React/>    
+                            <Jquery/>
+                            <Javascript/>
+                            <React/>
                         </>}
                     />
                     <TechnologyItems bitrix style={{'width': technology.bitrix}} percent={technology.bitrix} img={
@@ -483,16 +484,16 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
                             <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
                             <PortfolioItems project html subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
-                            <PortfolioItems project bootstrap subheader={'SendIt'} text={'Бутстрап сетка (Bootstrap Grid)'} alt={'SendIt'} preview={SendItPreview} url={SendItUrl} github={SendItGutHub}/>  
-                            <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>  
+                            <PortfolioItems project bootstrap subheader={'SendIt'} text={'Бутстрап сетка (Bootstrap Grid)'} alt={'SendIt'} preview={SendItPreview} url={SendItUrl} github={SendItGutHub}/>
+                            <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>
                             <PortfolioItems project bootstrap subheader={'Ресторан бургеров'} text={'Проект на Bootstrap 5'} alt={'Ресторан бургеров'} preview={BurgersPreview} url={BurgersUrl} github={BurgersGitHub}/>
                             <PortfolioItems project javascript subheader={'Шахматы'} text={'Шахматная доста на js'} alt={'Шахматы'}/>
                             <PortfolioItems project javascript subheader={'Страны'} text={'Получение данных о странах через Fetch API'} alt={'Страны'}/>
                             <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
-                            <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/> 
+                            <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/>
                         </>
-                    }    
-                    {projects.html && 
+                    }
+                    {projects.html &&
                         <>
                             <PortfolioItems project html subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
                             <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'} preview={ProfessionalShopPreview} url={ProfessionalShopUrl} github={ProfessionalShopGitHub}/>
@@ -512,24 +513,25 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
                             <PortfolioItems project html subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
                         </>
-                    }    
-                        {projects.bootstrap && 
+                    }
+                        {projects.bootstrap &&
                             <>
                                 <PortfolioItems project bootstrap subheader={'SendIt'} text={'Бутстрап сетка (Bootstrap Grid)'} alt={'SendIt'} preview={SendItPreview} url={SendItUrl} github={SendItGutHub}/>
                                 <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>
                                 <PortfolioItems project bootstrap subheader={'Ресторан бургеров'} text={'Проект на Bootstrap 5'} alt={'Ресторан бургеров'} preview={BurgersPreview} url={BurgersUrl} github={BurgersGitHub}/>
                             </>
-                        }     
-                        {projects.javascript &&  
+                        }
+                        {projects.javascript &&
                             <>
                                 <PortfolioItems project javascript subheader={'Шахматы'} text={'Шахматная доста на js'} alt={'Шахматы'}/>
                                 <PortfolioItems project javascript subheader={'Страны'} text={'Получение данных о странах через Fetch API'} alt={'Страны'}/>
                                 <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
                             </>
-                        }    
-                        {projects.react && 
+                        }
+                        {projects.react &&
                             <>
-                                <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/> 
+								<PortfolioItems project react subheader={'Еmail-шаблоны'} text={'Серия медицинских email-шаблонов для фармацевтической компании Авексима на React'} alt={'Еmail-шаблоны'} url={AveximaEmailsUrl} github={AveximaEmailsGitHub}/>
+                                <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/>
                             </>
                         }
                     </div>
@@ -541,7 +543,7 @@ const Main = () =>  {
                     <PortfolioText text={'Меня зовут Андрей мне 33 года. Заинтересовался Frontend разработкой и начал изучать верстку в октябре 2020 года. Прошел 6 курсов верстки, 4 курса по JavaScript, два по Bootstrap 4,5 и два по React на различных платформах. На данный момент изучаю Redux, в дальнейшем планирую изучать Typescript.'}/>
                     <PortfolioTabs tabAll={sertificates.all} tabHtml={sertificates.html} tabBootstrap={sertificates.bootstrap} tabJavascript={sertificates.javascript} tabReact={sertificates.react} tabBitrix={sertificates.bitrix} all={()=>dispatchSertificates({type: 'all'})} html={()=>dispatchSertificates({type: 'html'})} bootstrap={()=>dispatchSertificates({type: 'bootstrap'})} javascript={()=>dispatchSertificates({type: 'javascript'})} react={()=>dispatchSertificates({type: 'react'})} bitrix={()=>dispatchSertificates({type: 'bitrix'})} />
                     <div className="about__wrapper">
-                        {sertificates.all && 
+                        {sertificates.all &&
                             <>
                                 <PortfolioItems sertificate_html subheader={'Начальный курс верстки Udemy'} text={'Курс базовой верстки для новичков с нуля от Udemy'} alt={'Курс базовой верстки для новичков с нуля от Udemy'} preview={HtmlSertificates} />
                                 <PortfolioItems sertificate_html subheader={'Интерактивный курс верстки Geekbrains'} text={'Курс базовой верстки от Geekbrains'} alt={'Курс базовой верстки от Geekbrains'} preview={HtmlSertificatesGeeckbrains} />
@@ -553,21 +555,21 @@ const Main = () =>  {
                                 <PortfolioItems sertificate_bitrix subheader={'1С-Битрикс: Управление сайтом'} text={'Контент менеджер'} alt={'1С-Битрикс: Управление сайтом - Контент менеджер'} preview={BitrixSertificateContentManager}/>
                                 <PortfolioItems sertificate_bitrix subheader={'1С-Битрикс: Управление сайтом'} text={'Продвижение сайта и Маркетинг'} alt={'1С-Битрикс: Управление сайтом - Продвижение сайта и Маркетинг'} preview={BitrixSertificateSeoAndMarketing}/>
                                 <PortfolioItems sertificate_bitrix subheader={'1С-Битрикс: Управление сайтом'} text={'Администратор. Базовый'} alt={'1С-Битрикс: Управление сайтом - Администратор. Базовый'} preview={BitrixSertificateAdmin}/>
-                                <PortfolioItems sertificate_bitrix subheader={'Битрикс 24 (коробочная версия)'} text={'Администратор Битрикс 24'} alt={'Битрикс 24 (коробочная версия) - Администратор Битрикс24'} preview={BitrixSertificateAdmin24}/>   
+                                <PortfolioItems sertificate_bitrix subheader={'Битрикс 24 (коробочная версия)'} text={'Администратор Битрикс 24'} alt={'Битрикс 24 (коробочная версия) - Администратор Битрикс24'} preview={BitrixSertificateAdmin24}/>
                             </>
                         }
-                        {sertificates.html &&  
+                        {sertificates.html &&
                             <>
                                 <PortfolioItems sertificate_html subheader={'Начальный курс верстки Udemy'} text={'Курс базовой верстки для новичков с нуля от Udemy'} alt={'Курс базовой верстки для новичков с нуля от Udemy'} preview={HtmlSertificates} />
                                 <PortfolioItems sertificate_html subheader={'Интерактивный курс верстки Geekbrains'} text={'Курс базовой верстки от Geekbrains'} alt={'Курс базовой верстки от Geekbrains'} preview={HtmlSertificatesGeeckbrains} />
                                 <PortfolioItems sertificate_html subheader={'Профессиональная верстка Geekbrains'} text={'Курс профессиональной верстки от Geekbrains'} alt={'Курс профессиональной верстки от Geekbrains'} preview={HtmlProfessionalSertificatesGeeckbrains}/>
                                 <PortfolioItems sertificate_html subheader={'Freecodecamp'} text={'Responsive Web Design'} alt={'Responsive Web Design'} preview={FreecodecampSertificates}/>
-                            </>    
-                        } 
-                        {sertificates.bootstrap &&  
+                            </>
+                        }
+                        {sertificates.bootstrap &&
                             <PortfolioItems sertificate_bootstrap subheader={'Bootstrap Beonmax'} text={'Курс от Beonmax по Bootstrap'} alt={'Курс от Beonmax по Bootstrap'} preview={BootstrapSertificates}/>
                         }
-                        {sertificates.javascript &&  
+                        {sertificates.javascript &&
                             <>
                                 <PortfolioItems sertificate_javascript subheader={'JavaScript Geekbrains'} text={'Курс от Geekbrains по базовому JavaScript'} alt={'Курс от Geekbrains по базовому JavaScript'} preview={JavascriptBaseSertificatesGeekbrains}/>
                                 <PortfolioItems sertificate_javascript subheader={'Web разработчик от Ивана Петриченко'} text={'Курс Web разработчик по верстке и немного Jquery от Ивана Петриченко'} preview={WebDeveloperSertificates}/>
@@ -575,7 +577,7 @@ const Main = () =>  {
                         }
                         {sertificates.react && <PortfolioItems project react subheader={'В процессе изучения'} text={'В процессе изучения'} alt={'В процессе изучения'}/>
                         }
-                        {sertificates.bitrix && 
+                        {sertificates.bitrix &&
                             <>
                                 <PortfolioItems sertificate_bitrix subheader={'1С-Битрикс: Управление сайтом'} text={'Контент менеджер'} alt={'1С-Битрикс: Управление сайтом - Контент менеджер'} preview={BitrixSertificateContentManager}/>
                                 <PortfolioItems sertificate_bitrix subheader={'1С-Битрикс: Управление сайтом'} text={'Продвижение сайта и Маркетинг'} alt={'1С-Битрикс: Управление сайтом - Продвижение сайта и Маркетинг'} preview={BitrixSertificateSeoAndMarketing}/>
