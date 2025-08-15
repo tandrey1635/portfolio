@@ -46,6 +46,7 @@ import GrindingPreview from '../img/devices-img/grinding/preview.webp'
 import DataUniversePreview from '../img/devices-img/datauniverse/preview.webp'
 import DevilamPreview from '../img/devices-img/devilam/preview.webp'
 import PrimafunginPreview from '../img/devices-img/primafungin/preview.webp'
+import KrispanormPreview from '../img/devices-img/krispanorm/preview.webp'
 /* import Avexima from '../img/devices-img/avexima/preview.webp' */
 import ArtificiailIntelligencePreview from '../img/devices-img/artificiail-intelligence/preview.webp'
 import MedicalHospitalPreview from '../img/devices-img/medical-hospital(Grid)/preview.webp'
@@ -84,6 +85,7 @@ const GrindingUrl = '/portfolio/myprojects/html-css/grinding/index.html'
 const DataUniverseUrl = '/portfolio/myprojects/html-css/datauniverse/index.html'
 const DevilamUrl = '/portfolio/myprojects/html-css/devilam/index.html'
 const PrimafunginUrl = '/portfolio/myprojects/html-css/primafungin/index.html'
+const KrispanormUrl = '/portfolio/myprojects/html-css/krispanorm/index.html'
 const AveximaUrl = '/portfolio/myprojects/html-css/avexima/index.html'
 const ArtificiailIntelligenceUrl = '/portfolio/myprojects/html-css/artificiail-intelligence/index.html'
 const MedicalHospitalUrl = '/portfolio/myprojects/html-css/medical-hospital(Grid)/index.html'
@@ -105,6 +107,7 @@ const GrindingGitHub = 'https://github.com/tandrey1635/grinding'
 const DataUniverseGitHub = 'https://github.com/tandrey1635/datauniverse'
 const DevilamGitHub = 'https://github.com/tandrey1635/devilam'
 const PrimafunginGitHub = 'https://github.com/tandrey1635/primafungin'
+const KrispanormGitHub = 'https://github.com/tandrey1635/krispanorm'
 const AveximaGitHub = 'https://github.com/tandrey1635/avexima'
 const ArtificiailIntelligenceGitHub = 'https://github.com/tandrey1635/artificiail-intelligence'
 const MedicalHospitalGitHub = 'https://github.com/tandrey1635/medical-hospital-Grid-'
@@ -482,6 +485,7 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
                             <PortfolioItems project html subheader={'Девилам'} text={'Cайт компании https://vitaminde.ru/'} alt={'Девилам'} preview={DevilamPreview} url={DevilamUrl} github={DevilamGitHub}/>
                             <PortfolioItems project html subheader={'Примафунгин'} text={'Cайт компании https://примафунгин.рф'} alt={'Примафунгин'} preview={PrimafunginPreview} url={PrimafunginUrl} github={PrimafunginGitHub}/>
+							<PortfolioItems project html subheader={'Криспанорм'} text={'Cайт компании https://krispanorm.com/'} alt={'Криспанорм'} preview={KrispanormPreview} url={KrispanormUrl} github={KrispanormGitHub}/>
                             <PortfolioItems project html subheader={'Бифитта'} text={'Cайт компании https://bifitta.com/'} alt={'Бифитта'} />
                             <PortfolioItems project html subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
                             <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
@@ -511,6 +515,7 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
                             <PortfolioItems project html subheader={'Девилам'} text={'Cайт компании https://vitaminde.ru/'} alt={'Девилам'} preview={DevilamPreview} url={DevilamUrl} github={DevilamGitHub}/>
                             <PortfolioItems project html subheader={'Примафунгин'} text={'Cайт компании https://примафунгин.рф'} alt={'Примафунгин'} preview={PrimafunginPreview} url={PrimafunginUrl} github={PrimafunginGitHub}/>
+							<PortfolioItems project html subheader={'Криспанорм'} text={'Cайт компании https://krispanorm.com/'} alt={'Криспанорм'} preview={KrispanormPreview} url={KrispanormUrl} github={KrispanormGitHub}/>
                             <PortfolioItems project html subheader={'Бифитта'} text={'Cайт компании https://bifitta.com/'} alt={'Бифитта'} />
                             <PortfolioItems project html subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
                             <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
