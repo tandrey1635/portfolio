@@ -1,0 +1,53 @@
+@use '_variables' as *
+
+.main__title
+	font-size: 64px!important
+	text-transform: uppercase
+	text-align: left!important
+	@media (max-width: 991px)
+		font-size: 0px!important
+		line-height: 1px!important
+
+.title
+	text-align: center
+	color: $mainColor
+	font-family: $thirdFont
+	font-size: 48px
+	font-weight: 500
+	line-height: 100px
+	@media ( max-width: 991px)
+		font-size: 44px
+	@media ( max-width: 768px)
+		font-size: 38px
+	@media ( max-width: 676px)
+		font-size: 32px
+	@media (max-width: 576px)
+		font-size: 26px
+	@media (max-width: 480px)
+		font-size: 24px
+	@media (max-width: 425px)
+		font-size: 21px
+	@media (max-width: 374px)
+		font-size: 20px
+	sup
+		@media (max-width: 375px)
+			font-size: 16px
+	&_left
+		text-align: left
+	&_span
+		text-transform: uppercase
+	&_knowledge
+		line-height: 124%
+	&_reception
+		@media (max-width: 1350px)
+			text-align: center
+	&_knowledge, &_about, &_bibliography, &_where__buy
+		@media (max-width: 425px)
+			text-align: left
+		&_page
+			@media (max-width: 375px)
+				line-height: 556%
+				font-size: 18px
+
+.modal__title
+	line-height: 94%

@@ -1,0 +1,82 @@
+@use 'variables' as *
+
+.bibliography
+	padding-top: 102px
+	min-height: auto
+	@media (max-width: 576px)
+		padding-top: 64px
+	@media (max-width: 425px)
+		padding-top: 26px
+	&__wrapper
+		margin-top: 130px
+		@media (max-width: 1200px)
+			margin-top: 64px
+		@media (max-width: 576px)
+			margin-top: 56px
+		@media (max-width: 425px)
+			margin-top: 10px
+		&__active
+			margin-top: 32px
+	&__menu
+		display: grid
+		gap: 16px
+		counter-reset: li
+		&__active
+			display: none
+	&__list
+		position: relative
+		margin-left: 36px
+		color: $bibliographyColor
+		font-family: $secondFont
+		font-size: 16px
+		line-height: 20px
+		@media (max-width: 425px)
+			font-size: 14px
+			line-height: 120%
+		@media (max-width: 375px)
+			font-size: 12px
+		&::before
+			position: absolute
+			width: 18px
+			height: 18px
+			left: -26px
+			color: $bibliographyBeforeListColor
+		&:nth-child(2)::before
+			content: '*'
+		&:nth-child(3)::before
+			content: '**'
+		&:nth-child(4)::before
+			content: '***'
+		&:nth-child(5)::before
+			content: '†'
+		&:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5))::before
+			content: counter(li)
+			counter-increment: li
+	&__link
+		display: inline-block
+		margin: 0 5px
+		text-decoration: underline
+		color: $bibliographyColor
+		&:hover
+			color: $mainColor
+	&__btn
+		display: inline-flex
+		position: relative
+		margin-top: 36px
+		margin-left: 36px
+		color: $mainColor
+		font-size: 20px
+		font-weight: 700
+		cursor: pointer
+		&__active
+			margin-top: 0
+		&::after
+			position: absolute
+			content: ''
+			width: 18px
+			height: 18px
+			top: 5px
+			right: -40px
+			background: url(icons/accordeon-arrow.svg) no-repeat center/contain
+		&__active::after
+			transform: rotate(-180deg)

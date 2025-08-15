@@ -1,0 +1,251 @@
+@use 'variables' as *
+
+.knowledge
+	padding: 80px 0 112px 0
+	@media ( max-width: 1350px )
+		padding: 80px 25px 112px 25px
+	@media ( max-width: 676px )
+		padding: 64px 25px
+	@media ( max-width: 425px )
+		padding: 32px 25px
+	.swiper
+		padding-left: 240px
+		@media ( max-width: 1350px )
+			padding-left: 0
+	&__wrapper
+		margin-top: 80px!important
+		@media ( max-width: 480px )
+			margin-top: 26px!important
+	&__items
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 418px!important
+		padding: 10px 30px 32px 30px
+		min-height: 500px
+		border-radius: 15px
+		margin-right: 22px
+		@media ( max-width: 1024px )
+			width: 100%!important
+		@media ( max-width: 576px )
+			background-size: 80%!important
+			border-radius: 20px
+			justify-content: flex-start
+		@media ( max-width: 576px )
+			padding: 24px
+		@media ( max-width: 425px )
+			padding: 16px
+			background-position-y: 60%!important
+		@media ( max-width: 375px )
+			min-height: 495px
+		&_active
+			width: 878px!important
+			background-position: left!important
+			justify-content: flex-start
+			@media ( max-width: 1024px )
+				width: 100%!important
+			@media ( max-width: 768px )
+				background-size: 50%!important
+			@media ( max-width: 576px )
+				min-height: 750px
+				background-size: 80%!important
+				background-position-x: 50%!important
+				background-position-y: 110%!important
+			@media ( max-width: 425px )
+				min-height: 650px
+			@media ( max-width: 375px )
+				background-size: 60%!important
+				min-height: 495px
+			&:nth-child(4)
+				@media ( max-width: 576px )
+					background-position-y: bottom!important
+				@media ( max-width: 375px )
+					background-position-y: 110%!important
+			&:nth-child(5)
+				@media ( max-width: 768px )
+					background-position-x: -50px!important
+				@media ( max-width: 576px )
+					background-position-x: center!important
+			&::before
+				content: ''
+				position: absolute
+				width: 45%
+				height: inherit
+				border-radius: inherit
+				top: 0
+				left: 0
+				opacity: .6
+				background: $sliderBg
+				z-index: -1
+				@media ( max-width: 576px )
+					width: 100%
+		&:first-child
+			background: url(img/knowledge-img-1.png) no-repeat center/contain, $sliderBg
+		&:nth-child(2)
+			background: url(img/knowledge-img-2.png) no-repeat center/contain, $sliderBg
+		&:nth-child(3)
+			background: url(img/knowledge-img-3.png) no-repeat center/contain, $sliderBg
+		&:nth-child(4)
+			background: url(img/knowledge-img-4.png) no-repeat center/contain, $sliderBg
+			@media ( max-width: 576px )
+				background-position-y: 40px
+			@media ( max-width: 480px )
+				background-position-y: bottom
+			@media ( max-width: 425px )
+				background-position-y: 80px
+		&:nth-child(5)
+			background: url(img/knowledge-img-5.png) no-repeat bottom/contain, $sliderBg
+			@media ( max-width: 425px )
+				background-position-y: bottom!important
+		&:last-child
+			background: url(img/knowledge-img-6.png) no-repeat center/contain, $sliderBg
+		&__top
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__wrapper
+			margin-top: 102px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			@media ( max-width: 1024px )
+				margin-top: 80px
+			@media ( max-width: 576px )
+				flex-direction: column
+				margin-top: 32px
+			@media ( max-width: 375px )
+				margin-top: 16px
+			&_active
+				align-items: flex-start
+		&__bottom
+			width: 100%
+			&_active
+				width: 30%
+				@media ( max-width: 576px )
+					width: 100%
+		&__descriptions
+			width: 450px
+			display: none
+			font-weight: 500
+			font-size: 20px
+			line-height: 150%
+			color: $secondColor
+			@media ( max-width: 768px )
+				width: 60%
+				font-size: 18px
+			@media ( max-width: 676px )
+				width: 62%
+				font-size: 16px
+			@media ( max-width: 576px )
+				width: 100%
+				margin-top: 32px
+				font-size: 18px
+			@media ( max-width: 425px )
+				font-size: 16px
+			@media ( max-width: 375px )
+				margin-top: 22px
+				line-height: 119%
+			&_active
+				display: block
+			&_span
+				font-weight: 700
+				color: $mainColor
+				br
+					@media ( max-width: 1024px )
+						display: none
+		&__label
+			min-width: 209px
+			padding: 13.54px
+			border-radius: 30px
+			box-shadow: 0 4px 4px 0 $mainShadow
+			background: $sliderLabelBg
+			font-weight: 500
+			font-size: 16px
+			line-height: 212%
+			text-align: center
+			color: $secondColor
+			@media ( max-width: 425px )
+				padding: 10px
+			@media ( max-width: 375px )
+				padding: 0px 10px
+				min-width: 150px
+				font-size: 12px
+				line-height: 283%
+		&__btn
+			display: flex
+			flex-shrink: 0
+			justify-content: center
+			align-items: center
+			width: 60px
+			height: 60px
+			font-weight: 300
+			font-size: 64px
+			line-height: 53%
+			text-align: center
+			border-radius: 50%
+			background: $sliderShowMoreBtnBg
+			color: $thirdColor
+			cursor: pointer
+			@media ( max-width: 425px )
+				font-size: 48px
+				width: 46px
+				height: 46px
+			&_active
+				display: block
+				line-height: 48px
+				@media ( max-width: 425px )
+					line-height: 36px
+		&__header
+			font-weight: 700
+			font-size: 26px
+			line-height: 131%
+			color: $secondColor
+			@media ( max-width: 676px )
+				font-size: 20px
+			@media ( max-width: 576px )
+				font-size: 26px
+			@media ( max-width: 425px )
+				font-size: 23px
+			@media ( max-width: 375px )
+				font-size: 21px
+				line-height: 162%
+	&__hr
+		margin-top: 50px
+		width: 100%
+		border: 1px solid $secondBorder
+		@media ( max-width: 425px )
+			margin-top: 36px
+	&__block__navigations
+		margin-top: 30px
+		display: flex
+		justify-content: flex-end
+		gap: 16px
+		@media ( max-width: 425px )
+			margin-top: 24px
+	&__navigations
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 55px
+		height: 55px
+		border-radius: 50%
+		background: $sliderNavigationBg
+		cursor: pointer
+		@media ( max-width: 425px )
+			width: 45px
+			height: 45px
+		img
+			width: 29px
+			height: 20px
+			object-fit: contain
+			@media ( max-width: 425px )
+				width: 24px
+				height: 16px
+		&_left
+			img
+				transform: rotate(-180deg)
+		&_disabled
+			cursor: not-allowed
+			background: $sliderDisabledBtnBg
+			transform: rotate(-180deg)

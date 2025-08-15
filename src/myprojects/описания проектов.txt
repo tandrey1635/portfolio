@@ -27,6 +27,7 @@ artificiail-intelligence - js модалки, swiper slider, mobile first
 medical-hospital(Grid) - js бургер, анимация бургера(смена на крестик), имитация нажатия кнопок - весь сайт полностью на grid-layout 
 datauniverse - Коммерческий проект сайт Data Universe - datauniverse.ru
 devilam - Коммерческий проект сайт Девилам - vitaminde.ru
+krispanorm - Коммерческий проект сайт Криспанорм - krispanorm.com
 primafungin - Коммерческий проект сайт примафунгин - примафунгин.рф
 burgers - Ресторан бургеров на bootstrap 5
 sendIt - Бутстрап сетка (Bootstrap Grid)

@@ -1,0 +1,36 @@
+@use 'variables' as *
+
+.breadcrumbs
+	display: flex
+	align-items: center
+	gap: 24px
+	margin-bottom: 26px
+	@media (max-width: 576px)
+		margin-bottom: 0
+	@media ( max-width: 375px)
+		display: none
+	&__text
+		position: relative
+		display: flex
+		align-items: center
+		gap: 24px
+		color: $breadcrumbsColor
+		&:not(:last-child)::before
+			font-weight: 900
+			font-size: 20px
+			content: '/'
+			position: absolute
+			right: -16px
+			color: $breadcrumbsColor
+		&:last-child
+			font-family: $mainFont
+			font-weight: 600
+			line-height: 356%
+			text-transform: none
+			color: $secondColor
+	&__link
+		font-family: $thirdFont
+		font-weight: 500
+		font-size: 16px
+		color: $secondColor
+		text-transform: uppercase

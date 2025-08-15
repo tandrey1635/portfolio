@@ -1,0 +1,63 @@
+@use 'sass/variables' as *
+@use 'sass/reset'
+
+/* Модули */
+@use 'libs/uteka/uteka'
+
+/* Общие блоки */
+@use 'sass/titles'
+@use 'sass/btns'
+
+@use 'sass/burger-menu'
+@use 'sass/breadcrumbs'
+@use 'sass/header'
+@use 'sass/promo'
+@use 'sass/knowledge'
+@use 'sass/about'
+@use 'sass/modal'
+@use 'sass/reception'
+@use 'sass/where-buy'
+@use 'sass/bibliography'
+@use 'sass/medicines'
+@use 'sass/footer'
+
+/* Прижать подвал Флекс */
+.wrapper
+	display: flex
+	flex-direction: column
+	overflow-x: hidden
+
+html, body
+	height: 100%
+
+html
+	scroll-behavior: smooth
+
+body
+	font-family: $mainFont
+
+header, footer
+	min-height: 100px
+
+main
+	flex: 1 0 auto
+	min-height: 100vh
+
+section
+	min-height: 600px
+
+footer
+	flex: 0 0 auto
+
+.container
+	max-width: 1440px
+	padding: 0 15px
+	margin: 0 auto
+	&_promo
+		padding: 0
+		@media (max-width: 1440px)
+			padding: 0 15px
+
+sup
+	margin-top: -10px
+	display: inline-block
