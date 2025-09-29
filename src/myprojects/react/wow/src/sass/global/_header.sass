@@ -1,0 +1,19 @@
+@use '../base/index' as *
+
+.header__top
+	height: 350px
+	@include background('/src/assets/icons/logo/logo.png', contain)
+	@media ( max-width: 676px )
+		height: 300px
+	@media ( max-width: 575.98px )
+		height: 250px
+	@media ( max-width: 480px )
+		height: 200px
+	@media ( max-width: 375px )
+		height: 160px
+
+
+
+.header
+	@media ( max-width: 480px )
+		display: none

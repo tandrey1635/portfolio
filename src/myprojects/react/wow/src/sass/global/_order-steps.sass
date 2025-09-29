@@ -1,0 +1,38 @@
+@use '../base/index' as *
+
+.order__steps
+    padding: 25px 0
+    min-height: 500px
+    &__header
+        color: $secondColor
+        font-weight: 900
+        font-size: 32px
+    &__title
+        text-align: center
+        width: 185px
+        color: $secondColor
+        font-weight: 700
+        font-size: 18px
+        margin: 0 auto
+    &__title
+        margin-bottom: 20px
+    &__text
+        font-size: 14px
+        font-weight: 400
+    &__list
+        position: relative
+    &__img
+        width: 60px
+        height: 60px
+        display: flex
+        margin: 0 auto
+        margin-bottom: 30px
+    .br
+        transform: rotate(90deg)
+        display: inline-block
+        height: 80px
+        position: absolute
+        top: -15px
+        border-right: 5px dashed $registrationBorder
+    &__text
+        text-align: center

@@ -1,0 +1,16 @@
+@use '../base/index' as *
+
+.arrow-up
+	display: none
+	position: fixed
+	width: 50px
+	height: 50px
+	cursor: $cursorAction
+	right: 30px
+	bottom: 30px
+	border-radius: 50%
+	@include background('/src/assets/icons/arrow-up.svg')
+	&:hover
+		filter: brightness(125%)
+	&-active
+		display: flex

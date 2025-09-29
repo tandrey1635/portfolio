@@ -1,0 +1,35 @@
+@use 'sass/base/index' as *
+@use 'sass/base/reset'
+
+@use 'sass/global/flex-footer'
+
+@use 'sass/global/header'
+@use 'sass/global/announcement'
+@use 'sass/global/promo'
+@use 'sass/global/cards'
+@use 'sass/global/order-steps'
+@use 'sass/global/why-we'
+@use 'sass/global/footer'
+@use 'sass/global/arrow-up'
+
+
+
+@use 'sass/nav'
+@use 'sass/services'
+
+*
+	font-family: $mainFont
+
+body
+	background: $bodyBg
+
+label
+	cursor: $cursorText
+
+
+.container
+	max-width: 1180px!important
+
+main > h1
+	@media ( max-width: 480px )
+		display: none

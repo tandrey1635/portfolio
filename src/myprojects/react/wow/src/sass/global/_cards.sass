@@ -1,0 +1,515 @@
+@use '../base/index' as *
+
+/* Фон цена, заголовок, кнопка у карточек */
+.card
+	width: 23rem
+	transition: 0.5s all
+	border-radius: 0.8rem
+	border: none
+	background: $defaultBg
+	&:hover
+		transition: 0.5s all
+		transform: scale(1.05)
+		box-shadow: 0 0 2px 5px $defaultCardHoverShadow
+	&-warrior
+		background: $warriorBg
+		&:hover
+			box-shadow: 0 0 2px 5px $warriorCardHoverShadow
+	&-druid
+		background: $druidBg
+		&:hover
+			box-shadow: 0 0 2px 5px $druidCardHoverShadow
+	&-priest
+		background: $priestBg
+		&:hover
+			box-shadow: 0 0 2px 5px $priestCardHoverShadow
+	&-mage
+		background: $mageBg
+		&:hover
+			box-shadow: 0 0 2px 5px $mageCardHoverShadow
+	&-monk
+		background: $monkBg
+		&:hover
+			box-shadow: 0 0 2px 5px $monkCardHoverShadow
+	&-hunter
+		background: $hunterBg
+		&:hover
+			box-shadow: 0 0 2px 5px $hunterCardHoverShadow
+	&-demon-hunter
+		background: $demonHunterBg
+		&:hover
+			box-shadow: 0 0 2px 5px $demonHunterCardHoverShadow
+	&-paladin
+		background: $paladinBg
+		&:hover
+			box-shadow: 0 0 2px 5px $paladinCardHoverShadow
+	&-rogue
+		background: $rogueBg
+		&:hover
+			box-shadow: 0 0 2px 5px $rogueCardHoverShadow
+	&-death-knight
+		background: $deathKnightBg
+		&:hover
+			box-shadow: 0 0 2px 5px $deathKnightCardHoverShadow
+	&-warlock
+		background: $warlockBg
+		&:hover
+			box-shadow: 0 0 2px 5px $warlockCardHoverShadow
+	&-shaman
+		background: $shamanBg
+		&:hover
+			box-shadow: 0 0 2px 5px $shamanCardHoverShadow
+	&-awakener
+		background: $awakenerBg
+		&:hover
+			box-shadow: 0 0 2px 5px $awakenerCardHoverShadow
+	&-weapons
+		background: $defaultBg
+	&-armors
+		background: $defaultBg
+	&-mounts
+		&-water
+			background: $waterMountsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $waterMountsCardHoverShadow
+		&-earth
+			background: $earthMountsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $earthMountsCardHoverShadow
+		&-fly
+			background: $flyMountsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $flyMountsCardHoverShadow
+	&-gold
+		&-horde
+			background: $goldHordeBg
+			&:hover
+				box-shadow: 0 0 2px 5px $goldHordeCardHoverShadow
+		&-alliance
+			background: $goldAllianceBg
+			&:hover
+				box-shadow: 0 0 2px 5px $goldAllianceCardHoverShadow
+	&-professions
+		background: $defaultBg
+	&-pvp
+		background: $pvpBg
+		&:hover
+			box-shadow: 0 0 2px 5px $pvpCardHoverShadow
+	&-mythic
+		background: $mythicDungeonsBg
+		&:hover
+			box-shadow: 0 0 2px 5px $mythicDungeonsCardHoverShadow
+	&-raids
+		&-classic
+			background: $classicRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $classicRaidsCardHoverShadow
+		&-burning-crusade
+			background: $burningCrusadeRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $burningCrusadeRaidsCardHoverShadow
+		&-wrath-of-the-lich-king
+			background: $wrathOfTheLichKingRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $wrathOfTheLichKingRaidsCardHoverShadow
+		&-cataclysm
+			background: $cataclysmRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $cataclysmRaidsCardHoverShadow
+		&-mists-of-pandaria
+			background: $mistsOfPandariaRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $mistsOfPandariaRaidsCardHoverShadow
+		&-warlords-of-draenor
+			background: $warlordsOfDraenorRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $warlordsOfDraenorRaidsCardHoverShadow
+		&-legion
+			background: $legionRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $legionRaidsCardHoverShadow
+		&-battle-for-azeroth
+			background: $battleForAzerothRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $battleForAzerothRaidsCardHoverShadow
+		&-shadowlands
+			background: $shadowlandsRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $shadowlandsRaidsCardHoverShadow
+		&-dragonflight
+			background: $dragonflightRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $dragonflightRaidsCardHoverShadow
+		&-war-within
+			background: $warWithinRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $warWithinRaidsCardHoverShadow
+		&-midnight
+			background: $midnightRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $midnightRaidsCardHoverShadow
+		&-last-titan
+			background: $lastTitanRaidsBg
+			&:hover
+				box-shadow: 0 0 2px 5px $lastTitanRaidsCardHoverShadow
+	&-lvl-up
+		background: $lvlUpBg
+		&:hover
+			box-shadow: 0 0 2px 5px $lvlUpCardHoverShadow
+	&-achievements
+		background: $achievementsBg
+		&:hover
+			box-shadow: 0 0 2px 5px $achievementsCardHoverShadow
+	&-buy
+		width: 100%
+		&:hover
+			transform: scale(1)
+	@media (max-width: 991.98px)
+		width: 30rem
+.card-box
+	column-gap: 1.4rem
+	row-gap: 2rem
+.card-img
+	width: 100%
+	height: 450px
+	transition: 0.5s all
+	filter: drop-shadow(0 0 2px $defaultShadow)
+	&:hover
+		transition: 0.5s all
+		transform: scale(1.05)
+	&-tiers
+		border-radius: 0.8rem
+	&-mythic, &-raids, &-lvl-up, &-achievements
+		border-radius: 50%
+		transition: 0.5s all
+		&:hover
+			transform: scale(1)
+			border-radius: 0
+.card-link
+	display: inline-block
+.card-title
+	font-weight: 900
+	font-style: italic
+	line-height: 1
+	min-height: 65px
+	text-shadow: 2px 2px 2px $defaultShadow
+	font-size: 32px
+	transition: 0.5s all
+	color: $defaultColor
+	filter: drop-shadow(0 0 2px $defaultShadow)
+	&:hover
+		transition: 0.5s all
+		transform: scale(1.1)
+	&-warrior
+		color: $warriorColor
+	&-druid
+		color: $druidColor
+	&-priest
+		color: $priestColor
+	&-mage
+		color: $mageColor
+	&-monk
+		color: $monkColor
+	&-hunter
+		color: $hunterColor
+	&-demon-hunter
+		color: $demonHunterColor
+	&-paladin
+		color: $paladinColor
+	&-rogue
+		color: $rogueColor
+	&-death-knight
+		color: $deathKnightColor
+	&-warlock
+		color: $warlockColor
+	&-shaman
+		color: $shamanColor
+	&-awakener
+		color: $awakenerColor
+	&-weapons
+		color: $weaponsColor
+		&-legendary
+			color: $weaponsLegendaryColor
+		&-artefact
+			color: $weaponsArtefactColor
+		&-decorative
+			color: $weaponsDecorativeColor
+	&-armours
+		color: $armoursColor
+	&-mounts
+		&-water
+			color: $waterMountsColor
+		&-earth
+			color: $earthMountsColor
+		&-fly
+			color: $flyMountsColor
+	&-gold
+		&-horde
+			color: $goldHordeColor
+		&-alliance
+			color: $goldAllianceColor
+	&-pvp
+		color: $pvpColor
+	&-raids
+		color: $defaultColor
+		&-classic
+			color: $classicRaidsColor
+		&-burning-crusade
+			color: $burningCrusadeRaidsColor
+		&-wrath-of-the-lich-king
+			color: $wrathOfTheLichKingRaidsColor
+		&-cataclysm
+			color: $cataclysmRaidsColor
+		&-mists-of-pandaria
+			color: $mistsOfPandariaRaidsColor
+		&-warlords-of-draenor
+			color: $warlordsOfDraenorRaidsColor
+		&-legion
+			color: $legionRaidsColor
+		&-battle-for-azeroth
+			color: $battleForAzerothRaidsColor
+		&-shadowlands
+			color: $shadowlandsRaidsColor
+		&-dragonflight
+			color: $dragonflightRaidsColor
+		&-war-within
+			color: $warWithinRaidsColor
+		&-midnight
+			color: $midnightRaidsColor
+		&-last-titan
+			color: $lastTitanRaidsColor
+	&-lvl-up
+		color: $lvlUpCardTitle
+	&-achievements
+		color: $achievementsColor
+	&-buy
+		color: $mainColor
+		min-height: 0
+		margin-bottom: 0
+		&:hover
+			transform: scale(1)
+			cursor: $cursorAction
+.card-text
+	font-weight: 900
+	font-style: italic
+	font-size: 20px
+	transition: 0.5s all
+	text-shadow: 2px 2px 2px $defaultShadow
+	color: $defaultColor
+	filter: drop-shadow(0 0 2px $defaultShadow)
+	&:hover
+		transform: scale(1.05)
+		transition: 0.5s all
+	&-warrior
+		color: $warriorColor
+	&-druid
+		color: $druidColor
+	&-priest
+		color: $priestColor
+	&-mage
+		color: $mageColor
+	&-monk
+		color: $monkColor
+	&-hunter
+		color: $hunterColor
+	&-demon-hunter
+		color: $demonHunterColor
+	&-paladin
+		color: $paladinColor
+	&-rogue
+		color: $rogueColor
+	&-death-knight
+		color: $deathKnightColor
+	&-warlock
+		color: $warlockColor
+	&-shaman
+		color: $shamanColor
+	&-awakener
+		color: $awakenerColor
+	&-weapons
+		color: $weaponsColor
+	&-armours
+		color: $armoursColor
+	&-mounts
+		&-water
+			color: $waterMountsColor
+		&-earth
+			color: $earthMountsColor
+		&-fly
+			color: $flyMountsColor
+	&-gold
+		&-horde
+			color: $goldHordeColor
+		&-alliance
+			color: $goldAllianceColor
+	&-pvp
+		color: $pvpColor
+	&-raids
+		color: $defaultColor
+		&-classic
+			color: $classicRaidsTextColor
+			&_color
+				color: $classicRaidsColor
+		&-burning-crusade
+			color: $burningCrusadeRaidsTextColor
+			&_color
+				color: $burningCrusadeRaidsColor
+		&-wrath-of-the-lich-king
+			color: $wrathOfTheLichKingRaidsTextColor
+			&_color
+				color: $wrathOfTheLichKingRaidsColor
+		&-cataclysm
+			color: $cataclysmRaidsTextColor
+			&_color
+				color: $cataclysmRaidsColor
+		&-mists-of-pandaria
+			color: $mistsOfPandariaRaidsTextColor
+			&_color
+				color: $mistsOfPandariaRaidsColor
+		&-warlords-of-draenor
+			color: $warlordsOfDraenorRaidsTextColor
+			&_color
+				color: $warlordsOfDraenorRaidsColor
+		&-legion
+			color: $legionRaidsTextColor
+			&_color
+				color: $legionRaidsColor
+		&-battle-for-azeroth
+			color: $battleForAzerothRaidsTextColor
+			&_color
+				color: $battleForAzerothRaidsColor
+		&-shadowlands
+			color: $shadowlandsRaidsTextColor
+			&_color
+				color: $shadowlandsRaidsColor
+		&-dragonflight
+			color: $dragonflightRaidsTextColor
+			&_color
+				color: $dragonflightRaidsColor
+		&-war-within
+			color: $warWithinRaidsTextColor
+			&_color
+				color: $warWithinRaidsColor
+		&-midnight
+			color: $midnightRaidsTextColor
+			&_color
+				color: $midnightRaidsColor
+		&-last-titan
+			color: $lastTitanRaidsTextColor
+			&_color
+				color: $lastTitanRaidsColor
+	&-achievements
+		color: $achievementsColor
+	&-buy
+		&:hover
+			transform: scale(1)
+.card-footer
+	margin-bottom: 1rem
+	border: none
+	background: transparent
+.card-price
+	cursor: $cursorText
+	font-weight: 700
+	font-size: 28px
+	transition: 0.5s all
+	text-shadow: 2px 2px 2px $defaultShadow
+	color: $defaultColor
+	filter: drop-shadow(2px 2px 2px $defaultShadow)
+	&:hover
+		transition: 0.5s all
+		transform: scale(1.1)
+	&-warrior
+		color: $warriorColor
+	&-druid
+		color: $druidColor
+	&-priest
+		color: $priestColor
+	&-mage
+		color: $mageColor
+	&-monk
+		color: $monkColor
+	&-hunter
+		color: $monkColor
+	&-demon-hunter
+		color: $demonHunterColor
+	&-paladin
+		color: $paladinColor
+	&-awakener
+		color: $awakenerColor
+	&-rogue
+		color: $rogueColor
+	&-death-knight
+		color: $deathKnightColor
+	&-warlock
+		color: $warlockColor
+	&-shaman
+		color: $shamanColor
+	&-weapons
+		color: $weaponsColor
+	&-armours
+		color: $armoursColor
+	&-armours
+		color: $armoursColor
+	&-mounts-water
+		color: $waterMountsColor
+	&-mounts-earth
+		color: $earthMountsColor
+	&-mounts-fly
+		color: $flyMountsColor
+	&-gold-horde
+		color: $goldHordeColor
+	&-gold-alliance
+		color: $goldAllianceColor
+	&-pvp
+		color: $pvpColor
+	&-raids
+		&-classic
+			color: $classicRaidsColor
+		&-burning-crusade
+			color: $burningCrusadeRaidsColor
+		&-wrath-of-the-lich-king
+			color: $wrathOfTheLichKingRaidsColor
+		&-cataclysm
+			color: $cataclysmRaidsColor
+		&-mists-of-pandaria
+			color: $mistsOfPandariaRaidsColor
+		&-warlords-of-draenor
+			color: $warlordsOfDraenorRaidsColor
+		&-legion
+			color: $legionRaidsColor
+		&-battle-for-azeroth
+			color: $battleForAzerothRaidsColor
+		&-shadowlands
+			color: $shadowlandsRaidsColor
+		&-dragonflight
+			color: $dragonflightRaidsColor
+		&-war-within
+			color: $warWithinRaidsColor
+		&-midnight
+			color: $midnightRaidsColor
+		&-last-titan
+			color: $lastTitanRaidsColor
+	&-achievements
+		color: $achievementsColor
+.card-btn
+	padding: 8px
+	border-radius: 5px
+	text-shadow: 2px 2px 2px $defaultShadow
+	font-weight: 700
+	transition: 0.5s all
+	border: 1px solid $defaultBorder
+	box-shadow: 5px 5px 10px $defaultShadow
+	background: $defaultBtnBg
+	color: $defaultBtn
+	filter: drop-shadow(0 0 2px $defaultShadow)
+	&:hover
+		transition: 0.5s all
+		transform: scale(1.1)
+		color: $defaultBtn
+	&-buy
+		width: 10%
+// Картинка золота в цене
+.gold, .dollar
+	margin-left: 10px
+	width: 36px
+	height: 36px

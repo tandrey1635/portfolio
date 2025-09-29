@@ -1,0 +1,138 @@
+@use '../base/index' as *
+
+.announcement
+	padding: 25px 0
+	min-height: 150px
+	&__header, &__subheader
+		font-weight: 900
+		color: $textColor
+		font-size: 64px
+		filter: brightness(125%)
+		text-transform: uppercase
+		@media ( max-width: 767.98px )
+			font-size: 56px
+		@media ( max-width: 676px )
+			font-size: 48px
+		@media ( max-width: 575.98px )
+			font-size: 42px
+		@media ( max-width: 480px )
+			font-size: 36px
+		@media ( max-width: 425px )
+			font-size: 32px
+		&_warrior
+			color: $warriorColor
+		&_druid
+			color: $druidColor
+		&_priest
+			color: $priestColor
+		&_mage
+			color: $mageColor
+		&_monk
+			color: $monkColor
+		&_hunter
+			color: $hunterColor
+		&_demon-hunter
+			color: $demonHunterColor
+		&_paladin
+			color: $paladinColor
+		&_rogue
+			color: $rogueColor
+		&_death-knight
+			color: $deathKnightColor
+		&_warlock
+			color: $warlockColor
+		&_shaman
+			color: $shamanColor
+		&_awakener
+			color: $awakenerColor
+		&_one-handed-weapons, &_two-handed-weapons, &_range-weapons
+			color: $weaponsColor
+		&_legendary-weapons
+			color: $weaponsLegendaryColor
+		&_artefact-weapons
+			color: $weaponsArtefactColor
+		&_decorative-weapons
+			color: $weaponsDecorativeColor
+		&_shields, &_cloaks, &_fishing-rods
+			color: $armoursColor
+		&_water-mounts
+			color: $waterMountsColor
+		&_earth-mounts
+			color: $earthMountsColor
+		&_fly-mounts
+			color: $flyMountsColor
+		&_horde-gold
+			color: $goldHordeColor
+		&_alliance-gold
+			color: $goldAllianceColor
+		&_professions
+			color: $defaultColor
+		&_honour, &_arena, &_rbg
+			color: $pvpColor
+		&_сlassic
+			color: $classicRaidsColor
+		&_burning-crusade
+			color: $burningCrusadeRaidsColor
+		&_wrath-of-the-lich-king
+			color: $wrathOfTheLichKingRaidsColor
+		&_cataclysm
+			color: $cataclysmRaidsColor
+		&_mists-of-pandaria
+			color: $mistsOfPandariaRaidsColor
+		&_warlords-of-draenor
+			color: $warlordsOfDraenorRaidsColor
+		&_legion
+			color: $legionRaidsColor
+		&_battle-for-azeroth
+			color: $battleForAzerothRaidsColor
+		&_shadowlands
+			color: $shadowlandsRaidsColor
+		&_dragonflight
+			color: $dragonflightRaidsColor
+		&_war-within
+			color: $warWithinRaidsColor
+		&_midnight
+			color: $midnightRaidsColor
+		&_last-titan
+			color: $lastTitanRaidsColor
+		&_achievements
+			color: $achievementsColor
+	&__subheader
+		margin-top: 20px
+		font-size: 36px
+		text-transform: none
+		@media ( max-width: 575.98px )
+			font-size: 32px
+		@media ( max-width: 480px )
+			font-size: 26px
+		@media ( max-width: 425px )
+			font-size: 22px
+		&_main
+			font-size: 54px
+			color: $textColor
+			text-transform: uppercase
+			@media ( max-width: 1170px )
+				font-size: 46px
+			@media ( max-width: 1024px )
+				font-size: 44px
+			@media ( max-width: 767.98px )
+				font-size: 42px
+			@media ( max-width: 575.98px )
+				font-size: 36px
+			@media ( max-width: 480px )
+				font-size: 32px
+			@media ( max-width: 425px )
+				font-size: 28px
+	&__text
+		margin-top: 20px
+		font-size: 32px
+		line-height: 1.2
+		font-weight: 900
+		color: $mainColor
+		filter: brightness(125%)
+		@media ( max-width: 575.98px )
+			font-size: 26px
+		@media ( max-width: 480px )
+			font-size: 24px
+		@media ( max-width: 425px )
+			font-size: 20px

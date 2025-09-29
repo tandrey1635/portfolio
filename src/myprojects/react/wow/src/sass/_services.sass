@@ -1,0 +1,136 @@
+@use 'base/index' as *
+
+.services
+	padding: 50px 0
+	min-height: 500px
+	.nav-item
+		position: relative
+	/* Dropdown меню */
+	&__nav
+		position: absolute
+		display: none
+		z-index: 10
+		padding: 5px 0
+		top: 40px
+		left: 0
+		&-class-raids-armour
+			top: 65px
+	.nav-link
+		width: 250px
+		@media (max-width: 991.98px)
+			width: 180px
+			font-size: 14px
+		@media (max-width: 480px)
+			width: 150px
+		@media (max-width: 375px)
+			width: 125px
+			font-size: 12px
+		.active
+			color: $textColor
+			background: $defaultBg
+			filter: brightness(125%)
+	&__link
+		color: $thirdModifyTextColor
+		text-align: center
+		background: $dropMenuBg
+		&:hover
+			color: $textColor
+			filter: brightness(125%)
+		&-class-raids-armour
+			min-height: 64px
+			display: flex
+			justify-content: center
+			align-items: center
+			&-warrior
+				&.active, &:hover
+					background: $warriorBg!important
+			&-druid
+				&.active, &:hover
+					background: $druidBg!important
+			&-priest
+				&.active, &:hover
+					background: $priestBg!important
+			&-mage
+				&.active, &:hover
+					background: $mageBg!important
+			&-monk
+				&.active, &:hover
+					background: $monkBg!important
+			&-hunter
+				&:hover
+					background: $hunterBg
+			&-demon-hunter
+				&:hover
+					background: $demonHunterBg
+			&-paladin
+				&.active, &:hover
+					background: $paladinBg!important
+			&-rogue
+				&:hover
+					background: $rogueBg
+			&-death-knight
+				&:hover
+					background: $deathKnightBg
+			&-warlock
+				&:hover
+					background: $warlockBg
+			&-shaman
+				&:hover
+					background: $shamanBg
+			&-awakener
+				&:hover
+					background: $awakenerBg
+
+	.nav-item-raids-armour:hover .nav-raids-armour, .nav-item-professions:hover .nav-professions, .nav-item-raids:hover .nav-raids, .nav-item-achievments:hover .nav-achievments
+		width: 540px
+		padding: 15px 10px
+		display: grid
+		grid-template: 1fr / repeat(2, 1fr)
+		place-items: center
+		background: $dropMenuBgSecond
+		border-radius: 20px
+		@media (max-width: 991.98px)
+			width: 400px
+		@media (max-width: 480px)
+			width: 340px
+		@media (max-width: 375px)
+			width: 290px
+
+	.nav-item-weapons:hover .nav-weapons, .nav-item-armor:hover .nav-armor, .nav-item-mounts:hover .nav-mounts, .nav-item-gold:hover .nav-gold, .nav-item-pvp:hover .nav-pvp, .nav-item-dungeons:hover .nav-dungeons, .nav-item-lvl-up:hover .nav-lvl-up
+		width: 270px
+		display: grid
+		grid-template: 1fr / 1fr
+		background: $dropMenuBgSecond
+		padding: 15px 10px
+		place-items: center
+		border-radius: 20px
+		@media (max-width: 991.98px)
+			width: 200px
+		@media (max-width: 480px)
+			width: 170px
+		@media (max-width: 375px)
+			width: 145px
+
+/* Открыть меню с выбором класса для перехода на его стр при наведении на пункт меню на стр рейдовой брони */
+.services__item-raids-armour:hover .services__nav-class-raids-armour
+	width: 540px
+	padding: 15px 10px
+	display: grid
+	grid-template: 1fr / repeat(2, 1fr)
+	place-items: center
+	background: $dropMenuBgSecond
+	border-radius: 20px
+	@media (max-width: 991.98px)
+		width: 400px
+	@media (max-width: 480px)
+		width: 340px
+	@media (max-width: 375px)
+		width: 290px
+
+
+
+
+
+.services__tabs
+	@media ( max-width: 480px )
+		display: none

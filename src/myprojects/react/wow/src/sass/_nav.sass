@@ -1,0 +1,96 @@
+@use 'base/index' as *
+
+
+.nav__tabs
+	min-height: auto
+
+
+/** Логотип **/
+.navbar-brand
+	width: 350px
+	height: 165px
+	img
+		width: 100%
+		height: 100%
+
+/** Ссылки **/
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link
+	padding: 0.65rem
+	margin: 10px
+	color: $mainColor
+	&:focus, &:hover
+		border-radius: 20px
+		background: $navLinkBg
+		color: $textColor
+		font-weight: 700
+		filter: brightness(125%)
+
+/** Поиск в шапке **/
+.form-inline .form-control
+	width: 500px
+	font-weight: 700
+	color: $mainColor
+	border: 1px solid $mainBorder
+.form-control
+	&::placeholder
+		color: $mainColor
+	&:focus
+		border: 2px solid $mainBorder
+		filter: brightness(125%)
+	&:focus::placeholder
+		color: $mainColor
+
+// Дроп меню
+.dropdown-menu
+	min-width: 0
+	width: 150px
+	border-radius: 10px
+	background: $dropMenuBg
+	filter: brightness(125%)
+.dropdown-item
+	border-radius: 10px
+	font-weight: 700
+	color: $textColor
+	&:active, &:focus, &:hover
+		background: $dropMenuBgSecond
+		color: $textColor
+
+/* Кнопка Входа и Регистрации */
+.nav__btn
+	margin: 10px
+	border-radius: 5px
+	background: $navBtnBg
+	color: $secondColor
+	padding: 10px
+	&:hover
+		filter: brightness(125%)
+	&-enter
+		background: $navBtnBgSecond
+		color: $mainColor
+		font-weight: 700
+
+
+
+/* Табы карточек */
+.nav-pills .nav-link
+	border-radius: 20px
+.nav-pills
+	gap: 15px
+.nav-link-tabs
+	text-align: center
+	color: $secondColor
+	background: $navLinkBg
+	&:hover
+		color: $textColor
+		filter: brightness(125%)
+
+
+
+
+
+/* Фон всех активных ссылок в нав меню */
+.nav-pills .nav-link.active
+	color: $textColor
+	background: $defaultBg
+	filter: brightness(125%)
+
