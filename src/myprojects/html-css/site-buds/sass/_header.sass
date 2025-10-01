@@ -1,0 +1,97 @@
+.header
+	padding-top: 56px
+	min-height: 0
+	@media (max-width: 991px)
+		padding: 56px 0
+	@media (max-width: 576px)
+		padding-top: 32px
+	&_order
+		@media (max-width: 576px)
+			padding-bottom: 32px
+	&__wrapper
+		display: flex
+		justify-content: flex-end
+		gap: 32px
+		@media (max-width: 991px)
+			flex-direction: column
+			align-items: center
+	&__logo
+		width: 40%
+		@media (max-width: 991px)
+			width: 70%
+		@media (max-width: 676px)
+			width: 60%
+		@media (max-width: 480px)
+			width: 75%
+	&__photo
+		object-fit: contain
+	&__nav
+		width: 60%
+		@media (max-width: 991px)
+			width: 80%
+		@media (max-width: 480px)
+			width: 100%
+	&__menu
+		display: flex
+		position: relative
+		&::after
+			position: absolute
+			content: ''
+			width: 100%
+			bottom: -12px
+			height: 9px
+			background: $mainBorder
+			border-radius: 100px
+			@media (max-width: 425px)
+				height: 7px
+		&_order::after
+			background: $energyBorder
+		&_lightness:after
+			background: $lightnessBorder
+		&_harmony:after
+			background: $harmonyBorder
+		&_immunity:after
+			background: $immunityBorder
+		&_young:after
+			background: $youngBorder
+		&_femininity:after
+			background: $femininityBorder
+	&__list
+		width: 33%
+	&__link
+		font-weight: 300
+		line-height: 34px
+		color: $mainColor
+		text-transform: uppercase
+		@media (max-width: 991px)
+			justify-content: center
+		@media (max-width: 375px)
+			font-size: 14px
+		&:hover
+			opacity: .5
+		&.active::after
+			position: absolute
+			content: ''
+			width: 25%
+			bottom: -12px
+			height: 9px
+			z-index: 5
+			background: $activeBorderMenu
+			border-radius: 100px
+			@media (max-width: 991px)
+				left: 0
+				width: 33%
+			@media (max-width: 425px)
+				height: 7px
+		&.active
+			font-weight: 700
+		&_order
+			@media (max-width: 576px)
+				font-size: 14px
+			@media (max-width: 425px)
+				font-size: 12px
+			&.active::after
+				@media (max-width: 991px)
+					width: 25%
+
+

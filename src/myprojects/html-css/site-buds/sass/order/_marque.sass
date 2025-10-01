@@ -1,0 +1,82 @@
+.marque
+	padding-top: 180px
+	min-height: auto
+	overflow-x: clip
+	@media(max-width: 576px)
+		padding-top: 100px
+	@media(max-width: 425px)
+		padding-top: 64px
+	&_top
+		@media (max-width: 1200px)
+			padding-top: 85px
+		@media (max-width: 991px)
+			padding-top: 0
+	&__wrapper
+		display: flex
+		flex-direction: column
+		gap: 20px
+		animation: scroll 40s linear infinite
+	&__top, &__bottom
+		display: flex
+		gap: 48px
+	&__top
+		animation: scrollToLeft 40s linear infinite
+		@media (max-width: 1024px)
+			animation: scrollToLeft 30s linear infinite
+		@media (max-width: 768px)
+			animation: scrollToLeft 20s linear infinite
+		@media (max-width: 576px)
+			animation: scrollToLeft 10s linear infinite
+		@media (max-width: 425px)
+			animation: scrollToLeft 5s linear infinite
+	&__bottom
+		animation: scrollToRight 40s linear infinite
+		@media (max-width: 1024px)
+			animation: scrollToRight 30s linear infinite
+		@media (max-width: 768px)
+			animation: scrollToRight 20s linear infinite
+		@media (max-width: 576px)
+			animation: scrollToRight 10s linear infinite
+		@media (max-width: 425px)
+			animation: scrollToRight 5s linear infinite
+	&__item
+		min-width: 625px
+		padding: 26px
+		border-radius: 90px
+		font-size: 28px
+		font-weight: 700
+		line-height: 36px
+		text-transform: uppercase
+		color: $secondColor
+		text-align: center
+		background: $marqueEnergyBtnBg
+		@media (max-width: 480px)
+			padding: 10px
+			font-size: 24px
+		@media (max-width: 425px)
+			font-size: 20px
+		&_lightness
+			background: $marqueLightnessBtnBg
+		&_harmony
+			background: $marqueHarmonyBtnBg
+		&_immunity
+			background: $marqueImmunityBtnBg
+		&_young
+			background: $marqueYoungBtnBg
+		&_femininity
+			background: $marqueFemininityBtnBg
+		&_opacity
+			min-width: 525px
+			background: $marqueEnergyBtnOpacityBg
+			&_top
+				min-width: 396px
+			&_lightness
+				background: $marqueLightnessBtnOpacityBg
+			&_harmony
+				background: $marqueHarmonyBtnOpacityBg
+			&_immunity
+				background: $marqueImmunityBtnOpacityBg
+			&_young
+				background: $marqueYoungBtnOpacityBg
+			&_femininity
+				background: $marqueFemininityBtnOpacityBg

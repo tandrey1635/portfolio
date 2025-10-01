@@ -1,0 +1,67 @@
+.about
+	position: relative
+	padding-bottom: 152px
+	@media (max-width: 676px)
+		padding-bottom: 100px
+	@media (max-width: 480px)
+		padding-bottom: 80px
+	&::after
+		position: absolute
+		content: ''
+		bottom: -48px
+		z-index: -1
+		background: url('img/sense-about.svg') no-repeat center / contain
+		width: 100%
+		height: 300px
+		@media (max-width: 768px)
+			bottom: -32px
+		@media (max-width: 676px)
+			bottom: -80px
+		@media (max-width: 480px)
+			bottom: -100px
+		@media (max-width: 425px)
+			bottom: -100px
+	&__descriptions
+		margin-top: 90px
+		margin-left: 16px
+		@media (max-width: 1024px)
+			margin-top: 32px
+	&__menu
+		font-size: 21px
+		color: $mainColor
+		@media (max-width: 425px)
+			font-size: 18px
+		@media (max-width: 375px)
+			font-size: 16px
+	&__list
+		position: relative
+		margin-left: 16px
+		&::before
+			position: absolute
+			content: ''
+			top: 14px
+			left: -18px
+			width: 12px
+			height: 2px
+			background: $aboutMenuBeforeBg
+	&__img
+		margin-top: 56px
+		background: url('img/about-img-bg.png') no-repeat center / cover
+		height: 470px
+		border-radius: 74px
+		@media (max-width: 1024px)
+			height: 400px
+		@media (max-width: 768px)
+			height: 350px
+		@media (max-width: 676px)
+			height: 300px
+		@media (max-width: 576px)
+			margin-top: 32px
+			height: 250px
+		@media (max-width: 480px)
+			height: 200px
+			border-radius: 30px
+		@media (max-width: 425px)
+			height: 180px
+		@media (max-width: 375px)
+			height: 150px

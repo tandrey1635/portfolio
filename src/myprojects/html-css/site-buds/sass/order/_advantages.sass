@@ -1,0 +1,389 @@
+.advantages
+	position: relative
+	padding-bottom: 198px
+	@media(max-width: 1024px)
+		padding-bottom: 0
+	&::after
+		position: absolute
+		content: ''
+		bottom: -266px
+		z-index: -1
+		background: url('img/sense-about.svg') no-repeat center / contain
+		width: 100%
+		height: 300px
+		@media(max-width: 576px)
+			height: 200px
+			bottom: -150px
+		@media(max-width: 425px)
+			bottom: -120px
+	&__wrapper
+		position: relative
+		margin-top: 52px
+		min-height: 650px
+		display: flex
+		gap: 32px
+		@media(max-width: 991px)
+			min-height: 1450px
+		@media(max-width: 768px)
+			min-height: 1150px
+		@media(max-width: 676px)
+			min-height: 1050px
+		@media(max-width: 576px)
+			min-height: 950px
+		@media(max-width: 480px)
+			min-height: 800px
+		@media(max-width: 425px)
+			min-height: 750px
+	&__item
+		width: 98%!important
+		display: flex
+		background: $advantagesItemsEnegryBg
+		border-radius: 100px
+		box-shadow: 0 0 16px $mainShadow
+		height: 627px
+		@media(max-width: 1150px)
+			height: 600px
+		@media(max-width: 991px)
+			flex-direction: column
+			align-items: center
+			width: 99.5%!important
+			height: 1400px
+			margin-right: 0!important
+		@media(max-width: 850px)
+			border-radius: 135px 135px 100px 100px
+		@media(max-width: 768px)
+			height: 1100px
+		@media(max-width: 676px)
+			height: 1000px
+		@media(max-width: 576px)
+			height: 900px
+			border-radius: 80px
+		@media(max-width: 480px)
+			height: 750px
+		@media(max-width: 425px)
+			height: 700px
+			border-radius: 50px
+		&_lightness
+			background: $advantagesItemsLightnessBg
+		&_harmony
+			background: $advantagesItemsHarmonyBg
+		&_immunity
+			background: $advantagesItemsImmunityBg
+		&_young
+			background: $advantagesItemsYoungBg
+		&_femininity
+			background: $advantagesItemsFemininityBg
+	&__item:nth-child(2) &__left
+		background: url('img/order-energy/advantages-2.png') no-repeat center/cover
+		&_lightness
+			background: url('img/order-lightness/advantages-2.png') no-repeat center/cover
+		&_harmony
+			background: url('img/order-harmony/advantages.png') no-repeat center/cover
+		&_immunity
+			background: url('img/order-immunity/advantages-2.png') no-repeat center/cover
+		&_young
+			background: url('img/order-young/advantages-2.png') no-repeat center/cover
+		&_femininity
+			background: url('img/order-femininity/advantages.png') no-repeat center/cover
+	&__item:last-child &__left
+		background: url('img/order-energy/advantages-3.png') no-repeat center/cover
+		&_lightness
+			background: url('img/order-lightness/advantages-3.png') no-repeat center/cover
+		&_harmony
+			background: url('img/order-harmony/advantages.png') no-repeat center/cover
+		&_immunity
+			background: url('img/order-immunity/advantages-2.png') no-repeat center/cover
+		&_young
+			background: url('img/order-young/advantages-3.png') no-repeat center/cover
+		&_femininity
+			background: url('img/order-femininity/advantages.png') no-repeat center/cover
+	&__left
+		width: 42%
+		height: inherit
+		border-radius: 100px
+		background: url('img/order-energy/advantages-1.png') no-repeat center/cover
+		@media(max-width: 991px)
+			width: 100%
+			height: 850px
+		@media(max-width: 768px)
+			height: 650px
+		@media(max-width: 676px)
+			height: 580px
+		@media(max-width: 576px)
+			height: 500px
+			border-radius: 80px 80px 0 0
+		@media(max-width: 480px)
+			height: 400px
+		@media(max-width: 425px)
+			height: 350px
+		@media(max-width: 425px)
+			border-radius: 50px 50px 0 0
+		&_lightness
+			background: url('img/order-lightness/advantages-1.png') no-repeat center/cover
+		&_harmony
+			background: url('img/order-harmony/advantages.png') no-repeat center/cover
+		&_immunity
+			background: url('img/order-immunity/advantages-1.png') no-repeat center/cover
+		&_young
+			background: url('img/order-young/advantages-1.png') no-repeat center/cover
+		&_femininity
+			background: url('img/order-femininity/advantages.png') no-repeat center/cover
+	&__right
+		width: 58%
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 48px 70px 28px 52px
+		@media(max-width: 1150px)
+			padding: 32px
+		@media(max-width: 991px)
+			width: 100%
+		@media(max-width: 480px)
+			padding: 24px 16px
+	&__nav
+		display: flex
+		justify-content: center
+		gap: 18px
+		@media(max-width: 1200px)
+			flex-wrap: wrap
+			gap: 16px
+		&__item
+			display: flex
+			justify-content: center
+			width: 200px
+			padding: 5px 8px
+			font-size: 23px
+			font-weight: 500
+			line-height: 28px
+			text-transform: uppercase
+			text-align: center
+			color: $orderEnergySliderAccordeonColor
+			border: 3px solid $energyBorder
+			border-radius: 90px
+			background: $advantagesNavItemsBg
+			@media(max-width: 576px)
+				width: 180px
+				font-size: 20px
+			@media(max-width: 480px)
+				width: 170px
+			@media(max-width: 425px)
+				width: 145px
+				line-height: 18px
+				font-size: 16px
+			&_lightness
+				border: 3px solid $lightnessBorder
+				color: $orderLightnessSliderAccordeonColor
+			&_harmony
+				border: 3px solid $harmonyBorder
+				color: $orderHarmonySliderAccordeonColor
+			&_immunity
+				border: 3px solid $immunityBorder
+				color: $orderImmunitySliderAccordeonColor
+			&_young
+				border: 3px solid $youngBorder
+				color: $orderYoungSliderAccordeonColor
+			&_femininity
+				border: 3px solid $femininityBorder
+				color: $orderFemininitySliderAccordeonColor
+			&::before
+				content: '+'
+				padding-right: 5px
+	&__info
+		margin-top: 182px
+		width: 524px
+		@media(max-width: 1200px)
+			margin-top: 120px
+		@media(max-width: 1150px)
+			width: 100%
+		@media(max-width: 991px)
+			width: 80%
+		@media(max-width: 768px)
+			width: 95%
+			margin-top: 48px
+		@media(max-width: 729px)
+			margin-top: 32px
+		@media(max-width: 576px)
+			margin-top: 16px
+	&__text
+		margin-top: 16px
+		font-size: 30px
+		line-height: 36px
+		color: $mainColor
+		text-align: center
+		@media(max-width: 1150px)
+			font-size: 28px
+		@media (max-width: 676px)
+			font-size: 26px
+			line-height: 32px
+		@media(max-width: 576px)
+			font-size: 22px
+			line-height: 26px
+		@media(max-width: 480px)
+			font-size: 20px
+		@media(max-width: 425px)
+			font-size: 16px
+			line-height: 22px
+			margin-top: 26px
+		br
+			@media(max-width: 768px)
+				display: none
+		&_main
+			margin-left: 0
+			padding: 5px 14px
+			font-weight: 700
+			border-radius: 90px
+			background: $energyBg
+			color: $secondColor
+			@media(max-width: 1150px)
+				font-size: 28px
+			@media (max-width: 676px)
+				font-size: 26px
+			@media(max-width: 576px)
+				font-size: 24px
+			@media(max-width: 480px)
+				font-size: 22px
+			@media(max-width: 425px)
+				font-size: 18px
+			@media(max-width: 375px)
+				font-size: 16px
+			&_lightness
+				background: $lightnessBg
+			&_harmony
+				background: $harmonyBg
+			&_immunity
+				background: $immunityBg
+			&_young
+				background: $youngBg
+			&_femininity
+				background: $femininityBg
+	&__block__navigations
+		position: absolute
+		display: flex
+		width: 50%
+		top: 60%
+		left: 45%
+		height: 60px
+		z-index: 10
+		@media(max-width: 1150px)
+			width: 54%
+			left: 44%
+		@media(max-width: 991px)
+			width: 95%
+			top: 80%
+			left: 20px
+		@media(max-width: 768px)
+			width: 95%
+			top: 75%
+			left: 2%
+		@media(max-width: 729px)
+			top: 80%
+		@media(max-width: 576px)
+			top: 78%
+			height: 40px
+		@media(max-width: 425px)
+			height: 30px
+	&__navigations
+		height: inherit
+		cursor: pointer
+		&_disabled
+			display: none
+		&:hover
+			opacity: .7
+		&__left
+			&::before
+				position: absolute
+				top: 0
+				content: ''
+				width: 22px
+				height: inherit
+				left: 10px
+				transform: rotate(-180deg)
+				background: url('icons/order-energy/slider-arrow.svg') no-repeat center/contain
+				@media(max-width: 991px)
+					left: 0
+			&_lightness
+				&::before
+					background: url('icons/order-lightness/slider-arrow.svg') no-repeat center/contain
+			&_harmony
+				&::before
+					background: url('icons/order-harmony/slider-arrow.svg') no-repeat center/contain
+			&_immunity
+				&::before
+					background: url('icons/order-immunity/slider-arrow.svg') no-repeat center/contain
+			&_young
+				&::before
+					background: url('icons/order-young/slider-arrow.svg') no-repeat center/contain
+			&_femininity
+				&::before
+					background: url('icons/order-femininity/slider-arrow.svg') no-repeat center/contain
+		&__right
+			&::after
+				position: absolute
+				top: 0
+				content: ''
+				width: 22px
+				height: inherit
+				right: 10px
+				background: url('icons/order-energy/slider-arrow.svg') no-repeat center/contain
+				@media(max-width: 991px)
+					right: 0
+			&_lightness
+				&::after
+					background: url('icons/order-lightness/slider-arrow.svg') no-repeat center/contain
+			&_harmony
+				&::after
+					background: url('icons/order-harmony/slider-arrow.svg') no-repeat center/contain
+			&_immunity
+				&::after
+					background: url('icons/order-immunity/slider-arrow.svg') no-repeat center/contain
+			&_young
+				&::after
+					background: url('icons/order-young/slider-arrow.svg') no-repeat center/contain
+			&_femininity
+				&::after
+					background: url('icons/order-femininity/slider-arrow.svg') no-repeat center/contain
+	&__paginations
+		position: relative
+		display: flex
+		align-items: center
+		position: absolute
+		gap: 32px
+		width: auto!important
+		left: 60%!important
+		bottom: 60px!important
+		z-index: 10
+		@media(max-width: 1150px)
+			bottom: 75px!important
+		@media(max-width: 991px)
+			left: 50%!important
+			bottom: 120px!important
+			transform: translateX(-50%)
+		@media(max-width: 768px)
+			bottom: 80px!important
+		@media(max-width: 576px)
+			bottom: 70px!important
+		&::before
+			position: absolute
+			display: block
+			content: ''
+			top: 47%
+			left: 5px
+			width: 90%
+			height: 2px
+			background: $linesBgBefore
+			z-index: -1
+		&_lightness
+			.swiper-pagination-bullet
+				background: $lightnessBg
+		&_harmony
+			.swiper-pagination-bullet
+				background: $harmonyBg
+		&_immunity
+			.swiper-pagination-bullet
+				background: $immunityBg
+		&_young
+			.swiper-pagination-bullet
+				background: $youngBg
+		&_femininity
+			.swiper-pagination-bullet
+				background: $femininityBg

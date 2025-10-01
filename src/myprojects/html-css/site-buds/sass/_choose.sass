@@ -1,0 +1,113 @@
+.choose
+	padding-top: 263px
+	overflow-x: clip
+	@media (max-width: 1024px)
+		min-height: auto
+	@media (max-width: 768px)
+		padding-top: 200px
+	@media (max-width: 676px)
+		padding-top: 150px
+	&__wrapper
+		margin-top: 64px
+		display: flex
+		flex-direction: column
+		gap: 28px
+		@media (max-width: 425px)
+			margin-top: 32px
+	&__top, &__bottom
+		display: flex
+		gap: 28px
+	&__top
+		animation: scrollToLeft 40s linear infinite
+		@media (max-width: 1024px)
+			animation: scrollToLeft 30s linear infinite
+		@media (max-width: 768px)
+			animation: scrollToLeft 20s linear infinite
+		@media (max-width: 576px)
+			animation: scrollToLeft 10s linear infinite
+		@media (max-width: 425px)
+			animation: scrollToLeft 5s linear infinite
+	&__bottom
+		animation: scrollToRight 40s linear infinite
+		@media (max-width: 1024px)
+			animation: scrollToRight 30s linear infinite
+		@media (max-width: 768px)
+			animation: scrollToRight 20s linear infinite
+		@media (max-width: 576px)
+			animation: scrollToRight 10s linear infinite
+		@media (max-width: 425px)
+			animation: scrollToRight 5s linear infinite
+	&__item
+		padding: 17px 16px
+		border-radius: 90px
+		font-size: 30px
+		font-weight: 800
+		line-height: 36px
+		text-transform: uppercase
+		color: $secondColor
+		text-align: center
+		@media (max-width: 480px)
+			padding: 10px
+			font-size: 24px
+		@media (max-width: 425px)
+			font-size: 20px
+		&::before, &::after
+			position: absolute
+			content: ''
+			width: 70px
+			height: 70px
+			border-radius: 50%
+			top: 0
+			@media (max-width: 480px)
+				width: 50px
+				height: 50px
+				background-size: 70%!important
+		&::before
+			left: -82px
+			@media (max-width: 480px)
+				left: -72px
+		&::after
+			right: -82px
+			@media (max-width: 480px)
+				right: -72px
+		&_energy
+			min-width: 310px
+			background: $energyBtnBg
+			&_icons
+				position: relative
+				margin-left: 70px
+			&::before
+				left: -82px
+				background: url(icons/shield-white.svg) no-repeat center, $lightnessBtnBg
+		&_immunity
+			min-width: 375px
+			background: $immunityBtnBg
+		&_young
+			min-width: 386px
+			background: $youngBtnBg
+			&_icons
+				position: relative
+				margin-left: 70px
+			&_icons_first::before
+				background: url(icons/star-white.svg) no-repeat center, $youngBtnBg
+			&_icons_last::before
+				background: url(icons/star-white.svg) no-repeat center, $femininityBtnBg
+		&_femininity
+			min-width: 490px
+			background: $femininityBtnBg
+			&_icons
+				position: relative
+				margin-right: 70px
+			&::after
+				background: url(icons/lightning-white.svg) no-repeat center, $femininityBtnBg
+		&_lightness
+			min-width: 235px
+			background: $lightnessBtnBg
+		&_harmony
+			min-width: 310px
+			background: $harmonyBtnBg
+			&_icons
+				position: relative
+				margin-right: 70px
+				&::after
+					background: url(icons/star-white.svg) no-repeat center, $femininityBtnBg

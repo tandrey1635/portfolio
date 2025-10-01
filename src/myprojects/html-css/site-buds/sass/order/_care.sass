@@ -1,0 +1,606 @@
+.care
+	padding-top: 368px
+	@media(max-width: 1150px)
+		padding-top: 200px
+	@media(max-width: 1024px)
+		padding-top: 100px
+	@media(max-width: 576px)
+		padding-top: 64px
+.accordeon
+	border-radius: 100px
+	box-shadow: 0px 4px 20.2px 0px $mainShadow
+	@media(max-width: 480px)
+		border-radius: 44px
+	&__wrapper
+		margin-top: 42px
+		display: flex
+		flex-direction: column
+		gap: 34px
+	&__item
+		border-radius: 100px
+		cursor: pointer
+		background: $secondBg
+	&__header
+		padding: 66px
+		position: relative
+		background: $accordeonEnergyBg
+		border-radius: 100px
+		font-size: 40px
+		font-weight: 700
+		line-height: 48px
+		color: $accordeonEnergyHeaderColor
+		@media(max-width: 1150px)
+			padding: 56px
+		@media(max-width: 991px)
+			padding: 48px
+			font-size: 36px
+		@media(max-width: 676px)
+			padding: 48px 32px
+			line-height: 1
+			font-size: 32px
+		@media(max-width: 576px)
+			font-size: 26px
+		@media(max-width: 480px)
+			padding: 32px
+			font-size: 22px
+		@media(max-width: 425px)
+			padding: 28px
+			font-size: 20px
+		@media(max-width: 375px)
+			font-size: 18px
+		&::after
+			width: 30px
+			height: 30px
+			content: ''
+			position: absolute
+			right: 110px
+			background: url('icons/order-energy/arrow-down.svg') no-repeat center/contain
+			@media(max-width: 991px)
+				top: 60px
+				right: 60px
+			@media(max-width: 676px)
+				top: 50px
+				right: 20px
+			@media(max-width: 480px)
+				width: 26px
+				height: 26px
+				top: 32px
+			@media(max-width: 425px)
+				width: 20px
+				height: 20px
+				top: 30px
+				right: 15px
+			@media(max-width: 375px)
+				top: 28px
+		&_lightness
+			background: $accordeonLightnessBg
+			color: $accordeonLightnessHeaderColor
+			&::after
+				background: url('icons/order-lightness/arrow-down.svg') no-repeat center/contain
+		&_harmony
+			background: $accordeonHarmonyBg
+			color: $accordeonHarmonyHeaderColor
+			&::after
+				background: url('icons/order-harmony/arrow-down.svg') no-repeat center/contain
+		&_immunity
+			background: $accordeonImmunityBg
+			color: $accordeonImmunityHeaderColor
+			&::after
+				background: url('icons/order-immunity/arrow-down.svg') no-repeat center/contain
+		&_young
+			background: $accordeonYoungBg
+			color: $accordeonYoungHeaderColor
+			&::after
+				background: url('icons/order-young/arrow-down.svg') no-repeat center/contain
+		&_femininity
+			background: $accordeonFemininityBg
+			color: $accordeonFemininityHeaderColor
+			&::after
+				background: url('icons/order-femininity/arrow-down.svg') no-repeat center/contain
+	&__description
+		display: none
+		min-height: 500px
+		padding: 0 64px
+		@media(max-width: 1150px)
+			padding: 0 48px
+		@media(max-width: 1024px)
+			min-height: auto
+		@media(max-width: 676px)
+			padding: 0 32px
+		@media(max-width: 576px)
+			padding: 0 24px
+		@media(max-width: 480px)
+			padding: 0 16px
+		&__wrapper
+			display: flex
+			@media(max-width: 991px)
+				flex-direction: column-reverse
+				align-items: center
+			&_reverse
+				@media(max-width: 991px)
+					flex-direction: column
+		&__left
+			margin-top: 42px
+			width: 55%
+			height: 400px
+			background: url('img/order-energy/accordeon-bg-1.png') no-repeat center/contain
+			&_lightness
+				background: url('img/order-lightness/accordeon-bg-1.png') no-repeat center/contain
+			&_harmony
+				background: url('img/order-harmony/accordeon-bg-1.png') no-repeat center/contain
+			&_immunity
+				background: url('img/order-immunity/accordeon-bg-1.png') no-repeat center/contain
+			&_young
+				background: url('img/order-young/accordeon-bg-1.png') no-repeat center/contain
+			&_femininity
+				background: url('img/order-femininity/accordeon-bg-1.png') no-repeat center/contain
+			@media ( max-width: 1150px )
+				width: 50%
+			@media(max-width: 1024px)
+				margin-top: 24px
+			@media(max-width: 991px)
+				width: 60%
+			@media(max-width: 768px)
+				width: 100%
+			@media(max-width: 480px)
+				height: 250px
+			@media(max-width: 425px)
+				height: 200px
+			&_reverse
+				width: 45%
+				height: auto
+				margin-top: 108px
+				padding-bottom: 88px
+				background: none
+				@media(max-width: 991px)
+					width: 60%
+					margin-top: 64px
+					margin-left: 100px
+					padding-bottom: 24px
+				@media(max-width: 768px)
+					width: 80%
+				@media(max-width: 676px)
+					width: 95%
+					margin-left: 64px
+				@media(max-width: 576px)
+					margin-top: 32px
+					margin-left: 48px
+				@media(max-width: 425px)
+					width: 80%
+					margin-left: 0
+		&__menu
+			margin-top: 28px
+			display: flex
+			flex-direction: column
+			gap: 26px
+			@media(max-width: 425px)
+				gap: 16px!important
+			&_reverse
+				margin-top: 0
+				gap: 36px
+		&__list
+			position: relative
+			&_main
+				&::after
+					content: ''
+					position: absolute
+					width: 12px
+					height: 12px
+					border-radius: 50%
+					top: 14px
+					left: -32px
+					background: $energyBg
+					@media(max-width: 480px)
+						width: 10px
+						height: 10px
+						top: 12px
+						left: -30px
+					@media(max-width: 425px)
+						width: 8px
+						height: 8px
+				&:first-child::before
+					position: absolute
+					content: ''
+					width: 116px
+					height: 2px
+					top: 80px
+					left: -84px
+					transform: rotate(90deg)
+					background: $linesBgBefore
+					@media(max-width: 480px)
+						top: 77px
+						left: -83px
+					@media(max-width: 425px)
+						width: 85px
+						top: 56px
+						left: -68px
+				&_lightness
+					&::after
+						background: $lightnessBg
+				&_harmony
+					&::after
+						background: $harmonyBg
+				&_immunity
+					&::after
+						background: $immunityBg
+				&_young
+					&::after
+						background: $youngBg
+				&_femininity
+					&::after
+						background: $femininityBg
+			&_reverse
+				&:first-child::before
+					position: absolute
+					content: ''
+					width: 252px
+					height: 2px
+					top: 185px
+					right: -120px
+					transform: rotate(90deg)
+					background: $linesBgBefore
+					@media(max-width: 1150px)
+						right: -145px
+					@media(max-width: 991px)
+						left: -156px
+					@media(max-width: 480px)
+						width: 230px
+						top: 175px
+						left: -140px
+					@media(max-width: 425px)
+						width: 170px
+						top: 145px
+						left: -111px
+				&::after
+					content: ''
+					position: absolute
+					width: 12px
+					height: 12px
+					border-radius: 50%
+					top: 54px
+					right: 0
+					background: $energyBg
+					@media(max-width: 1150px)
+						right: -25px
+					@media(max-width: 991px)
+						left: -36px
+					@media(max-width: 480px)
+						width: 10px
+						height: 10px
+						left: -30px
+					@media(max-width: 425px)
+						width: 8px
+						height: 8px
+				&_lightness
+					&::after
+						background: $lightnessBg
+				&_harmony
+					&::after
+						background: $harmonyBg
+				&_immunity
+					&::after
+						background: $immunityBg
+				&_young
+					&::after
+						background: $youngBg
+				&_femininity
+					&::after
+						background: $femininityBg
+		&__header
+			display: inline-block
+			position: relative
+			color: $accordeonEnergyHeaderColor
+			font-size: 30px
+			font-weight: 700
+			line-height: 36px
+			&::after
+				content: ""
+				position: absolute
+				width: 100%
+				height: 6px
+				left: 0
+				bottom: -5px
+				background: $accordeonBorderEnergyHeader
+				border-radius: 24px
+			&_lightness
+				color: $accordeonLightnessHeaderColor
+				&::after
+					background: $accordeonBorderLightnessHeader
+			&_harmony
+				color: $accordeonHarmonyHeaderColor
+				&::after
+					background: $accordeonBorderHarmonyHeader
+			&_immunity
+				color: $accordeonImmunityHeaderColor
+				&::after
+					background: $accordeonBorderImmunityHeader
+			&_young
+				color: $accordeonYoungHeaderColor
+				&::after
+					background: $accordeonBorderYoungHeader
+			&_femininity
+				color: $accordeonFemininityHeaderColor
+				&::after
+					background: $accordeonBorderFemininityHeader
+			@media(max-width: 1024px)
+				font-size: 28px
+			@media(max-width: 576px)
+				font-size: 24px
+			@media(max-width: 480px)
+				font-size: 22px
+			@media(max-width: 425px)
+				font-size: 18px
+			@media(max-width: 375px)
+				font-size: 16px
+		&__text
+			margin-top: 6px
+			font-size: 25px
+			line-height: 30px
+			color: $mainColor
+			@media(max-width: 1150px)
+				font-size: 22px
+			@media(max-width: 1024px)
+				font-size: 20px
+			@media(max-width: 480px)
+				font-size: 18px
+				line-height: 26px
+			@media(max-width: 425px)
+				font-size: 14px
+				line-height: 20px
+			@media(max-width: 375px)
+				font-size: 13px
+		&__right
+			margin-top: 130px
+			width: 45%
+			@media ( max-width: 1150px )
+				margin-left: 50px
+				width: 50%
+			@media(max-width: 1024px)
+				margin-top: 84px
+			@media(max-width: 991px)
+				margin-top: 64px
+				margin-left: 100px
+				width: 60%
+			@media(max-width: 768px)
+				width: 80%
+			@media(max-width: 676px)
+				width: 95%
+				margin-left: 64px
+			@media(max-width: 576px)
+				margin-top: 32px
+				margin-left: 48px
+			@media(max-width: 425px)
+				width: 80%
+				margin-left: 0
+			&_reverse
+				margin-top: 0
+				width: 60%
+				height: 600px
+				background: url('img/order-energy/accordeon-bg-2.png') no-repeat center/contain
+				&_lightness
+					background: url('img/order-lightness/accordeon-bg-2.png') no-repeat center/contain
+				&_harmony
+					background: url('img/order-harmony/accordeon-bg-2.png') no-repeat center/contain
+				&_immunity
+					background: url('img/order-immunity/accordeon-bg-2.png') no-repeat center/contain
+				&_young
+					background: url('img/order-young/accordeon-bg-2.png') no-repeat center/contain
+				&_femininity
+					background: url('img/order-femininity/accordeon-bg-2.png') no-repeat center/contain
+				@media ( max-width: 1150px )
+					margin-left: 0
+				@media(max-width: 991px)
+					width: 80%
+				@media(max-width: 768px)
+					width: 100%
+					height: 550px
+				@media(max-width: 576px)
+					height: 350px
+				@media(max-width: 425px)
+					height: 300px
+		&__block__icons
+			padding-bottom: 56px
+			margin-top: 64px
+			display: flex
+			justify-content: center
+			gap: 100px
+			@media(max-width: 1024px)
+				margin-top: 32px
+			@media(max-width: 991px)
+				gap: 32px
+			@media(max-width: 676px)
+				display: grid
+				grid-template-columns: repeat(2, 150px)
+			@media(max-width: 576px)
+				gap: 32px
+			@media(max-width: 480px)
+				gap: 16px
+			@media(max-width: 425px)
+				padding-bottom: 32px
+				grid-template-columns: repeat(2, 120px)
+		&__icons
+			text-align: center
+		&__icons__text
+			font-size: 21px
+			font-weight: 700
+			line-height: 25px
+			color: $accordeonEnergySvgIconsText
+			text-transform: uppercase
+			@media(max-width: 676px)
+				font-size: 20px
+			@media(max-width: 480px)
+				font-size: 18px
+			@media(max-width: 425px)
+				font-size: 15px
+			@media(max-width: 375px)
+				font-size: 14px
+			&_lightness
+				color: $accordeonLightnessSvgIconsText
+			&_harmony
+				color: $accordeonHarmonySvgIconsText
+			&_immunity
+				color: $accordeonImmunitySvgIconsText
+			&_young
+				color: $accordeonYoungSvgIconsText
+			&_femininity
+				color: $accordeonFemininitySvgIconsText
+		&__svg
+			width: 96px
+			height: 96px
+			fill: $accordeonEnergySvgImg
+			@media(max-width: 480px)
+				width: 64px
+				height: 64px
+			@media(max-width: 425px)
+				width: 56px
+				height: 56px
+			@media(max-width: 375px)
+				width: 48px
+				height: 48px
+			&_lightness
+				fill: $accordeonLightnessSvgImg
+			&_harmony
+				fill: $accordeonHarmonySvgImg
+			&_immunity
+				fill: $accordeonImmunitySvgImg
+			&_young
+				fill: $accordeonYoungSvgImg
+			&_femininity
+				fill: $accordeonFemininitySvgImg
+	&__subheader
+		text-align: center
+		margin-top: 52px
+		padding: 24px
+		background: $energyBg
+		color: $secondColor
+		font-size: 26px
+		text-transform: uppercase
+		font-weight: 700
+		border-radius: 90px
+		@media(max-width: 1150px)
+			font-size: 24px
+		@media(max-width: 1024px)
+			font-size: 22px
+		@media(max-width: 768px)
+			padding: 16px
+		@media(max-width: 676px)
+			font-size: 20px
+		@media(max-width: 576px)
+			font-size: 16px
+			margin-top: 32px
+		@media(max-width: 480px)
+			padding: 12px
+			font-size: 14px
+		@media(max-width: 425px)
+			margin-top: 24px
+			padding: 10px
+			font-size: 12px
+		&_lightness
+			background: $lightnessBg
+		&_harmony
+			background: $harmonyBg
+		&_immunity
+			background: $immunityBg
+		&_young
+			background: $youngBg
+		&_femininity
+			background: $femininityBg
+	&__menu
+		margin-top: 75px
+		display: flex
+		flex-direction: column
+		gap: 48px
+		padding-bottom: 82px
+		@media(max-width: 1024px)
+			margin-top: 56px
+			padding-bottom: 64px
+		@media(max-width: 768px)
+			gap: 32px
+		@media(max-width: 576px)
+			margin-top: 32px
+			padding-bottom: 48px
+		@media(max-width: 425px)
+			margin-top: 24px
+			padding-bottom: 32px
+			gap: 16px
+	&__list
+		margin-left: 45px
+		position: relative
+		font-size: 30px
+		color: $mainColor
+		@media(max-width: 768px)
+			font-size: 26px
+		@media(max-width: 576px)
+			font-size: 22px
+		@media(max-width: 480px)
+			font-size: 18px
+		@media(max-width: 425px)
+			font-size: 15px
+			margin-left: 36px
+		&::before
+			content: ''
+			position: absolute
+			width: 12px
+			height: 12px
+			top: 12px
+			left: -30px
+			background: $energyBg
+			border-radius: 50%
+			@media(max-width: 480px)
+				width: 10px
+				height: 10px
+				top: 6px
+			@media(max-width: 425px)
+				width: 8px
+				height: 8px
+				left: -20px
+		&_lightness
+			&::before
+				background: $lightnessBg
+		&_harmony
+			&::before
+				background: $harmonyBg
+		&_immunity
+			&::before
+				background: $immunityBg
+		&_young
+			&::before
+				background: $youngBg
+		&_femininity
+			&::before
+				background: $femininityBg
+.accordeon-active
+	display: block
+.accordeon-active-icon
+	&::after
+		width: 30px
+		height: 30px
+		content: ''
+		position: absolute
+		background: url('icons/order-energy/close-accordeon.svg') no-repeat center/contain
+		@media(max-width: 480px)
+			width: 26px
+			height: 26px
+			top: 32px
+		@media(max-width: 425px)
+			width: 20px
+			height: 20px
+			top: 30px
+			right: 15px
+		@media(max-width: 375px)
+			top: 28px
+	&_lightness
+		&::after
+			background: url('icons/order-lightness/close-accordeon.svg') no-repeat center/contain
+	&_harmony
+		&::after
+			background: url('icons/order-harmony/close-accordeon.svg') no-repeat center/contain
+	&_immunity
+		&::after
+			background: url('icons/order-immunity/close-accordeon.svg') no-repeat center/contain
+	&_young
+		&::after
+			background: url('icons/order-young/close-accordeon.svg') no-repeat center/contain
+	&_femininity
+		&::after
+			background: url('icons/order-femininity/close-accordeon.svg') no-repeat center/contain

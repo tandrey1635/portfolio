@@ -1,0 +1,24 @@
+<svg width="1525.988281" height="1023.705078" viewBox="0 0 1525.99 1023.71" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_2_370_dd" x="0.000000" y="0.000000" width="1525.988281" height="1023.705078" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="18.0333"/>
+			<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+			<feBlend mode="normal" in2="shape" result="effect_innerShadow_1"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_2_370_dd)">
+		<path id="Vector" d="M896.5 1010.61L851.98 1016.93C1227.09 994.72 1510.09 711.7 1525.99 333.42C1525.99 295.32 1494.2 260.28 1456 260.28C1421.06 260.28 1386.02 263.43 1351.07 269.85C1379.7 587.81 1204.88 883.46 896.5 1010.61Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M661.27 1016.93C658.11 1013.77 149.44 832.53 193.96 273.01C152.6 266.69 111.34 260.28 69.98 260.28C31.88 260.28 0 292.06 0 333.42C15.89 708.54 292.48 991.56 661.27 1016.93Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M648.53 975.56C499.08 772.11 460.98 533.62 518.23 336.58C521.39 333.42 527.81 292.06 565.91 212.6C499.18 161.76 422.88 120.4 337 94.93C298.89 82.19 260.69 104.5 247.96 142.61C158.92 492.35 324.26 835.69 648.53 975.56Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M883.77 981.98C1214.36 845.26 1389.28 498.77 1297.07 142.7C1287.51 104.6 1246.25 82.29 1208.04 95.02C1128.57 120.49 1055.43 155.44 991.86 203.12C1112.68 457.41 1077.74 753.16 883.77 981.98Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M705.79 994.72C737.57 1032.81 794.83 1032.81 826.61 997.87C1093.63 721.27 1100.05 307.95 839.35 21.88C813.88 -6.75 766.2 -6.75 740.83 18.72C467.4 295.32 454.66 705.38 705.89 994.72L705.79 994.72Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

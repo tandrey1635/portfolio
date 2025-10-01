@@ -1,0 +1,59 @@
+@import 'sass/_variables'
+@import 'sass/_reset'
+
+/* Прижать подвал Флекс */
+.wrapper
+	display: flex
+	flex-direction: column
+
+html, body
+	height: 100%
+
+html
+	scroll-behavior: smooth
+
+body
+	font-family: $mainFont
+	overflow-x: hidden
+
+header, footer
+	min-height: 100px
+
+main
+	flex: 1 0 auto
+	min-height: 100vh
+
+section
+	min-height: 600px
+
+footer
+	flex: 0 0 auto
+
+.container
+	max-width: 1300px
+	padding: 0 15px
+	margin: 0 auto
+
+@import 'sass/titles'
+@import 'sass/text'
+@import 'sass/animations'
+@import 'sass/header'
+@import 'sass/promo'
+@import 'sass/choose'
+@import 'sass/why__they'
+@import 'sass/about'
+@import 'sass/buy'
+@import 'sass/copyright'
+@import 'sass/medicines'
+@import 'sass/footer'
+
+
+/* Стр Заказать */
+@import 'sass/swiper/swiper'
+@import 'sass/order/sense'
+@import 'sass/order/use'
+@import 'sass/order/advantages'
+@import 'sass/order/care'
+@import 'sass/order/whom'
+@import 'sass/order/marque'
+
