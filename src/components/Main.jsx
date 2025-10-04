@@ -55,6 +55,7 @@ import SendItPreview from '../img/devices-img/sendIt/preview.webp'
 /* import WowPreview from '../img/devices-img/wow/preview.webp' */
 import BurgersPreview from '../img/devices-img/burgers/preview.webp'
 /* import SpaceProjectPreview from '../img/devices-img/space-project/preview.mp4' */
+import SrFarmEmailsPreview from '../img/devices-img/sr.farm-mails/preview.webp'
 import AveximaEmailsPreview from '../img/devices-img/avexima-mails/preview.webp'
 
 
@@ -94,8 +95,8 @@ const MedicalHospitalUrl = '/portfolio/myprojects/html-css/medical-hospital(Grid
 const SendItUrl =  '/portfolio/myprojects/bootstrap/sendIt/index.html'
 const WowUrl = '/portfolio/myprojects/bootstrap/wow/index.html'
 const BurgersUrl = '/portfolio/myprojects/bootstrap/burgers/index.html'
+const SrFarmEmailsUrl = '/portfolio/myprojects/react/sr.farm-mails/index.html'
 const AveximaEmailsUrl = '/portfolio/myprojects/react/avexima-mails/index.html'
-
 
 /* Проекты ссылки на GitHub */
 const LandingPageGitHub = 'https://github.com/tandrey1635/landing-page'
@@ -117,6 +118,7 @@ const MedicalHospitalGitHub = 'https://github.com/tandrey1635/medical-hospital-G
 const SendItGutHub =  'https://github.com/tandrey1635/sendIt'
 const WowGitHub = 'https://github.com/tandrey1635/wow'
 const BurgersGitHub = 'https://github.com/tandrey1635/burgers'
+const SrFarmEmailsGitHub = 'https://github.com/tandrey1635/sr.farm-mails'
 const AveximaEmailsGitHub = 'https://github.com/tandrey1635/avexima-mails'
 
 
@@ -500,6 +502,7 @@ const Main = () =>  {
                             <PortfolioItems project javascript subheader={'Шахматы'} text={'Шахматная доста на js'} alt={'Шахматы'}/>
                             <PortfolioItems project javascript subheader={'Страны'} text={'Получение данных о странах через Fetch API'} alt={'Страны'}/>
                             <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
+							<PortfolioItems project react subheader={'Еmail-шаблоны'} text={'Серия медицинских email-шаблонов для фармацевтической компании Сердце России на React'} alt={'Еmail-шаблоны'} preview={SrFarmEmailsPreview} url={SrFarmEmailsUrl} github={SrFarmEmailsGitHub}/>
 							<PortfolioItems project react subheader={'Еmail-шаблоны'} text={'Серия медицинских email-шаблонов для фармацевтической компании Авексима на React'} alt={'Еmail-шаблоны'} preview={AveximaEmailsPreview} url={AveximaEmailsUrl} github={AveximaEmailsGitHub}/>
                             <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/>
                         </>
@@ -543,6 +546,7 @@ const Main = () =>  {
                         }
                         {projects.react &&
                             <>
+								<PortfolioItems project react subheader={'Еmail-шаблоны'} text={'Серия медицинских email-шаблонов для фармацевтической компании Сердце России на React'} alt={'Еmail-шаблоны'} preview={SrFarmEmailsPreview} url={SrFarmEmailsUrl} github={SrFarmEmailsGitHub}/>
 								<PortfolioItems project react subheader={'Еmail-шаблоны'} text={'Серия медицинских email-шаблонов для фармацевтической компании Авексима на React'} alt={'Еmail-шаблоны'} preview={AveximaEmailsPreview} url={AveximaEmailsUrl} github={AveximaEmailsGitHub}/>
                                 <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/>
                             </>
