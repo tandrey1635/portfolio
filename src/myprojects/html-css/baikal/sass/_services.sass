@@ -1,0 +1,31 @@
+.services
+    padding: 44px 0 80px 0
+    min-height: 582px
+    background: $servicesBg
+    @media (max-width: 480px)
+        padding: 32px 0
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 32px 26px
+        margin-top: 52px
+        @media (max-width: 1200px)
+            display: grid
+            grid-template: auto / repeat(auto-fill, 252px)
+        @media (max-width: 768px)
+            justify-content: space-evenly
+    &__items
+        max-width: 252px
+    &__img
+        width: 84px
+        height: 84px
+        @media (max-width: 991px)
+            margin: 0 auto
+    &__descriptions
+        margin-top: 16px
+    &__text
+        font-size: 16px
+        line-height: 130%
+        @media (max-width: 991px)
+            text-align: center

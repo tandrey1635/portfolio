@@ -115,7 +115,7 @@ const BudsGitHub = 'https://github.com/tandrey1635/site-buds'
 const AveximaGitHub = 'https://github.com/tandrey1635/avexima'
 const ArtificiailIntelligenceGitHub = 'https://github.com/tandrey1635/artificiail-intelligence'
 const MedicalHospitalGitHub = 'https://github.com/tandrey1635/medical-hospital-Grid-'
-const SendItGutHub =  'https://github.com/tandrey1635/sendIt'
+const SendItGitHub =  'https://github.com/tandrey1635/sendIt'
 const WowGitHub = 'https://github.com/tandrey1635/wow'
 const BurgersGitHub = 'https://github.com/tandrey1635/burgers'
 const SrFarmEmailsGitHub = 'https://github.com/tandrey1635/sr.farm-mails'
@@ -496,7 +496,7 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Avexima'} text={'Новый дизайн сайта https://avexima.ru/'} alt={'Avexima'} url={AveximaUrl} github={AveximaGitHub}/>
                             <PortfolioItems project html subheader={'Искусственный интелект'} text={'Mobile First'} alt={'Искусственный интелект'} preview={ArtificiailIntelligencePreview} url={ArtificiailIntelligenceUrl} github={ArtificiailIntelligenceGitHub}/>
                             <PortfolioItems project html subheader={'Медицинская клиника'} text={'Сайт на Grid layout (CSS Grid)'} alt={'Медицинская клиника'} preview={MedicalHospitalPreview} url={MedicalHospitalUrl} github={MedicalHospitalGitHub}/>
-                            <PortfolioItems project bootstrap subheader={'SendIt'} text={'Бутстрап сетка (Bootstrap Grid)'} alt={'SendIt'} preview={SendItPreview} url={SendItUrl} github={SendItGutHub}/>
+                            <PortfolioItems project bootstrap subheader={'SendIt'} text={'Бутстрап сетка (Bootstrap Grid)'} alt={'SendIt'} preview={SendItPreview} url={SendItUrl} github={SendItGitHub}/>
                             <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>
                             <PortfolioItems project bootstrap subheader={'Ресторан бургеров'} text={'Проект на Bootstrap 5'} alt={'Ресторан бургеров'} preview={BurgersPreview} url={BurgersUrl} github={BurgersGitHub}/>
                             <PortfolioItems project javascript subheader={'Шахматы'} text={'Шахматная доста на js'} alt={'Шахматы'}/>
@@ -532,7 +532,7 @@ const Main = () =>  {
                     }
                         {projects.bootstrap &&
                             <>
-                                <PortfolioItems project bootstrap subheader={'SendIt'} text={'Бутстрап сетка (Bootstrap Grid)'} alt={'SendIt'} preview={SendItPreview} url={SendItUrl} github={SendItGutHub}/>
+                                <PortfolioItems project bootstrap subheader={'SendIt'} text={'Бутстрап сетка (Bootstrap Grid)'} alt={'SendIt'} preview={SendItPreview} url={SendItUrl} github={SendItGitHub}/>
                                 <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>
                                 <PortfolioItems project bootstrap subheader={'Ресторан бургеров'} text={'Проект на Bootstrap 5'} alt={'Ресторан бургеров'} preview={BurgersPreview} url={BurgersUrl} github={BurgersGitHub}/>
                             </>

@@ -1,10 +1,9 @@
 Fancybox.bind('[data-fancybox="video-gallery"]', {
 	Carousel: {
-		transition: "slide",   
+		transition: "slide",
 	},
-	
-});
 
+});
 
 const arrowUpBtn = document.querySelector('.block__arrow__up')
 
@@ -19,10 +18,10 @@ window.addEventListener('scroll', ()=>{
 
 arrowUpBtn.addEventListener('click', ()=>{
 	window.scrollTo({
-		top: 0
+		top: 0,
+		behavior: 'smooth'
 	})
 })
-
 
 
 const body = document.querySelector('body')
@@ -33,22 +32,33 @@ const myModalprice = document.querySelector('.modalOrder__price')
 
 const myModalSuccess = new bootstrap.Modal('#modalSuccess')
 
-
 /* Показывает название, фото и цену товара на тот который кликнул */
 body.addEventListener('click', (e)=>{
-	
 
-	if (e.target.classList.contains('categories__btn') || e.target.classList.contains('hot__prices__btn')) {
-		const itemProductHeader = e.target.parentElement.previousElementSibling.firstElementChild.innerHTML
-		const itemProductImg = e.target.parentElement.parentElement.firstElementChild.firstElementChild.getAttribute('src')
-		const itemProductAlt= e.target.parentElement.parentElement.firstElementChild.firstElementChild.getAttribute('alt')
-		const itemProductPrice = e.target.previousElementSibling.textContent
-
+	const showModalOrder = (header, img, price) => {
 		myModalOrder.show()
-		myModalHeader.innerHTML = itemProductHeader
-		myModalImg.setAttribute('src', itemProductImg)
-		myModalImg.setAttribute('alt', itemProductAlt)
-		myModalprice.textContent = `Цена: ${itemProductPrice}`
+		myModalHeader.textContent = header.textContent
+		myModalImg.setAttribute('src', img.src)
+		myModalImg.setAttribute('alt', img.alt)
+		myModalprice.textContent = `Цена: ${price.textContent}`
 	}
-	
+
+	if  (e.target.classList.contains('hot__prices__btn')) {
+		const cardItem = e.target.closest('.hot__prices__item')
+		const cardImg = cardItem.querySelector('.hot__prices__photo')
+		const cardHeader = cardItem.querySelector('.card-title')
+		const cardPrice = cardItem.querySelector('.hot__prices__price')
+
+		showModalOrder(cardHeader, cardImg, cardPrice)
+	}
+
+	else if (e.target.classList.contains('categories__btn')) {
+		const cardItem = e.target.closest('.card')
+		const cardImg = cardItem.querySelector('.categories__photo')
+		const cardHeader = cardItem.querySelector('.card-title')
+		const cardPrice = cardItem.querySelector('.categories__price')
+
+		showModalOrder(cardHeader, cardImg, cardPrice)
+	}
+
 })

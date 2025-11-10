@@ -1,19 +1,21 @@
 .bg-warning
 	background: $mainBg !important
-	
-	
+
+
 .text-warning
 	color: $mainColor !important
 .text-danger
-	color: $secondColor !important	
+	color: $secondColor !important
 
 
 
 .nav-item
-	filter: drop-shadow(0 3px 3px $defaultShadow) 
+	filter: drop-shadow(0 3px 3px $defaultShadow)
 .nav-link
 	text-shadow: 0 3px 3px $defaultShadow
 	filter: drop-shadow(0 3px 3px $defaultShadow)
+	&:hover
+		background: $mainBg
 	&.active
 		background: $secondBg !important
 
@@ -25,7 +27,7 @@
 	&-danger
 		background: $secondBg !important
 		&:active, &:focus
-			border: 5px solid $btnDangerBorder !important	
+			border: 5px solid $btnDangerBorder !important
 	&-success
 		&:active, &:focus
 			border: 5px solid $btnSuccessBorder !important
@@ -34,9 +36,9 @@
 			border: 5px solid $btnInfoBorder !important
 
 
-	
+
 .card, .card-body, .card__footer
-	filter: drop-shadow(0 3px 3px $defaultShadow)      
+	filter: drop-shadow(0 3px 3px $defaultShadow)
 
 .card-title, .card-text
 	text-shadow: 0 3px 3px $defaultShadow
@@ -65,32 +67,30 @@ input
 		@media ( max-width: 380px )
 			font-size: 1.5rem !important
 		@media ( max-width: 370px )
-			font-size: 1.4rem !important	
-	&-text	
+			font-size: 1.4rem !important
+	&-text
 		@media ( max-width: 380px )
 			font-size: 1.2rem !important
 		@media ( max-width: 370px )
-			font-size: 1.1rem !important			
+			font-size: 1.1rem !important
 	&-content
 		background: $mainBg !important
-	&-header, &-body, &-footer	
+	&-header, &-body, &-footer
 		filter: drop-shadow(0 3px 3px $defaultShadow)
 
 .btn-close
-	padding: 5px !important	
+	padding: 5px !important
 	background: url('icons/close.svg'), no-repeat center / cover
 	opacity: 1
 	filter: drop-shadow(0 3px 3px $defaultShadow)
 	@media ( max-width: 380px )
 		padding: 3px !important
-	&:focus 
+	&:focus
 		box-shadow: none
-	&:hover	
-		opacity: 0.8 !important	
-    
-	
+	&:hover
+		opacity: 0.8 !important
 
-		
+
 
 
 /* Фансибокс кнопка закрыть */

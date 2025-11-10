@@ -1,0 +1,365 @@
+.promo
+	padding: 15px 0 64px
+	min-height: 940px
+	background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/main-bg.jpg') no-repeat center/cover
+	position: relative
+	&-campsites
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/campsites/promo-campsites-bg.jpg') no-repeat center/cover
+	&-campsites-list
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/campsites/promo-campsites-list-bg.jpg') no-repeat center/cover
+	&-campsites-list-details
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/campsites/promo-campsites-list-details-bg.jpg') no-repeat center/cover
+	&-excursions
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/excursions/promo-excursions-bg.jpg') no-repeat center/cover
+	&-excursions-details
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/excursions/promo-excursions-details-bg.jpg') no-repeat center/cover
+	&-hunting
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/hunting/promo-hunting-bg.jpg') no-repeat center/cover
+		background-position-x: 25%
+	&-hunting-details
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/hunting/promo-hunting-details-bg.jpg') no-repeat center/cover
+	&-extreme-tours
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/extreme-tours/promo-extreme-tours-bg.jpg') no-repeat center/cover
+	&-extreme-tours-details
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/extreme-tours/promo-extreme-tours-details-bg.jpg') no-repeat center/cover
+	&-motor-ships
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/motor-ships/promo-motor-ships-bg.jpg') no-repeat center/cover
+	&-motor-ships-details
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/motor-ships/promo-motor-ships-details-bg.jpg') no-repeat center/cover
+	&-attractions
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/attractions/promo-attractions-bg.jpg') no-repeat center/cover
+		background-position-x: 25%
+	&-attractions-details
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/attractions/promo-attractions-details-bg.jpg') no-repeat center/cover
+	&-hotels
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/hotels/promo-hotels-bg.jpg') no-repeat center/cover
+	&-hotels-details
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/hotels/promo-hotels-details-bg.jpg') no-repeat center/cover
+	&-transport
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/transport/promo-transport-bg.jpg') no-repeat center/cover
+		background-position-x: 100%
+	&-transport-details
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/transport/promo-transport-details-bg.jpg') no-repeat center/cover
+		background-position-x: 30%
+		@media (max-width: 991px)
+			background-position-x: 60%
+		@media (max-width: 576px)
+			background-position-x: 70%
+	&-business-tourism
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/business-tourism/promo-business-tourism-bg.jpg') no-repeat center/cover
+	&-cruises
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/cruises/promo-cruises-bg.jpg') no-repeat center/cover
+	&-cruises-details
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/cruises/promo-cruises-details-bg.jpg') no-repeat center/cover
+	&-winter-tours
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/winter-tours/promo-winter-tours-bg.jpg') no-repeat center/cover
+	&-baikal-map
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/baikal-map/promo-baikal-map-bg.jpg') no-repeat center/cover
+	&-photo-gallery-page
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/photo-gallery-page/promo-gallery-page-bg.jpg') no-repeat center/cover
+		background-position-x: 25%
+	&-video-gallery-page
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/video-gallery-page/promo-gallery-page-bg.jpg') no-repeat center/cover
+	&-useful-information
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/useful-information/promo-useful-information-bg.jpg') no-repeat center/cover
+	&-contacts
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/contacts/promo-contacts-bg.jpg') no-repeat center/cover
+	&-partners
+		background: linear-gradient($promoDarkBg, $promoDarkBg), url('img/partners/promo-partners-bg.jpg') no-repeat center/cover
+	@media (max-width: 991px)
+		min-height: 991px
+	@media (max-width: 768px)
+		min-height: 768px
+	@media (max-width: 576px)
+		min-height: 676px
+	@media (max-width: 480px)
+		min-height: 600px
+		padding-bottom: 32px
+	&__header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		min-height: 80px
+	&__logo
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&-link
+			width: 54px
+			height: 54px
+			@media (max-width: 425px)
+				width: 45px
+				height: 45px
+		&-text
+			margin-left: 20px
+			@media (max-width: 425px)
+				margin-left: 10px
+	&__text
+		font-weight: bold
+		font-size: 20px
+		line-height: 26px
+		color: $mainColor
+		@media (max-width: 425px)
+			font-size: 18px
+	&__sub__text
+		font-family: $secondFont
+		font-size: 18px
+		line-height: 21px
+		color: $mainColor
+		@media (max-width: 425px)
+			font-size: 16px
+	&__hr
+		margin: 20px 0
+		background: $hrBg
+		height: 1px
+		opacity: 0.3
+		@media (max-width: 768px)
+			margin: 10px 0
+	&__info
+		display: flex
+		justify-content: space-between
+		align-items: center
+		@media (max-width: 991px)
+			display: none
+	&__link
+		font-family: $secondFont
+		font-weight: bold
+		font-size: 18px
+		line-height: 130%
+		color: $mainColor
+		@media (max-width: 425px)
+			font-size: 16px
+		&:not(:first-child)
+			margin-left: 33px
+		&-contacts
+			display: inline-flex
+			text-decoration: underline
+			text-decoration-thickness: 2px
+	&__svg
+		margin-right: 12px
+		align-items: center
+		height: 24px
+		fill: $mainColor
+	&__link:hover  &__svg
+		fill: $linkHoverColor
+	&__btn
+		width: 186px
+		padding: 12px 6px
+		margin-left: 45px
+		border: 1px solid $mainBorder
+		border-radius: 22px
+		font-family: $secondFont
+		font-size: 16px
+		line-height: 19px
+		background: transparent
+		text-align: center
+		color: $mainColor
+		&_mobile
+			margin-left: 0
+	&__nav
+		padding: 0px 10px
+		max-width: 750px
+		@media (max-width: 991px)
+			margin: 0 auto
+		@media (max-width: 768px)
+			max-width: 100%
+		@media (max-width: 425px)
+			padding: 0px 6px
+		&_mobile
+			padding: 20px
+			position: absolute
+			top: -9999px
+			left: 50%
+			transform: translateX(-50%)
+			background: $burgerMenuBg
+			z-index: 30
+			width: 100%
+			border-radius: 0
+			max-width: 100%
+			backdrop-filter: none
+			transition: 1.5s all
+	.active__mobile
+		top: 100px
+		transition: 1.5s all
+	&__nav-menu
+		display: flex
+		align-items: center
+		@media (max-width: 991px)
+			justify-content: center
+			gap: 32px
+		@media (max-width: 768px)
+			gap: 20px
+		@media (max-width: 676px)
+			display: grid
+			grid-template: repeat(2, 1fr) / repeat(3, 1fr)
+			justify-items: center
+		@media (max-width: 425px)
+			gap: 16px
+		&_mobile
+			width: 100%
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			height: 80dvh
+	&__burger__menu
+		position: relative
+		display: none
+		width: 50px
+		height: 50px
+		@media (max-width: 991px)
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+			@media (max-width: 425px)
+				width: 40px
+				height: 40px
+			@media (max-width: 375px)
+				width: 35px
+				height: 35px
+		&__line
+			width: 95%
+			height: 2px
+			background: $mainBg
+		.active__burger__line
+			position: absolute
+			transition: .5s all
+			&:first-child
+				transform: rotate(45deg)
+			&:nth-child(2)
+				display: none
+			&:last-child
+				transform: rotate(-45deg)
+	&__nav-list
+		&:not(:last-child)
+			margin-right: 32px
+			@media (max-width: 991px)
+				margin-right: 0
+	&__nav-link
+		font-family: $secondFont
+		font-size: 16px
+		line-height: 19px
+		color: $mainColor
+		@media (max-width: 480px)
+			font-size: 15px
+		@media (max-width: 425px)
+			font-size: 13.5px
+		@media (max-width: 375px)
+			font-size: 12.5px
+		&_mobile
+			font-size: 16px
+	&__main__info
+		max-width: 750px
+		margin-top: 106px
+		@media (max-width: 991px)
+			margin: 80px auto 0
+			display: grid
+			place-items: center
+		@media (max-width: 768px)
+			max-width: 100%
+		@media (max-width: 576px)
+			margin: 64px auto 0
+		@media (max-width: 480px)
+			margin: 32px auto 0
+	&__main__header
+		font-weight: bold
+		font-size: 90px
+		line-height: 100%
+		color: $mainColor
+		@media (max-width: 991px)
+			text-align: center
+		@media (max-width: 768px)
+			font-size: 78px
+		@media (max-width: 676px)
+			font-size: 64px
+		@media (max-width: 576px)
+			font-size: 52px
+		@media (max-width: 480px)
+			font-size: 46px
+		@media (max-width: 425px)
+			font-size: 40px
+	&__main__text
+		max-width: 562px
+		margin-top: 16px
+		font-family: $secondFont
+		font-size: 20px
+		line-height: 140%
+		color: $mainColor
+		@media (max-width: 991px)
+			max-width: 90%
+			text-align: center
+		@media (max-width: 480px)
+			font-size: 18px
+		@media (max-width: 425px)
+			font-size: 16px
+	&__block__btns
+		display: flex
+		gap: 32px
+		@media (max-width: 768px)
+			flex-direction: column
+			gap: 20px
+	&__main__btn
+		margin-top: 94px
+		padding: 19px 53px
+		font-family: $secondFont
+		font-weight: 500
+		font-size: 18px
+		line-height: 21px
+		text-align: center
+		text-transform: uppercase
+		color: $mainColor
+		background: transparent
+		border: 1px solid $mainBorder
+		border-radius: 30px
+		@media (max-width: 991px)
+			width: 300px
+			margin: 94px auto 0
+		@media (max-width: 768px)
+			margin: 64px auto 0
+			padding: 16px 24px
+		@media (max-width: 576px)
+			margin: 56px auto 0
+		@media (max-width: 480px)
+			margin: 32px auto 0
+			font-size: 16px
+			padding: 12px 24px
+			width: 250px
+		&__disabled
+			display: none
+		&_download
+			padding-left: 65px
+			position: relative
+			@media (max-width: 991px)
+				padding-left: 75px
+			@media (max-width: 768px)
+				margin-top: 0
+			@media (max-width: 480px)
+				padding-left: 60px
+			&::before
+				position: absolute
+				content: ""
+				width: 16px
+				height: 20px
+				top: 16px
+				left: 35px
+				background: url('icons/download.svg') no-repeat
+				@media (max-width: 480px)
+					top: 10px
+					left: 25px
+			&:hover
+				background: $btnDownload
+				border: 1px solid $btnBorderDownload
+				color: $mainColor !important
+	&__arrow
+		width: 40px
+		height: 40px
+		position: absolute
+		bottom: 33px
+		left: 50%
+		transform: translateX(-50%)
+		border: 1px solid $mainBorder
+		border-radius: 50%
+		&:hover
+			border: 1px solid $btnBorder
+			background: $btnBgHover
+		&-photo
+			padding: 11px 14px

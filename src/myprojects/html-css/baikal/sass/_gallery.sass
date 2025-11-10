@@ -1,0 +1,96 @@
+.gallery
+	min-height: 766px
+	padding: 44px 0 80px 0
+	background: $galleryBg
+	@media (max-width: 991px)
+		min-height: 0
+		padding: 48px 0
+	@media (max-width: 480px)
+		padding: 32px 0
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		@media (max-width: 425px)
+			gap: 10px
+		&__left
+			display: flex
+			gap: 16px
+			@media (max-width: 676px)
+				flex-direction: column
+	&__slider
+		display: flex
+		align-items: center
+		@media (max-width: 800px)
+			flex-direction: column
+			gap: 10px
+		@media (max-width: 676px)
+			gap: 16px
+	&__arrows
+		display: flex
+		gap: 16px
+		margin-left: 55px
+		@media (max-width: 850px)
+			gap: 10px
+			margin-left: 32px
+		@media (max-width: 800px)
+			margin-left: 0
+		&__photo, &__video
+			width: 44px
+			height: 44px
+			border: 1px solid $sliderBtnBorder
+			border-radius: 100%
+			padding: 14px 17px
+			cursor: pointer
+			fill: none
+			stroke: $sliderBg
+			&:hover
+				background: $sliderBg
+				border: none
+				stroke: $mainBg
+			&-right
+				transform: rotate(-180deg)
+	&__box
+		margin-top: 52px
+	&__header
+		padding: 10px 15px
+		font-size: 30px
+		line-height: 130%
+		border: 1px solid $btnBorder
+		border-radius: 30px
+		text-align: center
+		cursor: pointer
+		@media (max-width: 850px)
+			padding: 6px 10px
+		@media (max-width: 425px)
+			font-size: 26px
+		&:hover, &_active
+			background: $btnBg
+			color: $mainColor
+			border: 1px solid transparent
+	&__link
+		font-family: $secondFont
+		font-size: 16px
+		line-height: 19px
+		text-decoration: underline
+		color: $linkColor
+		@media (max-width: 480px)
+			text-align: center
+	&__items
+		max-width: 352px
+		min-height: 528px
+		@media (max-width: 1200px)
+			max-width: 100%
+		@media (max-width: 676px)
+			min-height: 450px
+		@media (max-width: 576px)
+			min-height: 400px
+		@media (max-width: 480px)
+			min-height: 0
+	&__img
+		display: grid
+		gap: 16px
+		width: 352px
+		min-height: inherit
+		@media (max-width: 1200px)
+			width: 100%

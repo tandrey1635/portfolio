@@ -1,0 +1,91 @@
+.about
+    padding: 80px 0 85px 0
+    min-height: 1050px
+    @media (max-width: 480px)
+        padding: 32px 0
+    &__wrapper
+        margin-top: 45px
+        display: flex
+        justify-content: space-between
+        @media (max-width: 1200px)
+            flex-direction: column
+    &__left
+        position: relative
+        width: calc( 100% - 32px - 65.715% )
+        @media (max-width: 1200px)
+            width: 50%
+            margin: 0 auto
+    &__img
+        width: 256px
+        height: 256px
+        @media (max-width: 1200px)
+            width: 100%
+            height: auto
+        &-position
+            height: 320px
+            position: absolute
+            top: 100px
+            left: 96px
+            z-index: 10
+            @media (max-width: 1200px)
+                height: auto
+                top: 200px
+            @media (max-width: 676px)
+                top: 150px
+            @media (max-width: 576px)
+                top: 100px
+            @media (max-width: 480px)
+                left: 50px
+    &__right
+        width: 65.715%
+        @media (max-width: 1200px)
+            width: 100%
+            margin-top: 350px
+        @media (max-width: 991px)
+            margin-top: 320px
+        @media (max-width: 768px)
+            margin-top: 300px
+        @media (max-width: 676px)
+            margin-top: 250px
+        @media (max-width: 576px)
+            margin-top: 180px
+        @media (max-width: 480px)
+            margin-top: 160px
+    &__text
+        font-family: $secondFont
+        font-size: 18px
+        line-height: 140%
+        @media (max-width: 1200px)
+            text-align: center
+        @media (max-width: 425px)
+            font-size: 16px
+    &__hr
+        margin: 54px 0 41px 0
+        height: 1px
+        background: $hrBg
+        @media (max-width: 480px)
+            margin: 32px 0
+    &__bottom
+        display: grid
+        justify-content: space-between
+        grid-template-columns: repeat(3, 132px) 314px 198px
+        @media (max-width: 1200px)
+            grid-template-columns: repeat(auto-fill, 350px)
+            justify-items: center
+            justify-content: space-evenly
+            row-gap: 32px
+            text-align: center
+    &__title
+        font-weight: bold
+        font-size: 58px
+        line-height: 130%
+        color: $aboutInfoColor
+        @media (max-width: 480px)
+            font-size: 48px
+        @media (max-width: 375px)
+            font-size: 40px
+    &__info
+        font-family: $secondFont
+        font-weight: 500
+        font-size: 20px
+        line-height: 130%

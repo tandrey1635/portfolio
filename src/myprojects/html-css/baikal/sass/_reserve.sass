@@ -1,0 +1,115 @@
+.reserve
+    padding: 48px 0 76px 0
+    min-height: 552px
+    background: $reserveBg
+    @media (max-width: 480px)
+        padding: 32px 0
+    &__wrapper
+        margin: 50px auto 0
+        width: 832px
+        @media (max-width: 991px)
+            width: 90%
+    &__form
+        @media (max-width: 991px)
+            width: 60%
+            margin: 0 auto
+        @media (max-width: 768px)
+            width: 65%
+        @media (max-width: 676px)
+            width: 80%
+        @media (max-width: 576px)
+            width: 95%
+    &__form__top
+        justify-content: space-between
+        display: flex
+        flex-wrap: wrap
+        gap: 24px 32px
+        @media (max-width: 991px)
+            flex-direction: column
+    &__form__bottom
+        margin-top: 24px
+        display: flex
+        justify-content: space-between
+        @media (max-width: 991px)
+            flex-direction: column
+    &__form-left
+        width: 153px
+        @media (max-width: 991px)
+            width: 100%
+    &__form-right
+        width: 649px
+        @media (max-width: 991px)
+            width: 100%
+            margin-top: 24px
+    &__input, &__textarea
+        padding: 11px 14px 12px 14px
+        width: 256px
+        height: 44px
+        font-family: $secondFont
+        font-size: 16px
+        line-height: 130%
+        color: $inputsColor
+        background: $mainBg
+        border: 1px solid $secondBorder
+        @media (max-width: 991px)
+            width: 100%
+        &-min
+            width: 100%
+            &:not(:first-child)
+                margin-top: 24px
+    &__textarea
+        display: flex
+        resize: none
+        width: 100%
+        height: 112px
+    &__form__block-btn
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+        @media (max-width: 991px)
+            flex-direction: column
+    &__form__btn
+        padding: 19px 65px 20px 64px
+        width: 297px
+        background: $btnBg
+        border-radius: 30px
+        font-family: $secondFont
+        font-size: 18px
+        line-height: 21px
+        text-align: center
+        color: $mainColor
+        @media (max-width: 480px)
+            padding: 14px 32px
+            width: 250px
+        &:hover
+            border: none
+            background: $btnBgHover
+    &__form__right
+        display: flex
+        align-items: center
+        @media (max-width: 991px)
+            margin-top: 30px
+    &__checkbox
+        width: 26px
+        height: 26px
+        margin-right: 16px
+        border-radius: 2px
+        @media (max-width: 676px)
+            width: 20px
+            height: 20px
+        @media (max-width: 480px)
+            width: 16px
+            height: 16px
+    &__link
+        font-family: $secondFont
+        font-size: 16px
+        line-height: 130%
+        text-decoration: underline
+        color: $inputsColor
+        @media (max-width: 768px)
+            letter-spacing: -.5px
+        @media (max-width: 480px)
+            font-size: 15px
+        @media (max-width: 425px)
+            font-size: 13px

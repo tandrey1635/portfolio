@@ -1,0 +1,41 @@
+.pagination
+	width: 400px
+	margin-top: 64px
+	@media (max-width: 991px)
+		width: 80%
+		margin: 64px auto 0
+	@media (max-width: 768px)	
+		width: 95%
+	@media (max-width: 480px)	
+		margin: 32px auto 0
+	&__menu
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+	&__link
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 12px
+		width: 45px
+		height: 45px
+		font-family: $secondFont
+		font-size: 16px
+		line-height: 130%
+		background: $paginationBg
+		@media (max-width: 480px)
+			width: 40px
+			height: 40px
+		@media (max-width: 425px)	
+			width: 35px
+			height: 35px
+		@media (max-width: 375px)
+			font-size: 14px
+		&_prev, &_next
+			background: transparent
+		&:hover
+			color: $mainColor
+	.active-page
+		background: $defaultBg
+		color: $mainColor

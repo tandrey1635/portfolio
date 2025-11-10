@@ -451,6 +451,9 @@ img {
   color: #54636e;
   text-transform: uppercase;
 }
+.breadcrumbs__link:hover {
+  color: #e6007e;
+}
 
 .header {
   padding: 24px 0;

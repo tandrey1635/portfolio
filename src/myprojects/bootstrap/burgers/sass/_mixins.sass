@@ -9,11 +9,11 @@
 
 @mixin flexVerticalCenter($alignItems: center)
     display: flex
-    align-items: $alignItems    
+    align-items: $alignItems
 
 @mixin flexReverseAxios($flexDirection: column)
     display: flex
-    flex-direction: $flexDirection 
+    flex-direction: $flexDirection
 
 /* Прижать подвал Грид */
 @mixin gridFooter
@@ -23,15 +23,15 @@
 
 
 @mixin background($background, $size: cover)
-    background: url($background) no-repeat center / $size  
+    background: url($background) no-repeat center / $size
 
 
- 
+
 @mixin before($top: 0, $left: 0)
     display: flex
     position: absolute
     content: ''
-    top: $top 
+    top: $top
     left: $left
 
 @mixin after($top: 0, $right: 0)
@@ -41,7 +41,7 @@
     top: $top
     right: $right
 
-   
+
 
 @mixin absolute($top: 0, $left: 0)
     position: absolute
@@ -58,11 +58,11 @@
 @mixin absoluteBottomRight($bottom: 0, $right: 0)
     position: absolute
     bottom: $bottom
-    right: $right    
-        
-      
+    right: $right
 
-/* Выяснить где нужен rotate */    
+
+
+/* Выяснить где нужен rotate */
 @mixin absoluteCenter($top: 0, $left: 50%, $transformX: -50%, $rotate: 0)
     position: absolute
     top: $top

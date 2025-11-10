@@ -2,9 +2,9 @@
 /* Шрифт */
 /* Фон */
 /* Цвет */
-/* Бордер */  
+/* Бордер */
 /* Бордер кнопок */
-/* Тень */     
+/* Тень */
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -39,14 +39,8 @@ textarea {
   resize: vertical;
 }
 
-/* Проверить а надо ли? */
-*::focus {
-  outline: none;
-}
-
 button {
   border: none;
-  /* outline: none   */
   cursor: pointer;
 }
 
@@ -58,7 +52,7 @@ img {
 }
 
 /* Прижать подвал Грид */
-/* Выяснить где нужен rotate */    
+/* Выяснить где нужен rotate */
 /* Прижать подвал Флекс */
 .wrapper {
   display: flex;
@@ -93,15 +87,14 @@ footer {
   margin: 0 auto;
 }
 
-/* Обертка чтобы работала тень + clip-path */	
+/* Обертка чтобы работала тень + clip-path */
 .main__header {
   filter: drop-shadow(0 3px 3px #000);
 }
 
 .header {
   min-height: 200px;
-  -webkit-clip-path: ellipse(60% 80% at 50% 20%);
-          clip-path: ellipse(60% 80% at 50% 20%);
+  clip-path: ellipse(60% 80% at 50% 20%);
 }
 @media (max-width: 1199.98px) {
   .header {
@@ -930,6 +923,9 @@ body::-webkit-scrollbar-thumb {
 .nav-link {
   text-shadow: 0 3px 3px #000;
   filter: drop-shadow(0 3px 3px #000);
+}
+.nav-link:hover {
+  background: #ffab08;
 }
 .nav-link.active {
   background: #ed143d !important;

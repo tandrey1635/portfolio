@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Базы отдыха на Байкале</title>
+	<link rel="shortcut icon" href="../icons/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrapper">
+	<section class="promo promo-campsites">
+		<div class="container">
+			<header class="promo__header">
+				<div class="promo__logo">
+					<a class="promo__logo-link" href="../index.html">
+						<img class="promo__photo" src="../icons/promo-logo.svg" alt="logo">
+					</a>
+
+					<div class="promo__logo-text">
+						<p class="promo__text">Байкальский отдых</p>
+						<p class="promo__sub__text">Турагентство</p>
+					</div>
+				</div>
+
+				<div class="promo__info">
+					<a class="promo__link promo__link-tel" href="tel:89243541540">
+						<svg class="promo__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path opacity="0.8" d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM15.227 18.184C13.637 18.086 10.51 16.26 9.05301 14.62C7.60001 12.979 6.15701 9.657 6.25201 8.064C6.25201 8.064 7.98399 5.773 8.77899 5.819C9.57999 5.867 11.822 8.395 10.974 9.147C10.134 9.894 9.33701 9.848 9.29001 10.641C9.24501 11.436 9.99098 12.282 10.735 13.124C11.487 13.97 12.233 14.809 13.03 14.854C13.825 14.904 13.874 14.111 14.714 13.359C15.558 12.611 17.804 15.143 17.755 15.938C17.711 16.73 15.227 18.184 15.227 18.184Z"/>
+							</svg>
+						8-924-3-541-540
+					</a>
+
+					<a class="promo__link promo__link-email" href="mailto:baikalholiday@mail.ru">
+						<svg class="promo__svg" width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.8">
+							<path d="M12 0C5.371 0 0 5.373 0 12C0 18.629 5.371 24 12 24C18.626 24 24 18.629 24 12C24 5.373 18.626 0 12 0ZM19.177 7.028L19.194 7.031L12.497 13.729C12.273 13.952 11.88 13.952 11.656 13.727L4.95599 7.028H19.177ZM4.48901 7.477C4.48901 7.472 4.492 7.469 4.492 7.469L9.04303 12.018L4.48901 16.572V7.477ZM4.93701 17.098C4.91701 17.098 4.89799 17.088 4.87799 17.085L9.49402 12.47L11.203 14.179C11.434 14.412 11.746 14.539 12.077 14.539C12.405 14.539 12.717 14.412 12.948 14.179L14.601 12.525L19.173 17.098H4.93701ZM19.626 16.646L15.054 12.074L19.626 7.502V16.646Z"/>
+							</g>
+						</svg>
+						baikalholiday@mail.ru
+					</a>
+
+					<button class="promo__btn">Оставить заявку</button>
+				</div>
+
+				<nav class="promo__nav promo__nav_mobile">
+                    <ul class="promo__nav-menu promo__nav-menu_mobile">
+                        <li class="promo__nav-list">
+                            <a class="promo__nav-link promo__nav-link_mobile" href="#reserve">Бронирование</a>
+                        </li>
+
+                        <li class="promo__nav-list">
+                            <a class="promo__nav-link promo__nav-link_mobile" href="../index.html#excursions">Экскурсии</a>
+                        </li>
+
+                        <li class="promo__nav-list">
+                            <a class="promo__nav-link promo__nav-link_mobile" href="../index.html#tours">Туры на Байкал</a>
+                        </li>
+
+                        <li class="promo__nav-list">
+                            <a class="promo__nav-link promo__nav-link_mobile" href="../index.html#baikal">О Байкале</a>
+                        </li>
+
+                        <li class="promo__nav-list">
+                            <a class="promo__nav-link promo__nav-link_mobile" href="../index.html#about">О нас</a>
+                        </li>
+
+                        <li class="promo__nav-list">
+                            <a class="promo__nav-link promo__nav-link_mobile" href="contacts.html">Контакты</a>
+                        </li>
+
+                        <li class="promo__nav-list">
+                            <a class="promo__link promo__link-tel" href="tel:89243541540">
+                                <svg class="promo__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path opacity="0.8" d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM15.227 18.184C13.637 18.086 10.51 16.26 9.05301 14.62C7.60001 12.979 6.15701 9.657 6.25201 8.064C6.25201 8.064 7.98399 5.773 8.77899 5.819C9.57999 5.867 11.822 8.395 10.974 9.147C10.134 9.894 9.33701 9.848 9.29001 10.641C9.24501 11.436 9.99098 12.282 10.735 13.124C11.487 13.97 12.233 14.809 13.03 14.854C13.825 14.904 13.874 14.111 14.714 13.359C15.558 12.611 17.804 15.143 17.755 15.938C17.711 16.73 15.227 18.184 15.227 18.184Z"/>
+                                    </svg>
+                                8-924-3-541-540
+                            </a>
+                        </li>
+
+                        <li class="promo__nav-list">
+                            <a class="promo__link promo__link-email" href="mailto:baikalholiday@mail.ru">
+                                <svg class="promo__svg" width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                    <path d="M12 0C5.371 0 0 5.373 0 12C0 18.629 5.371 24 12 24C18.626 24 24 18.629 24 12C24 5.373 18.626 0 12 0ZM19.177 7.028L19.194 7.031L12.497 13.729C12.273 13.952 11.88 13.952 11.656 13.727L4.95599 7.028H19.177ZM4.48901 7.477C4.48901 7.472 4.492 7.469 4.492 7.469L9.04303 12.018L4.48901 16.572V7.477ZM4.93701 17.098C4.91701 17.098 4.89799 17.088 4.87799 17.085L9.49402 12.47L11.203 14.179C11.434 14.412 11.746 14.539 12.077 14.539C12.405 14.539 12.717 14.412 12.948 14.179L14.601 12.525L19.173 17.098H4.93701ZM19.626 16.646L15.054 12.074L19.626 7.502V16.646Z"/>
+                                    </g>
+                                </svg>
+                                baikalholiday@mail.ru
+                            </a>
+                        </li>
+
+                        <li class="promo__nav-list">
+                            <button class="promo__btn promo__btn_mobile">Оставить заявку</button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="promo__burger__menu">
+                    <span class="promo__burger__menu__line"></span>
+                    <span class="promo__burger__menu__line"></span>
+                    <span class="promo__burger__menu__line"></span>
+                </div>
+			</header>
+		</div>
+
+		<div class="promo__hr"></div>
+
+		<div class="container">
+			<nav class="promo__nav">
+				<ul class="promo__nav-menu">
+					<li class="promo__nav-list">
+						<a class="promo__nav-link" href="#reserve">Бронирование</a>
+					</li>
+
+					<li class="promo__nav-list">
+						<a class="promo__nav-link" href="../index.html#excursions">Экскурсии</a>
+					</li>
+
+					<li class="promo__nav-list">
+						<a class="promo__nav-link" href="../index.html#tours">Туры на Байкал</a>
+					</li>
+
+					<li class="promo__nav-list">
+						<a class="promo__nav-link" href="../index.html#baikal">О Байкале</a>
+					</li>
+
+					<li class="promo__nav-list">
+						<a class="promo__nav-link" href="../index.html#about">О нас</a>
+					</li>
+
+					<li class="promo__nav-list">
+						<a class="promo__nav-link" href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="promo__main__info">
+				<h1 class="promo__main__header">Базы отдыха на Байкале</h1>
+				<p class="promo__main__text">Озеро Байкал, расположенное в Сибири, является одним из самых популярных мест для отдыха в России. Здесь можно найти множество баз отдыха, которые предлагают различные условия проживания и развлечения.</p>
+				<p class="promo__main__text">Каждая база отдыха на Байкале предлагает свои уникальные условия и возможности для отдыха, поэтому выбор зависит от ваших предпочтений и целей поездки.</p>
+				<div class="promo__block__btns">
+					<button class="promo__main__btn" data-modal="modal">подобрать тур</button>
+					<a href="#" class="promo__main__btn promo__main__btn_download" download="">Скачать прайс</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<main class="main">
+		<section class="inner__page">
+			<div class="container">
+				<h2 class="inner__page__header">Базы отдыха на озере Байкале</h2>
+				<p class="inner__page__text">Расположение местностей по побережью озера, можете посмотреть на <a class="inner__page__link inner__page__link_mt" href="baikal-map.html">карте Байкала</a></p>
+				<div class="big__card__wrapper">
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="Байкальский прибой">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">Байкальский прибой</h3>
+								</a>
+								<p class="big__card__text">Байкальский прибой – популярная зона отдыха на восточном берегу Байкала, в 130 км от города Улан-Удэ, столицы Бурятии. Находится на побережье залива Посольский сор.</p>
+								<p class="big__card__text">Две песчаные косы отделяют залив от Байкала, залив мелководный и хорошо прогревается.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">База отдыха &laquo;Байкал&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">База отдыха &laquo;Энергия&raquo;</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="с. Посольское">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">с. Посольское</h3>
+								</a>
+								<p class="big__card__text">Природная уникальность села в том, что оно расположено у основания северной косы Посольского сора, отделяющей залив от Байкала. Протяженность этой песчаной косы - более 7 км. Ширина косы – 10–15 метров. Расстояние от города Улан-Удэ – 163 км.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;София&raquo;</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="Горячинск">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">Горячинск</h3>
+								</a>
+								<p class="big__card__text">Старинный поселок рыбаков &laquo;Горячинск&raquo; находится на восточном побережье озера, расположен около 190 км от города Улан-Удэ. Поселок назван в честь целебных горячих источников.</p>
+								<p class="big__card__text">Воды источников благоприятно действуют на организм человека и полезны для лечения.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Горячий ключ&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Туристический комплекс &laquo;Авангард&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Отель &laquo;Белая карета&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Элитный гостевой дом &laquo;Harmony&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Горхон&raquo; Горячинск</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Подворье&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Усадьба &laquo;Добрыня&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Дворик&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Колибри&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Ромашка&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Семейный&raquo; Горячинск</a>
+									</li>
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Три медведя&raquo; Горячинск</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Уютный дворик&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Медвежонок&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Гермес&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостинница &laquo;Байкал&raquo; в Горячинске</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостинница &laquo;Драган&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Ясная поляна&raquo;</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="Сухая">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">Сухая</h3>
+								</a>
+								<p class="big__card__text">Природная уникальность села в том, что оно расположено у основания северной косы Посольского сора, отделяющей залив от Байкала. Протяженность этой песчаной косы - более 7 км. Ширина косы – 10–15 метров. Расстояние от города Улан-Удэ – 163 км.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Тэнгэри&raquo; (Поднебесье)</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Аметист&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Парк-отель &laquo;Звездный&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;12 Месяцев&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Созвездие&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Villa&raquo;</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="Турка">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">Турка</h3>
+								</a>
+								<p class="big__card__text">Поселок Турка находится на восточном берегу озера Байкал в 169 км от города Улан-Удэ, в устье одноименной реки. Вокруг поселка богатые охотничьи угодья, а земля и мягкий климат позволяют выращивать без утепления малину и клубнику. Около села обширные плантации клюквы, черники, брусники, грибов.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостиница &laquo;Байкальская гавань&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Каникулы в Простоквашино&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Зурбаган&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Домики в Турке &laquo;Подворье&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостиничный комплекс &laquo;Мэбис Байкал&raquo;</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="Култушная">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">Култушная</h3>
+								</a>
+								<p class="big__card__text">Местность Култушная известная своими песчаными пляжами и теплой водой, зона отдыха и туризма на побережье Посольского сора. На Култушной работает более двадцати баз отдыха, открытый рынок и магазины. Для отдыхающих есть почти все, что необходимо – от уличных кафе до проката лодок и катамаранов.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Отель &laquo;Култушная&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Коттеджи&nbsp;<span class="campsites__span">ВСЖД</span>&nbsp;на Култушной</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">База отдыха &laquo;Байкал&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">База отдыха &laquo;Турист&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом на Култушной</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">База отдыха &laquo;5-е Авеню&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Иркутская база отдыха на Култушной</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="Усть-Баргузин">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">Усть-Баргузин</h3>
+								</a>
+								<p class="big__card__text">Усть-Баргузин — посёлок городского типа. Расположен в устье реки Баргузин в 50 километрах к юго-западу от районного центра – поселка Баргузин и в 270 км от города Улан-Удэ. На берегу реки находится пристань, где в теплое время года через реку Баргузин ходит паромная переправа.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Причал&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;<span class="campsites__span">Synbad</span>&raquo; (Синдбад)</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Новая Волна&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Отель &laquo;Баргуджин Токум&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гусихинские термальные источники</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="Лемасово">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">Лемасово</h3>
+								</a>
+								<p class="big__card__text">Местность Лемасово – одна из четырех основных зон на юго-восточном побережье озера Байкал. Находится на заливе Черкалов Сор, рядом с селом Посольское. Черкалов сор – мелководный залив не больше одного метра глубины, с песчаным побережьем, поросший кустарником и березой.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">База отдыха &laquo;Дали-Байкалтур&raquo;</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="Чивыркуйский залив">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">Чивыркуйский залив</h3>
+								</a>
+								<p class="big__card__text">Один из самых живописных заливов озера Байкал, Чивыркуйский залив относится к территории Забайкальского национального парка. Это самый теплый залив озера Байкал. Берег залива изрезан многочисленными живописными бухтами, покрытыми тайгой. Чивыркуй славится отличной рыбалкой.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостиница на воде &laquo;Экотур&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Юрты в Чивыркуйском заливе</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Катунь&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом в Катуне&laquo;Чивыркуй&raquo;</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="п. Листвянка">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">п. Листвянка</h3>
+								</a>
+								<p class="big__card__text">Листвянка – небольшой поселок городского типа на южном берегу Байкала в Иркутском районе Иркутской области, расположенный у самого истока Ангары, на расстоянии 66 км. от города Иркутск. Зажатий между берегом Байкала и отрогами Приморского хребта, лентой протянулась более чем на пять километров.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостиница &laquo;Анастасия&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостиница &laquo;Крестовая Падь&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Конференц-отель &laquo;Маяк&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">База отдыха &laquo;Деревенька&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостиница &laquo;Легенда Байкала&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостиница &laquo;Байкальские терема&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостиница &laquo;У Озера&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Байкал 1&raquo;</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="Гремячинск">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">Гремячинск</h3>
+								</a>
+								<p class="big__card__text">Гремячинск - это первое село на побережье Байкала по Баргузинскому тракту. Находится в устье реки Кика. Гремячинск развивается как один из центров туризма Прибайкалья.</p>
+								<p class="big__card__text">Здесь вас ждет песчаный берег Байкала и небольшой лесной массив.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">База отдыха &laquo;Адреналин&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;У Озера&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Парк-отель &laquo;Байкальская ривьера&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Турбаза &laquo;Гостиный Двор&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Апсара&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Алтан-Байкал&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Энергия&raquo; Гремячинск</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="Максимиха">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">Максимиха</h3>
+								</a>
+								<p class="big__card__text">Максимиха – поселок на побережье Баргузинского залива, самого большого залива на озере Байкал, находится в 237 км от города Улан-Удэ. Это побережье одно из красивейших мест озера Байкал ежегодно привлекает множество туристов.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Эко-отель &laquo;Байкальское Шале&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">База отдыха &laquo;Кумуткан&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">База отдыха &laquo;Байкал-Лидер&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Тамир&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Любимый&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Райский уголок&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Культурно-оздоровительный комплекс &laquo;Радуга&raquo;</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="big__card__item">
+						<div class="big__card__img">
+							<img class="big__card__photo" src="../img/campsites/campsites-photo.jpg" alt="Энхалук">
+						</div>
+
+						<div class="big__card__descriptions big__card__descriptions_campsites">
+							<div class="big__card__descriptions__left">
+								<a class="big__card__header__link" href="campsites-list.html">
+									<h3 class="big__card__header">Энхалук</h3>
+								</a>
+								<p class="big__card__text">Энхалук — это небольшой посёлок на восточном побережье озера Байкал. Это место известно своей живописной природой, уютной атмосферой и близостью к уникальным природным достопримечательностям.</p>
+								<div class="big__card__footer">
+									<a href="campsites-list.html" class="big__card__btn">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="big__card__descriptions__right">
+								<h3 class="big__card__header big__card__header_color">Турбазы</h3>
+								<ul class="big__card__menu">
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Байкальский дворик&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Байкальская солянка&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Байкальский рассвет&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;На Сиреневой&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостевой дом &laquo;Благодать&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостиничный комплекс &laquo;Королевская гавань&raquo;</a>
+									</li>
+
+									<li class="big__card__list">
+										<a class="big__card__link big__card__link_nodecoration" href="campsites-list.html">Гостиничный комплекс &laquo;Байкал Холидей&raquo;</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="reserve" class="reserve">
+			<div class="container">
+				<h2 class="reserve__title">Забронируйте отдых на Байкале</h2>
+				<div class="reserve__wrapper">
+					<form action="#" class="reserve__form">
+						<div class="reserve__form__top">
+							<input class="reserve__input" type="text" placeholder="Ваше имя" required>
+							<input class="reserve__input" type="tel" placeholder="Телефон" required>
+							<input class="reserve__input" type="email" placeholder="E-mail" required>
+							<input class="reserve__input" type="text" placeholder="Местность Байкала" required>
+							<input class="reserve__input" type="number" placeholder="Количество взрослых" required>
+							<input class="reserve__input" type="number" placeholder="Количество детей, их возраст" required>
+						</div>
+
+						<div class="reserve__form__bottom">
+							<div class="reserve__form-left">
+								<input class="reserve__input reserve__input-min" type="date" required>
+								<input class="reserve__input reserve__input-min" type="date" required>
+							</div>
+
+							<div class="reserve__form-right">
+								<textarea class="reserve__textarea" placeholder="Комментарий"></textarea>
+							</div>
+						</div>
+
+						<div class="reserve__form__block-btn">
+							<button type="submit" class="reserve__form__btn">Отправить заявку</button>
+							<div class="reserve__form__right">
+								<input class="reserve__checkbox" type="checkbox" required>
+								<a class="reserve__link" href="#">Согласие на обработку персональных данных</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__top">
+				<div class="footer__block__menu">
+					<h3 class="footer__header">Бронирование</h3>
+					<ul class="footer__menu">
+						<li class="footer__list">
+							<a href="#" class="footer__link">Отели и базы отдыха</a>
+						</li>
+
+						<li class="footer__list">
+							<a href="motor-ships.html" class="footer__link">Теплоходы и катера</a>
+						</li>
+
+						<li class="footer__list">
+							<a href="transport.html" class="footer__link">Транспортные услуги</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__block__menu">
+					<h3 class="footer__header">Экскурсии</h3>
+					<ul class="footer__menu">
+						<li class="footer__list">
+							<a href="excursions.html" class="footer__link">Экскурсии и туры</a>
+						</li>
+
+						<li class="footer__list">
+							<a href="extreme-tours.html" class="footer__link">Экстрим туры</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__block__menu">
+					<h3 class="footer__header">Туры на Байкал</h3>
+					<ul class="footer__menu">
+						<li class="footer__list">
+							<a href="winter-tours.html" class="footer__link">Туры Зима-Весна</a>
+						</li>
+
+						<li class="footer__list">
+							<a href="excursions.html" class="footer__link">Туры Лето-Осень</a>
+						</li>
+
+						<li class="footer__list">
+							<a href="hunting.html" class="footer__link">Туры охоты и рыбалки</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__block__menu">
+					<h3 class="footer__header">О Байкале</h3>
+					<ul class="footer__menu">
+						<li class="footer__list">
+							<a href="baikal-map.html" class="footer__link">Карта Байкала</a>
+						</li>
+
+						<li class="footer__list">
+							<a href="attractions.html" class="footer__link">Достопримечательности</a>
+						</li>
+
+						<li class="footer__list">
+							<a href="useful-information.html" class="footer__link">Полезная информация</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__block__menu">
+					<h3 class="footer__header">О нас</h3>
+					<ul class="footer__menu">
+						<li class="footer__list">
+							<a href="contacts.html" class="footer__link">Контакты</a>
+						</li>
+
+						<li class="footer__list">
+							<a href="partners.html" class="footer__link">Агентствам</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer__hr"></div>
+
+			<div class="footer__bottom">
+				<div class="footer__block__menu footer__block__menu-min">
+					<h3 class="footer__header footer__header-min">Турагентство &laquo;Байкальский отдых&raquo;</h3>
+					<p class="footer__copyright">&copy; 2021. Все права защищены</p>
+				</div>
+
+				<div class="footer__block__menu footer__block__menu-min">
+					<h3 class="footer__header footer__header-min">Заказ туров и бронирование:</h3>
+					<ul class="footer__menu footer__menu-min">
+						<li class="footer__list footer__list-min">
+							<a href="tel:89243541540" class="footer__link footer__link-min">тел. 8-924-3-541-540</a>
+						</li>
+
+						<li class="footer__list footer__list-min">
+							<a href="mailto:baikalholiday@mail.ru" class="footer__link footer__link-min">e-mail: baikalholiday@mail.ru</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__block__menu footer__block__menu-min">
+					<h3 class="footer__header footer__header-min">Адрес:</h3>
+					<ul class="footer__menu footer__menu-min">
+						<li class="footer__list footer__list-min">г. Улан-Удэ, ул.Гражданская, 20, отель «Рестон», 1 этаж</li>
+					</ul>
+				</div>
+
+				<div class="footer__block__menu footer__block__menu-min">
+					<a href="#" class="footer__link footer__link-min footer__link-min-underline">Политика конфиденциальности</a>
+					<div class="footer__design">
+						<p class="footer__text">Дизайн</p>
+						<div class="footer__logo">
+                        	<img class="footer__photo" src="../icons/design-logo.svg" alt="design-logo">
+                    	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal">
+        <div class="modal__close">
+            <span class="modal__close__line"></span>
+            <span class="modal__close__line"></span>
+        </div>
+
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="container">
+                    <h2 class="modal__header">Забронируйте отдых на Байкале</h2>
+                    <div class="modal__wrapper">
+                        <form action="#" class="modal__form">
+                            <div class="modal__form__top">
+                                <input class="modal__input" type="text" placeholder="Ваше имя" required>
+                                <input class="modal__input" type="tel" placeholder="Телефон" required>
+                                <input class="modal__input" type="email" placeholder="E-mail" required>
+                                <input class="modal__input" type="text" placeholder="Местность Байкала" required>
+                                <input class="modal__input" type="number" placeholder="Количество взрослых" required>
+                                <input class="modal__input" type="number" placeholder="Количество детей, их возраст" required>
+                            </div>
+
+                            <div class="modal__form__bottom">
+                                <div class="modal__form-left">
+                                    <input class="modal__input modal__input-min" type="date" required>
+                                    <input class="modal__input modal__input-min" type="date" required>
+                                </div>
+
+                                <div class="modal__form-right">
+                                    <textarea class="modal__textarea" placeholder="Комментарий"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="modal__form__block-btn">
+                                <button type="submit" class="modal__form__btn">Отправить заявку</button>
+                                <div class="modal__form__right">
+                                    <input class="modal__checkbox" type="checkbox" required>
+                                    <a class="modal__link" href="#">Согласие на обработку персональных данных</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="modal__arrow">
+		<img class="modal__arrow__photo" src="../icons/promo-arrow.svg" alt="arrow">
+	</div>
+</div>
+
+
+<script src="../js/jQuery.js"></script>
+<script src="../libs/OwlCarousel2/owl.carousel.min.js"></script>
+<script type="module" src="../js/script.js"></script>
+</body>
+</html>

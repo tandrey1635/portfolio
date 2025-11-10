@@ -1,0 +1,85 @@
+@import 'sass/reset'
+@import 'sass/variables'
+
+
+/* Прижать подвал */
+.wrapper
+    display: flex
+    flex-direction: column
+
+html, body
+    height: 100%
+
+main
+    flex: 1 0 auto
+    min-height: 100vh
+
+footer
+    flex: 0 0 auto
+
+
+html
+    scroll-behavior: smooth
+
+body
+    font-family: $mainFont
+    color: $defaultColor
+
+a
+    color: $defaultColor
+    &:hover
+        color: $linkHoverColor !important
+
+button
+    &:hover
+        border: 1px solid $btnBorder
+        background: $btnBgHover
+
+
+.container
+    max-width: 1120px
+    padding: 0 15px
+    margin: 0 auto
+    @media (max-width: 1024px)
+        width: 100%
+
+
+
+.lightbox
+    position: fixed
+    top: 5%!important
+    left: 50%!important
+    transform: translateX(-50%)
+    @media (max-width: 1024px)
+        top: 15%!important
+    @media (max-width: 768px)
+        top: 25%!important
+    @media (max-width: 576px)
+        top: 30%!important
+    @media (max-width: 425px)
+        top: 35%!important
+
+
+
+@import 'sass/titles'
+@import 'sass/promo'
+@import 'sass/tours'
+@import 'sass/services'
+@import 'sass/baikal'
+@import 'sass/gallery'
+@import 'sass/about'
+@import 'sass/countdown'
+@import 'sass/reviews'
+@import 'sass/reserve'
+@import 'sass/footer'
+@import 'sass/modal'
+
+
+@import 'sass/inner-page/inner-page'
+@import 'sass/card-items/small-card-items'
+@import 'sass/card-items/big-card-items'
+@import 'sass/card-items/transport-card-items'
+@import 'sass/card-items/campsites-card-items'
+@import 'sass/menu-spy/menu-spy'
+@import 'sass/gallery/gallery-page'
+@import 'sass/paginations/paginations'

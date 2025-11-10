@@ -1,43 +1,43 @@
 .categories
 	&__menu
-		display: grid	
+		display: grid
 		grid-template: auto / repeat(9, 1fr)
 		@media ( max-width: 1198.98px )
 			grid-template: repeat(3, 1fr) / repeat(3, 1fr)
-		@media ( max-width: 425px )	
+		@media ( max-width: 425px )
 			column-gap: 0 !important
-		@media ( max-width: 380px )		
+		@media ( max-width: 380px )
 			font-size: .9rem
-		@media ( max-width: 370px )		
+		@media ( max-width: 370px )
 			font-size: .8rem
 	&__wrapper
-		margin-top: 64px	
-		@media ( max-width: 425px )	
+		margin-top: 64px
+		@media ( max-width: 425px )
 			margin-top: 56px
-		@media ( max-width: 380px )	
-			margin-top: 48px	
+		@media ( max-width: 380px )
+			margin-top: 48px
 	&__product__wrapper
 		display: grid
 		grid-template: auto / repeat(3, 1fr)
 		justify-items: center
 		gap: 3rem
 		@media ( max-width: 1399.98px )
-			grid-template: auto / repeat(2, 1fr)	
-		@media ( max-width: 991.98px )	
+			grid-template: auto / repeat(2, 1fr)
+		@media ( max-width: 991.98px )
 			grid-template: auto / auto
-	&__item	
+	&__item
 		width: 25rem
 		box-shadow: 0 5px 5px 5px $defaultShadow
 		@media ( max-width: 1399.98px )
 			width: 100%
 		@media ( max-width: 991.98px )
-			width: 75%	
-		@media ( max-width: 575.98px )	
-			width: 80%	
-		@media ( max-width: 480px )	
-			width: 90%	
-		@media ( max-width: 425px )	
-			width: 100%		
+			width: 75%
+		@media ( max-width: 575.98px )
+			width: 80%
+		@media ( max-width: 480px )
+			width: 90%
+		@media ( max-width: 425px )
+			width: 100%
 		&:hover
 			transform: scale(1.05) !important
 			cursor: pointer
@@ -45,24 +45,22 @@
 		height: 250px
 		filter: drop-shadow(0 3px 3px $defaultShadow)
 	&__photo
-		object-fit: contain	
-		filter: drop-shadow(0 3px 3px $defaultShadow)	
+		object-fit: contain
+		filter: drop-shadow(0 3px 3px $defaultShadow)
 	&__price
 		font-weight: 700
-		font-size: 30px	
+		font-size: 30px
 		text-shadow: 0 3px 3px $defaultShadow
 		filter: drop-shadow(0 3px 3px $defaultShadow)
-	&__btn	
-		width: 8rem	
+	&__btn
+		width: 8rem
 		padding-top: 0.25rem !important
 		padding-bottom: 0.25rem !important
 		text-shadow: 0 3px 3px $defaultShadow
 		font-weight: 700
 		filter: drop-shadow(0 3px 3px $defaultShadow)
-	&__item, &__header, &__price, &__btn	
+	&__item, &__header, &__price, &__btn
 		transition: .8s all
 		&:hover
 			transition: .8s all
-			transform: scale(1.1)		
-
-			
+			transform: scale(1.1)

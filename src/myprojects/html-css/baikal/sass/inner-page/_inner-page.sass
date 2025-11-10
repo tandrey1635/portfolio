@@ -1,0 +1,279 @@
+.inner__page
+	padding: 76px 0 80px 0
+	@media (max-width: 480px)
+		padding: 32px 0
+	&__top
+		display: flex
+		justify-content: space-between
+		gap: 20px
+		@media (max-width: 991px)
+			flex-direction: column
+	&__left
+		width: 352px
+		border-radius: 6px
+		@media (max-width: 991px)
+			width: 100%
+	&__right
+		width: 65%
+		@media (max-width: 991px)
+			width: 100%
+	&__block__info
+		margin-top: 28px
+		@media (max-width: 425px)
+			margin-top: 24px
+		@media (max-width: 375px)
+			margin-top: 16px
+	&__hr
+		margin: 56px 0
+		background: $hrBg
+		height: 1px
+		@media (max-width: 480px)
+			margin: 32px
+		@media (max-width: 425px)
+			margin: 24px
+	&__header
+		font-family: $secondFont
+		font-size: 30px
+		font-weight: 700
+		line-height: 35px
+		&_mt
+			margin-top: 40px
+			@media (max-width: 425px)
+				margin-top: 16px
+		&_text-center
+			text-align: center
+		@media (max-width: 480px)
+			text-align: center
+		@media (max-width: 425px)
+			font-size: 26px
+		@media (max-width: 375px)
+			font-size: 24px
+	&__subheader
+		margin-top: 36px
+		font-family: $secondFont
+		font-size: 26px
+		font-weight: 700
+		line-height: 26px
+		@media (max-width: 480px)
+			margin-top: 24px
+			text-align: center
+		@media (max-width: 425px)
+			font-size: 24px
+		@media (max-width: 375px)
+			margin-top: 16px
+			font-size: 22px
+		&_accordeon
+			position: relative
+			padding: 20px
+			min-height: 65px
+			font-size: 26px
+			cursor: pointer
+			background: $accordeonBg
+			color: $mainColor
+			border-radius: 30px
+			@media (max-width: 480px)
+				font-size: 23px
+			@media (max-width: 425px)
+				padding: 15px 10px
+				min-height: auto
+				font-size: 18px
+			&::after
+				position: absolute
+				content: ''
+				width: 20px
+				height: 20px
+				top: 24px
+				right: 20px
+				background: url('icons/arrow-down.svg') no-repeat center/cover
+				@media (max-width: 480px)
+					width: 16px
+					height: 16px
+					top: 26px
+					right: 12px
+				@media (max-width: 425px)
+					top: 20px
+					right: 10px
+			&__active
+				border-radius: 30px 30px 0 0
+				&::after
+					transform: rotate(180deg)
+		@media (max-width: 425px)
+			text-align: center
+	&__subheader__small
+		margin-top: 28px
+		font-family: $secondFont
+		font-size: 18px
+		line-height: 140%
+		@media (max-width: 480px)
+			text-align: center
+		@media (max-width: 425px)
+			margin-top: 24px
+		@media (max-width: 375px)
+			margin-top: 16px
+	&__text, &__address, &__menu, &__list, &__link, &__span
+		margin-top: 28px
+		font-family: $secondFont
+		font-size: 18px
+		line-height: 140%
+		&_bold
+			font-weight: 700
+		&_info
+			margin-top: 10px
+		@media (max-width: 480px)
+			margin-top: 20px
+			text-align: center
+		@media (max-width: 425px)
+			margin-top: 10px
+			font-size: 16px
+	&__menu
+		&_disc
+			list-style: inside
+			@media (max-width: 480px)
+				list-style: none
+		&_inner
+			font-weight: 400
+	&__list
+		padding-left: 20px
+		margin-top: 16px
+		&_header, &_subheader, &_subheader_small
+			font-weight: 700
+			margin-top: 28px
+			font-size: 24px
+			@media (max-width: 480px)
+				margin-top: 20px
+			@media (max-width: 425px)
+				margin-top: 16px
+		&_header
+			&_accordeon
+				@media (max-width: 480px)
+					font-size: 22px
+				@media (max-width: 425px)
+					font-size: 18px
+			@media (max-width: 425px)
+				font-size: 22px
+			@media (max-width: 375px)
+				font-size: 20px
+		&_subheader
+			font-size: 22px
+			@media (max-width: 425px)
+				font-size: 20px
+			&_accordeon
+				@media (max-width: 480px)
+					font-size: 20px
+				@media (max-width: 425px)
+					font-size: 17px
+			&_small
+				font-size: 20px
+				@media (max-width: 425px)
+					font-size: 18px
+				&_accordeon
+					@media (max-width: 480px)
+						font-size: 18px
+					@media (max-width: 425px)
+						font-size: 16px
+		@media (max-width: 576px)
+			padding-left: 15px
+		@media (max-width: 480px)
+			padding-left: 0
+	&__link
+		display: inline-flex
+		color: $linkColor
+		text-decoration: underline
+		&_mt
+			margin-top: 0
+		&_info
+			display: flex
+			@media (max-width: 480px)
+				justify-content: center
+		&_accordeon
+			margin: 0 5px
+			color: $mainColor
+			&_no-underline
+				text-decoration: none
+	&__span, &__address
+		font-weight: 700
+	&__sup
+		font-size: 12px
+	&__block__video, &__block__map
+		margin-top: 32px
+		display: flex
+		height: 600px
+		@media (max-width: 991px)
+			height: 500px
+		@media (max-width: 676px)
+			height: 450px
+		@media (max-width: 576px)
+			height: 400px
+		@media (max-width: 480px)
+			height: 350px
+		@media (max-width: 425px)
+			height: 300px
+			margin-top: 16px
+		@media (max-width: 375px)
+			height: 250px
+		&_tourist__map
+			height: 1000px
+			@media (max-width: 676px)
+				height: 800px
+			@media (max-width: 480px)
+				height: 600px
+			@media (max-width: 425px)
+				height: 500px
+			@media (max-width: 375px)
+				height: 400px
+			img
+				object-fit: fill
+	&__block__table
+		overflow-x: auto
+	&__table
+		width: 100%
+		margin-top: 24px
+		font-family: $secondFont
+		line-height: 130%
+		border: 1px solid $secondBorder
+		text-align: center
+	&__table__header
+		height: 70px
+		font-weight: 500
+		background: $tableHeaderBg
+	td
+		padding: 16px
+		border: 1px solid $secondBorder
+		&:first-child
+			text-align: left
+	&__gallery__wrapper
+		margin-top: 48px
+		display: grid
+		grid-template-columns: repeat(auto-fill, 350px)
+		place-content: center
+		gap: 20px
+		@media (max-width: 480px)
+			margin-top: 32px
+		@media (max-width: 425px)
+			margin-top: 16px
+	&__gallery__item
+		height: 260px
+		@media (max-width: 1024px)
+			height: auto
+	img
+		border-radius: 6px
+	&__descriptions
+		display: none
+		height: 500px
+		overflow: auto
+		padding: 20px
+		border-radius: 0 0 30px 30px
+		background: $accordeonDescriptionBg
+		@media (max-width: 480px)
+			height: 300px
+		&:hover
+			cursor: url('../icons/scroll-icon.png'), auto
+		&::-webkit-scrollbar
+			width: 0
+		@media (max-width: 480px)
+			padding: 20px 10px
+		&__active
+			color: $mainColor
+			display: block
+	&__descriptions &__menu, &__descriptions &__menu &__list_header:first-child
+		margin-top: 0
