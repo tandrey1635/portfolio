@@ -1,0 +1,33 @@
+[
+	{
+		"id": 1,
+		"project": true,
+		"html": true,
+		"bootstrap": false,
+		"javascript": false,
+		"react": false,
+		"type": "all",
+		"header": "Landing page",
+		"description": "Самый первый проект на Figma",
+		"alt": "Landing page",
+		"preview": "/projects/landing-page/preview.webp",
+		"url": "/portfolio/myprojects/html-css/landing-page/index.html",
+		"github": "https://github.com/tandrey1635/landing-page"
+	},
+
+	{
+		"id": 2,
+		"project": true,
+		"html": true,
+		"bootstrap": false,
+		"javascript": false,
+		"react": false,
+		"type": "all",
+		"header": "Интернет магазин",
+		"description": "Второй проект на Figma",
+		"alt": "Интернет магазин",
+		"preview": "/projects/professional-shop/preview.webp",
+		"url": "/portfolio/myprojects/html-css/professional-shop/index.html",
+		"github": "https://github.com/tandrey1635/professional-shop"
+	}
+]

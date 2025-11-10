@@ -94,10 +94,10 @@
 .portfolio__descriptions_sertificate_bitrix {
   background: linear-gradient(140deg, #c7042c, #05baef);
 }
-.portfolio__subheader {
+.portfolio__header {
   font-size: 22px;
 }
-.portfolio__subheader, .portfolio__text {
+.portfolio__header, .portfolio__text {
   margin-top: 20px;
   text-align: center;
 }

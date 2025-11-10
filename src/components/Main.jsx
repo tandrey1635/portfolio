@@ -3,7 +3,6 @@ import { useReducer } from 'react'
 import './tecnology-menu/TechnologyMenu.sass'
 import './portfolio-items/portfolio-wrapper/PortfolioWrapper.sass'
 
-
 import Promo from './promo/Promo'
 import SectionHeader from './section-headers/SectionHeader'
 import TechnologyItems from './tecnology-menu/TechnologyItems'
@@ -11,6 +10,15 @@ import TechnologyMenuList from './tecnology-menu/TechnologyMenuList'
 import PortfolioText from './portfolio-text/PortfolioText'
 import PortfolioTabs from './potfolio-tabs/PotfolioTabs'
 import PortfolioItems from './portfolio-items/PortfolioItems'
+
+
+
+
+/* Json проектов */
+import dataProjects from '../json/projects.json'
+
+
+
 
 
 /* Фото технологий */
@@ -32,10 +40,7 @@ import Eng from '../img/icons/eng.png'
 import Webpack from '../img/icons/webpack.png'
 
 
-
 /* Фото Проектов */
-import LandingPagePreview from '../img/devices-img/landing-page/preview.webp'
-import ProfessionalShopPreview from '../img/devices-img/professional-shop/preview.webp'
 import TaxiPreview from '../img/devices-img/taxi/preview.webp'
 import AutopartPreview from '../img/devices-img/autopart/preview.webp'
 import SportBettingsPreview from '../img/devices-img/sport-bettings/preview.webp'
@@ -77,8 +82,6 @@ import BitrixSertificateAdmin24 from '../img/sertificates/bitrix-admin-24.jpg'
 
 /* Проекты ссылки на сайт */
 /* Путь к файлу проекта где  /portfolio/ - начальная папка на хостинге */
-const LandingPageUrl = '/portfolio/myprojects/html-css/landing-page/index.html'
-const ProfessionalShopUrl = '/portfolio/myprojects/html-css/professional-shop/index.html'
 const TaxiUrl = '/portfolio/myprojects/html-css/taxi/index.html'
 const AutopartUrl = '/portfolio/myprojects/html-css/autopart/index.html'
 const SportBettingsUrl = '/portfolio/myprojects/html-css/sport-bettings/index.html'
@@ -101,8 +104,6 @@ const SrFarmEmailsUrl = '/portfolio/myprojects/react/sr.farm-mails/index.html'
 const AveximaEmailsUrl = '/portfolio/myprojects/react/avexima-mails/index.html'
 
 /* Проекты ссылки на GitHub */
-const LandingPageGitHub = 'https://github.com/tandrey1635/landing-page'
-const ProfessionalShopGitHub = 'https://github.com/tandrey1635/professional-shop'
 const TaxiGitHub = 'https://github.com/tandrey1635/taxi'
 const AutopartGitHub = 'https://github.com/tandrey1635/autopart'
 const SportBettingsGitHub = 'https://github.com/tandrey1635/sport-bettings'
@@ -480,8 +481,15 @@ const Main = () =>  {
                     <div className="portfolio__wrapper">
                     {projects.all &&
                         <>
-                            <PortfolioItems project html subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
-                            <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'} preview={ProfessionalShopPreview} url={ProfessionalShopUrl} github={ProfessionalShopGitHub}/>
+							{
+								dataProjects.map((project) =>{
+									return (
+										<PortfolioItems key={project.id} {...project} />
+									)
+								})
+							}
+
+                            {/*
                             <PortfolioItems project html subheader={'Такси'} text={'Сайт такси Psd макет'} alt={'Такси'} preview={TaxiPreview} url={TaxiUrl} github={TaxiGitHub}/>
                             <PortfolioItems project html subheader={'Автозапчасти'} text={'Сайт автозапчастей Psd макет'} alt={'Автозапчасти'} preview={AutopartPreview} url={AutopartUrl} github={AutopartGitHub}/>
                             <PortfolioItems project html subheader={'Ставки на спорт'} text={'Личный кабинет ставки на спорт'} alt={'Ставки на спорт'} preview={SportBettingsPreview} url={SportBettingsUrl} github={SportBettingsGitHub}/>
@@ -507,13 +515,12 @@ const Main = () =>  {
                             <PortfolioItems project javascript subheader={'Космические Путешествия'} text={'Библиотека three.js 3д модели на сайте (только ПК версия)'} alt={'Космические Путешествия'}/>
 							<PortfolioItems project react subheader={'Еmail-шаблоны'} text={'Серия медицинских email-шаблонов для фармацевтической компании Сердце России на React'} alt={'Еmail-шаблоны'} preview={SrFarmEmailsPreview} url={SrFarmEmailsUrl} github={SrFarmEmailsGitHub}/>
 							<PortfolioItems project react subheader={'Еmail-шаблоны'} text={'Серия медицинских email-шаблонов для фармацевтической компании Авексима на React'} alt={'Еmail-шаблоны'} preview={AveximaEmailsPreview} url={AveximaEmailsUrl} github={AveximaEmailsGitHub}/>
-                            <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/>
+                            <PortfolioItems project react subheader={'Список задач'} text={'Todo List'} alt={'Список задач'}/> */}
                         </>
                     }
                     {projects.html &&
                         <>
-                            <PortfolioItems project html subheader={'Landing page'} text={'Самый первый проект на Figma'} alt={'Landing page'} preview={LandingPagePreview} url={LandingPageUrl} github={LandingPageGitHub}/>
-                            <PortfolioItems project html subheader={'Интернет магазин'} text={'Второй проект на Figma'} alt={'Интернет магазин'} preview={ProfessionalShopPreview} url={ProfessionalShopUrl} github={ProfessionalShopGitHub}/>
+
                             <PortfolioItems project html subheader={'Такси'} text={'Сайт такси Psd макет'} alt={'Такси'} preview={TaxiPreview} url={TaxiUrl} github={TaxiGitHub}/>
                             <PortfolioItems project html subheader={'Автозапчасти'} text={'Сайт автозапчастей Psd макет'} alt={'Автозапчасти'} url={AutopartUrl} preview={AutopartPreview} github={AutopartGitHub}/>
                             <PortfolioItems project html subheader={'Ставки на спорт'} text={'Личный кабинет ставки на спорт'} alt={'Ставки на спорт'} preview={SportBettingsPreview} url={SportBettingsUrl} github={SportBettingsGitHub}/>
