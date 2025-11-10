@@ -1,4 +1,4 @@
-import { useReducer, useState } from 'react'
+import { useReducer } from 'react'
 
 import './tecnology-menu/TechnologyMenu.sass'
 import './portfolio-items/portfolio-wrapper/PortfolioWrapper.sass'
@@ -42,6 +42,7 @@ import SportBettingsPreview from '../img/devices-img/sport-bettings/preview.webp
 import PersonalAccountPreview from '../img/devices-img/personal-account/preview.webp'
 import PersonalAccountCrmPreview from '../img/devices-img/personal-account-crm/preview.webp'
 /* import SpecializedMachineryPreview from '../img/devices-img/specialized-machinery/preview.webp' */
+import BaikalPreview from '../img/devices-img/baikal/preview.webp'
 import GrindingPreview from '../img/devices-img/grinding/preview.webp'
 import DataUniversePreview from '../img/devices-img/datauniverse/preview.webp'
 import DevilamPreview from '../img/devices-img/devilam/preview.webp'
@@ -83,6 +84,7 @@ const AutopartUrl = '/portfolio/myprojects/html-css/autopart/index.html'
 const SportBettingsUrl = '/portfolio/myprojects/html-css/sport-bettings/index.html'
 const PersonalAccountUrl = '/portfolio/myprojects/html-css/personal-account/index.html'
 const PersonalAccountCrmUrl = '/portfolio/myprojects/html-css/personal-account-crm/index.html'
+const BaikalUrl = '/portfolio/myprojects/html-css/baikal/index.html'
 const GrindingUrl = '/portfolio/myprojects/html-css/grinding/index.html'
 const DataUniverseUrl = '/portfolio/myprojects/html-css/datauniverse/index.html'
 const DevilamUrl = '/portfolio/myprojects/html-css/devilam/index.html'
@@ -106,6 +108,7 @@ const AutopartGitHub = 'https://github.com/tandrey1635/autopart'
 const SportBettingsGitHub = 'https://github.com/tandrey1635/sport-bettings'
 const PersonalAccountGitHub = 'https://github.com/tandrey1635/personal-account'
 const PersonalAccountCrmGitHub = 'https://github.com/tandrey1635/personal-account-crm'
+const BaikalGitHub = 'https://github.com/tandrey1635/baikal'
 const GrindingGitHub = 'https://github.com/tandrey1635/grinding'
 const DataUniverseGitHub = 'https://github.com/tandrey1635/datauniverse'
 const DevilamGitHub = 'https://github.com/tandrey1635/devilam'
@@ -485,7 +488,7 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Рабочий аккаунт'} text={'Личный кабинет сотрудника'} alt={'Рабочий аккаунт'} preview={PersonalAccountPreview} url={PersonalAccountUrl} github={PersonalAccountGitHub}/>
                             <PortfolioItems project html subheader={'Личный кабинет'} text={'Личный кабинет CRM система'} alt={'Личный кабинет'} preview={PersonalAccountCrmPreview} url={PersonalAccountCrmUrl} github={PersonalAccountCrmGitHub}/>
                             <PortfolioItems project html subheader={'Аренда спецтехники'} text={'Сайт аренды спецтехники нативный js'} alt={'Аренда спецтехники'}/>
-                            <PortfolioItems project html subheader={'Байкальский отдых'} text={'Сайт отдыха на Байкале jquery'} alt={'Байкальский отдых'}/>
+                            <PortfolioItems project html subheader={'Байкал'} text={'Многостраничный сайт (28 стр.) с jQuery: слайдеры, таймер, бургер-меню, модалки, аккордеоны, табы'} alt={'Байкал'} preview={BaikalPreview} url={BaikalUrl} github={BaikalGitHub}/>
                             <PortfolioItems project html subheader={'Заточка инструментов'} text={'Коммерческий проект на фрилансе'} alt={'Заточка инструментов'} preview={GrindingPreview} url={GrindingUrl} github={GrindingGitHub}/>
                             <PortfolioItems project html subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
                             <PortfolioItems project html subheader={'Девилам'} text={'Cайт компании https://vitaminde.ru/'} alt={'Девилам'} preview={DevilamPreview} url={DevilamUrl} github={DevilamGitHub}/>
@@ -517,7 +520,7 @@ const Main = () =>  {
                             <PortfolioItems project html subheader={'Рабочий аккаунт'} text={'Личный кабинет сотрудника'} alt={'Рабочий аккаунт'} preview={PersonalAccountPreview} url={PersonalAccountUrl} github={PersonalAccountGitHub}/>
                             <PortfolioItems project html subheader={'Личный кабинет'} text={'Личный кабинет CRM система'} alt={'Личный кабинет'} preview={PersonalAccountCrmPreview} url={PersonalAccountCrmUrl} github={PersonalAccountCrmGitHub}/>
                             <PortfolioItems project html subheader={'Аренда спецтехники'} text={'Сайт аренды спецтехники нативный js'} alt={'Аренда спецтехники'}/>
-                            <PortfolioItems project html subheader={'Байкальский отдых'} text={'Сайт отдыха на Байкале jquery'} alt={'Байкальский отдых'}/>
+                            <PortfolioItems project html subheader={'Байкал'} text={'Многостраничный сайт (28 стр.) с jQuery: слайдеры, таймер, бургер-меню, модалки, аккордеоны, табы'} alt={'Байкал'} preview={BaikalPreview} url={BaikalUrl} github={BaikalGitHub}/>
                             <PortfolioItems project html subheader={'Заточка инструментов'} text={'Коммерческий проект на фрилансе'} alt={'Заточка инструментов'} preview={GrindingPreview} url={GrindingUrl} github={GrindingGitHub}/>
                             <PortfolioItems project html subheader={'Data Universe'} text={'Cайт компании https://datauniverse.ru/'} alt={'Data Universe'} preview={DataUniversePreview} url={DataUniverseUrl} github={DataUniverseGitHub}/>
                             <PortfolioItems project html subheader={'Девилам'} text={'Cайт компании https://vitaminde.ru/'} alt={'Девилам'} preview={DevilamPreview} url={DevilamUrl} github={DevilamGitHub}/>
@@ -534,7 +537,7 @@ const Main = () =>  {
                             <>
                                 <PortfolioItems project bootstrap subheader={'SendIt'} text={'Бутстрап сетка (Bootstrap Grid)'} alt={'SendIt'} preview={SendItPreview} url={SendItUrl} github={SendItGitHub}/>
                                 <PortfolioItems project bootstrap subheader={'World of Warcraft'} text={'Проект на Bootstrap 4'} alt={'World of Warcraft'} url={WowUrl} github={WowGitHub}/>
-                                <PortfolioItems project bootstrap subheader={'Ресторан бургеров'} text={'Проект на Bootstrap 5'} alt={'Ресторан бургеров'} preview={BurgersPreview} url={BurgersUrl} github={BurgersGitHub}/>
+                                <PortfolioItems project bootstrap subheader={'Ресторан бургеров'} text={'Ресторан бургеров на Bootstrap 5 с интерактивным каталогом, слайдером акций и системой онлайн-заказов через модальные окна'} alt={'Ресторан бургеров'} preview={BurgersPreview} url={BurgersUrl} github={BurgersGitHub}/>
                             </>
                         }
                         {projects.javascript &&
