@@ -1,18 +1,18 @@
 .news__announce
 	min-height: 916px
-	padding-top: 130px!important	
+	padding-top: 130px!important
 	@media(max-width: $notebook)
-		min-height: auto!important	
+		min-height: auto!important
 	@media(max-width: $mediumTablet)
-		padding-top: 80px!important	
+		padding-top: 80px!important
 	@media(max-width: $mobile)
-		padding-top: 56px!important	
-	@media(max-width: $extraSmallMobile)	
-		padding-top: 32px!important		
+		padding-top: 56px!important
+	@media(max-width: $extraSmallMobile)
+		padding-top: 32px!important
 	&_wide, &_wide_secondbg
 		padding-top: 30px
 		position: relative
-	&_specialists	
+	&_specialists
 		min-height: 685px
 		&:last-child
 			padding-bottom: 130px
@@ -20,52 +20,52 @@
 				padding-bottom: 80px
 			@media(max-width: $mobile)
 				padding-bottom: 56px
-			@media(max-width: $extraSmallMobile)	
-				padding-bottom: 32px			
+			@media(max-width: $extraSmallMobile)
+				padding-bottom: 32px
 	&_events
 		padding: 130px 0
 		min-height: 1200px
-		background: $newsAnnounceEventsBg		
-		@media(max-width: $mediumTablet)	
-			padding: 80px 0	
-		@media(max-width: $mobile)	
+		background: $newsAnnounceEventsBg
+		@media(max-width: $mediumTablet)
+			padding: 80px 0
+		@media(max-width: $mobile)
 			padding: 56px 0
-		@media(max-width: $extraSmallMobile)		
+		@media(max-width: $extraSmallMobile)
 			padding: 32px 0
 	&__wrapper
 		@include flexCenter(space-between)
 		@media(max-width: $tablet)
 			flex-direction: column
 			gap: 56px
-		@media(max-width: $mobile)	
-			gap: 32px	
-		@media(max-width: $extraSmallMobile)	
-			gap: 16px	
+		@media(max-width: $mobile)
+			gap: 32px
+		@media(max-width: $extraSmallMobile)
+			gap: 16px
 		&_wide, &_specialists
 			@media(max-width: $tablet)
-				flex-direction: column-reverse	
+				flex-direction: column-reverse
 		&_events
 			margin-top: 60px
 			align-items: center
 			@media(max-width: $pocketBook)
-				margin-top: 56px	
-			@media(max-width: $mobile)	
+				margin-top: 56px
+			@media(max-width: $mobile)
 				margin-top: 32px
 	&__left_wide-bg
 		padding: 130px 0
 		min-height: 916px
-		background: $newsAnnounceWideMainBg	
+		background: $newsAnnounceWideMainBg
 		background-size: 64%!important
-		background-repeat: no-repeat!important 
+		background-repeat: no-repeat!important
 		@media(max-width: $notebook)
-			background-size: 60%!important 
+			background-size: 60%!important
 			min-height: auto
-		@media(max-width: $tablet)	
+		@media(max-width: $tablet)
 			background-size: 100%!important
 		@media(max-width: $mediumTablet)
-			padding: 56px 0	
-		@media(max-width: $extraSmallMobile)	
-			padding: 32px 0	
+			padding: 56px 0
+		@media(max-width: $extraSmallMobile)
+			padding: 32px 0
 		&_second
 			background: $newsAnnounceWideSecondBg
 	&__left
@@ -73,19 +73,19 @@
 		@media(max-width: $notebook)
 			width: 60%
 		@media(max-width: $tablet)
-			width: 95%	
+			width: 95%
 		&_reverse
 			width: 32%
 			@media(max-width: $notebook)
 				width: 35%
 			@media(max-width: $tablet)
-				width: 95%			
+				width: 95%
 	&__right
 		width: 32%
 		@media(max-width: $notebook)
 			width: 35%
 		@media(max-width: $tablet)
-			width: 95%				
+			width: 95%
 		&_reverse
 			width: 64%
 			@media(max-width: $notebook)
@@ -97,38 +97,38 @@
 			flex-direction: column
 			gap: 56px
 			min-height: 580px
-			@media(max-width: $notebook)	
-				min-height: 600px	
-			@media(max-width: 1200px)	
+			@media(max-width: $notebook)
+				min-height: 600px
+			@media(max-width: 1200px)
 				min-height: 450px
-				gap: 32px	
-			@media(max-width: $tablet)	
-				min-height: auto					
+				gap: 32px
+			@media(max-width: $tablet)
+				min-height: auto
 	&__img, &__block__video
 		height: 685px
 		@media(max-width: $notebook)
 			height: 600px!important
 		@media(max-width: 1200px)
-			height: 450px!important	
+			height: 450px!important
 		@media(max-width: $tablet)
-			height: 600px!important	
+			height: 600px!important
 		@media(max-width: $mediumTablet)
 			height: 500px!important
 		@media(max-width: $smallTablet)
-			height: 400px!important	
+			height: 400px!important
 		@media(max-width: $pocketBook)
-			height: 350px!important	
+			height: 350px!important
 		@media(max-width: $smallPocketBook)
-			height: 300px!important	
+			height: 300px!important
 		@media(max-width: $mobile)
-			height: 250px!important	
+			height: 250px!important
 		@media(max-width: $mediumMobile)
-			height: 200px!important						
+			height: 200px!important
 		&_events
-			height: 580px	
+			height: 580px
 	&__block__video
-		position: relative	
-		cursor: pointer	
+		position: relative
+		cursor: pointer
 		&::before
 			width: 110px
 			height: 110px
@@ -136,47 +136,47 @@
 			transform: translate(-50%, -50%)
 			border: 1px solid $mainBorder
 			border-radius: 50%
-			@include background('img/specialists/play.svg', 50%) 
-			background-position-x: 35px	
+			@include background('img/specialists/play.svg', 50%)
+			background-position-x: 35px
 			@media(max-width: $mediumTablet)
 				width: 80px
 				height: 80px
-				background-position-x: 25px	
+				background-position-x: 25px
 			@media(max-width: $smallPocketBook)
 				width: 60px
 				height: 60px
 				background-size: 45%
-				background-position-x: 20px		
-			@media(max-width: $extraSmallMobile)	
+				background-position-x: 20px
+			@media(max-width: $extraSmallMobile)
 				width: 40px
 				height: 40px
-				background-position-x: 12px	
-		&_events	
+				background-position-x: 12px
+		&_events
 			cursor: default
 			&::before
 				border: none
 				background: none
 	&__block__header
-		@media(max-width: $tablet)	
+		@media(max-width: $tablet)
 			@include flexReverseAxios
-			align-items: center	
+			align-items: center
 	&__header_events
-		width: 64%	
-		@media(max-width: $notebook)	
+		width: 64%
+		@media(max-width: $notebook)
 			width: 60%
-		@media(max-width: $tablet)	
+		@media(max-width: $tablet)
 			width: 100%
 	&__photo
-		&_events	
-			object-fit: fill					
+		&_events
+			object-fit: fill
 	&__menu
 		@include flexHorisontalCenter
 		flex-direction: column
 		gap: 15px
 		margin: 25px 0 0 15px
 	&__menu
-		display: none		
-	&__list	
+		display: none
+	&__list
 		list-style: decimal
 		font-size: 18px
 		font-weight: 700
@@ -185,7 +185,6 @@
 		@media(max-width: $mobile)
 			font-size: 16px
 		@media(max-width: $mediumMobile)
-			font-size: 14px	
+			font-size: 14px
 	.show
-		display: flex		
-		
+		display: flex

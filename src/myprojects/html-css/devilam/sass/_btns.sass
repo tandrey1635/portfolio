@@ -7,22 +7,22 @@
 	font-weight: 700
 	color: $secondColor
 	border-bottom: 1px solid $mainBorder
-	@media(max-width: $mobile)	
+	@media(max-width: $mobile)
 		width: 145px
 		font-size: 18px
 		margin-top: 32px
 		padding-bottom: 8px
-	@media(max-width: $mediumMobile)	
+	@media(max-width: $mediumMobile)
 		width: 125px
 		font-size: 16px
-	@media(max-width: $extraSmallMobile)	
-		margin-top: 25px	
+	@media(max-width: $extraSmallMobile)
+		margin-top: 25px
 	&::after
 		@include after(10px)
 		width: 12px
 		height: 12px
 		@include background('img/arrow-down-blue.svg')
-		@media(max-width: $mobile)	
+		@media(max-width: $mobile)
 			top: 9px
 			width: 10px
 			height: 10px
@@ -37,56 +37,56 @@
 		background: transparent
 		@media(max-width: $tablet)
 			width: 300px
-		@media(max-width: $mobile)	
+		@media(max-width: $mobile)
 			width: 270px
-		@media(max-width: $mediumMobile)	
-			width: 240px	
+		@media(max-width: $mediumMobile)
+			width: 240px
 		&::after
 			top: 8px
-			@media(max-width: $pocketBook)	
-				top: 7px	
-			@media(max-width: $mediumMobile)	
-				top: 5px		
+			@media(max-width: $pocketBook)
+				top: 7px
+			@media(max-width: $mediumMobile)
+				top: 5px
 	&_secondcolor
 		color: $defaultColor
 		border-bottom: 1px solid $defaultBorder
 		&::after
-			@include background('img/arrow-down-white.svg')	
+			@include background('img/arrow-down-white.svg')
 	&_promo
 		margin-top: 65px
 		width: 224px
 		padding: 16px 40px
 		border-radius: 50px
 		border: 1px solid $defaultBorder
-		background: $defaultBg	
+		background: $defaultBg
 		@media(max-width: $smallNotebook)
-			width: 200px	
+			width: 200px
 			padding: 12px 36px
 		@media(max-width: $pocketBook)
-			padding: 12px 25px	
-		@media(max-width: $smallPocketBook)	
-			margin-top: 0	
+			padding: 12px 25px
+		@media(max-width: $smallPocketBook)
+			margin-top: 0
 		&_bg
 			width: 296px
 			background: transparent
 			@media(max-width: $smallNotebook)
 				width: 280px
 			@media(max-width: $mediumMobile)
-				width: 250px	
+				width: 250px
 			@media(max-width: $extraSmallMobile)
-				width: 230px	
+				width: 230px
 		&::after
 			top: 24px
 			right: 40px
 			@media(max-width: $smallNotebook)
 				top: 21px
 				right: 21px
-	&_events		
+	&_events
 		width: 132px
 		margin-top: 0
-		@media(max-width: $mediumMobile)	
+		@media(max-width: $mediumMobile)
 			width: 125px
-	&_paginations	
+	&_paginations
 		margin: 0
 		width: auto
 		font-weight: 400
@@ -95,22 +95,22 @@
 		&::after
 			background: none
 	&_news
-		width: 250px	
-		font-size: 30px	
+		width: 250px
+		font-size: 30px
 		border: 1px solid transparent
 		@media(max-width: $smallDesktop)
 			width: 220px
 			font-size: 26px
-		@media(max-width: $tablet) 
+		@media(max-width: $tablet)
 			margin-top: 56px
-		@media(max-width: $mobile) 
+		@media(max-width: $mobile)
 			width: 180px
-			font-size: 22px	
-			margin-top: 32px	
-		@media(max-width: $extraSmallMobile) 
+			font-size: 22px
+			margin-top: 32px
+		@media(max-width: $extraSmallMobile)
 			width: 145px
 			font-size: 18px
-			margin-top: 16px	
+			margin-top: 16px
 		&::after
 			width: 16px
 			height: 16px
@@ -119,13 +119,13 @@
 				width: 14px
 				height: 14px
 				top: 12px
-			@media(max-width: $mobile) 
+			@media(max-width: $mobile)
 				width: 12px
 				height: 12px
-				top: 10px	
-			@media(max-width: $extraSmallMobile) 
+				top: 10px
+			@media(max-width: $extraSmallMobile)
 				width: 10px
-				height: 10px	
+				height: 10px
 				top: 8px
 		&_show-more
 			width: auto
@@ -134,21 +134,23 @@
 			@media(max-width: $mediumTablet)
 				max-width: 35%
 			@media(max-width: $smallTablet)
-				max-width: 40%	
+				max-width: 40%
 			@media(max-width: $pocketBook)
-				max-width: 50%		
+				max-width: 50%
 			@media(max-width: $smallPocketBook)
-				max-width: 55%	
-			@media(max-width: $mobile) 
+				max-width: 55%
+			@media(max-width: $mobile)
 				margin-top: 56px
-			@media(max-width: $mediumMobile) 	
+			@media(max-width: $mediumMobile)
 				margin-top: 32px
-			@media(max-width: $smallMobile)	
-				max-width: 65%			
+			@media(max-width: $smallMobile)
+				max-width: 65%
 			&::after
 				display: none
+			&.hide-btn
+				display: none
 		&:hover
-			border-bottom: 1px solid $mainBorder	
+			border-bottom: 1px solid $mainBorder
 	&_modal
 		margin-top: 0
 		@include flexCenter
@@ -161,7 +163,7 @@
 			background: $mainBg
 			color: $defaultColor
 		&::after
-			display: none	
+			display: none
 		&_info
 			margin-top: 32px
 			width: 620px
@@ -172,8 +174,8 @@
 				width: 100%
 				text-align: center
 				padding-right: 10px
-			@media(max-width: $extraSmallMobile)	
-				font-size: 14px	
+			@media(max-width: $extraSmallMobile)
+				font-size: 14px
 			&::after
 				width: 10px
 				height: 10px
@@ -183,9 +185,9 @@
 					height: 8px
 			&_active
 				text-align: left
-				width: 100px	
+				width: 100px
 
-				  
+
 
 .span__news
 	display: inline-flex
@@ -195,7 +197,7 @@
 	font-size: 20px
 	font-weight: 700
 	line-height: 80%
-	@media(max-width: $mediumMobile)	
+	@media(max-width: $mediumMobile)
 		padding: 4px 16px
 		font-size: 16px
 	&_secondcolor
@@ -204,7 +206,7 @@
 
 
 .paginations
-	padding: 16px 25px	
+	padding: 16px 25px
 	width: 225px
 	@include flexCenter(space-between)
 	margin-top: 140px
@@ -214,21 +216,21 @@
 		margin-top: 170px
 	@media(max-width: $smallNotebook)
 		margin-top: 120px
-	@media(max-width: 1200px)	
+	@media(max-width: 1200px)
 		padding: 10px 25px
 		width: 185px
 		margin-top: 50px
 	@media(max-width: $tablet)
-		margin: 100px auto 0	
-	@media(max-width: $tablet)	
-		width: 80%	
-	@media(max-width: $pocketBook)	
-		width: 100%	
-	@media(max-width: $mobile)	
-		padding: 6px 15px	
-	&_news__announce	
+		margin: 100px auto 0
+	@media(max-width: $tablet)
+		width: 80%
+	@media(max-width: $pocketBook)
+		width: 100%
+	@media(max-width: $mobile)
+		padding: 6px 15px
+	&_news__announce
 		margin-top: 0
 		@media(max-width: $tablet)
-			margin-top: 100px 
+			margin-top: 100px
 	&_features
-		margin: 140px auto	
+		margin: 140px auto

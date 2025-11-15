@@ -9,7 +9,7 @@
 	transform: translateX(-50%)
 	background: $modalBg
 	&__active
-		display: block	
+		display: block
 	&__dialog
 		position: fixed
 		top: 0
@@ -30,17 +30,17 @@
 			width: 85%
 		@media(max-width: $mediumTablet)
 			width: 95%
-		@media(max-width: $pocketBook)		
+		@media(max-width: $pocketBook)
 			padding: 50px 32px
 			top: 30vh
 		@media(max-width: $mobile)
 			top: 25vh
-		@media(max-width: $mediumMobile)	
-			padding: 32px		
-		@media(max-width: $extraSmallMobile)	
-			padding: 25px			
+		@media(max-width: $mediumMobile)
+			padding: 32px
+		@media(max-width: $extraSmallMobile)
+			padding: 25px
 		&__active
-			top: 40px	
+			top: 40px
 	&__close
 		@include flexCenter
 		width: 30px
@@ -59,15 +59,15 @@
 		@media(max-width: $desktop)
 			height: 300px
 			overflow-y: auto
-		@media(max-width: $pocketBook)	
+		@media(max-width: $pocketBook)
 			height: 250px
 		&__active
-			display: block	
+			display: block
 	&__btns
 		margin-top: 25px
 		@include flexHorisontalCenter
 		gap: 10px
 
-	
 
-@import './_custom-scroll'	
+
+@import './_custom-scroll'

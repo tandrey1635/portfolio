@@ -5,10 +5,10 @@
     @media(max-width: $smallPocketBook)
         padding: 120px 0 40px 0
     @media(max-width: $smallMobile)
-        padding: 100px 0 40px 0    
+        padding: 100px 0 40px 0
     &__block__links
-        @include flexVerticalCenter 
-        flex-wrap: wrap  
+        @include flexVerticalCenter
+        flex-wrap: wrap
     &__link
         border-bottom: 3px solid transparent
         color: $secondColor
@@ -16,9 +16,9 @@
             border-bottom: 3px solid $mainBorder
         &_active
             font-weight: 700
-            color: $secondColor  
-    &__text   
-        display: flex 
+            color: $secondColor
+    &__text
+        display: flex
         gap: 16px
         font-size: 30px
         line-height: 110%
@@ -26,24 +26,23 @@
         color: $mainColor
         text-transform: capitalize
         &:not(:first-child)
-            margin-left: 16px 
-        &_news_page 
-            @media(max-width: $smallTablet)  
-                margin-left: 5px!important  
-            @media(max-width: $pocketBook)  
-                margin-left: 0px!important      
-    &__link, &__text  
+            margin-left: 16px
+        &_news_page
+            @media(max-width: $smallTablet)
+                margin-left: 5px!important
+            @media(max-width: $pocketBook)
+                margin-left: 0px!important
+    &__link, &__text
         @media(max-width: $mediumTablet)
-            font-size: 26px   
-        @media(max-width: $pocketBook)  
-            font-size: 24px  
-        @media(max-width: $smallPocketBook)  
-            font-size: 20px     
-        @media(max-width: $mobile)  
-            font-size: 18px  
+            font-size: 26px
+        @media(max-width: $pocketBook)
+            font-size: 24px
+        @media(max-width: $smallPocketBook)
+            font-size: 20px
+        @media(max-width: $mobile)
+            font-size: 18px
             letter-spacing: -1px
-        @media(max-width: $mediumMobile)  
+        @media(max-width: $mediumMobile)
             font-size: 16px
-        @media(max-width: $smallMobile)  
-            font-size: 14px                     
-            
+        @media(max-width: $smallMobile)
+            font-size: 14px

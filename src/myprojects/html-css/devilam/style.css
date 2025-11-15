@@ -2,8 +2,8 @@
 /* Шрифт */
 /* Фон */
 /* Цвет */
-/* Бордер */  
-/* Тень */	 
+/* Бордер */
+/* Тень */
 /* Контейнер */
 /* Медиа запросы */
 *, *::before, *::after {
@@ -35,11 +35,6 @@ textarea {
   resize: vertical;
 }
 
-/* Проверить а надо ли? */
-*::focus {
-  outline: none;
-}
-
 button {
   border: none;
   outline: none;
@@ -55,7 +50,7 @@ img, video {
 }
 
 /* Прижать подвал Грид */
-/* Выяснить где нужен rotate */    
+/* Выяснить где нужен rotate */
 /* Прижать подвал Флекс */
 .wrapper {
   display: flex;
@@ -1261,8 +1256,7 @@ footer {
   width: 100%;
   height: 660px;
   background: linear-gradient(87.82deg, rgb(157, 116, 57) 1.364%, rgb(218, 192, 131) 84.681%, rgb(241, 221, 159) 105.739%);
-  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
-          clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
   z-index: -1;
 }
 @media (max-width: 1400px) {
@@ -1342,8 +1336,7 @@ footer {
 }
 @media (max-width: 991px) {
   .promo_specialists_bottom::after {
-    -webkit-clip-path: none;
-            clip-path: none;
+    clip-path: none;
     bottom: -50px;
     height: 550px;
   }
@@ -3500,6 +3493,9 @@ footer {
     width: 100%;
   }
 }
+.news__item__hide {
+  display: none;
+}
 .news__img {
   height: 410px;
 }
@@ -5006,6 +5002,9 @@ footer {
   }
 }
 .btn_news_show-more::after {
+  display: none;
+}
+.btn_news_show-more.hide-btn {
   display: none;
 }
 .btn_news:hover {

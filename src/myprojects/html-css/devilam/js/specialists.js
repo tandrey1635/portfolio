@@ -1,6 +1,6 @@
 const showQuestionList = () => {
 	const showBtnList = document.querySelector('.btn__news__announce_question-list')
-	showBtnList.addEventListener('click', ()=>{
+	showBtnList.addEventListener('click', ()=> {
 		showBtnList.nextElementSibling.classList.toggle('show')
 		if (showBtnList.nextElementSibling.classList.contains('show')) {
 			showBtnList.textContent = 'Скрыть список вопросов'
@@ -18,7 +18,7 @@ const changeImgTabs = () => {
 	const headers = document.querySelectorAll('.about__bottom__header')
 	const img = document.querySelectorAll('.about__bottom__img')
 	const descriptions = document.querySelectorAll('.about__bottom__descriptions')
-	
+
 
 	const showElement = (header, headerClassName, img, imgClassName, descriptions, descriptionsClassName) => {
 		header.classList.add(headerClassName)
@@ -37,7 +37,7 @@ const changeImgTabs = () => {
 			showElement(headers[0], 'header__active', img[0], 'img__active', descriptions[0], 'descriptions__active')
 			notShowElement(headers[1], 'header__active', img[1], 'img__active', descriptions[1], 'descriptions__active')
 		})
-	
+
 		headers[1].addEventListener('click', ()=>{
 			showElement(headers[1], 'header__active', img[1], 'img__active', descriptions[1], 'descriptions__active')
 			notShowElement(headers[0], 'header__active', img[0], 'img__active', descriptions[0], 'descriptions__active')
@@ -56,50 +56,50 @@ const changeFeaturesImg = () => {
 	const featuresItem = document.querySelectorAll('.features__item')
 	const featuresItemDescription = document.querySelectorAll('.features__item__description')
 	const pagination = document.querySelector('.btn_paginations_page')
-	
 
-	const clearAllItems = () =>{
-		featuresItem.forEach(item=>{
+
+	const clearAllItems = () => {
+		featuresItem.forEach(item=> {
 			item.classList.add('hide_zIndex')
 			item.classList.remove('show_zIndex')
 			item.classList.remove('animate__pulse')
 		})
 	}
 
-	const hideAllItemsDescription = () =>{
+	const hideAllItemsDescription = () => {
 		featuresItemDescription.forEach(itemDescription=>{
 			itemDescription.classList.add('hide_description')
 		})
 	}
 
 
-	const showItemZindex = (index) =>{
+	const showItemZindex = (index) => {
 		featuresItem[index].classList.add('show_zIndex')
 	}
 
 
-	const showItemsDescription = (index) =>{
+	const showItemsDescription = (index) => {
 		featuresItemDescription[index].classList.remove('hide_description')
 	}
 
 	/* Для корректной карточной колоды кода пагинация прошла назад */
-	const addItemsZindex = () =>{
+	const addItemsZindex = () => {
 		featuresItem[0].classList.add('one_zIndex')
 		featuresItem[1].classList.add('two_zIndex')
 		featuresItem[2].classList.add('three_zIndex')
-		featuresItem[3].classList.add('four_zIndex') 
+		featuresItem[3].classList.add('four_zIndex')
 	}
 
 
-	const removeItemsZindex = () =>{
+	const removeItemsZindex = () => {
 		featuresItem[0].classList.remove('one_zIndex')
 		featuresItem[1].classList.remove('two_zIndex')
 		featuresItem[2].classList.remove('three_zIndex')
-		featuresItem[3].classList.remove('four_zIndex') 
+		featuresItem[3].classList.remove('four_zIndex')
 	}
 
 
-	const addAnimation = (i)=>{
+	const addAnimation = (i)=> {
 		featuresItem[i].classList.add('animate__pulse')
 	}
 
@@ -107,9 +107,9 @@ const changeFeaturesImg = () => {
 	/* Скрыть все описания у карточек и показать у первой */
 	hideAllItemsDescription()
 	showItemsDescription(0)
-	
 
-	nextBtn.addEventListener('click', (e)=>{
+
+	nextBtn.addEventListener('click', (e)=> {
 		e.preventDefault()
 		if (pagination.textContent == '1 из 4') {
 			clearAllItems()

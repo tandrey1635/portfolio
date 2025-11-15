@@ -1,61 +1,63 @@
 .news
-    padding: 64px 0
-    @media(max-width: $notebook) 
-        padding-bottom: 0
-    @media(max-width: $tablet) 
-        padding-top: 80px   
-    @media(max-width: $mobile) 
-        padding-top: 56px 
-    @media(max-width: $extraSmallMobile) 
-        padding-top: 32px         
-    &__wrapper
-        margin-top: 32px
-        @include flexHorisontalCenter(space-between)
-        flex-wrap: wrap
-        row-gap: 32px
-        @media(max-width: $tablet) 
-            flex-direction: column
-            margin-top: 0
-            gap: 56px
-        @media(max-width: $mobile) 
-            gap: 32px  
-        @media(max-width: $extraSmallMobile) 
-            gap: 16px      
-    &__item
-        width: 32% 
-        @include flexReverseAxios
-        @media(max-width: $tablet) 
-            width: 100%           
-    &__img
-        height: 410px
-        @media(max-width: 1200px)  
-            height: 350px  
-        @media(max-width: $smallDesktop) 
-            height: 300px   
-        @media(max-width: $tablet) 
-            height: 500px  
-        @media(max-width: $mediumTablet)  
-            height: 450px   
-        @media(max-width: $pocketBook)  
-            height: 350px  
-        @media(max-width: $mobile)    
-            height: 250px  
-        @media(max-width: $extraSmallMobile) 
-            height: 200px         
-    &__description   
-        margin-top: 32px 
-        flex-grow: 1
-        @media(max-width: $tablet) 
-            align-self: center
-        @media(max-width: $mediumMobile)
-            margin-top: 20px     
-    &__block__link
-        @media(max-width: $tablet) 
-            @include flexCenter
-        &_show-more
-            @include flexHorisontalCenter
-            margin-top: 32px 
-            @media(max-width: $smallPocketBook)   
-                margin-top: 56px
-            @media(max-width: $pocketBook)  
-                margin-top: 0  
+	padding: 64px 0
+	@media(max-width: $notebook)
+		padding-bottom: 0
+	@media(max-width: $tablet)
+		padding-top: 80px
+	@media(max-width: $mobile)
+		padding-top: 56px
+	@media(max-width: $extraSmallMobile)
+		padding-top: 32px
+	&__wrapper
+		margin-top: 32px
+		@include flexHorisontalCenter(space-between)
+		flex-wrap: wrap
+		row-gap: 32px
+		@media(max-width: $tablet)
+			flex-direction: column
+			margin-top: 0
+			gap: 56px
+		@media(max-width: $mobile)
+			gap: 32px
+		@media(max-width: $extraSmallMobile)
+			gap: 16px
+	&__item
+		width: 32%
+		@include flexReverseAxios
+		@media(max-width: $tablet)
+			width: 100%
+		&__hide
+			display: none
+	&__img
+		height: 410px
+		@media(max-width: 1200px)
+			height: 350px
+		@media(max-width: $smallDesktop)
+			height: 300px
+		@media(max-width: $tablet)
+			height: 500px
+		@media(max-width: $mediumTablet)
+			height: 450px
+		@media(max-width: $pocketBook)
+			height: 350px
+		@media(max-width: $mobile)
+			height: 250px
+		@media(max-width: $extraSmallMobile)
+			height: 200px
+	&__description
+		margin-top: 32px
+		flex-grow: 1
+		@media(max-width: $tablet)
+			align-self: center
+		@media(max-width: $mediumMobile)
+			margin-top: 20px
+	&__block__link
+		@media(max-width: $tablet)
+			@include flexCenter
+		&_show-more
+			@include flexHorisontalCenter
+			margin-top: 32px
+			@media(max-width: $smallPocketBook)
+				margin-top: 56px
+			@media(max-width: $pocketBook)
+				margin-top: 0

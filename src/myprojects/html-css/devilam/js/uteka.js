@@ -25,4 +25,3 @@ window.uteka.onReady(function () {
   	let widget = document.querySelector('.uteka__map__widget');
   	window.uteka.loadWidget(widget, {'productId':'402664', 'productIds':['402664','402668']});
 });
-

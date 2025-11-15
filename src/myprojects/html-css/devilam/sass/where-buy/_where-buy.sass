@@ -2,17 +2,17 @@
     padding: 106px 0
     @media(max-width: $tablet)
         min-height: auto
-    @media(max-width: $mediumTablet)  
+    @media(max-width: $mediumTablet)
         padding: 56px 0
-    @media(max-width: $extraSmallMobile)  
-        padding: 32px 0    
+    @media(max-width: $extraSmallMobile)
+        padding: 32px 0
     &__wrapper
         margin-top: 50px
         @include flexCenter(space-around)
         @media(max-width: $tablet)
             flex-direction: column
             gap: 56px
-        @media(max-width: $smallPocketBook)    
+        @media(max-width: $smallPocketBook)
             gap: 32px
             margin-top: 32px
     &__left
@@ -23,87 +23,87 @@
             width: 480px
             height: 480px
         @media(max-width: $smallPocketBook)
-            width: 100%   
+            width: 100%
         @media(max-width: $smallPocketBook)
-            height: 450px    
-        @media(max-width: $mobile) 
-            height: 375px   
-        @media(max-width: $mediumMobile)  
-            height: 320px 
-        @media(max-width: $smallMobile) 
-            height: 290px 
-        @media(max-width: $extraSmallMobile) 
-            height: 250px              
+            height: 450px
+        @media(max-width: $mobile)
+            height: 375px
+        @media(max-width: $mediumMobile)
+            height: 320px
+        @media(max-width: $smallMobile)
+            height: 290px
+        @media(max-width: $extraSmallMobile)
+            height: 250px
         &::after
             @include before
             width: 510px
             height: 510px
             background: $whereBuyBg
             border-radius: 50%
-            @media(max-width: $mediumTablet) 
+            @media(max-width: $mediumTablet)
                 width: 100%
                 height: 480px
             @media(max-width: $smallPocketBook)
-                height: 450px  
-            @media(max-width: $mobile) 
-                height: 375px        
-            @media(max-width: $mediumMobile)  
-                height: 320px 
-            @media(max-width: $smallMobile) 
-                height: 290px  
-            @media(max-width: $extraSmallMobile) 
-                height: 250px        
+                height: 450px
+            @media(max-width: $mobile)
+                height: 375px
+            @media(max-width: $mediumMobile)
+                height: 320px
+            @media(max-width: $smallMobile)
+                height: 290px
+            @media(max-width: $extraSmallMobile)
+                height: 250px
     &__img
-        position: absolute 
+        position: absolute
         top: 5%
         left: -12%
         width: 400px
         height: 420px
         z-index: 3
-        @media(max-width: $mediumTablet) 
+        @media(max-width: $mediumTablet)
             width: 350px
             left: -8%
-        @media(max-width: $pocketBook)    
+        @media(max-width: $pocketBook)
             left: -10%
         @media(max-width: $smallPocketBook)
             width: 300px
-            height: 350px  
-            top: 10%   
-        @media(max-width: $mobile) 
+            height: 350px
+            top: 10%
+        @media(max-width: $mobile)
             width: 280px
-            height: 300px 
-            left: -15%  
-        @media(max-width: $mediumMobile) 
+            height: 300px
+            left: -15%
+        @media(max-width: $mediumMobile)
             width: 200px
-            height: 250px   
-            left: -5%    
-        @media(max-width: $smallMobile) 
-            top: 5% 
-        @media(max-width: $extraSmallMobile)  
+            height: 250px
+            left: -5%
+        @media(max-width: $smallMobile)
+            top: 5%
+        @media(max-width: $extraSmallMobile)
             width: 200px
-            height: 220px        
-        &_second  
+            height: 220px
+        &_second
             top: 16%
-            left: 30% 
-            @media(max-width: $mediumTablet) 
+            left: 30%
+            @media(max-width: $mediumTablet)
                 left: 33%
-            @media(max-width: $pocketBook)   
-                left: 27%  
+            @media(max-width: $pocketBook)
+                left: 27%
             @media(max-width: $smallPocketBook)
-                top: 20%  
-            @media(max-width: $mobile)  
-                left: 23%     
-            @media(max-width: $mediumMobile) 
-                left: 32% 
-            @media(max-width: $smallMobile) 
-                top: 12%  
-                left: 35%            
+                top: 20%
+            @media(max-width: $mobile)
+                left: 23%
+            @media(max-width: $mediumMobile)
+                left: 32%
+            @media(max-width: $smallMobile)
+                top: 12%
+                left: 35%
     &__right
-        width: 550px  
+        width: 550px
         @media(max-width: $smallNotebook)
             width: 45%
         @media(max-width: $tablet)
             text-align: center
-            width: 80%   
-        @media(max-width: $mediumTablet) 
+            width: 80%
+        @media(max-width: $mediumTablet)
             width: 100%
